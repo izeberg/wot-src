@@ -116,6 +116,13 @@
 			<undamaged>vehicles/american/A197_Jezevec/normal/lod0/Hull.model</undamaged>
 			<destroyed>vehicles/american/A197_Jezevec/crash/lod0/Hull.model</destroyed>
 			<exploded>vehicles/american/A197_Jezevec/crash/lod0/Hull.model</exploded>
+			<sets>
+				<A197_Jezevec_NC_3Dst>
+					<undamaged>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/crash/lod0/Hull.model</exploded>
+				</A197_Jezevec_NC_3Dst>
+			</sets>
 		</models>
 		<swinging>
 			<lodDist>FAR</lodDist>
@@ -134,7 +141,7 @@
 		</swinging>
 		<exhaust>
 			<pixie>diesel_large</pixie>
-			<nodes>HP_Track_Exhaus_1</nodes>
+			<nodes>HP_Track_Exhaus_1 HP_Track_Exhaus_2</nodes>
 		</exhaust>
 		<turretPositions>
 			<turret>
@@ -156,6 +163,22 @@
 					<!--BW_String-->
 				</rayEnd>
 				<rayUp>0.000001 0.293569 -0.955938</rayUp>
+				<size>
+					0.28
+					<!--BW_String-->
+				</size>
+				<hideIfDamaged>true</hideIfDamaged>
+			</slot>
+			<slot>
+				<slotType>clan</slotType>
+				<slotId>10001</slotId>
+				<compatibleModels>A197_Jezevec_NC_3Dst</compatibleModels>
+				<rayStart>0.589014 0.693094 0.944929</rayStart>
+				<rayEnd>0.589016 0.493345 0.934899</rayEnd>
+				<rayUp>
+					0.000004 0.05015 -0.998742
+					<!--BW_String-->
+				</rayUp>
 				<size>
 					0.28
 					<!--BW_String-->
@@ -1778,6 +1801,14 @@
 				<applyType>universal</applyType>
 				<size>medium</size>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18003</slotId>
+				<position>0 0 0</position>
+				<rotation>0 0 0</rotation>
+				<hiddenForUser>true</hiddenForUser>
+				<scale>1 1 1</scale>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -1831,6 +1862,13 @@
 				<undamaged>vehicles/american/A197_Jezevec/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/american/A197_Jezevec/crash/lod0/Chassis.model</destroyed>
 				<exploded>vehicles/american/A197_Jezevec/crash/lod0/Chassis.model</exploded>
+				<sets>
+					<A197_Jezevec_NC_3Dst>
+						<undamaged>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/crash/lod0/Chassis.model</exploded>
+					</A197_Jezevec_NC_3Dst>
+				</sets>
 			</models>
 			<traces>
 				<lodDist>MEDIUM</lodDist>
@@ -2393,6 +2431,12 @@
 						<UTiles>1</UTiles>
 						<VTiles>1</VTiles>
 					</atlas>
+					<modelSets>
+						<A197_Jezevec_NC_3Dst>
+							<segmentModelLeft>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/track/segment.model</segmentModelLeft>
+							<segmentModelRight>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/track/segment.model</segmentModelRight>
+						</A197_Jezevec_NC_3Dst>
+					</modelSets>
 				</trackPair>
 				<lodDist>SPLINE_TRACK</lodDist>
 			</splineDesc>
@@ -2410,6 +2454,11 @@
 						<model>vehicles/american/A197_Jezevec/track/segment.model</model>
 						<length>0.133905</length>
 					</mainSegment>
+					<modelSets>
+						<A197_Jezevec_NC_3Dst>
+							<mainSegmentModel>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/track/segment.model</mainSegmentModel>
+						</A197_Jezevec_NC_3Dst>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>0.133398</back>
@@ -2490,42 +2539,45 @@
 					<collisionHull>
 						<bottom>
 							<part>
-								<xStart>-2.951936</xStart>
+								<xStart>-2.921578</xStart>
 								<xStep>
 									0.01
 									<!--BW_String-->
 								</xStep>
 								<ySamples>
-									0.386712 0.382512 0.378702 0.375267 0.372196 0.369477 0.3671
+									0.704067 0.704067 0.704067 0.704067 0.704067 0.704067 0.704067
 									<!--BW_String-->
 								</ySamples>
 							</part>
 							<part>
-								<xStart>-2.891936</xStart>
-								<xStep>0.066952</xStep>
+								<xStart>-2.861578</xStart>
+								<xStep>
+									0.05177
+									<!--BW_String-->
+								</xStep>
 								<ySamples>
-									0.3671 0.359575 0.366196
+									0.774067 0.807724 0.74384
 									<!--BW_String-->
 								</ySamples>
 							</part>
 							<part>
-								<xStart>-2.758031</xStart>
+								<xStart>-2.758038</xStart>
 								<xStep>
 									0.01
 									<!--BW_String-->
 								</xStep>
 								<ySamples>
-									0.366196 0.36843 0.371003 0.373924 0.377203 0.380853 0.384886
+									0.74384 0.73384 0.72384 0.71384 0.703839 0.693839 0.683839
 									<!--BW_String-->
 								</ySamples>
 							</part>
 						</bottom>
 						<top>
 							<part>
-								<xStart>-3.159746</xStart>
-								<xStep>0.066952</xStep>
+								<xStart>-3.129387</xStart>
+								<xStep>0.066629</xStep>
 								<ySamples>
-									0.854021 0.958068 1.06211 1.16616 1.27021 1.37034 1.43279 1.43283 1.43287 1.43291 1.41122 1.19946 1.19946 1.19946 1.19946 1.19344 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.24336 1.25044 1.19946 1.19946 1.19946 1.19946 1.19344 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19344 1.19946 1.19946 1.19946 1.19946 1.41122 1.43326 1.43326 1.43252 1.42901 1.4255 1.422 1.41849 1.41498 1.41148 1.40797 1.40446 1.40095 1.39745 1.39394 1.39043 1.26364 1.38342 1.37991 1.3764 1.37289 1.36939 1.36588 1.36237 1.35887 1.35536 1.35185 1.34834 1.34484 1.34133 1.3452 1.33583 1.32646 1.31709 1.30772 1.29835 1.28898 1.27961 1.27024 1.26087 1.2515 1.24213 1.23276 1.22339 1.21403 1.20466 1.19529 1.18592
+									0.830968 0.935014 1.03906 1.10806 1.122 1.12203 1.11941 1.11945 1.11948 1.11952 1.12037 1.11384 1.11384 1.11384 1.11384 1.10782 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11268 1.11475 1.11384 1.11384 1.11384 1.11384 1.10782 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.10782 1.11384 1.11384 1.11384 1.11384 1.10817 1.10798 1.10058 1.10428 1.10522 1.10319 1.10709 1.10655 1.11193 1.1099 1.10787 1.10437 1.10382 1.10328 1.09681 1.0933 1.09982 1.08925 1.09611 1.0926 1.09206 1.09299 1.09689 1.09486 1.09136 1.08637 1.0873 1.0912 1.09658 1.09455 1.09695 1.09647 1.09895 1.10143 1.1039 1.10342 1.10442 1.09949 1.09457 1.10001 1.10989 1.11385 1.12522 1.12474 1.11981 1.106 1.11588 1.10651
 									<!--BW_String-->
 								</ySamples>
 							</part>
@@ -2547,213 +2599,138 @@
 								</point>
 								<point>-1.299032 1.009826 -3.062428</point>
 								<point>-1.299032 1.113873 -2.995476</point>
+								<point>-1.299032 1.182876 -2.928523</point>
 								<point>
-									-1.299032 1.21792 -2.928523
-									<!--BW_String-->
-								</point>
-								<point>-1.299032 1.321967 -2.861571</point>
-								<point>-1.299032 1.372063 -2.824983</point>
-								<point>-1.299032 1.434522 -2.758031</point>
-								<point>-1.299032 1.434559 -2.691078</point>
-								<point>-1.299032 1.434596 -2.624126</point>
-								<point>-1.299032 1.434633 -2.557173</point>
-								<point>
-									-1.519032 1.41295 -2.490221
+									-1.299032 1.19681 -2.861571
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.299032 1.25123 -2.423268
+									-1.299032 1.196843 -2.81497
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.299032 1.25123 -2.356316
+									-1.299032 1.19422 -2.758031
+									<!--BW_String-->
+								</point>
+								<point>-1.299032 1.194257 -2.691078</point>
+								<point>-1.299032 1.194293 -2.624126</point>
+								<point>-1.299032 1.194331 -2.557173</point>
+								<point>-1.519032 1.195176 -2.490221</point>
+								<point>-1.299032 1.188651 -2.423268</point>
+								<point>-1.299032 1.188651 -2.356316</point>
+								<point>-1.299032 1.188651 -2.289363</point>
+								<point>-1.499032 1.188651 -2.222411</point>
+								<point>-1.539032 1.182633 -2.155458</point>
+								<point>-1.299032 1.188651 -2.088506</point>
+								<point>-1.299032 1.188651 -2.021554</point>
+								<point>-1.299032 1.188651 -1.954601</point>
+								<point>-1.349032 1.188651 -1.887649</point>
+								<point>-1.299032 1.188651 -1.820696</point>
+								<point>-1.299032 1.188651 -1.753744</point>
+								<point>-1.499032 1.188651 -1.686791</point>
+								<point>-1.449032 1.188651 -1.619839</point>
+								<point>-1.299032 1.188651 -1.552886</point>
+								<point>-1.449032 1.188651 -1.485934</point>
+								<point>-1.449032 1.188651 -1.418981</point>
+								<point>-1.449032 1.188651 -1.352029</point>
+								<point>-1.329032 1.187495 -1.285076</point>
+								<point>-1.329032 1.189565 -1.218124</point>
+								<point>-1.299032 1.188651 -1.151171</point>
+								<point>-1.299032 1.188651 -1.084219</point>
+								<point>-1.299032 1.188651 -1.017266</point>
+								<point>-1.299032 1.188651 -0.950314</point>
+								<point>-1.539032 1.182633 -0.883361</point>
+								<point>-1.299032 1.188651 -0.816409</point>
+								<point>-1.299032 1.188651 -0.749456</point>
+								<point>-1.299032 1.188651 -0.682504</point>
+								<point>-1.299032 1.188651 -0.615551</point>
+								<point>-1.299032 1.188651 -0.548599</point>
+								<point>-1.299032 1.188652 -0.481647</point>
+								<point>-1.299032 1.188652 -0.414694</point>
+								<point>-1.539032 1.182633 -0.347742</point>
+								<point>-1.299032 1.188652 -0.280789</point>
+								<point>-1.299032 1.188652 -0.213837</point>
+								<point>-1.299032 1.188652 -0.146884</point>
+								<point>-1.299032 1.188652 -0.079932</point>
+								<point>
+									-1.519032 1.182978 -0.01298
+									<!--BW_String-->
+								</point>
+								<point>-1.299032 1.182794 0.053973</point>
+								<point>-1.299032 1.175389 0.120925</point>
+								<point>-1.299032 1.179094 0.187878</point>
+								<point>-1.299032 1.180031 0.254831</point>
+								<point>-1.299032 1.178005 0.321783</point>
+								<point>-1.299032 1.181903 0.388736</point>
+								<point>-1.299032 1.181358 0.455688</point>
+								<point>-1.299032 1.186738 0.522641</point>
+								<point>-1.299032 1.184711 0.589593</point>
+								<point>-1.299032 1.182685 0.656546</point>
+								<point>-1.299032 1.179178 0.723498</point>
+								<point>-1.299032 1.178632 0.790451</point>
+								<point>-1.299032 1.178088 0.860365</point>
+								<point>-1.299032 1.171618 0.924356</point>
+								<point>
+									-1.299032 1.16811 0.991308
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.299032 1.25123 -2.289363
+									-1.299032 1.174627 1.05826
+									<!--BW_String-->
+								</point>
+								<point>-1.299032 1.164059 1.125213</point>
+								<point>-1.299032 1.170919 1.192165</point>
+								<point>-1.429032 1.167412 1.259118</point>
+								<point>
+									-1.379032 1.166867 1.32607
+									<!--BW_String-->
+								</point>
+								<point>-1.529032 1.167803 1.393023</point>
+								<point>-1.479032 1.171701 1.459975</point>
+								<point>-1.349032 1.169675 1.526927</point>
+								<point>
+									-1.529032 1.166167 1.59388
+									<!--BW_String-->
+								</point>
+								<point>-1.479032 1.161179 1.660832</point>
+								<point>-1.299032 1.162115 1.727785</point>
+								<point>-1.359032 1.166014 1.794737</point>
+								<point>
+									-1.499032 1.171392 1.86169
+									<!--BW_String-->
+								</point>
+								<point>-1.309032 1.169367 1.928643</point>
+								<point>-1.529032 1.171759 1.995595</point>
+								<point>-1.539032 1.171276 2.062547</point>
+								<point>
+									-1.539032 1.173757 2.1295
+									<!--BW_String-->
+								</point>
+								<point>-1.539032 1.176236 2.196453</point>
+								<point>-1.529032 1.178715 2.263404</point>
+								<point>-1.539032 1.178232 2.330357</point>
+								<point>
+									-1.529032 1.179231 2.39731
+									<!--BW_String-->
+								</point>
+								<point>-1.539032 1.174304 2.464262</point>
+								<point>-1.519032 1.169378 2.531215</point>
+								<point>
+									-1.529032 1.17482 2.598167
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.499032 1.25123 -2.222411
+									-1.539032 1.184705 2.66512
 									<!--BW_String-->
 								</point>
-								<point>-1.539032 1.245212 -2.155458</point>
+								<point>-1.539032 1.188665 2.732072</point>
+								<point>-1.539032 1.200032 2.799025</point>
+								<point>-1.539032 1.199549 2.865977</point>
 								<point>
-									-1.299032 1.25123 -2.088506
+									-1.529032 1.194623 2.93293
 									<!--BW_String-->
 								</point>
-								<point>
-									-1.299032 1.25123 -2.021554
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.299032 1.25123 -1.954601
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.349032 1.25123 -1.887649
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.299032 1.25123 -1.820696
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.299032 1.25123 -1.753744
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.499032 1.25123 -1.686791
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.449032 1.25123 -1.619839
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.299032 1.25123 -1.552886
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.449032 1.25123 -1.485934
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.449032 1.25123 -1.418981
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.449032 1.25123 -1.352029
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.329032 1.29513 -1.285076
-									<!--BW_String-->
-								</point>
-								<point>-1.329032 1.302207 -1.218124</point>
-								<point>
-									-1.299032 1.25123 -1.151171
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.299032 1.25123 -1.084219
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.299032 1.25123 -1.017266
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.299032 1.25123 -0.950314
-									<!--BW_String-->
-								</point>
-								<point>-1.539032 1.245212 -0.883361</point>
-								<point>
-									-1.299032 1.25123 -0.816409
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.299032 1.25123 -0.749456
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.299032 1.25123 -0.682504
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.299032 1.25123 -0.615551
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.299032 1.25123 -0.548599
-									<!--BW_String-->
-								</point>
-								<point>-1.299032 1.251231 -0.481647</point>
-								<point>-1.299032 1.251231 -0.414694</point>
-								<point>-1.539032 1.245212 -0.347742</point>
-								<point>-1.299032 1.251231 -0.280789</point>
-								<point>-1.299032 1.251231 -0.213837</point>
-								<point>-1.299032 1.251231 -0.146884</point>
-								<point>-1.299032 1.251231 -0.079932</point>
-								<point>
-									-1.519032 1.406632 -0.01298
-									<!--BW_String-->
-								</point>
-								<point>-1.299032 1.428666 0.053973</point>
-								<point>-1.299032 1.428666 0.120925</point>
-								<point>-1.299032 1.427928 0.187878</point>
-								<point>-1.299032 1.424421 0.254831</point>
-								<point>-1.299032 1.420914 0.321783</point>
-								<point>-1.299032 1.417406 0.388736</point>
-								<point>-1.299032 1.413899 0.455688</point>
-								<point>-1.299032 1.410392 0.522641</point>
-								<point>-1.299032 1.406884 0.589593</point>
-								<point>-1.299032 1.403377 0.656546</point>
-								<point>
-									-1.299032 1.39987 0.723498
-									<!--BW_String-->
-								</point>
-								<point>-1.299032 1.396362 0.790451</point>
-								<point>-1.299032 1.392855 0.857403</point>
-								<point>-1.299032 1.389348 0.924356</point>
-								<point>
-									-1.299032 1.38584 0.991308
-									<!--BW_String-->
-								</point>
-								<point>
-									-1.299032 1.259053 1.05826
-									<!--BW_String-->
-								</point>
-								<point>-1.299032 1.378826 1.125213</point>
-								<point>-1.299032 1.375318 1.192165</point>
-								<point>-1.429032 1.371811 1.259118</point>
-								<point>
-									-1.379032 1.368304 1.32607
-									<!--BW_String-->
-								</point>
-								<point>-1.529032 1.364796 1.393023</point>
-								<point>-1.479032 1.361289 1.459975</point>
-								<point>-1.349032 1.357782 1.526927</point>
-								<point>
-									-1.529032 1.354274 1.59388
-									<!--BW_String-->
-								</point>
-								<point>-1.479032 1.350767 1.660832</point>
-								<point>-1.299032 1.347259 1.727785</point>
-								<point>-1.359032 1.343752 1.794737</point>
-								<point>
-									-1.499032 1.340244 1.86169
-									<!--BW_String-->
-								</point>
-								<point>-1.309032 1.336737 1.928643</point>
-								<point>-1.529032 1.340611 1.995595</point>
-								<point>-1.539032 1.331241 2.062547</point>
-								<point>
-									-1.539032 1.321872 2.1295
-									<!--BW_String-->
-								</point>
-								<point>-1.539032 1.312502 2.196453</point>
-								<point>-1.529032 1.303132 2.263404</point>
-								<point>-1.539032 1.293762 2.330357</point>
-								<point>
-									-1.529032 1.284393 2.39731
-									<!--BW_String-->
-								</point>
-								<point>-1.539032 1.275023 2.464262</point>
-								<point>-1.519032 1.265653 2.531215</point>
-								<point>-1.529032 1.256283 2.598167</point>
-								<point>
-									-1.539032 1.246913 2.66512
-									<!--BW_String-->
-								</point>
-								<point>-1.539032 1.237543 2.732072</point>
-								<point>-1.539032 1.228174 2.799025</point>
-								<point>-1.539032 1.218804 2.865977</point>
-								<point>
-									-1.529032 1.209434 2.93293
-									<!--BW_String-->
-								</point>
-								<point>-1.539032 1.200064 2.999882</point>
+								<point>-1.539032 1.180809 2.999882</point>
 								<point>-1.539032 1.190694 3.066835</point>
 								<point>-1.539032 1.181325 3.133787</point>
 							</range>
@@ -2776,6 +2753,11 @@
 							<!--BW_String-->
 						</length>
 					</mainSegment>
+					<modelSets>
+						<A197_Jezevec_NC_3Dst>
+							<mainSegmentModel>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/track/segment.model</mainSegmentModel>
+						</A197_Jezevec_NC_3Dst>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>0.133398</back>
@@ -2868,45 +2850,45 @@
 					<collisionHull>
 						<bottom>
 							<part>
-								<xStart>-2.952054</xStart>
+								<xStart>-2.921577</xStart>
 								<xStep>
 									0.01
 									<!--BW_String-->
 								</xStep>
 								<ySamples>
-									0.386753 0.382549 0.378734 0.375295 0.37222 0.369497 0.367116
+									0.704067 0.704067 0.704067 0.704067 0.704067 0.704067 0.704067
 									<!--BW_String-->
 								</ySamples>
 							</part>
 							<part>
-								<xStart>-2.892054</xStart>
+								<xStart>-2.861577</xStart>
 								<xStep>
-									0.06695
+									0.05177
 									<!--BW_String-->
 								</xStep>
-								<ySamples>0.367116 0.359566 0.366161</ySamples>
+								<ySamples>
+									0.774067 0.807724 0.74384
+									<!--BW_String-->
+								</ySamples>
 							</part>
 							<part>
-								<xStart>-2.758154</xStart>
+								<xStart>-2.758037</xStart>
 								<xStep>
 									0.01
 									<!--BW_String-->
 								</xStep>
 								<ySamples>
-									0.366161 0.36839 0.370958 0.373875 0.37715 0.380795 0.384823
+									0.74384 0.73384 0.72384 0.71384 0.703839 0.693839 0.683839
 									<!--BW_String-->
 								</ySamples>
 							</part>
 						</bottom>
 						<top>
 							<part>
-								<xStart>-3.159854</xStart>
-								<xStep>
-									0.06695
-									<!--BW_String-->
-								</xStep>
+								<xStart>-3.129387</xStart>
+								<xStep>0.066629</xStep>
 								<ySamples>
-									0.910227 1.00251 1.09199 1.18147 1.27506 1.37043 1.43326 1.43326 1.43326 1.43326 1.41122 1.19946 1.19946 1.19946 1.19946 1.19344 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.24336 1.25044 1.19946 1.19946 1.19946 1.19946 1.19344 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19946 1.19344 1.19946 1.19946 1.19946 1.19946 1.41122 1.43326 1.43326 1.43253 1.42902 1.42552 1.42201 1.4185 1.415 1.41149 1.40798 1.40447 1.40097 1.39746 1.39395 1.39044 1.26366 1.38343 1.37992 1.37642 1.37291 1.3694 1.36589 1.36239 1.35888 1.35537 1.35187 1.34836 1.34485 1.34134 1.34524 1.33587 1.3265 1.31713 1.30777 1.2984 1.28903 1.27966 1.27029 1.26092 1.25155 1.24218 1.23281 1.22344 1.21407 1.2047 1.19533 1.18596
+									0.830968 0.935019 1.03906 1.10807 1.122 1.12203 1.11941 1.11945 1.11948 1.11952 1.12037 1.11384 1.11384 1.11384 1.11384 1.10782 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11268 1.11476 1.11384 1.11384 1.11384 1.11384 1.10782 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.11384 1.10782 1.11384 1.11384 1.11384 1.11384 1.10817 1.10798 1.10058 1.10428 1.10522 1.10319 1.10709 1.10655 1.11193 1.1099 1.10788 1.10437 1.10382 1.10328 1.09681 1.0933 1.09982 1.08925 1.09611 1.0926 1.09206 1.09299 1.09689 1.09487 1.09136 1.08637 1.0873 1.0912 1.09658 1.09456 1.09695 1.09647 1.09895 1.10143 1.10391 1.10342 1.10442 1.09949 1.09457 1.10001 1.10989 1.11385 1.12522 1.12474 1.11981 1.106 1.11588 1.10651
 									<!--BW_String-->
 								</ySamples>
 							</part>
@@ -2944,367 +2926,367 @@
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.21792 -2.92852
+									-1.29903 1.18288 -2.92852
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.32197 -2.86157
+									-1.29903 1.19681 -2.86157
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.37206 -2.82498
+									-1.29903 1.19684 -2.81497
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.43452 -2.75803
+									-1.29903 1.19422 -2.75803
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.43456 -2.69108
+									-1.29903 1.19426 -2.69108
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.4346 -2.62413
+									-1.29903 1.19429 -2.62413
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.43463 -2.55717
+									-1.29903 1.19433 -2.55717
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.51903 1.41295 -2.49022
+									-1.51903 1.19518 -2.49022
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -2.42327
+									-1.29903 1.18865 -2.42327
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -2.35632
+									-1.29903 1.18865 -2.35632
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -2.28936
+									-1.29903 1.18865 -2.28936
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.49903 1.25123 -2.22241
+									-1.49903 1.18865 -2.22241
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.53903 1.24521 -2.15546
+									-1.53903 1.18263 -2.15546
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -2.08851
+									-1.29903 1.18865 -2.08851
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -2.02155
+									-1.29903 1.18865 -2.02155
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -1.9546
+									-1.29903 1.18865 -1.9546
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.34903 1.25123 -1.88765
+									-1.34903 1.18865 -1.88765
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -1.8207
+									-1.29903 1.18865 -1.8207
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -1.75374
+									-1.29903 1.18865 -1.75374
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.49903 1.25123 -1.68679
+									-1.49903 1.18865 -1.68679
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.44903 1.25123 -1.61984
+									-1.44903 1.18865 -1.61984
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -1.55289
+									-1.29903 1.18865 -1.55289
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.44903 1.25123 -1.48593
+									-1.44903 1.18865 -1.48593
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.44903 1.25123 -1.41898
+									-1.44903 1.18865 -1.41898
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.44903 1.25123 -1.35203
+									-1.44903 1.18865 -1.35203
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.32903 1.29513 -1.28508
+									-1.32903 1.18749 -1.28508
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.32903 1.30221 -1.21812
+									-1.32903 1.18957 -1.21812
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -1.15117
+									-1.29903 1.18865 -1.15117
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -1.08422
+									-1.29903 1.18865 -1.08422
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -1.01727
+									-1.29903 1.18865 -1.01727
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -0.950314
+									-1.29903 1.18865 -0.950314
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.53903 1.24521 -0.883361
+									-1.53903 1.18263 -0.883361
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -0.816409
+									-1.29903 1.18865 -0.816409
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -0.749456
+									-1.29903 1.18865 -0.749456
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -0.682504
+									-1.29903 1.18865 -0.682504
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -0.615551
+									-1.29903 1.18865 -0.615551
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -0.548599
+									-1.29903 1.18865 -0.548599
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -0.481647
+									-1.29903 1.18865 -0.481647
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -0.414694
+									-1.29903 1.18865 -0.414694
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.53903 1.24521 -0.347742
+									-1.53903 1.18263 -0.347742
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -0.280789
+									-1.29903 1.18865 -0.280789
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -0.213837
+									-1.29903 1.18865 -0.213837
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -0.146884
+									-1.29903 1.18865 -0.146884
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25123 -0.079932
+									-1.29903 1.18865 -0.079932
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.51903 1.40663 -0.01298
+									-1.51903 1.18298 -0.01298
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.42867 0.053973
+									-1.29903 1.18279 0.053973
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.42867 0.120925
+									-1.29903 1.17539 0.120925
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.42793 0.187878
+									-1.29903 1.17909 0.187878
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.42442 0.254831
+									-1.29903 1.18003 0.254831
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.42091 0.321783
+									-1.29903 1.178 0.321783
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.41741 0.388736
+									-1.29903 1.1819 0.388736
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.4139 0.455688
+									-1.29903 1.18136 0.455688
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.41039 0.522641
+									-1.29903 1.18674 0.522641
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.40688 0.589593
+									-1.29903 1.18471 0.589593
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.40338 0.656546
+									-1.29903 1.18269 0.656546
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.39987 0.723498
+									-1.29903 1.17918 0.723498
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.39636 0.790451
+									-1.29903 1.17863 0.790451
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.39285 0.857403
+									-1.29903 1.17809 0.860365
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.38935 0.924356
+									-1.29903 1.17162 0.924356
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.38584 0.991308
+									-1.29903 1.16811 0.991308
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.25905 1.05826
+									-1.29903 1.17463 1.05826
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.37883 1.12521
+									-1.29903 1.16406 1.12521
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.37532 1.19217
+									-1.29903 1.17092 1.19217
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.42903 1.37181 1.25912
+									-1.42903 1.16741 1.25912
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.37903 1.3683 1.32607
+									-1.37903 1.16687 1.32607
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.52903 1.3648 1.39302
+									-1.52903 1.1678 1.39302
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.47903 1.36129 1.45998
+									-1.47903 1.1717 1.45998
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.34903 1.35778 1.52693
+									-1.34903 1.16968 1.52693
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.52903 1.35427 1.59388
+									-1.52903 1.16617 1.59388
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.47903 1.35077 1.66083
+									-1.47903 1.16118 1.66083
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.29903 1.34726 1.72778
+									-1.29903 1.16211 1.72778
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.35903 1.34375 1.79474
+									-1.35903 1.16601 1.79474
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.49903 1.34024 1.86169
+									-1.49903 1.17139 1.86169
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.30903 1.33674 1.92864
+									-1.30903 1.16937 1.92864
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.52903 1.34061 1.9956
+									-1.52903 1.17176 1.99559
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.53903 1.33124 2.06255
+									-1.53903 1.17128 2.06255
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.53903 1.32187 2.1295
+									-1.53903 1.17376 2.1295
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.53903 1.3125 2.19645
+									-1.53903 1.17624 2.19645
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.52903 1.30313 2.2634
+									-1.52903 1.17872 2.2634
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.53903 1.29376 2.33036
+									-1.53903 1.17823 2.33036
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.52903 1.28439 2.39731
+									-1.52903 1.17923 2.39731
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.53903 1.27502 2.46426
+									-1.53903 1.1743 2.46426
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.51903 1.26565 2.53121
+									-1.51903 1.16938 2.53121
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.52903 1.25628 2.59817
+									-1.52903 1.17482 2.59817
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.53903 1.24691 2.66512
+									-1.53903 1.1847 2.66512
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.53903 1.23754 2.73207
+									-1.53903 1.18866 2.73207
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.53903 1.22817 2.79903
+									-1.53903 1.20003 2.79903
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.53903 1.2188 2.86598
+									-1.53903 1.19955 2.86598
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.52903 1.20943 2.93293
+									-1.52903 1.19462 2.93293
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.53903 1.20006 2.99988
+									-1.53903 1.18081 2.99988
 									<!--BW_String-->
 								</point>
 								<point>
-									-1.53903 1.19069 3.06684
+									-1.53903 1.19069 3.06683
 									<!--BW_String-->
 								</point>
 								<point>
@@ -3773,6 +3755,27 @@
 								<!--BW_String-->
 							</rayUp>
 						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49001</slotId>
+							<size>
+								0.79
+								<!--BW_String-->
+							</size>
+							<rayStart>
+								0 -0.03 3.02
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								0 -0.03 3.81
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.1 0 0
+								<!--BW_String-->
+							</rayUp>
+							<compatibleModels>A197_Jezevec_NC_3Dst</compatibleModels>
+						</slot>
 					</customizationSlots>
 					<customization>
 						<customizableVehicleAreas>
@@ -3784,6 +3787,13 @@
 						<undamaged>vehicles/american/A197_Jezevec/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/american/A197_Jezevec/crash/lod0/Gun_01.model</destroyed>
 						<exploded>vehicles/american/A197_Jezevec/crash/lod0/Gun_01.model</exploded>
+						<sets>
+							<A197_Jezevec_NC_3Dst>
+								<undamaged>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/crash/lod0/Gun_01.model</exploded>
+							</A197_Jezevec_NC_3Dst>
+						</sets>
 					</models>
 					<hitTester>
 						<collisionModelServer>vehicles/american/A197_Jezevec/collision/Gun_01.model</collisionModelServer>
@@ -3805,6 +3815,13 @@
 				<undamaged>vehicles/american/A197_Jezevec/normal/lod0/Turret_01.model</undamaged>
 				<destroyed>vehicles/american/A197_Jezevec/crash/lod0/Turret_01.model</destroyed>
 				<exploded>vehicles/american/A197_Jezevec/crash/lod0/Turret_01.model</exploded>
+				<sets>
+					<A197_Jezevec_NC_3Dst>
+						<undamaged>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/crash/lod0/Turret_01.model</exploded>
+					</A197_Jezevec_NC_3Dst>
+				</sets>
 			</models>
 			<hitTester>
 				<collisionModelServer>vehicles/american/A197_Jezevec/collision/Turret_01.model</collisionModelServer>

@@ -1123,6 +1123,18 @@
 			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_bp2026_october_2.xml</alphabet>
 			<texture>gui/maps/vehicles/decals/insignia/custom/gun_bp2026_october_2_3.dds</texture>
 		</insignia>
+		<insignia>
+			<id>139</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_bp2026_november_1.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_bp2026_november_1.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_bp2026_november_1_3.dds</texture>
+		</insignia>
+		<insignia>
+			<id>141</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_bp2026_november_3.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_bp2026_november_3.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_bp2026_november_3_3.dds</texture>
+		</insignia>
 	</itemGroup>
 	<itemGroup>
 		<name>GB142_FV230_Canopener_KS_3Dst</name>
@@ -1238,6 +1250,20 @@
 		</insignia>
 	</itemGroup>
 	<itemGroup>
+		<name>A197_Jezevec_NC_3Dst</name>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>2</historical>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+		<tags>hiddenInUI</tags>
+		<insignia>
+			<id>133</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_a197.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_a197.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_a197_3.dds</texture>
+		</insignia>
+	</itemGroup>
+	<itemGroup>
 		<name>Maneuvers 2026</name>
 		<userString>#vehicle_customization:insignias/special</userString>
 		<season>ALL</season>
@@ -1282,6 +1308,20 @@
 			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_gb130.xml</alphabet>
 			<texture>gui/maps/vehicles/decals/insignia/custom/gun_gb130_3.dds</texture>
 			<canBeMirrored>false</canBeMirrored>
+		</insignia>
+	</itemGroup>
+	<itemGroup>
+		<name>G165_Erich_Konzept_I_NC_3Dst</name>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>2</historical>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+		<tags>hiddenInUI</tags>
+		<insignia>
+			<id>143</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_g165nc.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_g165nc.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_g165nc_3.dds</texture>
 		</insignia>
 	</itemGroup>
 	<itemGroup>
