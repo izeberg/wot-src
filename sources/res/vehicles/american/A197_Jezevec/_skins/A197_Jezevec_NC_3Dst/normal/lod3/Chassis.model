@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/normal/lod3/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.691322 -0.000324 -3.170466</min>
+		<max>1.691323 1.188784 3.217571</max>
+	</visibilityBox>
+</root>

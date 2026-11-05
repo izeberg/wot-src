@@ -55,8 +55,7 @@ package net.wg.gui.prebattle.invites
       
       private function handleSearchUsers(param1:ButtonEvent = null) : void
       {
-         var _loc2_:String = null;
-         _loc2_ = StringUtils.trim(this.nameInput.text);
+         var _loc2_:String = StringUtils.trim(this.nameInput.text);
          if(_loc2_ == null)
          {
             return;

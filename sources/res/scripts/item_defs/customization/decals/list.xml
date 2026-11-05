@@ -18328,6 +18328,24 @@
 			<userString>#vehicle_customization:inscription/special/special_883</userString>
 			<mirror>false</mirror>
 		</decal>
+		<decal>
+			<id>1372</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_888.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_888</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1373</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_889.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_889</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1374</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_890.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_890</userString>
+			<mirror>false</mirror>
+		</decal>
 		<name>BattlePass 2026</name>
 		<type>INSCRIPTION</type>
 	</itemGroup>

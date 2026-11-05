@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/normal/lod1/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.826132 -0.831802 -3.384510</min>
+		<max>1.826092 0.564631 4.161868</max>
+	</visibilityBox>
+</root>
