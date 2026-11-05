@@ -12,7 +12,7 @@ from open_bundle.gui.constants import OPEN_BUNDLE_ENTRY_POINT_NAME
 from open_bundle.gui.impl.lobby.tooltips.event_banner_tooltip import EventBannerTooltip
 from open_bundle.gui.shared.event_dispatcher import showOpenBundleMainView
 from open_bundle.helpers.account_settings import isEntryPointShown
-from open_bundle.helpers.resources import getBannerImagesPath, getTextResource
+from open_bundle.helpers.resources import getBannerImagesPath, getDefaultTextResource, getTextResource
 from open_bundle.skeletons.open_bundle_controller import IOpenBundleController
 from shared_utils import findFirst
 if typing.TYPE_CHECKING:
@@ -117,7 +117,7 @@ class OpenBundleEventBanner(StandardEventBanner):
 
     def __getText(self, path):
         if self.__bundleID is None:
-            return ''
+            return backport.text(getDefaultTextResource(path)())
         else:
             return backport.text(getTextResource(self.__bundleID, path)())
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB154_FV112_Puncher/normal/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/british/GB154_FV112_Puncher/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.298095 -0.000643 -2.752724</min>
+		<max>1.298095 1.019258 2.813389</max>
+	</visibilityBox>
+</root>

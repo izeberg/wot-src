@@ -1,7 +1,6 @@
 from __future__ import absolute_import, division
 import typing
 from future.utils import viewkeys, viewvalues
-import BigWorld, BattleReplay
 from CurrentVehicle import g_currentVehicle
 from constants import SEASON_NAME_BY_TYPE
 from gui.Scaleform.locale.RES_ICONS import RES_ICONS
@@ -233,10 +232,7 @@ class CarouselDataProvider(SortableDAAPIDataProvider):
             isVehicleRemoved = not set(vehiclesCDs or ()).issubset(viewkeys(newVehiclesCollection))
             isVehicleAdded = not set(vehiclesCDs or ()).issubset(oldVehiclesCDs)
             if isFullResync or isVehicleAdded or isVehicleRemoved:
-                if BattleReplay.isPlaying():
-                    BigWorld.callback(0.1, self.buildList)
-                else:
-                    self.buildList()
+                self.buildList()
             else:
                 self._updateVehicleItems(newVehiclesCollection.values(), forceUpdate)
             return

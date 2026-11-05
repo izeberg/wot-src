@@ -12,6 +12,7 @@ from comp7_light_constants import ARENA_GUI_TYPE, GameSeasonType
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.override_scaleform_views_manager import g_overrideScaleFormViewsConfig
 from gui.prb_control.prb_utils import initGuiTypes
+from gui.shared.system_factory import registerTeamVoipSupport
 _LOBBY_EXT_PACKAGES = [
  'comp7_light.gui.impl.lobby.hangar',
  'comp7_light.gui.impl.lobby.battle_results']
@@ -246,6 +247,7 @@ def preInit():
     registerComp7LightLobby()
     registerComp7LightOthersPrbParams()
     registerComp7LightBattle()
+    registerTeamVoipSupport(ARENA_GUI_TYPE.COMP7_LIGHT, True)
 
 
 def init():

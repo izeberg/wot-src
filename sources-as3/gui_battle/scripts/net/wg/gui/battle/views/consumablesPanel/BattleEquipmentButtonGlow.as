@@ -30,6 +30,8 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private static const SHOW_GLOW_HIDE_NO_HOT_KEY_STATE:String = "hideNoHotKey";
       
+      private static const IDLE_FRAME:int = 1;
+      
       private static const RED_TEXT_COLOR:uint = 16768409;
       
       private static const GREEN_TEXT_COLOR:uint = 11854471;
@@ -72,6 +74,10 @@ package net.wg.gui.battle.views.consumablesPanel
       
       public function hideGlow(param1:Boolean = true) : void
       {
+         if(currentFrame == IDLE_FRAME)
+         {
+            return;
+         }
          if(param1)
          {
             gotoAndPlay(SHOW_GLOW_HIDE_STATE);

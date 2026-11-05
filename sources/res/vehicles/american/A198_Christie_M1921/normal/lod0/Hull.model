@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A198_Christie_M1921/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.287000 -0.709183 -2.759843</min>
+		<max>1.287000 1.296494 1.962450</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A198_Christie_M1921/normal/lod0/Hull</nodefullVisual>
+</root>

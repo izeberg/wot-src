@@ -503,7 +503,7 @@ class VehicleMarkerTargetPlugin(MarkerPlugin, IArenaVehiclesController):
         if vehicleID is not None and vehicleID != 0:
             self.__addAutoAimMarker(vehicleID)
         else:
-            self._hideAllMarkers()
+            self._hideAllMarkers(event)
         return
 
     def _addMarker(self, vehicleID):

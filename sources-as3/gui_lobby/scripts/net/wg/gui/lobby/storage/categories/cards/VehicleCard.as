@@ -73,6 +73,7 @@ package net.wg.gui.lobby.storage.categories.cards
          this.tradeTitleTF.autoSize = TextFieldAutoSize.LEFT;
          this.tradeTitleTF.wordWrap = false;
          this.tradeTitleTF.text = STORAGE.CARD_VEHICLE_TRADEOFFPRICELABEL;
+         this.tradePrice.mouseEnabled = this.tradePrice.mouseChildren = false;
          this.infoImg.mouseEnabled = this.infoImg.mouseChildren = false;
          this.infoImg.addEventListener(Event.CHANGE,this.onInfoImgCompleteHandler);
       }

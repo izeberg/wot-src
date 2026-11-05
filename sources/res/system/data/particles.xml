@@ -3178,11 +3178,15 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/flare_01.dds</texture>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_h24_winter.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/Glow_white.dds</texture>
+			<texture>particles/content_deferred/PFX_textures/eff_dog_hair.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/smoke.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_movement_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand.eff</fn_effect_bin>
@@ -3483,6 +3487,12 @@
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_start.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_109_Celestial_Bell/cus_109_wave.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_109_Celestial_Bell/Cus_109_wave.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Pets/d_shepherd_fur.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/PetSystem/d_shepherd_fur.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Pets/d_shepherd_drools.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/PetSystem/d_shepherd_drools.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Pets/d_shepherd_ground_dust.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/PetSystem/d_shepherd_ground_dust.vfx</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/customization/cus_111_oldchina_coin.visual</preloadVisual>
 		<fn_effect_bin>particles/3D_Customization/Cus_111_Celestial_Chest/cus_111_chest_hit.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_111_Celestial_Chest/cus_111_chest_hit.vfx</fn_effect_bin>
@@ -3777,10 +3787,6 @@
 		<fn_effect_bin>particles/3D_Customization/Cus_304_BP21_Demon/Cus_304_BP21_demon_eye.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_304_BP21_Demon/Cus_304_BP21_Demon_charge.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_304_BP21_Demon/Cus_304_BP21_demon_eye.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/fort_rush/flare_red_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/fort_rush/Flare_red_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/fort_rush/flare_green_03.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/fort_rush/Flare_green_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/GB130_FV225_Collector_DMC_3Dst/GB130_FV225_Collector_DMC_3Dst_saw_sparks.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/GB130_FV225_Collector_DMC_3Dst/GB130_FV225_Collector_DMC_3Dst_saw_sparks.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>

@@ -116,8 +116,6 @@ class W2GTGameController(IW2GTGameController):
                 isSuccess = self.__validateResponse(data)
                 if isSuccess:
                     self.__addToCache(key, eTag, data)
-            else:
-                _logger.warning('Failed getting w2gt data. Code: %s.', responseCode)
         raise AsyncReturn(_W2gtResponseData(isSuccess, responseCode, data))
         return
 
@@ -130,11 +128,11 @@ class W2GTGameController(IW2GTGameController):
             ctx = W2gtCtx(self.__clientVersion, eTag, geometryName, gameplayType, vehRole, vehLevel, team)
             response = yield self.__webCtrl.sendRequest(ctx=ctx)
             if not response.isSuccess():
-                _logger.debug('W2GT service is unavailable. Data: %s.', response.getData())
+                _logger.info('Request to W2GT service failed. Data: %s, Code: %s', response.getData(), response.getCode())
                 response = WgcgRequestResponse(ResponseCodes.W2GT_ERROR)
         else:
             response = WgcgRequestResponse(ResponseCodes.WGCG_ERROR)
-            _logger.info('Web controller is unavailable')
+            _logger.info('Web controller is unavailable. Can not request to W2GT')
         callback(response)
 
     def __validateResponse(self, data):

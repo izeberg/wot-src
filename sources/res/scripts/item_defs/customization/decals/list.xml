@@ -1810,6 +1810,13 @@
 			<tags>styleOnly</tags>
 			<mirror>true</mirror>
 		</decal>
+		<decal>
+			<id>1365</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_75.dds</texture>
+			<userString>#vehicle_customization:emblem/cool/sticker_75</userString>
+			<tags>hiddenInUI styleOnly</tags>
+			<mirror>true</mirror>
+		</decal>
 		<name>Girls und Panzer</name>
 		<type>EMBLEM</type>
 		<vehicleFilter>
@@ -9538,6 +9545,25 @@
 		<type>EMBLEM</type>
 	</itemGroup>
 	<itemGroup>
+		<userString>#vehicle_customization:emblem/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1366</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_887.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_887</userString>
+			<mirror>true</mirror>
+		</decal>
+		<name>Girls und Panzer</name>
+		<type>EMBLEM</type>
+	</itemGroup>
+	<itemGroup>
 		<name>Fortrush 2026 Emblem</name>
 		<type>EMBLEM</type>
 		<userString>#vehicle_customization:emblem/special</userString>
@@ -9556,6 +9582,25 @@
 			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_886.dds</texture>
 			<userString>#vehicle_customization:emblem/special/sticker_886</userString>
 		</decal>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:emblem/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1392</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_894.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_894</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>CN</name>
+		<type>EMBLEM</type>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:emblem/IGR</userString>
@@ -18319,6 +18364,13 @@
 			<id>1356</id>
 			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_880.dds</texture>
 			<userString>#vehicle_customization:inscription/special/special_880</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly</tags>
+		</decal>
+		<decal>
+			<id>1394</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_907.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_907</userString>
 			<mirror>false</mirror>
 			<tags>styleOnly</tags>
 		</decal>

@@ -23,8 +23,8 @@ def getViewSettings():
     from gui.Scaleform.daapi.view.battle.classic import battle_end_warning_panel
     from gui.Scaleform.daapi.view.battle.shared import quest_progress_top_view
     from gui.Scaleform.daapi.view.battle.shared import timers_panel
-    from gui.Scaleform.daapi.view.battle.shared import damage_panel
     from gui.Scaleform.daapi.view.battle.shared import indicators
+    from last_stand.gui.scaleform.daapi.view.battle import damage_panel
     from last_stand.gui.scaleform.daapi.view.battle.phase_indicator import LSPhaseIndicator
     from last_stand.gui.scaleform.daapi.view.battle.status_notifications.panel import LSStatusNotificationTimerPanel
     from last_stand.gui.scaleform.daapi.view.battle import damage_log_panel
@@ -53,7 +53,7 @@ def getViewSettings():
      ComponentSettings(BATTLE_VIEW_ALIASES.FRAG_CORRELATION_BAR, frag_correlation_bar.FragCorrelationBar, ScopeTemplates.DEFAULT_SCOPE),
      ComponentSettings(LS_BATTLE_VIEW_ALIASES.LS_PLAYERS_PANEL, LSPlayersPanel, ScopeTemplates.DEFAULT_SCOPE),
      ComponentSettings(BATTLE_VIEW_ALIASES.MINIMAP, LSMinimapComponent, ScopeTemplates.DEFAULT_SCOPE),
-     ComponentSettings(BATTLE_VIEW_ALIASES.DAMAGE_PANEL, damage_panel.DamagePanel, ScopeTemplates.DEFAULT_SCOPE),
+     ComponentSettings(BATTLE_VIEW_ALIASES.DAMAGE_PANEL, damage_panel.LSDamagePanel, ScopeTemplates.DEFAULT_SCOPE),
      ComponentSettings(BATTLE_VIEW_ALIASES.TIMERS_PANEL, timers_panel.TimersPanel, ScopeTemplates.DEFAULT_SCOPE),
      ComponentSettings(BATTLE_VIEW_ALIASES.BATTLE_END_WARNING_PANEL, battle_end_warning_panel.BattleEndWarningPanel, ScopeTemplates.DEFAULT_SCOPE),
      ComponentSettings(BATTLE_VIEW_ALIASES.CONSUMABLES_PANEL, consumables_panel.LSConsumablesPanel, ScopeTemplates.DEFAULT_SCOPE),

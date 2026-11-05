@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R222_KV_90/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.910001 -0.000003 -3.867132</min>
+		<max>1.910001 1.263661 3.783242</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R222_KV_90/normal/lod0/Chassis</nodefullVisual>
+</root>

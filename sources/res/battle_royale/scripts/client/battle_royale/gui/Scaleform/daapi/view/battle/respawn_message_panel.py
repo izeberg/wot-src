@@ -52,7 +52,7 @@ class RespawnMessagePanel(BRRespawnMessagePanelMeta, ISpawnListener, IArenaPerio
             if vInfoVO.vehicleID in self.__vehicleIDs:
                 _logger.debug('invalidateVehicleStatus %s, %s', vInfoVO.vehicleID, vInfoVO.isAlive())
                 vehicle = BigWorld.player().getVehicleAttached()
-                if vehicle.isAlive() and not vInfoVO.isAlive() and self.__lives == 0:
+                if vehicle is not None and vehicle.isAlive() and not vInfoVO.isAlive() and self.__lives == 0:
                     _logger.debug('formatPickUpSphereMessage')
                     message = formatPickUpSphereMessage(self.TIME_TO_SHOW, self.RESPAWN_DELAY_BEFORE_SHOW)
                     self.__addMessage(message)

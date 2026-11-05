@@ -1012,6 +1012,36 @@
 			<texture>gui/maps/vehicles/repaints/czech_color_04.png</texture>
 			<userString>#vehicle_customization:repaint/bump_in_the_night</userString>
 		</paint>
+		<paint>
+			<id>723</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_29.png</texture>
+			<userString>#vehicle_customization:repaint/jingle_shells</userString>
+			<color>191 191 191 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>742</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_20.png</texture>
+			<userString>#vehicle_customization:repaint/disco_camo</userString>
+			<color>17 17 20 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<tags>hiddenInUI</tags>
+		</paint>
 	</itemGroup>
 	<itemGroup>
 		<name>PUB West German Reunification 2025</name>

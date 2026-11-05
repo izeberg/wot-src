@@ -561,7 +561,7 @@ package net.wg.frontline.gui.battle.views
       
       private function onBattleMessengerRequestFocusHandler(param1:FocusRequestEvent) : void
       {
-         setFocus(param1.focusContainer.getComponentForFocus());
+         setBattleMessengerFocus(param1.focusContainer.getComponentForFocus());
          if(getChildIndex(this.battleMessenger) < getChildIndex(this.epicRespawnView))
          {
             swapChildren(this.battleMessenger,this.epicRespawnView);

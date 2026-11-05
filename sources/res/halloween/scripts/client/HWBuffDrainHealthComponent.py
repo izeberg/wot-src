@@ -1,5 +1,0 @@
-from __future__ import absolute_import
-from HWBuffShowCannotBeDamagedMarker import HWBuffShowCannotBeDamagedMarker
-
-class HWBuffDrainHealthComponent(HWBuffShowCannotBeDamagedMarker):
-    pass

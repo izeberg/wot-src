@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G201_Panzerjager_I_mit_7_5_cm/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/german/G201_Panzerjager_I_mit_7_5_cm/normal/lod2/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.017961 -0.421111 -2.192507</min>
+		<max>1.014680 0.884333 2.222261</max>
+	</visibilityBox>
+</root>

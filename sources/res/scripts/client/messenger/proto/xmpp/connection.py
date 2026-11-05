@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 import random, BigWorld
-from constants import TOKEN_TYPE
+from constants import TOKEN_TYPE, AUTH_TOKEN_REQUEST_TIMEOUT
 from adisp import adisp_process
 from gui.shared.utils import backoff, getPlayerDatabaseID
 from gui.shared.utils.requesters import TokenRequester, TokenResponse
@@ -8,6 +8,7 @@ from helpers import dependency
 from messenger import g_settings
 from messenger.m_constants import PROTO_TYPE
 from messenger.proto.events import g_messengerEvents
+from messenger.proto.xmpp.extensions.ping import PingQuery
 from messenger.proto.xmpp.gloox_constants import DISCONNECT_REASON, CONNECTION_IMPL_TYPE, GLOOX_EVENT
 from messenger.proto.xmpp.gloox_wrapper import ClientEventsHandler
 from messenger.proto.xmpp.log_output import CLIENT_LOG_AREA, g_logOutput
@@ -21,6 +22,10 @@ _BACK_OFF_EXP_RANDOM_FACTOR = 1
 _BACK_OFF_MIN_RANDOM = 20
 _BACK_OFF_MAX_RANDOM = 30
 _MAX_REQ_TOKEN_TRIES = 4
+_REQ_TOKEN_TIMEOUT = AUTH_TOKEN_REQUEST_TIMEOUT + 5.0
+_CONNECTING_TIMEOUT = 60.0
+_PING_INTERVAL = 60.0
+_PING_TIMEOUT = 30.0
 _NUMBER_OF_ITEMS_IN_SAMPLE = 2
 
 def _makeSample(*args):
@@ -121,6 +126,9 @@ class ConnectionHandler(ClientEventsHandler):
         self.__tokenRequester = TokenRequester(TOKEN_TYPE.XMPPCS, ChatTokenResponse, False)
         self.__reconnectCallbackID = None
         self.__reqTokenCallbackID = None
+        self.__connectingWatchdogID = None
+        self.__pingCallbackID = None
+        self.__pingID = None
         self.__connectionsInfo = ConnectionsInfo()
         self.__reqTokenBackOff = backoff.ExpBackoff(self.__tokenRequester.getReqCoolDown(), _BACK_OFF_MAX_DELAY, _BACK_OFF_MODIFIER, _BACK_OFF_EXP_RANDOM_FACTOR)
         return
@@ -145,6 +153,8 @@ class ConnectionHandler(ClientEventsHandler):
         self.__reqTokenBackOff.reset()
         self.__cancelReconnectCallback()
         self.__cancelReqTokenCallback()
+        self.__cancelConnectingWatchdog()
+        self.__stopPing()
         self.__tokenRequester.clear()
         g_settings.server.XMPP.clear()
 
@@ -156,17 +166,21 @@ class ConnectionHandler(ClientEventsHandler):
         client.registerHandler(GLOOX_EVENT.CONNECTED, self.__handleConnect)
         client.registerHandler(GLOOX_EVENT.LOGIN, self.__handleLogin)
         client.registerHandler(GLOOX_EVENT.DISCONNECTED, self.__handleDisconnect)
+        client.registerHandler(GLOOX_EVENT.IQ, self.__handleIQ)
 
     def unregisterHandlers(self):
         client = self.client()
         client.unregisterHandler(GLOOX_EVENT.CONNECTED, self.__handleConnect)
         client.unregisterHandler(GLOOX_EVENT.LOGIN, self.__handleLogin)
         client.unregisterHandler(GLOOX_EVENT.DISCONNECTED, self.__handleDisconnect)
+        client.unregisterHandler(GLOOX_EVENT.IQ, self.__handleIQ)
 
     def __doConnect(self):
         client = self.client()
         if not client.isDisconnected():
             g_logOutput.warning(CLIENT_LOG_AREA.CONNECTION, 'Client already is connected(ing)', client.getConnectionAddress(), client.getConnectionState())
+            if client.isConnecting() and self.__connectingWatchdogID is None:
+                self.__loadConnectingWatchdog()
             return
         jid = self.__connectionsInfo.getPlayerFullJID()
         if jid:
@@ -174,12 +188,15 @@ class ConnectionHandler(ClientEventsHandler):
             g_logOutput.debug(CLIENT_LOG_AREA.CONNECTION, 'Connect to XMPP sever', jid, host, port)
             if cType == CONNECTION_IMPL_TYPE.TCP:
                 client.connect(str(jid), host, port)
+                self.__loadConnectingWatchdog()
             elif cType == CONNECTION_IMPL_TYPE.BOSH:
                 client.connectBosh(str(jid), host, port, '/bosh/')
+                self.__loadConnectingWatchdog()
             else:
                 g_logOutput.error(CLIENT_LOG_AREA.CONNECTION, 'This type of connection is not supported', cType)
         else:
             g_logOutput.error(CLIENT_LOG_AREA.CONNECTION, 'JID is empty')
+        return
 
     def __doNextConnect(self):
         self.__reconnectCallbackID = None
@@ -194,10 +211,14 @@ class ConnectionHandler(ClientEventsHandler):
             yield lambda callback: callback(None)
             return
         g_logOutput.debug(CLIENT_LOG_AREA.TOKEN, 'Sends request to SPA')
-        response = yield self.__tokenRequester.request()
+        response = yield self.__tokenRequester.request(timeout=_REQ_TOKEN_TIMEOUT)
         g_logOutput.debug(CLIENT_LOG_AREA.TOKEN, 'Response is received from SPA', response)
+        if self.client() is not client or not client.isConnecting():
+            g_logOutput.warning(CLIENT_LOG_AREA.LOGIN, 'Client is not connecting, response is ignored', client.getConnectionAddress(), client.getConnectionState())
+            return
         if not response:
             g_logOutput.error(CLIENT_LOG_AREA.TOKEN, 'Received chat token is empty')
+            self.__handleTokenError()
             return
         if response.isValid():
             if response.getDatabaseID() == getPlayerDatabaseID():
@@ -205,6 +226,7 @@ class ConnectionHandler(ClientEventsHandler):
                 client.login(response.getCredential())
             else:
                 g_logOutput.error(CLIENT_LOG_AREA.LOGIN, "Player's database ID mismatch", getPlayerDatabaseID())
+                self.__handleTokenError()
         else:
             g_logOutput.warning(CLIENT_LOG_AREA.TOKEN, 'Received chat token is not valid', response)
             self.__handleTokenError()
@@ -226,6 +248,76 @@ class ConnectionHandler(ClientEventsHandler):
             self.__reqTokenCallbackID = None
         return
 
+    def __loadConnectingWatchdog(self):
+        self.__cancelConnectingWatchdog()
+        self.__connectingWatchdogID = BigWorld.callback(_CONNECTING_TIMEOUT, self.__onConnectingWatchdog)
+
+    def __cancelConnectingWatchdog(self):
+        if self.__connectingWatchdogID is not None:
+            BigWorld.cancelCallback(self.__connectingWatchdogID)
+            self.__connectingWatchdogID = None
+        return
+
+    def __onConnectingWatchdog(self):
+        self.__connectingWatchdogID = None
+        client = self.client()
+        if not client or not client.isConnecting():
+            return
+        if self.__tokenRequester.isInProcess() or self.__reqTokenCallbackID is not None:
+            self.__loadConnectingWatchdog()
+            return
+        else:
+            g_logOutput.warning(CLIENT_LOG_AREA.CONNECTION, 'Connection is timed out', client.getConnectionAddress(), client.getConnectionState())
+            client.disconnect()
+            self.__handleDisconnect(DISCONNECT_REASON.OTHER_ERROR, 'Connection is timed out')
+            return
+
+    def __startPing(self):
+        self.__stopPing()
+        self.__pingCallbackID = BigWorld.callback(_PING_INTERVAL, self.__sendPing)
+
+    def __stopPing(self):
+        if self.__pingCallbackID is not None:
+            BigWorld.cancelCallback(self.__pingCallbackID)
+            self.__pingCallbackID = None
+        self.__pingID = None
+        return
+
+    def __sendPing(self):
+        self.__pingCallbackID = None
+        client = self.client()
+        if not client or not client.isConnected():
+            return
+        self.__pingID = client.sendIQ(PingQuery(g_settings.server.XMPP.domain))
+        if not self.__pingID:
+            self.__startPing()
+            return
+        else:
+            self.__pingCallbackID = BigWorld.callback(_PING_TIMEOUT, self.__onPingTimeout)
+            return
+
+    def __onPingTimeout(self):
+        self.__pingCallbackID = BigWorld.callback(0.0, self.__onPingTimeoutConfirmed)
+
+    def __onPingTimeoutConfirmed(self):
+        self.__pingCallbackID = None
+        if self.__pingID is None:
+            return
+        else:
+            self.__pingID = None
+            client = self.client()
+            if not client or not client.isConnected():
+                return
+            g_logOutput.warning(CLIENT_LOG_AREA.CONNECTION, 'Ping is timed out', client.getConnectionAddress())
+            client.disconnect()
+            self.__handleDisconnect(DISCONNECT_REASON.OTHER_ERROR, 'Ping is timed out')
+            return
+
+    def __handleIQ(self, iqID, iqType, pyGlooxTag):
+        if self.__pingID is not None and iqID == self.__pingID:
+            self.__startPing()
+        return
+
     def __invokeConnectFailedEvent(self, tries):
         host, port = self.__connectionsInfo.getLastAddress()
         g_messengerEvents.onPluginConnectFailed(PROTO_TYPE.XMPP, (host, port), tries)
@@ -238,6 +330,8 @@ class ConnectionHandler(ClientEventsHandler):
 
     def __handleLogin(self):
         g_logOutput.debug(CLIENT_LOG_AREA.LOGIN, 'Client is login')
+        self.__cancelConnectingWatchdog()
+        self.__startPing()
         self.__connectionsInfo.clear()
         self.__reqTokenBackOff.reset()
         g_messengerEvents.onPluginConnected(PROTO_TYPE.XMPP)
@@ -250,6 +344,8 @@ class ConnectionHandler(ClientEventsHandler):
         g_logOutput.debug(CLIENT_LOG_AREA.CONNECTION, 'Client is disconnected')
         self.__cancelReconnectCallback()
         self.__cancelReqTokenCallback()
+        self.__cancelConnectingWatchdog()
+        self.__stopPing()
         if reason == DISCONNECT_REASON.AUTHENTICATION:
             self.__tokenRequester.clear()
         if self.isInGameServer() and reason != DISCONNECT_REASON.BY_REQUEST:

@@ -1145,7 +1145,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user secret testTank private</tags>
+		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user secret testTank private regular_battles</tags>
 		<level>8</level>
 	</A12_T32_M>
 	<A158_T832>
@@ -2216,7 +2216,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>mediumTank role_MT_universal HD improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user secret testTank</tags>
+		<tags>mediumTank role_MT_universal HD improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user secret testTank regular_battles</tags>
 		<level>8</level>
 	</A186_XM94_Shadow>
 	<A187_Ares_75>
@@ -2303,6 +2303,21 @@
 		<tags>mediumTank role_MT_support HD mediumTank3 improvedVentilation_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals</tags>
 		<level>9</level>
 	</A197_Jezevec>
+	<A198_Christie_M1921>
+		<id>280</id>
+		<userString>#usa_vehicles:A198_Christie_M1921</userString>
+		<description>#usa_vehicles:A198_Christie_M1921_descr</description>
+		<shortUserString>#usa_vehicles:A198_Christie_M1921_short</shortUserString>
+		<shortDescriptionSpecial>#usa_vehicles:A198_Christie_M1921_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#usa_vehicles:A198_Christie_M1921_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>AT-SPG HD improvedVentilation_class3_user extraHealthReserve_class3_user secret testTank regular_battles</tags>
+		<level>2</level>
+	</A198_Christie_M1921>
 	<A85_T110E3_7x7>
 		<id>279</id>
 		<userString>#usa_vehicles:A85_T110E3_7x7</userString>
@@ -2347,18 +2362,4 @@
 		<tags>AT-SPG role_ATSPG_assault HD heavyAT-SPG siegeMode improvedVentilation_class1_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals private secret cannot_be_sold clanWarsBattles special lockCrew lockCrewSkills lockOptionalDevices</tags>
 		<level>11</level>
 	</A195_Gorilla_7x7>
-	<A69_T110E5_FR>
-		<id>282</id>
-		<userString>#usa_vehicles:A69_T110E5_FR</userString>
-		<shortUserString>#usa_vehicles:A69_T110E5_FR_short</shortUserString>
-		<description>#usa_vehicles:A69_T110E5_FR_descr</description>
-		<price>
-			100
-			<gold/>
-		</price>
-		<notInShop>true</notInShop>
-		<cannotBeBought>true</cannotBeBought>
-		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals private secret cannot_be_sold special lockOptionalDevices lockCrewSkills lockCrew event_battles fort_rush</tags>
-		<level>10</level>
-	</A69_T110E5_FR>
 </root>

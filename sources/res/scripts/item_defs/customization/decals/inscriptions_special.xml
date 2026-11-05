@@ -6449,6 +6449,13 @@
 			<mirror>false</mirror>
 			<tags>styleOnly</tags>
 		</decal>
+		<decal>
+			<id>1394</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_907.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_907</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly</tags>
+		</decal>
 		<name>OLS</name>
 		<type>INSCRIPTION</type>
 	</itemGroup>

@@ -50,6 +50,7 @@ class StrategicCamera(CameraWithSettings, CallbackDelayer):
         self.__activeDistRangeSettings = None
         self.__dynamicCfg = CameraDynamicConfig()
         self.__cameraYaw = 0.0
+        self.__cameraTiltTan = 0.0
         self.__switchers = CameraSwitcherCollection(cameraSwitchers=[
          CameraSwitcher(switchType=SwitchTypes.FROM_TRANSITION_DIST_AS_MIN, switchToName=CTRL_MODE_NAME.ARTY, switchToPos=1.0)], isEnabled=True)
         self._readConfigs(dataSec)
@@ -125,7 +126,7 @@ class StrategicCamera(CameraWithSettings, CallbackDelayer):
             self.__camDist = math_utils.clamp(self.__getTransitionCamDist(), maxPivotHeight, self.__camDist)
         self.__saveDist = saveDist
         self.__camDist = math_utils.clamp(0, maxPivotHeight, self.__camDist)
-        self.__cam.pivotPosition = Math.Vector3(0.0, self.__camDist, 0.0)
+        self.__cam.pivotPosition = self.__getPivotPosition(self.__camDist)
         self.__scrollSmoother.start(self.__camDist)
         self.__enableSwitchers()
         camTarget = Math.MatrixProduct()
@@ -307,7 +308,7 @@ class StrategicCamera(CameraWithSettings, CallbackDelayer):
         self.__scrollSmoother.moveTo(self.__camDist, scrollLimits)
         currentCamDist = self.__scrollSmoother.update(deltaTime)
         camDistWithSmoothing = currentCamDist + self.__smoothingPivotDelta - self.__aimingSystem.heightFromPlane
-        self.__cam.pivotPosition = Math.Vector3(0.0, camDistWithSmoothing, 0.0)
+        self.__cam.pivotPosition = self.__getPivotPosition(camDistWithSmoothing)
         if self.__onChangeControlMode is not None and self.__switchers.needToSwitch(self.__dxdydz.z, self.__camDist, 0, maxPivotHeight, transitionDist):
             self.__onChangeControlMode(*self.__switchers.getSwitchParams())
         if not self.__transitionEnabled and self.__camDist + TRANSITION_DIST_HYSTERESIS >= transitionDist:
@@ -363,6 +364,11 @@ class StrategicCamera(CameraWithSettings, CallbackDelayer):
         self.__cameraYaw = decimal_round(self.aimingSystem.getCamYaw(), _CAM_YAW_ROUND)
         srcMat = math_utils.createRotationMatrix((self.__cameraYaw, pitch, 0.0))
         self.__cam.source = srcMat
+        self.__cameraTiltTan = math.tan(0.5 * math.pi + pitch)
+
+    def __getPivotPosition(self, pivotHeight):
+        cameraHeight = self.__aimingSystem.height + pivotHeight
+        return Math.Vector3(0.0, pivotHeight, -cameraHeight * self.__cameraTiltTan)
 
     def __getTransitionCamDist(self):
         minDist, maxDist = self.__getDistRange()

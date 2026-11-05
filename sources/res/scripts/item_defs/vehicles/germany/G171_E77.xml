@@ -3392,6 +3392,13 @@
 					<enableVisTunnel>true</enableVisTunnel>
 					<hangerId>2</hangerId>
 				</slot>
+				<slot>
+					<slotType>sequence</slotType>
+					<slotId>38002</slotId>
+					<position>0 0 0</position>
+					<rotation>0 0 0</rotation>
+					<attachNode>turret</attachNode>
+				</slot>
 			</customizationSlots>
 			<customization>
 				<customizableVehicleAreas>

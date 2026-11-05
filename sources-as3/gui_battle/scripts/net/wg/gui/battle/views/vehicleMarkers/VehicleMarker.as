@@ -132,6 +132,8 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       private static const LABEL_ALLY_HOVER_NO_PING:String = "allyHoverNoPing";
       
+      private static const HP_GLOW_NAME:String = "hpGlow";
+      
       private static const SCHEME_NAME_SQUADMAN:String = "vm_squadman";
       
       private static const LEVEL_ICON_ALPHA_DESTROYED:Number = 0.4;
@@ -1170,6 +1172,18 @@ package net.wg.gui.battle.views.vehicleMarkers
             _loc4_ = !!_loc3_ ? LABEL_ALLY_HOVER : LABEL_ALLY_HOVER_NO_PING;
          }
          this.vehicleMarkerHoverMC.gotoAndStop(_loc4_);
+         this.updateHpGlow();
+      }
+      
+      private function updateHpGlow() : void
+      {
+         var _loc1_:DisplayObject = this.vehicleMarkerHoverMC.getChildByName(HP_GLOW_NAME);
+         if(_loc1_ == null)
+         {
+            return;
+         }
+         _loc1_.visible = this.hpField.visible || this.healthBar.visible;
+         _loc1_.y = (this.hpField.y + (this.hpField.height >> 1) - this.vehicleMarkerHoverMC.y) / this.vehicleMarkerHoverMC.scaleY;
       }
       
       private function updateShadow() : void

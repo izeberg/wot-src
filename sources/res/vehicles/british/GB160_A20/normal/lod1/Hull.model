@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/british/GB160_A20/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.460139 -1.222209 -4.548222</min>
+		<max>1.461879 0.410450 3.638227</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB160_A20/normal/lod1/Hull</nodefullVisual>
+</root>

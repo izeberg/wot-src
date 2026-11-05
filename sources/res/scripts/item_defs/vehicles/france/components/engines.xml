@@ -104,6 +104,7 @@
 		<Maybach_Mb_IV_Zeppelin_x2>119</Maybach_Mb_IV_Zeppelin_x2>
 		<Moteur_EPC_version_S5>120</Moteur_EPC_version_S5>
 		<Hispano_ERAC>122</Hispano_ERAC>
+		<Caterpillar>123</Caterpillar>
 		<SOFAM_Type_4_GSr>124</SOFAM_Type_4_GSr>
 		<Maybach_HL_230P45_BPXIV>125</Maybach_HL_230P45_BPXIV>
 		<Moteur_moderne_3M_27_oie>126</Moteur_moderne_3M_27_oie>
@@ -713,6 +714,26 @@
 			<rpm_min>375</rpm_min>
 			<rpm_max>2075</rpm_max>
 		</MTU_880_10>
+		<Caterpillar>
+			<userString>#france_vehicles:Caterpillar</userString>
+			<tags>diesel</tags>
+			<level>9</level>
+			<price>90000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_patria_pc</wwsoundPC>
+			<wwsoundNPC>eng_patria_npc</wwsoundNPC>
+			<power>500</power>
+			<weight>770</weight>
+			<maxHealth>310</maxHealth>
+			<maxRegenHealth>155</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<fireStartingChance>
+				0.15
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>486</rpm_min>
+			<rpm_max>3373</rpm_max>
+		</Caterpillar>
 		<Detroit_Diesel_6V53T_S>
 			<userString>#france_vehicles:Detroit_Diesel_6V53T_S</userString>
 			<shortUserString>#france_vehicles:Detroit_Diesel_6V53T_S_short</shortUserString>

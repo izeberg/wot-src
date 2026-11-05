@@ -1,24 +1,32 @@
 from __future__ import absolute_import
+import typing
 from collections import namedtuple
-from typing import Dict, Optional, Tuple
 from helpers import dependency
 from items import vehicles
 from gui.impl import backport
+from gui.impl.backport import TooltipData
 from gui.impl.gen import R
-from gui.impl.gen.view_models.views.lobby.vehicle_hub.views.sub_models.veh_skill_tree.node_model import Type, Status, NodeModel
+from gui.impl.gen.view_models.views.lobby.vehicle_hub.views.sub_models.veh_skill_tree.node_model import Type, Status
 from gui.impl.gen.view_models.views.lobby.vehicle_hub.views.sub_models.veh_skill_tree.rewards_slot_model import RewardsSlotModel
 from gui.impl.gen.view_models.views.lobby.veh_skill_tree.tooltips.prestige_reward_tooltip_model import RewardsSlotTooltipModel
 from frameworks.wulf.view.array import fillStringsArray
+from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.shared.gui_items import GUI_ITEM_TYPE, getItemTypeID
-from gui.server_events.bonuses import getNonQuestBonuses, CustomizationsBonus
-from gui.shared.gui_items import Vehicle
+from gui.shared.gui_items.customization import CustomizationTooltipContext
+from gui.server_events.bonuses import getNonQuestBonuses
 from gui.shared.gui_items.Vehicle import getNationLessName
 from gui.shared.missions.packers.bonus import CustomizationBonusUIPacker, BonusUIPacker
 from gui.shared.missions.packers.bonus import getDefaultBonusPackersMap
-from gui.veh_post_progression.models.progression_step import PostProgressionStepItem
 from post_progression_common import VehicleState
-from prestige_system.prestige_milestones_common import PrestigeLevelType, MilestonesType
 from skeletons.gui.shared import IItemsCache
+if typing.TYPE_CHECKING:
+    from typing import Dict, List, Optional, Tuple
+    from gui.impl.gen.view_models.views.lobby.vehicle_hub.views.sub_models.veh_skill_tree.node_model import NodeModel
+    from gui.server_events.bonuses import CustomizationsBonus
+    from gui.shared.gui_items import Vehicle
+    from gui.shared.gui_items.customization.c11n_items import Customization
+    from gui.veh_post_progression.models.progression_step import PostProgressionStepItem
+    from prestige_system.prestige_milestones_common import PrestigeLevelType, MilestonesType
 PrestigeBonusContext = namedtuple('PrestigeBonusContext', [
  'vehCD',
  'level',
@@ -57,6 +65,19 @@ class PrestigeCustomizationBonusUIPacker(CustomizationBonusUIPacker):
                 elif itemTypeID == GUI_ITEM_TYPE.STYLE:
                     model.setIcon(('style_{}').format(bonus.getC11nItem(item).id))
             return model
+
+    @classmethod
+    def _getToolTip(cls, bonus):
+        vehCD = bonus.getContext().vehCD
+        return [ cls._getToolTipData(bonus.getC11nItem(item), vehCD) for item in bonus.getCustomizations() if item is not None
+               ]
+
+    @classmethod
+    def _getToolTipData(cls, itemCustomization, vehCD=-1):
+        if itemCustomization.itemTypeID != GUI_ITEM_TYPE.STAT_TRACKER:
+            return super(PrestigeCustomizationBonusUIPacker, cls)._getToolTipData(itemCustomization)
+        else:
+            return TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.TECH_CUSTOMIZATION_ITEM_AWARD, specialArgs=CustomizationTooltipContext(itemCD=itemCustomization.intCD, vehicleIntCD=vehCD))
 
     @staticmethod
     def getTextInfoByItemTypeID(itemTypeID):

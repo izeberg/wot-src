@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G204_PzVI_Tiger_P_CFE_A/_skins/G204_PzVI_Tiger_P_CFE_A_3Dst/crash/lod0/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.192920 -0.017564 -1.894395</min>
+		<max>1.192920 1.663661 1.366661</max>
+	</visibilityBox>
+	<parent>vehicles/german/G204_PzVI_Tiger_P_CFE_A/_skins/G204_PzVI_Tiger_P_CFE_A_3Dst/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+</root>

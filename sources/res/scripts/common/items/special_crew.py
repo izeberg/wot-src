@@ -94,6 +94,10 @@ def isErwinCrewCompleted(vehicleType, tankmenGroups):
     return _isCrewCompleted(vehicleType, tankmenGroups, SPECIAL_CREW_TAG.HIPPO_CREW)
 
 
+def isNakajimaCrewCompleted(vehicleType, tankmenGroups):
+    return _isCrewCompleted(vehicleType, tankmenGroups, SPECIAL_CREW_TAG.LEOPON_CREW)
+
+
 def isYhaCrewCompleted(vehicleType, tankmenGroups):
     return _isCrewCompleted(vehicleType, tankmenGroups, SPECIAL_CREW_TAG.YHA)
 

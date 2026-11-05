@@ -2,6 +2,8 @@
 <root>
 	<forward>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_AF_001_VHouse_Ruins_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_EU_210_Canopy_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_EU_210_Canopy_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_EU_249_Shed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_UNI_006_KitCrashFactory_Roof_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_UNI_712_LittleWoodShed.vfx</fn_effect_bin>
@@ -86,6 +88,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envEU_014_StreetSigns_08_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envEU_014_StreetSigns_08_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envSU_007_RiverTrunks1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envSU_83_03_OldFurniture_group_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envSU_83_03_OldFurniture_group_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envSU_83_05_Scaffold1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_fuel_env418_OldGMercedes.vfx</fn_effect_bin>
@@ -156,6 +159,8 @@
 		<fn_effect_bin>particles/content_forward/PFX/Sparks/sparks_env_med.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Sparks/sparks_env_sml.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_AF_001_VHouse_Ruins_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/buildings/hd_bld_EU_210_Canopy_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/buildings/hd_bld_EU_210_Canopy_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_EU_249_Shed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_UNI_006_KitCrashFactory_Roof_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_UNI_712_LittleWoodShed.eff</fn_effect_bin>
@@ -252,6 +257,7 @@
 		<fn_effect_bin>particles/Environment/objects/inf_envEU_014_StreetSigns_08_fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envEU_014_StreetSigns_08_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envSU_007_RiverTrunks1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_envSU_83_03_OldFurniture_group_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envSU_83_03_OldFurniture_group_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envSU_83_05_Scaffold1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_env418_OldGMercedes2.eff</fn_effect_bin>
@@ -340,6 +346,8 @@
 	</forward>
 	<deferred>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_AF_001_VHouse_Ruins_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_EU_210_Canopy_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_EU_210_Canopy_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_EU_249_Shed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_UNI_006_KitCrashFactory_Roof_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_UNI_712_LittleWoodShed.vfx</fn_effect_bin>
@@ -438,6 +446,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envEU_014_StreetSigns_08_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envEU_014_StreetSigns_08_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envSU_007_RiverTrunks1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envSU_83_03_OldFurniture_group_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envSU_83_03_OldFurniture_group_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envSU_83_05_Scaffold1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_fuel_env418_OldGMercedes.vfx</fn_effect_bin>
@@ -508,6 +517,8 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Sparks/sparks_env_med.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Sparks/sparks_env_sml.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_AF_001_VHouse_Ruins_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/buildings/hd_bld_EU_210_Canopy_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/buildings/hd_bld_EU_210_Canopy_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_EU_249_Shed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_UNI_006_KitCrashFactory_Roof_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/hd_bld_UNI_712_LittleWoodShed.eff</fn_effect_bin>
@@ -604,6 +615,7 @@
 		<fn_effect_bin>particles/Environment/objects/inf_envEU_014_StreetSigns_08_fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envEU_014_StreetSigns_08_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envSU_007_RiverTrunks1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_envSU_83_03_OldFurniture_group_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envSU_83_03_OldFurniture_group_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envSU_83_05_Scaffold1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_fuel_env418_OldGMercedes2.eff</fn_effect_bin>

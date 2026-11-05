@@ -13,8 +13,11 @@ from items.utils import getExtraReloadTime
 from shared_utils import CONST_CONTAINER, first
 from debug_utils import LOG_CODEPOINT_WARNING, LOG_ERROR
 from gui.battle_control import avatar_getter
+from gui.battle_control.gui_vehicle_builder import VehicleBuilder
 from gui.battle_control.battle_constants import SHELL_SET_RESULT, CANT_SHOOT_ERROR, CANT_SHOOT_PRIORITIES, BATTLE_CTRL_ID, SHELL_QUANTITY_UNKNOWN
 from gui.battle_control.view_components import ViewComponentsController
+from gui.shared.gui_items import KPI
+from gui.shared.items_parameters.functions import aggregateKpi, kpiFromCrewSkills
 from gui.shared.utils.MethodsRules import MethodsRules
 from gui.shared.utils.decorators import ReprInjector
 from gui.Scaleform.genConsts.AUTOLOADERBOOSTVIEWSTATES import AUTOLOADERBOOSTVIEWSTATES
@@ -62,6 +65,8 @@ class _GunSettings(object):
         self.shellChangeFactor = shellChangeFactor
         self.extraReloadTime = extraReloadTime
         self.mechanicsParams = mechanicsParams
+        self.__crewBoundTotalFactor = None
+        return
 
     @classmethod
     def fromVehicle(cls, vehicleID, vehicleDescr):
@@ -161,6 +166,20 @@ class _GunSettings(object):
         if self.hasAutoShoot():
             return 0.0
         return self.clip.interval
+
+    def getCrewBoundTotalFactor(self):
+        if self.__crewBoundTotalFactor is None:
+            vehicle = BigWorld.entity(self.vehicleID)
+            if vehicle is None:
+                return 0.0
+            builder = VehicleBuilder()
+            builder.setStrCD(vehicle.typeDescriptor.makeCompactDescr())
+            builder.setCrew(vehicle.crewCompactDescrs)
+            kpiFactors = aggregateKpi(kpiFromCrewSkills(builder.getResult()))
+            lowerBoundFactor = kpiFactors.getFactor(KPI.Name.DAMAGE_AND_PIERCING_DISTRIBUTION_LOWER_BOUND)
+            upperBoundFactor = kpiFactors.getFactor(KPI.Name.DAMAGE_AND_PIERCING_DISTRIBUTION_UPPER_BOUND)
+            self.__crewBoundTotalFactor = (lowerBoundFactor + upperBoundFactor) / 100.0
+        return self.__crewBoundTotalFactor
 
     def getLastAmmoCount(self, shellsAmount):
         lastAmmoCount = shellsAmount if shellsAmount > 0 else 1

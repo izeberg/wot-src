@@ -999,7 +999,7 @@ def showBattlePass(childStateID=R.invalid(), chapterID=0, selectedChapter=0, bat
         return
     childStateID, chapterID = getActualBattlePassIDs(childStateID, chapterID)
     if directNavigation:
-        STATES[childStateID].goTo(chapterID=chapterID, **kwargs)
+        STATES[childStateID].goTo(childStateID=childStateID, chapterID=chapterID, **kwargs)
         return
     guiLoader = dependency.instance(IGuiLoader)
     bp = R.aliases.battle_pass

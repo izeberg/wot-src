@@ -940,6 +940,13 @@
 			<hangarModelName>particles/Tank/customization/G183_Fossa_VM_68_3Dst/G183_Fossa_VM_68_3Dst_hangar.prefab</hangarModelName>
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
+		<attachment>
+			<id>206</id>
+			<name>G204_PzVI_Tiger_P_CFE_A_3Dst</name>
+			<modelName>particles/Tank/rocket_accelerator/G204_PzVI_Tiger_P_CFE_A_Rocket.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<hangarModelName/>
+		</attachment>
 	</itemGroup>
 	<itemGroup>
 		<name>Dragon Vanguard</name>
@@ -3801,7 +3808,6 @@
 		<season>ALL</season>
 		<historical>1</historical>
 		<attachment>
-			ââââââ
 			<id>1195</id>
 			<name>Cus_219_FB26_Ball</name>
 			<modelName>content/CGFPrefabs/3D_Customization/Cus_219_FB26_Ball/Cus_219_FB26_Ball.prefab</modelName>

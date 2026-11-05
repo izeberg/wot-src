@@ -1,0 +1,6 @@
+from __future__ import absolute_import
+from advent_calendar.messenger.formatters.token_quest_subformatters import AdventCalendarQuestRewardFormatter
+from gui.shared.system_factory import registerTokenQuestsSubFormatters
+
+def registerAdventCalendarTokenQuestsSubFormatters():
+    registerTokenQuestsSubFormatters([AdventCalendarQuestRewardFormatter()])

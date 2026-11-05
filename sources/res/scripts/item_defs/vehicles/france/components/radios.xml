@@ -37,6 +37,7 @@
 		<ER_52_32>48</ER_52_32>
 		<TRVP_13_A3>49</TRVP_13_A3>
 		<AN_VRC_18>52</AN_VRC_18>
+		<ANVRC_18A>53</ANVRC_18A>
 		<AM_VRC_7_141>54</AM_VRC_7_141>
 		<SCR_528_BPXIV>55</SCR_528_BPXIV>
 		<SCR_528_oie>56</SCR_528_oie>
@@ -197,6 +198,18 @@
 			<maxRegenHealth>105</maxRegenHealth>
 			<repairCost>3</repairCost>
 		</AN_VRC_18S>
+		<ANVRC_18A>
+			<userString>#france_vehicles:ANVRC_18A</userString>
+			<tags/>
+			<level>9</level>
+			<price>40000</price>
+			<notInShop>true</notInShop>
+			<weight>80</weight>
+			<distance>750</distance>
+			<maxHealth>210</maxHealth>
+			<maxRegenHealth>105</maxRegenHealth>
+			<repairCost>3</repairCost>
+		</ANVRC_18A>
 		<TRVP_11_Banane>
 			<userString>#france_vehicles:TRVP_11_Banane</userString>
 			<tags/>

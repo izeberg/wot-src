@@ -2610,7 +2610,7 @@ class ChallengesListener(_NotificationListener):
             if not self.__hasReminderNotification():
                 pushReminder = False
                 challengesReminderSeen = AccountSettings.getNotifications(CHALLENGES_REMINDER_SEEN_NOTIFICATION)
-                for challenge in self.__challenges.availableChallenges():
+                for challenge in self.__challenges.challengesAvailableForCompletions():
                     if challenge.isExpiringSoon and challenge.challengeID not in challengesReminderSeen:
                         challengesReminderSeen.add(challenge.challengeID)
                         pushReminder = True

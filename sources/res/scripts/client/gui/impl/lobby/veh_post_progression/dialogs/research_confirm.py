@@ -155,7 +155,7 @@ class PostProgressionResearchMainContent(BaseSubModelView):
 
     def __fillBonusesArray(self, bonusesArray, kpiList):
         bonusesArray.clear()
-        for kpi in aggregateKpi(kpiList).getKpiIterator():
+        for kpi in aggregateKpi(kpiList, aggregated=True).getKpiIterator():
             value = BonusValueModel()
             value.setValue(kpi.value)
             value.setValueKey(kpi.name)

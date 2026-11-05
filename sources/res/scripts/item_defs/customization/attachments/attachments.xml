@@ -919,5 +919,12 @@
 			<hangarModelName>particles/Tank/customization/G183_Fossa_VM_68_3Dst/G183_Fossa_VM_68_3Dst_hangar.prefab</hangarModelName>
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
+		<attachment>
+			<id>206</id>
+			<name>G204_PzVI_Tiger_P_CFE_A_3Dst</name>
+			<modelName>particles/Tank/rocket_accelerator/G204_PzVI_Tiger_P_CFE_A_Rocket.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<hangarModelName/>
+		</attachment>
 	</itemGroup>
 </root>

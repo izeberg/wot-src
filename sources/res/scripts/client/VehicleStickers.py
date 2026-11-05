@@ -1081,7 +1081,7 @@ class VehicleStickers(object):
                 return
             uid = hash(code)
             hitPoint, hitDir, normal = collisionResult
-            CGF.postEvent(collisionComponent.spaceID, game_events.AddDamageStickerEvent(uid, targetGo, hitPoint, hitDir, normal, game_events.GunShellInfo(data.caliber, data.shellType), hitType, isActive, stickerID))
+            CGF.postEvent(collisionComponent.spaceID, game_events.AddDamageStickerEvent(uid, targetGo.uuid, hitPoint, hitDir, normal, game_events.GunShellInfo(data.caliber, data.shellType), hitType, isActive, stickerID))
             _logger.debug('Parametrized damage sticker add with uid: %i', uid)
             self.__parametrizedDamageStickers[code] = DamageSticker(prefabEffIndex, uid, data)
             return

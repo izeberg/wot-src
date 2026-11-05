@@ -431,6 +431,12 @@ class ConsumablesPanel(IAmmoListener, ConsumablesPanelMeta, CallbackDelayer):
     def _getEquipmentIconPath(self, *_):
         return self._R_ARTEFACT_ICON
 
+    def __onVehicleFeedbackReceived(self, eventID, _, value):
+        if eventID == FEEDBACK_EVENT_ID.VEHICLE_ATTRS_CHANGED:
+            for payload in self.sessionProvider.shared.ammo.getOrderedShellsLayout():
+                intCD, descriptor, _, _, gunSettings = payload[:5]
+                self.as_updateTooltipS(idx=self._cds.index(intCD), tooltipStr=self._makeShellTooltip(descriptor, gunSettings))
+
     def _addListeners(self):
         vehicleCtrl = self.sessionProvider.shared.vehicleState
         if vehicleCtrl is not None:
@@ -606,23 +612,6 @@ class ConsumablesPanel(IAmmoListener, ConsumablesPanelMeta, CallbackDelayer):
         self._keys = keys
         self._extraKeys.clear()
         self._extraKeys = extraKeys
-
-    def __onVehicleFeedbackReceived(self, eventID, _, value):
-        if eventID == FEEDBACK_EVENT_ID.VEHICLE_ATTRS_CHANGED:
-            self.__updateAllShellTooltips()
-
-    def __updateAllShellTooltips(self):
-        ammoCtrl = self.sessionProvider.shared.ammo
-        if ammoCtrl is None:
-            return
-        else:
-            for payload in ammoCtrl.getOrderedShellsLayout():
-                intCD, descriptor, _, _, gunSettings = payload[:5]
-                if intCD in self._cds:
-                    tooltip = self._makeShellTooltip(descriptor, gunSettings)
-                    self.as_updateTooltipS(idx=self._cds.index(intCD), tooltipStr=tooltip)
-
-            return
 
     def __handleConsumableChoice(self, event):
         self.__handleBWKey(event.ctx['key'])
@@ -860,5 +849,3 @@ class ConsumablesPanel(IAmmoListener, ConsumablesPanelMeta, CallbackDelayer):
         for idx in self.__ammoRange:
             shellMode = ammoMode.getShellMode(self._cds[idx])
             self.as_setShellModeS(idx, shellMode.value, isActive)
-
-        self.__updateAllShellTooltips()

@@ -334,9 +334,6 @@ msgstr "leKpz M 41 90 mm"
 msgid "Chassis_G121_Grille_15_L63"
 msgstr "Grille 15"
 
-msgid "Chassis_G121_Grille_15_L63_FR"
-msgstr "Grille 15 BS"
-
 msgid "Chassis_G122_VK6501H"
 msgstr "VK 65.01 (H)"
 
@@ -546,8 +543,14 @@ msgstr "Jagdpanther"
 msgid "Chassis_G18_JagdPanther_2"
 msgstr "Jagdpanther verstärkteketten"
 
+msgid "Chassis_G190_TH_72"
+msgstr "TH-72"
+
 msgid "Chassis_G191_StuG_IIIF_CFE_A"
 msgstr "StuG III Ausf. F Kabasan"
+
+msgid "Chassis_G192_E_10"
+msgstr "E 10"
 
 msgid "Chassis_G193_Pz_Kpfw_55"
 msgstr "Pz.Kpfw. 54"
@@ -573,8 +576,17 @@ msgstr "Kampfpanzer 67"
 msgid "Chassis_G200_Chi_Go"
 msgstr "Chi-Go"
 
+msgid "Chassis_G201_Panzerjager_I_mit_7_5_cm"
+msgstr "Pz.Jäg. I 7,5 cm"
+
+msgid "Chassis_G202_PzKpfw_T_34_747_r"
+msgstr "Pz.Kpfw. T 34 747 (r)"
+
 msgid "Chassis_G204_PzVI_Tiger_P_CFE_A"
-msgstr "VK 45.01 (P)"
+msgstr "Tiger (P) Leoponsan"
+
+msgid "Chassis_G205_Jagdpanzer_7_Pfanne"
+msgstr "Jagdpanzer 7 Pfanne"
 
 msgid "Chassis_G23_Grille"
 msgstr "Grille"
@@ -1042,6 +1054,9 @@ msgstr "Daimler-Benz V12 56"
 msgid "Daimler_Benz_V12_57"
 msgstr "Daimler-Benz V12 57"
 
+msgid "Deutz_BF6M1015CF"
+msgstr "Deutz BF6M1015CF"
+
 msgid "DickerMax"
 msgstr "Dicker Max"
 
@@ -1127,6 +1142,9 @@ msgstr "FuG 12"
 msgid "FuG12_SH"
 msgstr "FuG 12 L2"
 
+msgid "FuG15"
+msgstr "FuG 15"
+
 msgid "FuG16"
 msgstr "Fu 16"
 
@@ -1153,6 +1171,9 @@ msgstr "FuG 5m"
 
 msgid "FuG5_SH"
 msgstr "FuG 5 A"
+
+msgid "FuG5_T_34"
+msgstr "FuG 5 (T 34)"
 
 msgid "FuG6"
 msgstr "FuG 6"
@@ -1186,6 +1207,9 @@ msgstr "FuG 8 (f)"
 
 msgid "FuG_7_45_01"
 msgstr "FuG 7 (45.01)"
+
+msgid "FuG_7_E"
+msgstr "FuG 7 (E)"
 
 msgid "FuG_7_F"
 msgstr "FuG 7 (F)"
@@ -1914,24 +1938,6 @@ msgstr "Отличное орудие, хорошая подвижность"
 
 msgid "G121_Grille_15_L63"
 msgstr "Grille 15"
-
-msgid "G121_Grille_15_L63_FR"
-msgstr "Grille 15 BS"
-
-msgid "G121_Grille_15_L63_FR_descr"
-msgstr ""
-"Летом 1942 года Управление вооружений сухопутных сил Германии заключило "
-"договор с компаниями Krupp и Rheinmetall на создание САУ на базе танка "
-"Panther. Рассматривались варианты установки либо 128-мм орудия K 43, либо "
-"150-мм гаубицы sFH 43. Проекты получили обозначения Grille 12 и Grille 15, "
-"предусматривали размещение боевого отделения в задней части корпуса и "
-"отличались между собой только типом артсистемы. Позднее Grille 15 получил "
-"150-мм орудие длиной 63 калибра, способное пробивать 200 мм брони с "
-"дистанции 4000 м. Однако работы затянулись, и проект Grille 15 так и не был "
-"реализован в металле."
-
-msgid "G121_Grille_15_L63_FR_short"
-msgstr "Grille 15 BS"
 
 msgid "G121_Grille_15_L63_descr"
 msgstr ""
@@ -3296,6 +3302,34 @@ msgstr ""
 msgid "G18_JagdPanther_short"
 msgstr "JPanther"
 
+msgid "G190_TH_72"
+msgstr "TH-72"
+
+msgid "G190_TH_72_descr"
+msgstr ""
+"Результат переработки конструкции Begleitpanzer 57 конца 1970-х годов. "
+"Основное вооружение машины было вынесено за пределы обитаемой башни. "
+"Двигатель с трансмиссией располагался в носовой части машины, а радиаторы "
+"системы охлаждения вместе с выхлопной системой — в корме. Башня "
+"устанавливалась в центральной части корпуса, а за ней размещалась "
+"боеукладка. Из-за сложной конструкции машина оказалась очень дорогой, "
+"поэтому компания Thyssen Henschel закрыла проект, не построив даже опытного "
+"образца."
+
+msgid "G190_TH_72_long_special"
+msgstr ""
+"TH-72 — немецкий лёгкий танк IX уровня. Эта машина оснащена автопушкой, что "
+"делает её крайне опасной на ближней дистанции против легкобронированных "
+"целей и неповоротливых тяжёлых танков. Благодаря быстрой перезарядке она не "
+"слишком долго остаётся вне боя, так что соперникам, пережившим первый "
+"магазин, не стоит расслабляться."
+
+msgid "G190_TH_72_short"
+msgstr "TH-72"
+
+msgid "G190_TH_72_short_special"
+msgstr "Автопушка, отличная подвижность"
+
 msgid "G191_StuG_IIIF_CFE_A"
 msgstr "StuG III Ausf. F Kabasan"
 
@@ -3326,6 +3360,37 @@ msgstr "StuG III Kaba"
 
 msgid "G191_StuG_IIIF_CFE_A_short_special"
 msgstr "Хорошие мобильность и скорострельность"
+
+msgid "G192_E_10"
+msgstr "E 10"
+
+msgid "G192_E_10_descr"
+msgstr ""
+"Работы над лёгкой ПТ-САУ E-10 начались в 1944 году в рамках программы "
+"Entwicklung с целью максимальной унификации и упрощения производства. По "
+"компоновке машина напоминала Hetzer: низкий силуэт, отсутствие башни и "
+"рациональные углы наклона брони. Ходовая часть получила шахматное "
+"расположение опорных катков (по четыре на борт), а подвеска строилась на "
+"внешних рычагах, закреплённых снаружи корпуса. Двигатель и гидродинамическая"
+" трансмиссия размещались в корме единым блоком, что упрощало обслуживание и "
+"увеличивало объём боевого отделения, а съёмные задний бронелист и крыша МТО "
+"позволяли быстро демонтировать силовую установку. Проект остался на стадии "
+"чертежей и не был реализован из-за окончания войны."
+
+msgid "G192_E_10_long_special"
+msgstr ""
+"E 10 — немецкая ПТ-САУ V уровня. Разработана в рамках программы Entwicklung "
+"в качестве замены Hetzer. Низкий силуэт обеспечивает ей превосходную "
+"маскировку, а небольшая масса — отличную подвижность. Скорострельное "
+"малокалиберное орудие позволяет быстро наносить урон, однако скромный обзор "
+"и большой разброс требуют активной игры: важно постоянно менять позиции, "
+"оставаться незамеченным и атаковать противника в подходящий момент."
+
+msgid "G192_E_10_short"
+msgstr "E 10"
+
+msgid "G192_E_10_short_special"
+msgstr "Отличная маскировка и высокая скорострельность"
 
 msgid "G193_Pz_Kpfw_55"
 msgstr "Pz.Kpfw. 55"
@@ -3468,26 +3533,121 @@ msgstr "Chi-Go"
 msgid "G200_Chi_Go_short_special"
 msgstr "Неплохая броня башни, высокий разовый урон"
 
+msgid "G201_Panzerjager_I_mit_7_5_cm"
+msgstr "Panzerjäger I mit 7,5 cm"
+
+msgid "G201_Panzerjager_I_mit_7_5_cm_descr"
+msgstr ""
+"К концу войны немецкая армия испытывала острую нехватку бронетехники. "
+"Промышленность была практически разрушена, а новая техника поступала в "
+"ограниченных количествах, поэтому приходилось создавать технику, используя "
+"любые доступные шасси и орудия. Одна из таких машин была построена на базе "
+"танка PzKpfw I Ausf. B. После минимальных доработок на корпус установили "
+"пушку 7,5 cm StuK 40 от противотанковой САУ. Известно о применении одной "
+"такой машины в боях за Берлин весной 1945 года."
+
+msgid "G201_Panzerjager_I_mit_7_5_cm_long_special"
+msgstr ""
+"Panzerjäger I mit 7,5 cm — немецкая ПТ-САУ III уровня. У неё хорошая для "
+"своего уровня мобильность, дающая возможность часто менять позиции и "
+"прикрывать союзников. Превосходное орудие сочетает отличные углы склонения, "
+"высокий разовый урон, хорошую бронепробиваемость и низкий разброс, что "
+"позволяет уничтожать соперников одного за другим."
+
+msgid "G201_Panzerjager_I_mit_7_5_cm_short"
+msgstr "Pz.Jäg. I 7,5 cm"
+
+msgid "G201_Panzerjager_I_mit_7_5_cm_short_special"
+msgstr "Высокий разовый урон, отличные УВН"
+
+msgid "G202_PzKpfw_T_34_747_r"
+msgstr "Pz.Kpfw. T 34 747 (r)"
+
+msgid "G202_PzKpfw_T_34_747_r_descr"
+msgstr ""
+"В 1941–1943 годах немецкие войска захватили на советско-германском фронте "
+"большое количество танков Т-34, которые использовали как в тылу для борьбы с"
+" партизанами, так и на передовой. 30 июня 1943 года Верховное командование "
+"сухопутных сил (OKH — Oberkommando des Heeres) запустило программу по "
+"стандартизации и перераспределению трофейной техники на Восточном фронте. В "
+"частности, предполагались централизованная доработка и приведение машин к "
+"немецким стандартам. Т-34 оснащали командирскими башенками от Pz. III или "
+"Pz. IV, немецкими приборами, радиостанциями и другим оборудованием. Однако "
+"несмотря на попытки унификации многие танки сохраняли различия в деталях."
+
+msgid "G202_PzKpfw_T_34_747_r_long_special"
+msgstr ""
+"Pz.Kpfw. T 34 747 (r) — немецкий средний танк V уровня, созданный на базе "
+"советских Т-34, захваченных и модифицированных под немецкие стандарты во "
+"время Второй мировой войны. Машина сохранила сильные стороны Т-34, такие как"
+" наклонная броня и 76-мм орудие, но с улучшенными показателями разброса и "
+"стабилизации. Этот универсальный танк подходит как для сражений на "
+"передовой, так и для поддержки союзников."
+
+msgid "G202_PzKpfw_T_34_747_r_short"
+msgstr "Pz. T 34"
+
+msgid "G202_PzKpfw_T_34_747_r_short_special"
+msgstr "Хороший разброс, достойное бронирование и неплохая мобильность"
+
 msgid "G204_PzVI_Tiger_P_CFE_A"
-msgstr "VK 45.01 (P)"
+msgstr "Tiger (P) Leoponsan"
 
 msgid "G204_PzVI_Tiger_P_CFE_A_descr"
-msgstr "?empty?"
+msgstr ""
+"Pz.Kpfw. VI Ausf.P, более известный как VK 45.01 (P) или «Тигр» Порше, был "
+"одним из самых необычных немецких тяжёлых танков. Он оснащался двумя "
+"двигателями воздушного охлаждения Typ 101 и электротрансмиссией. Сложная и "
+"ненадёжная силовая установка не позволила серийно производить машину, но "
+"благодаря школе Оараи она получила второе дыхание. Танк был найден в "
+"глубинах трюма школьного корабля и отреставрирован членами клуба "
+"автолюбителей, которые потом и стали его экипажем — командой «Леопон». "
+"Благодаря своей инженерной смекалке девушки не только восстановили "
+"боеспособность капризного «Тигра» Порше, но и улучшили его с помощью "
+"устройства для временного повышения скорости."
 
 msgid "G204_PzVI_Tiger_P_CFE_A_long_special"
 msgstr ""
-"VK 45.01 (P) — немецкий тяжёлый танк VI уровня с прочной лобовой бронёй, "
-"которая надёжно защищает от стандартных снарядов средних и тяжёлых танков "
-"того же уровня. Орудие обладает хорошим уроном в минуту, а также неплохим "
-"бронепробитием и уроном за выстрел. Скорость невысокая, но танк обладает "
-"уникальной системой повышения мобильности, которая позволяет быстро "
+"Tiger (P) Leoponsan — немецкий тяжёлый танк VI уровня с прочной лобовой "
+"бронёй, которая надёжно защищает от базовых снарядов средних и тяжёлых "
+"танков того же уровня. У орудия хороший урон в минуту, а также неплохое "
+"бронепробитие и разовый урон. Скорость невысокая, но танк обладает "
+"уникальной системой улучшения мобильности, которая позволяет быстро "
 "разогнаться до максимальной скорости."
 
 msgid "G204_PzVI_Tiger_P_CFE_A_short"
-msgstr "VK 45.01 (P)"
+msgstr "Tiger (P) Leo"
 
 msgid "G204_PzVI_Tiger_P_CFE_A_short_special"
 msgstr "Прочная лобовая броня, система улучшения мобильности"
+
+msgid "G205_Jagdpanzer_7_Pfanne"
+msgstr "Jagdpanzer 7 Pfanne"
+
+msgid "G205_Jagdpanzer_7_Pfanne_descr"
+msgstr ""
+"Проект Jagdpanzer 7 Pfanne разрабатывался в ФРГ как мощная и компактная "
+"противотанковая САУ с высокой точностью первого выстрела. Машина получила "
+"необычные для того времени плавные формы корпуса, которые должны были "
+"повысить защиту от кумулятивных и подкалиберных боеприпасов. Вертикальное "
+"наведение орудия осуществлялось за счёт гидропневматической подвески, "
+"горизонтальное — поворотом корпуса. Несмотря на перспективность концепции, "
+"проект оказался слишком зависимым от сложной гидравлической системы и был "
+"свёрнут с развитием более универсальных ОБТ."
+
+msgid "G205_Jagdpanzer_7_Pfanne_long_special"
+msgstr ""
+"Jagdpanzer 7 Pfanne — немецкая снайперская ПТ-САУ VII уровня. Это первая "
+"машина на своём уровне с осадным режимом и гидропневматической подвеской, "
+"что делает её эффективным снайпером на дальних дистанциях. Она незаметная и "
+"проворная, с мощным 105-мм орудием с отличной бронепробиваемостью, что "
+"компенсируется долгой перезарядкой."
+
+msgid "G205_Jagdpanzer_7_Pfanne_short"
+msgstr "Jg.Pz. 7 Pfanne"
+
+msgid "G205_Jagdpanzer_7_Pfanne_short_special"
+msgstr "Гидропневматическая подвеска, низкий разброс"
 
 msgid "G20_Marder_II"
 msgstr "Marder II"
@@ -4468,6 +4628,9 @@ msgstr "Точное и пробивное орудие, хорошая защи
 msgid "MAN_D2840_LXE"
 msgstr "MAN D2840 LXE"
 
+msgid "MAN_D2840_LXE_TH_72"
+msgstr "MAN D2840 LXE (TH)"
+
 msgid "MAN_H_40"
 msgstr "MAN H 40"
 
@@ -4667,6 +4830,9 @@ msgstr "Maybach HL 90"
 
 msgid "Maybach_HL_100TR_BW"
 msgstr "Maybach HL 100 TR BW"
+
+msgid "Maybach_HL_100_E"
+msgstr "Maybach HL 100 E"
 
 msgid "Maybach_HL_100_WT_IV"
 msgstr "Maybach HL 100 (WT IV)"
@@ -5108,9 +5274,6 @@ msgstr "Maybach Neues Projekt A"
 msgid "Maybach_HL_234P60_short"
 msgstr "Maybach Neues Projekt"
 
-msgid "Maybach_HL_234_FR"
-msgstr "Maybach HL 234"
-
 msgid "Maybach_HL_234_TRM_P30"
 msgstr "Maybach HL 234 TRM P30"
 
@@ -5193,6 +5356,9 @@ msgstr "Maybach HL 98"
 
 msgid "Maybach_NL38TR"
 msgstr "Maybach HL 38 TR"
+
+msgid "Maybach_NL_38TR_P"
+msgstr "Maybach NL 38TR P"
 
 msgid "Maybach_Neues_Projekt_90"
 msgstr "Maybach Neues Projekt 90"
@@ -5859,6 +6025,9 @@ msgstr "SEM 25A"
 msgid "SEM_25A"
 msgstr "SEM 25A"
 
+msgid "SEM_25A_TH_72"
+msgstr "SEM 25A (TH)"
+
 msgid "SEM_25B"
 msgstr "SEM 25B"
 
@@ -5867,6 +6036,9 @@ msgstr "SEM 25BK"
 
 msgid "SEM_25C"
 msgstr "SEM 25C funkgerät"
+
+msgid "SEM_25D"
+msgstr "SEM 25D"
 
 msgid "SEM_25E"
 msgstr "SEM 25E"
@@ -6147,9 +6319,6 @@ msgstr "leKpz M 41 90 mm"
 msgid "Turret_1_G121_Grille_15_L63"
 msgstr "Grille 15"
 
-msgid "Turret_1_G121_Grille_15_L63_FR"
-msgstr "Grille 15 BS"
-
 msgid "Turret_1_G122_VK6501H"
 msgstr "VK 65.01 (H) S.W."
 
@@ -6331,8 +6500,14 @@ msgstr "Hirschkäfer"
 msgid "Turret_1_G18_JagdPanther"
 msgstr "Jagdpanther"
 
+msgid "Turret_1_G190_TH_72"
+msgstr "TH-72"
+
 msgid "Turret_1_G191_StuG_IIIF_CFE_A"
 msgstr "StuG III Ausf. F Kabasan"
+
+msgid "Turret_1_G192_E_10"
+msgstr "E 10"
 
 msgid "Turret_1_G193_Pz_Kpfw_55"
 msgstr "Pz.Kpfw. 54"
@@ -6352,8 +6527,17 @@ msgstr "Kampfpanzer 67"
 msgid "Turret_1_G200_Chi_Go"
 msgstr "Chi-Go"
 
+msgid "Turret_1_G201_Panzerjager_I_mit_7_5_cm"
+msgstr "Pz.Jäg. I 7,5 cm"
+
+msgid "Turret_1_G202_PzKpfw_T_34_747_r"
+msgstr "Pz.Kpfw. T 34 747 (r)"
+
 msgid "Turret_1_G204_PzVI_Tiger_P_CFE_A"
-msgstr "VK 45.01 (P) Turm"
+msgstr "Tiger (P) Leoponsan"
+
+msgid "Turret_1_G205_Jagdpanzer_7_Pfanne"
+msgstr "Jagdpanzer 7 Pfanne"
 
 msgid "Turret_1_G23_Grille"
 msgstr "Grille"
@@ -6812,6 +6996,9 @@ msgstr ""
 msgid "VK7201_short"
 msgstr "VK 72.01 K"
 
+msgid "V_2"
+msgstr "V-2"
+
 msgid "V_2K_T"
 msgstr "V-2K"
 
@@ -6874,6 +7061,9 @@ msgstr "100 mm Panzerkanone D-10T2S L/56"
 
 msgid "_100mm_UOF-412"
 msgstr "UOF-412"
+
+msgid "_105_mm_Rh_105_20_A"
+msgstr "105 mm Rh 105 20 A"
 
 msgid "_105mmGr39H1A"
 msgstr "Gr 39 H1A"
@@ -7143,6 +7333,9 @@ msgstr "Pzgr. 39 K (B)"
 msgid "_105mm_Pzgr_39_L_100"
 msgstr "Pzgr. 39 L (100)"
 
+msgid "_105mm_Pzgr_39_L_100_A"
+msgstr "Pzgr. 39 L (100) A"
+
 msgid "_105mm_Pzgr_39_L_180A"
 msgstr "Pzgr. 39 L (180A)"
 
@@ -7157,6 +7350,9 @@ msgstr "Pzgr 40W"
 
 msgid "_105mm_Pzgr_40_100"
 msgstr "Pzgr. 40 (100)"
+
+msgid "_105mm_Pzgr_40_100_A"
+msgstr "Pzgr. 40 (100) A"
 
 msgid "_105mm_Pzgr_40_180A"
 msgstr "Pzgr. 40 (180A)"
@@ -7242,6 +7438,9 @@ msgstr "Sprgr. K (B)"
 msgid "_105mm_Sprgr_L_100"
 msgstr "Sprgr. L (100)"
 
+msgid "_105mm_Sprgr_L_100_A"
+msgstr "Sprgr. L (100) A"
+
 msgid "_105mm_Sprgr_L_180A"
 msgstr "Sprgr. L (180A)"
 
@@ -7277,9 +7476,6 @@ msgstr "10WSc"
 
 msgid "_10WSc_CFE_T"
 msgstr "10WSc T"
-
-msgid "_10WSc_FR"
-msgstr "10WSc"
 
 msgid "_10WSc_P"
 msgstr "10WSc P"
@@ -7890,9 +8086,6 @@ msgstr "Gr. 44 Hl/A"
 msgid "_150mm_Gr_HL"
 msgstr "Gr. HL"
 
-msgid "_150mm_Gr_HL_FR"
-msgstr "Gr. HL"
-
 msgid "_150mm_Gr_Hl_A"
 msgstr "Gr. Hl/A"
 
@@ -7915,9 +8108,6 @@ msgid "_150mm_Pak_L_44"
 msgstr "15 cm Pak L/44"
 
 msgid "_150mm_Pak_L_63"
-msgstr "15 cm Pak L/63"
-
-msgid "_150mm_Pak_L_63_FR"
 msgstr "15 cm Pak L/63"
 
 msgid "_150mm_PzGr39H2_SH"
@@ -7944,9 +8134,6 @@ msgstr "Pzgr. 42 (WT IV) T"
 msgid "_150mm_Pzgr_44"
 msgstr "Pzgr. 44"
 
-msgid "_150mm_Pzgr_FR"
-msgstr "Pzgr."
-
 msgid "_150mm_Pzgr_m_Hb"
 msgstr "Pzgr. (m.Hb)"
 
@@ -7970,9 +8157,6 @@ msgstr "Sprgr. 18 (Grille)"
 
 msgid "_150mm_Sprgr_36"
 msgstr "Sprgr. 36"
-
-msgid "_150mm_Sprgr_FR"
-msgstr "Sprgr."
 
 msgid "_150mm_Sprgr_G"
 msgstr "Sprgr. G"
@@ -8485,6 +8669,18 @@ msgstr "Sprgr. 18 (2801)"
 msgid "_50mm_Sprgr_18_II_L"
 msgstr "Sprgr. 18 (II L)"
 
+msgid "_57mm_57_438R_m_70_AP_T_TH_72"
+msgstr "57x438R m/70 AP-T (TH)"
+
+msgid "_57mm_57_438R_m_71_HE_T_TH_72"
+msgstr "57x438R m/71 HE-T (TH)"
+
+msgid "_57mm_57_438R_m_78_APCR_T_TH_72"
+msgstr "57x438R m/78 APCR-T (TH)"
+
+msgid "_57mm_Bofors_L_70_Mk_1_TH_72"
+msgstr "Bofors L/70 Mk.1 (TH)"
+
 msgid "_7.92mm_AP"
 msgstr "Patrone 318 SmK-Rs-L'spur"
 
@@ -8541,6 +8737,9 @@ msgstr "7,5 cm Flak L/60"
 
 msgid "_75mm_Gr_38_HL_C"
 msgstr "Gr 38 HL C"
+
+msgid "_75mm_Gr_Patr_39_HL"
+msgstr "Gr.Patr. 39 HL"
 
 msgid "_75mm_K_Gr_rot_Pz_C"
 msgstr "K.Gr.rot.Pz.C"
@@ -8623,6 +8822,9 @@ msgstr "7,5 cm Kw.K. 42 L/70 (II)"
 msgid "_75mm_PaK_39_L48"
 msgstr "7,5 cm Pak 39 L/48"
 
+msgid "_75mm_PaK_39_L48_C"
+msgstr "7,5 cm Pak 39 L/48 C"
+
 msgid "_75mm_PaK_40_2"
 msgstr "7,5 cm Pak 40/2 L/46"
 
@@ -8677,6 +8879,9 @@ msgstr "Pzgr. 39 Ausf. H"
 msgid "_75mm_Pzgr_39_B"
 msgstr "Pzgr. 39 (B)"
 
+msgid "_75mm_Pzgr_39_BL"
+msgstr "Pzgr 39 BL"
+
 msgid "_75mm_Pzgr_39_E"
 msgstr "Pzgr. 39 (E)"
 
@@ -8725,6 +8930,9 @@ msgstr "Pzgr. 40 Ausf. H"
 msgid "_75mm_Pzgr_40_B"
 msgstr "Pzgr. 40 (B)"
 
+msgid "_75mm_Pzgr_40_BL"
+msgstr "Pzgr 40 BL"
+
 msgid "_75mm_Pzgr_40_E"
 msgstr "Pzgr. 40 (E)"
 
@@ -8755,6 +8963,9 @@ msgstr "Pzgr. 40 T 3001"
 msgid "_75mm_Pzgr_40_Typ_100"
 msgstr "Pzgr. 40 Typ 100"
 
+msgid "_75mm_Pzgr_Patr_39"
+msgstr "Pzgr.Patr. 39"
+
 msgid "_75mm_Sprg.18"
 msgstr "Sprgr 18"
 
@@ -8772,6 +8983,9 @@ msgstr "Sprgr.Patr 18"
 
 msgid "_75mm_Sprg_18_B"
 msgstr "Sprgr. 18 (B)"
+
+msgid "_75mm_Sprg_18_BL"
+msgstr "Sprg 18 BL"
 
 msgid "_75mm_Sprg_34_C"
 msgstr "Sprgr 34 C"
@@ -8821,6 +9035,9 @@ msgstr "Sprgr. 18 T 3001"
 msgid "_75mm_Sprgr_18_Typ_100"
 msgstr "Sprgr. 18 Typ 100"
 
+msgid "_75mm_Sprgr_Patr_37"
+msgstr "Sprgr.Patr. 37"
+
 msgid "_75mm_StuK42_L70"
 msgstr "7,5 cm Pak 42 L/70"
 
@@ -8841,6 +9058,18 @@ msgstr "7,5 cm StuK 40 L/48 (F)"
 
 msgid "_75mm_Waffe0725_1944"
 msgstr "7,5/5,5 cm Kw.K. 44 L/53"
+
+msgid "_76_2mm_BR_350P"
+msgstr "BR-350P"
+
+msgid "_76_2mm_KwK_L41_5"
+msgstr "7.62 cm KwK 41 L/41.5"
+
+msgid "_76_2mm_UBR_350A"
+msgstr "UBR-350A"
+
+msgid "_76_2mm_UOF_350"
+msgstr "UOF-350"
 
 msgid "_76mm_PaK_36r"
 msgstr "7,62 cm Pak 36 (r)"
@@ -8888,6 +9117,9 @@ msgid "_7_5_cm_Stu_K_40_L_43_B_short"
 msgstr ""
 "7,5 cm Stu.K. 40\n"
 "L/43 (B)"
+
+msgid "_7_5_cm_Stu_K_40_L_48_B"
+msgstr "7,5 cm Stu.K. 40 L/48 B"
 
 msgid "_88mm_Flak_37_L56"
 msgstr "8,8 cm Flak 37 L/56"

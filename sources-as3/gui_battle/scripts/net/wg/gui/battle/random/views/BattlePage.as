@@ -719,7 +719,7 @@ package net.wg.gui.battle.random.views
       
       private function onBattleMessengerRequestFocusHandler(param1:FocusRequestEvent) : void
       {
-         setFocus(param1.focusContainer.getComponentForFocus());
+         setBattleMessengerFocus(param1.focusContainer.getComponentForFocus());
          if(this.playersPanel != null)
          {
             if(this.battleMessenger.isEnterButtonPressed)

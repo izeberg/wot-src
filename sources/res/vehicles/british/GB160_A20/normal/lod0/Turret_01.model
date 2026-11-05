@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB160_A20/normal/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/british/GB160_A20/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.852309 0.002909 -1.553022</min>
+		<max>0.852679 1.940165 1.100831</max>
+	</visibilityBox>
+</root>

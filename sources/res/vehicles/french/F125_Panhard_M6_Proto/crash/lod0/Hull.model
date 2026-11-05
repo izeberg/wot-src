@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.273841 -0.728032 -2.795605</min>
+		<max>1.316756 0.937285 3.128685</max>
+	</visibilityBox>
+	<parent>vehicles/french/F125_Panhard_M6_Proto/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/french/F125_Panhard_M6_Proto/crash/lod0/Hull</nodefullVisual>
+</root>

@@ -40,3 +40,7 @@ class BattleMessageListMeta(BaseDAAPIComponent):
     def as_showSelfMessageS(self, key, text):
         if self._isDAAPIInited():
             return self.flashObject.as_showSelfMessage(key, text)
+
+    def as_setCrosshairLayoutS(self, y, viewId):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setCrosshairLayout(y, viewId)

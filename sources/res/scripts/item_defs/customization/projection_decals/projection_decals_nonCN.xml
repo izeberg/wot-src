@@ -2546,6 +2546,27 @@
 			<userString>#vehicle_customization:projection_decals/special/projection_decal_1135</userString>
 			<mirror>true</mirror>
 		</projection_decal>
+		<projection_decal>
+			<id>1461</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1161.dds</texture>
+			<mirror>true</mirror>
+			<tags>direction_right_to_left disableVerticalMirror formfactor_square</tags>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1161</userString>
+		</projection_decal>
+		<projection_decal>
+			<id>1462</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1162.dds</texture>
+			<mirror>true</mirror>
+			<tags>direction_right_to_left disableVerticalMirror formfactor_square</tags>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1162</userString>
+		</projection_decal>
+		<projection_decal>
+			<id>1468</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1164.dds</texture>
+			<mirror>true</mirror>
+			<tags>direction_right_to_left disableVerticalMirror formfactor_square</tags>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1164</userString>
+		</projection_decal>
 	</itemGroup>
 	<itemGroup>
 		<name>V Day 2025</name>

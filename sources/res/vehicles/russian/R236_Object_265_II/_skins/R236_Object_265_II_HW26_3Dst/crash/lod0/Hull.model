@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.940947 -0.851724 -4.026384</min>
+		<max>2.134730 0.753718 4.406779</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/crash/lod0/Hull</nodefullVisual>
+	<parent>vehicles/russian/R236_Object_265_II/_skins/R236_Object_265_II_HW26_3Dst/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

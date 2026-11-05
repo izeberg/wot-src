@@ -1,5 +1,5 @@
 import logging, typing
-from frameworks.wulf import WindowFlags
+from frameworks.wulf import ViewStatus, WindowFlags
 from gui.Scaleform.Waiting import Waiting
 from gui.Scaleform.daapi.view.lobby.profile.sound_constants import ACHIEVEMENTS_SOUND_SPACE
 from gui.collection.account_settings import getShownNewItemsCount, isItemNew, isRewardNew, isTutorialCompleted, setCollectionRenewSeen, setCollectionTutorialCompleted, setItemShown, setRewardShown, setShownNewItemsCount
@@ -39,6 +39,7 @@ class CollectionView(ViewComponent):
         self.__page = ctx.get('page')
         self.__pagesCount = 0
         self.__content = {}
+        self.__waitingCount = 0
         super(CollectionView, self).__init__(R.views.lobby.collection.CollectionView(), CollectionViewModel)
 
     @property
@@ -78,12 +79,13 @@ class CollectionView(ViewComponent):
         self.__rewardTooltips = None
         g_eventBus.handleEvent(events.CollectionsEvent(events.CollectionsEvent.COLLECTION_VIEW_CLOSED), scope=EVENT_BUS_SCOPE.LOBBY)
         super(CollectionView, self)._finalize()
+        while self.__waitingCount > 0:
+            self.__hideWaiting()
+
         return
 
     def _getEvents(self):
-        return (
-         (
-          self.__collectionsSystem.onServerSettingsChanged, self.__onSettingsChanged),
+        return ((self.__collectionsSystem.onServerSettingsChanged, self.__onSettingsChanged),
          (
           self.__collectionsSystem.onBalanceUpdated, self.__onBalanceUpdated),
          (
@@ -185,7 +187,7 @@ class CollectionView(ViewComponent):
         model.setGeneralBackground('')
 
     def __updateContentData(self):
-        Waiting.show('loadContent')
+        self.__showWaiting()
         self.__collectionsSystem.cache.getImagesPaths(self.__generateContentData(), self.__onContentUpdated)
 
     def __generateContentData(self):
@@ -202,6 +204,9 @@ class CollectionView(ViewComponent):
         return contentIDs
 
     def __onContentUpdated(self, isOk, data):
+        if self.viewStatus in (ViewStatus.DESTROYING, ViewStatus.DESTROYED):
+            return
+        self.__hideWaiting()
         if isOk:
             self.__content = data
             with self.viewModel.transaction() as (model):
@@ -209,7 +214,15 @@ class CollectionView(ViewComponent):
                 self.__fillItems(model=model)
         else:
             self.viewModel.setIsError(True)
-        Waiting.hide('loadContent')
+
+    def __showWaiting(self):
+        self.__waitingCount += 1
+        Waiting.show('loadContent')
+
+    def __hideWaiting(self):
+        if self.__waitingCount > 0:
+            self.__waitingCount -= 1
+            Waiting.hide('loadContent')
 
     @replaceNoneKwargsModel
     def __updateCurrentNewItems(self, model=None):

@@ -222,9 +222,9 @@ package net.wg.gui.lobby.storage.categories.cards
       
       private function onPreviewButtonClick(param1:MouseEvent) : void
       {
+         param1.stopImmediatePropagation();
          if(this._commons.isLeftButton(param1))
          {
-            param1.stopImmediatePropagation();
             dispatchEvent(new CardEvent(CardEvent.PREVIEW,_data));
          }
       }

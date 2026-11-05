@@ -3,6 +3,7 @@ from collections import OrderedDict
 import logging
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import VEH_SKILL_TREE_PRESTIGE_GLARE_SHOWN
+from constants import Configs
 from frameworks.wulf.view.submodel_presenter import SubModelPresenter
 from gui.impl.gen import R
 from gui.impl.lobby.common.view_helpers import packBonusModelAndTooltipData
@@ -93,7 +94,9 @@ class PrestigePresenter(SubModelPresenter, IPresenterLocationController):
     def _getEvents(self):
         return (
          (
-          self.viewModel.onPreview, self.__onRewardPreview),)
+          self.viewModel.onPreview, self.__onRewardPreview),
+         (
+          self.__lobbyContext.getServerSettings().onServerSettingsChange, self.__onServerSettingsChanged))
 
     @args2params(int)
     def __onRewardPreview(self, level):
@@ -126,6 +129,10 @@ class PrestigePresenter(SubModelPresenter, IPresenterLocationController):
     def __prestigeMilestonesAchievedUpdate(self, args):
         self.__update()
 
+    def __onServerSettingsChanged(self, diff):
+        if Configs.PRESTIGE_MILESTONES_CONFIG.value in diff:
+            self.__update()
+
     def __update(self):
         self.__vehiclePrestige = getVehiclePrestige(self.__vehCD)
         self.__vehicleAchievedMilestones = getVehicleAchievedMilestones(self.__vehCD)
@@ -133,6 +140,13 @@ class PrestigePresenter(SubModelPresenter, IPresenterLocationController):
         if milestones:
             self.__rewardStates = self.__getRewardStates(milestones)
             self.__updateModel()
+        else:
+            self.__rewardStates = OrderedDict()
+            with self.viewModel.transaction() as (vm):
+                vm.setPrestigeState(PrestigeState.DISABLED)
+                rewardArray = vm.getRewards()
+                rewardArray.clear()
+                rewardArray.invalidate()
 
     def __updateModel(self):
         with self.viewModel.transaction() as (vm):

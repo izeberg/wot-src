@@ -662,7 +662,7 @@
 				<slotType>attachment</slotType>
 				<slotId>18000</slotId>
 				<position>
-					-1.686166 0.24617 -1.503036
+					-1.686166 0.24617 -1.400995
 					<!--BW_String-->
 				</position>
 				<rotation>
@@ -680,7 +680,7 @@
 				<slotType>attachment</slotType>
 				<slotId>18001</slotId>
 				<position>
-					1.686 0.246 -1.503
+					1.686 0.246 -1.497589
 					<!--BW_String-->
 				</position>
 				<rotation>
@@ -3847,14 +3847,15 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38002</slotId>
-					<position>1.017907 0.734303 -2.291805</position>
-					<rotation>
-						0 -1.570796 0.922999
+					<position>
+						-0.000001 0.69594 -2.550655
 						<!--BW_String-->
-					</rotation>
+					</position>
+					<rotation>-0.000001 -1.570797 1.570797</rotation>
 					<scale>0.999994 0.999994 0.999995</scale>
 					<applyType>universal</applyType>
-					<size>small</size>
+					<size>medium</size>
+					<hangerId>9</hangerId>
 				</slot>
 			</customizationSlots>
 			<customization>

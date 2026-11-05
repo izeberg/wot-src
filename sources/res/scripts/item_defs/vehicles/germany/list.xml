@@ -1365,7 +1365,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>lightTank private HD secret testTank beast scout improvedVentilation_class3_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_light_user</tags>
+		<tags>lightTank private HD secret testTank beast scout improvedVentilation_class3_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_light_user regular_battles</tags>
 		<level>8</level>
 	</G85_Aufklarungspanzer_V>
 	<G138_VK168_02_Mauerbrecher>
@@ -2475,6 +2475,21 @@
 		<tags>AT-SPG HD mediumAT-SPG improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user excluded_from_customization</tags>
 		<level>5</level>
 	</G191_StuG_IIIF_CFE_A>
+	<G192_E_10>
+		<id>267</id>
+		<userString>#germany_vehicles:G192_E_10</userString>
+		<shortUserString>#germany_vehicles:G192_E_10_short</shortUserString>
+		<description>#germany_vehicles:G192_E_10_descr</description>
+		<shortDescriptionSpecial>#germany_vehicles:G192_E_10_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#germany_vehicles:G192_E_10_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>AT-SPG HD mediumAT-SPG improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_light_user secret testTank regular_battles</tags>
+		<level>5</level>
+	</G192_E_10>
 	<G1016_PzVIB_Tiger_II_StoryMode>
 		<id>408</id>
 		<userString>#germany_vehicles:G16_PzVIB_Tiger_II</userString>
@@ -2715,6 +2730,21 @@
 		<tags>lightTank private event_battles secret HD battle_royale unobservable bot_hunter cannot_be_sold</tags>
 		<level>1</level>
 	</G25_PzII_Luchs_SHXXI_L>
+	<G190_TH_72>
+		<id>124</id>
+		<userString>#germany_vehicles:G190_TH_72</userString>
+		<shortUserString>#germany_vehicles:G190_TH_72_short</shortUserString>
+		<description>#germany_vehicles:G190_TH_72_descr</description>
+		<shortDescriptionSpecial>#germany_vehicles:G190_TH_72_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#germany_vehicles:G190_TH_72_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>lightTank role_LT_support HD scout autocannon improvedVentilation_class3_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_light_user earn_crystals secret testTank regular_battles</tags>
+		<level>9</level>
+	</G190_TH_72>
 	<G98_Waffentrager_E100_CFE_T>
 		<id>259</id>
 		<userString>#germany_vehicles:G98_Waffentrager_E100_CFE_T</userString>
@@ -2752,7 +2782,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_universal HD siegeMode heavyTank1 improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals secret testTank</tags>
+		<tags>heavyTank role_HT_universal HD siegeMode heavyTank1 improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals secret testTank regular_battles</tags>
 		<level>9</level>
 	</G195_HWK_40>
 	<G198_Kampfpanzer_67>
@@ -2782,6 +2812,21 @@
 		<tags>heavyTank role_HT_universal HD siegeMode improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user</tags>
 		<level>9</level>
 	</G196_Versuchspanzer_57>
+	<G202_PzKpfw_T_34_747_r>
+		<id>270</id>
+		<userString>#germany_vehicles:G202_PzKpfw_T_34_747_r</userString>
+		<shortUserString>#germany_vehicles:G202_PzKpfw_T_34_747_r_short</shortUserString>
+		<description>#germany_vehicles:G202_PzKpfw_T_34_747_r_descr</description>
+		<shortDescriptionSpecial>#germany_vehicles:G202_PzKpfw_T_34_747_r_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#germany_vehicles:G202_PzKpfw_T_34_747_r_long_special</longDescriptionSpecial>
+		<tags>mediumTank HD improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user secret testTank regular_battles</tags>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<level>5</level>
+	</G202_PzKpfw_T_34_747_r>
 	<G204_PzVI_Tiger_P_CFE_A>
 		<id>269</id>
 		<userString>#germany_vehicles:G204_PzVI_Tiger_P_CFE_A</userString>
@@ -2790,11 +2835,11 @@
 		<shortDescriptionSpecial>#germany_vehicles:G204_PzVI_Tiger_P_CFE_A_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#germany_vehicles:G204_PzVI_Tiger_P_CFE_A_long_special</longDescriptionSpecial>
 		<price>
-			100
+			3500
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_assault HD beast improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user rocketAcceleration secret testTank</tags>
+		<tags>heavyTank role_HT_assault HD beast improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user rocketAcceleration lockOutfit restoreWithStyle</tags>
 		<level>6</level>
 	</G204_PzVI_Tiger_P_CFE_A>
 	<G200_Chi_Go>
@@ -2826,18 +2871,34 @@
 		<tags>heavyTank role_HT_assault HD heavyTank1 improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user earn_crystals private secret cannot_be_sold comp7 special lockCrew lockCrewSkills lockOptionalDevices</tags>
 		<level>10</level>
 	</G56_E-100_7x7>
-	<G121_Grille_15_L63_FR>
-		<id>272</id>
-		<userString>#germany_vehicles:G121_Grille_15_L63_FR</userString>
-		<description>#germany_vehicles:G121_Grille_15_L63_FR_descr</description>
-		<shortUserString>#germany_vehicles:G121_Grille_15_L63_FR_short</shortUserString>
+	<G201_Panzerjager_I_mit_7_5_cm>
+		<id>273</id>
+		<userString>#germany_vehicles:G201_Panzerjager_I_mit_7_5_cm</userString>
+		<shortUserString>#germany_vehicles:G201_Panzerjager_I_mit_7_5_cm_short</shortUserString>
+		<description>#germany_vehicles:G201_Panzerjager_I_mit_7_5_cm_descr</description>
+		<shortDescriptionSpecial>#germany_vehicles:G201_Panzerjager_I_mit_7_5_cm_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#germany_vehicles:G201_Panzerjager_I_mit_7_5_cm_long_special</longDescriptionSpecial>
 		<price>
 			100
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<cannotBeBought>true</cannotBeBought>
-		<tags>AT-SPG role_ATSPG_sniper HD mediumAT-SPG AT-SPG1 tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_medium_user earn_crystals private secret cannot_be_sold special lockOptionalDevices lockCrewSkills lockCrew event_battles fort_rush</tags>
-		<level>10</level>
-	</G121_Grille_15_L63_FR>
+		<tags>AT-SPG HD extraHealthReserve_class3_user secret testTank regular_battles</tags>
+		<level>3</level>
+	</G201_Panzerjager_I_mit_7_5_cm>
+	<G205_Jagdpanzer_7_Pfanne>
+		<id>276</id>
+		<userString>#germany_vehicles:G205_Jagdpanzer_7_Pfanne</userString>
+		<shortUserString>#germany_vehicles:G205_Jagdpanzer_7_Pfanne_short</shortUserString>
+		<description>#germany_vehicles:G205_Jagdpanzer_7_Pfanne_descr</description>
+		<shortDescriptionSpecial>#germany_vehicles:G205_Jagdpanzer_7_Pfanne_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#germany_vehicles:G205_Jagdpanzer_7_Pfanne_long_special</longDescriptionSpecial>
+		<price>
+			2900
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>AT-SPG role_ATSPG_sniper HD siegeMode hydraulicChassis mediumAT-SPG AT-SPG1 improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user special</tags>
+		<level>7</level>
+	</G205_Jagdpanzer_7_Pfanne>
 </root>

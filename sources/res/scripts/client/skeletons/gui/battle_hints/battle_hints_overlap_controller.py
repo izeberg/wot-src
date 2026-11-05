@@ -8,7 +8,7 @@ class IBattleHintsOverlapController(object):
     def fini(self):
         raise NotImplementedError
 
-    def hintShown(self, battleHInt):
+    def hintShown(self, battleHint):
         raise NotImplementedError
 
     def hintHidden(self):

@@ -1459,6 +1459,69 @@
 			</damage>
 		</armorSpalls>
 	</_2pdr_HE_Mk.II>
+	<_40mm_2_pdr_APCBC_Mk_IX_A20>
+		<id>353</id>
+		<userString>#gb_vehicles:_40mm_2_pdr_APCBC_Mk_IX_A20</userString>
+		<icon>ap</icon>
+		<price>33</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>40</caliber>
+		<isTracer>true</isTracer>
+		<effects>smallArmorPiercing</effects>
+		<damage>
+			<armor>55</armor>
+			<devices>54</devices>
+		</damage>
+		<normalizationAngle>5</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_40mm_2_pdr_APCBC_Mk_IX_A20>
+	<_40mm_2_pdr_APCNR_Mk_II_A20>
+		<id>354</id>
+		<userString>#gb_vehicles:_40mm_2_pdr_APCNR_Mk_II_A20</userString>
+		<icon>ap_cr_premium</icon>
+		<price>1600</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>40</caliber>
+		<isTracer>true</isTracer>
+		<effects>smallAPCR</effects>
+		<damage>
+			<armor>55</armor>
+			<devices>54</devices>
+		</damage>
+		<normalizationAngle>2</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_40mm_2_pdr_APCNR_Mk_II_A20>
+	<_40mm_2_pdr_HE_Mk_II_A20>
+		<id>355</id>
+		<userString>#gb_vehicles:_40mm_2_pdr_HE_Mk_II_A20</userString>
+		<icon>he_modern</icon>
+		<price>16</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>40</caliber>
+		<explosionRadius>
+			0.35
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>smallHighExplosive</effects>
+		<damage>
+			<armor>60</armor>
+			<devices>54</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				0.35
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>30</armor>
+				<devices>25</devices>
+			</damage>
+		</armorSpalls>
+	</_40mm_2_pdr_HE_Mk_II_A20>
 	<_6pdr_AP_MK_1T>
 		<id>7</id>
 		<userString>#gb_vehicles:_6pdr_AP_MK_1T</userString>
@@ -7156,22 +7219,6 @@
 		<normalizationAngle>2</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
 	</_105mm_APDS_L_28_5321>
-	<_105mm_APDS_L_28_5321_FR>
-		<id>56</id>
-		<userString>#gb_vehicles:_105mm_APDS_L_28_5321_FR</userString>
-		<icon>ap_cr</icon>
-		<price>1200</price>
-		<kind>ARMOR_PIERCING_CR</kind>
-		<caliber>105</caliber>
-		<isTracer>true</isTracer>
-		<effects>mainAPCR</effects>
-		<damage>
-			<armor>390</armor>
-			<devices>150</devices>
-		</damage>
-		<normalizationAngle>2</normalizationAngle>
-		<ricochetAngle>70</ricochetAngle>
-	</_105mm_APDS_L_28_5321_FR>
 	<_105mm_APDS_L_28_5321_CFE_A>
 		<id>335</id>
 		<userString>#gb_vehicles:_105mm_APDS_L_28_5321_CFE_A</userString>
@@ -7290,26 +7337,6 @@
 			<!--BW_String-->
 		</piercingPowerLossFactorByDistance>
 	</_105mm_HEAT_L7>
-	<_105mm_HEAT_L7_FR>
-		<id>57</id>
-		<userString>#gb_vehicles:_105mm_HEAT_L7_FR</userString>
-		<icon>hc_premium</icon>
-		<price>4800</price>
-		<improved>true</improved>
-		<kind>HOLLOW_CHARGE</kind>
-		<caliber>105</caliber>
-		<isTracer>true</isTracer>
-		<effects>mainHollowCharge</effects>
-		<damage>
-			<armor>390</armor>
-			<devices>150</devices>
-		</damage>
-		<ricochetAngle>85</ricochetAngle>
-		<piercingPowerLossFactorByDistance>
-			0.05
-			<!--BW_String-->
-		</piercingPowerLossFactorByDistance>
-	</_105mm_HEAT_L7_FR>
 	<_105mm_HE_L7>
 		<id>64</id>
 		<userString>#gb_vehicles:_105mm_HE_L7</userString>
@@ -7370,36 +7397,6 @@
 			</damage>
 		</armorSpalls>
 	</_105mm_HESH_L_35_5321>
-	<_105mm_HESH_L_35_5321_FR>
-		<id>58</id>
-		<userString>#gb_vehicles:_105mm_HESH_L_35_5321_FR</userString>
-		<icon>he_modern</icon>
-		<price>950</price>
-		<kind>HIGH_EXPLOSIVE</kind>
-		<mechanics>MODERN</mechanics>
-		<caliber>105</caliber>
-		<explosionRadius>
-			1.91
-			<!--BW_String-->
-		</explosionRadius>
-		<isTracer>true</isTracer>
-		<effects>mainHighExplosive</effects>
-		<damage>
-			<armor>480</armor>
-			<devices>150</devices>
-		</damage>
-		<armorSpalls>
-			<impactRadius>
-				1.91
-				<!--BW_String-->
-			</impactRadius>
-			<coneAngle>90</coneAngle>
-			<damage>
-				<armor>240</armor>
-				<devices>75</devices>
-			</damage>
-		</armorSpalls>
-	</_105mm_HESH_L_35_5321_FR>
 	<_105mm_HESH_L_35_4015>
 		<id>2146</id>
 		<userString>#gb_vehicles:_105mm_HESH_L_35_4015</userString>
@@ -7652,6 +7649,83 @@
 			</damage>
 		</armorSpalls>
 	</_105mm_HE_L7_Mk13_CFE_J>
+	<_105mm_HESH_L7_Mk13_L>
+		<id>359</id>
+		<userString>#gb_vehicles:_105mm_HESH_L7_Mk13_L</userString>
+		<icon>he_modern</icon>
+		<price>1903</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>105</caliber>
+		<explosionRadius>
+			1.91
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>mainHighExplosive</effects>
+		<damage>
+			<armor>480</armor>
+			<devices>150</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				1.91
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>240</armor>
+				<devices>75</devices>
+			</damage>
+		</armorSpalls>
+	</_105mm_HESH_L7_Mk13_L>
+	<_105mm_APDS_Kl14_L>
+		<id>360</id>
+		<userString>#gb_vehicles:_105mm_APDS_Kl14_L</userString>
+		<icon>ap_cr_premium</icon>
+		<price>4800</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>105</caliber>
+		<isTracer>true</isTracer>
+		<effects>mainAPCR</effects>
+		<damage>
+			<armor>390</armor>
+			<devices>150</devices>
+		</damage>
+		<normalizationAngle>2</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_105mm_APDS_Kl14_L>
+	<_105mm_HE_L7_Mk13_L>
+		<id>361</id>
+		<userString>#gb_vehicles:_105mm_HE_L7_Mk13_L</userString>
+		<icon>he_modern</icon>
+		<price>1065</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>105</caliber>
+		<explosionRadius>
+			1.91
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>mainHighExplosive</effects>
+		<damage>
+			<armor>550</armor>
+			<devices>150</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				1.91
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>275</armor>
+				<devices>75</devices>
+			</damage>
+		</armorSpalls>
+	</_105mm_HE_L7_Mk13_L>
 	<_105mm_AP_L7_MBC>
 		<id>268</id>
 		<userString>#gb_vehicles:_105mm_AP_L7_MBC</userString>

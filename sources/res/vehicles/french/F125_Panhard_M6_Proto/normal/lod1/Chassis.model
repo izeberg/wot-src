@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F125_Panhard_M6_Proto/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.248047 -0.002933 -2.359375</min>
+		<max>1.249999 1.153317 2.355469</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F125_Panhard_M6_Proto/normal/lod1/Chassis</nodefullVisual>
+</root>

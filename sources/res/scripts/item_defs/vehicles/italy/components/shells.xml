@@ -575,13 +575,13 @@
 		<id>89</id>
 		<userString>#italy_vehicles:_60mm_Type_300_APFSDS_T_Donnola</userString>
 		<icon>ap_cr</icon>
-		<price>181</price>
+		<price>201</price>
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>60</caliber>
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR</effects>
 		<damage>
-			<armor>90</armor>
+			<armor>100</armor>
 			<devices>81</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -591,14 +591,14 @@
 		<id>90</id>
 		<userString>#italy_vehicles:_60mm_Type_310_HEAT_FS_Donnola</userString>
 		<icon>hc_premium</icon>
-		<price>2000</price>
+		<price>2400</price>
 		<improved>true</improved>
 		<kind>HOLLOW_CHARGE</kind>
 		<caliber>60</caliber>
 		<isTracer>true</isTracer>
 		<effects>mediumHollowCharge</effects>
 		<damage>
-			<armor>90</armor>
+			<armor>100</armor>
 			<devices>81</devices>
 		</damage>
 		<normalizationAngle>0</normalizationAngle>
@@ -612,7 +612,7 @@
 		<id>91</id>
 		<userString>#italy_vehicles:_60mm_Type_301_HE_T_Donnola</userString>
 		<icon>he_modern</icon>
-		<price>72</price>
+		<price>77</price>
 		<kind>HIGH_EXPLOSIVE</kind>
 		<mechanics>MODERN</mechanics>
 		<caliber>60</caliber>
@@ -623,7 +623,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumHighExplosive</effects>
 		<damage>
-			<armor>130</armor>
+			<armor>140</armor>
 			<devices>81</devices>
 		</damage>
 		<armorSpalls>
@@ -633,7 +633,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>65</armor>
+				<armor>70</armor>
 				<devices>45</devices>
 			</damage>
 		</armorSpalls>

@@ -12,7 +12,7 @@ from gui.impl.lobby.user_missions.hangar_widget.services import IEventsService
 from gui.impl.lobby.user_missions.tooltips.challenges_banner_tooltip import ChallengesBannerTooltip
 from gui.server_events.events_dispatcher import showChallenges
 from helpers import dependency, time_utils
-from shared_utils import findFirst
+from shared_utils import first
 from skeletons.gui.challenges import IChallengesController
 from skeletons.gui.shared import IItemsCache
 
@@ -83,7 +83,7 @@ class ChallengesEventBanner(StandardEventBanner):
         if self.__challenges.isEnabled:
             challengeID = None
             if 0 < self.timerValue <= self.showTimerBeforeEventEnd:
-                challenge = findFirst(lambda c: not self.__challenges.isChallengeCompleted(c), self.__challenges.getSoonEndingChallenges())
+                challenge = first(self.__challenges.getSoonEndingChallengesForCompletions())
                 challengeID = challenge.challengeID if challenge is not None else challengeID
             showChallenges(challengeID=self.__challenges.activeChallengeID if self.__challenges.activeChallengeID else challengeID)
         return

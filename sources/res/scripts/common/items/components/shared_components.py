@@ -752,7 +752,7 @@ class BattleFuryParams(MechanicsParams):
 
     def _applyMechanicsAttrs(self, attr, value):
         if attr == 'battleFury/gainPerKill':
-            self.gainPerKill += value
+            self.gainPerKill += int(value)
         elif attr == 'battleFury/duration':
             self.duration += value
         elif attr == 'battleFury/reloadSpdBonus':
@@ -1206,9 +1206,9 @@ class AutoreloaderSurgeParams(MechanicsParams):
 
     def _applyMechanicsAttrs(self, attr, value):
         if attr == 'autoreloaderSurge/maxCharges':
-            self.maxCharges += value
+            self.maxCharges += int(value)
         elif attr == 'autoreloaderSurge/startCharges':
-            self.startCharges += value
+            self.startCharges += int(value)
         elif attr == 'autoreloaderSurge/chargeTimeSRegular':
             self.chargeTimeSRegular += value
         elif attr == 'autoreloaderSurge/chargeTimeSFullClip':

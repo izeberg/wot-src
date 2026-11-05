@@ -55,7 +55,7 @@ package net.wg.gui.lobby.storage.categories.cards
          this._checkboxHitArea.graphics.endFill();
          this.checkbox.addEventListener(MouseEvent.CLICK,this.onSelectableCardClickHandler);
          this.checkbox.hitArea = this._checkboxHitArea;
-         addChildAt(this._checkboxHitArea,0);
+         addChild(this._checkboxHitArea);
          addChildAt(this._cardHitArea,0);
       }
       

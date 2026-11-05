@@ -402,7 +402,7 @@ package net.wg.gui.battle.epicRandom.views
       
       private function onBattleMessengerRequestFocusHandler(param1:FocusRequestEvent) : void
       {
-         setFocus(param1.focusContainer.getComponentForFocus());
+         setBattleMessengerFocus(param1.focusContainer.getComponentForFocus());
          if(this.battleMessenger.isEnterButtonPressed)
          {
             this.swapElementsByMouseInteraction(this.epicRandomPlayersPanel,this.battleMessenger);

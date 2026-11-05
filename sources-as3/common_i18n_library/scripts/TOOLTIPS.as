@@ -9245,12 +9245,6 @@ package
       
       public static const NOTRECRUITEDTANKMAN_MUSTACHED_ENGINEER_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/mustached_engineer/howToGetInfo";
       
-      public static const NOTRECRUITEDTANKMAN_FR_SPARK_LABEL:String = "#tooltips:notrecruitedtankman/fr_spark/label";
-      
-      public static const NOTRECRUITEDTANKMAN_FR_SPARK_DESC:String = "#tooltips:notrecruitedtankman/fr_spark/desc";
-      
-      public static const NOTRECRUITEDTANKMAN_FR_SPARK_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/fr_spark/howToGetInfo";
-      
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_5_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp21_5/label";
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_5_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp21_5/desc";
@@ -9280,6 +9274,48 @@ package
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_9_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp21_9/desc";
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP21_9_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp21_9/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_NAKAJIMA_LABEL:String = "#tooltips:notrecruitedtankman/girls_und_panzer_nakajima/label";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_NAKAJIMA_DESC:String = "#tooltips:notrecruitedtankman/girls_und_panzer_nakajima/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_NAKAJIMA_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/girls_und_panzer_nakajima/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_HOSHINO_LABEL:String = "#tooltips:notrecruitedtankman/girls_und_panzer_hoshino/label";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_HOSHINO_DESC:String = "#tooltips:notrecruitedtankman/girls_und_panzer_hoshino/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_HOSHINO_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/girls_und_panzer_hoshino/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_SUZUKI_LABEL:String = "#tooltips:notrecruitedtankman/girls_und_panzer_suzuki/label";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_SUZUKI_DESC:String = "#tooltips:notrecruitedtankman/girls_und_panzer_suzuki/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_SUZUKI_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/girls_und_panzer_suzuki/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_TSUCHIYA_LABEL:String = "#tooltips:notrecruitedtankman/girls_und_panzer_tsuchiya/label";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_TSUCHIYA_DESC:String = "#tooltips:notrecruitedtankman/girls_und_panzer_tsuchiya/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_TSUCHIYA_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/girls_und_panzer_tsuchiya/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_FR_SPARK_LABEL:String = "#tooltips:notrecruitedtankman/fr_spark/label";
+      
+      public static const NOTRECRUITEDTANKMAN_FR_SPARK_DESC:String = "#tooltips:notrecruitedtankman/fr_spark/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_FR_SPARK_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/fr_spark/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_NY24_GIRL_1_26_LABEL:String = "#tooltips:notrecruitedtankman/ny24_girl_1_26/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY24_GIRL_1_26_DESC:String = "#tooltips:notrecruitedtankman/ny24_girl_1_26/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY24_GIRL_1_26_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/ny24_girl_1_26/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_NY24_GIRL_2_26_LABEL:String = "#tooltips:notrecruitedtankman/ny24_girl_2_26/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY24_GIRL_2_26_DESC:String = "#tooltips:notrecruitedtankman/ny24_girl_2_26/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY24_GIRL_2_26_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/ny24_girl_2_26/howToGetInfo";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

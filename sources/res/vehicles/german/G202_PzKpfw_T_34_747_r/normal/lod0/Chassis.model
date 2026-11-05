@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.500183 -0.000000 -2.968057</min>
+		<max>1.500183 1.058839 2.842399</max>
+	</visibilityBox>
+	<parent>vehicles/german/G202_PzKpfw_T_34_747_r/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/german/G202_PzKpfw_T_34_747_r/normal/lod0/Chassis</nodefullVisual>
+</root>

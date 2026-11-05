@@ -22,8 +22,9 @@ from skeletons.gui.shared import IItemsCache
 from vehicles.mechanics.mechanic_helpers import hasVehicleDescrMechanic
 from gui.impl.gen.view_models.common.vehicle_mechanic_model import MechanicsRank
 _logger = logging.getLogger(__name__)
+_DASH = backport.text(R.strings.menu.moduleInfo.paramsSeparator.dash())
 _SHELL_TOOLTIP_FORMAT_SETTINGS = dict(params_formatters.FORMAT_SETTINGS)
-_SHELL_TOOLTIP_FORMAT_SETTINGS.update({'avgDamage': {'rounder': backport.getIntegralFormat}, 'avgMutableDamage': {'rounder': backport.getIntegralFormat, 'separator': '-'}, 'piercingPower': {'rounder': backport.getIntegralFormat}})
+_SHELL_TOOLTIP_FORMAT_SETTINGS.update({'avgDamage': {'rounder': backport.getIntegralFormat}, 'avgMutableDamage': {'rounder': backport.getIntegralFormat, 'separator': _DASH}, 'piercingPower': {'rounder': backport.getIntegralFormat}})
 _ASTERISK = '*'
 _TOOLTIP_MIN_WIDTH = 380
 _TOOLTIP_NORMAL_WIDTH = 420
@@ -301,7 +302,7 @@ class CommonStatsBlockConstructor(ShellTooltipBlockConstructor):
                     tableData.append(value)
 
             if tableData:
-                value = '%s-%s' % (tableData[0], tableData[(-1)])
+                value = _DASH.join((tableData[0], tableData[(-1)]))
         if paramName == 'screensArmorMultiplier':
             value = backport.text(R.strings.menu.moduleInfo.params.screensArmorMultiplier.value(), multiplier=value)
         return value

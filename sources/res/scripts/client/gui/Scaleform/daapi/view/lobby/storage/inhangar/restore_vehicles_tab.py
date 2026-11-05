@@ -32,7 +32,7 @@ class _RestoreVehiclesDataProvider(StorageCarouselDataProvider):
 
     def __init__(self, carouselFilter, itemsCache):
         super(_RestoreVehiclesDataProvider, self).__init__(carouselFilter, itemsCache)
-        self._baseCriteria = REQ_CRITERIA.VEHICLE.IS_RESTORE_POSSIBLE | ~REQ_CRITERIA.INVENTORY ^ REQ_CRITERIA.VEHICLE.TELECOM_RENT
+        self._baseCriteria = REQ_CRITERIA.VEHICLE.IS_RESTORE_POSSIBLE
 
     def _addCriteria(self):
         self._addVehicleItemsByCriteria(self._baseCriteria | ~REQ_CRITERIA.VEHICLE.WOT_PLUS_VEHICLE | REQ_CRITERIA.VEHICLE.ACTIVE_IN_NATION_GROUP | ~REQ_CRITERIA.VEHICLE.IS_STORAGE_HIDDEN)

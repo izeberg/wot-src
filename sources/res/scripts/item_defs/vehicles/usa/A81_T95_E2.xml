@@ -1385,6 +1385,38 @@
 				</clipAngle>
 				<anchorShift>0.081695</anchorShift>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>
+					-1.642 0.316 -1.377
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 0 1.5691
+					<!--BW_String-->
+				</rotation>
+				<scale>1 1 1</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+				<hangerId>10</hangerId>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>
+					1.642 0.316 -1.377
+					<!--BW_String-->
+				</position>
+				<rotation>
+					0 3.141593 1.5691
+					<!--BW_String-->
+				</rotation>
+				<scale>1 1 1</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+				<hangerId>10</hangerId>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -2110,7 +2142,6 @@
 						<length>0.098855</length>
 					</secSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -2806,7 +2837,6 @@
 						<length>0.098289</length>
 					</secSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -3769,8 +3799,23 @@
 							<anchorShift>0.344452</anchorShift>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<size>medium</size>
+							<position>0.000007 0.372032 0.344928</position>
+							<rotation>0 0 -0</rotation>
+							<scale>1 1 1</scale>
+							<enableVisTunnel>true</enableVisTunnel>
+							<applyType>gunMantlet</applyType>
+							<hangerId>2</hangerId>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
+							<size>
+								0.476
+								<!--BW_String-->
+							</size>
 							<rayStart>
 								-0 -0.114224 1.881
 								<!--BW_String-->
@@ -3783,10 +3828,6 @@
 								0.088 0 0
 								<!--BW_String-->
 							</rayUp>
-							<size>
-								0.476
-								<!--BW_String-->
-							</size>
 						</slot>
 					</customizationSlots>
 					<customization>
@@ -4632,6 +4673,30 @@
 					<showOn>4368</showOn>
 					<clipAngle>0.623699</clipAngle>
 					<anchorShift>0.866013</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>-0.687625 1.077994 -0.014008</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>2</hangerId>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>0.000165 0.944222 -2.250659</position>
+					<rotation>
+						0 -1.570796 1.570796
+						<!--BW_String-->
+					</rotation>
+					<scale>1 1 1</scale>
+					<applyType>universal</applyType>
+					<size>medium</size>
+					<hangerId>12</hangerId>
 				</slot>
 			</customizationSlots>
 			<customization>

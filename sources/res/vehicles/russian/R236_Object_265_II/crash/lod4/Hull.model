@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<tank>true</tank>
-	<nodelessVisual>vehicles/russian/R236_Object_265_II/crash/lod4/Hull</nodelessVisual>
+	<nodefullVisual>vehicles/russian/R236_Object_265_II/crash/lod4/Hull</nodefullVisual>
 	<visibilityBox>
 		<min>-1.774027 -0.566435 -3.735569</min>
 		<max>1.667720 0.724799 3.575657</max>

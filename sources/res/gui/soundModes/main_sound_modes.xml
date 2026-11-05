@@ -1955,6 +1955,24 @@
 				<bank>FR/FR_zh_CN_spark/voiceover.bnk</bank>
 			</wwbanks>
 		</mode>
+		<mode>
+			<name>gup_nakajima</name>
+			<wwise_language>gup_jp/gup_nakajima</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>gup_jp/gup_nakajima/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>gup_leopon_crew</name>
+			<wwise_language>gup_jp/gup_leopon</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>gup_jp/gup_leopon/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
 	</modes>
 	<nationalPresets>
 		<preset>

@@ -219,7 +219,6 @@ package net.wg.gui.battle.components
       
       public function as_setTimeInSeconds(param1:String, param2:int, param3:Number) : void
       {
-         param3 = Math.round(param3);
          this._timers[param1].updateRadialTimer(param2,param3);
       }
       
@@ -251,9 +250,9 @@ package net.wg.gui.battle.components
          this.showTimer(param1,param2,param3);
       }
       
-      public function as_showSecondaryTimer(param1:String, param2:int, param3:Number, param4:Boolean) : void
+      public function as_showSecondaryTimer(param1:String, param2:int, param3:Number, param4:Boolean, param5:Boolean) : void
       {
-         this.showSecondaryTimer(param1,param2,param3,param4);
+         this.showSecondaryTimer(param1,param2,param3,param4,param5);
       }
       
       public function as_turnOnStackView(param1:Boolean) : void
@@ -349,10 +348,10 @@ package net.wg.gui.battle.components
          }
       }
       
-      protected function showSecondaryTimer(param1:String, param2:int, param3:Number, param4:Boolean = false) : void
+      protected function showSecondaryTimer(param1:String, param2:int, param3:Number, param4:Boolean = false, param5:Boolean = false) : void
       {
-         var _loc5_:SecondaryTimerBase = this.getSecondaryTimer(param1);
-         if(!_loc5_)
+         var _loc6_:SecondaryTimerBase = this.getSecondaryTimer(param1);
+         if(!_loc6_)
          {
             return;
          }
@@ -360,10 +359,17 @@ package net.wg.gui.battle.components
          {
             this.activeSecondaryTimers.push(param1);
          }
-         _loc5_.updateRadialTimer(param2,param3);
-         _loc5_.visible = true;
-         _loc5_.isActive = true;
-         _loc5_.showTimer(param4);
+         _loc6_.updateRadialTimer(param2,param3);
+         _loc6_.visible = true;
+         _loc6_.isActive = true;
+         if(param5)
+         {
+            _loc6_.restoreTimer();
+         }
+         else
+         {
+            _loc6_.showTimer(param4);
+         }
          invalidate(INVALID_STATE);
       }
       

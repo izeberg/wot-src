@@ -50,7 +50,6 @@
 		<M-17E>53</M-17E>
 		<Maybach_HL_120_TRM_A>54</Maybach_HL_120_TRM_A>
 		<V-12A>55</V-12A>
-		<UTD_20_FR>56</UTD_20_FR>
 		<V-54-6>57</V-54-6>
 		<M_40_KV_4>59</M_40_KV_4>
 		<_2x_V_2K_F>60</_2x_V_2K_F>
@@ -181,6 +180,7 @@
 		<M_17F_T>259</M_17F_T>
 		<D-12-5>260</D-12-5>
 		<GMC_6046I>261</GMC_6046I>
+		<DD_1>264</DD_1>
 		<V_11_704>265</V_11_704>
 		<V-2-54IS_704>266</V-2-54IS_704>
 		<V_2IS_ISU>267</V_2IS_ISU>
@@ -204,6 +204,8 @@
 		<UTD_45A>287</UTD_45A>
 		<DTH_10>288</DTH_10>
 		<V_12_5C>289</V_12_5C>
+		<V_12_5C_CFE_A>292</V_12_5C_CFE_A>
+		<T_26A>291</T_26A>
 		<GAZ_203_122A>2000</GAZ_203_122A>
 		<M_80_122A>2001</M_80_122A>
 		<M_17T_SU_8>2002</M_17T_SU_8>
@@ -2271,6 +2273,26 @@
 			<rpm_min>386</rpm_min>
 			<rpm_max>2361</rpm_max>
 		</T-26>
+		<T_26A>
+			<userString>#ussr_vehicles:T_26A</userString>
+			<tags>gasoline</tags>
+			<level>3</level>
+			<price>5000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_gaz_aa_pc</wwsoundPC>
+			<wwsoundNPC>eng_gaz_aa_npc</wwsoundNPC>
+			<power>150</power>
+			<weight>545</weight>
+			<maxHealth>100</maxHealth>
+			<maxRegenHealth>50</maxRegenHealth>
+			<repairCost>3</repairCost>
+			<fireStartingChance>
+				0.2
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>311</rpm_min>
+			<rpm_max>2603</rpm_max>
+		</T_26A>
 		<T-26M>
 			<userString>#ussr_vehicles:T-26M</userString>
 			<tags>gasoline</tags>
@@ -2684,6 +2706,26 @@
 			<rpm_min>333</rpm_min>
 			<rpm_max>2200</rpm_max>
 		</V_12_5C>
+		<V_12_5C_CFE_A>
+			<userString>#ussr_vehicles:V_12_5C_CFE_A</userString>
+			<tags>diesel</tags>
+			<level>9</level>
+			<price>90000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_v55_pc</wwsoundPC>
+			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<power>700</power>
+			<weight>1024</weight>
+			<maxHealth>310</maxHealth>
+			<maxRegenHealth>155</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<fireStartingChance>
+				0.15
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>333</rpm_min>
+			<rpm_max>2200</rpm_max>
+		</V_12_5C_CFE_A>
 		<V_12_5F>
 			<userString>#ussr_vehicles:V_12_5F</userString>
 			<tags>diesel</tags>
@@ -4434,26 +4476,6 @@
 			<rpm_min>328</rpm_min>
 			<rpm_max>2216</rpm_max>
 		</UTD_20>
-		<UTD_20_FR>
-			<userString>#ussr_vehicles:UTD_20_FR</userString>
-			<tags>diesel</tags>
-			<level>10</level>
-			<price>132000</price>
-			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
-			<power>720</power>
-			<weight>665</weight>
-			<maxHealth>360</maxHealth>
-			<maxRegenHealth>180</maxRegenHealth>
-			<repairCost>10</repairCost>
-			<fireStartingChance>
-				0.1
-				<!--BW_String-->
-			</fireStartingChance>
-			<rpm_min>328</rpm_min>
-			<rpm_max>2216</rpm_max>
-		</UTD_20_FR>
 		<GAZ_O>
 			<userString>#ussr_vehicles:GAZ_O</userString>
 			<tags>diesel</tags>
@@ -5246,6 +5268,26 @@
 			<rpm_min>301</rpm_min>
 			<rpm_max>2296</rpm_max>
 		</V_2A>
+		<DD_1>
+			<userString>#ussr_vehicles:DD_1</userString>
+			<tags>diesel</tags>
+			<level>9</level>
+			<price>90000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_v55_pc</wwsoundPC>
+			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<power>1000</power>
+			<weight>950</weight>
+			<maxHealth>310</maxHealth>
+			<maxRegenHealth>155</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<fireStartingChance>
+				0.15
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>253</rpm_min>
+			<rpm_max>2440</rpm_max>
+		</DD_1>
 		<Observer>
 			<userString>#ussr_vehicles:MS-1</userString>
 			<tags>gasoline</tags>
@@ -5343,8 +5385,8 @@
 				0.1
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>320</rpm_min>
-			<rpm_max>2240</rpm_max>
+			<rpm_min>306</rpm_min>
+			<rpm_max>2280</rpm_max>
 		</_5TD_2_7x7>
 		<V-5_IGR>
 			<userString>#igr_vehicles:V-5_IGR</userString>

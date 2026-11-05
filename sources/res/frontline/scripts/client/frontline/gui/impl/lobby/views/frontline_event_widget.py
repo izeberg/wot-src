@@ -1,8 +1,10 @@
 from __future__ import absolute_import
 from CurrentVehicle import g_currentVehicle
+from account_helpers import AccountSettings
+from account_helpers.AccountSettings import FRONTLINE_BANNER_INTRO_CLICK_TIMESTAMP
 from constants import LoadoutParams
 from frontline.frontline_account_settings import isRentBannerClicked, setRentBannerClicked
-from frontline.gui.impl.gen.view_models.views.lobby.views.frontline_const import FrontlineConst
+from frontline.gui.impl.gen.view_models.views.lobby.views.frontline_const import FrontlineConst, FrontlineState
 from frontline.gui.impl.gen.view_models.views.lobby.views.event_widget_model import EventWidgetModel
 from frontline.gui.impl.lobby.states import ProgressionScreenState, FrontlineBattleAbilitiesLoadoutState
 from frontline.gui.impl.lobby.tooltips.banner_tooltip import BannerTooltipView
@@ -69,17 +71,21 @@ class FrontlineEventWidget(UserMissionChildPresenter, TooltipPositionerMixin, FL
         return super(FrontlineEventWidget, self).getViewModel()
 
     def createToolTipContent(self, event, contentID):
-        return BannerTooltipView(isForFrontlineWidget=True)
+        return BannerTooltipView()
 
     def _onLoading(self, *args, **kwargs):
         self.initOverlapCtrl()
         super(FrontlineEventWidget, self)._onLoading(*args, **kwargs)
         self.queueUpdate()
 
+    def _onLoaded(self, *args, **kwargs):
+        eventStartDate, _ = self.__epicController.getSeasonTimeRange()
+        if self.__gameModeStatus == FrontlineState.ACTIVE:
+            if AccountSettings.getSettings(FRONTLINE_BANNER_INTRO_CLICK_TIMESTAMP) < eventStartDate:
+                AccountSettings.setSettings(FRONTLINE_BANNER_INTRO_CLICK_TIMESTAMP, eventStartDate)
+
     def _getEvents(self):
-        return (
-         (
-          self.gui.windowsManager.onWindowStatusChanged, self._onWindowStatusChanged),
+        return ((self.gui.windowsManager.onWindowStatusChanged, self._onWindowStatusChanged),
          (
           self.__epicController.onUpdated, self.__onEpicUpdated),
          (

@@ -854,7 +854,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank private HD secret testTank siegeMode dualgun charger heavyTank1 improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user</tags>
+		<tags>heavyTank private HD secret testTank siegeMode dualgun charger heavyTank1 improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user regular_battles</tags>
 		<level>8</level>
 	</R165_Object_703_II_2>
 	<R173_K_91_2>
@@ -1105,7 +1105,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>mediumTank role_MT_universal HD improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user secret testTank</tags>
+		<tags>mediumTank role_MT_universal HD improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user secret testTank regular_battles</tags>
 		<level>7</level>
 	</R195_T34M_54>
 	<R194_ST_62_var_2>
@@ -2554,6 +2554,21 @@
 		<tags>heavyTank role_HT_break HD heavyTank1 improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user special builtinRepairkit_user</tags>
 		<level>9</level>
 	</R219_Object_265T>
+	<R222_KV_90>
+		<id>164</id>
+		<userString>#ussr_vehicles:R222_KV_90</userString>
+		<description>#ussr_vehicles:R222_KV_90_descr</description>
+		<shortUserString>#ussr_vehicles:R222_KV_90_short</shortUserString>
+		<shortDescriptionSpecial>#ussr_vehicles:R222_KV_90_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#ussr_vehicles:R222_KV_90_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>heavyTank role_HT_assault HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user special testTank secret regular_battles</tags>
+		<level>9</level>
+	</R222_KV_90>
 	<R145_Object_705_A_7x7>
 		<id>265</id>
 		<userString>#ussr_vehicles:R145_Object_705_A_7x7</userString>
@@ -2595,7 +2610,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_break HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals secret testTank</tags>
+		<tags>heavyTank role_HT_break HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals secret testTank regular_battles</tags>
 		<level>9</level>
 	</R233_NK_1>
 	<R235_KB_52>
@@ -2702,6 +2717,21 @@
 		<tags>heavyTank role_HT_assault HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user special earn_crystals</tags>
 		<level>10</level>
 	</R239_Object_Veles>
+	<R241_T_26_76>
+		<id>278</id>
+		<userString>#ussr_vehicles:R241_T_26_76</userString>
+		<description>#ussr_vehicles:R241_T_26_76_descr</description>
+		<shortUserString>#ussr_vehicles:R241_T_26_76_short</shortUserString>
+		<shortDescriptionSpecial>#ussr_vehicles:R241_T_26_76_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#ussr_vehicles:R241_T_26_76_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>lightTank HD improvedVentilation_class3_user extraHealthReserve_class3_user secret testTank regular_battles</tags>
+		<level>3</level>
+	</R241_T_26_76>
 	<R45_IS-7_7x7>
 		<id>279</id>
 		<userString>#ussr_vehicles:R45_IS-7_7x7</userString>
@@ -2730,6 +2760,21 @@
 		<tags>mediumTank role_MT_assault HD mediumTank3 improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals private secret cannot_be_sold comp7 special lockCrew lockCrewSkills lockOptionalDevices</tags>
 		<level>10</level>
 	</R148_Object_430_U_7x7>
+	<R236_Object_265_II_CFE_A>
+		<id>282</id>
+		<userString>#ussr_vehicles:R236_Object_265_II_CFE_A</userString>
+		<shortUserString>#ussr_vehicles:R236_Object_265_II_CFE_A_short</shortUserString>
+		<description>#ussr_vehicles:R236_Object_265_II_CFE_A_descr</description>
+		<shortDescriptionSpecial>#ussr_vehicles:R236_Object_265_II_CFE_A_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#ussr_vehicles:R236_Object_265_II_CFE_A_long_special</longDescriptionSpecial>
+		<price>
+			10800
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>heavyTank role_HT_assault HD siegeMode dualgun charger improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals lockOutfit restoreWithStyle</tags>
+		<level>9</level>
+	</R236_Object_265_II_CFE_A>
 	<R228_KR_1_7x7>
 		<id>283</id>
 		<userString>#ussr_vehicles:R228_KR_1_7x7</userString>
@@ -2760,18 +2805,4 @@
 		<tags>mediumTank role_MT_assault HD mediumTank3 improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals private secret cannot_be_sold clanWarsBattles special lockCrew lockCrewSkills lockOptionalDevices</tags>
 		<level>11</level>
 	</R230_Object_432U_7x7>
-	<R132_VNII_100LT_FR>
-		<id>281</id>
-		<userString>#ussr_vehicles:R132_VNII_100LT_FR</userString>
-		<shortUserString>#ussr_vehicles:R132_VNII_100LT_FR_short</shortUserString>
-		<description>#ussr_vehicles:R132_VNII_100LT_FR_descr</description>
-		<price>
-			100
-			<gold/>
-		</price>
-		<notInShop>true</notInShop>
-		<cannotBeBought>true</cannotBeBought>
-		<tags>lightTank role_LT_scout HD scout improvedVentilation_class3_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_light_user earn_crystals private secret cannot_be_sold special lockOptionalDevices lockCrewSkills lockCrew event_battles fort_rush</tags>
-		<level>10</level>
-	</R132_VNII_100LT_FR>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A198_Christie_M1921/normal/lod1/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A198_Christie_M1921/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.316076 -0.315364 0.064183</min>
+		<max>0.315885 0.313024 0.673692</max>
+	</visibilityBox>
+</root>

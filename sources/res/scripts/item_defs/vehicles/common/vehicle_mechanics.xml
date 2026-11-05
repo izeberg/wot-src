@@ -138,8 +138,7 @@
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						+123.0
-						<!--BW_String-->
+						+30%
 						<name>sightPointerViewRange</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
@@ -797,12 +796,12 @@
 						<name>speedLimits</name>
 					</param>
 					<param>
-						-60%
+						-50%
 						<name>pillboxHorizontalRotationSpeed</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						-40%
+						-30%
 						<name>pillboxVerticalRotationSpeed</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>

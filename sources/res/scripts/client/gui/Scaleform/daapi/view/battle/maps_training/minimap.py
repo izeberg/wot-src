@@ -1,6 +1,6 @@
 from __future__ import absolute_import, division
 from future.utils import viewitems
-import BigWorld
+import BigWorld, Math
 from helpers import isPlayerAvatar
 from account_helpers.settings_core.settings_constants import GAME
 from vehicle_systems.stricted_loading import makeCallbackWeak
@@ -190,6 +190,8 @@ class BotAppearNotificationPlugin(common.EntriesPlugin):
             if vehicleID == model.getOwnVehicleID():
                 model.setInAoI(isVisualStarted)
                 self.__setVehicleMatrixAndLocation(model, vehicleID, self._arenaVisitor.getArenaPositions())
+                if not isVisualStarted:
+                    self.__freezeMarkerPosition(model)
                 self.__updateVehInfo(targetID, not isVisualStarted)
                 break
 
@@ -200,6 +202,17 @@ class BotAppearNotificationPlugin(common.EntriesPlugin):
             model.setMatrix(matrix)
             self._setMatrix(model.getID(), matrix)
         return
+
+    def __freezeMarkerPosition(self, model):
+        currentMatrix = model.getMatrix()
+        if currentMatrix is None:
+            return
+        else:
+            position = Math.Matrix(currentMatrix).translation
+            frozen = minimap_utils.makePositionAndScaleMatrix(position, (self._curScale, 1.0, self._curScale))
+            model.setMatrix(frozen)
+            self._setMatrix(model.getID(), frozen)
+            return
 
     @staticmethod
     def _calculateMarkerScale(minimapSizeIndex):

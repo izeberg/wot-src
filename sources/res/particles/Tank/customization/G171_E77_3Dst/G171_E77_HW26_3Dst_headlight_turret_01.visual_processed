@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>headlight</identifier>
+					<fx>shaders/environment/light_flare.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/headlamp_03.dds</Texture>
+					</property>
+					<property>
+						g_emissionFactor
+						<Float>5.000000</Float>
+					</property>
+					<property>
+						g_glowColor
+						<Vector4>1.000000 0.396078 0.321569 0.200000</Vector4>
+					</property>
+					<property>
+						g_innerConeAngle
+						<Float>10.000000</Float>
+					</property>
+					<property>
+						g_outterConeAngle
+						<Float>70.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.000000 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.750295 -0.151404 -0.136681</min>
+		<max>0.750295 0.151404 0.136681</max>
+	</boundingBox>
+	<geometrySize>24480</geometrySize>
+</root>

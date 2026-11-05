@@ -279,8 +279,6 @@ class TabView(ViewImpl):
             return
         vehicleInfo = self._getVehicleInfo(vehicleId)
         self._updateSquadFinder(vehicleId, vehicleInfo)
-        with self.modifyBattlePlayer(vehicleId) as (playerModel):
-            self._invalidateVehicleTypeInfo(playerModel)
         prebattleID = self._getPrebattleID(vehicleInfo)
         currPlayerHasJoinedSquad = self._hasCurrentPlayerJustJoinedSquad(vehicleId, prebattleID)
         if currPlayerHasJoinedSquad:

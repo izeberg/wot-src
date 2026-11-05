@@ -74,7 +74,7 @@ class DestructibleStickers(object):
                 return
             uid = hash(code)
             hitPoint, hitDir, normal = collisionResult
-            CGF.postEvent(self.__gameObject.spaceID, game_events.AddDamageStickerEvent(uid, self.__gameObject, hitPoint, hitDir, normal, game_events.GunShellInfo(data.caliber, data.shellType), hitType, isActive, stickerID))
+            CGF.postEvent(self.__gameObject.spaceID, game_events.AddDamageStickerEvent(uid, self.__gameObject.uuid, hitPoint, hitDir, normal, game_events.GunShellInfo(data.caliber, data.shellType), hitType, isActive, stickerID))
             _logger.debug('Parametrized damage sticker add with uid: %i', uid)
             self.__parametrizedDamageStickers[code] = uid
             return

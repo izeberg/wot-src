@@ -12431,7 +12431,7 @@
 		</projection_decal>
 	</itemGroup>
 	<itemGroup>
-		<name>Girls und Panzser 2026 Pin-Up</name>
+		<name>Girls und Panzer 2026 Pin-Up</name>
 		<userString>#vehicle_customization:projection_decals/pin_up</userString>
 		<season>ALL</season>
 		<historical>1</historical>
@@ -12458,9 +12458,15 @@
 			<tags>formfactor_square direction_left_to_right</tags>
 			<mirror>false</mirror>
 		</projection_decal>
+		<projection_decal>
+			<id>1422</id>
+			<tags>direction_left_to_right formfactor_square</tags>
+			<texture>gui/maps/vehicles/decals/projection_decals/pin_up/projection_decal_73.dds</texture>
+			<userString>#vehicle_customization:projection_decals/pin_up/projection_decal_73</userString>
+		</projection_decal>
 	</itemGroup>
 	<itemGroup>
-		<name>Girls und Panzser 2026</name>
+		<name>Girls und Panzer 2026</name>
 		<userString>#vehicle_customization:projection_decals/special</userString>
 		<season>ALL</season>
 		<historical>1</historical>
@@ -12486,6 +12492,12 @@
 			<userString>#vehicle_customization:projection_decals/special/projection_decal_1043</userString>
 			<tags>formfactor_square direction_left_to_right</tags>
 			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1421</id>
+			<tags>direction_left_to_right formfactor_square</tags>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1121.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1121</userString>
 		</projection_decal>
 	</itemGroup>
 	<itemGroup>
@@ -13098,6 +13110,22 @@
 			<tags>formfactor_square styleOnly</tags>
 			<mirror>false</mirror>
 			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1099_GMM.dds</glossTexture>
+		</projection_decal>
+		<projection_decal>
+			<id>1512</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1212.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1212</userString>
+			<tags>formfactor_square styleOnly</tags>
+			<mirror>false</mirror>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1212_GMM.dds</glossTexture>
+		</projection_decal>
+		<projection_decal>
+			<id>1513</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1213.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1213</userString>
+			<tags>formfactor_square styleOnly</tags>
+			<mirror>false</mirror>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1212_GMM.dds</glossTexture>
 		</projection_decal>
 		<name>OLS</name>
 	</itemGroup>
@@ -15834,6 +15862,27 @@
 			<tags>direction_right_to_left formfactor_square disableVerticalMirror</tags>
 			<userString>#vehicle_customization:projection_decals/special/projection_decal_1135</userString>
 			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1461</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1161.dds</texture>
+			<mirror>true</mirror>
+			<tags>direction_right_to_left disableVerticalMirror formfactor_square</tags>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1161</userString>
+		</projection_decal>
+		<projection_decal>
+			<id>1462</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1162.dds</texture>
+			<mirror>true</mirror>
+			<tags>direction_right_to_left disableVerticalMirror formfactor_square</tags>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1162</userString>
+		</projection_decal>
+		<projection_decal>
+			<id>1468</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1164.dds</texture>
+			<mirror>true</mirror>
+			<tags>direction_right_to_left disableVerticalMirror formfactor_square</tags>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1164</userString>
 		</projection_decal>
 	</itemGroup>
 	<itemGroup>

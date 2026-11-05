@@ -4,11 +4,11 @@ from typing import Optional, Set
 import BigWorld
 from account_helpers.AccountSettings import AccountSettings, IS_BATTLE_PASS_START_ANIMATION_SEEN
 from battle_pass_common import getPresentLevel
-from gui.battle_pass.battle_pass_constants import ChapterState
+from gui.battle_pass.battle_pass_helpers import getTimeExpirations
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.user_missions.widget.battle_pass_model import AppearAnimationState, BattlePassModel, WidgetState
 from gui.impl.lobby.battle_pass.battle_pass_entry_point_view import BaseBattlePassEntryPointView
-from gui.impl.lobby.battle_pass.common import getExtraChapterID, isExtraChapterSeen, isExtraContentResolved, isHolidayChapterSeen, isUmgExtraChapterSeen, setUmgExtraChapterSeen, setHolidayChapterSeen
+from gui.impl.lobby.battle_pass.common import isExtraChapterSeen, isExtraContentResolved, isHolidayChapterSeen, isUmgExtraChapterSeen, setUmgExtraChapterSeen, setHolidayChapterSeen
 from gui.impl.lobby.battle_pass.tooltips.battle_pass_completed_tooltip_view import BattlePassCompletedTooltipView
 from gui.impl.lobby.battle_pass.tooltips.battle_pass_in_progress_tooltip_view import BattlePassInProgressTooltipView
 from gui.impl.lobby.battle_pass.tooltips.battle_pass_no_chapter_tooltip_view import BattlePassNoChapterTooltipView
@@ -20,6 +20,7 @@ from gui.impl.lobby.user_missions.hangar_widget.tooltip_positioner import Toolti
 from gui.impl.pub.view_component import ViewComponent
 from gui.shared.event_dispatcher import showBattlePass
 from helpers import dependency
+from shared_utils import findFirst
 from skeletons.gui.game_control import IBattlePassController
 from skeletons.gui.shared.utils import IHangarSpace
 if typing.TYPE_CHECKING:
@@ -205,10 +206,10 @@ class BattlePassPresenter(UserMissionChildPresenter, TooltipPositionerMixin, Ove
             self._fillLastSeen(tx, chapterID, points, level, rewards, rewardsHash)
 
     def _fillModel(self, tx, chapterID, points, limit, level, rewardsHash):
-        extraChapterId = getExtraChapterID()
         isBattlePassExtraChapterSeen = isExtraChapterSeen()
         isBattlePassHolidayChapterSeen = isHolidayChapterSeen()
-        tx.setWidgetState(self._getWidgetState(isBattlePassExtraChapterSeen, isBattlePassHolidayChapterSeen))
+        widgetState = self._getWidgetState(isBattlePassExtraChapterSeen, isBattlePassHolidayChapterSeen)
+        tx.setWidgetState(widgetState)
         tx.setLevel(level)
         tx.setTooltipID(self._getTooltip())
         tx.setChapterID(chapterID)
@@ -218,15 +219,10 @@ class BattlePassPresenter(UserMissionChildPresenter, TooltipPositionerMixin, Ove
         tx.setIsExtraChapter(self.__battlePass.isExtraChapter(chapterID))
         tx.setIsHoliday(self.isHoliday)
         tx.setRewardsHash(rewardsHash)
-        tx.setHasExtraChapter(self._hasExtraChapter(extraChapterId))
+        tx.setHasExtraChapter(self._hasExtraChapter())
         tx.setIsExtraChapterHighlighted(self._needToShowExtraIntro(isBattlePassExtraChapterSeen))
         tx.setAppearAnimationState(self._getAppearAnimationState())
-        extraTimeLeft = self.__battlePass.getChapterRemainingTime(extraChapterId)
-        timeLeft = self.__battlePass.getSeasonTimeLeft()
-        if chapterID:
-            tx.setTimeLeft(extraTimeLeft if self.__battlePass.isExtraChapter(chapterID) else timeLeft)
-        else:
-            tx.setTimeLeft(extraTimeLeft if self.__battlePass.hasExtra() else timeLeft)
+        tx.setTimeLeft(self._getTimeLeft(chapterID, widgetState))
         tx.setPointsEarned(points)
         tx.setLevelPoints(limit)
 
@@ -239,6 +235,12 @@ class BattlePassPresenter(UserMissionChildPresenter, TooltipPositionerMixin, Ove
             tx.lastSeenState.setLevel(level)
         tx.lastSeenState.setRewardsHash(_g_entryLastState.rewardsHash)
         self._savePresenterLastState(rewards=rewards, rewardsHash=rewardsHash)
+
+    def _getTimeLeft(self, chapterID, widgetState):
+        isIntro = widgetState == WidgetState.INTRO
+        timerChapterID = self._getUncompletedExtraChapterID() if isIntro else chapterID
+        _, timeLeft = getTimeExpirations(timerChapterID, battlePass=self.__battlePass)
+        return timeLeft
 
     def _needToShowExtraIntro(self, isBattlePassExtraChapterSeen):
         return self.hasExtra and (not isBattlePassExtraChapterSeen or self._needToRemindExtraChapter())
@@ -261,8 +263,11 @@ class BattlePassPresenter(UserMissionChildPresenter, TooltipPositionerMixin, Ove
             return WidgetState.INTRO
         return WidgetState.PROGRESSION
 
-    def _hasExtraChapter(self, chapterID):
-        return self.hasExtra and self.__battlePass.getChapterState(chapterID) != ChapterState.COMPLETED
+    def _hasExtraChapter(self):
+        return bool(self._getUncompletedExtraChapterID())
+
+    def _getUncompletedExtraChapterID(self):
+        return findFirst(lambda chapterID: not self.__battlePass.isChapterCompleted(chapterID), self.__battlePass.getExtraChapterIDs(), 0)
 
     def _savePresenterLastState(self, rewards=None, rewardsHash=None):
         points, _ = self.__battlePass.getLevelProgression(self.chapterID)

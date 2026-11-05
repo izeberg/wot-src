@@ -16,6 +16,7 @@ from functools import partial
 from advanced_achievements_client.getters import getAchievementsEarnedBeforeTime, getBonusTuples
 from helpers.dependency import replace_none_kwargs
 from messenger.m_constants import SCH_CLIENT_MSG_TYPE
+from PlayerEvents import g_playerEvents
 from skeletons.gui.game_control import IAchievements20EarningController, IAchievementsController, ILimitedUIController
 from skeletons.gui.impl import IGuiLoader
 from skeletons.account_helpers.settings_core import ISettingsCore
@@ -69,12 +70,14 @@ class Achievements20EarningController(IAchievements20EarningController):
 
     def __addFlowListeners(self):
         self.__advAchmntCtrl.onNewAchievementsEarned += self.__onAchievementsEarned
+        g_playerEvents.onArenaCreated += self.__onArenaCreated
 
     def __addControllerListeners(self):
         self.__guiLoader.windowsManager.onWindowStatusChanged += self.__onWindowStatusChanged
 
     def __removeFlowListeners(self):
         self.__advAchmntCtrl.onNewAchievementsEarned -= self.__onAchievementsEarned
+        g_playerEvents.onArenaCreated -= self.__onArenaCreated
 
     def __removeControllerListeners(self):
         if self.__guiLoader.windowsManager is not None:
@@ -113,6 +116,11 @@ class Achievements20EarningController(IAchievements20EarningController):
         if achievementsData:
             self.__advAchmntCtrl.initUnseenAdvancedAchievements(achievementsData)
             self.__achievementsEarned(achievementsData)
+
+    def __onArenaCreated(self):
+        if self.__commandQueueManager is not None:
+            self.__commandQueueManager.saveCurrentChainTimestamp()
+        return
 
     def __onAchievementsEarned(self, achievementsData):
         self.__achievementsEarned(achievementsData)
@@ -178,6 +186,11 @@ class CommandQueueManager(object):
         self.__commandQueue = []
         self.__commandChains = []
         return
+
+    def saveCurrentChainTimestamp(self):
+        for command in self.__commandQueue + [self.__currentCommand]:
+            if isinstance(command, TimeStampUpdateCommand):
+                command.saveTimestamp()
 
     def pause(self):
         if not self.__isPaused:
@@ -320,9 +333,12 @@ class TimeStampUpdateCommand(Command):
         self.__timestamp = args['timestamp']
 
     def execute(self):
-        self.__settingsCore.serverSettings.setAdvancedAchievementsEarningTimestamp(self.__timestamp)
+        self.saveTimestamp()
         super(TimeStampUpdateCommand, self).execute()
         self.release()
+
+    def saveTimestamp(self):
+        self.__settingsCore.serverSettings.setAdvancedAchievementsEarningTimestamp(self.__timestamp)
 
 
 class PrintCommand(Command):

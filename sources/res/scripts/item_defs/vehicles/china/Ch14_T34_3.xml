@@ -1161,12 +1161,9 @@
 			<slot>
 				<slotType>attachment</slotType>
 				<slotId>18002</slotId>
-				<position>
-					0.698 0.2 -3.473966
-					<!--BW_String-->
-				</position>
+				<position>0.000003 0.365261 -3.474194</position>
 				<rotation>
-					-0 -1.570796 1.570796
+					0 -1.570796 1.570796
 					<!--BW_String-->
 				</rotation>
 				<scale>
@@ -1175,6 +1172,7 @@
 				</scale>
 				<applyType>universal</applyType>
 				<size>medium</size>
+				<hangerId>12</hangerId>
 			</slot>
 		</customizationSlots>
 		<customization>

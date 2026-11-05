@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G205_Jagdpanzer_7_Pfanne/crash/lod1/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G205_Jagdpanzer_7_Pfanne/crash/lod2/Gun_01</parent>
+	<extent>64</extent>
+	<visibilityBox>
+		<min>-0.459161 -0.247580 0.213045</min>
+		<max>0.457610 0.299987 5.543103</max>
+	</visibilityBox>
+</root>

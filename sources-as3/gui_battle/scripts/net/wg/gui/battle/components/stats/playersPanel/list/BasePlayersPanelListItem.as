@@ -66,9 +66,7 @@ package net.wg.gui.battle.components.stats.playersPanel.list
       
       private static const VEHICLE_ICON_RIGHT_OFFSET:int = 8;
       
-      private static const VEHICLE_LEVEL_LEFT_OFFSET:int = 19;
-      
-      private static const VEHICLE_LEVEL_RIGHT_OFFSET:int = -32;
+      private static const VEHICLE_LEVEL_OFFSET:int = 19;
       
       private static const SPEAK_ANIMATION_LEFT_OFFSET:int = -41;
       
@@ -257,7 +255,7 @@ package net.wg.gui.battle.components.stats.playersPanel.list
          this.vehicleTF.mouseEnabled = false;
          this.icoIGR.mouseEnabled = false;
          this.vehicleLevel.mouseEnabled = false;
-         this.vehicleLevel.isCentralizeByX = true;
+         this.vehicleLevel.drawImmediately();
          this.vehicleIcon.mouseEnabled = false;
          this.mute.mouseEnabled = false;
          this.speakAnimation.mouseEnabled = false;
@@ -647,8 +645,8 @@ package net.wg.gui.battle.components.stats.playersPanel.list
             return;
          }
          this._vehicleLevel = param1;
-         this.vehicleLevel.isCentralizeByX = true;
          this.vehicleLevel.imageName = BATTLEATLAS.level(this._vehicleLevel.toString());
+         this.updateVehicleLevelX();
       }
       
       public function setVehicleLevelVisible(param1:Boolean) : void
@@ -709,7 +707,7 @@ package net.wg.gui.battle.components.stats.playersPanel.list
       
       protected function updatePositionsLeft() : void
       {
-         this.vehicleLevel.x = this.vehicleIcon.x + VEHICLE_LEVEL_LEFT_OFFSET;
+         this.updateVehicleLevelX();
          this.speakAnimation.x = this.vehicleIcon.x + SPEAK_ANIMATION_LEFT_OFFSET;
          this.spottedIndicator.x = this.vehicleIcon.x + SPOTTED_INDICATOR_LEFT_OFFSET;
          this.actionMarker.x = this.vehicleIcon.x + ACTION_MARKER_LEFT_OFFSET;
@@ -717,10 +715,22 @@ package net.wg.gui.battle.components.stats.playersPanel.list
       
       protected function updatePositionsRight() : void
       {
-         this.vehicleLevel.x = this.vehicleIcon.x + VEHICLE_LEVEL_RIGHT_OFFSET;
+         this.updateVehicleLevelX();
          this.speakAnimation.x = this.vehicleIcon.x + SPEAK_ANIMATION_RIGHT_OFFSET;
          this.spottedIndicator.x = this.vehicleIcon.x + SPOTTED_INDICATOR_RIGHT_OFFSET;
          this.actionMarker.x = this.vehicleIcon.x + ACTION_MARKER_RIGHT_OFFSET;
+      }
+      
+      private function updateVehicleLevelX() : void
+      {
+         if(this._isRightAligned)
+         {
+            this.vehicleLevel.x = this.vehicleIcon.x - VEHICLE_LEVEL_OFFSET - this.vehicleLevel.width;
+         }
+         else
+         {
+            this.vehicleLevel.x = this.vehicleIcon.x + VEHICLE_LEVEL_OFFSET;
+         }
       }
       
       protected function getOffset() : int

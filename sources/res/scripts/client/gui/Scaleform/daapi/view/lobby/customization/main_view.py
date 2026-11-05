@@ -196,6 +196,7 @@ class MainView(LobbySubView, CustomizationMainViewMeta):
         self.__initAnchorsPositionsCallback = None
         self.__selectedSlot = C11nId()
         self.__onVehicleLoadFinishedEvent = Event()
+        self.__pendingAnchors = None
         self.__locateCameraToStyleInfo = False
         self.__billPopoverButtonsCallbacks = {BillPopoverButtons.CUSTOMIZATION_CLEAR: self.__onCustomizationClear, 
            BillPopoverButtons.CUSTOMIZATION_CLEAR_LOCKED: self.__onCustomizationClearLocked}
@@ -259,6 +260,8 @@ class MainView(LobbySubView, CustomizationMainViewMeta):
         if entity and entity.appearance:
             entity.appearance.loadState.unsubscribe(self.__onVehicleLoadFinished, self.__onVehicleLoadStarted)
         self.__onVehicleLoadFinishedEvent.clear()
+        self.__pendingAnchors = None
+        return
 
     def __onVehicleChanged(self):
         self.__closed = False
@@ -279,6 +282,7 @@ class MainView(LobbySubView, CustomizationMainViewMeta):
         pass
 
     def __onVehicleLoadFinished(self):
+        self.__setPendingAnchors()
         self.__onVehicleLoadFinishedEvent()
         self.__onVehicleLoadFinishedEvent.clear()
         if self.__ctx.c11nCameraManager is None:
@@ -737,7 +741,13 @@ class MainView(LobbySubView, CustomizationMainViewMeta):
         if entity and entity.isVehicleLoaded:
             self.__setAnchors(anchors)
         else:
-            self.__onVehicleLoadFinishedEvent += lambda : self.__setAnchors(anchors)
+            self.__pendingAnchors = anchors
+
+    def __setPendingAnchors(self):
+        if self.__pendingAnchors is not None:
+            self.__setAnchors(self.__pendingAnchors)
+            self.__pendingAnchors = None
+        return
 
     def __setAnchors(self, anchors):
         if self.__ctx.vehicleAnchorsUpdater is not None:
@@ -843,6 +853,7 @@ class MainView(LobbySubView, CustomizationMainViewMeta):
             entity.appearance.loadState.unsubscribe(self.__onVehicleLoadFinished, self.__onVehicleLoadStarted)
             entity.appearance.turretRotator.onTurretRotated -= self.__onTurretAndGunRotated
         self.__onVehicleLoadFinishedEvent = None
+        self.__pendingAnchors = None
         if self.__styleInfo is not None:
             self.__styleInfo.disableBlur()
             self.__disableStyleInfoSound()

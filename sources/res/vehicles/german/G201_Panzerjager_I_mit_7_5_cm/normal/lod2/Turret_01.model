@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G201_Panzerjager_I_mit_7_5_cm/normal/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G201_Panzerjager_I_mit_7_5_cm/normal/lod3/Turret_01</parent>
+	<extent>96</extent>
+	<visibilityBox>
+		<min>-0.551182 -0.092000 -0.329038</min>
+		<max>0.295625 0.900073 0.445992</max>
+	</visibilityBox>
+</root>

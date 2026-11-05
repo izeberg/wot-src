@@ -681,11 +681,10 @@ class PremiumDaysBonusFormatter(SimpleBonusFormatter):
     @classmethod
     def _getImages(cls, bonus):
         result = {}
+        value, name = bonus.getValue(), bonus.getName()
         for size in AWARDS_SIZES.ALL():
-            imgPath = RES_ICONS.getPremiumDaysAwardIcon(size, bonus.getName(), bonus.getValue())
-            if imgPath is None:
-                imgPath = RES_ICONS.getPremiumDaysAwardIcon(size, bonus.getName(), 'universal')
-            result[size] = imgPath
+            iconValue = value if RES_ICONS.hasPremiumDaysAwardIcon(size, name, value) else 'universal'
+            result[size] = RES_ICONS.getPremiumDaysAwardIcon(size, name, iconValue)
 
         return result
 

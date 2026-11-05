@@ -76,9 +76,9 @@ _ON_VEHICLE_CONTROLLING_UPDATE = (
 _MAX_DISPLAYED_SECONDARY_STATUS_TIMERS = 2
 _VERTICAL_SHIFT_WITH_AUTOLOADER_IN_SNIPER_MODE = 60
 
-def _showTimerView(typeID, viewID, view, totalTime, isBubble, currentTime=0, secondInRow=False):
+def _showTimerView(typeID, viewID, view, totalTime, isBubble, currentTime=0, secondInRow=False, isRestored=False):
     if typeID in _SECONDARY_TIMERS:
-        view.as_showSecondaryTimerS(typeID, totalTime, currentTime, secondInRow)
+        view.as_showSecondaryTimerS(typeID, totalTime, currentTime, secondInRow, isRestored)
     else:
         view.as_showS(typeID, viewID, isBubble)
     gui_event_dispatcher.destroyTimersPanelShown(shown=True)
@@ -93,6 +93,11 @@ def _hideTimerView(typeID, view):
 
 
 class _ActionScriptTimer(TimerComponent):
+    __slots__ = ('_isRestored', )
+
+    def __init__(self, *args, **kwargs):
+        self._isRestored = kwargs.pop('isRestored', False)
+        super(_ActionScriptTimer, self).__init__(*args, **kwargs)
 
     def _startTick(self):
         if self._totalTime > 0 and self._typeID not in _SECONDARY_TIMERS:
@@ -102,16 +107,21 @@ class _ActionScriptTimer(TimerComponent):
         pass
 
     def _showView(self, isBubble):
-        _showTimerView(self._typeID, self._viewID, self._viewObject, self._totalTime, isBubble, BigWorld.serverTime() - self._startTime, secondInRow=self._secondInRow)
+        _showTimerView(self._typeID, self._viewID, self._viewObject, self._totalTime, isBubble, BigWorld.serverTime() - self._startTime, secondInRow=self._secondInRow, isRestored=self._isRestored)
 
     def _hideView(self):
         _hideTimerView(self._typeID, self._viewObject)
 
 
 class _PythonTimer(PythonTimer):
+    __slots__ = ('_isRestored', )
+
+    def __init__(self, *args, **kwargs):
+        self._isRestored = kwargs.pop('isRestored', False)
+        super(_PythonTimer, self).__init__(*args, **kwargs)
 
     def _showView(self, isBubble):
-        _showTimerView(self._typeID, self._viewID, self._viewObject, self._totalTime, isBubble, BigWorld.serverTime() - self._startTime, secondInRow=self._secondInRow)
+        _showTimerView(self._typeID, self._viewID, self._viewObject, self._totalTime, isBubble, BigWorld.serverTime() - self._startTime, secondInRow=self._secondInRow, isRestored=self._isRestored)
 
     def _hideView(self):
         _hideTimerView(self._typeID, self._viewObject)
@@ -135,13 +145,10 @@ class _BaseTimersCollection(object):
     def clear(self):
         pass
 
-    def hasActiveTimer(self, typeID):
-        return False
-
     def addTimer(self, typeID, viewID, totalTime, finishTime, startTime=None):
         pass
 
-    def addSecondaryTimer(self, typeID, viewID, totalTime, finishTime, startTime=None):
+    def addSecondaryTimer(self, typeID, viewID, totalTime, finishTime, startTime=None, isRestored=False):
         pass
 
     def removeTimer(self, typeID):
@@ -206,9 +213,6 @@ class _StackTimersCollection(_BaseTimersCollection):
 
         return
 
-    def hasActiveTimer(self, typeID):
-        return typeID in self._timers
-
     def addTimer(self, typeID, viewID, totalTime, finishTime, startTime=None):
         if typeID in self._timers:
             oldTimer = self._timers.pop(typeID)
@@ -238,24 +242,30 @@ class _StackTimersCollection(_BaseTimersCollection):
                 self._currentTimer.show(True)
         return
 
-    def addSecondaryTimer(self, typeID, viewID, totalTime, finishTime, startTime=None):
+    def addSecondaryTimer(self, typeID, viewID, totalTime, finishTime, startTime=None, isRestored=False):
         secondInRow = self.hasActiveSecondaryTimer(typeID)
-        self.removeSecondaryTimer(typeID)
-        timer = self._clazz(self._panel, typeID, viewID, totalTime, finishTime, startTime, secondInRow=secondInRow)
-        _logger.debug('Adds secondary timer %s', timer)
-        self._timers[typeID] = timer
-        timerPriority = self._TIMERS_PRIORITY[(timer.typeID, timer.viewID)]
-        self._prioritySecondaryMap[timerPriority].add(timer.typeID)
-        if not self._currentSecondaryTimers:
-            self._currentSecondaryTimers.append(timer)
-            timer.show()
+        activeTimer = self._timers.get(typeID)
+        isSameEffect = activeTimer is not None and activeTimer.finishTime == finishTime and activeTimer.totalTime == totalTime
+        if secondInRow and finishTime and isSameEffect:
+            return
         else:
-            if timer not in self._currentSecondaryTimers:
+            self.removeSecondaryTimer(typeID)
+            timer = self._clazz(self._panel, typeID, viewID, totalTime, finishTime, startTime, secondInRow=secondInRow, isRestored=isRestored)
+            _logger.debug('Adds secondary timer %s', timer)
+            self._timers[typeID] = timer
+            timerPriority = self._TIMERS_PRIORITY[(timer.typeID, timer.viewID)]
+            self._prioritySecondaryMap[timerPriority].add(timer.typeID)
+            if not self._currentSecondaryTimers:
                 self._currentSecondaryTimers.append(timer)
-            if len(self._currentSecondaryTimers) >= self._maxDisplayedSecondaryTimers:
-                self.__evaluateMultipleStatusStates()
-            else:
                 timer.show()
+            else:
+                if timer not in self._currentSecondaryTimers:
+                    self._currentSecondaryTimers.append(timer)
+                if len(self._currentSecondaryTimers) >= self._maxDisplayedSecondaryTimers:
+                    self.__evaluateMultipleStatusStates()
+                else:
+                    timer.show()
+            return
 
     def hasActiveSecondaryTimer(self, typeID):
         for timer in self._currentSecondaryTimers:
@@ -410,6 +420,7 @@ class TimersPanel(TimersPanelMeta, MethodsRules):
         self.__vehicleID = None
         self.__viewID = CROSSHAIR_VIEW_ID.UNDEFINED
         self.__equipmentCtrl = None
+        self.__shownStunEndTimes = {}
         return
 
     def _populate(self):
@@ -534,10 +545,10 @@ class TimersPanel(TimersPanelMeta, MethodsRules):
             self._timers.addTimer(_TIMER_STATES.MAP_DEATH_ZONE, _TIMER_STATES.WARNING_VIEW, 0, None)
         return
 
-    def _showTimer(self, typeID, totalTime, level, finishTime, startTime=None):
+    def _showTimer(self, typeID, totalTime, level, finishTime, startTime=None, isRestored=False):
         if typeID is not None:
             if typeID in _SECONDARY_TIMERS:
-                self._timers.addSecondaryTimer(typeID, level, totalTime, finishTime, startTime)
+                self._timers.addSecondaryTimer(typeID, level, totalTime, finishTime, startTime, isRestored=isRestored)
             else:
                 self._timers.addTimer(typeID, _mapping.getTimerViewTypeID(level), totalTime, finishTime, startTime)
         return
@@ -628,10 +639,15 @@ class TimersPanel(TimersPanelMeta, MethodsRules):
     def __showStunTimer(self, value):
         isVisible = value.duration > 0.0
         self.__playStunSoundIfNeed(isVisible=isVisible)
+        vehicleID = self.sessionProvider.shared.vehicleState.getControllingVehicleID()
         if isVisible:
-            self._showTimer(_TIMER_STATES.STUN, value.totalTime, _TIMER_STATES.WARNING_VIEW, value.endTime, value.startTime)
+            isRestored = self.__shownStunEndTimes.get(vehicleID) == value.endTime
+            self.__shownStunEndTimes[vehicleID] = value.endTime
+            self._showTimer(_TIMER_STATES.STUN, value.totalTime, _TIMER_STATES.WARNING_VIEW, value.endTime, value.startTime, isRestored=isRestored)
         else:
+            self.__shownStunEndTimes.pop(vehicleID, None)
             self._hideTimer(_TIMER_STATES.STUN)
+        return
 
     def __showCaptureBlockTimer(self, value):
         if value:

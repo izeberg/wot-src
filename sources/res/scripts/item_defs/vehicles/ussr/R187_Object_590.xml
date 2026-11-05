@@ -1733,6 +1733,36 @@
 				<clipAngle>0.689592</clipAngle>
 				<anchorShift>0.493579</anchorShift>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>
+					-1.677 0.360848 -0.365834
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 0 1.529956
+					<!--BW_String-->
+				</rotation>
+				<scale>1 1 1</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>
+					1.677 0.360848 -0.365834
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 3.141418 1.529956
+					<!--BW_String-->
+				</rotation>
+				<scale>1 1 1</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -3766,6 +3796,17 @@
 							<anchorShift>0.562832</anchorShift>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<size>medium</size>
+							<position>-0.000003 0.356148 0.551644</position>
+							<rotation>0 0 -0</rotation>
+							<scale>1 1 1</scale>
+							<enableVisTunnel>true</enableVisTunnel>
+							<applyType>gunMantlet</applyType>
+							<hangerId>2</hangerId>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -4897,6 +4938,36 @@
 						<!--BW_String-->
 					</clipAngle>
 					<anchorShift>0.151661</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>-0.593403 0.910362 0.219929</position>
+					<rotation>-0 -0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>6</hangerId>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>
+						0 0.628444 -2.611985
+						<!--BW_String-->
+					</position>
+					<rotation>
+						-0 -1.570797 1.570796
+						<!--BW_String-->
+					</rotation>
+					<scale>
+						0.999999 0.999999 1
+						<!--BW_String-->
+					</scale>
+					<applyType>universal</applyType>
+					<size>small</size>
+					<hangerId>11</hangerId>
 				</slot>
 			</customizationSlots>
 			<customization>

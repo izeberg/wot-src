@@ -1,11 +1,11 @@
 import account_helpers
 from constants import MAX_VEHICLE_LEVEL, MIN_VEHICLE_LEVEL, PREBATTLE_TYPE, QUEUE_TYPE
 from gui.ClientUpdateManager import g_clientUpdateManager
-from gui.prb_control.entities.base.pre_queue.vehicles_watcher import BaseVehiclesWatcher
 from gui.prb_control.entities.base.squad.entity import SquadEntryPoint, SquadEntity
 from gui.prb_control.entities.base.squad.mixins import SquadRestrictionsMixin
 from gui.prb_control.entities.random.squad.actions_handler import RandomSquadActionsHandler, BalancedSquadActionsHandler
 from gui.prb_control.entities.random.squad.actions_validator import VehTypeForbiddenSquadActionsValidator, VehTypeForbiddenBalancedSquadActionsValidator
+from gui.prb_control.entities.random.pre_queue.vehicles_watcher import RegularVehiclesWatcher
 from gui.prb_control.events_dispatcher import g_eventDispatcher
 from gui.prb_control.items import SelectResult
 from gui.prb_control.items.unit_items import DynamicRosterSettings
@@ -78,7 +78,7 @@ class RandomSquadEntity(SquadEntity, SquadRestrictionsMixin):
         self.lobbyContext.getServerSettings().onServerSettingsChange += self._onServerSettingChanged
         self.eventsCache.onSyncCompleted += self._onServerSettingChanged
         g_clientUpdateManager.addCallbacks({'inventory.1': self._onInventoryVehiclesUpdated})
-        self.__watcher = BaseVehiclesWatcher()
+        self.__watcher = RegularVehiclesWatcher()
         self.__watcher.start()
         return rv
 

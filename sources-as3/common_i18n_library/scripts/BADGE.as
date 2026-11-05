@@ -1078,6 +1078,14 @@ package
       public static const BADGE_247:String = "#badge:badge_247";
       
       public static const BADGE_247_DESCR:String = "#badge:badge_247_descr";
+      
+      public static const BADGE_250:String = "#badge:badge_250";
+      
+      public static const BADGE_250_DESCR:String = "#badge:badge_250_descr";
+      
+      public static const BADGE_251:String = "#badge:badge_251";
+      
+      public static const BADGE_251_DESCR:String = "#badge:badge_251_descr";
        
       
       public function BADGE()

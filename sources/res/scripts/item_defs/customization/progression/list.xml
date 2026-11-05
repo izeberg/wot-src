@@ -2889,16 +2889,16 @@
 					</camouflage>
 				</item>
 			</cust_progress_1>
+			<cust_progress_2>
+				<concurrent>True</concurrent>
+				<item>
+					<level>1</level>
+					<decal>
+						<id>1356</id>
+					</decal>
+				</item>
+			</cust_progress_2>
 		</unlockChains>
-		<cust_progress_2>
-			<concurrent>True</concurrent>
-			<item>
-				<level>1</level>
-				<decal>
-					<id>1356</id>
-				</decal>
-			</item>
-		</cust_progress_2>
 	</styleProgress>
 	<styleProgress>
 		<id>1328</id>
@@ -3135,6 +3135,38 @@
 					</camouflage>
 				</item>
 			</cust_progress_1>
+		</unlockChains>
+	</styleProgress>
+	<styleProgress>
+		<id>1461</id>
+		<finishTime>
+			30.12.2027 00:00
+			<!--BW_String-->
+		</finishTime>
+		<unlockChains>
+			<cust_progress_1>
+				<item>
+					<level>1</level>
+					<camouflage>
+						<id>1229</id>
+					</camouflage>
+				</item>
+				<item>
+					<level>2</level>
+					<camouflage>
+						<id>1230</id>
+					</camouflage>
+				</item>
+			</cust_progress_1>
+			<cust_progress_2>
+				<concurrent>True</concurrent>
+				<item>
+					<level>1</level>
+					<decal>
+						<id>1394</id>
+					</decal>
+				</item>
+			</cust_progress_2>
 		</unlockChains>
 	</styleProgress>
 </root>

@@ -93,6 +93,8 @@ package net.wg.gui.battle.battleloading.renderers
       
       private var _defaultSelfBgXPosition:int;
       
+      private var _allyVehicleLevelOffset:int = -1;
+      
       private var _colorMgr:IColorSchemeManager = null;
       
       public function BasePlayerItemRenderer(param1:BaseRendererContainer, param2:int, param3:Boolean)
@@ -178,7 +180,14 @@ package net.wg.gui.battle.battleloading.renderers
          }
          if(this._vehicleLevelIcon)
          {
-            this._vehicleLevelIcon.isCentralizeByX = true;
+            if(param3 && this._vehicleIcon && param1.vehicleLevelIconsAlly && param1.vehicleIconsAlly)
+            {
+               this._allyVehicleLevelOffset = param1.vehicleLevelIconsAlly[param2].x - param1.vehicleIconsAlly[param2].x;
+            }
+            else
+            {
+               this._vehicleLevelIcon.isCentralizeByX = true;
+            }
          }
          if(this._vehicleTypeIcon)
          {
@@ -453,12 +462,18 @@ package net.wg.gui.battle.battleloading.renderers
       
       private function setVehicleLevel() : void
       {
+         var _loc1_:int = 0;
          if(this._vehicleLevelIcon)
          {
             this._vehicleLevelIcon.visible = this.model.vehicleLevel > 0;
             if(this._vehicleLevelIcon.visible)
             {
                this._vehicleLevelIcon.imageName = BATTLEATLAS.level(this.model.vehicleLevel.toString());
+               if(this._allyVehicleLevelOffset != Values.DEFAULT_INT)
+               {
+                  _loc1_ = this._allyVehicleLevelOffset - (this._vehicleLevelIcon.width >> 2);
+                  this._vehicleLevelIcon.x = this._vehicleIcon.x - _loc1_ - this._vehicleLevelIcon.width;
+               }
             }
          }
       }

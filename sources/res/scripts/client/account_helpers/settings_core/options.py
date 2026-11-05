@@ -1,5 +1,5 @@
 from __future__ import absolute_import, division
-import random, sys, itertools, weakref, logging
+import random, itertools, weakref, logging
 from collections import namedtuple, OrderedDict
 from enum import Enum
 from future.moves import pickle
@@ -750,7 +750,7 @@ class VOIPCaptureDevicesSetting(UserPrefsStringSetting):
 
     def _getOptions(self):
         devicesNames = VOIP.getVOIPManager().getCaptureDevicesNames()
-        return [ i18n.encodeUtf8(deviceName.decode(sys.getfilesystemencoding())) for deviceName in devicesNames ]
+        return [ i18n.encodeUtf8(deviceName) for deviceName in devicesNames ]
 
     def _set(self, value):
         vm = VOIP.getVOIPManager()

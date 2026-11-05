@@ -14,6 +14,8 @@ package net.wg.gui.battle.views.messages
    public class MessageListDAAPI extends BattleMessageListMeta implements IBattleMessageListMeta, IDAAPIModule
    {
       
+      public static const CROSSHAIR_LAYOUT_CHANGE:String = "crosshairLayoutChange";
+      
       private static const POOL_COLOR_ERROR:String = "Can\'t find pool for color: ";
        
       
@@ -22,6 +24,10 @@ package net.wg.gui.battle.views.messages
       protected var maxMessages:uint = 3;
       
       private var _isDAAPIInited:Boolean = false;
+      
+      private var _crosshairY:Number = 0;
+      
+      private var _crosshairViewId:int = 0;
       
       private var _yellowMessagesPool:FadedMessagesPool;
       
@@ -144,6 +150,13 @@ package net.wg.gui.battle.views.messages
          return this._isDAAPIInited;
       }
       
+      public function as_setCrosshairLayout(param1:Number, param2:int) : void
+      {
+         this._crosshairY = param1;
+         this._crosshairViewId = param2;
+         dispatchEvent(new Event(CROSSHAIR_LAYOUT_CHANGE));
+      }
+      
       public final function as_populate() : void
       {
          dispatchEvent(new LifeCycleEvent(LifeCycleEvent.ON_BEFORE_POPULATE));
@@ -216,6 +229,16 @@ package net.wg.gui.battle.views.messages
       public function get isDAAPIInited() : Boolean
       {
          return this._isDAAPIInited;
+      }
+      
+      public function get crosshairY() : Number
+      {
+         return this._crosshairY;
+      }
+      
+      public function get crosshairViewId() : int
+      {
+         return this._crosshairViewId;
       }
       
       private function onAddedToStageHandler(param1:Event) : void

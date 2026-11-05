@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.433081 -0.898305 -2.744808</min>
+		<max>1.433081 1.037394 2.606658</max>
+	</visibilityBox>
+	<parent>vehicles/german/G192_E_10/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/german/G192_E_10/crash/lod0/Hull</nodefullVisual>
+</root>

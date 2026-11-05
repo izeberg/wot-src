@@ -1902,7 +1902,7 @@
 				0.0
 				<!--BW_String-->
 			</weight>
-			<sex>male</sex>
+			<sex>female</sex>
 			<notInShop>true</notInShop>
 			<tags>passportReplacementForbidden commander gunner driver radioman loader hw25_Crew_CN hw25_Titi_CN_SpecialVoice</tags>
 			<roles>commander gunner driver radioman loader</roles>
@@ -1922,7 +1922,7 @@
 				0.0
 				<!--BW_String-->
 			</weight>
-			<sex>female</sex>
+			<sex>male</sex>
 			<notInShop>true</notInShop>
 			<tags>passportReplacementForbidden commander gunner driver radioman loader hw25_Crew_CN hw25_DaKun_CN_SpecialVoice</tags>
 			<roles>commander gunner driver radioman loader</roles>
@@ -7296,26 +7296,6 @@
 				<_3385>mustached_engineer.png</_3385>
 			</icons>
 		</mustached_engineer>
-		<fr_spark>
-			<groupID>389</groupID>
-			<weight>
-				0.0
-				<!--BW_String-->
-			</weight>
-			<sex>female</sex>
-			<notInShop>true</notInShop>
-			<tags>commander driver gunner loader radioman fr_spark_SpecialVoice passportReplacementForbidden</tags>
-			<roles>commander driver gunner loader radioman</roles>
-			<firstNames>
-				<_3374>#japan_crew:names/fr_spark_n</_3374>
-			</firstNames>
-			<lastNames>
-				<_3374>#japan_crew:names/fr_spark</_3374>
-			</lastNames>
-			<icons>
-				<_3374>fr_spark.png</_3374>
-			</icons>
-		</fr_spark>
 		<tankmen_bp21_5>
 			<groupID>394</groupID>
 			<weight>
@@ -7416,5 +7396,65 @@
 				<_3383>tankmen_bp21_9.png</_3383>
 			</icons>
 		</tankmen_bp21_9>
+		<fr_spark>
+			<groupID>389</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman fr_spark_SpecialVoice passportReplacementForbidden</tags>
+			<roles>commander driver gunner loader radioman</roles>
+			<firstNames>
+				<_3374>#japan_crew:names/fr_spark_n</_3374>
+			</firstNames>
+			<lastNames>
+				<_3374>#japan_crew:names/fr_spark</_3374>
+			</lastNames>
+			<icons>
+				<_3374>fr_spark.png</_3374>
+			</icons>
+		</fr_spark>
+		<ny24_girl_1_26>
+			<groupID>401</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3386>#japan_crew:names/ny24_girl_1_26n</_3386>
+			</firstNames>
+			<lastNames>
+				<_3386>#japan_crew:names/ny24_girl_1_26</_3386>
+			</lastNames>
+			<icons>
+				<_3386>ny24_girl_1_26.png</_3386>
+			</icons>
+		</ny24_girl_1_26>
+		<ny24_girl_2_26>
+			<groupID>402</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3387>#japan_crew:names/ny24_girl_2_26n</_3387>
+			</firstNames>
+			<lastNames>
+				<_3387>#japan_crew:names/ny24_girl_2_26</_3387>
+			</lastNames>
+			<icons>
+				<_3387>ny24_girl_2_26.png</_3387>
+			</icons>
+		</ny24_girl_2_26>
 	</premiumGroups>
 </root>

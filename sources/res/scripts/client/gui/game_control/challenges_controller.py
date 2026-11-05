@@ -115,10 +115,18 @@ class ChallengesController(IChallengesController, Notifiable, EventsHandler):
         return max(nearestStart - currentTime, 0)
 
     def getTimeToRemindChallengeEnd(self):
-        return max(self.getTimeToNearestChallengeEnd() - TIME_BEFORE_END_OF_EXPIRATION, 0)
+        currentTime = time_utils.getServerUTCTime()
+        remindTimes = [ ch.finishTime + time_utils.ONE_MINUTE - TIME_BEFORE_END_OF_EXPIRATION for ch in viewvalues(self.challenges) if not self.isChallengeCompleted(ch)
+                      ]
+        futureRemindTimes = [ remindTime for remindTime in remindTimes if remindTime > currentTime ]
+        nearestRemindTime = min(futureRemindTimes) if futureRemindTimes else 0
+        return max(nearestRemindTime - currentTime, 0)
 
     def getSoonEndingChallenges(self):
         return sorted(self.availableChallenges(), key=lambda ch: (ch.finishTime, ch.difficulty.value, ch.priority))
+
+    def getSoonEndingChallengesForCompletions(self):
+        return [ ch for ch in self.getSoonEndingChallenges() if not self.isChallengeCompleted(ch) ]
 
     def getChallengeProgress(self, challengeID):
         return self.__challengesProgress.get(challengeID) or {}

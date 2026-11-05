@@ -3920,6 +3920,36 @@
 			<userString>#vehicle_customization:repaint/girls_und_panzer_kabasan_style</userString>
 			<tags>hiddenInUI</tags>
 		</paint>
+		<paint>
+			<id>695</id>
+			<texture>gui/maps/vehicles/repaints/usa_color_06.png</texture>
+			<color>49 61 64 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/girls_und_panzer_team_leoponsan</userString>
+			<tags>hiddenInUI styleOnly</tags>
+		</paint>
+		<paint>
+			<id>696</id>
+			<texture>gui/maps/vehicles/repaints/sweden_color_05.png</texture>
+			<color>69 35 37 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/girls_und_panzer_leopon</userString>
+			<tags>hiddenInUI styleOnly</tags>
+		</paint>
 	</itemGroup>
 	<itemGroup>
 		<name>flavor of asia</name>
@@ -12979,6 +13009,21 @@
 			<userString>#vehicle_customization:special_style/ols_2026_1</userString>
 			<tags>hiddenInUI</tags>
 		</paint>
+		<paint>
+			<id>743</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_36.png</texture>
+			<color>22 22 38 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/ols_2027_1</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
 	</itemGroup>
 	<itemGroup>
 		<name>WCI 2026</name>
@@ -13116,36 +13161,6 @@
 		</paint>
 	</itemGroup>
 	<itemGroup>
-		<name>Fortrush 2026</name>
-		<userString>#vehicle_customization:repaint/color_group_04</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<priceGroup>paints 20g notInShop</priceGroup>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
-			</exclude>
-			<exclude>
-				<tags>excluded_from_customization</tags>
-			</exclude>
-		</vehicleFilter>
-		<paint>
-			<id>694</id>
-			<color>17 17 20 255</color>
-			<gloss>
-				0.63
-				<!--BW_String-->
-			</gloss>
-			<metallic>
-				0.235
-				<!--BW_String-->
-			</metallic>
-			<texture>gui/maps/vehicles/repaints/custom_color_20.png</texture>
-			<userString>#vehicle_customization:repaint/fr26_style1</userString>
-			<tags>hiddenInUI</tags>
-		</paint>
-	</itemGroup>
-	<itemGroup>
 		<name>Battle Pass 2026</name>
 		<userString>#vehicle_customization:repaint/color_group_04</userString>
 		<season>ALL</season>
@@ -13202,6 +13217,387 @@
 				<!--BW_String-->
 			</metallic>
 			<userString>#vehicle_customization:special_style/bp2026_october_3</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>12 Days of Tankmas 2026</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>708</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_30.png</texture>
+			<color>43 46 53 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/tankmas_2026</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>Fortrush 2026</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>694</id>
+			<color>17 17 20 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<texture>gui/maps/vehicles/repaints/custom_color_20.png</texture>
+			<userString>#vehicle_customization:repaint/fr26_style1</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>CN</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>722</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_23.png</texture>
+			<color>17 17 20 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/all_your_cows_cn</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>724</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_36.png</texture>
+			<color>17 17 34 255</color>
+			<gloss>
+				0.525
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.3
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/witchcraft_cn</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>725</id>
+			<texture>gui/maps/vehicles/repaints/france_color_05.png</texture>
+			<color>87 27 37 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/aloha_shirt_cn</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>726</id>
+			<texture>gui/maps/vehicles/repaints/sweden_color_05.png</texture>
+			<color>79 42 30 255</color>
+			<gloss>
+				0.23
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.509
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/battle_hardened_cn</userString>
+			<tags>hiddenInUI styleOnly</tags>
+		</paint>
+		<paint>
+			<id>728</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_23.png</texture>
+			<color>17 17 20 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/doggo_driver_cn</userString>
+			<tags>hiddenInUI styleOnly</tags>
+		</paint>
+		<paint>
+			<id>729</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_25.png</texture>
+			<color>28 28 27 255</color>
+			<gloss>
+				0.7
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.2
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/e-camo_cn</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>730</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_18.png</texture>
+			<color>112 16 29 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.203
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/holiday_outfit_cn</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>731</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_25.png</texture>
+			<color>19 24 33 255</color>
+			<gloss>
+				0.6
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.222
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/custom_color_25</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>733</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_03.png</texture>
+			<color>49 50 79 255</color>
+			<gloss>
+				0.346
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.2
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/starry_night_cn</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>734</id>
+			<texture>gui/maps/vehicles/repaints/uk_color_05.png</texture>
+			<color>19 38 29 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/synth_waves_cn</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>735</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_23.png</texture>
+			<color>9 23 25 255</color>
+			<gloss>
+				0.41
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.19
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/wonder_and_glory_cn</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>736</id>
+			<texture>gui/maps/vehicles/repaints/poland_color_05.png</texture>
+			<color>54 54 74 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/streamline</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>737</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_23.png</texture>
+			<color>17 17 20 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/care_for_scare_cn</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>738</id>
+			<texture>gui/maps/vehicles/repaints/czech_color_06.png</texture>
+			<color>31 48 45 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/blend_in_cn</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>739</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_23.png</texture>
+			<color>0 0 0 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/dwelling_dragons_cn</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>740</id>
+			<texture>gui/maps/vehicles/repaints/germany_color_02.png</texture>
+			<userString>#vehicle_customization:repaint/watcher_wakes_cn</userString>
+			<color>145 130 102 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>741</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_05.png</texture>
+			<userString>#vehicle_customization:repaint/catching_waves_cn</userString>
+			<color>24 66 81 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<usages>
+			<item>
+				<componentType>ALL</componentType>
+				<cost>1</cost>
+			</item>
+		</usages>
+	</itemGroup>
+	<itemGroup>
+		<name>CN Historical</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>0</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>727</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_23.png</texture>
+			<color>23 23 45 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/conventional_cn</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>732</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_20.png</texture>
+			<color>22 18 25 255</color>
+			<gloss>
+				0.7
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.2
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/prime_festivity_cn</userString>
 			<tags>hiddenInUI</tags>
 		</paint>
 	</itemGroup>

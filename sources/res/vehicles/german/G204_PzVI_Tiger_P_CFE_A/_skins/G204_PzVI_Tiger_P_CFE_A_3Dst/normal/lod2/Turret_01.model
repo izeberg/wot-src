@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G204_PzVI_Tiger_P_CFE_A/_skins/G204_PzVI_Tiger_P_CFE_A_3Dst/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/german/G204_PzVI_Tiger_P_CFE_A/_skins/G204_PzVI_Tiger_P_CFE_A_3Dst/normal/lod2/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.196322 -0.032670 -1.914338</min>
+		<max>1.209231 1.169640 1.367244</max>
+	</visibilityBox>
+</root>

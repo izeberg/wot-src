@@ -800,7 +800,8 @@ package net.wg.gui.lobby.storage.categories.cards
       
       protected function setData(param1:BaseCardVO) : void
       {
-         if(this._isOver)
+         var _loc2_:Boolean = !this._resetViewOnDataChange && this._data != null && param1 != null && this._data.id == param1.id;
+         if(this._isOver && !_loc2_)
          {
             this._isOver = false;
             this._pendingRollOver = true;
@@ -943,6 +944,7 @@ package net.wg.gui.lobby.storage.categories.cards
          }
          this.setData(_loc2_);
          invalidateData();
+         validateNow();
       }
       
       public function set tooltipDecorator(param1:ITooltipMgr) : void

@@ -26,7 +26,7 @@ package net.wg.gui.battle.views.dualGunPanel
       
       private static const TIMER_ID_COOLDOWN:String = "cooldown";
       
-      private static const PADDING_TOP_ARCADE_VIEW:Number = 10;
+      private static const PADDING_TOP_ARCADE_VIEW:Number = 68;
       
       private static const PADDING_TOP_SNIPER_VIEW:Number = 100;
       
@@ -57,9 +57,9 @@ package net.wg.gui.battle.views.dualGunPanel
       
       private var _viewId:Number = 0;
       
-      private var _stageWidth:Number;
+      private var _crosshairX:Number = 0;
       
-      private var _stageHeight:Number;
+      private var _crosshairY:Number = 0;
       
       private var _hasNegativeReloadingEffect:Boolean = false;
       
@@ -122,8 +122,8 @@ package net.wg.gui.battle.views.dualGunPanel
          if(isInvalid(InvalidationType.POSITION))
          {
             _loc1_ = this._viewId == CROSSHAIR_VIEW_ID.SNIPER ? Number(PADDING_TOP_SNIPER_VIEW) : Number(PADDING_TOP_ARCADE_VIEW);
-            x = this._stageWidth >> 1;
-            y = (this._stageHeight >> 1) + _loc1_;
+            x = this._crosshairX;
+            y = this._crosshairY + _loc1_;
          }
       }
       
@@ -284,10 +284,10 @@ package net.wg.gui.battle.views.dualGunPanel
          this.panelTimer.updateTotalTime(param1);
       }
       
-      public function updateStage(param1:Number, param2:Number) : void
+      public function as_updateLayout(param1:Number, param2:Number) : void
       {
-         this._stageWidth = param1;
-         this._stageHeight = param2;
+         this._crosshairX = param1;
+         this._crosshairY = param2;
          invalidatePosition();
       }
       

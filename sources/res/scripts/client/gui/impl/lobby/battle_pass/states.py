@@ -111,6 +111,9 @@ class ChapterChoiceBattlePassState(_BattlePassPresenterState):
             self.__cachedParams['selectedChapter'] = view.selectedChapter
         return self.__cachedParams
 
+    def compareParams(self, params, otherParams):
+        return True
+
     def registerTransitions(self):
         from gui.Scaleform.daapi.view.lobby.vehicle_preview.states import StylePreviewState
         from gui.Scaleform.daapi.view.lobby.vehicle_preview.states import ConfigurableVehiclePreviewState

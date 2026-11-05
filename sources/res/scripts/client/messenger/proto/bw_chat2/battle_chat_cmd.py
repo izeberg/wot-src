@@ -11,6 +11,7 @@ from gui.impl.gen import R
 from helpers import dependency
 from messenger import g_settings
 from messenger.ext.channel_num_gen import getClientID4BattleChannel
+from messenger.formatters import escapeSmileys
 from messenger.m_constants import PROTO_TYPE, BATTLE_CHANNEL
 from messenger.proto.entities import OutChatCommand, ReceivedBattleChatCommand
 from messenger.proto.interfaces import IBattleCommandFactory
@@ -367,7 +368,7 @@ class _ReceivedCmdDecorator(ReceivedBattleChatCommand):
         return CommendationsState(self._protoData['int8Arg1'])
 
     def _getTarget(self):
-        target = self.sessionProvider.getCtx().getPlayerFullName(vID=self.getFirstTargetID())
+        target = escapeSmileys(self.sessionProvider.getCtx().getPlayerFullName(vID=self.getFirstTargetID()))
         if self.isReceiver():
             target = g_settings.battle.targetFormat % {'target': target}
         return target

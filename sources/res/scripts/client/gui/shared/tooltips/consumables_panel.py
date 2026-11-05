@@ -5,13 +5,11 @@ from constants import DAMAGE_INTERPOLATION_DIST_FIRST, DAMAGE_INTERPOLATION_DIST
 from constants import SHELL_TYPES
 from gui import GUI_SETTINGS
 from gui.battle_control.components_states.ammo.constants import ShellMode
-from gui.battle_control.gui_vehicle_builder import VehicleBuilder
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.tank_setup.tank_setup_constants import TankSetupConstants
 from gui.shared.formatters import text_styles
-from gui.shared.gui_items import KPI
-from gui.shared.items_parameters.functions import aggregateKpi, getBustleFeedModifiedShells, getShellCalibrationShells, getShellParamsSwitcherModifiedShells, kpiFromCrewSkills
+from gui.shared.items_parameters.functions import getBustleFeedModifiedShells, getShellCalibrationShells, getShellParamsSwitcherModifiedShells
 from gui.shared.items_parameters import getShellDescriptors, NO_DATA
 from gui.shared.items_parameters.shell_params import ShellParams
 from gui.shared.items_parameters.formatters import CRITICAL_HIT_CHANCE_TYPE_DYN_PATH
@@ -39,6 +37,7 @@ TOOLTIP_FORMAT = '{{HEADER}}{0:>s}{{/HEADER}}\n/{{BODY}}{1:>s}{{/BODY}}'
 TOOLTIP_NO_BODY_FORMAT = '{{HEADER}}{0:>s}{{/HEADER}}'
 BULLET = backport.text(R.strings.common.common.bullet())
 LIST_PREFIX = BULLET + ' '
+DASH = backport.text(R.strings.menu.moduleInfo.paramsSeparator.dash())
 GROUP_AND_LAYOUT = {TankSetupConstants.CONSUMABLES: (
                                   TankSetupLayouts.EQUIPMENT, TankSetupGroupsId.EQUIPMENT_AND_SHELLS), 
    TankSetupConstants.OPT_DEVICES: (
@@ -97,18 +96,11 @@ def makeShellTooltip(intCD, sessionProvider=None):
 
 @dependency.replace_none_kwargs(sessionProvider=IBattleSessionProvider)
 def applyBoundFactors(value, sessionProvider=None):
-    vStateCtrl = sessionProvider.shared.vehicleState
-    vehicleEntity = vStateCtrl.getControllingVehicle() if vStateCtrl else None
-    if vehicleEntity is None:
+    ammoCtrl = sessionProvider.shared.ammo
+    if ammoCtrl is None:
         return value
     else:
-        builder = VehicleBuilder()
-        builder.setStrCD(vehicleEntity.typeDescriptor.makeCompactDescr())
-        builder.setCrew(vehicleEntity.crewCompactDescrs)
-        kpiFactors = aggregateKpi(kpiFromCrewSkills(builder.getResult()))
-        lowerBoundFactor = kpiFactors.getFactor(KPI.Name.DAMAGE_AND_PIERCING_DISTRIBUTION_LOWER_BOUND)
-        upperBoundFactor = kpiFactors.getFactor(KPI.Name.DAMAGE_AND_PIERCING_DISTRIBUTION_UPPER_BOUND)
-        totalFactor = (lowerBoundFactor + upperBoundFactor) / 100.0
+        totalFactor = ammoCtrl.getGunSettings().getCrewBoundTotalFactor()
         if totalFactor:
             return round_py2_style_int(value * (1.0 + totalFactor / 2))
         return value
@@ -149,9 +141,9 @@ class _StandardShellParamsBuilder(IShellParamsBuilder):
         damageValue = backport.getIntegralFormat(applyBoundFactors(shellParams.avgDamage))
         note = ''
         if shellDescr.isDamageMutable:
-            damageValue = '%s-%s' % (
+            damageValue = DASH.join((
              backport.getIntegralFormat(applyBoundFactors(shellParams.avgMutableDamage[0])),
-             backport.getIntegralFormat(applyBoundFactors(shellParams.avgMutableDamage[1])))
+             backport.getIntegralFormat(applyBoundFactors(shellParams.avgMutableDamage[1]))))
             note = footnotes.addDistanceNote(minDist=int(DAMAGE_INTERPOLATION_DIST_FIRST), maxDist=int(min(vDescr.shot.maxDistance, DAMAGE_INTERPOLATION_DIST_LAST)))
         params.append(backport.text(R.strings.ingame_gui.shells_kinds.params.damage(), value=damageValue) + note)
 
@@ -169,9 +161,9 @@ class _StandardShellParamsBuilder(IShellParamsBuilder):
             value = backport.getNiceNumberFormat(piercingPower)
             piercingPowerTable = shellParams.piercingPowerTable
             if piercingPowerTable is not None and piercingPowerTable != NO_DATA:
-                value = '%s-%s' % (
+                value = DASH.join((
                  backport.getIntegralFormat(applyBoundFactors(piercingPowerTable[0][1])),
-                 backport.getIntegralFormat(applyBoundFactors(piercingPowerTable[(-1)][1])))
+                 backport.getIntegralFormat(applyBoundFactors(piercingPowerTable[(-1)][1]))))
                 note = footnotes.addDistanceNote(minDist=backport.getIntegralFormat(piercingPowerTable[0][0]), maxDist=backport.getIntegralFormat(piercingPowerTable[(-1)][0]))
             else:
                 note = footnotes.addNoDistanceNote()
@@ -226,12 +218,12 @@ class _ComplexMechanicParamsBuilder(IShellParamsBuilder):
         params.append(LIST_PREFIX + backport.text(R.strings.ingame_gui.shells_kinds.params.damage(), value=damage))
         piercingPowerTable = specShellParams.piercingPowerTable
         if piercingPowerTable is not None and piercingPowerTable != NO_DATA:
-            basicPiercing = '%s-%s' % (
+            basicPiercing = DASH.join((
              backport.getIntegralFormat(applyBoundFactors(basicShellParams.piercingPowerTable[0][1])),
-             backport.getIntegralFormat(applyBoundFactors(basicShellParams.piercingPowerTable[(-1)][1])))
-            specPiercing = '%s-%s' % (
+             backport.getIntegralFormat(applyBoundFactors(basicShellParams.piercingPowerTable[(-1)][1]))))
+            specPiercing = DASH.join((
              backport.getIntegralFormat(applyBoundFactors(piercingPowerTable[0][1])),
-             backport.getIntegralFormat(applyBoundFactors(piercingPowerTable[(-1)][1])))
+             backport.getIntegralFormat(applyBoundFactors(piercingPowerTable[(-1)][1]))))
             piercing = '%s / %s' % (basicPiercing, specPiercing)
             note = footnotes.addDistanceNote(minDist=backport.getIntegralFormat(piercingPowerTable[0][0]), maxDist=backport.getIntegralFormat(piercingPowerTable[(-1)][0]))
             params.append(LIST_PREFIX + backport.text(R.strings.ingame_gui.shells_kinds.params.piercingPower(), value=piercing) + note)

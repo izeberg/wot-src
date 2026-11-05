@@ -111,6 +111,9 @@ msgstr "AMX 105 AM"
 msgid "AM_VRC_7_141"
 msgstr "AM/VRC 7 141"
 
+msgid "ANVRC_18A"
+msgstr "ANVRC 18"
+
 msgid "AN_GRC_6_Terrifiant"
 msgstr "AN/GRC-6 (Terrifiant)"
 
@@ -271,6 +274,9 @@ msgstr "Canon de 75 mm Vo 920 m/s DP"
 
 msgid "Canon_de_90mm_Vo_930_m_s"
 msgstr "Canon de 90 mm Vo 930 m/s"
+
+msgid "Caterpillar"
+msgstr "Caterpillar"
 
 msgid "Chassis_105_leFH18B2"
 msgstr "leFH18B2"
@@ -442,6 +448,9 @@ msgstr "ERAC 105 Prototype"
 
 msgid "Chassis_F124_AMX_13FL11"
 msgstr "AMX 13 Type 2A"
+
+msgid "Chassis_F125_Panhard_M6_Proto"
+msgstr "Panhard M6 Proto"
 
 msgid "Chassis_F127_AMX_ELC_901"
 msgstr "AMX ELC 901"
@@ -1450,6 +1459,32 @@ msgstr "AMX 13 FL 11"
 
 msgid "F124_AMX_13FL11_short_special"
 msgstr "Хорошая маскировка, отличная подвижность"
+
+msgid "F125_Panhard_M6_Proto"
+msgstr "Panhard M6 Proto"
+
+msgid "F125_Panhard_M6_Proto_descr"
+msgstr ""
+"В начале 1970-х годов французская армия нуждалась в новой бронетехнике "
+"(фронтовой бронемашине (VAB), боевой машине пехоты (VCI) и разведывательной "
+"машине). В ответ на это требование компания Panhard разработала семейство "
+"унифицированных бронемашин, включающее двухосный броневик М4, трёхосный М6 и"
+" четырёхосный М8. Прототип M6 с башней H-90 и 90-мм противотанковой пушкой "
+"DEFA F1 реализовали в металле, однако машина в серию не пошла."
+
+msgid "F125_Panhard_M6_Proto_long_special"
+msgstr ""
+"Panhard M6 Proto — французский лёгкий танк IX уровня и первый колёсный "
+"лёгкий танк поддержки. Как и другие машины на колёсах, он обладает отличной "
+"мобильностью и может продолжать движение даже с повреждениями ходовой части."
+" Большие размеры ограничивают его маскировку, но скорострельное 90-мм орудие"
+" с высоким уроном в минуту позволяет наносить много урона за короткое время."
+
+msgid "F125_Panhard_M6_Proto_short"
+msgstr "Panhard M6"
+
+msgid "F125_Panhard_M6_Proto_short_special"
+msgstr "Исключительная мобильность и высокая скорострельность"
 
 msgid "F127_AMX_ELC_901"
 msgstr "AMX ELC 901"
@@ -3620,6 +3655,9 @@ msgstr "ERAC 105 Prototype"
 msgid "Turret_1_F124_AMX_13FL11"
 msgstr "FL-11"
 
+msgid "Turret_1_F125_Panhard_M6_Proto"
+msgstr "H-90"
+
 msgid "Turret_1_F127_AMX_ELC_901"
 msgstr "AMX ELC 901"
 
@@ -5333,6 +5371,9 @@ msgstr "90 mm DCA 45 (50 100)"
 msgid "_90mm_DCA_45_ARL"
 msgstr "90 mm DCA 45 (ARL)"
 
+msgid "_90mm_DEFA_F1"
+msgstr "90 mm DEFA F1"
+
 msgid "_90mm_D_914"
 msgstr "90 mm D. 914"
 
@@ -5414,6 +5455,9 @@ msgstr "OCC"
 msgid "_90mm_OCC_90_D_914"
 msgstr "OCC-90 D. 914"
 
+msgid "_90mm_OCC_90_F1"
+msgstr "OCC-90-F1"
+
 msgid "_90mm_OCC_90_SH"
 msgstr "Prf. 90"
 
@@ -5428,6 +5472,9 @@ msgstr "OE-90 D. 914"
 
 msgid "_90mm_OE_90_D_919"
 msgstr "OE-90 D. 919"
+
+msgid "_90mm_OE_90_F1"
+msgstr "OE-90-F1"
 
 msgid "_90mm_OE_F2_VCS"
 msgstr "OE F2 (VCS)"
@@ -5494,6 +5541,9 @@ msgstr "OFL-90 D. 914"
 
 msgid "_90mm_OFL_90_D_919"
 msgstr "OFL-90 D. 919"
+
+msgid "_90mm_OFL_90_F1"
+msgstr "OFL-90-F1"
 
 msgid "_90mm_OFL_F1_VCS"
 msgstr "OFL F1 (VCS)"

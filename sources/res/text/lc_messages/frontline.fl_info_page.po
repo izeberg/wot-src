@@ -505,21 +505,6 @@ msgstr ""
 "обороняющихся. Атакующей команде необходимо разрушить 3 из них, а "
 "обороняющимся — защитить орудия."
 
-msgid "subTitle/differentMonth"
-msgstr ""
-"с {{@ colorLegacy 'FFE4C0'}}{{from}} {{startMonth}}{{/}} по {{@ colorLegacy "
-"'FFE4C0'}}{{to}} {{endMonth}}{{/}}"
-
-msgid "subTitle/differentYears"
-msgstr ""
-"с {{@ colorLegacy 'FFE4C0'}}{{from}} {{startMonth}}, {{startYear}}{{/}} по "
-"{{@ colorLegacy 'FFE4C0'}}{{to}} {{endMonth}}, {{endYear}}{{/}}"
-
-msgid "subTitle/sameMonth"
-msgstr ""
-"с {{@ colorLegacy 'FFE4C0'}}{{from}}{{/}} по {{@ colorLegacy "
-"'FFE4C0'}}{{to}} {{endMonth}}{{/}}"
-
 msgid "winStrategy/firstLine"
 msgstr ""
 "Квадраты A, B и С {{@ colorLegacy 'FFE4C0'}}на первой линии{{/}} — стартовые"

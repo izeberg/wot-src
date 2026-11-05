@@ -2352,6 +2352,51 @@
 				<clipAngle>0.621707</clipAngle>
 				<anchorShift>0.566029</anchorShift>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>-0.046134 0.067669 -5.369748</position>
+				<rotation>
+					-0 -1.569053 1.569053
+					<!--BW_String-->
+				</rotation>
+				<scale>0.999998 0.999999 0.999998</scale>
+				<applyType>universal</applyType>
+				<size>large</size>
+				<hangerId>11</hangerId>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>-2.245015 0.537123 -1.834937</position>
+				<rotation>
+					0 0 1.569051
+					<!--BW_String-->
+				</rotation>
+				<scale>1 1 1</scale>
+				<applyType>universal</applyType>
+				<size>large</size>
+				<hangerId>9</hangerId>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>
+					2.245 0.537123 -1.83494
+					<!--BW_String-->
+				</position>
+				<rotation>
+					0 3.141593 1.569051
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999999 0.999999 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>large</size>
+				<hangerId>9</hangerId>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -7574,6 +7619,31 @@
 						<!--BW_String-->
 					</clipAngle>
 					<anchorShift>-0.052216</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>-0.718968 1.617939 0.372391</position>
+					<rotation>0 0 -0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>2</hangerId>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>
+						-0 1.191782 1.788107
+						<!--BW_String-->
+					</position>
+					<rotation>0 0 -0</rotation>
+					<scale>1 1 1</scale>
+					<enableVisTunnel>true</enableVisTunnel>
+					<applyType>turret</applyType>
+					<size>medium</size>
+					<hangerId>2</hangerId>
 				</slot>
 			</customizationSlots>
 			<customization>

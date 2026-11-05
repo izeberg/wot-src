@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.399566 0.000000 -2.430628</min>
+		<max>1.399566 1.133301 2.496397</max>
+	</visibilityBox>
+	<parent>vehicles/german/G192_E_10/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/german/G192_E_10/normal/lod0/Chassis</nodefullVisual>
+</root>

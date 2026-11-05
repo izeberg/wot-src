@@ -184,10 +184,10 @@ class WheeledPagesBuilder(DetailedHelpPagesBuilder):
 
     @classmethod
     def _collectHelpCtx(cls, ctx, arenaVisitor, vehicle):
-        isScoutVehicle = vehicle is not None and vehicle.typeDescriptor.role == ROLE_TYPE.LT_SCOUT
-        isFrenchScoutVehicle = isScoutVehicle and NATIONS_NAMES[vehicle.typeDescriptor.type.id[0]] == 'france'
-        ctx['isFrenchWheeledVehicle'] = isFrenchScoutVehicle
-        ctx['hasUniqueVehicleHelpScreen'] = ctx.get('hasUniqueVehicleHelpScreen') or isFrenchScoutVehicle
+        isWheeledVehicle = vehicle is not None and vehicle.typeDescriptor.isWheeledVehicle
+        isFrenchWheeledVehicle = isWheeledVehicle and NATIONS_NAMES[vehicle.typeDescriptor.type.id[0]] == 'france'
+        ctx['isFrenchWheeledVehicle'] = isFrenchWheeledVehicle
+        ctx['hasUniqueVehicleHelpScreen'] = ctx.get('hasUniqueVehicleHelpScreen') or isFrenchWheeledVehicle
         return
 
 
