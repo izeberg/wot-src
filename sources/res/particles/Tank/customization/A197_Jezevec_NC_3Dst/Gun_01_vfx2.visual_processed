@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>mt_glow</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						TintlColor
+						<Vector4>
+							0.031 0.102 0.961 1
+							<!--BW_String-->
+						</Vector4>
+					</property>
+					<property>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>2 2 0 0</Vector4>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/Tank/customization/G164_Kpz_Pr_68_P_N23_3Dst/noise.dds</Texture>
+					</property>
+					<property>
+						distortion_UV_Speed_Amount
+						<Vector4>-2 0 1 0</Vector4>
+					</property>
+					<property>
+						distortionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/distortion_02.dds</Texture>
+					</property>
+					<property>
+						alphaFadeAmountFresnel
+						<Vector4>
+							1 0 2.1 0.5
+							<!--BW_String-->
+						</Vector4>
+					</property>
+					<property>
+						softFactor
+						<Float>
+							0.15
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>
+							5 0.7 0.2 0
+							<!--BW_String-->
+						</Vector4>
+					</property>
+					<property>
+						enableLighting
+						<Bool>true</Bool>
+					</property>
+					<property>
+						FreshnelColor
+						<Vector4>
+							0 0.188 1 0
+							<!--BW_String-->
+						</Vector4>
+					</property>
+					<property>
+						alphaFreshnelEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						fogAdjustBlend
+						<Float>1</Float>
+					</property>
+					<property>
+						g_enableEnvMultiplier
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.000000 1.862512 0.951667</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.952303 1.265792 -3.025264</min>
+		<max>0.952303 2.459232 4.928598</max>
+	</boundingBox>
+	<geometrySize>773718</geometrySize>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/american/A197_Jezevec/_skins/A197_Jezevec_NC_3Dst/normal/lod1/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.945335 -0.743827 -1.930022</min>
+		<max>0.945336 0.425580 5.976232</max>
+	</visibilityBox>
+</root>

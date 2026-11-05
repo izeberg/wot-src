@@ -1929,6 +1929,24 @@
 			</wwbanks>
 		</mode>
 		<mode>
+			<name>tankmen_bp21_13</name>
+			<wwise_language>BP21/BP21_en_US_tankmen_13</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BP21/BP21_en_US_tankmen_13/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp21_14</name>
+			<wwise_language>BP21/BP21_en_US_tankmen_14</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BP21/BP21_en_US_tankmen_14/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
 			<name>tankmen_mtlb4_1</name>
 			<wwise_language>MTLB4/MTLB4_zh_CN_tankmen_1</wwise_language>
 			<description/>
