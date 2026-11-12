@@ -17,7 +17,7 @@ class OfferBannerWindowView(ViewImpl):
     _offersProvider = dependency.descriptor(IOffersDataProvider)
 
     def __init__(self, offerID):
-        settings = ViewSettings(layoutID=R.views.lobby.offers.OfferBannerWindow(), flags=ViewFlags.WINDOW_DECORATOR, model=OfferBannerModel())
+        settings = ViewSettings(layoutID=R.views.lobby.offers.OfferBannerWindow(), flags=ViewFlags.VIEW, model=OfferBannerModel())
         super(OfferBannerWindowView, self).__init__(settings)
         self._offerID = offerID
         self._langCode = getClientLanguage()

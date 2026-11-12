@@ -1516,13 +1516,18 @@ class ArtyCameraDistancePlugin(_DistancePlugin):
 
     def __updateCameraDistance(self):
         inputHandler = avatar_getter.getInputHandler()
-        if inputHandler is None or inputHandler.ctrlModeName not in _STRATEGIC_VIEW or not inputHandler.ctrl.isEnabled:
+        if inputHandler is None or not inputHandler.ctrl.isEnabled:
             return
-        if GUI_SETTINGS.spgAlternativeAimingCameraEnabled and self.settingsCore.getSetting(SPGAim.AUTO_CHANGE_AIM_MODE):
-            self.__updateWithAutoChangeMode(inputHandler.ctrl)
+        ctrlModeName = inputHandler.ctrlModeName
+        if ctrlModeName not in _STRATEGIC_VIEW:
+            return
         else:
-            self.__simpleUpdate(inputHandler.ctrl)
-        return
+            isAutoChangeModeEnabled = GUI_SETTINGS.spgAlternativeAimingCameraEnabled and self.settingsCore.getSetting(SPGAim.AUTO_CHANGE_AIM_MODE)
+            if isAutoChangeModeEnabled or ctrlModeName == CTRL_MODE.ASSAULT_SPG:
+                self.__updateWithAutoChangeMode(inputHandler.ctrl)
+            else:
+                self.__simpleUpdate(inputHandler.ctrl)
+            return
 
     def __simpleUpdate(self, ctrl):
         value = (1.0 - ctrl.getCamDistRatio()) * (self._MAX_VALUE - self._MIN_VALUE)
@@ -2038,13 +2043,13 @@ class TemperatureGunPlugin(CrosshairPlugin):
 
     def __onVehicleControlling(self, vehicle):
         vTypeDesc = vehicle.typeDescriptor
+        self.__unsubscribeTemperatureCtrl()
         if vTypeDesc.isTemperatureGun:
             states = vTypeDesc.gun.temperature.states
             lastStateTemperature = states[(-1)].temperature
             self.parentObj.as_addOverheatS([ float(state.temperature) / lastStateTemperature for state in states[:-1] ])
             self.__subscribeTemperatureCtrl(vehicle.dynamicComponents.get('temperatureGunController'))
         else:
-            self.__unsubscribeTemperatureCtrl()
             self.parentObj.as_removeOverheatS()
 
     def __subscribeTemperatureCtrl(self, temperatureGunCtrl):

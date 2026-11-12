@@ -77,6 +77,7 @@ class LootBoxesStorageStateMachineDescription(object):
         uniqueRewarding = cls.__getStateFromStateId(States.UNIQUE_REWARDING.value)
         rewarding = cls.__getStateFromStateId(States.REWARDING.value)
         storageViewing.addTransition(StringEventTransition(LootBoxesStorageEventEnum.GOTO_REQUEST), target=requestToOpen)
+        storageViewing.addTransition(StringEventTransition(LootBoxesStorageEventEnum.GOTO_OPENING), target=opening)
         requestToOpen.addTransition(StringEventTransition(LootBoxesStorageEventEnum.GOTO_OPENING), target=opening)
         requestToOpen.addTransition(StringEventTransition(LootBoxesStorageEventEnum.GOTO_LOSE_OPENING), target=loseOpening)
         requestToOpen.addTransition(StringEventTransition(LootBoxesStorageEventEnum.GOTO_ERROR), target=openingError)

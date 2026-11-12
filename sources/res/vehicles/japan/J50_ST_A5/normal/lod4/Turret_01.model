@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/japan/J50_ST_A5/normal/lod4/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.229258 -0.003619 -1.229844</min>
+		<max>1.231174 0.873676 1.230587</max>
+	</visibilityBox>
+</root>

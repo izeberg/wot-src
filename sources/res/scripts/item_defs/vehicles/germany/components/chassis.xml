@@ -77,21 +77,9 @@
 		<Chassis_G00_Feuerbunker>
 			<id>65009</id>
 		</Chassis_G00_Feuerbunker>
-		<Chassis_G00_Mausekonig_V01>
-			<id>41012</id>
-		</Chassis_G00_Mausekonig_V01>
-		<Chassis_G00_PzVI_Tiger_P>
-			<id>40012</id>
-		</Chassis_G00_PzVI_Tiger_P>
-		<Chassis_G00_Ratte_V1>
-			<id>41011</id>
-		</Chassis_G00_Ratte_V1>
 		<Chassis_G00_Startgestell>
 			<id>65007</id>
 		</Chassis_G00_Startgestell>
-		<Chassis_G00_Typ_205>
-			<id>40011</id>
-		</Chassis_G00_Typ_205>
 		<Chassis_G04_PzVI_Tiger_IA>
 			<id>184</id>
 		</Chassis_G04_PzVI_Tiger_IA>
@@ -323,6 +311,9 @@
 		<Chassis_G194_E_50_GT_Alkett_Prod_02>
 			<id>31017</id>
 		</Chassis_G194_E_50_GT_Alkett_Prod_02>
+		<Chassis_G195_Atomic_Panzer>
+			<id>31019</id>
+		</Chassis_G195_Atomic_Panzer>
 		<Chassis_G196_E_75_Ausf_B_Doppel>
 			<id>31013</id>
 		</Chassis_G196_E_75_Ausf_B_Doppel>
@@ -332,6 +323,9 @@
 		<Chassis_G201_Flakpanzer_5_5_cm_Coelian_Kr>
 			<id>31021</id>
 		</Chassis_G201_Flakpanzer_5_5_cm_Coelian_Kr>
+		<Chassis_G203_JgPz_VII_Waldkatze>
+			<id>31018</id>
+		</Chassis_G203_JgPz_VII_Waldkatze>
 		<Chassis_G25_PzII_Luchs_SHXXI_B>
 			<id>311</id>
 		</Chassis_G25_PzII_Luchs_SHXXI_B>
@@ -353,9 +347,6 @@
 		<Chassis_G98_Waffentrager_E100_P>
 			<id>224</id>
 		</Chassis_G98_Waffentrager_E100_P>
-		<Chassis_G98_Waffentrager_E100_WO>
-			<id>244</id>
-		</Chassis_G98_Waffentrager_E100_WO>
 		<Chassis_GW_Elefant>
 			<id>148</id>
 		</Chassis_GW_Elefant>

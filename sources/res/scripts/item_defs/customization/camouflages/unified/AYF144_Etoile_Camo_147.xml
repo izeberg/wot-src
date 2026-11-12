@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>vehicleBound hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>france:F144_Etoile</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>31644</id>
+			<texture>vehicles/russian/Camouflage/AYF144_Etoile_Camo_TurretHull_147.dds</texture>
+			<userString>#vehicle_customization:AYF144_Etoile_Camo_TurretHull_147/name</userString>
+			<description>#vehicle_customization:AYF144_Etoile_Camo_TurretHull_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<exclusionImpact>
+				0.9
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 13</c3>
+				</palette>
+			</palettes>
+			<tiling>
+				<france:F144_Etoile>1 1 0 0</france:F144_Etoile>
+			</tiling>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>vehicleBound hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>france:F144_Etoile</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>31645</id>
+			<texture>vehicles/russian/Camouflage/AYF144_Etoile_Camo_Gun_147.dds</texture>
+			<userString>#vehicle_customization:AYF144_Etoile_Camo_Gun_147/name</userString>
+			<description>#vehicle_customization:AYF144_Etoile_Camo_Gun_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 13</c3>
+				</palette>
+			</palettes>
+			<tiling>
+				<france:F144_Etoile>1 1 0 0</france:F144_Etoile>
+			</tiling>
+		</camouflage>
+	</itemGroup>
+</root>

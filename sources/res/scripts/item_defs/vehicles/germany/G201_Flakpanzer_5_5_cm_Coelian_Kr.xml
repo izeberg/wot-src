@@ -3052,7 +3052,7 @@
 						0.24
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>14</reloadTime>
+					<reloadTime>16</reloadTime>
 					<aimingTime>
 						1.6
 						<!--BW_String-->
@@ -3084,7 +3084,7 @@
 							1.0
 							<!--BW_String-->
 						</shotDispersionPerSec>
-						<maxShotDispersion>2</maxShotDispersion>
+						<maxShotDispersion>1</maxShotDispersion>
 						<rate>
 							2.833
 							<!--BW_String-->
@@ -4013,7 +4013,7 @@
 		<detailed>
 			<engines>
 				<Maybach_HL_230_G201>
-					<smplEnginePower>700</smplEnginePower>
+					<smplEnginePower>810</smplEnginePower>
 					<smplFwMaxSpeed>50</smplFwMaxSpeed>
 				</Maybach_HL_230_G201>
 			</engines>

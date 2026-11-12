@@ -459,6 +459,28 @@ package net.wg.data.constants.generated
       
       public static const BADGE_31078:String = "badge_31078";
       
+      public static const BADGE_31079:String = "badge_31079";
+      
+      public static const BADGE_31080:String = "badge_31080";
+      
+      public static const BADGE_31081:String = "badge_31081";
+      
+      public static const BADGE_31082:String = "badge_31082";
+      
+      public static const BADGE_31083:String = "badge_31083";
+      
+      public static const BADGE_31084:String = "badge_31084";
+      
+      public static const BADGE_31085:String = "badge_31085";
+      
+      public static const BADGE_31086:String = "badge_31086";
+      
+      public static const BADGE_31087:String = "badge_31087";
+      
+      public static const BADGE_31088:String = "badge_31088";
+      
+      public static const BADGE_31089:String = "badge_31089";
+      
       public static const BADGE_32:String = "badge_32";
       
       public static const BADGE_33:String = "badge_33";
@@ -603,10 +625,6 @@ package net.wg.data.constants.generated
       
       public static const BADGE_99:String = "badge_99";
       
-      public static const BASE_LGD:String = "base_lgd";
-      
-      public static const BASE_LGD_SMALL:String = "base_lgd_small";
-      
       public static const BLUE_ATSPG_H:String = "blue_atspg_h";
       
       public static const BLUE_ATSPG_M:String = "blue_atspg_m";
@@ -660,10 +678,6 @@ package net.wg.data.constants.generated
       public static const CAMERA:String = "Camera";
       
       public static const CAMERA_WITH_DIRECTION:String = "CameraWithDirection";
-      
-      public static const CAMP_LGD:String = "camp_lgd";
-      
-      public static const CAMP_LGD_SMALL:String = "camp_lgd_small";
       
       public static const CHASSIS:String = "chassis";
       
@@ -736,8 +750,6 @@ package net.wg.data.constants.generated
       public static const CHINA_CH22_113_BEIJING_OPERA:String = "china-Ch22_113_Beijing_Opera";
       
       public static const CHINA_CH22_113_T:String = "china-Ch22_113_T";
-      
-      public static const CHINA_CH22_113_P:String = "china-Ch22_113P";
       
       public static const CHINA_CH23_112:String = "china-Ch23_112";
       
@@ -859,6 +871,8 @@ package net.wg.data.constants.generated
       
       public static const CHINA_CH76_HSD_1:String = "china-Ch76_HSD_1";
       
+      public static const CHINA_CH77_WZ_120_SPG:String = "china-Ch77_WZ_120_SPG";
+      
       public static const COMMANDER:String = "commander";
       
       public static const COMMANDER_EAGLE_EYE:String = "commander_eagleEye";
@@ -977,8 +991,6 @@ package net.wg.data.constants.generated
       
       public static const DAMAGE_LOG_AIRSTRIKE_EQ_16X16:String = "damageLog_airstrike_eq_16x16";
       
-      public static const DAMAGE_LOG_AIRSTRIKE_EQ_16X16_PORTAL:String = "damageLog_airstrike_eq_16x16Portal";
-      
       public static const DAMAGE_LOG_AIRSTRIKE_EQ_ENEMY_16X16:String = "damageLog_airstrike_eq_enemy_16x16";
       
       public static const DAMAGE_LOG_AIRSTRIKE_EQ_ENEMY_16X16_BLIND:String = "damageLog_airstrike_eq_enemy_16x16Blind";
@@ -991,15 +1003,11 @@ package net.wg.data.constants.generated
       
       public static const DAMAGE_LOG_ARTILLERY_EQ_16X16:String = "damageLog_artillery_eq_16x16";
       
-      public static const DAMAGE_LOG_ARTILLERY_EQ_16X16_PORTAL:String = "damageLog_artillery_eq_16x16Portal";
-      
       public static const DAMAGE_LOG_ARTILLERY_EQ_ENEMY_16X16:String = "damageLog_artillery_eq_enemy_16x16";
       
       public static const DAMAGE_LOG_ARTILLERY_EQ_ENEMY_16X16_BLIND:String = "damageLog_artillery_eq_enemy_16x16Blind";
       
       public static const DAMAGE_LOG_ASSIST_16X16:String = "damageLog_assist_16x16";
-      
-      public static const DAMAGE_LOG_ASSIST_16X16_PORTAL:String = "damageLog_assist_16x16Portal";
       
       public static const DAMAGE_LOG_BERSERKER_16X16:String = "damageLog_berserker_16x16";
       
@@ -1013,31 +1021,21 @@ package net.wg.data.constants.generated
       
       public static const DAMAGE_LOG_CLING_BRANDER_16X16:String = "damageLog_cling_brander_16x16";
       
-      public static const DAMAGE_LOG_CLING_BRANDER_16X16_PORTAL:String = "damageLog_cling_brander_16x16Portal";
-      
       public static const DAMAGE_LOG_CLING_BRANDER_ENEMY_16X16:String = "damageLog_cling_brander_enemy_16x16";
       
       public static const DAMAGE_LOG_COORDINATE_16X16:String = "damageLog_coordinate_16x16";
       
-      public static const DAMAGE_LOG_COORDINATE_16X16_PORTAL:String = "damageLog_coordinate_16x16Portal";
-      
       public static const DAMAGE_LOG_CORRODING_SHOT_16X16:String = "damageLog_corroding_shot_16x16";
-      
-      public static const DAMAGE_LOG_CORRODING_SHOT_16X16_PORTAL:String = "damageLog_corroding_shot_16x16Portal";
       
       public static const DAMAGE_LOG_CORRODING_SHOT_ENEMY_16X16:String = "damageLog_corroding_shot_enemy_16x16";
       
       public static const DAMAGE_LOG_CRITICAL_16X16:String = "damageLog_critical_16x16";
-      
-      public static const DAMAGE_LOG_CRITICAL_16X16_PORTAL:String = "damageLog_critical_16x16Portal";
       
       public static const DAMAGE_LOG_CRITICAL_ENEMY_16X16:String = "damageLog_critical_enemy_16x16";
       
       public static const DAMAGE_LOG_CRITICAL_ENEMY_16X16_BLIND:String = "damageLog_critical_enemy_16x16Blind";
       
       public static const DAMAGE_LOG_DAMAGE_16X16:String = "damageLog_damage_16x16";
-      
-      public static const DAMAGE_LOG_DAMAGE_16X16_PORTAL:String = "damageLog_damage_16x16Portal";
       
       public static const DAMAGE_LOG_DAMAGE_DETAIL:String = "damageLog_damage_detail";
       
@@ -1055,15 +1053,9 @@ package net.wg.data.constants.generated
       
       public static const DAMAGE_LOG_DISCOVER_16X16:String = "damageLog_discover_16x16";
       
-      public static const DAMAGE_LOG_DISCOVER_16X16_PORTAL:String = "damageLog_discover_16x16Portal";
-      
       public static const DAMAGE_LOG_FIRE_16X16:String = "damageLog_fire_16x16";
       
-      public static const DAMAGE_LOG_FIRE_16X16_PORTAL:String = "damageLog_fire_16x16Portal";
-      
       public static const DAMAGE_LOG_FIRE_CIRCLE_16X16:String = "damageLog_fire_circle_16x16";
-      
-      public static const DAMAGE_LOG_FIRE_CIRCLE_16X16_PORTAL:String = "damageLog_fire_circle_16x16Portal";
       
       public static const DAMAGE_LOG_FIRE_CIRCLE_ENEMY_16X16:String = "damageLog_fire_circle_enemy_16x16";
       
@@ -1073,17 +1065,11 @@ package net.wg.data.constants.generated
       
       public static const DAMAGE_LOG_FORT_ARTILLERY_16X16:String = "damageLog_fort_artillery_16x16";
       
-      public static const DAMAGE_LOG_HEALTH_DDED_16X16_PORTAL:String = "damageLog_health_dded_16x16Portal";
-      
       public static const DAMAGE_LOG_HEAVY_16X16:String = "damageLog_heavy_16x16";
       
       public static const DAMAGE_LOG_IMMOBILIZED_16X16:String = "damageLog_immobilized_16x16";
       
-      public static const DAMAGE_LOG_IMMOBILIZED_16X16_PORTAL:String = "damageLog_immobilized_16x16Portal";
-      
       public static const DAMAGE_LOG_KILL_16X16:String = "damageLog_kill_16x16";
-      
-      public static const DAMAGE_LOG_KILL_16X16_PORTAL:String = "damageLog_kill_16x16Portal";
       
       public static const DAMAGE_LOG_LIGHT_16X16:String = "damageLog_light_16x16";
       
@@ -1091,15 +1077,7 @@ package net.wg.data.constants.generated
       
       public static const DAMAGE_LOG_MINE_FIELD_16X16:String = "damageLog_mine_field_16x16";
       
-      public static const DAMAGE_LOG_MINE_FIELD_16X16_PORTAL:String = "damageLog_mine_field_16x16Portal";
-      
-      public static const DAMAGE_LOG_PERIODIC_16X16:String = "damageLog_periodic_16x16";
-      
-      public static const DAMAGE_LOG_PERIODIC_ENEMY_16X16:String = "damageLog_periodic_enemy_16x16";
-      
       public static const DAMAGE_LOG_RAM_16X16:String = "damageLog_ram_16x16";
-      
-      public static const DAMAGE_LOG_RAM_16X16_PORTAL:String = "damageLog_ram_16x16Portal";
       
       public static const DAMAGE_LOG_RAM_ENEMY_16X16:String = "damageLog_ram_enemy_16x16";
       
@@ -1107,23 +1085,11 @@ package net.wg.data.constants.generated
       
       public static const DAMAGE_LOG_REFLECT_16X16:String = "damageLog_reflect_16x16";
       
-      public static const DAMAGE_LOG_REFLECT_16X16_PORTAL:String = "damageLog_reflect_16x16Portal";
-      
-      public static const DAMAGE_LOG_SENTINEL_ENEMY_16X16:String = "damageLog_sentinel_enemy_16x16";
-      
-      public static const DAMAGE_LOG_SENTINEL_ENEMY_16X16_BLIND:String = "damageLog_sentinel_enemy_16x16Blind";
-      
       public static const DAMAGE_LOG_SPAWNED_BOT_16X16:String = "damageLog_spawned_bot_16x16";
-      
-      public static const DAMAGE_LOG_SPAWNED_BOT_16X16_PORTAL:String = "damageLog_spawned_bot_16x16Portal";
       
       public static const DAMAGE_LOG_STUN_16X16:String = "damageLog_stun_16x16";
       
-      public static const DAMAGE_LOG_STUN_16X16_PORTAL:String = "damageLog_stun_16x16Portal";
-      
       public static const DAMAGE_LOG_THUNDER_STRIKE_16X16:String = "damageLog_thunder_strike_16x16";
-      
-      public static const DAMAGE_LOG_THUNDER_STRIKE_16X16_PORTAL:String = "damageLog_thunder_strike_16x16Portal";
       
       public static const DAMAGE_LOG_THUNDER_STRIKE_ENEMY_16X16:String = "damageLog_thunder_strike_enemy_16x16";
       
@@ -1497,8 +1463,6 @@ package net.wg.data.constants.generated
       
       public static const FRANCE_F14_AMX40:String = "france-F14_AMX40";
       
-      public static const FRANCE_F14_AMX40_PORTAL:String = "france-F14_AMX40_portal";
-      
       public static const FRANCE_F142_PROJET_LOUIS_FL10_90:String = "france-F142_Projet_Louis_FL10_90";
       
       public static const FRANCE_F144_ETOILE:String = "france-F144_Etoile";
@@ -1516,6 +1480,8 @@ package net.wg.data.constants.generated
       public static const FRANCE_F17_AMX_13_90_IGR:String = "france-F17_AMX_13_90_IGR";
       
       public static const FRANCE_F18_BAT_CHATILLON25T:String = "france-F18_Bat_Chatillon25t";
+      
+      public static const FRANCE_F18_BAT_CHATILLON25T_02:String = "france-F18_Bat_Chatillon25t_02";
       
       public static const FRANCE_F18_BAT_CHATILLON25T_7X7:String = "france-F18_Bat_Chatillon25t_7x7";
       
@@ -1570,8 +1536,6 @@ package net.wg.data.constants.generated
       public static const FRANCE_F38_BAT_CHATILLON155_58:String = "france-F38_Bat_Chatillon155_58";
       
       public static const FRANCE_F42_AMR_35:String = "france-F42_AMR_35";
-      
-      public static const FRANCE_F43_AMC_35_H:String = "france-F43_AMC_35_H";
       
       public static const FRANCE_F43_AMC_35_SH:String = "france-F43_AMC_35_SH";
       
@@ -1709,15 +1673,7 @@ package net.wg.data.constants.generated
       
       public static const GERMANY_G00_FEUERBUNKER:String = "germany-G00_Feuerbunker";
       
-      public static const GERMANY_G00_MAUSEKONIG_V01:String = "germany-G00_Mausekonig_V01";
-      
-      public static const GERMANY_G00_PZ_VI_TIGER_P:String = "germany-G00_PzVI_Tiger_P";
-      
-      public static const GERMANY_G00_RATTE_V1:String = "germany-G00_Ratte_V1";
-      
       public static const GERMANY_G00_STARTGESTELL:String = "germany-G00_Startgestell";
-      
-      public static const GERMANY_G00_TYP_205:String = "germany-G00_Typ_205";
       
       public static const GERMANY_G02_HUMMEL:String = "germany-G02_Hummel";
       
@@ -1931,6 +1887,8 @@ package net.wg.data.constants.generated
       
       public static const GERMANY_G194_E_50_GT_ALKETT_PROD_02:String = "germany-G194_E_50_GT_Alkett_Prod_02";
       
+      public static const GERMANY_G195_ATOMIC_PANZER:String = "germany-G195_Atomic_Panzer";
+      
       public static const GERMANY_G196_E_75_AUSF_B_DOPPEL:String = "germany-G196_E_75_Ausf_B_Doppel";
       
       public static const GERMANY_G197_E_94_FECHTER:String = "germany-G197_E_94_Fechter";
@@ -1938,6 +1896,8 @@ package net.wg.data.constants.generated
       public static const GERMANY_G20_MARDER_II:String = "germany-G20_Marder_II";
       
       public static const GERMANY_G201_FLAKPANZER_5_5_CM_COELIAN_KR:String = "germany-G201_Flakpanzer_5_5_cm_Coelian_Kr";
+      
+      public static const GERMANY_G203_JG_PZ_VII_WALDKATZE:String = "germany-G203_JgPz_VII_Waldkatze";
       
       public static const GERMANY_G21_PANZER_JAGER_I:String = "germany-G21_PanzerJager_I";
       
@@ -2129,8 +2089,6 @@ package net.wg.data.constants.generated
       
       public static const GERMANY_G98_WAFFENTRAGER_E100_P:String = "germany-G98_Waffentrager_E100_P";
       
-      public static const GERMANY_G98_WAFFENTRAGER_E100_WO:String = "germany-G98_Waffentrager_E100_WO";
-      
       public static const GERMANY_G99_RH_B_WAFFENTRAGER:String = "germany-G99_RhB_Waffentrager";
       
       public static const GOLD_ATSPG_HS:String = "gold_atspg_hs";
@@ -2185,10 +2143,6 @@ package net.wg.data.constants.generated
       
       public static const GREENSUPPLY_PILLBOX_NORMAL:String = "greensupply_PillboxNormal";
       
-      public static const GUARD_LGD:String = "guard_lgd";
-      
-      public static const GUARD_LGD_SMALL:String = "guard_lgd_small";
-      
       public static const GUN:String = "gun";
       
       public static const GUN_ORANGE:String = "gun_orange";
@@ -2238,18 +2192,6 @@ package net.wg.data.constants.generated
       public static const HEAVY_TANK_TEAM_KILLER_BLUE:String = "heavyTank_teamKiller_blue";
       
       public static const HEAVY_TANK_TEAM_KILLER_DEAD_BLUE:String = "heavyTank_teamKiller_dead_blue";
-      
-      public static const HOOK_CAMP:String = "hookCamp";
-      
-      public static const HOOK_TP_COOL_DOWN:String = "hookTpCoolDown";
-      
-      public static const HOOK_TP_READY:String = "hookTpReady";
-      
-      public static const HORSE_CAMP:String = "horseCamp";
-      
-      public static const HORSE_TP_COOL_DOWN:String = "horseTpCoolDown";
-      
-      public static const HORSE_TP_READY:String = "horseTpReady";
       
       public static const ICO_IGR:String = "icoIGR";
       
@@ -2509,6 +2451,8 @@ package net.wg.data.constants.generated
       
       public static const ITALY_IT37_CAS_149:String = "italy-It37_CAS_149";
       
+      public static const ITALY_IT39_CAS_120_MASTINO:String = "italy-It39_CAS_120_Mastino";
+      
       public static const JAPAN_J01_NC27:String = "japan-J01_NC27";
       
       public static const JAPAN_J02_TE_KE:String = "japan-J02_Te_Ke";
@@ -2617,6 +2561,8 @@ package net.wg.data.constants.generated
       
       public static const JAPAN_J49_TYPE_60_PROTO_4:String = "japan-J49_Type_60_Proto_4";
       
+      public static const JAPAN_J50_ST_A5:String = "japan-J50_ST_A5";
+      
       public static const JAPAN_J51_NAGINATA:String = "japan-J51_Naginata";
       
       public static const JAPAN_J52_SYA1:String = "japan-J52_SYA1";
@@ -2624,10 +2570,6 @@ package net.wg.data.constants.generated
       public static const JAPAN_J53_HO_SE_I:String = "japan-J53_Ho_Se_I";
       
       public static const KILLS:String = "kills";
-      
-      public static const LANE_LGD:String = "lane_lgd";
-      
-      public static const LANE_LGD_SMALL:String = "lane_lgd_small";
       
       public static const LASTLIT_ALLY_GREEN:String = "lastlit_ally_green";
       
@@ -2753,8 +2695,6 @@ package net.wg.data.constants.generated
       
       public static const MESSENGER_BG:String = "messenger_bg";
       
-      public static const MINEFIELD:String = "minefield";
-      
       public static const MINIMAP_B1:String = "minimap_b1";
       
       public static const MINIMAP_B2:String = "minimap_b2";
@@ -2791,15 +2731,7 @@ package net.wg.data.constants.generated
       
       public static const PERSONAL_GREEN_DIRECTION:String = "PersonalGreenDirection";
       
-      public static const PERSPECTIVE_CAMP:String = "perspectiveCamp";
-      
-      public static const PERSPECTIVE_TP_COOL_DOWN:String = "perspectiveTpCoolDown";
-      
-      public static const PERSPECTIVE_TP_READY:String = "perspectiveTpReady";
-      
       public static const PLACE:String = "place";
-      
-      public static const PLAYER_BASE:String = "playerBase";
       
       public static const PLAYER_BLACK_MESSAGE_LEFT_RENDERER:String = "PlayerBlackMessageLeftRenderer";
       
@@ -2841,10 +2773,6 @@ package net.wg.data.constants.generated
       
       public static const PLAYERS_SWITCH_4:String = "playersSwitch_4";
       
-      public static const POI_CAMP_BG_BLUE:String = "poiCampBgBlue";
-      
-      public static const POI_CAMP_BG_RED:String = "poiCampBgRed";
-      
       public static const POI_MARKER_BACK:String = "poiMarkerBack";
       
       public static const POI_MARKER_ICON_1:String = "poiMarkerIcon_1";
@@ -2884,8 +2812,6 @@ package net.wg.data.constants.generated
       public static const POLAND_PL16_T34_85_RUDY:String = "poland-Pl16_T34_85_Rudy";
       
       public static const POLAND_PL17_DS_P_ZLNZ:String = "poland-Pl17_DS_PZlnz";
-      
-      public static const POLAND_PL17_DS_P_ZLNZ_H:String = "poland-Pl17_DS_PZlnz_H";
       
       public static const POLAND_PL17_DS_P_ZLNZ_SH:String = "poland-Pl17_DS_PZlnz_SH";
       
@@ -2942,24 +2868,6 @@ package net.wg.data.constants.generated
       public static const POLAND_PL35_CS_57_SOKOL:String = "poland-Pl35_CS_57_Sokol";
       
       public static const POLAND_PL36_BOBR:String = "poland-Pl36_Bobr";
-      
-      public static const PORTAL:String = "portal";
-      
-      public static const PORTAL_CHAT_MUTE_ICON:String = "portal_chat_mute_icon";
-      
-      public static const PORTAL_LGD:String = "portal_lgd";
-      
-      public static const PORTAL_LGD_SMALL:String = "portal_lgd_small";
-      
-      public static const PORTAL_PROGRESS_BG:String = "portal_progress_bg";
-      
-      public static const PORTAL_SQUAD_GOLD:String = "portal_squad_gold";
-      
-      public static const PORTAL_SQUAD_SILVER:String = "portal_squad_silver";
-      
-      public static const PORTAL_VOICE_MUTE_BG:String = "portal_voice_mute_bg";
-      
-      public static const PORTAL_VOICE_MUTE_ICON:String = "portal_voice_mute_icon";
       
       public static const POSTMORTEM_BG:String = "postmortem_bg";
       
@@ -3117,8 +3025,6 @@ package net.wg.data.constants.generated
       
       public static const RANK_THIRD_E_22X22:String = "rank_third_E_22x22";
       
-      public static const RATTE_MINIMAP_ENTRY:String = "RatteMinimapEntry";
-      
       public static const RECON_ENTRY:String = "ReconEntry";
       
       public static const RED_AT_SPG_DESTROYED:String = "redAT-SPGDestroyed";
@@ -3161,33 +3067,19 @@ package net.wg.data.constants.generated
       
       public static const RIBBONS_ASSIST_BY_ABILITY:String = "ribbonsAssistByAbility";
       
-      public static const RIBBONS_ASSIST_BY_ABILITY_PORTAL:String = "ribbonsAssistByAbilityPortal";
-      
       public static const RIBBONS_ASSIST_SPOT:String = "ribbonsAssistSpot";
-      
-      public static const RIBBONS_ASSIST_SPOT_PORTAL:String = "ribbonsAssistSpotPortal";
       
       public static const RIBBONS_ASSIST_STUN:String = "ribbonsAssistStun";
       
-      public static const RIBBONS_ASSIST_STUN_PORTAL:String = "ribbonsAssistStunPortal";
-      
       public static const RIBBONS_ASSIST_TRACK:String = "ribbonsAssistTrack";
-      
-      public static const RIBBONS_ASSIST_TRACK_PORTAL:String = "ribbonsAssistTrackPortal";
       
       public static const RIBBONS_BERSERKER:String = "ribbonsBerserker";
       
       public static const RIBBONS_BG_GREEN_LARGE:String = "ribbonsBgGreenLarge";
       
-      public static const RIBBONS_BG_GREEN_LARGE_PORTAL:String = "ribbonsBgGreenLargePortal";
-      
       public static const RIBBONS_BG_GREEN_MEDIUM:String = "ribbonsBgGreenMedium";
       
-      public static const RIBBONS_BG_GREEN_MEDIUM_PORTAL:String = "ribbonsBgGreenMediumPortal";
-      
       public static const RIBBONS_BG_GREEN_SMALL:String = "ribbonsBgGreenSmall";
-      
-      public static const RIBBONS_BG_GREEN_SMALL_PORTAL:String = "ribbonsBgGreenSmallPortal";
       
       public static const RIBBONS_BG_GREY_LARGE:String = "ribbonsBgGreyLarge";
       
@@ -3231,11 +3123,7 @@ package net.wg.data.constants.generated
       
       public static const RIBBONS_BURN_ENEMY_BLIND:String = "ribbonsBurnEnemyBlind";
       
-      public static const RIBBONS_BURN_PORTAL:String = "ribbonsBurnPortal";
-      
       public static const RIBBONS_CAPTURE:String = "ribbonsCapture";
-      
-      public static const RIBBONS_CAPTURE_PORTAL:String = "ribbonsCapturePortal";
       
       public static const RIBBONS_CRITS:String = "ribbonsCrits";
       
@@ -3243,21 +3131,13 @@ package net.wg.data.constants.generated
       
       public static const RIBBONS_CRITS_ENEMY_BLIND:String = "ribbonsCritsEnemyBlind";
       
-      public static const RIBBONS_CRITS_PORTAL:String = "ribbonsCritsPortal";
-      
       public static const RIBBONS_DAMAGE:String = "ribbonsDamage";
       
       public static const RIBBONS_DAMAGE_BOT:String = "ribbonsDamageBot";
       
-      public static const RIBBONS_DAMAGE_BOT_PORTAL:String = "ribbonsDamageBotPortal";
-      
       public static const RIBBONS_DAMAGE_BY_AIR_STRIKE:String = "ribbonsDamageByAirStrike";
       
-      public static const RIBBONS_DAMAGE_BY_AIR_STRIKE_PORTAL:String = "ribbonsDamageByAirStrikePortal";
-      
       public static const RIBBONS_DAMAGE_BY_ARTILLERY:String = "ribbonsDamageByArtillery";
-      
-      public static const RIBBONS_DAMAGE_BY_ARTILLERY_PORTAL:String = "ribbonsDamageByArtilleryPortal";
       
       public static const RIBBONS_DAMAGE_BY_BOT:String = "ribbonsDamageByBot";
       
@@ -3277,11 +3157,7 @@ package net.wg.data.constants.generated
       
       public static const RIBBONS_DAMAGE_CLING_BRANDER:String = "ribbonsDamageClingBrander";
       
-      public static const RIBBONS_DAMAGE_CLING_BRANDER_PORTAL:String = "ribbonsDamageClingBranderPortal";
-      
       public static const RIBBONS_DAMAGE_CORRODING_SHOT:String = "ribbonsDamageCorrodingShot";
-      
-      public static const RIBBONS_DAMAGE_CORRODING_SHOT_PORTAL:String = "ribbonsDamageCorrodingShotPortal";
       
       public static const RIBBONS_DAMAGE_ENEMY:String = "ribbonsDamageEnemy";
       
@@ -3289,63 +3165,31 @@ package net.wg.data.constants.generated
       
       public static const RIBBONS_DAMAGE_FIRE_CIRCLE:String = "ribbonsDamageFireCircle";
       
-      public static const RIBBONS_DAMAGE_FIRE_CIRCLE_PORTAL:String = "ribbonsDamageFireCirclePortal";
-      
       public static const RIBBONS_DAMAGE_MINE_FIELD:String = "ribbonsDamageMineField";
-      
-      public static const RIBBONS_DAMAGE_MINE_FIELD_PORTAL:String = "ribbonsDamageMineFieldPortal";
-      
-      public static const RIBBONS_DAMAGE_PERIODIC_ENEMY_PORTAL:String = "ribbonsDamagePeriodicEnemyPortal";
-      
-      public static const RIBBONS_DAMAGE_PERIODIC_PORTAL:String = "ribbonsDamagePeriodicPortal";
-      
-      public static const RIBBONS_DAMAGE_PORTAL:String = "ribbonsDamagePortal";
       
       public static const RIBBONS_DAMAGE_THUNDER_STRIKE:String = "ribbonsDamageThunderStrike";
       
-      public static const RIBBONS_DAMAGE_THUNDER_STRIKE_PORTAL:String = "ribbonsDamageThunderStrikePortal";
-      
       public static const RIBBONS_DEFENCE:String = "ribbonsDefence";
-      
-      public static const RIBBONS_DEFENCE_PORTAL:String = "ribbonsDefencePortal";
       
       public static const RIBBONS_DEFENDER_BONUS:String = "ribbonsDefenderBonus";
       
-      public static const RIBBONS_DEFENDER_BONUS_PORTAL:String = "ribbonsDefenderBonusPortal";
-      
       public static const RIBBONS_DESTRUCTIBLE_DAMAGED:String = "ribbonsDestructibleDamaged";
-      
-      public static const RIBBONS_DESTRUCTIBLE_DAMAGED_PORTAL:String = "ribbonsDestructibleDamagedPortal";
       
       public static const RIBBONS_DESTRUCTIBLE_DESTROYED:String = "ribbonsDestructibleDestroyed";
       
-      public static const RIBBONS_DESTRUCTIBLE_DESTROYED_PORTAL:String = "ribbonsDestructibleDestroyedPortal";
-      
       public static const RIBBONS_DESTRUCTIBLES_DEFENDED:String = "ribbonsDestructiblesDefended";
-      
-      public static const RIBBONS_DESTRUCTIBLES_DEFENDED_PORTAL:String = "ribbonsDestructiblesDefendedPortal";
-      
-      public static const RIBBONS_DESTRUCTIBLES_DEFENDED_PORTAL_BLIND:String = "ribbonsDestructiblesDefendedPortalBlind";
       
       public static const RIBBONS_ENEMY_SECTOR_CAPTURED:String = "ribbonsEnemySectorCaptured";
       
-      public static const RIBBONS_ENEMY_SECTOR_CAPTURED_PORTAL:String = "ribbonsEnemySectorCapturedPortal";
-      
       public static const RIBBONS_EXCLAMATION:String = "ribbonsExclamation";
       
-      public static const RIBBONS_HEALTH_ADDED_PORTAL:String = "ribbonsHealthAddedPortal";
-      
       public static const RIBBONS_KILL:String = "ribbonsKill";
-      
-      public static const RIBBONS_KILL_PORTAL:String = "ribbonsKillPortal";
       
       public static const RIBBONS_RAM:String = "ribbonsRam";
       
       public static const RIBBONS_RAM_ENEMY:String = "ribbonsRamEnemy";
       
       public static const RIBBONS_RAM_ENEMY_BLIND:String = "ribbonsRamEnemyBlind";
-      
-      public static const RIBBONS_RAM_PORTAL:String = "ribbonsRamPortal";
       
       public static const RIBBONS_RECEIVED_BY_AIR_STRIKE:String = "ribbonsReceivedByAirStrike";
       
@@ -3359,19 +3203,9 @@ package net.wg.data.constants.generated
       
       public static const RIBBONS_RECEIVED_BY_DEATH_ZONE_BLIND:String = "ribbonsReceivedByDeathZoneBlind";
       
-      public static const RIBBONS_RECEIVED_BY_DEATH_ZONE_PORTAL:String = "ribbonsReceivedByDeathZonePortal";
-      
-      public static const RIBBONS_SENTINEL_ENEMY:String = "ribbonsSentinelEnemy";
-      
-      public static const RIBBONS_SENTINEL_ENEMY_BLIND:String = "ribbonsSentinelEnemyBlind";
-      
       public static const RIBBONS_SPOTTED:String = "ribbonsSpotted";
       
-      public static const RIBBONS_SPOTTED_PORTAL:String = "ribbonsSpottedPortal";
-      
       public static const RIBBONS_STUN:String = "ribbonsStun";
-      
-      public static const RIBBONS_STUN_PORTAL:String = "ribbonsStunPortal";
       
       public static const RIBBONS_SUPPLY_KILL:String = "ribbonsSupplyKill";
       
@@ -3410,12 +3244,6 @@ package net.wg.data.constants.generated
       public static const ROLE_SPG_ASSAULT_32X32:String = "role_SPG_assault_32x32";
       
       public static const ROLE_SPG_FLAME:String = "role_SPG_flame";
-      
-      public static const SATELITE_CAMP:String = "sateliteCamp";
-      
-      public static const SATELITE_TP_COOL_DOWN:String = "sateliteTpCoolDown";
-      
-      public static const SATELITE_TP_READY:String = "sateliteTpReady";
       
       public static const SCENARIO_MARKER_ICON:String = "scenarioMarkerIcon";
       
@@ -3564,6 +3392,8 @@ package net.wg.data.constants.generated
       public static const STRIP_31075:String = "strip_31075";
       
       public static const STRIP_31078:String = "strip_31078";
+      
+      public static const STRIP_31081:String = "strip_31081";
       
       public static const STRIP_56:String = "strip_56";
       
@@ -3765,25 +3595,11 @@ package net.wg.data.constants.generated
       
       public static const TANKMEN_SHELLMAN:String = "tankmen_shellman";
       
-      public static const TELEPORT_LGD:String = "teleport_lgd";
-      
-      public static const TELEPORT_LGD_SMALL:String = "teleport_lgd_small";
-      
       public static const TIMER_ANIM_BG:String = "timerAnimBg";
       
       public static const TIMER_DELIMITER:String = "timerDelimiter";
       
       public static const TOXIC_BG:String = "toxic_bg";
-      
-      public static const TP_HUB_LGD:String = "tp_hub_lgd";
-      
-      public static const TP_HUB_LGD_SMALL:String = "tp_hub_lgd_small";
-      
-      public static const TP_CAMP_BG_BLUE:String = "tpCampBgBlue";
-      
-      public static const TP_CAMP_BG_GREY:String = "tpCampBgGrey";
-      
-      public static const TRAP:String = "trap";
       
       public static const TURBO_DESTROYED_BASE:String = "turbo_destroyed_base";
       
@@ -3846,8 +3662,6 @@ package net.wg.data.constants.generated
       public static const UK_GB106_COBRA:String = "uk-GB106_Cobra";
       
       public static const UK_GB107_CAVALIER:String = "uk-GB107_Cavalier";
-      
-      public static const UK_GB107_CAVALIER_H:String = "uk-GB107_Cavalier_H";
       
       public static const UK_GB107_CAVALIER_SH:String = "uk-GB107_Cavalier_SH";
       
@@ -3940,6 +3754,10 @@ package net.wg.data.constants.generated
       public static const UK_GB142_FV249_CASTLE:String = "uk-GB142_FV249_Castle";
       
       public static const UK_GB143_CAPTAIN:String = "uk-GB143_Captain";
+      
+      public static const UK_GB146_ALBION:String = "uk-GB146_Albion";
+      
+      public static const UK_GB147_AVALON_MK_II_76:String = "uk-GB147_Avalon_Mk_II_76";
       
       public static const UK_GB15_STUART_I:String = "uk-GB15_Stuart_I";
       
@@ -4251,8 +4069,6 @@ package net.wg.data.constants.generated
       
       public static const USA_A151_TS_60:String = "usa-A151_TS_60";
       
-      public static const USA_A152_M_PROJECT:String = "usa-A152_M_Project";
-      
       public static const USA_A152_M_PROJECT_2:String = "usa-A152_M_Project_2";
       
       public static const USA_A153_XM66_F:String = "usa-A153_XM66F";
@@ -4262,8 +4078,6 @@ package net.wg.data.constants.generated
       public static const USA_A156_T54_2022:String = "usa-A156_T54_2022";
       
       public static const USA_A157_M_VII_Y:String = "usa-A157_M_VII_Y";
-      
-      public static const USA_A158_T832:String = "usa-A158_T832";
       
       public static const USA_A16_M7_PRIEST:String = "usa-A16_M7_Priest";
       
@@ -4314,6 +4128,10 @@ package net.wg.data.constants.generated
       public static const USA_A182_ALRS_M6:String = "usa-A182_ALRS_M6";
       
       public static const USA_A184_HTPC:String = "usa-A184_HTPC";
+      
+      public static const USA_A185_MBT_REVISED_V_E2:String = "usa-A185_MBT_Revised_V_E2";
+      
+      public static const USA_A186_M103_IMPROVED:String = "usa-A186_M103_Improved";
       
       public static const USA_A19_T2_LT:String = "usa-A19_T2_lt";
       
@@ -4721,6 +4539,8 @@ package net.wg.data.constants.generated
       
       public static const USSR_R180_OBJECT_274_A_MT_BF:String = "ussr-R180_Object_274_A_MT_BF";
       
+      public static const USSR_R182_OBJECT_451:String = "ussr-R182_Object_451";
+      
       public static const USSR_R183_K_91_PT:String = "ussr-R183_K_91_PT";
       
       public static const USSR_R185_T_34_L_11_1941:String = "ussr-R185_T_34_L_11_1941";
@@ -4867,7 +4687,11 @@ package net.wg.data.constants.generated
       
       public static const USSR_R251_T_55_SP_01:String = "ussr-R251_T_55_SP_01";
       
+      public static const USSR_R252_OBJECT_430_IT:String = "ussr-R252_Object_430_IT";
+      
       public static const USSR_R253_OBJECT_277_S:String = "ussr-R253_Object_277_S";
+      
+      public static const USSR_R259_PST_100:String = "ussr-R259_PST_100";
       
       public static const USSR_R26_SU_8:String = "ussr-R26_SU-8";
       
@@ -4914,8 +4738,6 @@ package net.wg.data.constants.generated
       public static const USSR_R45_IS_7_IGR:String = "ussr-R45_IS-7_IGR";
       
       public static const USSR_R46_KV_13:String = "ussr-R46_KV-13";
-      
-      public static const USSR_R46_KV_13_H:String = "ussr-R46_KV-13_H";
       
       public static const USSR_R46_KV_13_SH:String = "ussr-R46_KV-13_SH";
       

@@ -4,11 +4,11 @@
 		<name>default</name>
 		<preloadTextures>
 			<path>
-				particles/content_forward/pfx_textures/tracers.dds
+				particles/content_forward/pfx_textures/eff_leaves.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_leaves.dds
+				particles/content_forward/pfx_textures/tracers.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -32,6 +32,10 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_forward/pfx_textures/ny27_clapperboard.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_splash_3.dds
 				<type>primary</type>
 			</path>
@@ -52,11 +56,11 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_misc_3.dds
+				particles/content_forward/pfx_textures/eff_tex_split_fire_smoke_1.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_fire_smoke_1.dds
+				particles/content_forward/pfx_textures/eff_tex_split_misc_3.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -89,6 +93,10 @@
 			</path>
 			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_splash_2.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/glow_bloom.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -585,6 +593,18 @@
 			</path>
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex_distortion.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/glow_bloom.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/flare_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/ny27_clapperboard.dds
 				<type>primary</type>
 			</path>
 		</preloadTextures>

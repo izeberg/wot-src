@@ -145,7 +145,7 @@ package net.wg.gui.lobby.components
          invalidate(InvalidationType.DATA);
       }
       
-      private function updateVisibility() : void
+      protected function updateVisibility() : void
       {
          var _loc3_:DisplayObject = null;
          var _loc1_:int = 0;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un17_RDT_62/_skins/Un17_RDT_62_3Dst_01/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/intunion/Un17_RDT_62/_skins/Un17_RDT_62_3Dst_01/crash/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.704836 -0.918387 -3.139630</min>
+		<max>1.696905 0.613955 3.212528</max>
+	</visibilityBox>
+</root>

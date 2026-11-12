@@ -214,6 +214,8 @@
 			<module>client.cgf_components.view_components</module>
 			<module>client.cgf_components.stat_track_component</module>
 			<module>client.cgf_components.dual_gun_dual_accuracy_heat_component</module>
+			<module>client.cgf_components.prebattle_anim_component</module>
+			<module>client.cgf_components.capture_base_anim_component</module>
 			<module>client.events_core_client.events_core_cgf.entry_point.component</module>
 			<module>client.events_core_client.events_core_cgf.entry_point.manager</module>
 			<module>common.events_core_common.events_core_cgf.vehicle_buffs.components</module>
@@ -276,18 +278,26 @@
 			<path>content/CGFPrefabs/Frontline/Pillbox.prefab</path>
 			<path>content/CGFPrefabs/Frontline/Mortar.prefab</path>
 			<path>content/CGFPrefabs/Frontline/Flamer.prefab</path>
-			<path>content/CGFPrefabs/portal/botSpawn.prefab</path>
-			<path>content/CGFPrefabs/portal/sentinelDamage.prefab</path>
-			<path>content/CGFPrefabs/portal/respawnShield.prefab</path>
-			<path>content/CGFPrefabs/portal/incineratingAura.prefab</path>
-			<path>content/CGFPrefabs/portal/incineratingAuraLvl3.prefab</path>
-			<path>content/CGFPrefabs/portal/sentinelStateModels.prefab</path>
-			<path>content/CGFPrefabs/portal/reload_aura_stop.prefab</path>
-			<path>content/CGFPrefabs/portal/playerHeal.prefab</path>
-			<path>particles/content_deferred/GFX_models/portal26_event/procedure/procedure_portal.prefab</path>
+			<path>content/HangarPrefabs/h03_mt_ny_2026/GlobalFireworks.prefab</path>
 		</prefabs>
 		<prefabFolders>
 			<path>content/CGFPrefabs/cosmic_event</path>
+			<path>content/HangarPrefabs/NewYearToys/ChristmasTree/Ball</path>
+			<path>content/HangarPrefabs/NewYearToys/ChristmasTree/Floor</path>
+			<path>content/HangarPrefabs/NewYearToys/ChristmasTree/Garland</path>
+			<path>content/HangarPrefabs/NewYearToys/ChristmasTree/Top</path>
+			<path>content/HangarPrefabs/NewYearToys/Default</path>
+			<path>content/HangarPrefabs/NewYearToys/Illumination/Pyro</path>
+			<path>content/HangarPrefabs/NewYearToys/Raccoon/NY25_HP_toy</path>
+			<path>content/HangarPrefabs/NewYearToys/Raccoon/NY25_HP_house</path>
+			<path>content/HangarPrefabs/NewYearToys/Raccoon/NY25_HP_food</path>
+			<path>content/HangarPrefabs/NewYearToys/Raccoon/NY25_HP_InteractiveObject</path>
+			<path>content/HangarPrefabs/NewYearToys/Sculpture/Sculpture</path>
+			<path>content/HangarPrefabs/NewYearToys/SnowSlide/SnowSlide</path>
+			<path>content/HangarPrefabs/NewYearToys/Tablefull/Table</path>
+			<path>content/HangarPrefabs/NewYearToys/Tablefull/Tent</path>
+			<path>content/HangarPrefabs/NewYearToys/Terem/Fence</path>
+			<path>content/HangarPrefabs/NewYearToys/Terem/Terem</path>
 		</prefabFolders>
 	</cgf>
 </root>

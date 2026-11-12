@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch77_WZ_120_SPG/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/chinese/Ch77_WZ_120_SPG/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.044291 -0.020250 -0.034455</min>
+		<max>0.040740 0.005402 0.043241</max>
+	</visibilityBox>
+</root>

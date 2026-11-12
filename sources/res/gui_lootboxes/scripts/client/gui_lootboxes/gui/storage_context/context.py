@@ -30,18 +30,28 @@ class GlobalEvents(IntEnum):
 class ReturnPlaces(IntEnum):
     TO_HANGAR = 0
     TO_SHOP = 1
-    TO_NY_CUSTOMIZATION = 2
+    TO_CUSTOM = 2
     TO_SHARDS = 3
     TO_REFERRAL = 4
     TO_BIRTHDAY = 5
+    TO_FIR = 6
+    TO_LIGHTS = 7
+    TO_INSTALLATIONS = 8
+    TO_FAIR = 9
+    TO_SKATING = 10
+    TO_ATTRACTION = 11
+    TO_PET = 12
 
 
 def _handlerOnOpenClick(eventData):
     keyID = 0
+    isSelectionLootbox = False
     if len(eventData) == 2:
         lootBox, count = eventData
     else:
-        lootBox, count, keyID = eventData
+        lootBox, count, keyID, isSelectionLootbox = eventData
+    if isSelectionLootbox:
+        return StringEvent(LootBoxesStorageEventEnum.GOTO_OPENING, lootBox=lootBox, count=count, keyID=keyID)
     return StringEvent(LootBoxesStorageEventEnum.GOTO_REQUEST, lootBox=lootBox, count=count, keyID=keyID)
 
 
@@ -101,7 +111,7 @@ _STATE_ENTERED_HANDLERS = {States.REQUEST_TO_OPEN: _handleRequestToOpen}
 class LootBoxesContext(object):
     __guiLootBoxesCtr = dependency.descriptor(IGuiLootBoxesController)
     __slots__ = ('__stateMachine', '__stateMachineObserver', '__currentState', 'onStateChanged',
-                 '__asyncScope', '__returnPlace')
+                 '__asyncScope', '__returnPlace', '__isCardSelection')
 
     def __init__(self):
         super(LootBoxesContext, self).__init__()
@@ -111,6 +121,7 @@ class LootBoxesContext(object):
         self.__currentState = LootBoxesStorageStateMachineDescription.INIT_STATE
         self.__asyncScope = AsyncScope()
         self.__returnPlace = ReturnPlaces.TO_HANGAR
+        self.__isCardSelection = False
 
     def init(self):
         Waiting.show('loadLootboxesStorage')
@@ -151,6 +162,12 @@ class LootBoxesContext(object):
 
     def setReturnPlace(self, returnPlace):
         self.__returnPlace = returnPlace
+
+    def setIsCardSelection(self, value):
+        self.__isCardSelection = value
+
+    def isCardSelection(self):
+        return self.__isCardSelection
 
     def __handleStateChanged(self, stateID, event):
         self.__currentState = States(stateID)

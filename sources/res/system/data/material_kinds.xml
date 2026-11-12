@@ -666,9 +666,6 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Asphalt_01_0052_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Rock_25_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Concrete_02_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Lava_3_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Lava2_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Lava_AM</terrain>
 	</kind>
 	<kind>
 		<id>108</id>
@@ -714,12 +711,17 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/SnowDunesSmall_36_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_35_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Ice3_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Ice2_NY2021_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Ice3_NY2021_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Frosty_02_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Step_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_04_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Wavy_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Mud_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Wavy_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/ice5_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/ice4_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_25_AM</terrain>
 	</kind>
 	<kind>
 		<id>111</id>
@@ -864,11 +866,5 @@
 		<desc>water</desc>
 		<help>Water</help>
 		<effect_material>water</effect_material>
-	</kind>
-	<kind>
-		<id>117</id>
-		<desc>lava</desc>
-		<help>Lava</help>
-		<effect_material>lava</effect_material>
 	</kind>
 </root>

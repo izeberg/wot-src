@@ -8,5 +8,5 @@
 	<parent>vehicles/american/A184_HTPC/crash/lod1/Gun_01</parent>
 	<extent>32.000000</extent>
 	<tank>true</tank>
-	<nodefullVisual>vehicles/american/A184_HTPC/crash/lod0/Gun_01</nodefullVisual>
+	<nodelessVisual>vehicles/american/A184_HTPC/crash/lod0/Gun_01</nodelessVisual>
 </root>

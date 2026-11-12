@@ -38,8 +38,13 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name/>
-			<UUID>1c06ac2c-ca29-4588-b14d-85f7eaf6743e</UUID>
+			<name>box</name>
+			<UUID>3b7a40ad-9865-41fd-9f1f-27c08de3baae</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>palette</name>
+			<UUID>c3792687-1297-434a-ae94-06daa8d74c36</UUID>
 			<flags>0</flags>
 		</GameObject>
 	</GameObjects>
@@ -117,6 +122,16 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<objectIndex>8</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>4cec3fdc-13d7-4080-893a-86f37667a266</link>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>Transform</type>
@@ -173,7 +188,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							4.28903 1.67293 7.29836
+							4.28903 1.67293 7.05505
 							<!--BW_String-->
 						</value>
 					</property>
@@ -183,7 +198,10 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 0</value>
+						<value>
+							3.4409e-08 0.785398 -1.22793e-07
+							<!--BW_String-->
+						</value>
 					</property>
 				</config>
 			</component>
@@ -287,7 +305,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							0.250365 0.0215824 -2.01619
+							0.0485351 0.157206 -1.7117
 							<!--BW_String-->
 						</value>
 					</property>
@@ -298,7 +316,31 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-1.87327e-07 -1.80175 2.22862e-07
+							1.97079e-07 -1.79893 2.5025e-07
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>8</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.0318146 0.0166515 -1.75867
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 1.42294 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1764,7 +1806,26 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Hangars/h00_armory_yard/environment/normal/lod0/h21_ay03_ladder_01.model</value>
+						<value>content/Hangars/h00_armory_yard/environment/normal/lod0/h21_ay10_box_01.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>8</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h00_armory_yard/environment/normal/lod0/h21_ay08_pallet_01.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>

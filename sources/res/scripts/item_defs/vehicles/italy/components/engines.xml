@@ -460,7 +460,7 @@
 			<notInShop>true</notInShop>
 			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
 			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
-			<power>800</power>
+			<power>900</power>
 			<weight>1580</weight>
 			<maxHealth>320</maxHealth>
 			<maxRegenHealth>160</maxRegenHealth>
@@ -840,6 +840,27 @@
 			<rpm_min>458</rpm_min>
 			<rpm_max>2333</rpm_max>
 		</SPA_19TB_mod_43>
+		<SPA_228_It39>
+			<id>31008</id>
+			<userString>#italy_vehicles:SPA_228_It39</userString>
+			<tags>gasoline</tags>
+			<level>9</level>
+			<price>82500</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
+			<power>300</power>
+			<weight>1000</weight>
+			<maxHealth>320</maxHealth>
+			<maxRegenHealth>160</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<fireStartingChance>
+				0.15
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>416</rpm_min>
+			<rpm_max>2467</rpm_max>
+		</SPA_228_It39>
 		<SPA_242>
 			<id>11</id>
 			<userString>#italy_vehicles:SPA_242</userString>

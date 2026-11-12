@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch77_WZ_120_SPG/normal/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/chinese/Ch77_WZ_120_SPG/normal/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.606346 -0.000079 -3.391532</min>
+		<max>1.606346 1.079389 3.351775</max>
+	</visibilityBox>
+</root>

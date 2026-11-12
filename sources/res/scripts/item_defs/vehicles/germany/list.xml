@@ -39,36 +39,6 @@
 		<tags>AT-SPG HD secret supply earn_crystals stationary supply_Flamer private event_battles cannot_be_sold</tags>
 		<level>10</level>
 	</G00_Feuerbunker>
-	<G00_Mausekonig_V01>
-		<id>41012</id>
-		<userString>#germany_vehicles:G00_Mausekonig_V01</userString>
-		<shortUserString>#germany_vehicles:G00_Mausekonig_V01_short</shortUserString>
-		<description>#germany_vehicles:G00_Mausekonig_V01_descr</description>
-		<price>0</price>
-		<notInShop>true</notInShop>
-		<tags>heavyTank HD role_HT_assault siegeMode dualgun charger secret private cannot_be_sold lockCrew lockOutfit restoreWithStyle calculate_bbox builtinStyle new_hp_vfx</tags>
-		<level>1</level>
-	</G00_Mausekonig_V01>
-	<G00_PzVI_Tiger_P>
-		<id>40012</id>
-		<userString>#germany_vehicles:G00_PzVI_Tiger_P</userString>
-		<shortUserString>#germany_vehicles:G00_PzVI_Tiger_P_short</shortUserString>
-		<description>#germany_vehicles:G00_PzVI_Tiger_P_descr</description>
-		<price>0</price>
-		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_assault HD secret private cannot_be_sold lockCrew lockOutfit restoreWithStyle builtinStyle</tags>
-		<level>7</level>
-	</G00_PzVI_Tiger_P>
-	<G00_Ratte_V1>
-		<id>41011</id>
-		<userString>#germany_vehicles:G00_Ratte_V1</userString>
-		<shortUserString>#germany_vehicles:G00_Ratte_V1_short</shortUserString>
-		<description>#germany_vehicles:G00_Ratte_V1_descr</description>
-		<price>0</price>
-		<notInShop>true</notInShop>
-		<tags>heavyTank HD role_HT_assault siegeMode dualgun charger secret private cannot_be_sold lockCrew lockOutfit restoreWithStyle calculate_bbox</tags>
-		<level>1</level>
-	</G00_Ratte_V1>
 	<G00_Startgestell>
 		<id>60001</id>
 		<userString>#germany_vehicles:G00_Startgestell</userString>
@@ -79,16 +49,6 @@
 		<tags>SPG HD secret supply supply_Mortar earn_crystals stationary private event_battles cannot_be_sold</tags>
 		<level>10</level>
 	</G00_Startgestell>
-	<G00_Typ_205>
-		<id>40011</id>
-		<userString>#germany_vehicles:G00_Typ_205</userString>
-		<shortUserString>#germany_vehicles:G00_Typ_205_short</shortUserString>
-		<description>#germany_vehicles:G00_Typ_205_descr</description>
-		<price>0</price>
-		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_assault HD secret private cannot_be_sold lockCrew lockOutfit restoreWithStyle builtinStyle</tags>
-		<level>9</level>
-	</G00_Typ_205>
 	<G02_Hummel>
 		<id>
 			01
@@ -1327,7 +1287,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_universal HD heavyTank1 siegeMode turboshaftEngine improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user earn_crystals special secret testTank lockOutfit</tags>
+		<tags>heavyTank role_HT_universal HD heavyTank1 siegeMode turboshaftEngine improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user earn_crystals special</tags>
 		<level>10</level>
 	</G180_Hauptpanzer_Gruppe_A>
 	<G181_StuG_Maus_17cm>
@@ -1444,6 +1404,21 @@
 		<tags>mediumTank role_MT_assault HD mediumTank3 siegeMode turboshaftEngine improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_medium_user earn_crystals builtinStyle special lockOutfit restoreWithStyle</tags>
 		<level>10</level>
 	</G194_E_50_GT_Alkett_Prod_02>
+	<G195_Atomic_Panzer>
+		<id>31016</id>
+		<userString>#germany_vehicles:G195_Atomic_Panzer</userString>
+		<description>#germany_vehicles:G195_Atomic_Panzer_descr</description>
+		<shortUserString>#germany_vehicles:G195_Atomic_Panzer_short</shortUserString>
+		<shortDescriptionSpecial>#germany_vehicles:G195_Atomic_Panzer_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#germany_vehicles:G195_Atomic_Panzer_long_special</longDescriptionSpecial>
+		<price>
+			50000
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>mediumTank role_MT_sniper siegeMode autoSiege HD special improvedVentilation_class2_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals secret testTank lockOutfit private secretExtended</tags>
+		<level>11</level>
+	</G195_Atomic_Panzer>
 	<G196_E_75_Ausf_B_Doppel>
 		<id>31010</id>
 		<userString>#germany_vehicles:G196_E_75_Ausf_B_Doppel</userString>
@@ -1498,6 +1473,21 @@
 		<tags>mediumTank role_MT_support HD improvedVentilation_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user secret testTank lockOutfit</tags>
 		<level>8</level>
 	</G201_Flakpanzer_5_5_cm_Coelian_Kr>
+	<G203_JgPz_VII_Waldkatze>
+		<id>31015</id>
+		<userString>#germany_vehicles:G203_JgPz_VII_Waldkatze</userString>
+		<description>#germany_vehicles:G203_JgPz_VII_Waldkatze_descr</description>
+		<shortUserString>#germany_vehicles:G203_JgPz_VII_Waldkatze_short</shortUserString>
+		<shortDescriptionSpecial>#germany_vehicles:G203_JgPz_VII_Waldkatze_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#germany_vehicles:G203_JgPz_VII_Waldkatze_long_special</longDescriptionSpecial>
+		<price>
+			50000
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>AT-SPG role_ATSPG_sniper siegeMode autoSiege HD special mediumAT-SPG improvedVentilation_class2_user tankRammer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals secret testTank lockOutfit private secretExtended</tags>
+		<level>11</level>
+	</G203_JgPz_VII_Waldkatze>
 	<G20_Marder_II>
 		<id>26</id>
 		<userString>#germany_vehicles:G20_Marder_II</userString>
@@ -2565,24 +2555,9 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>AT-SPG role_ATSPG_support private HD secret disabledInRoaming heavyAT-SPG AT-SPG2 extraHealthReserve_class1_user antifragmentationLining_superheavy_user earn_crystals</tags>
+		<tags>AT-SPG role_ATSPG_support private HD secret disabledInRoaming heavyAT-SPG AT-SPG2 extraHealthReserve_class1_user antifragmentationLining_superheavy_user earn_crystals special</tags>
 		<level>10</level>
 	</G98_Waffentrager_E100_P>
-	<G98_Waffentrager_E100_WO>
-		<id>172</id>
-		<userString>#germany_vehicles:G98_Waffentrager_E100_WO</userString>
-		<description>#germany_vehicles:G98_Waffentrager_E100_WO_descr</description>
-		<shortUserString>#germany_vehicles:G98_Waffentrager_E100_WO_short</shortUserString>
-		<shortDescriptionSpecial>#germany_vehicles:G98_Waffentrager_E100_WO_short_special</shortDescriptionSpecial>
-		<longDescriptionSpecial>#germany_vehicles:G98_Waffentrager_E100_WO_long_special</longDescriptionSpecial>
-		<price>
-			25000
-			<gold/>
-		</price>
-		<notInShop>true</notInShop>
-		<tags>AT-SPG lockExceptProgression role_ATSPG_support private HD secret disabledInRoaming heavyAT-SPG AT-SPG2 extraHealthReserve_class1_user antifragmentationLining_superheavy_user earn_crystals special</tags>
-		<level>10</level>
-	</G98_Waffentrager_E100_WO>
 	<G99_RhB_Waffentrager>
 		<id>65</id>
 		<userString>#germany_vehicles:RhB_Waffentrager</userString>

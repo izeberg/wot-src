@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A185_MBT_Revised_V_E2/normal/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/american/A185_MBT_Revised_V_E2/normal/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.716817 -0.000065 -3.138702</min>
+		<max>1.716817 1.135717 3.034781</max>
+	</visibilityBox>
+</root>

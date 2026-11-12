@@ -62,9 +62,6 @@
 		<Chassis_IS8_2>
 			<id>105</id>
 		</Chassis_IS8_2>
-		<Chassis_IS_M_H>
-			<id>20003</id>
-		</Chassis_IS_M_H>
 		<Chassis_IS_M_SH>
 			<id>308</id>
 		</Chassis_IS_M_SH>
@@ -74,9 +71,6 @@
 		<Chassis_KV-13_2>
 			<id>78</id>
 		</Chassis_KV-13_2>
-		<Chassis_KV-13_H>
-			<id>20001</id>
-		</Chassis_KV-13_H>
 		<Chassis_KV-13_SH>
 			<id>306</id>
 		</Chassis_KV-13_SH>
@@ -506,6 +500,9 @@
 		<Chassis_R180_Object_274_A_MT_BF>
 			<id>31009</id>
 		</Chassis_R180_Object_274_A_MT_BF>
+		<Chassis_R182_Object_451>
+			<id>266</id>
+		</Chassis_R182_Object_451>
 		<Chassis_R183_K_91_PT>
 			<id>267</id>
 		</Chassis_R183_K_91_PT>
@@ -698,9 +695,15 @@
 		<Chassis_R251_T_55_SP_01>
 			<id>31074</id>
 		</Chassis_R251_T_55_SP_01>
+		<Chassis_R252_Object_430_IT>
+			<id>31087</id>
+		</Chassis_R252_Object_430_IT>
 		<Chassis_R253_Object_277_S>
 			<id>31083</id>
 		</Chassis_R253_Object_277_S>
+		<Chassis_R259_PST_100>
+			<id>31093</id>
+		</Chassis_R259_PST_100>
 		<Chassis_R45_IS-7_02>
 			<id>31035</id>
 		</Chassis_R45_IS-7_02>
@@ -875,9 +878,6 @@
 		<IS-3M_FL>
 			<id>502</id>
 		</IS-3M_FL>
-		<IS-3M_H>
-			<id>20002</id>
-		</IS-3M_H>
 		<IS-3M_IGR>
 			<id>60003</id>
 		</IS-3M_IGR>

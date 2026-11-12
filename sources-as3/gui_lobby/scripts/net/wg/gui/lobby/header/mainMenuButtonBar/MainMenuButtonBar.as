@@ -49,7 +49,7 @@ package net.wg.gui.lobby.header.mainMenuButtonBar
       
       override protected function onDispose() : void
       {
-         removeAllRenderers();
+         this.removeAllRenderers();
          super.onDispose();
       }
       
@@ -244,6 +244,16 @@ package net.wg.gui.lobby.header.mainMenuButtonBar
          param1.dispose();
       }
       
+      override public function removeAllRenderers() : void
+      {
+         var _loc1_:Button = null;
+         for each(_loc1_ in _renderers)
+         {
+            _loc1_.removeEventListener(Event.RESIZE,this.onRendererResizeHandler);
+         }
+         super.removeAllRenderers();
+      }
+      
       protected function updateLayout() : void
       {
          var _loc1_:Button = null;
@@ -378,6 +388,10 @@ package net.wg.gui.lobby.header.mainMenuButtonBar
       
       private function onRendererResizeHandler(param1:Event) : void
       {
+         if(_baseDisposed)
+         {
+            return;
+         }
          invalidate(INVALIDATE_RENDERER_SIZE);
       }
    }

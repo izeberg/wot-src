@@ -1,12 +1,14 @@
 package net.wg.gui.lobby.components
 {
    import flash.display.Sprite;
+   import flash.events.Event;
    import flash.events.MouseEvent;
    import flash.text.TextField;
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.TOOLTIPS_CONSTANTS;
    import net.wg.gui.components.controls.Image;
+   import net.wg.gui.components.vehicleStatus.VehicleDifficulty;
    import net.wg.gui.lobby.components.data.VehicleTitleVO;
    import net.wg.gui.lobby.techtree.data.vo.NodeData;
    import net.wg.infrastructure.base.UIComponentEx;
@@ -28,6 +30,8 @@ package net.wg.gui.lobby.components
       private static const ROLE_TF_Y_OFFSET_SMALL:int = 0;
       
       private static const ROLE_TF_Y_OFFSET_BIG:int = 9;
+      
+      private static const SEPARATOR_GAP:int = 8;
        
       
       public var tankTier:TextField = null;
@@ -39,6 +43,10 @@ package net.wg.gui.lobby.components
       public var infoIcon:Sprite = null;
       
       public var roleTF:TextField = null;
+      
+      public var difficulty:VehicleDifficulty = null;
+      
+      public var difficultySeparator:Sprite = null;
       
       public var statusTF:TextField = null;
       
@@ -66,6 +74,8 @@ package net.wg.gui.lobby.components
       
       private var _roleText:String = "";
       
+      private var _difficulty:int = -1;
+      
       private var _tooltipMgr:ITooltipMgr;
       
       private var _intCD:uint = 0;
@@ -87,6 +97,9 @@ package net.wg.gui.lobby.components
          this.roleTF.visible = false;
          this.roleTF.addEventListener(MouseEvent.ROLL_OVER,this.onRoleTFRollOverHandler);
          this.roleTF.addEventListener(MouseEvent.ROLL_OUT,this.onRoleTFRollOutHandler);
+         this.difficulty.addEventListener(Event.RESIZE,this.onDifficultyResizeHandler);
+         this.difficultySeparator.mouseEnabled = this.difficultySeparator.mouseChildren = false;
+         this.difficultySeparator.visible = false;
       }
       
       override protected function draw() : void
@@ -122,6 +135,8 @@ package net.wg.gui.lobby.components
                this.roleTF.htmlText = this._roleText;
                App.utils.commons.updateTextFieldSize(this.roleTF,true,true);
             }
+            this.difficulty.setDifficulty(!!_loc1_ ? int(Values.DEFAULT_INT) : int(this._difficulty));
+            this.difficulty.validateNow();
             invalidate(InvalidationType.LAYOUT);
          }
          if(isInvalid(InvalidationType.LAYOUT))
@@ -136,6 +151,7 @@ package net.wg.gui.lobby.components
          this.hitMc.removeEventListener(MouseEvent.ROLL_OUT,this.onInfoIconRollOutHandler);
          this.roleTF.removeEventListener(MouseEvent.ROLL_OVER,this.onRoleTFRollOverHandler);
          this.roleTF.removeEventListener(MouseEvent.ROLL_OUT,this.onRoleTFRollOutHandler);
+         this.difficulty.removeEventListener(Event.RESIZE,this.onDifficultyResizeHandler);
          if(this._abilityBlock)
          {
             this._abilityBlock.dispose();
@@ -148,6 +164,9 @@ package net.wg.gui.lobby.components
          this.infoIcon = null;
          this.statusTF = null;
          this.roleTF = null;
+         this.difficulty.dispose();
+         this.difficulty = null;
+         this.difficultySeparator = null;
          this.hitMc = null;
          this._nodeData = null;
          this._tooltipMgr = null;
@@ -164,6 +183,10 @@ package net.wg.gui.lobby.components
             if(_loc1_)
             {
                this._abilityBlock.y = this.roleTF.y + this.roleTF.height;
+               if(this.difficulty.visible)
+               {
+                  this._abilityBlock.y = Math.max(this._abilityBlock.y,this.difficulty.y + this.difficulty.height);
+               }
             }
          }
       }
@@ -178,6 +201,7 @@ package net.wg.gui.lobby.components
          this._statusStr = param1.statusStr;
          this._isElite = param1.isElite;
          this._roleText = param1.roleText;
+         this._difficulty = param1.difficulty;
          this._intCD = param1.intCD;
          this._showInfoIcon = param1.showInfoIcon;
          if(param1.ability)
@@ -204,9 +228,8 @@ package net.wg.gui.lobby.components
       
       private function updateLayout() : void
       {
-         var _loc2_:Number = NaN;
          var _loc1_:Number = !!this._showInfoIcon ? Number(this.infoIcon.width + INFO_ICON_X_OFFSET) : Number(0);
-         _loc2_ = this._tankTierStr == Values.EMPTY_STR ? Number(0) : (!!this._isElite ? Number(ELITE_ICON_ACTUAL_WIDTH) : Number(SIMPLE_ICON_ACTUAL_WIDTH));
+         var _loc2_:Number = this._tankTierStr == Values.EMPTY_STR ? Number(0) : (!!this._isElite ? Number(ELITE_ICON_ACTUAL_WIDTH) : Number(SIMPLE_ICON_ACTUAL_WIDTH));
          var _loc3_:Number = this.tankTier.width + this.tankName.width + _loc2_ + _loc1_;
          this.tankTier.x = -_loc3_ >> 1;
          this.tankType.x = this.tankTier.x + this.tankTier.width - (TYPE_ICON_WIDTH - _loc2_ >> 1) | 0;
@@ -229,12 +252,45 @@ package net.wg.gui.lobby.components
             this.tankName.y = -this.tankName.textHeight | 0;
             this.tankTier.y = -this.tankTier.textHeight | 0;
          }
+         this.updateRoleAndDifficultyLayout();
+         this.updateAbilityLayout();
+      }
+      
+      private function updateRoleAndDifficultyLayout() : void
+      {
+         var _loc1_:int = this.tankName.y + this.tankName.textHeight + (!!this._isSmallSized ? ROLE_TF_Y_OFFSET_SMALL : ROLE_TF_Y_OFFSET_BIG) | 0;
+         this.difficultySeparator.visible = this.roleTF.visible && this.difficulty.visible;
+         var _loc2_:Number = !!this.roleTF.visible ? Number(this.roleTF.width) : Number(0);
+         if(this.difficulty.visible)
+         {
+            _loc2_ += this.difficulty.width;
+         }
+         if(this.difficultySeparator.visible)
+         {
+            _loc2_ += this.difficultySeparator.width + SEPARATOR_GAP * 2;
+         }
+         var _loc3_:int = -_loc2_ >> 1;
          if(this.roleTF.visible)
          {
-            this.roleTF.x = -this.roleTF.width >> 1;
-            this.roleTF.y = this.tankName.y + this.tankName.textHeight + (!!this._isSmallSized ? ROLE_TF_Y_OFFSET_SMALL : ROLE_TF_Y_OFFSET_BIG) | 0;
+            this.roleTF.x = _loc3_;
+            this.roleTF.y = _loc1_;
+            _loc3_ += this.roleTF.width;
          }
-         this.updateAbilityLayout();
+         if(this.difficultySeparator.visible)
+         {
+            this.difficultySeparator.x = _loc3_ + SEPARATOR_GAP;
+            _loc3_ += this.difficultySeparator.width + SEPARATOR_GAP * 2;
+         }
+         if(this.difficulty.visible)
+         {
+            this.difficulty.x = _loc3_;
+            this.difficulty.y = _loc1_;
+            this.difficulty.alignLabelTo(!!this.roleTF.visible ? this.roleTF : null);
+         }
+         if(this.difficultySeparator.visible)
+         {
+            this.difficultySeparator.y = _loc1_ + (Math.max(this.roleTF.height,this.difficulty.height) - this.difficultySeparator.height >> 1);
+         }
       }
       
       public function get isSmallSized() : Boolean
@@ -250,6 +306,11 @@ package net.wg.gui.lobby.components
          }
          this._isSmallSized = param1;
          invalidateSize();
+      }
+      
+      private function onDifficultyResizeHandler(param1:Event) : void
+      {
+         invalidate(InvalidationType.LAYOUT);
       }
       
       private function onRoleTFRollOutHandler(param1:MouseEvent) : void

@@ -3,6 +3,7 @@ from enum import Enum
 from functools import partial
 from typing import Dict
 import adisp, BigWorld
+from th_async import forwardAsFuture
 from account_helpers.AccountSettings import ArmoryYard, AccountSettings
 from armory_yard.gui.server_events.events_helpers import getQuestsCompletedFunc
 from armory_yard.skeletons.armory_yard_reroll_controller import IArmoryYardRerollController
@@ -13,6 +14,7 @@ from armory_yard.gui.impl.gen.view_models.views.lobby.feature.armory_yard_main_v
 from armory_yard.managers.sound_manager import setSoundDroneMode
 from armory_yard.managers.camera_manager import CameraManager
 from armory_yard.managers.scene_loading_manager import SceneLoadingManager
+from armory_yard.gui.game_control.armory_yard_close_confirmators_helper import ArmoryYardCloseConfirmatorsHelper
 from constants import Configs, EVENT_TYPE
 from gui.server_events.events_helpers import isArmoryYardQuest
 from gui.shared.events import ArmoryYardEvent
@@ -46,6 +48,8 @@ from items import vehicles
 from gui.Scaleform.daapi.view.lobby.header.LobbyHeader import HeaderMenuVisibilityState
 from gui.impl import backport
 from gui.shared.utils.functions import makeTooltip
+from gui.shared.event_dispatcher import showHangar
+from gui.shared.events import DestroyGuiImplViewEvent
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
@@ -96,6 +100,7 @@ class ArmoryYardController(IArmoryYardController):
         self.__serverSettings = _ServerSettings()
         self.__cameraManager = CameraManager()
         self.__sceneLoadingManager = SceneLoadingManager()
+        self.__closeConfirmatorsHelper = ArmoryYardCloseConfirmatorsHelper()
         self.__bundlesNotifier = AcyclicNotifier(self.__getBundlesTimer, self.onBundlesDisabled)
         self.__statusChangeNotifier = SimpleNotifier(self.__getTimeToStatusChange, self.__onNotifyStatusChange)
         self.__isPaused = False
@@ -113,6 +118,16 @@ class ArmoryYardController(IArmoryYardController):
         self.__isVehiclePreview = False
         super(ArmoryYardController, self).__init__()
         return
+
+    def __closeConfirmator(self):
+        if self.__isVisiting:
+            self.__closeAyView()
+            showHangar()
+        return forwardAsFuture(True)
+
+    @staticmethod
+    def __closeAyView():
+        g_eventBus.handleEvent(DestroyGuiImplViewEvent(R.views.armory_yard.lobby.feature.ArmoryYardMainView()), scope=EVENT_BUS_SCOPE.LOBBY)
 
     @property
     def isArmoryVisiting(self):
@@ -204,6 +219,7 @@ class ArmoryYardController(IArmoryYardController):
         self.__itemsCache.onSyncCompleted -= self.__bundlesCheck
 
     def fini(self):
+        self.__closeConfirmatorsHelper.stop()
         self.__serverSettings.stop()
         self.__eventManager.clear()
         self.__sceneLoadingManager.destroy()
@@ -570,7 +586,12 @@ class ArmoryYardController(IArmoryYardController):
             return State.PURCHASESTAGE
         return State.ACTIVE
 
+    @adisp.adisp_process
     def goToArmoryYard(self, tabId=TabId.PROGRESS, ctx=None):
+        if not self.__isVisiting:
+            lobbyHeaderNavigationPossible = yield self.__lobbyContext.isHeaderNavigationPossible()
+            if not lobbyHeaderNavigationPossible:
+                return
         loadShopBuyView = False
         loadBuyView = False
         loadRerollView = {}
@@ -589,6 +610,7 @@ class ArmoryYardController(IArmoryYardController):
                     g_eventBus.handleEvent(ArmoryYardEvent(ArmoryYardEvent.SHOW_ARMORY_YARD_BUY_VIEW), EVENT_BUS_SCOPE.DEFAULT)
                 return
             self.isVehiclePreview = False
+            self.__closeConfirmatorsHelper.start(self.__closeConfirmator)
             app = self.__appLoader.getApp()
             app.setBackgroundAlpha(self.__BACKGROUND_ALPHA)
 
@@ -604,7 +626,7 @@ class ArmoryYardController(IArmoryYardController):
                     BigWorld.callback(0.0, hideArmoryYardWaiting)
 
             showArmoryYardWaiting()
-            if not self.__sceneLoadingManager.isLoading() and not self.__sceneLoadingManager.sceneIsLoaded():
+            if not self.__sceneLoadingManager.isLoading() and not self.isSceneLoaded():
                 lastSeasonID = AccountSettings.getArmoryYard(ArmoryYard.ARMORY_YARD_LAST_INTRO_VIEWED) or -1
                 isShowIntro = self.currentSeason is not None and lastSeasonID != self.currentSeasonID
                 if isShowIntro:
@@ -636,6 +658,7 @@ class ArmoryYardController(IArmoryYardController):
         self.__sceneLoadingManager.unloadScene(isReload=isReload)
 
     def onLoadingHangar(self):
+        self.__closeConfirmatorsHelper.stop()
         self.__sceneLoadingManager.unloadScene()
         self.__cameraManager.goToHangar()
         self.__cameraManager.destroy()

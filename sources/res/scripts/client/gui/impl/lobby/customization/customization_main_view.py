@@ -12,6 +12,7 @@ from gui.Scaleform.framework.entities.EventSystemEntity import EventSystemEntity
 from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
 from gui.Scaleform.genConsts.CONTEXT_MENU_HANDLER_TYPE import CONTEXT_MENU_HANDLER_TYPE
 from gui.Scaleform.genConsts.CUSTOMIZATION_ALIASES import CUSTOMIZATION_ALIASES
+from gui.Scaleform.daapi.view.lobby.lobby_view_parts_visibility_utils import handleLobbyPartsVisibilityEvent
 from gui.customization.constants import CustomizationModeSource, CustomizationModes, INVALID_ID
 from gui.customization.shared import C11nId, SEASON_NAME_TO_TYPE, SEASON_TYPE_TO_NAME, appliedToFromSlotsIds, chooseMode, isVehicleCanBeCustomized
 from gui.hangar_cameras.hangar_camera_common import CameraRelatedEvents
@@ -23,7 +24,7 @@ from gui.impl.gen.view_models.views.lobby.customization.customization_carousel_a
 from gui.impl.gen.view_models.views.lobby.customization.customization_carousel_bookmark_model import CustomizationCarouselBookmarkModel
 from gui.impl.gen.view_models.views.lobby.customization.customization_carousel_model import CustomizationCarouselModel
 from gui.impl.gen.view_models.views.lobby.customization.customization_header_vehicle_info_model import CustomizationHeaderVehicleInfoModel
-from gui.impl.gen.view_models.views.lobby.customization.customization_main_view_model import CustomizationMainViewModel
+from gui.impl.gen.view_models.views.lobby.customization.customization_main_view_model import CustomizationMainViewModel, StatusEnum
 from gui.impl.gen.view_models.views.lobby.customization.customization_money_balance_model import CustomizationMoneyBalanceModel
 from gui.impl.gui_decorators import args2params
 from gui.impl.lobby.common.vehicle_model_helpers import fillVehicleModel
@@ -45,10 +46,12 @@ from gui.impl.lobby.customization.settings_constants import CAROUSEL_ARROWS_HINT
 from gui.impl.lobby.customization.shared import CustomizationTabs, checkSlotsFilling, getEmptyRegions, getTabByItem, isItemUsedUp
 from gui.impl.lobby.customization.sound_constants import SOUNDS
 from gui.impl.lobby.customization.vehicle_slot_selector import VehicleSlotSelector
+from gui.impl.lobby.customization_resource.customization_resource_entry_point_view import isCustomizationResourceEntryPointAvailable
+from gui.impl.lobby.customization_resource.shared import getCustomizationResourceLimitUpdated, setCustomizationResourceLimitFlags
 from gui.impl.pub import ViewImpl
 from gui.shared import EVENT_BUS_SCOPE, events
 from gui.shared.close_confiramtor_helper import CloseConfirmatorsHelper
-from gui.shared.event_dispatcher import showOnboardingView
+from gui.shared.event_dispatcher import showOnboardingView, showCustomizationResourceShopPage
 from gui.shared.events import LobbySimpleEvent
 from gui.shared.gui_items import GUI_ITEM_TYPE, GUI_ITEM_TYPE_NAMES
 from gui.shared.money import Currency
@@ -58,6 +61,7 @@ from items.components.c11n_constants import ApplyArea, CustomizationDisplayType,
 from shared_utils import findFirst, first, safeCall
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.customization import ICustomizationService
+from skeletons.gui.game_control import ICustomizationResourceController
 from skeletons.gui.impl import IGuiLoader
 from skeletons.gui.shared.utils import IHangarSpace
 from th_async import th_async, th_await
@@ -102,6 +106,7 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
     __settingsCore = dependency.descriptor(ISettingsCore)
     __guiLoader = dependency.descriptor(IGuiLoader)
     __hangarSpace = dependency.descriptor(IHangarSpace)
+    __customizationResourceController = dependency.descriptor(ICustomizationResourceController)
     __BIN_VIEW_ID = R.views.lobby.customization.CustomizationBinSubview()
     __STYLE_INFO_VIEW_ID = R.views.lobby.customization.CustomizationStyleInfoView()
     __ZOOM_ON_EMBLEM = 0.1
@@ -203,7 +208,7 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
         self.__closeConfirmationsHelper.start(self.__closeConfirmator)
         self.fireEvent(CameraRelatedEvents(CameraRelatedEvents.FORCE_DISABLE_IDLE_PARALAX_MOVEMENT, ctx={'isDisable': True, 'setIdle': True, 'setParallax': True}), scope=EVENT_BUS_SCOPE.LOBBY)
         self.fireEvent(events.LobbyHeaderMenuEvent(events.LobbyHeaderMenuEvent.TOGGLE_VISIBILITY, ctx={'state': HeaderMenuVisibilityState.ONLINE_COUNTER}), EVENT_BUS_SCOPE.LOBBY)
-        self.fireEvent(events.LobbyInterfaceEvent(events.LobbyInterfaceEvent.TOGGLE_VISIBILITY, ctx={'headerIsVisible': True, 'ignoreTopOffset': True}), EVENT_BUS_SCOPE.LOBBY)
+        handleLobbyPartsVisibilityEvent(headerIsVisible=True, ignoreTopOffset=True, isActive=True, viewId=self.uniqueID)
         BigWorld.callback(0.0, self.__initAnchorsPositions)
 
     def _finalize(self):
@@ -211,7 +216,7 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
         self.soundManager.setState(SOUNDS.STATE_PLACE, SOUNDS.STATE_PLACE_GARAGE)
         self.fireEvent(events.HangarCustomizationEvent(events.HangarCustomizationEvent.RESET_VEHICLE_MODEL_TRANSFORM), scope=EVENT_BUS_SCOPE.LOBBY)
         self.fireEvent(events.LobbyHeaderMenuEvent(events.LobbyHeaderMenuEvent.TOGGLE_VISIBILITY, ctx={'state': HeaderMenuVisibilityState.ALL}), EVENT_BUS_SCOPE.LOBBY)
-        self.fireEvent(events.LobbyInterfaceEvent(events.LobbyInterfaceEvent.TOGGLE_VISIBILITY, ctx={'headerIsVisible': True}), EVENT_BUS_SCOPE.LOBBY)
+        handleLobbyPartsVisibilityEvent(headerIsVisible=True, messengerBarVisible=True, ignoreTopOffset=False)
         self.fireEvent(CameraRelatedEvents(CameraRelatedEvents.FORCE_DISABLE_IDLE_PARALAX_MOVEMENT, ctx={'isDisable': False, 'setIdle': True, 'setParallax': True}), scope=EVENT_BUS_SCOPE.LOBBY)
         BigWorld.EnvironmentSwitcher.instance().activateMainEnvironment()
         self.__service.stopHighlighter()
@@ -298,6 +303,8 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
          (
           self.viewModel.onRequestItems, self.__onRequestItems),
          (
+          self.viewModel.toCustomizationResourceEvent, self.__toCustomizationResourceEvent),
+         (
           self.__ctx.events.onItemInstalled, self.__onItemsInstalled),
          (
           self.__ctx.events.onItemSelected, self.__onItemSelected),
@@ -376,6 +383,8 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
         if self.__ctx.mode.isRegion:
             highlightingMode = chooseMode(self.__ctx.mode.slotType, self.__ctx.modeId, g_currentVehicle.item)
             self.__service.startHighlighter(highlightingMode)
+            with self.viewModel.transaction() as (model):
+                model.setIsCustomizationResourceEntryPointAvailable(isCustomizationResourceEntryPointAvailable())
         self.setChildView(self.__BIN_VIEW_ID, view=CustomizationBinSubview({'c11nView': self}))
         self.setChildView(self.__STYLE_INFO_VIEW_ID, view=CustomizationStyleInfoView())
         layoutID = R.views.lobby.customization.CustomizationMoneyBalance()
@@ -459,6 +468,24 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
             packBottomPanelBillData(model.billModel, model.getIsBuyViewActive())
             self.__fillTypesModel(model.markersModel.customizationTypes)
             model.setIsShowProgressionInfoButton(self.__ctx.modeId == CustomizationModes.EDITABLE_STYLE and any(self.__service.getItemByCD(itemCD).isQuestsProgression for itemCD in carouselDataItems.items))
+            if isCustomizationResourceEntryPointAvailable():
+                self.__fillCustomizationResourceEntryPoint(model)
+
+    def __fillCustomizationResourceEntryPoint(self, model):
+        status = StatusEnum.ACTIVE
+        if self.__customizationResourceController.isEnding():
+            status = StatusEnum.ENDING
+        elif not self.__customizationResourceController.isEnabled():
+            status = StatusEnum.DISABLED
+        model.setIsCustomizationResourceEntryPointAvailable(isCustomizationResourceEntryPointAvailable())
+        model.setTimer(self.__customizationResourceController.getLocalEndDate())
+        model.setStatus(status)
+        model.setIsAloneBanner(True)
+        model.setIsLimitsUpdated(getCustomizationResourceLimitUpdated())
+
+    def __toCustomizationResourceEvent(self):
+        setCustomizationResourceLimitFlags()
+        showCustomizationResourceShopPage()
 
     def __changeFilter(self, args):
         self.__carouselDP.updateFilterCarousel({args['key']: args['value']})
@@ -1050,7 +1077,7 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
             self.soundManager.playInstantSound(SOUNDS.EDIT_MODE_SWITCH_OFF)
             self.soundManager.setState(SOUNDS.STATE_STYLEINFO, SOUNDS.STATE_STYLEINFO_HIDE)
             self.soundManager.setRTPC(SOUNDS.RTPC_STYLEINFO, 0)
-        self.fireEvent(events.LobbyInterfaceEvent(events.LobbyInterfaceEvent.TOGGLE_VISIBILITY, ctx={'headerIsVisible': not isExpanded, 'ignoreTopOffset': True}), EVENT_BUS_SCOPE.LOBBY)
+        handleLobbyPartsVisibilityEvent(headerIsVisible=not isExpanded, ignoreTopOffset=True)
 
     @th_async
     def __closeConfirmator(self):

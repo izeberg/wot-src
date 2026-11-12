@@ -67,11 +67,10 @@ class ArmoryYardPurchaseStageBuyView(ViewImpl):
             if len(setCurrencies) == 1:
                 showBuyGoldForArmoryYard(price)
         else:
-            isPostProgression = self.__armoryYardCtrl.isPostProgressionState
             action = factory.getAction(BUY_PURCHASE_STAGE_TOKENS, tokens, currency)
             result = yield factory.asyncDoAction(action)
             if result:
-                self.__armoryYardCtrl.onPayed(isPostProgression, tokens, price, currency)
+                self.__armoryYardCtrl.onPayed(tokens, price, currency)
                 showArmoryYardShopRewardWindow(backport.text(R.strings.armory_yard.currency.postProgression.titleCongrats()), backport.image(R.images.armory_yard.gui.maps.icons.shop.token.s360x270()), tokens, closeCallback=self.destroyWindow)
             else:
                 self.__armoryYardCtrl.onPayedError()

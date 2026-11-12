@@ -93,6 +93,9 @@ def getOutfitType(arenaKind, bonusType):
 
 
 def getBattleOutfit(getter, vehType, arenaKind, bonusType):
+    styleOutfitDescr = getter(vehType, SeasonType.EVENT)
+    if styleOutfitDescr:
+        return parseOutfitDescr(styleOutfitDescr)
     season = getOutfitType(arenaKind, bonusType)
     seasonOutfitDescr = getter(vehType, season)
     if seasonOutfitDescr:
@@ -108,6 +111,156 @@ def parseBattleOutfit(outfit, cache, arenaKind):
     if not isEditedStyle(outfit):
         return styleOutfit
     return copy.deepcopy(styleOutfit).applyDiff(outfit)
+
+
+class NoneCustomizationItemSelector(object):
+
+    def matches(self, itemObj=None):
+        return True
+
+
+class CustomizationItemSelector(NoneCustomizationItemSelector):
+    ANY = ('', '*')
+    priceGroups = property(lambda self: self.__priceGroups)
+    excludedPriceGroups = property(lambda self: self.__excludedPriceGroups)
+    tags = property(lambda self: self.__tags)
+    excludedTags = property(lambda self: self.__excludedTags)
+    itemCDs = property(lambda self: self.__itemCDs)
+    excludedItemCDs = property(lambda self: self.__excludedItemCDs)
+    isRented = property(lambda self: self.__isRented)
+
+    def __init__(self, priceGroups=(), excludedPriceGroups=(), tags=(), excludedTags=(), itemCDs=(), excludedItemCDs=(), isRented=None):
+        self.__priceGroups = frozenset(str(v) for v in priceGroups if str(v))
+        self.__excludedPriceGroups = frozenset(str(v) for v in excludedPriceGroups if str(v))
+        self.__tags = frozenset(str(v) for v in tags if str(v))
+        self.__excludedTags = frozenset(str(v) for v in excludedTags if str(v))
+        self.__itemCDs = frozenset(int(v) for v in itemCDs)
+        self.__excludedItemCDs = frozenset(int(v) for v in excludedItemCDs)
+        self.__isRented = isRented
+
+    def matches(self, itemObj=None):
+        try:
+            itemPriceGroups = self._splitPriceGroups(itemObj.priceGroup)
+            itemTags = itemObj.tags
+            itemCD = itemObj.compactDescr
+            itemIsRented = itemObj.isRent if itemObj.itemType == CustomizationType.STYLE else None
+        except (AttributeError, TypeError, ValueError):
+            return True
+
+        if self._matchSet(itemPriceGroups, self.__priceGroups, self.__excludedPriceGroups):
+            return True
+        else:
+            if self._matchSet(itemTags, self.__tags, self.__excludedTags):
+                return True
+            if self._matchItemCD(itemCD, self.__itemCDs, self.__excludedItemCDs):
+                return True
+            if self.__isRented is not None and itemIsRented == self.__isRented:
+                return True
+            return False
+
+    @staticmethod
+    def _splitPriceGroups(value):
+        return {token for token in str(value).split() if token if token}
+
+    def __repr__(self):
+        return (':').join((
+         self._joinPredicate(self.__priceGroups, self.__excludedPriceGroups, '|'),
+         self._joinPredicate(self.__tags, self.__excludedTags, '|'),
+         self._joinPredicate({str(v) for v in self.__itemCDs}, {str(v) for v in self.__excludedItemCDs}, '|'),
+         '' if self.__isRented is None else str(self.__isRented).lower()))
+
+    @staticmethod
+    def _matchSet(itemValues, included=(), excluded=()):
+        included = set(included)
+        excluded = set(excluded)
+        itemValues = set(itemValues)
+        if not included and not excluded:
+            return None
+        else:
+            hasIncludedMatch = bool(included & itemValues) if included else True
+            hasExcludedMatch = bool(excluded & itemValues)
+            return hasIncludedMatch and not hasExcludedMatch
+
+    @staticmethod
+    def _matchItemCD(itemValue, included=(), excluded=()):
+        included = set(included)
+        excluded = set(excluded)
+        if not included and not excluded:
+            return None
+        else:
+            hasIncludedMatch = itemValue in included if included else True
+            hasExcludedMatch = itemValue in excluded
+            return hasIncludedMatch and not hasExcludedMatch
+
+    @staticmethod
+    def fromString(value):
+        try:
+            priceGroupStr, tagsStr, itemCDStr, isRentedStr = CustomizationItemSelector._splitTo4(value)
+            priceGroups, excludedPriceGroups = CustomizationItemSelector._parsePredicate(priceGroupStr, caster=str)
+            tags, excludedTags = CustomizationItemSelector._parsePredicate(tagsStr, caster=str)
+            itemCDs, excludedItemCDs = CustomizationItemSelector._parsePredicate(itemCDStr, caster=int)
+            isRented = CustomizationItemSelector._parseBoolOrNone(isRentedStr)
+        except (SoftException, ValueError):
+            LOG_ERROR(('Unable to match any customization item by {}').format(value))
+            return NoneCustomizationItemSelector()
+
+        return CustomizationItemSelector(priceGroups=priceGroups, excludedPriceGroups=excludedPriceGroups, tags=tags, excludedTags=excludedTags, itemCDs=itemCDs, excludedItemCDs=excludedItemCDs, isRented=isRented)
+
+    @staticmethod
+    def _splitTo4(value):
+        parts = str(value).split(':', 3)
+        while len(parts) < 4:
+            parts.append('')
+
+        return (
+         parts[0], parts[1], parts[2], parts[3])
+
+    @staticmethod
+    def _parseBoolOrNone(value):
+        value = str(value).strip().lower()
+        if value in ('', '*'):
+            return
+        else:
+            if value == 'true':
+                return True
+            if value == 'false':
+                return False
+            raise SoftException(('Invalid isRented value: {}').format(value))
+            return
+
+    @staticmethod
+    def _parsePredicate(predicate, separator='|', caster=str):
+        included = set()
+        excluded = set()
+        predicate = str(predicate).strip()
+        if predicate in ('', '*'):
+            return (included, excluded)
+        tokens = predicate.split(separator)
+        for token in tokens:
+            token = token.strip()
+            if not token:
+                raise SoftException(('Empty token in predicate: {}').format(predicate))
+            if token == '~':
+                raise SoftException(('Empty excluded token in predicate: {}').format(predicate))
+            if token.startswith('~'):
+                raw = token[1:].strip()
+                if not raw:
+                    raise SoftException(('Empty excluded token in predicate: {}').format(predicate))
+                if raw.startswith('~'):
+                    raise SoftException(('Invalid excluded token in predicate: {}').format(predicate))
+                excluded.add(caster(raw))
+            else:
+                included.add(caster(token))
+
+        return (
+         included, excluded)
+
+    @staticmethod
+    def _joinPredicate(included, excluded, separator):
+        parts = []
+        parts.extend(sorted(str(v) for v in included))
+        parts.extend(sorted(('~{}').format(v) for v in excluded))
+        return separator.join(parts)
 
 
 class OutfitLogEntry(object):

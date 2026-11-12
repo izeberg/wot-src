@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G203_JgPz_VII_Waldkatze/normal/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/german/G203_JgPz_VII_Waldkatze/normal/lod2/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.371504 -0.002367 -1.560329</min>
+		<max>1.371504 0.558145 1.371505</max>
+	</visibilityBox>
+</root>

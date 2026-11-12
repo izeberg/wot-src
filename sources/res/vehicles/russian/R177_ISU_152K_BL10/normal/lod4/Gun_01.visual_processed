@@ -61,12 +61,40 @@
 					</transform>
 				</node>
 			</node>
+			<node>
+				<identifier>Joint_turret</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.001040 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Joint_visor</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 0.942102 0.335327</row1>
+						<row2>0.000000 -0.335327 0.942102</row2>
+						<row3>0.000000 0.439382 -0.107833</row3>
+					</transform>
+					<node>
+						<identifier>Joint_visor_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.942102 -0.335327</row1>
+							<row2>0.000000 -0.335327 -0.942102</row2>
+							<row3>0.000000 -0.378763 0.249275</row3>
+						</transform>
+					</node>
+				</node>
+			</node>
 		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
+		<node>Joint_visor_BlendBone</node>
 		<geometry>
 			<vertices>gun_01_Shape.vertices</vertices>
 			<primitive>gun_01_Shape.indices</primitive>
@@ -101,19 +129,15 @@
 						alphaReference
 						<Int>64</Int>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 				</material>
-				<groupOrigin>0.033967 -0.040858 -3.049405</groupOrigin>
+				<groupOrigin>0.033967 -0.104265 -3.032263</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.402301 -0.492597 0.239988</min>
-		<max>0.470234 0.410882 5.858822</max>
+		<min>-0.402301 -0.492613 0.205703</min>
+		<max>0.470234 0.284084 5.858822</max>
 	</boundingBox>
 	<geometrySize>2248</geometrySize>
 	<minUVDensity>0.003838</minUVDensity>

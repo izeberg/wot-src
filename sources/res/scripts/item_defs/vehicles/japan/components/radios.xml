@@ -126,6 +126,19 @@
 			<maxRegenHealth>96</maxRegenHealth>
 			<repairCost>3</repairCost>
 		</JAN_GRC_3Z>
+		<JAN_GRC_3Z_J50>
+			<id>31013</id>
+			<userString>#japan_vehicles:JAN_GRC_3Z_J50</userString>
+			<tags/>
+			<level>9</level>
+			<price>45500</price>
+			<notInShop>true</notInShop>
+			<weight>100</weight>
+			<distance>720</distance>
+			<maxHealth>160</maxHealth>
+			<maxRegenHealth>96</maxRegenHealth>
+			<repairCost>3</repairCost>
+		</JAN_GRC_3Z_J50>
 		<JAN_GRC_4Z_J52>
 			<id>31012</id>
 			<userString>#japan_vehicles:JAN_GRC_4Z_J52</userString>

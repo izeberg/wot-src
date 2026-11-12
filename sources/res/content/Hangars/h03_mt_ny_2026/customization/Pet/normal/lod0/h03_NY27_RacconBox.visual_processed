@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>box</identifier>
+				<transform>
+					<row0>0.961599 0.000842 -0.274455</row0>
+					<row1>-0.001260 0.999998 -0.001344</row1>
+					<row2>0.274454 0.001639 0.961599</row2>
+					<row3>1.089070 -0.018547 1.200217</row3>
+				</transform>
+				<node>
+					<identifier>box_top</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>-0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.000000 0.216041 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>box_top_BlendBone</identifier>
+						<transform>
+							<row0>0.961599 -0.001260 0.274454</row0>
+							<row1>0.000842 0.999998 0.001639</row1>
+							<row2>0.274455 0.001344 -0.961599</row2>
+							<row3>-0.717827 -0.194509 -1.452996</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>box_BlendBone</identifier>
+					<transform>
+						<row0>0.961599 -0.001260 0.274454</row0>
+						<row1>0.000842 0.999998 0.001639</row1>
+						<row2>0.274455 0.001344 -0.961599</row2>
+						<row3>-0.717827 0.021532 -1.452996</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>box_BlendBone</node>
+		<node>box_top_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Pet/h03_NY27_RacconBox_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Pet/h03_NY27_RacconBox_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Pet/h03_NY27_RacconBox_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.107241 0.147863 -1.199923</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>0.920440 -0.018763 1.031565</min>
+		<max>1.294042 0.314489 1.368281</max>
+	</boundingBox>
+	<geometrySize>32238</geometrySize>
+	<minUVDensity>0.517825</minUVDensity>
+</root>

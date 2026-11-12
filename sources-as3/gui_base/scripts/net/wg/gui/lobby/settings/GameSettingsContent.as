@@ -173,6 +173,14 @@ package net.wg.gui.lobby.settings
       
       public var resetBattleContextHintsButton:SoundButtonEx = null;
       
+      public var fieldSetVehicleDifficulty:FieldSet = null;
+      
+      public var showVehicleDifficultyInHangarCheckbox:CheckBox = null;
+      
+      public var showVehicleDifficultyInTechTreeCheckbox:CheckBox = null;
+      
+      public var showVehicleDifficultyInResearchCheckbox:CheckBox = null;
+      
       public var hangarCamPeriodDropDown:DropdownMenu = null;
       
       public var hangarCamLabelControl:LabelControl = null;
@@ -227,11 +235,17 @@ package net.wg.gui.lobby.settings
       
       private var _initYVehicleCarouselStatsCheckbox:int;
       
+      private var _initYFieldSetVehicleDifficulty:int;
+      
+      private var _initYShowVehicleDifficultyInHangarCheckbox:int;
+      
+      private var _initYShowVehicleDifficultyInTechTreeCheckbox:int;
+      
+      private var _initYShowVehicleDifficultyInResearchCheckbox:int;
+      
       private var _initYCustomizationDisplayTypeFieldSet:int;
       
       private var _initYCustomizationDisplayTypeButtonBar:int;
-      
-      private var _initYReplayEnabledLabel:int;
       
       private var _initYReplayEnabledDropDown:int;
       
@@ -249,6 +263,10 @@ package net.wg.gui.lobby.settings
       
       private var _resetBattleContextHintsButtonEnabled:Boolean = false;
       
+      private var _vehicleDifficultySettingsVisible:Boolean = false;
+      
+      private var _dependentVisibleControlsOffset:int = 0;
+      
       public function GameSettingsContent()
       {
          super();
@@ -261,6 +279,7 @@ package net.wg.gui.lobby.settings
          this.fieldSetBattlePanel.label = SETTINGS.GAME_BATTLEPANELSETTINGS;
          this.fieldSetBattleTypes.label = SETTINGS.GAME_FIELDSET_HEADERGAMEPLAY;
          this.fieldSetBattleContextHints.label = SETTINGS.GAME_ENABLEBATTLECONTEXTHINTS_LABEL;
+         this.fieldSetVehicleDifficulty.label = SETTINGS.GAME_VEHICLEDIFFICULTY_LABEL;
          this.fieldSetMinimap.label = SETTINGS.GAME_MINIMAPGROUPTITLE;
          this.fieldSetBattleCommunication.label = SETTINGS.GAME_FIELDSET_HEADERBATTLECOMMUNICATION;
          this.customizationDisplayTypeFieldSet.label = SETTINGS.GAME_CUSTOMIZATIONDISPLAYTYPE;
@@ -324,6 +343,9 @@ package net.wg.gui.lobby.settings
          this.resetBattleContextHintsButton.label = SETTINGS.GAME_RESETBATTLECONTEXTHINTS_BUTTON;
          this.resetBattleContextHintsButton.addEventListener(ButtonEvent.CLICK,this.onResetBattleContextHintsButtonClick);
          this.resetBattleContextHintsButton.mouseEnabledOnDisabled = true;
+         this.showVehicleDifficultyInHangarCheckbox.label = SETTINGS.GAME_SHOWVEHICLEDIFFICULTYINHANGAR_CHECKBOX;
+         this.showVehicleDifficultyInTechTreeCheckbox.label = SETTINGS.GAME_SHOWVEHICLEDIFFICULTYINTECHTREE_CHECKBOX;
+         this.showVehicleDifficultyInResearchCheckbox.label = SETTINGS.GAME_SHOWVEHICLEDIFFICULTYINRESEARCH_CHECKBOX;
          this.enableOpticalSnpEffectCheckbox.label = SETTINGS.GAME_ENABLEOPTICALSNPEFFECT;
          this.enablePostMortemDelayCheckbox.label = SETTINGS.GAME_ENABLEDELAYPOSTEFFECT;
          this.dynamicCameraCheckbox.label = SETTINGS.GAME_DYNAMICCAMERA;
@@ -422,6 +444,8 @@ package net.wg.gui.lobby.settings
          this.fieldSetBattleTypes = null;
          this.fieldSetBattleContextHints.dispose();
          this.fieldSetBattleContextHints = null;
+         this.fieldSetVehicleDifficulty.dispose();
+         this.fieldSetVehicleDifficulty = null;
          this.fieldSetMinimap.dispose();
          this.fieldSetMinimap = null;
          this.fieldSetBattleCommunication.dispose();
@@ -486,6 +510,12 @@ package net.wg.gui.lobby.settings
          this.switchEquipmentCheckbox = null;
          this.enableBattleContextHintsCheckbox.dispose();
          this.enableBattleContextHintsCheckbox = null;
+         this.showVehicleDifficultyInHangarCheckbox.dispose();
+         this.showVehicleDifficultyInHangarCheckbox = null;
+         this.showVehicleDifficultyInTechTreeCheckbox.dispose();
+         this.showVehicleDifficultyInTechTreeCheckbox = null;
+         this.showVehicleDifficultyInResearchCheckbox.dispose();
+         this.showVehicleDifficultyInResearchCheckbox = null;
          this.resetBattleContextHintsButton.removeEventListener(ButtonEvent.CLICK,this.onResetBattleContextHintsButtonClick);
          this.resetBattleContextHintsButton.dispose();
          this.resetBattleContextHintsButton = null;
@@ -641,14 +671,18 @@ package net.wg.gui.lobby.settings
          this.doubleCarouselLabel.y = this._initYDoubleCarouselLabel + _loc4_;
          this.doubleCarouselTypeDropDown.y = this._initYDoubleCarouselTypeDropDown + _loc4_;
          this.vehicleCarouselStatsCheckbox.y = this._initYVehicleCarouselStatsCheckbox + _loc4_;
-         this.customizationDisplayTypeFieldSet.y = this._initYCustomizationDisplayTypeFieldSet + _loc4_;
-         this.customizationDisplayTypeButtonBar.y = this._initYCustomizationDisplayTypeButtonBar + _loc4_;
-         this.replayEnabledLabel.y = this._initYReplayEnabledLabel + _loc4_;
-         this.replayEnabledDropDown.y = this._initYReplayEnabledDropDown + _loc4_;
-         this.showMarksOnGunCheckbox.y = this._initYShowMarksOnGunCheckbox + _loc4_;
-         this.displayPlatoonMembersCheckbox.y = this._initYDisplayPlatoonMembersCheckbox + _loc4_;
-         this.loginServerSelectionCheckbox.y = this._initYLoginServerSelectionCheckbox + _loc4_;
-         this.anonymizerCheckbox.y = this._initYAnonymizerCheckbox + _loc4_;
+         this.fieldSetVehicleDifficulty.y = this._initYFieldSetVehicleDifficulty + _loc4_;
+         this.showVehicleDifficultyInHangarCheckbox.y = this._initYShowVehicleDifficultyInHangarCheckbox + _loc4_;
+         this.showVehicleDifficultyInTechTreeCheckbox.y = this._initYShowVehicleDifficultyInTechTreeCheckbox + _loc4_;
+         this.showVehicleDifficultyInResearchCheckbox.y = this._initYShowVehicleDifficultyInResearchCheckbox + _loc4_;
+         this._dependentVisibleControlsOffset = _loc4_;
+         this.updateVehicleDifficultySettingsVisible();
+      }
+      
+      public function setVehicleDifficultySettingsVisible(param1:Boolean) : void
+      {
+         this._vehicleDifficultySettingsVisible = param1;
+         this.updateVehicleDifficultySettingsVisible();
       }
       
       public function setBattleContextHintsEnabled(param1:Boolean) : void
@@ -663,6 +697,27 @@ package net.wg.gui.lobby.settings
          invalidate(BATTLE_HINTS_INVALID);
       }
       
+      private function updateVehicleDifficultySettingsVisible() : void
+      {
+         this.fieldSetVehicleDifficulty.visible = this._vehicleDifficultySettingsVisible;
+         this.showVehicleDifficultyInHangarCheckbox.visible = this._vehicleDifficultySettingsVisible;
+         this.showVehicleDifficultyInTechTreeCheckbox.visible = this._vehicleDifficultySettingsVisible;
+         this.showVehicleDifficultyInResearchCheckbox.visible = this._vehicleDifficultySettingsVisible;
+         var _loc1_:int = this._dependentVisibleControlsOffset;
+         if(!this._vehicleDifficultySettingsVisible)
+         {
+            _loc1_ += this._initYFieldSetVehicleDifficulty - this._initYCustomizationDisplayTypeFieldSet;
+         }
+         this.customizationDisplayTypeFieldSet.y = this._initYCustomizationDisplayTypeFieldSet + _loc1_;
+         this.customizationDisplayTypeButtonBar.y = this._initYCustomizationDisplayTypeButtonBar + _loc1_;
+         this.replayEnabledDropDown.y = this._initYReplayEnabledDropDown + _loc1_;
+         this.replayEnabledLabel.y = this.replayEnabledDropDown.y - this.replayEnabledLabel.height;
+         this.showMarksOnGunCheckbox.y = this._initYShowMarksOnGunCheckbox + _loc1_;
+         this.displayPlatoonMembersCheckbox.y = this._initYDisplayPlatoonMembersCheckbox + _loc1_;
+         this.loginServerSelectionCheckbox.y = this._initYLoginServerSelectionCheckbox + _loc1_;
+         this.anonymizerCheckbox.y = this._initYAnonymizerCheckbox + _loc1_;
+      }
+      
       private function setDependentVisibleControlsY() : void
       {
          this._initYGameplayOnly10ModeCheckbox = this.gameplay_only10ModeCheckbox.y;
@@ -673,9 +728,12 @@ package net.wg.gui.lobby.settings
          this._initYDoubleCarouselLabel = this.doubleCarouselLabel.y;
          this._initYDoubleCarouselTypeDropDown = this.doubleCarouselTypeDropDown.y;
          this._initYVehicleCarouselStatsCheckbox = this.vehicleCarouselStatsCheckbox.y;
+         this._initYFieldSetVehicleDifficulty = this.fieldSetVehicleDifficulty.y;
+         this._initYShowVehicleDifficultyInHangarCheckbox = this.showVehicleDifficultyInHangarCheckbox.y;
+         this._initYShowVehicleDifficultyInTechTreeCheckbox = this.showVehicleDifficultyInTechTreeCheckbox.y;
+         this._initYShowVehicleDifficultyInResearchCheckbox = this.showVehicleDifficultyInResearchCheckbox.y;
          this._initYCustomizationDisplayTypeFieldSet = this.customizationDisplayTypeFieldSet.y;
          this._initYCustomizationDisplayTypeButtonBar = this.customizationDisplayTypeButtonBar.y;
-         this._initYReplayEnabledLabel = this.replayEnabledLabel.y;
          this._initYReplayEnabledDropDown = this.replayEnabledDropDown.y;
          this._initYShowMarksOnGunCheckbox = this.showMarksOnGunCheckbox.y;
          this._initYDisplayPlatoonMembersCheckbox = this.displayPlatoonMembersCheckbox.y;

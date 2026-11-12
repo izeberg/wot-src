@@ -3,13 +3,14 @@ from constants import NOVICE_RESTRICTIONS_BAN_TYPE
 from debug_utils import LOG_ERROR, LOG_WARNING
 from gui.Scaleform.locale.MESSENGER import MESSENGER
 from gui.impl import backport
+from gui.impl.gen import R
 from helpers import i18n
 from helpers.time_utils import makeLocalServerTime
 import messenger
 from messenger.m_constants import MESSENGER_I18N_FILE
 from messenger.proto.bw.cooldown import getOperationInCooldownMsg
 from messenger.proto.interfaces import IChatError
-from messenger.proto.shared_errors import makeChatBanError, makeNoviceChatBanError
+from messenger.proto.shared_errors import makeChatBanError
 
 class ChannelNotFound(messenger.error):
 
@@ -99,7 +100,7 @@ class ChatBannedError(ChatActionError):
         banReason = banInfo.get('banReason', None)
         banType = banInfo.get('banType', None)
         if banType == NOVICE_RESTRICTIONS_BAN_TYPE:
-            bannedMessage = makeNoviceChatBanError()
+            bannedMessage = backport.text(R.strings.chat.errors.novicerestrictions())
         else:
             bannedMessage = makeChatBanError(banEndTime, banReason)
         return ChatBannedError(cls._makeTitle('chatBanned'), bannedMessage, isModal=True)

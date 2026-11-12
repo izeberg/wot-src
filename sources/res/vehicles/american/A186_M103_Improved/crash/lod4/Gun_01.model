@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.702399 -0.363873 0.196089</min>
+		<max>0.702399 0.477307 6.621182</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A186_M103_Improved/crash/lod4/Gun_01</nodefullVisual>
+</root>

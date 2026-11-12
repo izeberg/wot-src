@@ -17,5 +17,7 @@ package net.wg.infrastructure.base.meta
       function onClickOpenShopBtnS(param1:String) : void;
       
       function onClickOpenEventBtnS(param1:String) : void;
+      
+      function onNyQuestsClickS() : void;
    }
 }

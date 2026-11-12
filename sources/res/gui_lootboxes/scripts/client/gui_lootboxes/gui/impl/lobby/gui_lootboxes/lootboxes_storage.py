@@ -1,8 +1,8 @@
-import logging, SoundGroups
+import typing, BigWorld, SoundGroups
 from collections import defaultdict
 from functools import partial
-import typing
 from gui_lootboxes.gui.impl.gen.view_models.views.lobby.gui_lootboxes.lootboxes_storage_view_model import LootboxesStorageViewModel, States, Glows
+from gui_lootboxes.gui.impl.lobby.gui_lootboxes.lootbox_open_by_selection_view import LootboxOpenBySelectionViewWindow
 from gui_lootboxes.gui.impl.lobby.gui_lootboxes.lootboxes_short_stats_view import LootBoxesShortStatsSubview
 from gui_lootboxes.gui.impl.lobby.gui_lootboxes.sound import LOOT_BOXES_SOUND_SPACE, Sounds
 from gui_lootboxes.gui.impl.lobby.gui_lootboxes.sound import playEnterSound
@@ -27,11 +27,12 @@ from gui.impl.pub import ViewImpl
 from gui.impl.pub.lobby_window import LobbyWindow
 from gui.impl.wrappers.function_helpers import replaceNoneKwargsModel
 from gui.shared import EVENT_BUS_SCOPE
-from gui.shared.event_dispatcher import showBrowserOverlayView
 from gui.shared.gui_items.loot_box import LootBoxKey
+from debug_utils import LOG_ERROR
 from helpers import dependency
 from helpers.func_utils import waitEventAndCall
 from lootboxes_common import makeLootboxTokenID, makeLBKeyTokenID
+from new_year.helpers.ny_helpers import showEmbeddedAudioVideoView
 from shared_utils import findFirst
 from skeletons.gui.game_control import IGuiLootBoxesController, IGuiLootBoxesIntroController
 from gui_lootboxes.gui.lb_gui_constants import TRIGGER_HINT_STATES
@@ -41,11 +42,14 @@ from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
 from uilogging.lootboxes import LootboxStorageLogger
 from th_async import AsyncEvent
+from new_year.ny_constants import NY_BIG_BOX_COUNT
+from new_year_account_settings import getNYSetting, setNYSettings
+from new_year.skeletons.new_year import INewYearController
+from gui.shared.event_dispatcher import showBrowserOverlayView
 if typing.TYPE_CHECKING:
     import Event
     from frameworks.state_machine import StringEvent
     from frameworks.wulf import ViewEvent, View
-_logger = logging.getLogger(__name__)
 
 class LootBoxesStorageView(ViewImpl):
     __itemsCache = dependency.descriptor(IItemsCache)
@@ -54,6 +58,7 @@ class LootBoxesStorageView(ViewImpl):
     __guiLootBoxesStatsCtr = dependency.descriptor(IStatisticLootBoxController)
     __guiLoader = dependency.descriptor(IGuiLoader)
     __lobbyContext = dependency.descriptor(ILobbyContext)
+    __nyCtl = dependency.descriptor(INewYearController)
     _COMMON_SOUND_SPACE = LOOT_BOXES_SOUND_SPACE
     _REWARD_SCREEN = R.views.gui_lootboxes.lobby.gui_lootboxes.LootboxRewardsView()
     _ERROR_SCREEN = R.views.gui_lootboxes.lobby.gui_lootboxes.OpenBoxErrorView()
@@ -65,14 +70,15 @@ class LootBoxesStorageView(ViewImpl):
      _LOSE_REWARD_SCREEN)
     __slots__ = ('__context', '__currentLootBoxId', '__openingAnimEvent', '__uniqueRewardsViewId',
                  '__uniqueRewardsViewClosedEvent', '__waitStatesHandlers', '__returnPlace',
-                 '__initialLootBox', '__closeCallback', '__infoPageUrl', '_uiLogger')
+                 '__initialLootBox', '__closeCallback', '__infoPageUrl', '_uiLogger',
+                 '__nyBigBoxesCount', '__video')
 
     def __init__(self, layoutID, returnPlace=ReturnPlaces.TO_HANGAR, initialLootBox=0, closeCallback=None):
         settings = ViewSettings(layoutID)
         settings.model = LootboxesStorageViewModel()
         super(LootBoxesStorageView, self).__init__(settings)
         self.__context = LootBoxesContext()
-        self.__initialLootBox = initialLootBox
+        self.__initialLootBox = initialLootBox or self.__guiLootBoxesCtr.getOpenByDefaultId()
         self.__currentLootBoxId = 0
         self.__openingAnimEvent = AsyncEvent(scope=self.__context.getAsyncScope())
         self.__uniqueRewardsViewClosedEvent = AsyncEvent(scope=self.__context.getAsyncScope())
@@ -82,6 +88,8 @@ class LootBoxesStorageView(ViewImpl):
         self.__closeCallback = closeCallback
         self.__infoPageUrl = None
         self._uiLogger = LootboxStorageLogger()
+        self.__nyBigBoxesCount = 0
+        self.__video = None
         return
 
     @property
@@ -152,14 +160,19 @@ class LootBoxesStorageView(ViewImpl):
 
     def _onLoaded(self, *args, **kwargs):
         super(LootBoxesStorageView, self)._onLoaded(*args, **kwargs)
-        self.__context.viewReady()
-        playEnterSound(self.__guiLootBoxesCtr.isFirstStorageEnter())
-        self.__guiLootBoxesCtr.setStorageVisited()
+        if self.__shouldShowNyDeliveryVideo():
+            self.__playBoxVideo()
+            return
+        self.__onLoadedAction()
 
     def _finalize(self):
         super(LootBoxesStorageView, self)._finalize()
+        if self.__video is not None:
+            self.__stopVideo(destroy=True)
+        setNYSettings(NY_BIG_BOX_COUNT, self.__nyBigBoxesCount)
         self.__context.fini()
         self.__waitStatesHandlers.clear()
+        return
 
     def _getListeners(self):
         return (
@@ -211,6 +224,11 @@ class LootBoxesStorageView(ViewImpl):
          (
           self.viewModel.showStatistic, self.__showStatistic))
 
+    def __onLoadedAction(self):
+        self.__context.viewReady()
+        playEnterSound(self.__guiLootBoxesCtr.isFirstStorageEnter())
+        self.__guiLootBoxesCtr.setStorageVisited()
+
     def __onLootboxSelected(self, args):
         lootBox = self.__itemsCache.items.tokens.getLootBoxByID(int(args.get('lootBoxID', 0)))
         if lootBox is not None and lootBox.isVisibleInStorage():
@@ -237,11 +255,17 @@ class LootBoxesStorageView(ViewImpl):
     def __openLootBoxes(self, args):
         if self.__context.getCurrentState() not in (States.STORAGE_VIEWING, States.REWARDING):
             return
-        lootBoxID = int(args.get('lootBoxID', 0))
-        count = int(args.get('count', 1))
-        keyID = int(args.get('keyID', 0))
-        lootBox = self.__itemsCache.items.tokens.getLootBoxByID(lootBoxID)
-        self.__context.postViewEvent(ViewEvents.ON_OPEN_CLICK, (lootBox, count, keyID))
+        else:
+            lootBoxID = int(args.get('lootBoxID', 0))
+            count = int(args.get('count', 1))
+            keyID = int(args.get('keyID', 0))
+            isSelectionLootbox = False
+            lootBox = self.__itemsCache.items.tokens.getLootBoxByID(lootBoxID)
+            if lootBox is not None:
+                isSelectionLootbox = lootBox.getSelectionCardsCount() > 0 and lootBox.getSelectionBonusLeft() > 0
+                self.__context.setIsCardSelection(isSelectionLootbox)
+            self.__context.postViewEvent(ViewEvents.ON_OPEN_CLICK, (lootBox, count, keyID, isSelectionLootbox))
+            return
 
     def __openningFinished(self):
         self.__openingAnimEvent.set()
@@ -253,7 +277,7 @@ class LootBoxesStorageView(ViewImpl):
         if self.__guiLootBoxesCtr.isBuyAvailable():
             self.__context.setReturnPlace(ReturnPlaces.TO_SHOP)
             self.destroyWindow()
-            self.__guiLootBoxesCtr.openShop(lootBoxID)
+            self.__guiLootBoxesCtr.openShop(args.get('lootBoxID'))
             self.__guiLootBoxesCtr.setSetting(LOOT_BOXES_STATS_NO_BOX_HINT_STATE, TRIGGER_HINT_STATES.SHOWN)
 
     def __onClose(self):
@@ -275,7 +299,7 @@ class LootBoxesStorageView(ViewImpl):
 
     def onError(self, args):
         errorFilePath = str(args.get('errorFilePath', ''))
-        _logger.error('Lootbox video error: %s', errorFilePath)
+        LOG_ERROR('Lootbox video error: %s' % errorFilePath)
 
     @replaceNoneKwargsModel
     def __fillLootBoxesModel(self, model=None):
@@ -293,12 +317,15 @@ class LootBoxesStorageView(ViewImpl):
                 lastAddedLootBox = findFirst(lambda lootBox: lootBox.getID() == lastAddedLootBoxID, lootBoxes)
                 if lastAddedLootBox is not None and lastAddedLootBox.isVisibleInStorage():
                     self.__selectLootBox(lastAddedLootBoxID, model=model)
+        self.__nyBigBoxesCount = 0
         for lootbox in lootBoxes:
             if lootbox is not None and lootbox.isVisibleInStorage():
                 attemptsAfterGuaranteed = self.__itemsCache.items.tokens.getAttemptsAfterGuaranteedRewards(lootbox)
                 lbArray.addViewModel(getLootBoxViewModel(lootbox, attemptsAfterGuaranteed))
                 if not self.__currentLootBoxId:
                     self.__selectLootBox(lootbox.getID(), model=model)
+                if lootbox.getInventoryCount() > 0 and self.__nyCtl.isLootboxBigType(lootbox.getType()):
+                    self.__nyBigBoxesCount = lootbox.getInventoryCount()
 
         lbArray.invalidate()
         return
@@ -334,6 +361,12 @@ class LootBoxesStorageView(ViewImpl):
         else:
             model.setGlowType(Glows.DEFAULT)
 
+    def __enableTankLootboxGlow(self, clientData):
+        lootBox = self.__itemsCache.items.tokens.getLootBoxByID(self.__currentLootBoxId)
+        if lootBox is not None and self.__nyCtl.isLootboxTankType(lootBox.getType()):
+            clientData['uniqueOpening'] = True
+        return
+
     @replaceNoneKwargsModel
     def __setStatisticStatus(self, model=None):
         model.setIsShowZeroStateStatistic(bool(self.__guiLootBoxesStatsCtr.isShowStatistic() and self.__guiLootBoxesStatsCtr.getFullStatistic()))
@@ -354,10 +387,16 @@ class LootBoxesStorageView(ViewImpl):
                 result = event.getArgument('result', None)
                 resultData = result.auxData if result else {}
                 clientData = resultData.get('clientData', {})
+                if result is None:
+                    self.__enableTankLootboxGlow(clientData)
                 self.setGlowType(clientData, model)
+                self.__openingAnimEvent.clear()
                 waitEventAndCall(self.__openingAnimEvent, partial(self.__context.postViewEvent, ViewEvents.ON_OPENING_FINISH, (
                  getUniqueRewardHandler(resultData), resultData.get('bonus', []),
                  clientData)))
+            elif state == States.REWARDING.value and self.__context.isCardSelection():
+                self.__openingAnimEvent.clear()
+                self.__showSelectionView()
             elif state == States.REWARDING.value:
                 rewards = event.getArgument('rewards', None)
                 clientData = event.getArgument('clientData', {})
@@ -381,7 +420,17 @@ class LootBoxesStorageView(ViewImpl):
                     self.__context.postViewEvent(ViewEvents.ON_CHILD_VIEW_SKIP, event.getArgument('rewards', None))
             elif state == States.STORAGE_VIEWING.value:
                 self.__openingAnimEvent.clear()
+                self.__context.setIsCardSelection(False)
             return
+
+    def __showSelectionView(self):
+        window = LootboxOpenBySelectionViewWindow(self.__currentLootBoxId, self.getParentWindow())
+        window.load()
+        self.__uniqueRewardsViewClosedEvent.clear()
+        self.__uniqueRewardsViewId = LootboxOpenBySelectionViewWindow.getViewId()
+        waitEventAndCall(self.__uniqueRewardsViewClosedEvent, partial(self.__context.postViewEvent, ViewEvents.ON_CHILD_VIEW_CLOSED, (None,
+                                                                                                                                      0)))
+        return
 
     def __onViewStatusChanged(self, uniqueID, newStatus):
         if newStatus == ViewStatus.DESTROYING:
@@ -444,12 +493,17 @@ class LootBoxesStorageView(ViewImpl):
                 self._uiLogger.logAnimationSwitch(isEnabled)
         return
 
-    def __showBonusProbabilities(self):
+    def __showBonusProbabilities(self, rotationData):
         lootBox = self.__itemsCache.items.tokens.getLootBoxByID(self.__currentLootBoxId)
-        if lootBox is not None:
-            self._uiLogger.logOpenProbabilityClick(lootBox)
+        if lootBox is None:
+            return
+        else:
+            if rotationData.get('isStageRotationHeader'):
+                self._uiLogger.logStageRotationHeaderClick(lootBox)
+            else:
+                self._uiLogger.logOpenProbabilityClick(lootBox)
             showBonusProbabilitiesWindow(lootBox, parent=self.getParentWindow())
-        return
+            return
 
     def __hideTriggerHint(self):
         self.__guiLootBoxesCtr.setSetting(KEY_LOOTBOX_TRIGGER_HINT_SHOWN, True)
@@ -495,6 +549,28 @@ class LootBoxesStorageView(ViewImpl):
         new = data['enabled']
         if current != new:
             self.viewModel.setIsShowStatistic(new)
+
+    def __shouldShowNyDeliveryVideo(self):
+        return self.__nyBigBoxesCount > getNYSetting(NY_BIG_BOX_COUNT)
+
+    def __playBoxVideo(self):
+        BigWorld.worldDrawEnabled(False)
+        self.__video = showEmbeddedAudioVideoView(videoSource=R.videos.new_year.lootbox.box_delivery(), parent=self.getWindow(), onVideoClosed=self.__onVideoClosed, isControlsVisible=False, handleWorldDraw=False)
+
+    def __onVideoClosed(self):
+        if self.__video is None:
+            return
+        else:
+            self.__stopVideo()
+            self.__onLoadedAction()
+            return
+
+    def __stopVideo(self, destroy=False):
+        video = self.__video
+        self.__video = None
+        if destroy and video is not None:
+            video.destroy()
+        return
 
 
 class LootBoxesStorageWindow(LobbyWindow):

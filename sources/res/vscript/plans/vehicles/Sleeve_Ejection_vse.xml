@@ -320,6 +320,12 @@
 			</block>
 			<block>
 				<class>If</class>
+				<id>If_6</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
 				<id>If_3</id>
 				<params/>
 				<slots/>
@@ -386,6 +392,19 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
+				<id>GetVariable_12</id>
+				<buddy>Variable_11</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
 				<id>GetVariable_11</id>
 				<buddy>Variable_10</buddy>
 				<params>
@@ -398,17 +417,15 @@
 				<slots/>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_12</id>
-				<buddy>Variable_11</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_4</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>b</name>
+						<const>\0\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>StartScript</class>
@@ -739,8 +756,8 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_5</id>
-				<buddy>Variable_1</buddy>
+				<id>GetVariable_1</id>
+				<buddy>Variable_5</buddy>
 				<params>
 					<param>
 						GameObjectT
@@ -752,8 +769,8 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_1</id>
-				<buddy>Variable_5</buddy>
+				<id>GetVariable_5</id>
+				<buddy>Variable_1</buddy>
 				<params>
 					<param>
 						GameObjectT
@@ -1116,8 +1133,20 @@
 			<connection>
 				<from>OnAnyVehicleShoot_2</from>
 				<input>input</input>
-				<to>If_3</to>
+				<to>If_6</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>CompareIntegers_4</from>
+				<input>value</input>
+				<to>If_6</to>
+				<output>equal</output>
+			</connection>
+			<connection>
+				<from>If_6</from>
+				<input>input</input>
+				<to>If_3</to>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>And_1</from>
@@ -1178,6 +1207,12 @@
 				<input>i2</input>
 				<to>And_1</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleShoot_2</from>
+				<input>a</input>
+				<to>CompareIntegers_4</to>
+				<output>gunIndex</output>
 			</connection>
 			<connection>
 				<from>StartScript_1</from>

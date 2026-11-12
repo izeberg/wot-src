@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/normal/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.767182 -0.000409 -1.441194</min>
+		<max>1.939817 1.902197 2.107316</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/normal/lod3/Turret_01</nodefullVisual>
+</root>

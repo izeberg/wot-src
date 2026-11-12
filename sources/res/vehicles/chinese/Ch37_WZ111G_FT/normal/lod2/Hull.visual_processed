@@ -103,8 +103,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>lod2_hull_01_hull_hull_Shape.vertices</vertices>
+			<primitive>lod2_hull_01_hull_hull_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -197,94 +197,12 @@
 				</material>
 				<groupOrigin>-0.071036 1.107426 1.324444</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				2
-				<material>
-					<identifier>tank_guns</identifier>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<property>
-						normalMap
-						<Texture>vehicles/chinese/Ch37_WZ111G_FT/WZ111G_FT_guns_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/chinese/Ch37_WZ111G_FT/WZ111G_FT_guns_GMM.dds</Texture>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_maskBias
-						<Float>
-							0.18
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>
-							3.50685 3.50685 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_detailPowerGloss
-						<Float>
-							0.35
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/chinese/Ch37_WZ111G_FT/WZ111G_FT_guns_AO.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/chinese/Ch37_WZ111G_FT/WZ111G_FT_guns_ID.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>vehicles/chinese/Ch37_WZ111G_FT/WZ111G_FT_guns_AM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-				</material>
-				<groupOrigin>0.245279 1.473435 2.866860</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-1.878287 -0.612622 -3.733268</min>
 		<max>1.723115 3.223709 3.739051</max>
 	</boundingBox>
-	<geometrySize>267024</geometrySize>
+	<geometrySize>264388</geometrySize>
 	<minUVDensity>0.000313</minUVDensity>
 </root>

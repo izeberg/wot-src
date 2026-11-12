@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>hd_env_EVT_NY27_0023_Groundlight_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_module0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>nShape1.vertices</vertices>
+			<primitive>nShape1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>n_metal1</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_NY27_0023_Groundlight/hd_env_EVT_NY27_0023_Groundlight_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>13.600000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>29.200001</Float>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 0.627451 0.231373 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.007764 0.475569 -0.048838</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>n_metal0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>128</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_NY27_0023_Groundlight/hd_env_EVT_NY27_0023_Groundlight_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_EVT_NY27_0023_Groundlight/hd_env_EVT_NY27_0023_Groundlight_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_EVT_NY27_0023_Groundlight/hd_env_EVT_NY27_0023_Groundlight_ANM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.001508 0.347236 0.037221</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.588643 -0.216254 -0.623530</min>
+		<max>0.585627 0.910725 0.697971</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>34446</geometrySize>
+	<minUVDensity>0.055882</minUVDensity>
+</root>

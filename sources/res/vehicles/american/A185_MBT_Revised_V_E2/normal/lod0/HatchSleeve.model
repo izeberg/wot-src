@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A185_MBT_Revised_V_E2/normal/lod0/HatchSleeve</nodefullVisual>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<parent>vehicles/american/A185_MBT_Revised_V_E2/normal/lod1/HatchSleeve</parent>
+	<visibilityBox>
+		<min>-1.135909 0.435493 0.734088</min>
+		<max>-0.991810 0.692472 0.965037</max>
+	</visibilityBox>
+</root>

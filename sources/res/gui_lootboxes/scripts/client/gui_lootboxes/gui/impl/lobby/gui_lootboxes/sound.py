@@ -22,7 +22,7 @@ class Sounds(Enum):
 
 LOOT_BOXES_SOUND_SPACE = CommonSoundSpaceSettings(name=Sounds.STORAGE_SPACE_NAME.value, entranceStates={Sounds.STATE_PLACE.value: Sounds.STATE_LOOTBOXES.value}, exitStates={Sounds.STATE_PLACE.value: Sounds.STATE_HANGAR_PLACE.value}, persistentSounds=(), stoppableSounds=(), priorities=(), autoStart=True, enterEvent='', exitEvent=Sounds.LOOT_BOX_EXIT.value)
 LOOT_BOXES_OVERLAY_SOUND_SPACE = CommonSoundSpaceSettings(name=Sounds.OVERLAY_SPACE_NAME.value, entranceStates={Sounds.OVERLAY_HANGAR_GENERAL.value: Sounds.OVERLAY_HANGAR_GENERAL_ON.value}, exitStates={Sounds.OVERLAY_HANGAR_GENERAL.value: Sounds.OVERLAY_HANGAR_GENERAL_OFF.value}, persistentSounds=(), stoppableSounds=(), priorities=(), autoStart=True)
-LOOT_BOXES_REWARD_VIDEO_SOUND_SPACE = CommonSoundSpaceSettings(name=Sounds.VIDEO_REWARD_SPACE_NAME, entranceStates={StatesGroup.VIDEO_OVERLAY: States.VIDEO_OVERLAY_ON}, exitStates={StatesGroup.VIDEO_OVERLAY: States.VIDEO_OVERLAY_OFF}, persistentSounds=(), stoppableSounds=(), priorities=(), autoStart=True, enterEvent='', exitEvent='')
+LOOT_BOXES_REWARD_VIDEO_SOUND_SPACE = CommonSoundSpaceSettings(name=Sounds.VIDEO_REWARD_SPACE_NAME.value, entranceStates={StatesGroup.VIDEO_OVERLAY: States.VIDEO_OVERLAY_ON}, exitStates={StatesGroup.VIDEO_OVERLAY: States.VIDEO_OVERLAY_OFF}, persistentSounds=(), stoppableSounds=(), priorities=(), autoStart=True, enterEvent='', exitEvent='')
 
 def playEnterSound(isFirstEnter):
     soundName = Sounds.LOOT_BOX_ENTER_FIRST.value if isFirstEnter else Sounds.LOOT_BOX_ENTER.value

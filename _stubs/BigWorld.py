@@ -5333,14 +5333,12 @@ class VehiclePhysics(pybind11_object):
 	def getRollerPosition(self, *args, **kwargs): pass
 	def getTouchedGround(self, *args, **kwargs): pass
 	def getTouchedMatkind(self, *args, **kwargs): pass
-	gotCarcassContact = property(lambda self: None)
-	gotTracksContact = property(lambda self: None)
+	gotHullContact = property(lambda self: None)
 	gravity = property(lambda self: None)
 	groundResistances = property(lambda self: None)
 	groundType = property(lambda self: None)
 	handbrake = property(lambda self: None)
 	hullCOMZ = property(lambda self: None)
-	hullCollisionReaction = property(lambda self: None)
 	hullContactPt = property(lambda self: None)
 	hullDamageMp = property(lambda self: None)
 	hullPitchCorrection = property(lambda self: None)
@@ -5396,7 +5394,6 @@ class VehiclePhysics(pybind11_object):
 	def subscribeAfterSimulation(self, *args, **kwargs): pass
 	def subscribeBeforeSimulation(self, *args, **kwargs): pass
 	ticksFromLastCollision = property(lambda self: None)
-	timeAfterLanding = property(lambda self: None)
 	torqueApplied = property(lambda self: None)
 	torqueModifier = property(lambda self: None)
 	def touchGround(self, *args, **kwargs): pass
@@ -5475,14 +5472,12 @@ class TankPhysics(VehiclePhysics):
 	def getRollerPosition(self, *args, **kwargs): pass
 	def getTouchedGround(self, *args, **kwargs): pass
 	def getTouchedMatkind(self, *args, **kwargs): pass
-	gotCarcassContact = property(lambda self: None)
-	gotTracksContact = property(lambda self: None)
+	gotHullContact = property(lambda self: None)
 	gravity = property(lambda self: None)
 	groundResistances = property(lambda self: None)
 	groundType = property(lambda self: None)
 	handbrake = property(lambda self: None)
 	hullCOMZ = property(lambda self: None)
-	hullCollisionReaction = property(lambda self: None)
 	hullContactPt = property(lambda self: None)
 	hullDamageMp = property(lambda self: None)
 	hullPitchCorrection = property(lambda self: None)
@@ -5544,7 +5539,6 @@ class TankPhysics(VehiclePhysics):
 	def subscribeAfterSimulation(self, *args, **kwargs): pass
 	def subscribeBeforeSimulation(self, *args, **kwargs): pass
 	ticksFromLastCollision = property(lambda self: None)
-	timeAfterLanding = property(lambda self: None)
 	torqueApplied = property(lambda self: None)
 	torqueModifier = property(lambda self: None)
 	def touchGround(self, *args, **kwargs): pass
@@ -6057,14 +6051,12 @@ class WheeledPhysics(VehiclePhysics):
 	def getRollerPosition(self, *args, **kwargs): pass
 	def getTouchedGround(self, *args, **kwargs): pass
 	def getTouchedMatkind(self, *args, **kwargs): pass
-	gotCarcassContact = property(lambda self: None)
-	gotTracksContact = property(lambda self: None)
+	gotHullContact = property(lambda self: None)
 	gravity = property(lambda self: None)
 	groundResistances = property(lambda self: None)
 	groundType = property(lambda self: None)
 	handbrake = property(lambda self: None)
 	hullCOMZ = property(lambda self: None)
-	hullCollisionReaction = property(lambda self: None)
 	hullContactPt = property(lambda self: None)
 	hullDamageMp = property(lambda self: None)
 	hullPitchCorrection = property(lambda self: None)
@@ -6124,7 +6116,6 @@ class WheeledPhysics(VehiclePhysics):
 	def subscribeAfterSimulation(self, *args, **kwargs): pass
 	def subscribeBeforeSimulation(self, *args, **kwargs): pass
 	ticksFromLastCollision = property(lambda self: None)
-	timeAfterLanding = property(lambda self: None)
 	torqueApplied = property(lambda self: None)
 	torqueModifier = property(lambda self: None)
 	def touchGround(self, *args, **kwargs): pass
@@ -6501,7 +6492,6 @@ def collideDynamic(*args, **kwargs): pass
 def collideDynamicStatic(*args, **kwargs): pass
 def collideDynamics(*args, **kwargs): pass
 def collideSegment(*args, **kwargs): pass
-def collideSphere(*args, **kwargs): pass
 def collideWater(*args, **kwargs): pass
 def collideWaterMatKind(*args, **kwargs): pass
 def commandLineLoginInfo(*args, **kwargs): pass

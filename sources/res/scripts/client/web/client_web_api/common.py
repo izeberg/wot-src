@@ -2,6 +2,7 @@ import logging
 from Event import Event
 from web.client_web_api.battle_pass import BattlePassEventHandler
 from web.client_web_api.comp7 import Comp7BattleResultEventHandler
+from web.client_web_api.customization_resource import CustomizationResourceEventHandler
 from web.client_web_api.platform import PlatformEventHandler
 from web.client_web_api.ranked import BrowsersBridgeC2W, RankedEventHandler
 from web.client_web_api.reactive_comm import ReactiveCommunicationEventHandler
@@ -48,6 +49,7 @@ class WebEventSender(object):
          BrowsersBridgeC2W(self),
          TelecomTokenEventHandler(self),
          BattlePassEventHandler(self),
+         CustomizationResourceEventHandler(self),
          ReferralProgramEventHandler(self),
          Comp7BattleResultEventHandler(self),
          StrongholdEventHandler(self),

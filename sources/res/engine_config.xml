@@ -68,7 +68,7 @@
 			0.2
 			<!--BW_String-->
 		</gammaCorrectionSpeed>
-		<maxFrameRate>90</maxFrameRate>
+		<maxFrameRate>1000</maxFrameRate>
 		<reducedFrameRate>60</reducedFrameRate>
 		<settings/>
 		<useLatentOcclusionQueries>true</useLatentOcclusionQueries>
@@ -551,6 +551,9 @@
 					<name>music_interactive.bnk</name>
 				</bank>
 				<bank>
+					<name>music_interactive_alternative.bnk</name>
+				</bank>
+				<bank>
 					<name>music_interactive_part_01.pck</name>
 				</bank>
 				<bank>
@@ -599,6 +602,9 @@
 					<name>music_interactive_part_16.pck</name>
 				</bank>
 				<bank>
+					<name>music_interactive_alternative_part_01.pck</name>
+				</bank>
+				<bank>
 					<name>wheel_vehicle_GUI.pck</name>
 				</bank>
 				<bank>
@@ -620,10 +626,13 @@
 					<name>vo_context_hints.bnk</name>
 				</bank>
 				<bank>
-					<name>ev_portal_music.bnk</name>
+					<name>hangar_h03_mt_ny_voiceover.bnk</name>
 				</bank>
 				<bank>
-					<name>ev_portal_music.pck</name>
+					<name>hangar_h03_mt_ny_voiceover.pck</name>
+				</bank>
+				<bank>
+					<name>newyear_rewards_gui.bnk</name>
 				</bank>
 			</SFX_soundbanks_loadonce>
 			<SFX_soundbanks_hangar>
@@ -1324,7 +1333,7 @@
 		<processExe>cef_browser_process</processExe>
 		<cachePath>profile/cef_cache</cachePath>
 		<resourcePath>cef</resourcePath>
-		<hardwareAcceleration>false</hardwareAcceleration>
+		<hardwareAcceleration>true</hardwareAcceleration>
 		<logFile>cef.log</logFile>
 		<logVerbosity>disable</logVerbosity>
 		<enableFlash>true</enableFlash>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/italy/It39_CAS_120_Mastino/normal/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.454307 -0.000001 -2.949327</min>
+		<max>1.454307 1.159783 3.259016</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It39_CAS_120_Mastino/normal/lod1/Chassis</nodefullVisual>
+</root>

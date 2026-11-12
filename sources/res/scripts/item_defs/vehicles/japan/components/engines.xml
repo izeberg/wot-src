@@ -392,6 +392,27 @@
 			<rpm_min>450</rpm_min>
 			<rpm_max>2000</rpm_max>
 		</Mitsubishi_12_ZT>
+		<Mitsubishi_8ZF_J50>
+			<id>31013</id>
+			<userString>#japan_vehicles:Mitsubishi_8ZF_J50</userString>
+			<tags>diesel</tags>
+			<level>9</level>
+			<price>88500</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_v55_pc</wwsoundPC>
+			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<power>650</power>
+			<weight>1780</weight>
+			<maxHealth>260</maxHealth>
+			<maxRegenHealth>130</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<fireStartingChance>
+				0.12
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>349</rpm_min>
+			<rpm_max>2150</rpm_max>
+		</Mitsubishi_8ZF_J50>
 		<Mitsubishi_MT_1100>
 			<id>54</id>
 			<userString>#japan_vehicles:Mitsubishi_MT_1100</userString>

@@ -836,6 +836,8 @@ def _readPriceGroups(cache, xmlCtx, section, sectionName, prices=None):
         return
 
 
+readPriceGroups = _readPriceGroups
+
 def _readFonts(cache, xmlCtx, section, sectionName):
     if IS_EDITOR:
         itemType = CUSTOMIZATION_CLASSES[cc.Font]

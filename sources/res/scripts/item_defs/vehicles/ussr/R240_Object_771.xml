@@ -2,7 +2,7 @@
 <root>
 	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<crew>
-		<commander>radioman loader</commander>
+		<commander>radioman</commander>
 		<gunner>loader</gunner>
 		<driver/>
 	</crew>
@@ -81,7 +81,7 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>96</armor_1>
+			<armor_1>110</armor_1>
 			<armor_2>63</armor_2>
 			<armor_3>80</armor_3>
 			<armor_4>50</armor_4>

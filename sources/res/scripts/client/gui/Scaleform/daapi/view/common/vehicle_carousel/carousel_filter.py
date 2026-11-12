@@ -4,6 +4,7 @@ from account_helpers.AccountSettings import CAROUSEL_FILTER_CLIENT_1
 from gui.prb_control.settings import VEHICLE_LEVELS
 from gui.shared.utils import makeSearchableString
 from gui.shared.utils.requesters import REQ_CRITERIA
+from gui.shared.utils.vehicle_difficulty_helper import isVehicleDifficultyEnabled
 from gui.shared.gui_items.Vehicle import VEHICLE_ROLES_LABELS, VEHICLE_CLASS_NAME
 from helpers import dependency
 from skeletons.account_helpers.settings_core import ISettingsCore
@@ -26,7 +27,18 @@ class FILTER_KEYS(object):
     DEBUT_BOXES = 'debut_boxes'
     PARAGONS = 'paragons'
     EARLY_ACCESS = 'early_access'
+    DIFFICULTY_EASY = 'difficulty_1'
+    DIFFICULTY_MEDIUM = 'difficulty_2'
+    DIFFICULTY_HIGH = 'difficulty_3'
 
+
+_DIFFICULTY_FILTERS = (
+ (
+  constants.VEHICLE_DIFFICULTY.EASY, FILTER_KEYS.DIFFICULTY_EASY),
+ (
+  constants.VEHICLE_DIFFICULTY.MEDIUM, FILTER_KEYS.DIFFICULTY_MEDIUM),
+ (
+  constants.VEHICLE_DIFFICULTY.HARD, FILTER_KEYS.DIFFICULTY_HIGH))
 
 def _filterDict(dictionary, keys):
     return {key:value for key, value in dictionary.iteritems() if key in keys}
@@ -91,6 +103,15 @@ class _CarouselFilter(object):
 
     def switch(self, key, save=True):
         self.update({key: not self._filters[key]}, save)
+
+    def resetDisabledDifficultyFilters(self, save=True):
+        if isVehicleDifficultyEnabled():
+            return False
+        keys = [ key for _, key in _DIFFICULTY_FILTERS if self._filters.get(key) ]
+        if not keys:
+            return False
+        self.reset(keys, save=save)
+        return True
 
     def update(self, params, save=True):
         for key, value in params.iteritems():
@@ -262,6 +283,7 @@ class BasicCriteriesGroup(CriteriesGroup):
         self._setDebutBoxesCriteria(filters)
         self._setParagonsCriteria(filters)
         self._setEarlyAccessCriteria(filters)
+        self._setDifficultyCriteria(filters)
 
     def _setNationsCriteria(self, filters):
         selectedVehiclesIds = []
@@ -353,6 +375,11 @@ class BasicCriteriesGroup(CriteriesGroup):
         allVehicles = set(cls._earlyAccessController.getAffectedVehicles().keys())
         allVehicles |= cls._earlyAccessController.getPostProgressionVehicles()
         return vehicle.intCD in allVehicles
+
+    def _setDifficultyCriteria(self, filters):
+        selected = [ difficulty for difficulty, key in _DIFFICULTY_FILTERS if filters.get(key) ]
+        if selected and isVehicleDifficultyEnabled():
+            self._criteria |= REQ_CRITERIA.VEHICLE.DIFFICULTIES(selected)
 
 
 class RoleCriteriesGroup(BasicCriteriesGroup):

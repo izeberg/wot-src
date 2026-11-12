@@ -111,6 +111,8 @@ package
       
       public static const BONUSES_ITEM_LOOTBOXES:String = "#quests:bonuses/item/lootBoxes";
       
+      public static const BONUSES_ITEM_LOOTBOXESMACHINE:String = "#quests:bonuses/item/lootBoxesMachine";
+      
       public static const BONUSES_ITEM_LOCKPICK:String = "#quests:bonuses/item/lockpick";
       
       public static const BONUSES_ITEM_LOOTBOXKEY:String = "#quests:bonuses/item/lootBoxKey";
@@ -174,6 +176,14 @@ package
       public static const BONUSES_ITEM_TANKMEN_WITH_SKILLS:String = "#quests:bonuses/item/tankmen/with_skills";
       
       public static const BONUSES_NOTAVAILABLE:String = "#quests:bonuses/notAvailable";
+      
+      public static const BONUSNAME_NY22FILLERS:String = "#quests:bonusName/ny22Fillers";
+      
+      public static const BONUSNAME_NEWYEARSLOT:String = "#quests:bonusName/newYearSlot";
+      
+      public static const BONUSES_VARIADICDISCOUNT_DISCOUNTAMOUNT:String = "#quests:bonuses/variadicDiscount/discountAmount";
+      
+      public static const BONUSES_VARIADICDISCOUNT_BUTTONLABEL:String = "#quests:bonuses/variadicDiscount/buttonLabel";
       
       public static const QUESTS_TITLE:String = "#quests:quests/title";
       
@@ -1937,8 +1947,6 @@ package
       
       public static const DETAILS_DOSSIER_50_BATTLESCOUNT:String = "#quests:details/dossier/50/battlesCount";
       
-      public static const DETAILS_DOSSIER_61_BATTLESCOUNT:String = "#quests:details/dossier/61/battlesCount";
-      
       public static const DETAILS_MODIFIERS_TITLE_DISCOUNT:String = "#quests:details/modifiers/title/discount";
       
       public static const DETAILS_MODIFIERS_TITLE_SELLING:String = "#quests:details/modifiers/title/selling";
@@ -2565,6 +2573,8 @@ package
       
       public static const BONUSNAME_ENTITLEMENTS_RANKED_202203_ACCESS:String = "#quests:bonusName/entitlements/ranked_202203_access";
       
+      public static const BONUSNAME_ENTITLEMENTS_NY27_MARKETPLACE_UNLOCK:String = "#quests:bonusName/entitlements/ny27_marketplace_unlock";
+      
       public static const BONUSNAME_ENTITLEMENTS_PARAGON_REWARDS_CHOICE_V_11:String = "#quests:bonusName/entitlements/paragon_rewards_choice_v_11";
       
       public static const BONUSNAME_ENTITLEMENTS_SHEVENTS_CLAN_COUPON:String = "#quests:bonusName/entitlements/shevents_clan_coupon";
@@ -2604,6 +2614,12 @@ package
       public static const BONUSNAME_HONEY_COIN:String = "#quests:bonusName/honey_coin";
       
       public static const BONUSNAME_REWARDSSLOTS:String = "#quests:bonusName/rewardsSlots";
+      
+      public static const BONUSNAME_NYRFOOD:String = "#quests:bonusName/nyrfood";
+      
+      public static const BONUSNAME_NYRFUN:String = "#quests:bonusName/nyrfun";
+      
+      public static const BONUSNAME_NYRACTIV:String = "#quests:bonusName/nyractiv";
       
       public static const ACTION_AUTO_CALENDAR:String = "#quests:action/auto/calendar";
       
@@ -3487,6 +3503,10 @@ package
       
       public static const INFOPAGE_DAILYMISSIONS_DEFAULT:String = "#quests:infoPage/dailyMissions/default";
       
+      public static const DAILYQUESTS_INFO_NYDAILYMISSIONS:String = "#quests:dailyQuests/info/NYDailyMissions";
+      
+      public static const DAILYQUESTS_INFO_DAILYMISSIONTITLE:String = "#quests:dailyQuests/info/dailyMissionTitle";
+      
       public static const INFOPAGE_DAILYMISSIONS_SUBSCRIPTION_DEFAULT:String = "#quests:infoPage/dailyMissions/subscription/default";
       
       public static const INFOPAGE_DAILYMISSIONS_BATTLEPASSDAILYMISSIONS_DEFAULT:String = "#quests:infoPage/dailyMissions/battlePassDailyMissions/default";
@@ -3494,6 +3514,8 @@ package
       public static const INFOPAGE_DAILYMISSIONS_WINBACK:String = "#quests:infoPage/dailyMissions/winback";
       
       public static const INFOPAGE_DAILYMISSIONS_BATTLEPASSDAILYMISSIONS_WINBACK:String = "#quests:infoPage/dailyMissions/battlePassDailyMissions/winback";
+      
+      public static const DAILYQUESTS_INFO_GIFTSYSTEMDISABLEDDAILYMISSIONS:String = "#quests:dailyQuests/info/giftSystemDisabledDailyMissions";
       
       public static const INFOPAGE_PREMIUMMISSIONS_DEFAULT:String = "#quests:infoPage/premiumMissions/default";
       
@@ -3528,6 +3550,12 @@ package
       public static const INFOPAGE_MISSIONSWITCH_MIN:String = "#quests:infoPage/missionSwitch_min";
       
       public static const INFOPAGE_MISSIONSWITCH_WINBACK:String = "#quests:infoPage/missionSwitch/winback";
+      
+      public static const INFOPAGE_LOOTBOXCONDITIONSTITLE:String = "#quests:infoPage/lootboxConditionsTitle";
+      
+      public static const INFOPAGE_LOOTBOXCONDITIONS_DEFAULT:String = "#quests:infoPage/lootboxConditions/default";
+      
+      public static const INFOPAGE_LOOTBOXCONDITIONS_BUTTON:String = "#quests:infoPage/lootboxConditions/button";
       
       public static const DAILYQUESTS_CONDITION_DODAMAGE:String = "#quests:dailyQuests/condition/doDamage";
       
@@ -3723,9 +3751,21 @@ package
       
       public static const BONUSNAME_GOLDENTICKET:String = "#quests:bonusName/goldenticket";
       
-      public static const BONUSNAME_RAZLOM_COIN:String = "#quests:bonusName/razlom_coin";
+      public static const BONUSNAME_PAINTCOIN:String = "#quests:bonusName/paintcoin";
       
-      public static const BONUSNAME_ENTITLEMENTS_RAZLOMSUPERCOIN:String = "#quests:bonusName/entitlements/razlomsupercoin";
+      public static const LOOTBOX_BOXCOUNT:String = "#quests:lootBox/boxCount";
+      
+      public static const LOOTBOX_BOXESLABEL:String = "#quests:lootBox/boxesLabel";
+      
+      public static const DAILYWIDGET_NYCARD_TITLE:String = "#quests:dailyWidget/nyCard/title";
+      
+      public static const DAILYWIDGET_NYCARD_TOOLTIP_HEADER:String = "#quests:dailyWidget/nyCard/tooltip/header";
+      
+      public static const DAILYWIDGET_NYCARD_TOOLTIP_BODY_DEFAULT:String = "#quests:dailyWidget/nyCard/tooltip/body/default";
+      
+      public static const DAILYWIDGET_NYCARD_TOOLTIP_BODY_DONE:String = "#quests:dailyWidget/nyCard/tooltip/body/done";
+      
+      public static const DAILYWIDGET_NYCARD_TOOLTIP_BODY_DISABLED:String = "#quests:dailyWidget/nyCard/tooltip/body/disabled";
       
       public static const BATTLECONDITION_STATE_ENUM:Array = [BATTLECONDITION_STATE_COMPLETED,BATTLECONDITION_STATE_COMPLETED_PERFECTLY,BATTLECONDITION_STATE_IN_PROGRESS,BATTLECONDITION_STATE_FAILED];
       

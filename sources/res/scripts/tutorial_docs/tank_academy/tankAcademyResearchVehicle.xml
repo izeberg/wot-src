@@ -17,6 +17,7 @@
 				<inactivate>ResearchVehicleDialogOpening</inactivate>
 				<inactivate>VehicleResearched</inactivate>
 				<inactivate>BuyVehicleClicked</inactivate>
+				<run-trigger>MissionsTabValidationTrigger</run-trigger>
 			</post-effects>
 			<runtime-effects>
 				<show-hint>
@@ -418,6 +419,14 @@
 			<on-effects>
 				<close-hint>ResearchVehicleHint</close-hint>
 				<close-hint>BuyVehicleHint</close-hint>
+				<refuse-training/>
+			</on-effects>
+		</trigger>
+		<trigger>
+			MissionsTabValidationTrigger
+			<type>missions-tab-changed</type>
+			<alias>BattleMattersMissionView</alias>
+			<on-effects>
 				<refuse-training/>
 			</on-effects>
 		</trigger>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G195_Atomic_Panzer/normal/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.285920 -0.280456 -1.465580</min>
+		<max>0.290543 0.666969 4.982585</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G195_Atomic_Panzer/normal/lod3/Gun_01</nodefullVisual>
+</root>

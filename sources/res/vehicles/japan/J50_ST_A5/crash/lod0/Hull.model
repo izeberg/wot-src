@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<parent>vehicles/japan/J50_ST_A5/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.693794 -0.854747 -3.432458</min>
+		<max>1.675506 0.837404 3.313604</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/japan/J50_ST_A5/crash/lod0/Hull</nodefullVisual>
+</root>

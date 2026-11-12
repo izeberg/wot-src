@@ -24,7 +24,7 @@ package net.wg.gui.battle.views
    import net.wg.gui.battle.views.piercingDebugPanel.PiercingDebugPanel;
    import net.wg.gui.battle.views.postmortemPanel.BasePostmortemPanel;
    import net.wg.gui.battle.views.postmortemPanel.PostmortemPanel;
-   import net.wg.gui.battle.views.ribbonsPanel.RibbonsPanelBase;
+   import net.wg.gui.battle.views.ribbonsPanel.RibbonsPanel;
    import net.wg.gui.battle.views.rocketAcceleratorPanel.RocketAcceleratorPanel;
    import net.wg.gui.battle.views.thermalVisionPanel.ThermalVisionPanel;
    import net.wg.gui.battle.views.vehicleMessages.VehicleMessages;
@@ -81,7 +81,7 @@ package net.wg.gui.battle.views
       
       public var battleTimer:BattleTimerMeta = null;
       
-      public var ribbonsPanel:RibbonsPanelBase = null;
+      public var ribbonsPanel:RibbonsPanel = null;
       
       public var perksPanel:PerksPanel = null;
       

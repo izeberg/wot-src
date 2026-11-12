@@ -11,7 +11,7 @@ from gui.Scaleform.daapi.view.dialogs import DIALOG_BUTTON_ID, I18nConfirmDialog
 from gui.Scaleform.daapi.view.dialogs.ConfirmModuleMeta import SellModuleMeta
 from gui.Scaleform.daapi.view.lobby.clans.clan_helpers import getClanQuestURL
 from gui.Scaleform.daapi.view.lobby.referral_program.referral_program_helpers import getReferralProgramURL
-from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getBuyCollectibleVehiclesUrl, getClientControlledCloseCtx, getShopURL, getTelecomRentVehicleUrl
+from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getBuyCollectibleVehiclesUrl, getClientControlledCloseCtx, getShopURL, getTelecomRentVehicleUrl, getCustomizationResourceUrl
 from gui.Scaleform.framework import ScopeTemplates
 from gui.Scaleform.framework.entities.View import ViewKey
 from gui.Scaleform.framework.entities.sf_window import SFWindow
@@ -637,6 +637,7 @@ def goToHeroTankOnScene(vehTypeCompDescr, previewAlias=VIEW_ALIAS.LOBBY_HANGAR, 
                 else:
                     showHeroTankPreview(vehTypeCompDescr, previewAlias=previewAlias, previewBackCb=previewBackCb, previousBackAlias=previousBackAlias, hangarVehicleCD=hangarVehicleCD)
             ClientSelectableCameraObject.switchCamera(entity, 'HeroTank')
+            entity.onSelect()
             break
 
     return
@@ -1116,8 +1117,9 @@ def findAndLoadWindow(useQueue, windowType, *args, **kwargs):
         return w
 
     newWindow = windowType(*args, **kwargs)
+    priority = kwargs.get('priority', Priority.MEDIUM)
     if useQueue:
-        notificationMgr.append(WindowNotificationCommand(newWindow))
+        notificationMgr.append(WindowNotificationCommand(newWindow, priority))
     else:
         newWindow.load()
     return newWindow
@@ -1475,6 +1477,13 @@ def showBattlePassRewardsSelectionWindow(chapterID=0, level=0, onRewardsReceived
 def showEpicRewardsSelectionWindow(onRewardsReceivedCallback=None, onCloseCallback=None, onLoadedCallback=None, isAutoDestroyWindowsOnReceivedRewards=True):
     from gui.impl.lobby.frontline.rewards_selection_view import RewardsSelectionWindow
     window = RewardsSelectionWindow(onRewardsReceivedCallback, onCloseCallback, onLoadedCallback, isAutoDestroyWindowsOnReceivedRewards)
+    window.load()
+    return window
+
+
+def showCustomizationResourceFilterPopoverWindow(event, activeTabId, filters, dataProvider, parent=None):
+    from gui.impl.lobby.customization_resource.customization_resource_filter_popover_view import CustomizationResourceFilterPopoverViewWindow
+    window = CustomizationResourceFilterPopoverViewWindow(event, activeTabId, filters, dataProvider, parent or getParentWindow())
     window.load()
     return window
 
@@ -2355,6 +2364,42 @@ def showSummerSaleIntroWindow():
     from gui.impl.lobby.summer_sale.summer_sale_intro_page_view import SummerSaleIntroPageView
     window = LobbyWindow(content=SummerSaleIntroPageView(R.views.lobby.summer_sale.SummerSaleIntroPageView()), wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN)
     window.load()
+
+
+def showCustomizationResourceMainWindow():
+    from gui.impl.lobby.customization_resource.customization_resource_main_view import CustomizationResourceMainViewWindow
+    CustomizationResourceMainViewWindow().load()
+
+
+def showCustomizationResourceExitConfirmDialog():
+    from gui.impl.lobby.customization_resource.dialogs import showCustomizationResourceExitConfirmDialog as showCustomizationResourceDialog
+    return showCustomizationResourceDialog()
+
+
+def showCustomizationResourceRewardWindow(rewards, parent=None):
+    from gui.impl.lobby.customization_resource.customization_resource_reward_view import CustomizationResourceRewardViewWindow
+    window = CustomizationResourceRewardViewWindow(rewards, parent=parent)
+    window.load()
+
+
+def showCustomizationResourceVideoRewardWindow(parent=None, closeCallback=None):
+    from gui.impl.lobby.customization_resource.customization_resource_video_reward_view import CustomizationResourceVideoRewardViewWindow
+    window = CustomizationResourceVideoRewardViewWindow(parent, closeCallback)
+    window.load()
+
+
+def showCustomizationResourceIntroPageWindow(parent=None):
+    from gui.impl.lobby.customization_resource.customization_resource_intro_page_view import CustomizationResourceIntroPageViewWindow
+    window = CustomizationResourceIntroPageViewWindow(parent)
+    window.load()
+
+
+def showCustomizationResourceShopPage(parent=None):
+    from account_helpers.AccountSettings import SHOWN_CUSTOMIZATION_RESOURCE_INTRO
+    from account_helpers import AccountSettings
+    showShop(getCustomizationResourceUrl())
+    if not AccountSettings.getSettings(SHOWN_CUSTOMIZATION_RESOURCE_INTRO):
+        showCustomizationResourceIntroPageWindow(parent)
 
 
 def showSummerSaleInfoPage():

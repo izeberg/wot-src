@@ -54,6 +54,10 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_forward/pfx_textures/ny27_clapperboard.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_forward/pfx_textures/280_cosmic.dds
 				<type>primary</type>
 			</path>
@@ -321,7 +325,15 @@
 				<type>water</type>
 			</path>
 			<path>
+				particles/content_deferred/pfx_textures/flare_1.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_deferred/pfx_textures/280_cosmic_plasma.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/ny27_clapperboard.dds
 				<type>primary</type>
 			</path>
 			<path>

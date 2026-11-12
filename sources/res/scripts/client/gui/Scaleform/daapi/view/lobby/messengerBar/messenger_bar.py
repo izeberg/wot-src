@@ -1,10 +1,11 @@
-import BigWorld
+from account_helpers.newbie_chat_lock import CHAT_LOCK_CACHE_SYNC_REASONS
 from account_helpers.settings_core.settings_constants import SESSION_STATS
 from adisp import adisp_process
 from constants import PREBATTLE_TYPE, IS_DEVELOPMENT
 from frameworks.wulf import WindowLayer
 from gui import makeHtmlString
 from gui import SystemMessages
+from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.lobby.referral_program.referral_program_helpers import isReferralProgramEnabled
 from gui.Scaleform.daapi.view.lobby.session_stats.session_stats_settings_controller import SessionStatsSettingsController
@@ -31,7 +32,6 @@ from skeletons.gui.game_control import IVehicleComparisonBasket, IReferralProgra
 from skeletons.gui.shared import IItemsCache
 from soft_exception import SoftException
 from skeletons.gui.lobby_context import ILobbyContext
-from PlayerEvents import g_playerEvents
 
 def _formatIcon(iconName, width=32, height=32, path='html_templates:lobby/messengerBar'):
     return makeHtmlString(path, 'iconTemplate', {'iconName': iconName, 'width': width, 'height': height})
@@ -151,7 +151,8 @@ class MessengerBar(MessengerBarMeta, IGlobalListener):
         self.__sessionStatsBtnOnlyOnceHintShow = not sessionStatsSettings[SESSION_STATS.ONLY_ONCE_HINT_SHOWN_FIELD]
         self.__updateSessionStatsBtn()
         self.as_setChannelButtonVisibleS(True)
-        g_playerEvents.onNewbieChatLockingStateChanged += self.__updateInitData
+        self._itemsCache.onSyncCompleted += self.__onItemsCacheSyncCompleted
+        g_clientUpdateManager.addCallbacks({'stats.restrictions': self.__updateInitData})
 
     def _dispose(self):
         self.removeListener(events.FightButtonEvent.FIGHT_BUTTON_UPDATE, self.__handleFightButtonUpdated, scope=EVENT_BUS_SCOPE.LOBBY)
@@ -162,7 +163,8 @@ class MessengerBar(MessengerBarMeta, IGlobalListener):
         self._referralCtrl.onReferralProgramEnabled -= self.__onReferralProgramEnabled
         self._referralCtrl.onPointsChanged -= self.__onPointsChanged
         self.stopGlobalListening()
-        g_playerEvents.onNewbieChatLockingStateChanged -= self.__updateInitData
+        self._itemsCache.onSyncCompleted -= self.__onItemsCacheSyncCompleted
+        g_clientUpdateManager.removeObjectCallbacks(self)
         super(MessengerBar, self)._dispose()
 
     def __onReferralProgramEnabled(self):
@@ -247,7 +249,12 @@ class MessengerBar(MessengerBarMeta, IGlobalListener):
         isEnabled = event.ctx.get('isEnabled', False)
         self.as_setReferralButtonEnabledS(isEnabled)
 
-    def __updateInitData(self):
+    def __onItemsCacheSyncCompleted(self, reason, _=None):
+        if reason not in CHAT_LOCK_CACHE_SYNC_REASONS:
+            return
+        self.__updateInitData()
+
+    def __updateInitData(self, *_):
         isChannelsLocked = self.__isChannelsLocked()
         channelsTooltipData = self.__getChannelsLockedTooltipData() if isChannelsLocked else None
         self.as_setInitDataS({'channelsLocked': isChannelsLocked, 
@@ -267,7 +274,8 @@ class MessengerBar(MessengerBarMeta, IGlobalListener):
 
     @staticmethod
     def __isChannelsLocked():
-        return bool(BigWorld.player().AccountNewbieChatLockComponent.chatLocked)
+        from account_helpers.newbie_chat_lock import isNewbieChatLocked
+        return isNewbieChatLocked()
 
     @staticmethod
     def __getChannelsLockedTooltipData():

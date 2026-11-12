@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G195_Atomic_Panzer/normal/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.817752 -0.778646 -3.973093</min>
+		<max>1.782450 0.734977 4.049519</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G195_Atomic_Panzer/normal/lod1/Hull</nodefullVisual>
+</root>

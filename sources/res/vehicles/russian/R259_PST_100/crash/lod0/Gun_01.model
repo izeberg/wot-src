@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.434346 -0.366719 -1.140113</min>
+		<max>0.486717 0.372910 4.467427</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R259_PST_100/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R259_PST_100/crash/lod0/Gun_01</nodefullVisual>
+</root>

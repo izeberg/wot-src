@@ -68,6 +68,9 @@ msgstr "A-220A"
 msgid "A_220A_Ch76"
 msgstr "A-220A"
 
+msgid "A_220A_Ch77"
+msgstr "A-220A"
+
 msgid "A_220B_1_QL"
 msgstr "A-220B QL"
 
@@ -426,24 +429,6 @@ msgstr ""
 
 msgid "Ch22_113"
 msgstr "113"
-
-msgid "Ch22_113P"
-msgstr "113"
-
-msgid "Ch22_113P_descr"
-msgstr ""
-"Распрацоўка мадэлі 113 пачалася ў 1963 годзе ў сувязі з неабходнасцю "
-"стварэння альтэрнатывы WZ-111. Праект грунтаваўся на адпрацаваных вузлах і "
-"агрэгатах сярэдніх танкаў. Аднак у сувязі са з'яўленнем класа асноўных "
-"баявых танкаў працы над мадэллю 113 былі спынены."
-
-msgid "Ch22_113P_long_special"
-msgstr ""
-"Кітайскі цяжкі танк Х узроўню. ТТХ аналагічныя акцыйнаму танку 113: высокая "
-"мабільнасць, рацыянальныя вуглы нахілу брані, добрая забойнасць за хвіліну."
-
-msgid "Ch22_113P_short_special"
-msgstr "Добрая рухомасць, магутная і хуткастрэльная гармата"
 
 msgid "Ch22_113_Beijing_Opera"
 msgstr "113 Beijing Opera"
@@ -1526,7 +1511,7 @@ msgid "Ch75_ZTQ_56_short"
 msgstr "ZTQ-56"
 
 msgid "Ch75_ZTQ_56_short_special"
-msgstr "Реактивные ускорители, отличное бронепробитие"
+msgstr "Ракетные ускорители, отличное бронепробитие"
 
 msgid "Ch76_HSD_1"
 msgstr "HSD-1"
@@ -1549,6 +1534,28 @@ msgstr "HSD-1"
 
 msgid "Ch76_HSD_1_short_special"
 msgstr "Хорошее лобовое бронирование, ракетные ускорители"
+
+msgid "Ch77_WZ_120_SPG"
+msgstr "WZ-120 SPG"
+
+msgid "Ch77_WZ_120_SPG_descr"
+msgstr ""
+"В начале становления китайской школы танкостроения инженеры использовали опыт СССР и стран «запада», экспериментируя и сочетая их конструкции со своими идеями, что приводило к неожиданным результатам. Одним из таких проектов была САУ-истребитель танков с условным наименованием WZ-120 SPG. Машина задумывалась асимметричной с размещением водителя впереди, а остальных членов экипажа в кормовой рубке в одну линию вдоль правого борта. 130-мм пушка, созданная на основе советского орудия, была слева. Двигатель в центре, а трансмиссия и бортовые передачи в корме, через боевое отделение шел карданный вал. Такое размещение мотора формировало «горб» на крыше и ограничение углов горизонтальной и вертикальной наводки. ИК-прибор наблюдения водителя от Т-54А использовался как ночной прицел грубой наводки. До практической реализации этот проект не дошёл, оставшись как курьёз на бумаге.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "Ch77_WZ_120_SPG_long_special"
+msgstr ""
+"Динамичная самоходка со скромным бронированием, но комфортным и пробивным "
+"орудием с высоким уроном в минуту. Уникальный внешний вид, необычная "
+"компоновка и некоторые ограничения по удобству позиционирования диктуют "
+"преимущественно засадную тактику игры."
+
+msgid "Ch77_WZ_120_SPG_short"
+msgstr "WZ-120 SPG"
+
+msgid "Ch77_WZ_120_SPG_short_special"
+msgstr "Хорошая динамика, комфортное орудие"
 
 msgid "Chassis_01_Ch24_Type64_SH"
 msgstr "Type 64BL"
@@ -1674,9 +1681,6 @@ msgid "Chassis_Ch21_T34_2"
 msgstr "Type T-34M"
 
 msgid "Chassis_Ch22_113"
-msgstr "113"
-
-msgid "Chassis_Ch22_113P"
 msgstr "113"
 
 msgid "Chassis_Ch22_113_Beijing_Opera"
@@ -1874,6 +1878,9 @@ msgstr "ZTQ-56"
 msgid "Chassis_Ch76_HSD_1"
 msgstr "HSD-1"
 
+msgid "Chassis_Ch77_WZ_120_SPG"
+msgstr "WZ-120"
+
 msgid "Continental_AOSI_895_5_Prem_SH"
 msgstr "Contіnental AOSі895-5"
 
@@ -2012,9 +2019,6 @@ msgid "Turret_1_Ch21_T34_SH"
 msgstr "T-34BL"
 
 msgid "Turret_1_Ch22_113"
-msgstr "113"
-
-msgid "Turret_1_Ch22_113P"
 msgstr "113"
 
 msgid "Turret_1_Ch22_113_Beijing_Opera"
@@ -2167,6 +2171,9 @@ msgstr "ZTQ-56"
 msgid "Turret_1_Ch76_HSD_1"
 msgstr "HSD-1"
 
+msgid "Turret_1_Ch77_WZ_120_SPG"
+msgstr "WZ-120"
+
 msgid "Turret_2_Ch04_T34_1"
 msgstr "T-34-1 model 2"
 
@@ -2250,6 +2257,9 @@ msgstr "Type 59 G"
 
 msgid "Type_165"
 msgstr "Type-165"
+
+msgid "Type_V12_5L_III_Ch77"
+msgstr "Type V12-5L-III"
 
 msgid "V-2"
 msgstr "V-2"
@@ -2698,6 +2708,9 @@ msgstr "Sha bao-471"
 msgid "_12V150_1"
 msgstr "12V150-1"
 
+msgid "_130mm_58_1_Ch77"
+msgstr "130 mm 58-I"
+
 msgid "_130mm_59-130T"
 msgstr "130 mm 59-130T"
 
@@ -2736,6 +2749,9 @@ msgstr "Chuan bei-482 QL"
 
 msgid "_130mm_CB-472_BZ74"
 msgstr "130mm CB-472M"
+
+msgid "_130mm_Cb_482_Ch77"
+msgstr "Сс-482Р"
 
 msgid "_130mm_Chuan_bei_462G"
 msgstr "Chuan bei-462G"
@@ -2776,11 +2792,17 @@ msgstr "Po-130F"
 msgid "_130mm_Po_130G"
 msgstr "Po-130G"
 
+msgid "_130mm_Po_482S_Ch77"
+msgstr "Po-482S"
+
 msgid "_130mm_Po_M_65"
 msgstr "Po M-65"
 
 msgid "_130mm_SB-472_BZ74"
 msgstr "130mm SB-472M"
+
+msgid "_130mm_Sb_482M_Ch77"
+msgstr "100 mm Sb-472"
 
 msgid "_130mm_Sha_bao_482G"
 msgstr "Sha bao-482G"

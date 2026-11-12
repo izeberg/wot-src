@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root_Launcher</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>cap_LB</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.609871 -0.068761 0.592217</row3>
+				</transform>
+				<node>
+					<identifier>cap_actuator_LB</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000341</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>-0.000341 0.000000 1.000000</row2>
+						<row3>-0.024801 0.041233 0.064981</row3>
+					</transform>
+					<node>
+						<identifier>cap_actuator_LB_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 -0.000341</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000341 0.000000 -1.000000</row2>
+							<row3>1.634448 0.027528 -0.657756</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>cap_LB_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.609871 0.068761 -0.592217</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>cap_LT</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.609871 0.231389 0.592217</row3>
+				</transform>
+				<node>
+					<identifier>cap_actuator_LT</identifier>
+					<transform>
+						<row0>1.000000 0.000000 -0.000100</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000100 0.000000 1.000000</row2>
+						<row3>-0.024801 -0.049377 0.064981</row3>
+					</transform>
+					<node>
+						<identifier>cap_actuator_LT_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000100</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000100 0.000000 -1.000000</row2>
+							<row3>1.634737 -0.182012 -0.657035</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>cap_LT_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.609871 -0.231389 -0.592217</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>cap_RB</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.609870 -0.068761 0.592217</row3>
+				</transform>
+				<node>
+					<identifier>cap_actuator_RB</identifier>
+					<transform>
+						<row0>1.000000 0.000000 -0.000341</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000341 0.000000 1.000000</row2>
+						<row3>0.024801 0.041233 0.064981</row3>
+					</transform>
+					<node>
+						<identifier>cap_actuator_RB_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000341</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000341 0.000000 -1.000000</row2>
+							<row3>-1.634447 0.027528 -0.657756</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>cap_RB_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.609870 0.068761 -0.592217</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>cap_RT</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.609870 0.231389 0.592217</row3>
+				</transform>
+				<node>
+					<identifier>cap_actuator_RT</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000100</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>-0.000100 0.000000 1.000000</row2>
+						<row3>0.024801 -0.049377 0.064981</row3>
+					</transform>
+					<node>
+						<identifier>cap_actuator_RT_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 -0.000100</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000100 0.000000 -1.000000</row2>
+							<row3>-1.634736 -0.182012 -0.657035</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>cap_RT_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.609870 -0.231389 -0.592217</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>cap_piston_LB</identifier>
+				<transform>
+					<row0>0.929738 -0.000000 0.368222</row0>
+					<row1>-0.051861 0.990032 0.130946</row1>
+					<row2>-0.364552 -0.140842 0.920470</row2>
+					<row3>-1.635545 -0.007737 0.557572</row3>
+				</transform>
+				<node>
+					<identifier>cap_piston_LB_BlendBone</identifier>
+					<transform>
+						<row0>0.929738 -0.051861 -0.364552</row0>
+						<row1>0.000000 0.990032 -0.140842</row1>
+						<row2>-0.368222 -0.130946 -0.920470</row2>
+						<row3>1.315318 -0.150173 -1.110560</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>cap_piston_LT</identifier>
+				<transform>
+					<row0>0.930182 -0.000000 0.367098</row0>
+					<row1>0.051719 0.990026 -0.131050</row1>
+					<row2>-0.363437 0.140887 0.920904</row2>
+					<row3>-1.634597 0.160868 0.557569</row3>
+				</transform>
+				<node>
+					<identifier>cap_piston_LT_BlendBone</identifier>
+					<transform>
+						<row0>0.930182 0.051719 -0.363437</row0>
+						<row1>0.000000 0.990026 0.140887</row1>
+						<row2>-0.367098 0.131050 -0.920904</row2>
+						<row3>1.315790 -0.001654 -1.130204</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>cap_piston_RB</identifier>
+				<transform>
+					<row0>0.927698 0.000000 -0.373332</row0>
+					<row1>0.052462 0.990077 0.130364</row1>
+					<row2>0.369628 -0.140525 0.918492</row2>
+					<row3>1.635557 -0.007746 0.557587</row3>
+				</transform>
+				<node>
+					<identifier>cap_piston_RB_BlendBone</identifier>
+					<transform>
+						<row0>0.927698 0.052462 0.369628</row0>
+						<row1>0.000000 0.990077 -0.140525</row1>
+						<row2>0.373332 -0.130364 -0.918492</row2>
+						<row3>-1.309137 -0.150825 -1.117776</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>cap_piston_RT</identifier>
+				<transform>
+					<row0>0.928367 0.000000 -0.371666</row0>
+					<row1>-0.052323 0.990041 -0.130696</row1>
+					<row2>0.367964 0.140781 0.919121</row2>
+					<row3>1.634609 0.160874 0.557582</row3>
+				</transform>
+				<node>
+					<identifier>cap_piston_RT_BlendBone</identifier>
+					<transform>
+						<row0>0.928367 -0.052323 0.367964</row0>
+						<row1>0.000000 0.990041 0.140781</row1>
+						<row2>0.371666 0.130696 -0.919121</row2>
+						<row3>-1.310283 -0.000869 -1.136611</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Root_Launcher_BlendBone</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>0.000000 0.000000 -0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Root_Launcher_BlendBone</node>
+		<node>cap_LT_BlendBone</node>
+		<node>cap_LB_BlendBone</node>
+		<node>cap_RT_BlendBone</node>
+		<node>cap_RB_BlendBone</node>
+		<geometry>
+			<vertices>turret_anim_02Shape.vertices</vertices>
+			<primitive>turret_anim_02Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_turret_01_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A185_MBT_Revised_V_E2/MBT_Revised_V_E2_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A185_MBT_Revised_V_E2/MBT_Revised_V_E2_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A185_MBT_Revised_V_E2/MBT_Revised_V_E2_turret_01_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A185_MBT_Revised_V_E2/MBT_Revised_V_E2_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+				</material>
+				<groupOrigin>0.001445 0.083671 -0.236155</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.579127 -0.220820 -0.148642</min>
+		<max>1.582017 0.388162 0.620953</max>
+	</boundingBox>
+	<geometrySize>9650</geometrySize>
+	<minUVDensity>0.006882</minUVDensity>
+</root>

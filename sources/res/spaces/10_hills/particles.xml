@@ -4,26 +4,6 @@
 		<name>default</name>
 		<preloadTextures>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_misc_5.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_splash_3.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_dirt.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/tracers.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_leaves.dds
-				<type>primary</type>
-			</path>
-			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_misc_2.dds
 				<type>primary</type>
 			</path>
@@ -32,11 +12,23 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_fire_4.dds
+				particles/content_forward/pfx_textures/eff_tex_split_dirt.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_smoke_7.dds
+				particles/content_forward/pfx_textures/eff_tex_split_misc_6.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_fire_2.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_misc_5.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_sparks.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -48,23 +40,35 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_smoke_7.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_fire_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/tracers.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_forward/pfx_textures/eff_tex_long.dds
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_forward/pfx_textures/ny27_clapperboard.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_splash_3.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_splash_4.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_fire_2.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_misc_6.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_smoke_4.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -88,7 +92,7 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_sparks.dds
+				particles/content_forward/pfx_textures/glow_bloom.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -167,7 +171,6 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envsu_83_03_oldfurniture_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envsu_83_03_oldfurniture_8.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_fuel_env418_oldgmercedes.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_fuel_env608_sovbus.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_fuel_mle008_canisters1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf001_woodfence.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf002_woodgates.vfx</fn_effect_bin>
@@ -190,11 +193,12 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf_19_02_stonefence_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf_19_02_stonefence_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gafnw_001_villagefance_1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle009_boxcamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle009_boxcamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle016_boxeshowitzer.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle025_bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mleaf_002_radiolocator.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mlesu_83_02_opelblitz_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_rw406_indicators.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_smallpole.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall_small.vfx</fn_effect_bin>
@@ -293,7 +297,6 @@
 		<fn_effect_bin>particles/environment/objects/inf_envsu_83_03_oldfurniture_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envsu_83_03_oldfurniture_8.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_env418_oldgmercedes2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_fuel_env608_sovbus.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_mle008_canisters1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf001_woodfence.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf002_woodgates.eff</fn_effect_bin>
@@ -316,11 +319,12 @@
 		<fn_effect_bin>particles/environment/objects/inf_gaf_19_02_stonefence_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf_19_02_stonefence_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gafnw_001_villagefance_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle016_boxeshowitzer.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mle025_bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mleaf_002_radiolocator.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_mlesu_83_02_opelblitz_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_rw406_indicators.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_smallpole.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_fall_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_fall_small.eff</fn_effect_bin>
@@ -358,6 +362,7 @@
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_plank_01.visual</preloadVisual>
@@ -369,27 +374,11 @@
 		<name>default</name>
 		<preloadTextures>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_splash_3.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_dirt.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_leaves.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_smoke_4.dds
-				<type>primary</type>
-			</path>
-			<path>
 				particles/content_deferred/pfx_textures/eff_tex_split_misc_3.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_misc_5.dds
+				particles/content_deferred/pfx_textures/eff_leaves.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -401,7 +390,15 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_smoke_7.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_misc_5.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_dirt.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_sparks.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -413,11 +410,23 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_2.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_4.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_deferred/pfx_textures/eff_rocket_accelerator.dds
 				<type>primary</type>
 			</path>
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_splash_3.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -429,6 +438,10 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_deferred/pfx_textures/eff_tex_split_fire_smoke_1.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_deferred/pfx_textures/eff_tex_split_smoke_8.dds
 				<type>primary</type>
 			</path>
@@ -437,15 +450,7 @@
 				<type>water</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_fire_4.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_fire_smoke_1.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_fire_2.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_smoke_7.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -461,10 +466,6 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_sparks.dds
-				<type>primary</type>
-			</path>
-			<path>
 				particles/content_deferred/pfx_textures/tracers.dds
 				<type>primary</type>
 			</path>
@@ -474,6 +475,18 @@
 			</path>
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex_distortion.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/glow_bloom.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/flare_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/ny27_clapperboard.dds
 				<type>primary</type>
 			</path>
 		</preloadTextures>
@@ -552,7 +565,6 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envsu_83_03_oldfurniture_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envsu_83_03_oldfurniture_8.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_fuel_env418_oldgmercedes.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_fuel_env608_sovbus.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_fuel_mle008_canisters1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf001_woodfence.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf002_woodgates.vfx</fn_effect_bin>
@@ -575,11 +587,12 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf_19_02_stonefence_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf_19_02_stonefence_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gafnw_001_villagefance_1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle009_boxcamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle009_boxcamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle016_boxeshowitzer.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle025_bobbin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mleaf_002_radiolocator.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mlesu_83_02_opelblitz_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_rw406_indicators.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_smallpole.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall_small.vfx</fn_effect_bin>
@@ -678,7 +691,6 @@
 		<fn_effect_bin>particles/environment/objects/inf_envsu_83_03_oldfurniture_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envsu_83_03_oldfurniture_8.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_env418_oldgmercedes2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_fuel_env608_sovbus.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_mle008_canisters1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf001_woodfence.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf002_woodgates.eff</fn_effect_bin>
@@ -701,11 +713,12 @@
 		<fn_effect_bin>particles/environment/objects/inf_gaf_19_02_stonefence_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf_19_02_stonefence_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gafnw_001_villagefance_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mle009_boxcamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle016_boxeshowitzer.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mle025_bobbin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mleaf_002_radiolocator.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_mlesu_83_02_opelblitz_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_rw406_indicators.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_smallpole.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_fall_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_fall_small.eff</fn_effect_bin>
@@ -743,6 +756,7 @@
 		<preloadVisual>particles/mesh_particles/wood_bamboo_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_plank_01.visual</preloadVisual>

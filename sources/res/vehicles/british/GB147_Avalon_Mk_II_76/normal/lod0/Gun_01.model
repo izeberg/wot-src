@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB147_Avalon_Mk_II_76/normal/lod1/Gun_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.670297 -0.213761 -0.815170</min>
+		<max>0.543128 0.241500 1.523695</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB147_Avalon_Mk_II_76/normal/lod0/Gun_01</nodefullVisual>
+</root>

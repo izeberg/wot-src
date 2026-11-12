@@ -82,6 +82,7 @@ def getViewSettings():
     from gui.impl.lobby.hangar.modified_vehicle_parameters import ModifiedVehicleParameters
     from gui.Scaleform.daapi.view.lobby.hangar.entry_points.paragons_entry_point import ParagonsBannerEntryPoint
     from gui.Scaleform.daapi.view.lobby.hangar.entry_points.summer_sale_entry_point import SummerSaleEntryPoint
+    from gui.Scaleform.daapi.view.lobby.hangar.entry_points.customization_resource_entry_point import CustomizationResourceEntryPoint
     from gui.impl.lobby.hangar.battle_modifiers_panel_view import BattleModifiersPanelView
     registerBattleModifiersPanel(R.views.lobby.hangar.BattleModifiersPanelView(), BattleModifiersPanelView)
     return (
@@ -141,7 +142,8 @@ def getViewSettings():
      ComponentSettings(HANGAR_ALIASES.EARLY_ACCESS_SECONDARY_ENTRY_POINT, EarlyAccessEntryPoint, ScopeTemplates.DEFAULT_SCOPE),
      ComponentSettings(HANGAR_ALIASES.BATTLE_MODIFIERS_PANEL, BattleModifiersPanelInject, ScopeTemplates.DEFAULT_SCOPE),
      ComponentSettings(HANGAR_ALIASES.PARAGONS_BANNER_ENTRY_POINT, ParagonsBannerEntryPoint, ScopeTemplates.DEFAULT_SCOPE),
-     ComponentSettings(HANGAR_ALIASES.SUMMER_SALE_ENTRY_POINT, SummerSaleEntryPoint, ScopeTemplates.DEFAULT_SCOPE))
+     ComponentSettings(HANGAR_ALIASES.SUMMER_SALE_ENTRY_POINT, SummerSaleEntryPoint, ScopeTemplates.DEFAULT_SCOPE),
+     ComponentSettings(HANGAR_ALIASES.CUSTOMIZATION_RESOURCE_ENTRY_POINT, CustomizationResourceEntryPoint, ScopeTemplates.DEFAULT_SCOPE))
 
 
 def getBusinessHandlers():
@@ -180,3 +182,10 @@ class HangarPackageBusinessHandler(PackageBusinessHandler):
          (
           VIEW_ALIAS.MANUAL_BROWSER_VIEW, self.loadViewByCtxEvent))
         super(HangarPackageBusinessHandler, self).__init__(listeners, app_settings.APP_NAME_SPACE.SF_LOBBY, EVENT_BUS_SCOPE.LOBBY)
+
+
+def getHangarConfig(manager):
+    from gui.Scaleform.daapi.view.lobby.hangar.Hangar import HangarSoundSpaceSettings
+    from gui.sounds.filters import StatesGroup, States
+    settings = HangarSoundSpaceSettings(name='hangar', entranceStates={'STATE_hangar_place': 'STATE_hangar_place_garage', StatesGroup.HANGAR_FILTERED: States.HANGAR_FILTERED_OFF}, exitStates={}, persistentSounds=(), stoppableSounds=(), priorities=(), autoStart=True, enterEvent='', exitEvent='')
+    manager.addInstance(HangarSoundSpaceSettings, settings)

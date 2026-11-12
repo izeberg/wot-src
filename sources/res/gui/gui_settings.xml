@@ -1378,13 +1378,13 @@
 				<type>url</type>
 			</item>
 			<item>
-				$PARAMS(/white-tiger-overlay/wt_category)
-				<name>buyLootboxes</name>
+				$PARAMS(/new_year_car)
+				<name>customizationResourceShop</name>
 				<type>url</type>
 			</item>
 			<item>
-				$PARAMS(/portal_category)
-				<name>portalShop</name>
+				$PARAMS(/white-tiger-overlay/wt_category)
+				<name>buyLootboxes</name>
 				<type>url</type>
 			</item>
 		</value>
@@ -1905,6 +1905,23 @@
 		</value>
 	</setting>
 	<setting>
+		<name>comp7LeaderboardURL</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://comp7-leaderboard-ru.tanki.su/
+				<name>default</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://comp7-leaderboard-rpt.tanki.su/
+				<name>CT</name>
+				<type>url</type>
+			</item>
+		</value>
+	</setting>
+	<setting>
 		<name>comp7SkillParamsOrder</name>
 		<type>list</type>
 		<value>
@@ -1954,29 +1971,13 @@
 						<type>list</type>
 						<value>
 							<item>
-								<name>rework</name>
+								<name>ranks</name>
 								<type>list</type>
 								<value>
 									<item>
 										<name>name</name>
 										<type>string</type>
 										<value>ranks</value>
-									</item>
-									<item>
-										<name>type</name>
-										<type>string</type>
-										<value>page</value>
-									</item>
-								</value>
-							</item>
-							<item>
-								<name>rework</name>
-								<type>list</type>
-								<value>
-									<item>
-										<name>name</name>
-										<type>string</type>
-										<value>rework</value>
 									</item>
 									<item>
 										<name>type</name>
@@ -2323,18 +2324,6 @@
 		<value>
 			<item>
 				https://webbrg.tanki.su/ru/promocontent/chain_of_entrances/
-				<name>default</name>
-				<type>url</type>
-			</item>
-		</value>
-	</setting>
-	<setting>
-		<name>portalInfoPageURL</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/razlom26/
 				<name>default</name>
 				<type>url</type>
 			</item>

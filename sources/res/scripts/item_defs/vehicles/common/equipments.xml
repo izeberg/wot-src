@@ -9813,7 +9813,7 @@
 			</bombsPattern>
 			<mineParams>
 				<activationDelay>2</activationDelay>
-				<triggerRadius>6</triggerRadius>
+				<triggerRadius>4</triggerRadius>
 				<triggerHeight>5</triggerHeight>
 				<triggerDepth>1</triggerDepth>
 				<influenceType>2</influenceType>
@@ -11390,7 +11390,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<crewBuff>
-				15 20 25
+				12 17 22
 				<exports>vse tooltip</exports>
 			</crewBuff>
 		</script>
@@ -11427,7 +11427,8 @@
 				<exports>vse</exports>
 			</heal>
 			<gunReloadTimeBuff>
-				5
+				5.5
+				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
 			<tickInterval>
@@ -11660,7 +11661,7 @@
 				<exports>vse tooltip</exports>
 			</cooldownSeconds>
 			<duration>
-				12 18 23
+				10 15 20
 				<exports>vse tooltip</exports>
 			</duration>
 			<enginePowerFactor>
@@ -11678,7 +11679,7 @@
 				<exports>vse tooltip</exports>
 			</repairBuff>
 			<gunReloadBoost>
-				7.0
+				5.0
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</gunReloadBoost>
@@ -11833,7 +11834,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				10
+				20
 				<exports>vse tooltip</exports>
 			</cooldownSeconds>
 			<duration>

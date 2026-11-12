@@ -263,22 +263,6 @@
 			</value>
 		</message>
 		<message>
-			<name>abilityTeleportBlocked</name>
-			<type>list</type>
-			<value>
-				<item>_(#portal.portal_battle:player_errors/abilityTeleportBlocked)</item>
-				<item>yellow</item>
-			</value>
-		</message>
-		<message>
-			<name>guidedMissileTeleportBlocked</name>
-			<type>list</type>
-			<value>
-				<item>_(#portal.portal_battle:player_errors/guidedMissileTeleportBlocked)</item>
-				<item>yellow</item>
-			</value>
-		</message>
-		<message>
 			<name>comp7HunterNoDamagedEnemyVehicles</name>
 			<type>list</type>
 			<value>

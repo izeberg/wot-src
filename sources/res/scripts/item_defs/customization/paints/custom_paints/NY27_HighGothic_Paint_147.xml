@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<name>NY27_HighGothic_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31595</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_01_Paint_01_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_01_Paint_01_147/description</description>
+			<color>38 31 29 255</color>
+			<gloss>
+				0.5
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.3
+				<!--BW_String-->
+			</metallic>
+		</paint>
+		<paint>
+			<id>31596</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_02_Paint_01_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_02_Paint_01_147/description</description>
+			<color>38 35 37 255</color>
+			<gloss>
+				0.5
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.5
+				<!--BW_String-->
+			</metallic>
+		</paint>
+		<paint>
+			<id>31597</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_03_Paint_01_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_03_Paint_01_147/description</description>
+			<color>26 32 38 255</color>
+			<gloss>
+				0.6
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.3
+				<!--BW_String-->
+			</metallic>
+		</paint>
+		<paint>
+			<id>31600</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_04_Paint_02_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_04_Paint_02_147/description</description>
+			<color>26 32 38 255</color>
+			<gloss>
+				0.6
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.3
+				<!--BW_String-->
+			</metallic>
+		</paint>
+		<paint>
+			<id>31601</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_04_Paint_03_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_04_Paint_03_147/description</description>
+			<color>94 30 28 255</color>
+			<gloss>
+				0.7
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.7
+				<!--BW_String-->
+			</metallic>
+		</paint>
+	</itemGroup>
+</root>

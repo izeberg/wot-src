@@ -97,29 +97,46 @@ def __mergeCrewSkins(total, key, value, isLeaf, count, *args):
 
 def __mergeTokens(total, key, value, isLeaf=False, count=1, *args):
     totalTokens = total.setdefault(key, {})
+    limitsMultiplier = total.setdefault('limitsMultiplier', {})
     for tokenID, tokenData in value.iteritems():
-        total = totalTokens.setdefault(tokenID, {'count': 0, 'expires': {}, 'limit': 0})
-        total['count'] += count * tokenData.get('count', 1)
-        if not total['expires']:
-            total['expires'] = tokenData['expires']
+        totalToken = totalTokens.setdefault(tokenID, {'count': 0, 'expires': {}, 'limit': 0})
+        totalToken['count'] += count * tokenData.get('count', 1)
+        if not totalToken['expires']:
+            totalToken['expires'] = tokenData['expires']
         if 'limit' in tokenData:
-            total['limit'] = tokenData['limit'] if total['limit'] == 0 else max(total['limit'], tokenData['limit'])
+            totalToken['limit'] = tokenData['limit'] if totalToken['limit'] == 0 else max(totalToken['limit'], tokenData['limit'])
+        if 'limitsMultiplier' in tokenData:
+            if tokenID in limitsMultiplier:
+                limitsMultiplier[tokenID] += tokenData['limitsMultiplier']['count']
+            else:
+                limitsMultiplier[tokenID] = tokenData['limitsMultiplier']['count']
         extItems = tokenData.get('extItems', None)
         if extItems:
-            __mergeList(total, 'extItems', extItems, 1)
+            __mergeList(totalToken, 'extItems', extItems, 1)
 
+    if not limitsMultiplier:
+        del total['limitsMultiplier']
     return
 
 
 def __mergeGoodies(total, key, value, isLeaf=False, count=1, *args):
     totalGoodies = total.setdefault(key, {})
+    limitsMultiplier = total.setdefault('limitsMultiplier', {})
     for goodieID, goodieData in value.iteritems():
-        total = totalGoodies.setdefault(goodieID, {'count': 0, 'expires': {}, 'limit': 0})
-        total['count'] += count * goodieData.get('count', 1)
-        if not total['expires'] and 'expires' in goodieData:
-            total['expires'] = goodieData['expires']
+        totalGoodie = totalGoodies.setdefault(goodieID, {'count': 0, 'expires': {}, 'limit': 0})
+        totalGoodie['count'] += count * goodieData.get('count', 1)
+        if not totalGoodie['expires'] and 'expires' in goodieData:
+            totalGoodie['expires'] = goodieData['expires']
         if 'limit' in goodieData:
-            total['limit'] = goodieData['limit'] if total['limit'] == 0 else max(total['limit'], goodieData['limit'])
+            totalGoodie['limit'] = goodieData['limit'] if totalGoodie['limit'] == 0 else max(totalGoodie['limit'], goodieData['limit'])
+        if 'limitsMultiplier' in goodieData:
+            if goodieID in limitsMultiplier:
+                limitsMultiplier[goodieID] += goodieData['limitsMultiplier']['count']
+            else:
+                limitsMultiplier[goodieID] = goodieData['limitsMultiplier']['count']
+
+    if not limitsMultiplier:
+        del total['limitsMultiplier']
 
 
 def __mergeEntitlements(total, key, value, isLeaf=False, count=1, *args):
@@ -236,6 +253,15 @@ def __mergePreferredMapSlots(total, key, value, isLeaf, count, *args):
         preferredMapSlots[slotID] += count * slotDurationDays
 
 
+def __mergeLimitsMultiplier(total, key, value, isLeaf, count, *args):
+    limits = total.setdefault(key, {})
+    for bonus, limit in value.iteritems():
+        if bonus in limits:
+            limits[bonus] += count * limit
+        else:
+            limits[bonus] = count * limit
+
+
 BONUS_MERGERS = {'credits': __mergeValue, 
    'gold': __mergeValue, 
    'xp': __mergeValue, 
@@ -279,7 +305,12 @@ BONUS_MERGERS = {'credits': __mergeValue,
    'dailyQuestReroll': __mergeDailyQuestReroll, 
    'noviceReset': __mergeNoviceReset, 
    'paragonsUnlocks': __mergeParagonsUnlocks, 
-   'preferredMapSlots': __mergePreferredMapSlots}
+   'preferredMapSlots': __mergePreferredMapSlots, 
+   'limitsMultiplier': __mergeLimitsMultiplier}
+
+def mergeTokens(total, key, value, isLeaf=False, count=1, *args):
+    __mergeTokens(total, key, value, isLeaf, count, *args)
+
 
 def _vehiclesInventoryChecker(account, key):
     invId = account._inventory.getVehicleInvID(key)
@@ -448,22 +479,27 @@ class BonusNodeAcceptor(object):
 
     def getCounters(self):
         if not self.__limitsConfig:
-            return
-        else:
-            result = {}
-            cooldowns = self.__cooldowns
-            uses = self.__uses
-            bonusProbabilityUses = self.__bonusProbabilityUses
-            for limitID, config in self.__limitsConfig.iteritems():
-                if 'guaranteedFrequency' in config or 'maxFrequency' in config or 'useBonusProbabilityAfter' in config:
-                    result[limitID] = (
-                     cooldowns[limitID], uses[limitID], bonusProbabilityUses[limitID])
+            return {}
+        result = {}
+        cooldowns = self.__cooldowns
+        uses = self.__uses
+        bonusProbabilityUses = self.__bonusProbabilityUses
+        for limitID, config in self.__limitsConfig.iteritems():
+            if 'guaranteedFrequency' in config or 'maxFrequency' in config or 'useBonusProbabilityAfter' in config:
+                result[limitID] = (
+                 cooldowns[limitID], uses[limitID], bonusProbabilityUses[limitID])
 
-            return result or None
+        return result
 
     def setCounters(self, counters):
-        for limitID, counterTuple in counters.iteritems():
-            self.__cooldowns[limitID], self.__uses[limitID], self.__bonusProbabilityUses[limitID] = counterTuple
+        if counters is None:
+            self.__initCounters({})
+            return
+        else:
+            for limitID, counterTuple in counters.iteritems():
+                self.__cooldowns[limitID], self.__uses[limitID], self.__bonusProbabilityUses[limitID] = counterTuple
+
+            return
 
     def getBonusCache(self):
         return self.__bonusCache
@@ -965,6 +1001,8 @@ class StripVisitor(NodeVisitor):
 
 
 class PreVisitor(NodeVisitor):
+    SKIP_KEYS = frozenset(BONUS_MERGERS) | frozenset(('needsExpansion', 'groups', 'oneof',
+                                                      'rotation', 'properties'))
 
     class ValuesMerger:
 
@@ -972,7 +1010,7 @@ class PreVisitor(NodeVisitor):
             return self.copyMerger
 
         @staticmethod
-        def copyMerger(storage, name, value, isLeaf):
+        def copyMerger(storage, name, value, isLeaf, *args):
             storage[name] = value
 
     def __init__(self, nodeAcceptor):
@@ -991,11 +1029,10 @@ class PreVisitor(NodeVisitor):
             result['config']['limits'] = {key:limit[key] for key in self.__nodeAcceptor.currentLimitsID}
         self.__nodeAcceptor.reInitCounters(result['config'])
 
-    def onProperties(self, storage, values):
+    def onProperties(self, _, values):
         limitID = values.get('limitID')
         if limitID:
             self.__nodeAcceptor.currentLimitsID.update({limitID})
-        storage['properties'] = values
 
     def onRotations(self, storage, values):
         values = values['groups']
@@ -1005,13 +1042,13 @@ class PreVisitor(NodeVisitor):
             for _ in xrange(rotationLevel):
                 acceptor.trackChoice(False)
 
-        rotationBonus = {}
+        selectedIdx = None
         for idx in xrange(rotationLevel, len(values)):
             try:
-                rotationBonus.clear()
                 acceptor.currentLimitsID.clear()
-                self._walkSubsection(rotationBonus, values[idx])
+                self._walkSubsection({}, values[idx])
                 acceptor.trackChoice(True)
+                selectedIdx = idx
                 break
             except NeedIncreaseRotationLevel:
                 acceptor.trackChoice(False)
@@ -1020,57 +1057,34 @@ class PreVisitor(NodeVisitor):
         else:
             raise SoftException('Unreachable code, rotation level bug %s' % values)
 
-        if not rotationBonus:
+        if selectedIdx is None:
             raise SoftException(('Current rotation is empty, rotationLevels: {}, rotation: {}').format(acceptor.getRotationLevels(), values))
-        storage.update(rotationBonus)
+        storage.update(values[selectedIdx])
+        return
 
-    def onOneOf(self, storage, values):
+    def onOneOf(self, _, values):
         limitIDs, values = values
-        oneofValues = []
         for probabilities, bonusProbability, nodeLimitIDs, bonusValue in values:
             if bonusValue.get('properties', {}).get('mainRotationBranch', False) and not self.__nodeAcceptor.isMaxRotationLevel():
                 if not self.__nodeAcceptor.isOverStage(bonusValue):
                     raise NeedIncreaseRotationLevel()
-            oneofStorage = {}
             if not self.__handlersSet.isdisjoint(bonusValue):
-                self._walkSubsection(oneofStorage, bonusValue)
-            oneofValues.append((
-             probabilities,
-             bonusProbability,
-             nodeLimitIDs,
-             oneofStorage or bonusValue))
-
-        storage['oneof'] = (
-         limitIDs, oneofValues)
+                self._walkSubsection({}, bonusValue)
 
     def onAllOf(self, storage, values):
-        allOfValues = []
         for probabilities, bonusProbability, nodeLimitIDs, bonusValue in values:
             if bonusValue.get('properties', {}).get('mainRotationBranch', False) and not self.__nodeAcceptor.isMaxRotationLevel():
                 if not self.__nodeAcceptor.isOverStage(bonusValue):
                     raise NeedIncreaseRotationLevel()
-            allOfstorage = {}
             if not self.__handlersSet.isdisjoint(bonusValue):
-                self._walkSubsection(allOfstorage, bonusValue)
-            allOfValues.append((
-             probabilities,
-             bonusProbability,
-             nodeLimitIDs,
-             allOfstorage or bonusValue))
+                self._walkSubsection({}, bonusValue)
 
-        storage['allof'] = allOfValues
-
-    def onGroup(self, storage, values):
-        groupValues = []
+    def onGroup(self, _, values):
         for bonusValue in values:
             if bonusValue.get('properties', {}).get('mainRotationBranch', False) and not self.__nodeAcceptor.isMaxRotationLevel():
                 if not self.__nodeAcceptor.isOverStage(bonusValue):
                     raise NeedIncreaseRotationLevel()
-            groupStorage = {}
-            self._walkSubsection(groupStorage, bonusValue)
-            groupValues.append(groupStorage)
-
-        storage['groups'] = groupValues
+            self._walkSubsection({}, bonusValue)
 
     def onConfig(self, storage, values):
         storage['config'] = deepcopy(values)
@@ -1078,3 +1092,43 @@ class PreVisitor(NodeVisitor):
 
 class NeedIncreaseRotationLevel(SoftException):
     pass
+
+
+class UnownedVehiclesVisitor(NodeVisitor):
+    SKIP_KEYS = NodeVisitor.SKIP_KEYS | frozenset(('meta', ))
+
+    class ValuesMerger(object):
+
+        def __getitem__(self, item):
+            return lambda *_: None
+
+    def __init__(self, account):
+        super(UnownedVehiclesVisitor, self).__init__(self.ValuesMerger(), tuple())
+        self.__account = account
+        self.__bonusCache = BonusItemsCache(account)
+        self.__unownedVehicles = set()
+        self.registerHandler('vehicles', self.__collectVehicles)
+
+    def onRotations(self, storage, values):
+        self._walkSubsection(storage, values)
+
+    def onOneOf(self, storage, values):
+        _, options = values
+        for _, _, _, bonusValue in options:
+            self._walkSubsection(storage, bonusValue)
+
+    def onAllOf(self, storage, values):
+        for _, _, _, bonusValue in values:
+            self._walkSubsection(storage, bonusValue)
+
+    def onGroup(self, storage, values):
+        for bonusValue in values:
+            self._walkSubsection(storage, bonusValue)
+
+    def _afterWalk(self, storage, bonusSection):
+        storage.update(self.__unownedVehicles)
+
+    def __collectVehicles(self, result, vehicles):
+        for compDescr, vehicleData in vehicles.iteritems():
+            if not self.__bonusCache.isItemExists('vehicles', compDescr, vehicleData.get('rent', False)):
+                self.__unownedVehicles.add(compDescr)

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G203_JgPz_VII_Waldkatze/normal/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.750453 -0.675501 -3.704235</min>
+		<max>1.753961 1.047204 3.578532</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G203_JgPz_VII_Waldkatze/normal/lod0/Hull</nodefullVisual>
+</root>

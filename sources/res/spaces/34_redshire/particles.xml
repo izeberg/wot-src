@@ -36,6 +36,10 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_forward/pfx_textures/ny27_clapperboard.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_splash_3.dds
 				<type>primary</type>
 			</path>
@@ -81,6 +85,10 @@
 			</path>
 			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_sparks.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/glow_bloom.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -501,6 +509,18 @@
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex_force_field.dds
 				<type>forcefields</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/glow_bloom.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/flare_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/ny27_clapperboard.dds
+				<type>primary</type>
 			</path>
 		</preloadTextures>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_uni_712_littlewoodshed.vfx</fn_effect_bin>

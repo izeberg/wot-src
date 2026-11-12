@@ -48,17 +48,3 @@ class HintId(CONST_CONTAINER):
     RADIOMAN_DAMAGE_MED_KIT = 'RadiomanDamageMedKit'
     AMMO_TYPE_AVAILABLE = 'AmmoTypeAvailable'
     AMMO_TYPE_SWITCH = 'AmmoTypeSwitch'
-
-
-class ContextHintsSoundEvents(CONST_CONTAINER):
-    PLAYER_VEHICLE_OBSERVED = 'vo_contextHints_04_00'
-    KILLED_WHILE_OBSERVED = 'vo_contextHints_04_01'
-    IN_SAFETY_WHILE_NOT_OBSERVED = 'vo_contextHints_InSafetyWhileNotObserved'
-    MODULE_REPAIR_KIT = 'vo_contextHints_04_03'
-    AMMUNITION_CRIT = 'vo_contextHints_04_08'
-    FUELTANK_CRIT = 'vo_contextHints_04_09'
-    MODULE_DAMAGE = 'vo_contextHints_04_14'
-    TANKMAN_DAMAGE = 'vo_contextHints_04_15'
-    AMMO_TYPE_AVAILABLE = 'vo_contextHints_AmmoTypeAvailable'
-    AMMO_TYPE_SWITCH = 'vo_contextHints_AmmoTypeSwitch_01'
-    AMMO_TYPE_SWITCH_APPLIED = 'vo_contextHints_AmmoTypeSwitch_02'

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.087962 -0.041563 -0.097287</min>
+		<max>0.087962 0.041563 0.097287</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB146_Albion/crash/lod0/Turret_01</nodefullVisual>
+</root>

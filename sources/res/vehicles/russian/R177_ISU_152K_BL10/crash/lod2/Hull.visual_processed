@@ -96,6 +96,10 @@
 						normalMap
 						<Texture>vehicles/russian/Crash_inside/crash_inside_NM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.002824 0.412072 -0.195658</groupOrigin>
 			</primitiveGroup>
@@ -174,7 +178,7 @@
 					</property>
 					<property>
 						g_crashUVTiling
-						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
+						<Vector4>2.000000 1.000000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>0.010847 -0.359571 -0.026153</groupOrigin>

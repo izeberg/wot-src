@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A186_M103_Improved/crash/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/american/A186_M103_Improved/crash/lod2/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.602440 -0.009684 -2.865390</min>
+		<max>1.609757 1.810338 1.528578</max>
+	</visibilityBox>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+</root>

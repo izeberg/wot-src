@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R259_PST_100/normal/lod1/Gun_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.434281 -0.266044 0.046650</min>
+		<max>0.435708 0.378665 4.467792</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R259_PST_100/normal/lod0/Gun_01</nodefullVisual>
+</root>

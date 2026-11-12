@@ -137,6 +137,12 @@ package net.wg.gui.lobby.settings
          this.updatesPttKeyList();
       }
       
+      override protected function getControl(param1:String, param2:String) : DisplayObject
+      {
+         var _loc3_:SoundSettingsBase = this.getContent();
+         return _loc3_[param1 + param2];
+      }
+      
       override protected function getCounterProps(param1:String) : ICounterProps
       {
          if(param1 == SettingsConfigHelper.TYPE_CHECKBOX)

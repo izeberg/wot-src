@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<parent>vehicles/german/G203_JgPz_VII_Waldkatze/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.759888 -1.003702 -3.704235</min>
+		<max>1.765444 0.981778 3.567405</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G203_JgPz_VII_Waldkatze/crash/lod0/Hull</nodefullVisual>
+</root>

@@ -71,7 +71,8 @@ class ChatLockNewbieRestrictionsTooltipAdapter(NewbieRestrictionsTooltipAdapter)
         conditionGroupModel = ConditionGroup()
         conditions = conditionGroupModel.getConditions()
         serverSettings = self.__lobbyContext.getServerSettings()
-        conditions.addString(backport.text(R.strings.tooltips.newbie_restrictions.condition.battlesCountThreshold(), battlesCount=serverSettings.newbieChatLockConfig.battlesCountThreshold))
+        battlesCountThreshold = serverSettings.newbieChatLockConfig.battlesCountThreshold
+        conditions.addString(backport.ntext(R.strings.tooltips.newbie_restrictions.condition.battlesCountThreshold(), battlesCountThreshold, battlesCount=battlesCountThreshold))
         conditions.addString(backport.text(R.strings.tooltips.newbie_restrictions.condition.vehicleLevelThreshold(), level=int2roman(serverSettings.newbieChatLockConfig.vehicleLevelThreshold)))
         conditionGroups.addViewModel(conditionGroupModel)
 

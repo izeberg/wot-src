@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A186_M103_Improved/crash/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.528772 -0.435876 -1.466159</min>
+		<max>0.528772 0.572365 6.621693</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A186_M103_Improved/crash/lod1/Gun_01</nodefullVisual>
+</root>

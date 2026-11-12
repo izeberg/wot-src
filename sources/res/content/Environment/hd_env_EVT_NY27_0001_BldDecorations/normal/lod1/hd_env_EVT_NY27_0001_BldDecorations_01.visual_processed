@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_NY27_0001_BldDecorations/hd_env_EVT_NY27_0001_BldDecorations_Windows_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.717647 0.658824 0.603922 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>1.400000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>12.100000</Float>
+					</property>
+				</material>
+				<groupOrigin>1.137982 4.835735 -0.036641</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>110</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>48</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						destBlend
+						<Int>1</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/hd_env_EVT_NY27_Garland_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 0.921569 0.760784 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>8.300000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>48.000000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>2</Int>
+					</property>
+					<sortOrder>2</sortOrder>
+				</material>
+				<groupOrigin>1.839571 6.453513 -0.025807</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>149</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/hd_env_EVT_NY27_Decorations_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/00_Detail_Sets_NY/hd_env_EVT_NY27_Decorations_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/00_Detail_Sets_NY/hd_env_EVT_NY27_Decorations_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.297383 4.250832 -0.016140</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-8.035934 -0.011557 -4.330492</min>
+		<max>11.705902 10.905143 4.278877</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>129660</geometrySize>
+	<minUVDensity>0.018971</minUVDensity>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A186_M103_Improved/normal/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/american/A186_M103_Improved/normal/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.718619 -0.383290 0.144252</min>
+		<max>0.718586 0.579746 6.638545</max>
+	</visibilityBox>
+</root>

@@ -1,6 +1,8 @@
 import weakref, typing, nations
+from constants import VEHICLE_DIFFICULTY
 from frameworks.wulf import ViewFlags, ViewSettings, ViewModel
 from account_helpers.AccountSettings import AccountSettings, EarlyAccess
+from account_helpers.settings_core.settings_constants import GAME
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.framework.managers.optimization_manager import ExternalFullscreenGraphicsOptimizationComponent
 from gui.Scaleform.genConsts.CONTACTS_ALIASES import CONTACTS_ALIASES
@@ -42,6 +44,7 @@ from gui.shop import canBuyGoldForVehicleThroughWeb
 from gui.sounds.ambients import LobbySubViewEnv
 from helpers import dependency, time_utils
 from messenger.gui.Scaleform.view.lobby import MESSENGER_VIEW_ALIAS
+from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.game_control import IVehicleComparisonBasket
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
@@ -65,6 +68,7 @@ class VehicleTechTree(ViewImpl):
     __earlyAccessController = dependency.descriptor(IEarlyAccessController)
     __techTreeEventsListener = dependency.descriptor(ITechTreeEventsListener)
     __paragonsController = dependency.descriptor(IParagonsController)
+    __settingsCore = dependency.descriptor(ISettingsCore)
 
     def __init__(self, layoutID, *args, **kwargs):
         settings = ViewSettings(layoutID)
@@ -145,6 +149,8 @@ class VehicleTechTree(ViewImpl):
         with self.viewModel.transaction() as (ts):
             self.updateParagons()
             ts.setSelectedNation(SelectedNation.getName())
+            ts.setMaxDifficulty(max(VEHICLE_DIFFICULTY.ALL))
+            ts.setShowDifficulty(self.__settingsCore.getSetting(GAME.SHOW_VEHICLE_DIFFICULTY_IN_TECH_TREE))
             fillNationTechTreeModel(ts, self.__techTreeEventsListener, self.__treeData.getAvailableNations())
             self.__treeData.load(SelectedNation.getIndex())
             fillVehicleTechTreeNodesModel(ts, self.__treeData.getNodes())
@@ -216,7 +222,9 @@ class VehicleTechTree(ViewImpl):
          (
           self.viewModel.onResetBranchShown, self.__onResetBranchShown),
          (
-          self.viewModel.onTechTreeButtonPressed, self.__onTechTreeButtonPressed))
+          self.viewModel.onTechTreeButtonPressed, self.__onTechTreeButtonPressed),
+         (
+          self.__settingsCore.onSettingsChanged, self.__onSettingsChanged))
 
     def _getListeners(self):
         return (
@@ -339,6 +347,10 @@ class VehicleTechTree(ViewImpl):
     def __onClose(self):
         self.__stopTopOfTheTreeSounds()
         showHangar()
+
+    def __onSettingsChanged(self, diff):
+        if GAME.SHOW_VEHICLE_DIFFICULTY_IN_TECH_TREE in diff:
+            self.viewModel.setShowDifficulty(self.__settingsCore.getSetting(GAME.SHOW_VEHICLE_DIFFICULTY_IN_TECH_TREE))
 
     @args2params(str, int)
     def __goToPremiumShop(self, nationName, level):

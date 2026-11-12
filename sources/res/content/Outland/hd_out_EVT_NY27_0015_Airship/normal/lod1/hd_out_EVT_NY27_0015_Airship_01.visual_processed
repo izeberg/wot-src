@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s046004Shape0.vertices</vertices>
+			<primitive>s046004Shape0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>100</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Outland/hd_out_EVT_NY27_0015_Airship/hd_out_EVT_NY27_0015_Airship_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_Textile.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Outland/hd_out_EVT_NY27_0015_Airship/hd_out_EVT_NY27_0015_Airship_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Outland/hd_out_EVT_NY27_0015_Airship/hd_out_EVT_NY27_0015_Airship_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>0.100000 0.800000 300.000000 12.000000</Vector4>
+					</property>
+					<property>
+						g_detailInfluences
+						<Vector4>1.000000 0.300000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.000003 -0.314288 -135.259277</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Outland/hd_out_EVT_NY27_0015_Airship/hd_out_EVT_NY27_0015_Airship_01_Propeller_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.000000 -17.295301 -147.178680</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-24.905912 -24.544592 -271.026001</min>
+		<max>24.905918 23.916016 0.793082</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>129164</geometrySize>
+	<minUVDensity>0.000027</minUVDensity>
+</root>

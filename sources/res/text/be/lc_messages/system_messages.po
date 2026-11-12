@@ -1347,6 +1347,79 @@ msgstr "Нельга змяніць выгляд машыны, бо машын�
 msgid "customization/vehicle_locked"
 msgstr "Нельга змяніць выгляд машыны, бо машына заблакіравана."
 
+msgid "customizationResource/categories/camouflages"
+msgstr "Камуфляж"
+
+msgid "customizationResource/categories/emblems"
+msgstr "Эмблемы"
+
+msgid "customizationResource/categories/inscriptions"
+msgstr "Надписи"
+
+msgid "customizationResource/categories/modifications"
+msgstr "Эффекты"
+
+msgid "customizationResource/categories/paints"
+msgstr "Краски"
+
+msgid "customizationResource/categories/projectionDecals"
+msgstr "Декали"
+
+msgid "customizationResource/categories/styles2D"
+msgstr "2D-стили"
+
+msgid "customizationResource/categories/styles3D"
+msgstr "3D-стили"
+
+msgid "customizationResource/compensation/body"
+msgstr ""
+"Дата: %(date)s %(time)s<br/>Компенсация: %(compensationName)s<br/>Пигмент "
+"компенсирован свободным опытом: %(freeXP)s"
+
+msgid "customizationResource/compensation/title"
+msgstr "Компенсация за неиспользованный пигмент"
+
+msgid "customizationResource/exchange/categoryItem"
+msgstr "%(name)s (×%(count)s)"
+
+msgid "customizationResource/exchange/error/body"
+msgstr ""
+"Во время обмена произошла ошибка. Попробуйте повторить операцию "
+"позже.<br/><br/>Всё ваше имущество сохранено."
+
+msgid "customizationResource/exchange/error/title"
+msgstr "Ошибка обмена"
+
+msgid "customizationResource/exchange/success/body"
+msgstr ""
+"Списаны элементы внешнего вида: %(items)s.<br/>Начислено пигмента: "
+"%(reward)s"
+
+msgid "customizationResource/exchange/success/title"
+msgstr "Элементы обменяны на пигмент"
+
+msgid "customizationResource/purchase/receipt/body"
+msgstr ""
+"Дата: %(date)s %(time)s<br/>Начислено: Контейнер «%(itemName)s» "
+"(%(itemCount)s)<br/>Серебро: %(silver)s"
+
+msgid "customizationResource/purchase/receipt/title"
+msgstr "Квитанция"
+
+msgid "customizationResource/switch/event/disabled/body"
+msgstr ""
+"Пигментная лавка недоступна по техническим причинам. Возвращайтесь позже."
+
+msgid "customizationResource/switch/event/enabled/body"
+msgstr "Пигментная лавка снова доступна."
+
+msgid "customizationResource/switch/exchange/disabled/body"
+msgstr ""
+"Обмен элементов внешнего вида на пигмент недоступен по техническим причинам."
+
+msgid "customizationResource/switch/exchange/enabled/body"
+msgstr "Обмен элементов внешнего вида на пигмент снова доступен."
+
 msgid "daily_quests/bonus_quest_available/body"
 msgstr ""
 "Разблакаваны доступ да бонуснай задачы пасля выканання ўсіх стандартных "
@@ -2948,9 +3021,6 @@ msgstr "Змена рэжыму назіральніка"
 
 msgid "prebattle/request/name/CLOSE_SLOT"
 msgstr "Заблакаваць слот"
-
-msgid "prebattle/request/name/PORTAL_SET_BATTLE_LEVEL"
-msgstr "Смена уровня сложности"
 
 msgid "prebattle/request/name/PREBATTLES_LIST"
 msgstr "Пошук"

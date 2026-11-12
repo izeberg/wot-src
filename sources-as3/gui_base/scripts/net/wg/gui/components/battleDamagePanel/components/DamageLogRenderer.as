@@ -6,7 +6,6 @@ package net.wg.gui.components.battleDamagePanel.components
    import flash.text.TextFieldAutoSize;
    import flash.text.TextFormat;
    import net.wg.data.constants.Values;
-   import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.data.constants.generated.BATTLEDAMAGELOG_IMAGES;
    import net.wg.data.constants.generated.DAMAGE_LOG_SHELL_BG_TYPES;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
@@ -38,8 +37,6 @@ package net.wg.gui.components.battleDamagePanel.components
       private static const VEH_TF_X_OFFSET:uint = 10;
       
       private static const ICONS_WITH_BLIND:Vector.<String> = new <String>[BATTLEDAMAGELOG_IMAGES.DAMAGELOG_BURN_ENEMY_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_CRITICAL_ENEMY_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_DAMAGE_ENEMY_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_RAM_ENEMY_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_BY_MINE_FIELD_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_AIRSTRIKE_ENEMY_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_AIRSTRIKE_EQ_ENEMY_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_ARTILLERY_ENEMY_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_ARTILLERY_EQ_ENEMY_16X16];
-      
-      private static const ICONS_WITH_MOD_SUPPORT:Vector.<String> = new <String>[BATTLEATLAS.DAMAGE_LOG_AIRSTRIKE_EQ_16X16,BATTLEATLAS.DAMAGE_LOG_ARTILLERY_EQ_16X16,BATTLEATLAS.DAMAGE_LOG_ASSIST_16X16,BATTLEATLAS.DAMAGE_LOG_CLING_BRANDER_16X16,BATTLEATLAS.DAMAGE_LOG_COORDINATE_16X16,BATTLEATLAS.DAMAGE_LOG_CORRODING_SHOT_16X16,BATTLEATLAS.DAMAGE_LOG_CRITICAL_16X16,BATTLEATLAS.DAMAGE_LOG_DAMAGE_16X16,BATTLEATLAS.DAMAGE_LOG_DISCOVER_16X16,BATTLEATLAS.DAMAGE_LOG_FIRE_16X16,BATTLEATLAS.DAMAGE_LOG_FIRE_CIRCLE_16X16,BATTLEATLAS.DAMAGE_LOG_IMMOBILIZED_16X16,BATTLEATLAS.DAMAGE_LOG_KILL_16X16,BATTLEATLAS.DAMAGE_LOG_MINE_FIELD_16X16,BATTLEATLAS.DAMAGE_LOG_RAM_16X16,BATTLEATLAS.DAMAGE_LOG_SPAWNED_BOT_16X16,BATTLEATLAS.DAMAGE_LOG_STUN_16X16,BATTLEATLAS.DAMAGE_LOG_THUNDER_STRIKE_16X16];
       
       private static const SHELL_TF_BORDER_PADDING:uint = 2;
       
@@ -80,8 +77,6 @@ package net.wg.gui.components.battleDamagePanel.components
       
       private var _actionAtlasIconPath:String = "";
       
-      private var _actionAtlasIconPathModificator:String = "";
-      
       private var _isLongMode:Boolean = true;
       
       private var _disposed:Boolean = false;
@@ -120,10 +115,9 @@ package net.wg.gui.components.battleDamagePanel.components
          this._bgImg = null;
       }
       
-      public function init(param1:Sprite, param2:Boolean, param3:Boolean, param4:String, param5:String = "") : void
+      public function init(param1:Sprite, param2:Boolean, param3:Boolean, param4:String) : void
       {
          this._atlasName = param4;
-         this._actionAtlasIconPathModificator = param5;
          this._bgImg = new Sprite();
          this._bgImg.name = NAME_BG_IMG;
          this.valueTF.autoSize = TextFieldAutoSize.RIGHT;
@@ -231,10 +225,6 @@ package net.wg.gui.components.battleDamagePanel.components
          if(param1 && ICONS_WITH_BLIND.indexOf(_loc2_) >= 0)
          {
             _loc2_ += BLIND_POSTFIX;
-         }
-         else if(ICONS_WITH_MOD_SUPPORT.indexOf(_loc2_) != -1)
-         {
-            _loc2_ += this._actionAtlasIconPathModificator;
          }
          this._atlasMgr.drawGraphics(this._atlasName,_loc2_,this.actionTypeImg.graphics);
       }

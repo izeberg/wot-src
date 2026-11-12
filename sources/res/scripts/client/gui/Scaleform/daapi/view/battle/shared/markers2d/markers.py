@@ -176,17 +176,20 @@ class VehicleMarker(Marker):
 
     @classmethod
     def fetchMatrixProvider(cls, vProxy):
-        if vProxy.isHidden:
-            matrix = Math.Matrix()
-            matrix.setTranslate(vProxy.position + HIDDEN_VEHICLE_OFFSET)
-            return matrix
-        rootMP = vProxy.model.node(TankNodeNames.HULL_SWINGING)
-        guiMP = vProxy.model.node(TankNodeNames.GUI)
-        rootM = rootMP.localMatrix
-        guiM = guiMP.localMatrix
-        offset = guiM.translation - rootM.translation + cls.adjustOffset(vProxy)
-        rootCalculator = vProxy.model.getWorldMatrixCalculator(TankNodeNames.HULL_SWINGING)
-        return GUI.VehicleMarkersMatrixProvider(rootCalculator, offset)
+        if vProxy is None:
+            return
+        else:
+            if vProxy.isHidden:
+                matrix = Math.Matrix()
+                matrix.setTranslate(vProxy.position + HIDDEN_VEHICLE_OFFSET)
+                return matrix
+            rootMP = vProxy.model.node(TankNodeNames.HULL_SWINGING)
+            guiMP = vProxy.model.node(TankNodeNames.GUI)
+            rootM = rootMP.localMatrix
+            guiM = guiMP.localMatrix
+            offset = guiM.translation - rootM.translation + cls.adjustOffset(vProxy)
+            rootCalculator = vProxy.model.getWorldMatrixCalculator(TankNodeNames.HULL_SWINGING)
+            return GUI.VehicleMarkersMatrixProvider(rootCalculator, offset)
 
     @classmethod
     def adjustOffset(cls, vProxy):
@@ -221,5 +224,8 @@ class VehicleTargetMarker(VehicleMarker):
 
     @classmethod
     def fetchMatrixProvider(cls, vProxy):
-        pointOffset = getLocalAimPoint(vProxy.typeDescriptor)
-        return GUI.VehicleMagneticAimMarkerMatrixProvider(vProxy.matrix, pointOffset)
+        if vProxy is None:
+            return
+        else:
+            pointOffset = getLocalAimPoint(vProxy.typeDescriptor)
+            return GUI.VehicleMagneticAimMarkerMatrixProvider(vProxy.matrix, pointOffset)

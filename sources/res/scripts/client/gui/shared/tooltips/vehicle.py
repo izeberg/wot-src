@@ -33,6 +33,7 @@ from gui.shared.items_parameters.comparator import PARAM_STATE
 from gui.shared.items_parameters.params_helper import SimplifiedBarVO
 from gui.shared.money import Currency
 from gui.shared.tooltips import formatters, ToolTipBaseData
+from gui.shared.utils.functions import getAbsoluteUrl
 from gui.shared.tooltips import getComplexStatus, getUnlockPrice, TOOLTIP_TYPE
 from gui.shared.tooltips.common import BlocksTooltipData, makeCompoundPriceBlock, CURRENCY_SETTINGS
 from gui.shared.utils import MAX_STEERING_LOCK_ANGLE, WHEELED_SWITCH_TIME, WHEELED_SPEED_MODE_SPEED, SHOT_DISPERSION_ANGLE, DUAL_GUN_CHARGE_TIME, TURBOSHAFT_SPEED_MODE_SPEED, ROCKET_ACCELERATION_SPEED_LIMITS, DUAL_ACCURACY_COOLING_DELAY
@@ -465,6 +466,33 @@ class VehicleTooltipBlockConstructor(object):
         return
 
 
+_DIFFICULTY_ICONS_COUNT = 3
+_DIFFICULTY_ICON_SIZE = 12
+_DIFFICULTY_ICON_GAP = 0
+_DIFFICULTY_LABEL_ICON_GAP = 4
+_DIFFICULTY_TEXT_FIELD_X = 2
+_DIFFICULTY_TEXT_FIELD_Y = 2
+_DIFFICULTY_TEXT_LINE_HEIGHT = 18
+_DIFFICULTY_LABEL_TEXT_WIDTH = 63
+_DIFFICULTY_LABEL_WIDTH = _DIFFICULTY_TEXT_FIELD_X + _DIFFICULTY_LABEL_TEXT_WIDTH + _DIFFICULTY_LABEL_ICON_GAP
+_BUILDUP_BLOCK_BOTTOM_PADDING = 7
+_DIFFICULTY_TOP_PADDING_AFTER_ROLE = 2
+
+def _packDifficultyLine(difficulty):
+    blocks = [
+     formatters.packTextBlockData(text_styles.main(_ms(MENU.ROLEEXP_DIFFICULTYLABEL)), blockWidth=_DIFFICULTY_LABEL_WIDTH)]
+    for index in xrange(_DIFFICULTY_ICONS_COUNT):
+        if index < difficulty:
+            iconUrl = RES_ICONS.MAPS_ICONS_VEHICLEDIFFICULTY_16X16_FILLED
+        else:
+            iconUrl = RES_ICONS.MAPS_ICONS_VEHICLEDIFFICULTY_16X16_EMPTY
+        iconBlock = formatters.packImageBlockData(img=getAbsoluteUrl(iconUrl), width=_DIFFICULTY_ICON_SIZE, height=_DIFFICULTY_ICON_SIZE, padding=formatters.packPadding(top=6))
+        iconBlock['blockWidth'] = _DIFFICULTY_ICON_SIZE
+        blocks.append(iconBlock)
+
+    return formatters.packBuildUpBlockData(blocks, gap=_DIFFICULTY_ICON_GAP, layout=BLOCKS_TOOLTIP_TYPES.LAYOUT_HORIZONTAL, stretchBg=False)
+
+
 class HeaderBlockConstructor(VehicleTooltipBlockConstructor):
     __bootcamp = dependency.descriptor(IBootcampController)
 
@@ -489,10 +517,15 @@ class HeaderBlockConstructor(VehicleTooltipBlockConstructor):
         levelStr = text_styles.concatStylesWithSpace(text_styles.stats(int2roman(self.vehicle.level)), text_styles.standard(_ms(TOOLTIPS.VEHICLE_LEVEL)))
         icon = getTypeBigIconPath(self.vehicle.type, self.vehicle.isElite)
         leftOffset = 101
-        headerBlocks.append(formatters.packImageTextBlockData(title=nameStr, desc=text_styles.concatStylesToMultiLine(levelStr + ' ' + typeStr, ''), img=icon, imgPadding=formatters.packPadding(left=10, top=-15), txtGap=-9, txtOffset=leftOffset, padding=formatters.packPadding(top=15, bottom=-15 if self.vehicle.isFavorite else -21)))
-        if self.vehicle.role != constants.ROLE_TYPE.NOT_DEFINED:
+        headerBlocks.append(formatters.packImageTextBlockData(title=nameStr, desc=text_styles.concatStylesToMultiLine(levelStr + ' ' + typeStr, ''), img=icon, imgPadding=formatters.packPadding(left=10, top=-15), txtGap=-9, txtOffset=leftOffset, padding=formatters.packPadding(top=15, bottom=-21)))
+        hasRole = self.vehicle.role != constants.ROLE_TYPE.NOT_DEFINED
+        if hasRole:
             roleLabel = self.vehicle.roleLabel
-            headerBlocks.append(formatters.packTextBlockData(text_styles.main(backport.text(R.strings.menu.roleExp.roleLabel()) + ' ' + backport.text(R.strings.menu.roleExp.roleName.dyn(roleLabel)(), groupName=backport.text(R.strings.menu.roleExp.roleGroupName.dyn(roleLabel)()))), padding=formatters.packPadding(top=-9, left=leftOffset, bottom=9)))
+            headerBlocks.append(formatters.packTextBlockData(text_styles.main(backport.text(R.strings.menu.roleExp.roleLabel()) + ' ' + backport.text(R.strings.menu.roleExp.roleName.dyn(roleLabel)(), groupName=backport.text(R.strings.menu.roleExp.roleGroupName.dyn(roleLabel)()))), padding=formatters.packPadding(top=-9, left=leftOffset, bottom=-4)))
+        if self.vehicle.difficulty:
+            difficultyLine = _packDifficultyLine(self.vehicle.difficulty)
+            difficultyLine['padding'] = formatters.packPadding(top=-9 if not hasRole else _DIFFICULTY_TOP_PADDING_AFTER_ROLE, left=leftOffset, bottom=9 - _BUILDUP_BLOCK_BOTTOM_PADDING)
+            headerBlocks.append(difficultyLine)
         if self.vehicle.isPreferential:
             headerBlocks.append(formatters.packTextBlockData(text_styles.neutral(backport.text(R.strings.tooltips.tankCaruselTooltip.preferential())), padding=formatters.packPadding(top=-11, left=leftOffset, bottom=9)))
         block.append(formatters.packBuildUpBlockData(headerBlocks, stretchBg=False, linkage=bgLinkage, padding=formatters.packPadding(left=-self.leftPadding)))

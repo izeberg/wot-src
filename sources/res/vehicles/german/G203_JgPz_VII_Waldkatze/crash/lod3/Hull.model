@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G203_JgPz_VII_Waldkatze/crash/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.757903 -1.017185 -3.679265</min>
+		<max>1.781028 0.947644 3.565842</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G203_JgPz_VII_Waldkatze/crash/lod3/Hull</nodefullVisual>
+</root>

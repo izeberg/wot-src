@@ -87,8 +87,8 @@
 		<node>Gun_BlendBone</node>
 		<node>static_joint_BlendBone</node>
 		<geometry>
-			<vertices>gun_01_Shape.vertices</vertices>
-			<primitive>gun_01_Shape.indices</primitive>
+			<vertices>gun_01Shape.vertices</vertices>
+			<primitive>gun_01Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -128,7 +128,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>2.007000 2.007000 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -163,6 +163,6 @@
 		<min>-0.724033 -0.445706 -0.194047</min>
 		<max>0.727541 0.410905 6.395438</max>
 	</boundingBox>
-	<geometrySize>123638</geometrySize>
+	<geometrySize>123350</geometrySize>
 	<minUVDensity>0.049206</minUVDensity>
 </root>

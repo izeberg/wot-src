@@ -15,7 +15,7 @@ from gui.Scaleform.framework.entities.View import ViewKey
 from gui.battle_results import RequestEmblemContext, EMBLEM_TYPE
 from gui.battle_results.settings import PROGRESS_ACTION
 from gui.prb_control.dispatcher import g_prbLoader
-from gui.server_events import events_dispatcher as quests_events
+from gui.server_events import events_dispatcher as quests_events, events_helpers
 from gui.server_events.events_helpers import isC11nQuest
 from gui.shared import events, EVENT_BUS_SCOPE
 from gui.shared import event_dispatcher
@@ -80,6 +80,11 @@ class BattleResultsWindow(BattleResultsMeta, Extendable):
                         return
                     self.soundManager.playInstantSound(SOUNDS.SELECT)
             else:
+                if events_helpers.isArmoryYardQuest(eID):
+                    from gui.server_events.events_dispatcher import goToArmoryYardQuests
+                    goToArmoryYardQuests()
+                    self.destroy()
+                    return
                 lobbyHeaderNavigationPossible = yield self.__lobbyContext.isHeaderNavigationPossible()
                 if not lobbyHeaderNavigationPossible:
                     return

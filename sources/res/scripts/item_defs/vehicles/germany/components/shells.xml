@@ -1578,6 +1578,65 @@
 			<devices>165</devices>
 		</damage>
 	</_120mm_APDS_DM14>
+	<_120mm_APDS_DT13_G195>
+		<id>31051</id>
+		<userString>#germany_vehicles:_120mm_APDS_DT13_G195</userString>
+		<icon>ap_cr</icon>
+		<price>1110</price>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeAPCR</effects>
+		<damage>
+			<armor>410</armor>
+			<devices>165</devices>
+		</damage>
+	</_120mm_APDS_DT13_G195>
+	<_120mm_APDS_DT13_G203>
+		<id>31048</id>
+		<userString>#germany_vehicles:_120mm_APDS_DT13_G203</userString>
+		<icon>ap_fsds</icon>
+		<price>1160</price>
+		<kind>ARMOR_PIERCING_FSDS</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeAPFSDS</effects>
+		<damage>
+			<armor>560</armor>
+			<devices>170</devices>
+		</damage>
+		<maxDistanceInsideVehicle>40</maxDistanceInsideVehicle>
+		<damageRandomization>
+			0.0
+			<!--BW_String-->
+		</damageRandomization>
+		<distanceDamage>
+			<isEnabled>true</isEnabled>
+			<damage>
+				<min>390</min>
+				<max>730</max>
+			</damage>
+			<distance>
+				<min>
+					0.5
+					<!--BW_String-->
+				</min>
+				<max>
+					5.0
+					<!--BW_String-->
+				</max>
+			</distance>
+			<ignoreModules>true</ignoreModules>
+		</distanceDamage>
+		<hitDeviceChanceMultiplier>
+			0.3
+			<!--BW_String-->
+		</hitDeviceChanceMultiplier>
+		<hitCrewChanceMultiplier>
+			0.3
+			<!--BW_String-->
+		</hitCrewChanceMultiplier>
+	</_120mm_APDS_DT13_G203>
 	<_120mm_DT11_G180>
 		<id>31056</id>
 		<userString>#germany_vehicles:_120mm_DT11_G180</userString>
@@ -1660,6 +1719,71 @@
 			<!--BW_String-->
 		</piercingPowerLossFactorByDistance>
 	</_120mm_HEAT_DM12_MZ>
+	<_120mm_HEAT_DT12_G195>
+		<id>31052</id>
+		<userString>#germany_vehicles:_120mm_HEAT_DT12_G195</userString>
+		<icon>ap_fsds_premium</icon>
+		<price>4800</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_FSDS</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeAPFSDS</effects>
+		<damage>
+			<armor>410</armor>
+			<devices>165</devices>
+		</damage>
+		<maxDistanceInsideVehicle>40</maxDistanceInsideVehicle>
+		<damageRandomization>
+			0.0
+			<!--BW_String-->
+		</damageRandomization>
+		<distanceDamage>
+			<isEnabled>true</isEnabled>
+			<damage>
+				<min>145</min>
+				<max>675</max>
+			</damage>
+			<distance>
+				<min>
+					1.0
+					<!--BW_String-->
+				</min>
+				<max>
+					6.0
+					<!--BW_String-->
+				</max>
+			</distance>
+			<ignoreModules>true</ignoreModules>
+		</distanceDamage>
+		<hitDeviceChanceMultiplier>
+			0.3
+			<!--BW_String-->
+		</hitDeviceChanceMultiplier>
+		<hitCrewChanceMultiplier>
+			0.3
+			<!--BW_String-->
+		</hitCrewChanceMultiplier>
+	</_120mm_HEAT_DT12_G195>
+	<_120mm_HEAT_DT12_G203>
+		<id>31049</id>
+		<userString>#germany_vehicles:_120mm_HEAT_DT12_G203</userString>
+		<icon>hc_premium</icon>
+		<price>5200</price>
+		<improved>true</improved>
+		<kind>HOLLOW_CHARGE</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeHollowCharge</effects>
+		<damage>
+			<armor>560</armor>
+			<devices>170</devices>
+		</damage>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
+	</_120mm_HEAT_DT12_G203>
 	<_120mm_HE_DM10>
 		<id>362</id>
 		<userString>#germany_vehicles:_120mm_HE_DM10</userString>
@@ -1690,6 +1814,66 @@
 			</damage>
 		</armorSpalls>
 	</_120mm_HE_DM10>
+	<_120mm_HE_DT11_G195>
+		<id>31053</id>
+		<userString>#germany_vehicles:_120mm_HE_DT11_G195</userString>
+		<icon>he_modern</icon>
+		<price>1155</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>120</caliber>
+		<explosionRadius>
+			2.42
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>largeHighExplosive</effects>
+		<damage>
+			<armor>525</armor>
+			<devices>165</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				2.42
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>260</armor>
+				<devices>85</devices>
+			</damage>
+		</armorSpalls>
+	</_120mm_HE_DT11_G195>
+	<_120mm_HE_DT11_G203>
+		<id>31050</id>
+		<userString>#germany_vehicles:_120mm_HE_DT11_G203</userString>
+		<icon>he_modern</icon>
+		<price>1155</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>120</caliber>
+		<explosionRadius>
+			2.42
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>largeHighExplosive</effects>
+		<damage>
+			<armor>700</armor>
+			<devices>170</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				2.42
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>350</armor>
+				<devices>85</devices>
+			</damage>
+		</armorSpalls>
+	</_120mm_HE_DT11_G203>
 	<_120mm_HlGr57>
 		<id>31037</id>
 		<userString>#germany_vehicles:_120mm_HlGr57</userString>
@@ -2030,20 +2214,6 @@
 			<devices>180</devices>
 		</damage>
 	</_128mm_PzGr39D>
-	<_128mm_PzGr39D_V01>
-		<id>41012</id>
-		<userString>#germany_vehicles:_128mm_PzGr39D_V01</userString>
-		<icon>ap</icon>
-		<price>1070</price>
-		<kind>ARMOR_PIERCING</kind>
-		<caliber>128</caliber>
-		<isTracer>true</isTracer>
-		<effects>largeArmorPiercing</effects>
-		<damage>
-			<armor>490</armor>
-			<devices>180</devices>
-		</damage>
-	</_128mm_PzGr39D_V01>
 	<_128mm_PzGr39E>
 		<id>31009</id>
 		<userString>#germany_vehicles:_128mm_PzGr39E</userString>
@@ -2101,21 +2271,6 @@
 			<devices>180</devices>
 		</damage>
 	</_128mm_PzGr39_E>
-	<_128mm_PzGr39_G00>
-		<id>40011</id>
-		<userString>#germany_vehicles:_128mm_PzGr39_G00</userString>
-		<icon>ap</icon>
-		<price>1070</price>
-		<notInShop>true</notInShop>
-		<kind>ARMOR_PIERCING</kind>
-		<caliber>128</caliber>
-		<isTracer>true</isTracer>
-		<effects>largeArmorPiercing</effects>
-		<damage>
-			<armor>500</armor>
-			<devices>180</devices>
-		</damage>
-	</_128mm_PzGr39_G00>
 	<_128mm_PzGr39_GW>
 		<id>31003</id>
 		<userString>#germany_vehicles:_128mm_PzGr39</userString>
@@ -3711,21 +3866,6 @@
 			<protectFromIndirectHits>internal tankmen</protectFromIndirectHits>
 		</deviceDamagePossibility>
 	</_210mm_Sprg18_Ausf_G>
-	<_283mm_PzGr_L44>
-		<id>41010</id>
-		<userString>#germany_vehicles:_283mm_PzGr_L44</userString>
-		<icon>ap</icon>
-		<price>4000</price>
-		<notInShop>true</notInShop>
-		<kind>ARMOR_PIERCING</kind>
-		<caliber>283</caliber>
-		<isTracer>true</isTracer>
-		<effects>superhugePortal_Ratte</effects>
-		<damage>
-			<armor>2000</armor>
-			<devices>300</devices>
-		</damage>
-	</_283mm_PzGr_L44>
 	<_30mm_M>
 		<id>99</id>
 		<userString>#germany_vehicles:_30mm_M</userString>
@@ -4383,7 +4523,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR_autoshoot</effects>
 		<damage>
-			<armor>80</armor>
+			<armor>75</armor>
 			<devices>35</devices>
 		</damage>
 		<hitDeviceChanceMultiplier>
@@ -4407,7 +4547,7 @@
 		<isTracer>true</isTracer>
 		<effects>mediumAPCR_autoshoot</effects>
 		<damage>
-			<armor>70</armor>
+			<armor>65</armor>
 			<devices>35</devices>
 		</damage>
 		<hitDeviceChanceMultiplier>
@@ -4938,21 +5078,6 @@
 			<devices>119</devices>
 		</damage>
 	</_88mm_Pzgr39_43>
-	<_88mm_Pzgr39_43_G00>
-		<id>40012</id>
-		<userString>#germany_vehicles:_88mm_Pzgr39_43_G00</userString>
-		<icon>ap</icon>
-		<price>252</price>
-		<notInShop>true</notInShop>
-		<kind>ARMOR_PIERCING</kind>
-		<caliber>88</caliber>
-		<isTracer>true</isTracer>
-		<effects>mainArmorPiercing</effects>
-		<damage>
-			<armor>200</armor>
-			<devices>119</devices>
-		</damage>
-	</_88mm_Pzgr39_43_G00>
 	<_88mm_Pzgr39_43_MapsTraining_Dummy_ATSPG_2>
 		<id>81</id>
 		<userString>#germany_vehicles:_88mm_Pzgr39_43</userString>
@@ -6218,12 +6343,12 @@
 			<!--BW_String-->
 		</explosionRadius>
 		<hasStun>true</hasStun>
-		<stunDuration>5</stunDuration>
+		<stunDuration>7</stunDuration>
 		<isTracer>true</isTracer>
 		<effects>comp7AirbombStrike</effects>
 		<damage>
 			<armor>250</armor>
-			<devices>200</devices>
+			<devices>100</devices>
 		</damage>
 		<explosionDamageFactor>
 			1.0

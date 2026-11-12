@@ -861,6 +861,8 @@ package net.wg.data.constants
       
       public static const PLATOON_VEH_MARKER:String = "PlatoonMarkerUI";
       
+      public static const NEW_YEAR_OBJECT_MARKER:String = "NewYearObjectMarkerUI";
+      
       public static const CUSTOM_MARKER:String = "CustomMarkerUI";
       
       public static const ITEM_SLOT_80X80_RENDERER:String = "ItemSlot80x80_UI";

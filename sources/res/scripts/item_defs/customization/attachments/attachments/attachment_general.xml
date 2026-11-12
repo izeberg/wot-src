@@ -120,13 +120,6 @@
 			<initialVisibility>false</initialVisibility>
 		</attachment>
 		<attachment>
-			<id>53</id>
-			<name>A158_T832_BX_T_3DSt</name>
-			<modelName>particles/Tank/customization/A158_T832_BX_T_3DSt/A158_T832_BX_T_3DSt.prefab</modelName>
-			<attachmentLogic>prefab</attachmentLogic>
-			<initialVisibility>false</initialVisibility>
-		</attachment>
-		<attachment>
 			<id>54</id>
 			<name>Ch25_121_mod_1971B_MC_3DSt</name>
 			<modelName>particles/Tank/customization/Ch25_121_mod_1971B_MC_3DSt/Ch25_121_mod_1971B_MC_3DSt.prefab</modelName>
@@ -1214,6 +1207,14 @@
 			<initialVisibility>true</initialVisibility>
 		</attachment>
 		<attachment>
+			<id>31141</id>
+			<name>Sleeve</name>
+			<modelName>vehicles/american/A185_MBT_Revised_V_E2/A185_MBT_Revised_V_E2_anim.prefab</modelName>
+			<hangarModelName>vehicles/american/A185_MBT_Revised_V_E2/A185_MBT_Revised_V_E2_anim_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<initialVisibility>true</initialVisibility>
+		</attachment>
+		<attachment>
 			<id>31138</id>
 			<modelName>vehicles/german/G197_E_94_Fechter/SleeveEjection.prefab</modelName>
 			<hangarModelName>vehicles/german/G197_E_94_Fechter/SleeveEjection_hangar.prefab</hangarModelName>
@@ -1349,6 +1350,59 @@
 			<initialVisibility>true</initialVisibility>
 		</attachment>
 		<attachment>
+			<id>31151</id>
+			<name>G195 Atomic Panzer</name>
+			<modelName>vehicles/german/G195_Atomic_Panzer/G195_Atomic_Panzer_anim.prefab</modelName>
+			<hangarModelName>vehicles/german/G195_Atomic_Panzer/G195_Atomic_Panzer_anim_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<initialVisibility>true</initialVisibility>
+		</attachment>
+		<attachment>
+			<id>31156</id>
+			<name>GB146_Albion_CommTurret</name>
+			<modelName>vehicles/british/GB146_Albion/CommTurret.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<initialVisibility>true</initialVisibility>
+		</attachment>
+		<attachment>
+			<id>31157</id>
+			<name>GB146_Albion Sleeve Ejection</name>
+			<modelName>vehicles/british/GB146_Albion/SleeveEjection.prefab</modelName>
+			<initialVisibility>true</initialVisibility>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>31158</id>
+			<name>GB146_Albion_Ability</name>
+			<modelName>vehicles/british/GB146_Albion/Ability.prefab</modelName>
+			<hangarModelName>vehicles/british/GB146_Albion/Ability_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<initialVisibility>true</initialVisibility>
+		</attachment>
+		<attachment>
+			<id>31161</id>
+			<name>Sleeve</name>
+			<modelName>vehicles/german/G203_JgPz_VII_Waldkatze/G203_JgPz_VII_Waldkatze_anim.prefab</modelName>
+			<hangarModelName>vehicles/german/G203_JgPz_VII_Waldkatze/G203_JgPz_VII_Waldkatze_anim_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<initialVisibility>true</initialVisibility>
+		</attachment>
+		<attachment>
+			<id>31154</id>
+			<name>Anim_hutch</name>
+			<modelName>vehicles/russian/R252_Object_430_IT/SleeveEjection.prefab</modelName>
+			<hangarModelName>vehicles/russian/R252_Object_430_IT/Hangar_sleeve.prefab</hangarModelName>
+			<initialVisibility>true</initialVisibility>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>31159</id>
+			<modelName>vehicles/russian/R252_Object_430_IT/Ability.prefab</modelName>
+			<name>R252_Object_430_IT_Ability</name>
+			<attachmentLogic>prefab</attachmentLogic>
+			<initialVisibility>true</initialVisibility>
+		</attachment>
+		<attachment>
 			<id>31162</id>
 			<name>A184_HTPC_3Dst_01_lamp</name>
 			<modelName>vehicles/american/A184_HTPC/_skins/A184_HTPC_3Dst_01/lamp_switcher.prefab</modelName>
@@ -1373,6 +1427,14 @@
 			<initialVisibility>true</initialVisibility>
 		</attachment>
 		<attachment>
+			<id>31170</id>
+			<name>Un17_RDT_62_3Dst_01</name>
+			<modelName>vehicles/intunion/Un17_RDT_62/_skins/Un17_RDT_62_3Dst_01/Un17_RDT_62_3Dst_01_anim.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<initialVisibility>true</initialVisibility>
+			<hangarModelName>vehicles/intunion/Un17_RDT_62/_skins/Un17_RDT_62_3Dst_01/Un17_RDT_62_3Dst_01_hangar.prefab</hangarModelName>
+		</attachment>
+		<attachment>
 			<id>31166</id>
 			<name>Un20_M_767_Vepar_SleeveEjection</name>
 			<modelName>vehicles/intunion/Un20_M_767_Vepar/SleeveEjection.prefab</modelName>
@@ -1388,9 +1450,19 @@
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
 		<attachment>
-			<id>31149</id>
-			<name>G00_Ratte_V01_anim</name>
-			<modelName>vehicles/german/G00_Ratte_V1/G00_Ratte_V1_anim.prefab</modelName>
+			<id>31657</id>
+			<initialVisibility>true</initialVisibility>
+			<name>J50_ST_A5_SleeveEjection</name>
+			<modelName>vehicles/japan/J50_ST_A5/SleeveEjection.prefab</modelName>
+			<hangarModelName>vehicles/japan/J50_ST_A5/SleeveEjection_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<initialVisibility>true</initialVisibility>
+		</attachment>
+		<attachment>
+			<id>31167</id>
+			<name>J20_Type_2605_3Dst_02</name>
+			<modelName>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/Type_2605_3Dst_02_anim.prefab</modelName>
+			<hangarModelName>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/Type_2605_3Dst_02_hangar.prefab</hangarModelName>
 			<attachmentLogic>prefab</attachmentLogic>
 			<initialVisibility>true</initialVisibility>
 		</attachment>

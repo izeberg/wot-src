@@ -339,7 +339,7 @@ class BattleFeedbackAdaptor(IBattleController):
         if not hasPiercedHit:
             vInfo = self.getVehicleProxy(vehicleID)
             isWheeledTech = vInfo is not None and vInfo.isWheeledTech
-            if vInfo.isWheeledTech:
+            if isWheeledTech:
                 wheelsConfig = vInfo.appearance.typeDescriptor.chassis.generalWheelsAnimatorConfig
             else:
                 wheelsConfig = None

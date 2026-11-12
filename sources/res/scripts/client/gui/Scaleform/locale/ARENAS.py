@@ -61,12 +61,18 @@ class ARENAS(object):
     TYPE_DOMINATION3_DESCRIPTION = '#arenas:type/domination3/description'
     C_01_KARELIA_NAME = '#arenas:01_karelia/name'
     C_01_KARELIA_DESCRIPTION = '#arenas:01_karelia/description'
+    C_01_KARELIA_NY_NAME = '#arenas:01_karelia_ny/name'
+    C_01_KARELIA_NY_DESCRIPTION = '#arenas:01_karelia_ny/description'
     C_02_MALINOVKA_NAME = '#arenas:02_malinovka/name'
     C_02_MALINOVKA_DESCRIPTION = '#arenas:02_malinovka/description'
+    C_02_MALINOVKA_NY_NAME = '#arenas:02_malinovka_ny/name'
+    C_02_MALINOVKA_NY_DESCRIPTION = '#arenas:02_malinovka_ny/description'
     C_04_HIMMELSDORF_NAME = '#arenas:04_himmelsdorf/name'
     C_04_HIMMELSDORF_DESCRIPTION = '#arenas:04_himmelsdorf/description'
     C_05_PROHOROVKA_NAME = '#arenas:05_prohorovka/name'
     C_05_PROHOROVKA_DESCRIPTION = '#arenas:05_prohorovka/description'
+    C_05_PROHOROVKA_NY_NAME = '#arenas:05_prohorovka_ny/name'
+    C_05_PROHOROVKA_NY_DESCRIPTION = '#arenas:05_prohorovka_ny/description'
     C_06_ENSK_NAME = '#arenas:06_ensk/name'
     C_06_ENSK_DESCRIPTION = '#arenas:06_ensk/description'
     C_07_LAKEVILLE_NAME = '#arenas:07_lakeville/name'
@@ -92,6 +98,8 @@ class ARENAS(object):
     C_33_FJORD_DESCRIPTION = '#arenas:33_fjord/description'
     C_34_REDSHIRE_NAME = '#arenas:34_redshire/name'
     C_34_REDSHIRE_DESCRIPTION = '#arenas:34_redshire/description'
+    C_34_REDSHIRE_NY_NAME = '#arenas:34_redshire_ny/name'
+    C_34_REDSHIRE_NY_DESCRIPTION = '#arenas:34_redshire_ny/description'
     C_35_STEPPES_NAME = '#arenas:35_steppes/name'
     C_35_STEPPES_DESCRIPTION = '#arenas:35_steppes/description'
     C_36_FISHING_BAY_NAME = '#arenas:36_fishing_bay/name'
@@ -106,6 +114,8 @@ class ARENAS(object):
     C_19_MONASTERY_DESCRIPTION = '#arenas:19_monastery/description'
     C_23_WESTFELD_NAME = '#arenas:23_westfeld/name'
     C_23_WESTFELD_DESCRIPTION = '#arenas:23_westfeld/description'
+    C_23_WESTFELD_NY_NAME = '#arenas:23_westfeld_ny/name'
+    C_23_WESTFELD_NY_DESCRIPTION = '#arenas:23_westfeld_ny/description'
     C_28_DESERT_NAME = '#arenas:28_desert/name'
     C_28_DESERT_DESCRIPTION = '#arenas:28_desert/description'
     C_29_EL_HALLOUF_NAME = '#arenas:29_el_hallouf/name'
@@ -161,8 +171,6 @@ class ARENAS(object):
     C_127_JAPORT_DESCRIPTION = '#arenas:127_japort/description'
     C_252_BR_BATTLE_CITY4_NAME = '#arenas:252_br_battle_city4/name'
     C_252_BR_BATTLE_CITY4_DESCRIPTION = '#arenas:252_br_battle_city4/description'
-    C_252_BR_BATTLE_CITY4_PORTAL_NAME = '#arenas:252_br_battle_city4_portal/name'
-    C_252_BR_BATTLE_CITY4_PORTAL_DESCRIPTION = '#arenas:252_br_battle_city4_portal/description'
     C_128_LAST_FRONTIER_V_NAME = '#arenas:128_last_frontier_v/name'
     C_128_LAST_FRONTIER_V_DESCRIPTION = '#arenas:128_last_frontier_v/description'
     C_108_NORMANDY_NOM_NAME = '#arenas:108_normandy_nom/name'
@@ -206,8 +214,8 @@ class ARENAS(object):
     MODIFIED = '#arenas:modified'
     C_280_COSMIC_2026_NAME = '#arenas:280_cosmic_2026/name'
     C_280_COSMIC_2026_DESCRIPTION = '#arenas:280_cosmic_2026/description'
-    H13_MT_PORTAL_2025_NAME = '#arenas:h13_mt_portal_2025/name'
-    H13_MT_PORTAL_2025_DESCRIPTION = '#arenas:h13_mt_portal_2025/description'
+    H03_MT_NY_2026_NAME = '#arenas:h03_mt_ny_2026/name'
+    H03_MT_NY_2026_DESCRIPTION = '#arenas:h03_mt_ny_2026/description'
     ALL_ENUM = (
      TYPE_CTF_NAME,
      TYPE_CTF_DESCRIPTION,
@@ -269,12 +277,18 @@ class ARENAS(object):
      TYPE_DOMINATION3_DESCRIPTION,
      C_01_KARELIA_NAME,
      C_01_KARELIA_DESCRIPTION,
+     C_01_KARELIA_NY_NAME,
+     C_01_KARELIA_NY_DESCRIPTION,
      C_02_MALINOVKA_NAME,
      C_02_MALINOVKA_DESCRIPTION,
+     C_02_MALINOVKA_NY_NAME,
+     C_02_MALINOVKA_NY_DESCRIPTION,
      C_04_HIMMELSDORF_NAME,
      C_04_HIMMELSDORF_DESCRIPTION,
      C_05_PROHOROVKA_NAME,
      C_05_PROHOROVKA_DESCRIPTION,
+     C_05_PROHOROVKA_NY_NAME,
+     C_05_PROHOROVKA_NY_DESCRIPTION,
      C_06_ENSK_NAME,
      C_06_ENSK_DESCRIPTION,
      C_07_LAKEVILLE_NAME,
@@ -300,6 +314,8 @@ class ARENAS(object):
      C_33_FJORD_DESCRIPTION,
      C_34_REDSHIRE_NAME,
      C_34_REDSHIRE_DESCRIPTION,
+     C_34_REDSHIRE_NY_NAME,
+     C_34_REDSHIRE_NY_DESCRIPTION,
      C_35_STEPPES_NAME,
      C_35_STEPPES_DESCRIPTION,
      C_36_FISHING_BAY_NAME,
@@ -314,6 +330,8 @@ class ARENAS(object):
      C_19_MONASTERY_DESCRIPTION,
      C_23_WESTFELD_NAME,
      C_23_WESTFELD_DESCRIPTION,
+     C_23_WESTFELD_NY_NAME,
+     C_23_WESTFELD_NY_DESCRIPTION,
      C_28_DESERT_NAME,
      C_28_DESERT_DESCRIPTION,
      C_29_EL_HALLOUF_NAME,
@@ -369,8 +387,6 @@ class ARENAS(object):
      C_127_JAPORT_DESCRIPTION,
      C_252_BR_BATTLE_CITY4_NAME,
      C_252_BR_BATTLE_CITY4_DESCRIPTION,
-     C_252_BR_BATTLE_CITY4_PORTAL_NAME,
-     C_252_BR_BATTLE_CITY4_PORTAL_DESCRIPTION,
      C_128_LAST_FRONTIER_V_NAME,
      C_128_LAST_FRONTIER_V_DESCRIPTION,
      C_108_NORMANDY_NOM_NAME,
@@ -414,8 +430,8 @@ class ARENAS(object):
      MODIFIED,
      C_280_COSMIC_2026_NAME,
      C_280_COSMIC_2026_DESCRIPTION,
-     H13_MT_PORTAL_2025_NAME,
-     H13_MT_PORTAL_2025_DESCRIPTION)
+     H03_MT_NY_2026_NAME,
+     H03_MT_NY_2026_DESCRIPTION)
 
     @classmethod
     def all(cls, key0):

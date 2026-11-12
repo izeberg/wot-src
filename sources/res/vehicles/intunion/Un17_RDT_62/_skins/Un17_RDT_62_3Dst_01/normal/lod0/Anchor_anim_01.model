@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un17_RDT_62/_skins/Un17_RDT_62_3Dst_01/normal/lod0/Anchor_anim_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.671937 -0.393603 3.166794</min>
+		<max>-0.366697 -0.090913 3.244504</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/intunion/Un17_RDT_62/_skins/Un17_RDT_62_3Dst_01/normal/lod1/Anchor_anim_01</parent>
+	<extent>32.000000</extent>
+</root>

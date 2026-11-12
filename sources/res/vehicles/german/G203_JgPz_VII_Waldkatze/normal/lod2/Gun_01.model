@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G203_JgPz_VII_Waldkatze/normal/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/german/G203_JgPz_VII_Waldkatze/normal/lod2/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.604440 -1.147853 -0.525144</min>
+		<max>0.429995 1.006573 8.597594</max>
+	</visibilityBox>
+</root>

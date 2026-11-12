@@ -168,20 +168,6 @@ package net.wg.data.constants.generated
       public static const ABILITY_ICON:String = "secondaryAbilityIconUI";
       
       public static const THERMAL_VISION_WARNING:String = "thermalVisionWarningUI";
-      
-      public static const PORTAL_DEATH_ZONE_ICON:String = "PortalDeathZoneIconUI";
-      
-      public static const PORTAL_RATTE_AURA_ICON:String = "PortalRatteAuraIconUI";
-      
-      public static const PORTAL_RATTE_AURA_SMALL_ICON:String = "PortalRatteAuraSmallIconUI";
-      
-      public static const PORTAL_TELEPORT_HOOK_ICON:String = "PortalTeleportHookIconUI";
-      
-      public static const PORTAL_TELEPORT_HORSE_ICON:String = "PortalTeleportHorseIconUI";
-      
-      public static const PORTAL_TELEPORT_LOGO_ICON:String = "PortalTeleportLogoIconUI";
-      
-      public static const PORTAL_TELEPORT_SATELLITE_ICON:String = "PortalTeleportSatelliteIconUI";
        
       
       public function BATTLE_NOTIFICATIONS_TIMER_LINKAGES()

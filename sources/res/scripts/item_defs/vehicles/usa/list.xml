@@ -970,7 +970,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>AT-SPG role_ATSPG_assault HD heavyAT-SPG improvedVentilation_class1_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user special secret testTank earn_crystals lockOutfit</tags>
+		<tags>AT-SPG role_ATSPG_assault HD heavyAT-SPG improvedVentilation_class1_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user special earn_crystals</tags>
 		<level>10</level>
 	</A151_TS_60>
 	<A152_M_Project_2>
@@ -1047,21 +1047,6 @@
 		<tags>heavyTank role_HT_break HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user</tags>
 		<level>8</level>
 	</A157_M_VII_Y>
-	<A158_T832>
-		<id>169</id>
-		<userString>#usa_vehicles:A158_T832</userString>
-		<shortUserString>#usa_vehicles:A158_T832_short</shortUserString>
-		<description>#usa_vehicles:A158_T832_descr</description>
-		<shortDescriptionSpecial>#usa_vehicles:A158_T832_short_special</shortDescriptionSpecial>
-		<longDescriptionSpecial>#usa_vehicles:A158_T832_long_special</longDescriptionSpecial>
-		<price>
-			100
-			<gold/>
-		</price>
-		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user lockOutfit restoreWithStyle secret private builtinStyle</tags>
-		<level>8</level>
-	</A158_T832>
 	<A15_T57>
 		<id>75</id>
 		<userString>#usa_vehicles:T57</userString>
@@ -1359,7 +1344,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>mediumTank role_MT_support HD improvedVentilation_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals secret testTank lockOutfit</tags>
+		<tags>mediumTank role_MT_support HD improvedVentilation_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals</tags>
 		<level>9</level>
 	</A180_ACIT_40t_Concept>
 	<A182_ALRS_M6>
@@ -1392,6 +1377,36 @@
 		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals special</tags>
 		<level>10</level>
 	</A184_HTPC>
+	<A185_MBT_Revised_V_E2>
+		<id>31029</id>
+		<userString>#usa_vehicles:A185_MBT_Revised_V_E2</userString>
+		<description>#usa_vehicles:A185_MBT_Revised_V_E2_descr</description>
+		<shortUserString>#usa_vehicles:A185_MBT_Revised_V_E2_short</shortUserString>
+		<shortDescriptionSpecial>#usa_vehicles:A185_MBT_Revised_V_E2_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#usa_vehicles:A185_MBT_Revised_V_E2_long_special</longDescriptionSpecial>
+		<price>
+			50000
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>mediumTank role_MT_assault HD special improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_medium_user earn_crystals secret testTank lockOutfit private secretExtended</tags>
+		<level>11</level>
+	</A185_MBT_Revised_V_E2>
+	<A186_M103_Improved>
+		<id>31031</id>
+		<userString>#usa_vehicles:A186_M103_Improved</userString>
+		<description>#usa_vehicles:A186_M103_Improved_descr</description>
+		<shortUserString>#usa_vehicles:A186_M103_Improved_short</shortUserString>
+		<shortDescriptionSpecial>#usa_vehicles:A186_M103_Improved_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#usa_vehicles:A186_M103_Improved_long_special</longDescriptionSpecial>
+		<price>
+			25000
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user earn_crystals special secret testTank lockOutfit</tags>
+		<level>10</level>
+	</A186_M103_Improved>
 	<A18_M41>
 		<id>16</id>
 		<userString>#usa_vehicles:M41</userString>

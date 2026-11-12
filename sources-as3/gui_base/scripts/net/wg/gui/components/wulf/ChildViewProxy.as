@@ -10,6 +10,7 @@ package net.wg.gui.components.wulf
    import net.wg.gui.components.containers.ViewWrapper;
    import net.wg.infrastructure.wulf.IChildViewProxy;
    import net.wg.infrastructure.wulf.IViewWrapper;
+   import net.wg.utils.IFocusHandler;
    
    public class ChildViewProxy extends Sprite implements IChildViewProxy
    {
@@ -43,29 +44,12 @@ package net.wg.gui.components.wulf
       
       private static function tryMoveFocus(param1:InteractiveObject, param2:InteractiveObject, param3:Boolean) : void
       {
-         if(!!param3 ? Boolean(hasFocusInside(param1)) : Boolean(param1 == App.utils.focusHandler.getFocus(0)))
+         var _loc4_:IFocusHandler = App.utils.focusHandler;
+         if(!!param3 ? Boolean(_loc4_.hasFocusInside(param1)) : Boolean(param1 == _loc4_.getFocus(0)))
          {
             DebugUtils.LOG_DEBUG(param1.name + " >>> move focus to the wrapper >>> " + param2.name);
-            App.utils.focusHandler.setFocus(InteractiveObject(param2));
+            _loc4_.setFocus(InteractiveObject(param2));
          }
-      }
-      
-      private static function hasFocusInside(param1:InteractiveObject) : Boolean
-      {
-         if(!param1 || !param1.stage)
-         {
-            return false;
-         }
-         var _loc2_:DisplayObject = App.utils.focusHandler.getFocus(0);
-         while(_loc2_ != null && _loc2_ != param1.stage)
-         {
-            if(_loc2_ == param1)
-            {
-               return true;
-            }
-            _loc2_ = _loc2_.parent;
-         }
-         return false;
       }
       
       public function dispose() : void
@@ -123,6 +107,7 @@ package net.wg.gui.components.wulf
       
       public function removeWrapper(param1:IViewWrapper = null, param2:uint = 0) : void
       {
+         dispatchEvent(new Event(Event.REMOVED,true,true));
          App.utils.asserter.assertNotNull(this._wrapper,Errors.CANT_NULL);
          this._wrapper.removeEventListener(Event.RESIZE,this.onWrapperResizeHandler);
          if(!this._disposed && this._wrapper.focused)

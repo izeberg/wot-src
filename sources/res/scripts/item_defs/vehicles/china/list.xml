@@ -303,20 +303,6 @@
 		<tags>heavyTank role_HT_break HD collectorVehicle improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals</tags>
 		<level>10</level>
 	</Ch22_113>
-	<Ch22_113P>
-		<id>245</id>
-		<userString>#china_vehicles:Ch22_113P</userString>
-		<description>#china_vehicles:Ch22_113P_descr</description>
-		<shortDescriptionSpecial>#china_vehicles:Ch22_113P_short_special</shortDescriptionSpecial>
-		<longDescriptionSpecial>#china_vehicles:Ch22_113P_long_special</longDescriptionSpecial>
-		<price>
-			25000
-			<gold/>
-		</price>
-		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_break private HD secret disabledInRoaming improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals</tags>
-		<level>10</level>
-	</Ch22_113P>
 	<Ch22_113_Beijing_Opera>
 		<id>244</id>
 		<userString>#china_vehicles:Ch22_113_Beijing_Opera</userString>
@@ -1093,7 +1079,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>lightTank role_LT_universal HD scout improvedVentilation_class3_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_light_user rocketAcceleration earn_crystals secret testTank lockOutfit</tags>
+		<tags>lightTank role_LT_universal HD scout improvedVentilation_class3_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_light_user rocketAcceleration earn_crystals</tags>
 		<level>9</level>
 	</Ch75_ZTQ_56>
 	<Ch76_HSD_1>
@@ -1111,4 +1097,19 @@
 		<tags>heavyTank role_HT_break HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user rocketAcceleration earn_crystals</tags>
 		<level>9</level>
 	</Ch76_HSD_1>
+	<Ch77_WZ_120_SPG>
+		<id>31011</id>
+		<userString>#china_vehicles:Ch77_WZ_120_SPG</userString>
+		<description>#china_vehicles:Ch77_WZ_120_SPG_descr</description>
+		<shortUserString>#china_vehicles:Ch77_WZ_120_SPG_short</shortUserString>
+		<shortDescriptionSpecial>#china_vehicles:Ch77_WZ_120_SPG_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#china_vehicles:Ch77_WZ_120_SPG_long_special</longDescriptionSpecial>
+		<price>
+			17500
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>AT-SPG role_ATSPG_sniper HD mediumAT-SPG improvedVentilation_class2_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_medium_user earn_crystals secret testTank lockOutfit</tags>
+		<level>9</level>
+	</Ch77_WZ_120_SPG>
 </root>

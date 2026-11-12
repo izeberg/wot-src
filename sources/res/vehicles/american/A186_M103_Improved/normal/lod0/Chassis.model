@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A186_M103_Improved/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.880695 -0.000212 -3.794534</min>
+		<max>1.880695 1.480644 3.839935</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A186_M103_Improved/normal/lod0/Chassis</nodefullVisual>
+</root>

@@ -92,7 +92,7 @@
 			<armor_15>35</armor_15>
 			<armor_16>30</armor_16>
 		</armor>
-		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
+		<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 		<weight>9180</weight>
 		<maxHealth>950</maxHealth>
 		<ammoBayHealth>
@@ -1326,8 +1326,8 @@
 		</customization>
 		<hangarShadowTexture>vehicles/chinese/Ch75_ZTQ_56/Ch75_ZTQ_56_HangarShadowMap.dds</hangarShadowTexture>
 		<camouflage>
-			<density>136.252594 134.402542</density>
-			<aoTextureSize>1024 512</aoTextureSize>
+			<density>120.012268 120.085686</density>
+			<aoTextureSize>1024 1024</aoTextureSize>
 		</camouflage>
 	</hull>
 	<chassis>
@@ -1464,6 +1464,24 @@
 									<row2>0.000000 0.000000 5.582812</row2>
 									<row3>0.000000 1.175333 -0.057502</row3>
 								</boxCollider>
+								<boxCollider>
+									<row0>2.850000 -0.000016 -0.000025</row0>
+									<row1>-0.000003 0.291108 -0.524648</row1>
+									<row2>0.000003 0.262324 0.145554</row2>
+									<row3>0.000011 1.165329 2.602672</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>2.850000 -0.000007 -0.000018</row0>
+									<row1>-0.000001 0.231924 -0.190293</row1>
+									<row2>0.000003 0.317155 0.386539</row2>
+									<row3>0.000013 1.147766 -2.796398</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 0.000000</row0>
+									<row1>0.000000 0.500000 0.000000</row1>
+									<row2>0.000000 0.000000 5.800000</row2>
+									<row3>-1.563329 0.992182 -0.000000</row3>
+								</boxCollider>
 							</hullCollider>
 						</physicalParams>
 					</trackDebris>
@@ -1531,6 +1549,24 @@
 									<row1>0.000000 0.300000 0.000000</row1>
 									<row2>0.000000 0.000000 5.582812</row2>
 									<row3>0.000000 1.175333 -0.057502</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>2.850000 -0.000016 -0.000025</row0>
+									<row1>-0.000003 0.291108 -0.524648</row1>
+									<row2>0.000003 0.262324 0.145554</row2>
+									<row3>0.000011 1.165330 2.602670</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>2.850000 -0.000007 -0.000018</row0>
+									<row1>-0.000001 0.231924 -0.190293</row1>
+									<row2>0.000003 0.317155 0.386539</row2>
+									<row3>0.000013 1.147770 -2.796400</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 0.000000</row0>
+									<row1>0.000000 0.500000 0.000000</row1>
+									<row2>0.000000 0.000000 5.800000</row2>
+									<row3>1.561116 0.992150 0.000001</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -2624,11 +2660,11 @@
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
-								-0.01 0.02 1.2
+								-0.01 0.02 1.6
 								<!--BW_String-->
 							</rayStart>
 							<rayEnd>
-								-0.01 0.02 1.76
+								-0.01 0.02 2.16
 								<!--BW_String-->
 							</rayEnd>
 							<rayUp>
@@ -2660,6 +2696,10 @@
 					</hitTester>
 					<effects>shot_mainext_mb</effects>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<shotOffset>
+						-0.01103 0.012868 0.241516
+						<!--BW_String-->
+					</shotOffset>
 					<camouflage>
 						<density>122.961624 125.356033</density>
 						<aoTextureSize>512 256</aoTextureSize>

@@ -1,6 +1,6 @@
 import logging, operator, weakref
 from collections import namedtuple, deque
-import BigWorld, BattleReplay
+import typing, BigWorld, BattleReplay
 from WeakMethod import WeakMethodProxy
 from account_helpers.settings_core.settings_constants import BattleCommStorageKeys
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS
@@ -22,6 +22,8 @@ from messenger_common_chat2 import MESSENGER_ACTION_IDS as _ACTIONS
 from messenger_common_chat2 import MESSENGER_LIMITS as _LIMITS
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.battle_session import IBattleSessionProvider
+if typing.TYPE_CHECKING:
+    from messenger.proto.bw_chat2.battle_chat_cmd import _ReceivedCmdDecorator, _OutCmdDecorator
 _ActionsCollection = namedtuple('_ActionsCollection', 'initID deInitID onBroadcastID broadcastID')
 _logger = logging.getLogger(__name__)
 
@@ -464,8 +466,8 @@ class BattleChatCommandHandler(bw2_provider.ResponseDictHandler, IBattleCommandF
     def createByBaseIndex(self, pointId, commandName):
         return self.__factory.createByBaseIndex(pointId, commandName)
 
-    def createByGlobalMsgName(self, actionID, baseName=''):
-        return self.__factory.createByGlobalMsgName(actionID, baseName)
+    def createByBaseID(self, actionID, baseID=-1):
+        return self.__factory.createByBaseID(actionID, baseID)
 
     def createReloadingCommand(self, isCassetteClip, timeLeft, quantity, hasAutoShoot):
         return self.__factory.createReloadingCommand(isCassetteClip, timeLeft, quantity, hasAutoShoot)
@@ -575,22 +577,24 @@ class BattleChatCommandHandler(bw2_provider.ResponseDictHandler, IBattleCommandF
         self.__processCommand(cmd)
 
     def __processCommand(self, cmd):
-        silentMode = self.__isSilentMode(cmd)
-        if not silentMode and self.__sessionProvider.arenaVisitor.getArenaBonusType() == ARENA_BONUS_TYPE.EPIC_BATTLE:
-            silentMode = self.__isSilentModeForEpicBattleMode(cmd)
-        if silentMode:
-            cmd.setSilentMode(silentMode)
-        if cmd.isIgnored():
-            g_mutedMessages[cmd.getFirstTargetID()] = cmd
-            _logger.debug("Chat command '%s' is ignored", cmd.getCommandText())
+        arenaDP = self.__sessionProvider.getArenaDP()
+        if arenaDP is None:
+            _logger.debug("Chat command with ID '%d' received after leaving arena", cmd.getID())
             return
         else:
+            silentMode = self.__isSilentMode(cmd)
+            if not silentMode and self.__sessionProvider.arenaVisitor.getArenaBonusType() == ARENA_BONUS_TYPE.EPIC_BATTLE:
+                silentMode = self.__isSilentModeForEpicBattleMode(cmd)
+            if silentMode:
+                cmd.setSilentMode(silentMode)
+            if cmd.isIgnored():
+                g_mutedMessages[cmd.getFirstTargetID()] = cmd
+                _logger.debug("Chat command '%s' is ignored", cmd.getCommandText())
+                return
             if cmd.isPrivate() and not (cmd.isReceiver() or cmd.isSender()):
                 return
-            arenaDP = self.__sessionProvider.getArenaDP()
-            if arenaDP is not None and arenaDP.isObserver(arenaDP.getPlayerVehicleID()):
-                if cmd.isReply() or cmd.isCancelReply() or cmd.isAutoCommit():
-                    return
+            if arenaDP.isObserver(arenaDP.getPlayerVehicleID()) and (cmd.isReply() or cmd.isCancelReply() or cmd.isAutoCommit()):
+                return
             g_messengerEvents.channels.onCommandReceived(cmd)
             return
 

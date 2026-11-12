@@ -134,19 +134,23 @@ class OfferGiftVehiclePreview(VehiclePreview):
             event_dispatcher.showHangar()
 
     def __onOffersUpdated(self):
-        offer = self.__offersProvider.getOffer(self._offer.id)
-        if offer is None or not offer.isOfferAvailable:
-            self.__showOfferUnavailableNotification()
-            if self.__offersProvider.getAvailableOffers(onlyVisible=True):
-                event_dispatcher.showStorage(defaultSection=STORAGE_CONSTANTS.OFFERS)
-            else:
-                self._customCallbacks.get('offerEndedCb', event_dispatcher.showHangar)()
+        received = self.__offersProvider.getReceivedGifts(self._offer.id)
+        if received is not None and self._gift.id in received:
             return
-        gift = offer.getGift(self._gift.id)
-        if gift is None or offer.getGiftAvailabelCount(self._gift.id) == 0 or gift.bonus.displayedItem.intCD != self._vehicle.intCD:
-            self.__showOfferUnavailableNotification()
-            self._customCallbacks.get('giftUnavailableCb', lambda : None)()
-        return
+        else:
+            offer = self.__offersProvider.getOffer(self._offer.id)
+            if offer is None or not offer.isOfferAvailable:
+                self.__showOfferUnavailableNotification()
+                if self.__offersProvider.getAvailableOffers(onlyVisible=True):
+                    event_dispatcher.showStorage(defaultSection=STORAGE_CONSTANTS.OFFERS)
+                else:
+                    self._customCallbacks.get('offerEndedCb', event_dispatcher.showHangar)()
+                return
+            gift = offer.getGift(self._gift.id)
+            if gift is None or offer.getGiftAvailabelCount(self._gift.id) == 0 or gift.bonus.displayedItem.intCD != self._vehicle.intCD:
+                self.__showOfferUnavailableNotification()
+                self._customCallbacks.get('giftUnavailableCb', lambda : None)()
+            return
 
     @staticmethod
     def __showOfferUnavailableNotification():

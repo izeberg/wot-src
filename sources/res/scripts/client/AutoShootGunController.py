@@ -104,7 +104,8 @@ class AutoShootGunShootingAnimator(CallbackDelayer, EventsHandler):
             return
         else:
             gunNode = appearance.compoundModel.node(TankNodeNames.GUN_INCLINATION)
-            appearance.receiveShotImpulse(Math.Matrix(gunNode).applyVector(Math.Vector3(0, 0, -1)), appearance.typeDescriptor.gun.impulse * shootRatePerSecond * dt)
+            if gunNode is not None:
+                appearance.receiveShotImpulse(Math.Matrix(gunNode).applyVector(Math.Vector3(0, 0, -1)), appearance.typeDescriptor.gun.impulse * shootRatePerSecond * dt)
             return dt
 
     def updateAutoShootingStatus(self, stateStatus, gunIndex):

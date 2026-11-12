@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>uk:GB109_GSOR_1008</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>31636</id>
+			<texture>vehicles/russian/Camouflage/GSOR_01_Camo_Hull_147.dds</texture>
+			<userString>#vehicle_customization:GSOR_01_Camo_Hull_147/name</userString>
+			<description>#vehicle_customization:GSOR_01_Camo_Hull_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tiling>
+				<uk:GB109_GSOR_1008>
+					0.25 0.25 0 0
+					<!--BW_String-->
+				</uk:GB109_GSOR_1008>
+			</tiling>
+			<exclusionImpact>
+				0.05
+				<!--BW_String-->
+			</exclusionImpact>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>uk:GB109_GSOR_1008</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>31637</id>
+			<texture>vehicles/russian/Camouflage/GSOR_01_Camo_Gun_147.dds</texture>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<userString>#vehicle_customization:GSOR_01_Camo_Gun_147/name</userString>
+			<description>#vehicle_customization:GSOR_01_Camo_Gun_147/description</description>
+			<tiling>
+				<uk:GB109_GSOR_1008>
+					0.25 0.5 0 0
+					<!--BW_String-->
+				</uk:GB109_GSOR_1008>
+			</tiling>
+			<exclusionImpact>
+				0.05
+				<!--BW_String-->
+			</exclusionImpact>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>uk:GB109_GSOR_1008</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>31638</id>
+			<texture>vehicles/russian/Camouflage/GSOR_01_Camo_Turret_147.dds</texture>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<userString>#vehicle_customization:GSOR_01_Camo_Turret_147/name</userString>
+			<description>#vehicle_customization:GSOR_01_Camo_Turret_147/description</description>
+			<tiling>
+				<uk:GB109_GSOR_1008>
+					0.5 0.5 0 0
+					<!--BW_String-->
+				</uk:GB109_GSOR_1008>
+			</tiling>
+			<exclusionImpact>
+				0.05
+				<!--BW_String-->
+			</exclusionImpact>
+		</camouflage>
+	</itemGroup>
+</root>

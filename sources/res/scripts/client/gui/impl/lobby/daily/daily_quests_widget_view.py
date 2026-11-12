@@ -1,6 +1,6 @@
-import logging, BigWorld, typing
+import logging, typing, BigWorld
 from account_helpers.AccountSettings import AccountSettings, SESSION_PROGRESS_REWARDS_WIDGET_LAST_SEEN_STEP
-from constants import PremiumConfigs, DAILY_QUESTS_CONFIG
+from constants import PREBATTLE_TYPE, QUEUE_TYPE, PremiumConfigs, DAILY_QUESTS_CONFIG
 from frameworks.wulf import Array, ViewFlags, WindowFlags
 from frameworks.wulf.view.view import ViewSettings
 from gui.Scaleform.genConsts.MISSIONS_STATES import MISSIONS_STATES
@@ -20,8 +20,11 @@ from gui.shared.events import LobbySimpleEvent
 from gui.shared.main_wnd_state_watcher import ClientMainWindowStateWatcher
 from gui.shared.missions.packers.events import getEventUIDataPacker, findFirstConditionModel
 from helpers import dependency
+from new_year.gui.game_control.ny_controller import isAllNyQuestsCompleted
+from new_year.ny_constants import ViewAliases
+from new_year.skeletons.new_year import INewYearController
 from skeletons.gui.game_control import IWotPlusController, IGameSessionController, ISessionProgressRewardsController
-from skeletons.gui.impl import IGuiLoader
+from skeletons.gui.impl import IGuiLoader, INewYearNavigation
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
@@ -54,6 +57,8 @@ class DailyQuestsWidgetView(ViewImpl, ClientMainWindowStateWatcher):
     itemsCache = dependency.descriptor(IItemsCache)
     __sessionProgressRewardsController = dependency.descriptor(ISessionProgressRewardsController)
     __gui = dependency.descriptor(IGuiLoader)
+    __nyController = dependency.descriptor(INewYearController)
+    _newYearNavigation = dependency.descriptor(INewYearNavigation)
 
     def __init__(self):
         settings = ViewSettings(R.views.lobby.daily.DailyQuestWidget(), ViewFlags.VIEW, DailyQuestsWidgetViewModel())
@@ -101,7 +106,11 @@ class DailyQuestsWidgetView(ViewImpl, ClientMainWindowStateWatcher):
                 self.__packQuestsModel(tx.getQuests(), quests)
                 self.__packQuestsModel(tx.getPremiumQuests(), premiumQuests)
                 self.__packSerialEnterQuests(tx.getSerialEnterQuests())
+                self.__updateNyState(tx)
             tx.setVisible(value)
+
+    def onPrbEntitySwitched(self):
+        self._updateViewModel()
 
     def _onLoading(self, *args, **kwargs):
         super(DailyQuestsWidgetView, self)._onLoading(*args, **kwargs)
@@ -116,6 +125,10 @@ class DailyQuestsWidgetView(ViewImpl, ClientMainWindowStateWatcher):
           self.__eventsCache.onSyncCompleted, self.__onSyncCompleted),
          (
           self.viewModel.onQuestClick, self.__onQuestClick),
+         (
+          self.viewModel.onNyQuestsClick, self.__onNyQuestsClick),
+         (
+          self.__nyController.onStateChanged, self.__onNyStateChanged),
          (
           self.gameSession.onPremiumTypeChanged, self._onPremiumTypeChanged),
          (
@@ -147,7 +160,7 @@ class DailyQuestsWidgetView(ViewImpl, ClientMainWindowStateWatcher):
         return bonusConditionModel
 
     def _onPremiumTypeChanged(self, *_):
-        if not isPremiumQuestsEnable():
+        if not isPremiumQuestsEnable() or self.__isVersusAIMode():
             return
         premiumQuests = sorted(self.__eventsCache.getDailyPremiumQuests().values(), key=dailyQuestsSortFunc)
         with self.getViewModel().transaction() as (tx):
@@ -160,6 +173,7 @@ class DailyQuestsWidgetView(ViewImpl, ClientMainWindowStateWatcher):
         quests, premiumQuests = self.__getDailyAndPremiumQuests()
         needUpdateQuests = needToUpdateQuestsInModel(quests, self.getViewModel().getQuests()) or needToUpdateQuestsInModel(premiumQuests, self.getViewModel().getPremiumQuests())
         with self.getViewModel().transaction() as (tx):
+            self.__updateNyState(tx)
             tx.setCountdown(newCountdownVal)
             self.__packSerialEnterQuests(tx.getSerialEnterQuests())
             if not needUpdateQuests:
@@ -171,7 +185,7 @@ class DailyQuestsWidgetView(ViewImpl, ClientMainWindowStateWatcher):
             self.__updateQuestsToBeIndicatedCompleted(tx, quests + premiumQuests, self.viewModel.getVisible())
 
     def _markVisited(self):
-        if not isDailyQuestsEnable() or self.__layout != LARGE_WIDGET_LAYOUT_ID:
+        if not isDailyQuestsEnable() or self.__layout != LARGE_WIDGET_LAYOUT_ID or self.__isVersusAIMode():
             return
         for quest in self.__eventsCache.getDailyQuests().values():
             self._scheduleMarkVisited(quest.getID())
@@ -200,6 +214,44 @@ class DailyQuestsWidgetView(ViewImpl, ClientMainWindowStateWatcher):
     def __onQuestClick(self, tabIdx):
         showDailyQuests(subTab=tabIdx)
 
+    def __onNyQuestsClick(self):
+        if not self.__isNyQuestsCardVisible() or not self.__nyController.isEnabled():
+            return
+        self._newYearNavigation.switchToView(ViewAliases.QUESTS_VIEW)
+
+    def __onNyStateChanged(self, *_):
+        with self.getViewModel().transaction() as (tx):
+            self.__updateNyState(tx)
+
+    def __isVersusAIMode(self):
+        prbDispatcher = self.__nyController.prbDispatcher
+        if prbDispatcher is None:
+            return False
+        else:
+            state = prbDispatcher.getFunctionalState()
+            return state.isInPreQueue(QUEUE_TYPE.VERSUS_AI) or state.isInUnit(PREBATTLE_TYPE.VERSUS_AI)
+
+    def __isNyQuestsCardVisible(self):
+        prbDispatcher = self.__nyController.prbDispatcher
+        if prbDispatcher is None:
+            return False
+        else:
+            state = prbDispatcher.getFunctionalState()
+            if self.__nyController.isWidgetVisible(state):
+                return True
+            return self.__isVersusAIMode() and (self.__nyController.isEnabled() or self.__nyController.isSuspended())
+
+    def __updateNyState(self, tx):
+        isNyCardVisible = self.__isNyQuestsCardVisible()
+        isNyEnabled = isNyCardVisible and self.__nyController.isEnabled()
+        isAllComplete = isAllNyQuestsCompleted(self.__eventsCache) if isNyEnabled else False
+        viewModel = self.getViewModel()
+        if viewModel.getIsNyCardVisible() == isNyCardVisible and viewModel.getIsNyEnabled() == isNyEnabled and viewModel.getIsAllNyQuestsComplete() == isAllComplete:
+            return
+        tx.setIsNyCardVisible(isNyCardVisible)
+        tx.setIsNyEnabled(isNyEnabled)
+        tx.setIsAllNyQuestsComplete(isAllComplete)
+
     def __onHelpLayoutShow(self, _):
         windows = self.__gui.windowsManager.findWindows(predicateTooltipWindow)
         for window in windows:
@@ -215,6 +267,8 @@ class DailyQuestsWidgetView(ViewImpl, ClientMainWindowStateWatcher):
         self._markVisited()
 
     def __onServerSettingsChanged(self, diff=None):
+        with self.viewModel.transaction() as (vm):
+            self.__updateNyState(vm)
         if not diff:
             return
         if PremiumConfigs.PREM_QUESTS in diff:
@@ -242,7 +296,7 @@ class DailyQuestsWidgetView(ViewImpl, ClientMainWindowStateWatcher):
             self.__packSerialEnterQuests(tx.getSerialEnterQuests())
 
     def __getDailyAndPremiumQuests(self):
-        if not isDailyQuestsEnable():
+        if self.__isVersusAIMode() or not isDailyQuestsEnable():
             return ([], [])
         quests = sorted(self.__eventsCache.getDailyQuests().values(), key=dailyQuestsSortFunc)
         premiumQuests = sorted(self.__eventsCache.getDailyPremiumQuests().values(), key=dailyQuestsSortFunc) if isPremiumQuestsEnable() else []

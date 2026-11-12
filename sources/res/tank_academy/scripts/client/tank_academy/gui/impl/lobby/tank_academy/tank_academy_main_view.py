@@ -25,7 +25,7 @@ from tank_academy.gui.impl.gen.view_models.views.lobby.tank_academy.tank_academy
 from tank_academy.gui.impl.gen.view_models.views.lobby.tank_academy.quest_view_model import QuestViewModel, State
 from tank_academy.gui.impl.lobby.tank_academy.tank_academy_rewards_view import TankAcademyRewardsViewWindow
 from tank_academy.gui.impl.lobby.tank_academy.tank_academy_migration_updates_view import TankAcademyMigrationUpdatesViewWindow
-from tank_academy.gui.impl.lobby.tank_academy.tank_academy_tutorials import getQuestTutorialChapterID, hasQuestTutorial
+from tank_academy.gui.impl.lobby.tank_academy.tank_academy_vehicles_selection_view import TankAcademyVehicleSelectionViewInitialTab
 from tank_academy.gui.shared.bonus_packers import packBonusModelAndTooltipData
 from tank_academy.gui.shared.event_dispatcher import showTankAcademyVehicleSelection
 if typing.TYPE_CHECKING:
@@ -188,7 +188,7 @@ class TankAcademyMainView(ViewImpl):
         questModel.setTitle(quest.getUserName())
         questModel.setDescription(quest.getDescription())
         questModel.setCondition(quest.getConditionLbl())
-        questModel.setHasTutorial(hasQuestTutorial(quest))
+        questModel.setHasTutorial(self.__tankAcademyController.hasQuestTutorial(quest))
         questState = State.UNAVAILABLE
         currentQuestNumber = currentQuest.getOrder() if currentQuest else None
         if quest.isCompleted() and (currentQuestNumber is None or number < currentQuestNumber):
@@ -242,7 +242,7 @@ class TankAcademyMainView(ViewImpl):
             if quest is None:
                 _logger.error('There is no quest for idx %d', int(questNumber) - 1)
                 return
-            chapterID = getQuestTutorialChapterID(quest)
+            chapterID = self.__tankAcademyController.getTutorialChapter(quest)
             if chapterID is None:
                 _logger.error('There is no tutorial chapter for questId %s', quest.getID())
                 return
@@ -267,20 +267,45 @@ class TankAcademyMainView(ViewImpl):
             return
 
     def __onUseQuestToken(self, args):
-        questNumber = args.get(TankAcademyMainViewModel.ARG_USE_QUEST_TOKEN)
+        self.__openVehicleSelectionFromArgs(args=args, argName=TankAcademyMainViewModel.ARG_USE_QUEST_TOKEN, isFromFlag=False)
+
+    def __onViewVehicles(self, args):
+        self.__openVehicleSelectionFromArgs(args=args, argName=TankAcademyMainViewModel.ARG_VIEW_VEHICLES, isFromFlag=True)
+
+    def __openVehicleSelectionFromArgs(self, args, argName, isFromFlag):
+        questNumber = args.get(argName)
         if questNumber is None:
-            _logger.error('questNumber is missing')
+            _logger.error('questNumber is missing, argName=%s', argName)
             return
         else:
-            tokenID = self.__getOfferTokenByQuestNumber(int(questNumber) - 1)
-            if tokenID is None:
-                _logger.error('There is no token for questNumber %s', questNumber)
-                return
-            showTankAcademyVehicleSelection(tokenID)
+            self.__showTankAcademyVehicleSelection(questIdx=int(questNumber) - 1, isFromFlag=isFromFlag)
             return
 
-    def __onViewVehicles(self):
-        showTankAcademyVehicleSelection()
+    def __showTankAcademyVehicleSelection(self, questIdx, isFromFlag):
+        selectedQuest = self.__tankAcademyController.getQuestByIdx(questIdx)
+        if selectedQuest is None:
+            _logger.error('There is no quest for idx %d', questIdx)
+            return
+        else:
+            currentQuest = self.__tankAcademyController.getCurrentQuest()
+            offerTokens = selectedQuest.getVehicleOfferTokens()
+            offerToken = offerTokens[0] if offerTokens else None
+            initialTab = self.__resolveVehicleSelectionInitialTab(selectedQuest=selectedQuest, currentQuest=currentQuest, offerToken=offerToken, isFromFlag=isFromFlag)
+            showTankAcademyVehicleSelection(offerToken=offerToken, initialTab=initialTab)
+            return
+
+    def __resolveVehicleSelectionInitialTab(self, selectedQuest, currentQuest, offerToken, isFromFlag):
+        hasUnobtainedDelayedRewards = self.__tankAcademyController.hasUnobtainedDelayedRewards()
+        defaultTab = TankAcademyVehicleSelectionViewInitialTab.HIGHEST_UNOBTAINED_TAB if hasUnobtainedDelayedRewards else TankAcademyVehicleSelectionViewInitialTab.NEXT_AFTER_HIGHEST_OBTAINED_TAB
+        if offerToken is None:
+            return defaultTab
+        else:
+            isPastQuest = currentQuest is None or selectedQuest.getOrder() < currentQuest.getOrder()
+            if isPastQuest and self.__tankAcademyController.isOfferRewardObtained(offerToken):
+                return defaultTab
+            if isFromFlag and hasUnobtainedDelayedRewards:
+                return TankAcademyVehicleSelectionViewInitialTab.HIGHEST_UNOBTAINED_TAB
+            return TankAcademyVehicleSelectionViewInitialTab.OFFER_TOKEN_TAB
 
     def __onSeenAnimation(self):
         completedQuestsCount = self.__tankAcademyController.getCompletedTankAcademyQuestsCount()

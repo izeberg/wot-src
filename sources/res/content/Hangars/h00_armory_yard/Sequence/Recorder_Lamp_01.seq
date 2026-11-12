@@ -14,12 +14,12 @@
 			<name>material property float</name>
 			<type>float</type>
 			<identifier>s_nd0</identifier>
-			<property>selfIlluminationEnvDependent</property>
+			<property>selfIllumination</property>
 			<frame>
 				<startTime>0.000000</startTime>
 				<value>10.000000</value>
-				<inTangent>0.000000</inTangent>
-				<outTangent>0.000000</outTangent>
+				<inTangent>10.714285</inTangent>
+				<outTangent>10.714285</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>

@@ -255,6 +255,7 @@ class REQ_CRITERIA(object):
         LOCKED = RequestCriteria(PredicateCondition(lambda item: item.isLocked))
         CLASSES = staticmethod(lambda types=constants.VEHICLE_CLASS_INDICES.keys(): RequestCriteria(PredicateCondition(lambda item: item.type in types)))
         LEVELS = staticmethod(lambda levels=range(1, constants.MAX_VEHICLE_LEVEL + 1): RequestCriteria(PredicateCondition(lambda item: item.level in levels)))
+        DIFFICULTIES = staticmethod(lambda difficulties: RequestCriteria(PredicateCondition(lambda item: item.difficulty in difficulties)))
         ROLES = staticmethod(lambda roles=constants.ROLE_LABEL_TO_TYPE.keys(): RequestCriteria(PredicateCondition(lambda item: item.roleLabel in roles)))
         LEVEL = staticmethod(lambda level=1: RequestCriteria(PredicateCondition(lambda item: item.level == level)))
         SPECIFIC_BY_CD = staticmethod(lambda typeCompDescrs: RequestCriteria(PredicateCondition(lambda item: item.intCD in typeCompDescrs)))
@@ -346,7 +347,7 @@ class REQ_CRITERIA(object):
     class RECRUIT(object):
         ROLES = staticmethod(lambda roles=tankmen.ROLES: RequestCriteria(PredicateCondition(--- This code section failed: ---
 
- L. 582         0  LOAD_FAST             0  'item'
+ L. 585         0  LOAD_FAST             0  'item'
                 3  LOAD_ATTR             0  'getRoles'
                 6  CALL_FUNCTION_0       0  None
                 9  POP_JUMP_IF_FALSE    53  'to 53'
@@ -527,7 +528,7 @@ class ItemsRequester(IItemsRequester):
     _AccountItem = namedtuple('_AccountItem', ['dossier', 'clanInfo', 'seasons', 'ranked',
      'dogTag', 'battleRoyaleStats', 'wtr', 'layout', 'layoutState'])
 
-    def __init__(self, inventory, stats, dossiers, goodies, shop, recycleBin, vehicleRotation, ranked, battleRoyale, badges, epicMetaGame, tokens, festivityRequester, armoryYard, blueprints=None, sessionStatsRequester=None, anonymizerRequester=None, battlePassRequester=None, giftSystemRequester=None, gameRestrictionsRequester=None, resourceWellRequester=None, achievements20Requester=None, refProgramRequester=None, sessionProgressRewardsRequester=None):
+    def __init__(self, inventory, stats, dossiers, goodies, shop, recycleBin, vehicleRotation, ranked, battleRoyale, badges, epicMetaGame, tokens, festivityRequester, armoryYard, blueprints=None, sessionStatsRequester=None, anonymizerRequester=None, battlePassRequester=None, giftSystemRequester=None, gameRestrictionsRequester=None, resourceWellRequester=None, achievements20Requester=None, refProgramRequester=None, sessionProgressRewardsRequester=None, nyTamagotchiRaidRequester=None):
         self.__inventory = inventory
         self.__stats = stats
         self.__dossiers = dossiers
@@ -552,6 +553,7 @@ class ItemsRequester(IItemsRequester):
         self.__achievements20 = achievements20Requester
         self.__refProgram = refProgramRequester
         self.__sessionProgressRewards = sessionProgressRewardsRequester
+        self.__nyTamagotchiRaid = nyTamagotchiRaidRequester
         self.__itemsCache = defaultdict(dict)
         self.__brokenSyncAlreadyLoggedTypes = set()
         self.__fittingItemRequesters = {
@@ -654,6 +656,10 @@ class ItemsRequester(IItemsRequester):
     def sessionProgressRewards(self):
         return self.__sessionProgressRewards
 
+    @property
+    def nyTamagotchiRaid(self):
+        return self.__nyTamagotchiRaid
+
     def __onCompletedCallback(self, waitingToClose=None, milestone=None):
         from gui.Scaleform.Waiting import Waiting
         if waitingToClose:
@@ -711,106 +717,15 @@ class ItemsRequester(IItemsRequester):
          callerWrapper(self.__resourceWell.request(), onCompleted=partial(self.__onCompletedCallback, 'download/resourceWell', None)),
          callerWrapper(self.__achievements20.request(), onCompleted=partial(self.__onCompletedCallback, 'download/achievements20', None)),
          callerWrapper(self.__refProgram.request(), onCompleted=partial(self.__onCompletedCallback, 'download/refProgram', None)),
-         callerWrapper(self.__sessionProgressRewards.request(), onCompleted=partial(self.__onCompletedCallback, 'download/sessionProgressRewards', None)))
+         callerWrapper(self.__sessionProgressRewards.request(), onCompleted=partial(self.__onCompletedCallback, 'download/sessionProgressRewards', None)),
+         callerWrapper(self.__nyTamagotchiRaid.request(), onCompleted=partial(self.__onCompletedCallback, None, None)))
         self.__brokenSyncAlreadyLoggedTypes.clear()
         callback(self)
         return
 
-    def isSynced--- This code section failed: ---
-
- L.1186         0  LOAD_FAST             0  'self'
-                3  LOAD_ATTR             0  '__blueprints'
-                6  LOAD_CONST               None
-                9  COMPARE_OP            9  is-not
-               12  POP_JUMP_IF_FALSE   223  'to 223'
-               15  LOAD_FAST             0  'self'
-               18  LOAD_ATTR             2  '__stats'
-               21  LOAD_ATTR             3  'isSynced'
-               24  CALL_FUNCTION_0       0  None
-               27  JUMP_IF_FALSE_OR_POP   226  'to 226'
-               30  LOAD_FAST             0  'self'
-               33  LOAD_ATTR             4  '__inventory'
-               36  LOAD_ATTR             3  'isSynced'
-               39  CALL_FUNCTION_0       0  None
-               42  JUMP_IF_FALSE_OR_POP   226  'to 226'
-               45  LOAD_FAST             0  'self'
-               48  LOAD_ATTR             5  '__recycleBin'
-               51  LOAD_ATTR             3  'isSynced'
-               54  CALL_FUNCTION_0       0  None
-               57  JUMP_IF_FALSE_OR_POP   226  'to 226'
-               60  LOAD_FAST             0  'self'
-               63  LOAD_ATTR             6  '__shop'
-               66  LOAD_ATTR             3  'isSynced'
-               69  CALL_FUNCTION_0       0  None
-               72  JUMP_IF_FALSE_OR_POP   226  'to 226'
-               75  LOAD_FAST             0  'self'
-               78  LOAD_ATTR             7  '__dossiers'
-               81  LOAD_ATTR             3  'isSynced'
-               84  CALL_FUNCTION_0       0  None
-               87  JUMP_IF_FALSE_OR_POP   226  'to 226'
-               90  LOAD_FAST             0  'self'
-               93  LOAD_ATTR             8  '__giftSystem'
-               96  LOAD_ATTR             3  'isSynced'
-               99  CALL_FUNCTION_0       0  None
-              102  JUMP_IF_FALSE_OR_POP   226  'to 226'
-              105  LOAD_FAST             0  'self'
-              108  LOAD_ATTR             9  '__goodies'
-              111  LOAD_ATTR             3  'isSynced'
-              114  CALL_FUNCTION_0       0  None
-              117  JUMP_IF_FALSE_OR_POP   226  'to 226'
-              120  LOAD_FAST             0  'self'
-              123  LOAD_ATTR            10  '__vehicleRotation'
-              126  LOAD_ATTR             3  'isSynced'
-              129  CALL_FUNCTION_0       0  None
-              132  JUMP_IF_FALSE_OR_POP   226  'to 226'
-              135  LOAD_FAST             0  'self'
-              138  LOAD_ATTR            11  'ranked'
-              141  LOAD_ATTR             3  'isSynced'
-              144  CALL_FUNCTION_0       0  None
-              147  JUMP_IF_FALSE_OR_POP   226  'to 226'
-              150  LOAD_FAST             0  'self'
-              153  LOAD_ATTR            12  '__anonymizer'
-              156  LOAD_ATTR             3  'isSynced'
-              159  CALL_FUNCTION_0       0  None
-              162  JUMP_IF_FALSE_OR_POP   226  'to 226'
-              165  LOAD_FAST             0  'self'
-              168  LOAD_ATTR            13  'epicMetaGame'
-              171  LOAD_ATTR             3  'isSynced'
-              174  CALL_FUNCTION_0       0  None
-              177  JUMP_IF_FALSE_OR_POP   226  'to 226'
-              180  LOAD_FAST             0  'self'
-              183  LOAD_ATTR            14  '__battleRoyale'
-              186  LOAD_ATTR             3  'isSynced'
-              189  CALL_FUNCTION_0       0  None
-              192  JUMP_IF_FALSE_OR_POP   226  'to 226'
-              195  LOAD_FAST             0  'self'
-              198  LOAD_ATTR            15  '__gameRestrictions'
-              201  LOAD_ATTR             3  'isSynced'
-              204  CALL_FUNCTION_0       0  None
-              207  JUMP_IF_FALSE_OR_POP   226  'to 226'
-              210  LOAD_FAST             0  'self'
-              213  LOAD_ATTR             0  '__blueprints'
-              216  LOAD_ATTR             3  'isSynced'
-              219  CALL_FUNCTION_0       0  None
-              222  RETURN_END_IF    
-            223_0  COME_FROM           207  '207'
-            223_1  COME_FROM           192  '192'
-            223_2  COME_FROM           177  '177'
-            223_3  COME_FROM           162  '162'
-            223_4  COME_FROM           147  '147'
-            223_5  COME_FROM           132  '132'
-            223_6  COME_FROM           117  '117'
-            223_7  COME_FROM           102  '102'
-            223_8  COME_FROM            87  '87'
-            223_9  COME_FROM            72  '72'
-           223_10  COME_FROM            57  '57'
-           223_11  COME_FROM            42  '42'
-           223_12  COME_FROM            27  '27'
-           223_13  COME_FROM            12  '12'
-              223  LOAD_GLOBAL          16  'False'
-              226  RETURN_VALUE     
-
-Parse error at or near `None' instruction at offset -1
+    def isSynced(self):
+        blueprintsSynced = self.__blueprints.isSynced() if self.__blueprints is not None else False
+        return self.__stats.isSynced() and self.__inventory.isSynced() and self.__recycleBin.isSynced() and self.__shop.isSynced() and self.__dossiers.isSynced() and self.__giftSystem.isSynced() and self.__goodies.isSynced() and self.__vehicleRotation.isSynced() and self.ranked.isSynced() and self.__anonymizer.isSynced() and self.epicMetaGame.isSynced() and self.__battleRoyale.isSynced() and self.__gameRestrictions.isSynced() and blueprintsSynced and self.__nyTamagotchiRaid.isSynced()
 
     @adisp_async
     @adisp_process
@@ -868,9 +783,16 @@ Parse error at or near `None' instruction at offset -1
         self.__anonymizer.clear()
         self.__giftSystem.clear()
         self.__gameRestrictions.clear()
+        if self.__nyTamagotchiRaid is not None:
+            self.__nyTamagotchiRaid.clear()
+        return
 
     def onDisconnected(self):
         self.__tokens.onDisconnected()
+
+    @adisp_async
+    def __noopRequest(self, callback=None):
+        callback()
 
     def fini(self):
         self.__fittingItemRequesters = {}

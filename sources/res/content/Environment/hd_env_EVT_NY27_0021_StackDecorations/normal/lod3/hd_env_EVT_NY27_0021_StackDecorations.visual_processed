@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>hd_env_EVT_NY27_0021_StackDecorations_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_module0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>n1Shape.vertices</vertices>
+			<primitive>n1Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>n_wood1</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/hd_env_EVT_NY27_Garland_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 0.764706 0.478431 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>12.000000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>45.000000</Float>
+					</property>
+					<sortOrder>1</sortOrder>
+				</material>
+				<groupOrigin>-0.147764 1.571727 0.017736</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>n_wood0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>128</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_NY27_0021_StackDecorations/hd_env_EVT_NY27_0021_StackDecoration_BAM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_EVT_NY27_0021_StackDecorations/hd_env_EVT_NY27_0021_StackDecoration_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_EVT_NY27_0021_StackDecorations/hd_env_EVT_NY27_0021_StackDecoration_BANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.081012 1.319516 -0.013876</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>d_wood0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>87</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_NY27_0021_StackDecorations/hd_env_EVT_NY27_0021_StackDecoration_BAM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_EVT_NY27_0021_StackDecorations/hd_env_EVT_NY27_0021_StackDecoration_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_EVT_NY27_0021_StackDecorations/hd_env_EVT_NY27_0021_StackDecoration_BANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.158564 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-2.458132 -0.117870 -2.014470</min>
+		<max>2.162604 2.756391 2.014470</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>4080</geometrySize>
+	<minUVDensity>0.016829</minUVDensity>
+</root>

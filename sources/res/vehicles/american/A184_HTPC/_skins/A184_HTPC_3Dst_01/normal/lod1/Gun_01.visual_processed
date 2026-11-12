@@ -83,8 +83,8 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Gun_BlendBone</node>
 		<node>G_BlendBone</node>
+		<node>Gun_BlendBone</node>
 		<node>static_joint_BlendBone</node>
 		<geometry>
 			<vertices>gun_01_Shape.vertices</vertices>
@@ -128,7 +128,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>2.007000 2.007000 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -154,15 +154,15 @@
 						</Float>
 					</property>
 				</material>
-				<groupOrigin>-0.000465 -0.000977 -3.102473</groupOrigin>
+				<groupOrigin>-0.000095 -0.019736 -3.100693</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.730138 -0.421097 -0.191705</min>
-		<max>0.729209 0.419144 6.396651</max>
+		<min>-0.726055 -0.447641 -0.194050</min>
+		<max>0.725864 0.408169 6.395436</max>
 	</boundingBox>
-	<geometrySize>16988</geometrySize>
-	<minUVDensity>0.011203</minUVDensity>
+	<geometrySize>41738</geometrySize>
+	<minUVDensity>0.025648</minUVDensity>
 </root>

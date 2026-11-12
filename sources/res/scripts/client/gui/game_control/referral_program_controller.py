@@ -12,7 +12,7 @@ from gui.impl import backport
 from gui.impl.gen import R
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.lobby.referral_program.browser.web_handlers import createReferralWebHandlers
-from gui.Scaleform.daapi.view.lobby.referral_program.referral_program_helpers import getReferralProgramURL, isCurrentUserRecruit, getReferralShopURL, REF_RPOGRAM_PDATA_KEY
+from gui.Scaleform.daapi.view.lobby.referral_program.referral_program_helpers import getReferralProgramURL, isCurrentUserRecruit, getReferralShopURL, REF_RPOGRAM_PDATA_KEY, getRecruiterDbId as getRecruiterDbIdFromSPA
 from gui.Scaleform.framework.managers.containers import POP_UP_CRITERIA
 from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
 from gui.impl.lobby.common.sound_constants import SUBVIEW_SOUND_SPACE
@@ -42,6 +42,8 @@ class ReferralProgramController(GameWindowController, IReferralProgramController
         self.__referralDisabled = False
         self.__updateBubbleTimeoutID = None
         self.__recruitDeltaInc = 0
+        self.__recruitCache = {}
+        self.__recruitPending = set()
         self.onReferralProgramEnabled = Event()
         self.onReferralProgramDisabled = Event()
         self.onReferralProgramUpdated = Event()
@@ -51,10 +53,26 @@ class ReferralProgramController(GameWindowController, IReferralProgramController
 
     def fini(self):
         self.__clearBubbleTimeout()
+        self.__recruitCache.clear()
+        self.__recruitPending.clear()
         super(ReferralProgramController, self).fini()
 
     def onLobbyStarted(self, ctx):
         self.__GUILootboxes.addShopWindowHandler(REFERRAL_LOOTBOX_TYPE, partial(self.showWindow, url=getReferralShopURL()))
+
+    def getRecruiterDbId(self):
+        return getRecruiterDbIdFromSPA() or 0
+
+    def isRecruit(self, dbID):
+        dbID = int(dbID or 0)
+        if not dbID:
+            return False
+        else:
+            cached = self.__recruitCache.get(dbID)
+            if cached is not None:
+                return cached
+            self.__requestIsRecruit(dbID)
+            return False
 
     def showWindow(self, url=None, invokedFrom=None):
         if not self.__referralDisabled:
@@ -150,11 +168,31 @@ class ReferralProgramController(GameWindowController, IReferralProgramController
          RP_POINT, RP_PGB_POINT} & set(diff.keys()) and not self.__referralDisabled:
             self.onPointsChanged()
 
+    def onDisconnected(self):
+        self.__recruitCache.clear()
+        self.__recruitPending.clear()
+        super(ReferralProgramController, self).onDisconnected()
+
     def __onClientUpdated(self, diff, _):
         if diff is not None and REF_RPOGRAM_PDATA_KEY in diff:
             self.onPointsChanged()
             self.onReferralProgramUpdated()
         return
+
+    def __requestIsRecruit(self, dbID):
+        if dbID in self.__recruitPending or self.__referralDisabled:
+            return
+        player = BigWorld.player()
+        if player is None or not getattr(player, 'referralProgram', None):
+            return
+        self.__recruitPending.add(dbID)
+        player.referralProgram.isRecruit(dbID, partial(self.__onIsRecruitResponse, dbID))
+        return
+
+    def __onIsRecruitResponse(self, dbID, resultID, isRecruit):
+        self.__recruitPending.discard(dbID)
+        if resultID >= 0:
+            self.__recruitCache[dbID] = bool(isRecruit)
 
     def __getServerBubbleCount(self):
         return self.__itemsCache.items.refProgram.getRecruitDelta()

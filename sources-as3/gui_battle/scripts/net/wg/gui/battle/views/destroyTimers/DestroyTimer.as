@@ -70,9 +70,7 @@ package net.wg.gui.battle.views.destroyTimers
          "orange":16689972,
          "gray":15626240,
          "green":8041216,
-         "yellow":16689972,
-         "blue":9425116,
-         "dark_red":15424575
+         "yellow":16689972
       };
       
       private static const DESC_TEXT_FILTERS:Object = {
@@ -80,9 +78,7 @@ package net.wg.gui.battle.views.destroyTimers
          "orange":[],
          "gray":[],
          "green":[],
-         "yellow":[new DropShadowFilter(0,0,12783619,1,8,8)],
-         "blue":[new DropShadowFilter(0,0,0,0.5,12,12),new DropShadowFilter(0,0,0,1,4,4)],
-         "dark_red":[new DropShadowFilter(0,0,0,0.5,12,12),new DropShadowFilter(0,0,0,1,4,4)]
+         "yellow":[new DropShadowFilter(0,0,12783619,1,8,8)]
       };
        
       

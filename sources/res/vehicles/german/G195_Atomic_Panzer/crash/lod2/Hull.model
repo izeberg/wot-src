@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G195_Atomic_Panzer/crash/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.759641 -1.128110 -3.973093</min>
+		<max>1.762064 0.709133 3.933767</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G195_Atomic_Panzer/crash/lod2/Hull</nodefullVisual>
+</root>

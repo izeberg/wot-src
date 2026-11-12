@@ -47,7 +47,7 @@ class DualAccuracyBase(BigWorld.DynamicScriptComponent):
         if self.__isAvatarReady():
             withShot = 1 if self.__isDualgunVehicle and self.isActive() else 0
             self.__updateDualAccuracyAvatar(withShot)
-        if self.__appearanceInited and self.__isAppearanceReady():
+        if self.__appearanceInited and self.__isAppearanceReady() and self.__isPlayerAttachedVehicleAlive:
             self.updateDualAccuracyData()
             self.updateDualAccuracyState()
 
@@ -122,3 +122,12 @@ class DualAccuracyBase(BigWorld.DynamicScriptComponent):
     def __isDualgunVehicle(self):
         vehicle = BigWorld.player().getVehicleAttached()
         return vehicle is not None and vehicle.typeDescriptor.isDualgunVehicle
+
+    @property
+    def __isPlayerAttachedVehicleAlive(self):
+        player = BigWorld.player()
+        if player is None:
+            return False
+        else:
+            vehicle = player.getVehicleAttached()
+            return vehicle is not None and vehicle.isAlive()

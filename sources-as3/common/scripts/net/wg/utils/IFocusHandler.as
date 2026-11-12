@@ -24,5 +24,7 @@ package net.wg.utils
       function input(param1:InputDetails) : void;
       
       function set stage(param1:Stage) : void;
+      
+      function hasFocusInside(param1:InteractiveObject) : Boolean;
    }
 }

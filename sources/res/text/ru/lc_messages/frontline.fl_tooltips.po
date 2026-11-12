@@ -12,10 +12,12 @@ msgid "armoryYard/currency/featureName"
 msgstr "«Сборочный цех»"
 
 msgid "armoryYard/currency/progression_token/description"
-msgstr "Используется для прохождения этапов события %(featureName)s."
+msgstr ""
+"Шаг прогрессии события %(featureName)s, за завершение которого вы будете "
+"получать награду."
 
 msgid "armoryYard/currency/progression_token/title"
-msgstr "Жетон строительства"
+msgstr "Этап Сборочного цеха"
 
 msgid "notEnoughPoints/body"
 msgstr ""

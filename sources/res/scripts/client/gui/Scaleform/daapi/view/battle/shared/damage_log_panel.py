@@ -364,30 +364,6 @@ class _DamageActionImgVOBuilder(_ActionImgVOBuilder):
             return self.__fireCircleDmgIcon
         if info.isThunderStrike():
             return self.__thunderStrikeIcon
-        if info.isGuidedMissile():
-            damageIcon = _IMAGES.DAMAGELOG_CORRODING_SHOT_16X16
-            receivedIcon = _IMAGES.DAMAGELOG_CORRODING_SHOT_ENEMY_16X16
-            if info.getType() == _ETYPE.RECEIVED_DAMAGE:
-                return receivedIcon
-            return damageIcon
-        if info.isSuperBossAura():
-            damageIcon = _IMAGES.DAMAGELOG_FIRE_CIRCLE_16X16
-            receivedIcon = _IMAGES.DAMAGELOG_FIRE_CIRCLE_ENEMY_16X16
-            if info.getType() == _ETYPE.RECEIVED_DAMAGE:
-                return receivedIcon
-            return damageIcon
-        if info.isSentinelAttack():
-            damageIcon = _IMAGES.DAMAGE_LOG_SENTINEL_ENEMY_16X16
-            receivedIcon = _IMAGES.DAMAGE_LOG_SENTINEL_ENEMY_16X16
-            if info.getType() == _ETYPE.RECEIVED_DAMAGE:
-                return receivedIcon
-            return damageIcon
-        if info.isPeriodic():
-            damageIcon = _IMAGES.DAMAGE_LOG_PERIODIC_16X16
-            receivedIcon = _IMAGES.DAMAGE_LOG_PERIODIC_ENEMY_16X16
-            if info.getType() == _ETYPE.RECEIVED_DAMAGE:
-                return receivedIcon
-            return damageIcon
         return self.__ramIcon
 
 
@@ -542,12 +518,8 @@ class DamageLogPanel(BattleDamageLogPanelMeta):
 
     def isSwitchToVehicle(self):
         observedVehID = self.__vehStateCtrl.getControllingVehicleID()
-        possessedVehID = self.__vehStateCtrl.getPossessedVehicleID()
         playerVehicleID = self.__arenaDP.getPlayerVehicleID()
-        if possessedVehID is not None:
-            return possessedVehID == observedVehID
-        else:
-            return playerVehicleID == observedVehID
+        return playerVehicleID == observedVehID
 
     def _getLogViewComponentClass(self):
         return LogViewComponent()
@@ -629,7 +601,7 @@ class DamageLogPanel(BattleDamageLogPanelMeta):
 
     def _invalidateTotalDamages(self):
         contentMask = 0
-        isDamageSettingEnabled = self._isDamageSettingEnabled
+        isDamageSettingEnabled = self.__isDamageSettingEnabled
         for settingName, bit in _TOTAL_DAMAGE_SETTINGS_TO_CONTENT_MASK.iteritems():
             if isDamageSettingEnabled(settingName):
                 contentMask |= bit
@@ -753,7 +725,7 @@ class DamageLogPanel(BattleDamageLogPanelMeta):
     def _setSettings(self, isVisible, isColorBlind):
         self.as_setSettingsDamageLogComponentS(isVisible, isColorBlind)
 
-    def _isDamageSettingEnabled(self, settingName):
+    def __isDamageSettingEnabled(self, settingName):
         result = self.settingsCore.getSetting(settingName)
         if settingName == DAMAGE_LOG.ASSIST_STUN and result:
             isSPG = self.__arenaDP.getVehicleInfo(self.__vehStateCtrl.getControllingVehicleID()).isSPG()

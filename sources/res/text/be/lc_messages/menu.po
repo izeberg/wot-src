@@ -718,9 +718,6 @@ msgstr "Палігон"
 msgid "bonusType/6"
 msgstr "Баявое навучанне"
 
-msgid "bonusType/61"
-msgstr "Разлом"
-
 msgid "bonusType/7"
 msgstr "Камандны бой"
 
@@ -1113,9 +1110,6 @@ msgstr "Создать взвод события"
 
 msgid "contextMenu/createMapboxSquad"
 msgstr "Разведка боем: создать взвод"
-
-msgid "contextMenu/createPortalSquad"
-msgstr "Взвод события «Разлом»"
 
 msgid "contextMenu/createPrivateChannel"
 msgstr "Адправіць паведамленне"
@@ -5764,6 +5758,27 @@ msgstr "Дапамагайце ў знішчэнні праціўніка."
 msgid "roleExp/action/searchEnemy"
 msgstr "Выяўляйце тэхніку праціўніка."
 
+msgid "roleExp/difficultyLabel"
+msgstr "Сложность:"
+
+msgid "roleExp/difficultyName/easy"
+msgstr "Низкая сложность"
+
+msgid "roleExp/difficultyName/high"
+msgstr "Высокая сложность"
+
+msgid "roleExp/difficultyName/medium"
+msgstr "Средняя сложность"
+
+msgid "roleExp/difficultyName/short/easy"
+msgstr "Низкая"
+
+msgid "roleExp/difficultyName/short/high"
+msgstr "Высокая"
+
+msgid "roleExp/difficultyName/short/medium"
+msgstr "Средняя"
+
 msgid "roleExp/roleDescr/role_ATSPG_assault"
 msgstr ""
 "Машыны з невысокай рухомасцю, але магутнай франтальнай бранёй. Выдатна "
@@ -6493,6 +6508,15 @@ msgstr "?empty?"
 
 msgid "tankCarousel/vehicleStates/notpresent"
 msgstr "Няма ў Гаражы"
+
+msgid "tankCarousel/vehicleStates/nyTank"
+msgstr "Новогодняя техника"
+
+msgid "tankCarousel/vehicleStates/nyTankEmptyCount"
+msgstr "Вольных слотаў: %(count)d"
+
+msgid "tankCarousel/vehicleStates/nyTankSlotsFull"
+msgstr "Все слоты заняты"
 
 msgid "tankCarousel/vehicleStates/rentable"
 msgstr "Пракат машыны даступны"

@@ -1,17 +1,14 @@
-import BigWorld, logging, itertools
+import BigWorld, logging
 from collections import namedtuple
 import typing, Event, adisp
 from Event import EventManager
-from comp7_common import Comp7QualificationState, SEASON_POINTS_ENTITLEMENTS
+from comp7_common import Comp7QualificationState, COMP7_EVENT_ID, COMP7_LEADERBOARD_ID, COMP7_LEADERBOARD_RECALCULATION_TIME, SEASON_POINTS_ENTITLEMENTS
 from comp7_ranks_common import COMP7_RATING_ENTITLEMENT, COMP7_ELITE_ENTITLEMENTS, COMP7_ACTIVITY_ENTITLEMENT, COMP7_ELITE_ENT_TO_DIV_IDX
-from comp7_ranks_common import Comp7Division
 from constants import Configs, RESTRICTION_TYPE, ARENA_BONUS_TYPE, COMP7_SCENE, ROLE_TYPE_TO_LABEL
 from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.Scaleform.daapi.view.lobby.comp7.shared import Comp7AlertData
 from gui.comp7.comp7_helpers import updateComp7Settings
 from gui.comp7.entitlements_cache import EntitlementsCache
-from gui.event_boards.event_boards_items import Comp7LeaderBoard
-from gui.impl.gen.view_models.views.lobby.comp7.main_widget_model import Rank
 from gui.limited_ui.lui_rules_storage import LuiRules
 from gui.prb_control import prb_getters
 from gui.prb_control.entities.listener import IGlobalListener
@@ -541,9 +538,14 @@ class Comp7Controller(Notifiable, SeasonProvider, IComp7Controller, IGlobalListe
 
     @adisp.adisp_process
     def __requestLeaderboardData(self):
-        isSuccessOwnData, myPosition, _, _ = yield self.leaderboard.getOwnData()
-        if isSuccessOwnData and myPosition is not None:
-            self.onLeaderboardDataProvided(myPosition)
+        ownData = yield self.leaderboard.getOwnData()
+        if ownData.isSuccess:
+            toUpdate = {}
+            if ownData.position is not None:
+                toUpdate['position'] = ownData.position
+            if ownData.updatedAt:
+                toUpdate['updatedAt'] = ownData.updatedAt
+            self.onLeaderboardDataProvided(toUpdate)
         return
 
     def isLocked(self):
@@ -551,180 +553,44 @@ class Comp7Controller(Notifiable, SeasonProvider, IComp7Controller, IGlobalListe
 
 
 class _LeaderboardDataProvider(object):
-    __EVENT_ID = 'comp7'
-    __LEADERBOARD_ID = 0
-    __FIRST_PAGE_ID = 0
-    __MASTER_RANK_ID = 2
+    __EVENT_ID = COMP7_EVENT_ID
+    __LEADERBOARD_ID = COMP7_LEADERBOARD_ID
     __eventsController = dependency.descriptor(IEventBoardController)
     __lobbyContext = dependency.descriptor(ILobbyContext)
-    _OwnData = namedtuple('_OwnData', 'isSuccess, position, points, battlesCount')
+    _OwnData = namedtuple('_OwnData', 'isSuccess, position, points, battlesCount, updatedAt')
 
     def __init__(self):
-        self.__lastUpdateTimestamp = 0
+        self.__lastUpdateTimestamp = None
         self.__nextUpdateTimestamp = None
-        self.__pageSize = 0
-        self.__recordsCount = 0
-        self.__eliteRankPositionThreshold = None
-        self.__eliteRankPointsThreshold = None
-        self.__cachedPages = {}
         self.__cachedOwnData = None
-        self.__divisionsFirstPositions = {}
         return
-
-    def getEliteRankPercent(self):
-        return self.__getRanksConfig().eliteRankPercent
-
-    def getMinimumPointsNeeded(self):
-        divisions = [ d for d in self.__getRanksConfig().divisions if d.rank == self.__MASTER_RANK_ID ]
-        return min(division.range.begin for division in divisions)
-
-    def getLeaderboardDivisions(self):
-        ranksConfig = self.__getRanksConfig()
-        return tuple(d for d in ranksConfig.divisions if d.rank in (Rank.FIFTH, Rank.SIXTH))
-
-    @adisp.adisp_async
-    @adisp.adisp_process
-    def getRecordsCount(self, callback):
-        isSuccess = yield self.__invalidateMetaData()
-        callback((self.__recordsCount, isSuccess))
-
-    @adisp.adisp_async
-    @adisp.adisp_process
-    def getLastElitePosition(self, callback):
-        isSuccess = yield self.__invalidateMetaData()
-        callback((self.__eliteRankPositionThreshold, isSuccess))
-
-    @adisp.adisp_async
-    @adisp.adisp_process
-    def getDivisionsFirstPositions(self, callback):
-        isSuccess = yield self.__invalidateMetaData()
-        callback((self.__divisionsFirstPositions, isSuccess))
-
-    @adisp.adisp_async
-    @adisp.adisp_process
-    def getLastEliteRating(self, callback):
-        isSuccess = yield self.__invalidateMetaData()
-        callback((self.__eliteRankPointsThreshold, isSuccess))
 
     @adisp.adisp_async
     @adisp.adisp_process
     def getOwnData(self, callback):
         if self.__nextUpdateTimestamp and self.__nextUpdateTimestamp >= getServerUTCTime() and self.__cachedOwnData:
-            print 'HERE CACHED OWN DATA', self.__cachedOwnData
             callback(self.__cachedOwnData)
         else:
-            myInfo = yield self.__eventsController.getMyLeaderboardInfo(self.__EVENT_ID, self.__LEADERBOARD_ID, showNotification=False)
+            self.__clearCache()
+            myInfo = yield self.__eventsController.getMyLeaderboardInfo(self.__EVENT_ID, self.__LEADERBOARD_ID, BigWorld.player().databaseID, showNotification=False)
             if myInfo is not None:
-                position = myInfo.getRank()
-                self.__cachedOwnData = self._OwnData(True, position, myInfo.getP2(), myInfo.getBattlesCount())
+                lastUpdateTimestamp = myInfo.getLastLeaderboardRecalculated()
+                self.__cachedOwnData = self._OwnData(True, myInfo.getRank(), myInfo.getP2(), myInfo.getBattlesCount(), lastUpdateTimestamp)
+                self.__setNextUpdateTimestamp(lastUpdateTimestamp)
                 callback(self.__cachedOwnData)
             else:
-                callback(self._OwnData(False, None, None, None))
+                _logger.debug('NO PERSONAL INFO FROM EVENT LEADERBOARD: %s: %s', event=self.__EVENT_ID, leaderboard=self.__LEADERBOARD_ID)
+                callback(self._OwnData(False, None, None, None, None))
         return
 
-    @adisp.adisp_async
-    @adisp.adisp_process
-    def getLastUpdateTime(self, callback):
-        isSuccess = yield self.__invalidateMetaData()
-        callback((self.__lastUpdateTimestamp, isSuccess))
-
-    @adisp.adisp_async
-    @adisp.adisp_process
-    def getTableRecords(self, limit, offset, callback=None):
-        if not self.__pageSize:
-            yield self.__loadPageSize()
-            if not self.__pageSize:
-                _logger.error('Something went wrong during requesting comp7 leaderboard page: invalid page size')
-                callback(None)
-                return
-        (startPage, endPage), (startRecord, endRecord) = self.__getRanges(limit, offset, self.__pageSize)
-        pageIDs = range(startPage, endPage + 1)
-        result = yield self.__requestPages(pageIDs)
-        if result:
-            records = list(itertools.chain.from_iterable(self.__cachedPages.get(pID, ()) for pID in pageIDs))
-            records = records[startRecord:endRecord + 1]
-        else:
-            records = None
-        callback(records)
-        return
-
-    def flushTableRecords(self):
-        self.__cachedPages.clear()
-
-    @adisp.adisp_async
-    @adisp.adisp_process
-    def __invalidateMetaData(self, callback):
-        result = True
-        if self.__nextUpdateTimestamp is None or getServerUTCTime() > self.__nextUpdateTimestamp:
-            result = yield self.__requestPages([self.__FIRST_PAGE_ID])
-        callback(result)
-        return
-
-    @adisp.adisp_async
-    @adisp.adisp_process
-    def __requestPages(self, pageIDs, callback=None):
-        if self.__nextUpdateTimestamp and self.__nextUpdateTimestamp <= getServerUTCTime():
-            self.__clearCache()
-        if not self.__eventsController.hasEvents():
-            _logger.debug('Empty events on controller while requesting pages. Reloading.')
-            yield self.__eventsController.getEvents(onlySettings=True)
-        for pageID in self.__getPagesToLoad(pageIDs):
-            page = yield self.__eventsController.getLeaderboard(self.__EVENT_ID, self.__LEADERBOARD_ID, pageID + 1, leaderBoardClass=Comp7LeaderBoard, showNotification=False)
-            if page is None:
-                result = False
-                break
-            updateTimestamp = page.getLastLeaderboardRecalculationTS()
-            if updateTimestamp > self.__lastUpdateTimestamp:
-                self.__clearCache()
-                self.__lastUpdateTimestamp = updateTimestamp
-                self.__nextUpdateTimestamp = page.getNextLeaderboardRecalculationTS()
-                self.__eliteRankPositionThreshold = page.getLastEliteUserPosition()
-                self.__eliteRankPointsThreshold = page.getLastEliteUserRating()
-                self.__recordsCount = page.getRecordsCount()
-                self.__divisionsFirstPositions = page.getDivisionsFirstPositions()
-            self.__cachedPages[pageID] = page.getExcelItems()
-        else:
-            result = True
-
-        callback(result)
-        return
-
-    def __getPagesToLoad(self, pageIDs):
-        reqiredSet = set(pageIDs)
-        while not reqiredSet.issubset(set(self.__cachedPages.keys())):
-            yield (reqiredSet - set(self.__cachedPages.keys())).pop()
-
-    @adisp.adisp_async
-    @adisp.adisp_process
-    def __loadPageSize(self, callback):
-        if not self.__eventsController.hasEvents():
-            yield self.__eventsController.getEvents(onlySettings=True)
-        eventSettings = self.__eventsController.getEventsSettingsData()
-        if eventSettings and eventSettings.getEvent(self.__EVENT_ID):
-            self.__pageSize = eventSettings.getEvent(self.__EVENT_ID).getPageSize()
-        else:
-            self.__pageSize = 0
-        callback(None)
+    def __setNextUpdateTimestamp(self, lastUpdateTimestamp):
+        if lastUpdateTimestamp is not None:
+            self.__lastUpdateTimestamp = lastUpdateTimestamp
+            self.__nextUpdateTimestamp = lastUpdateTimestamp + COMP7_LEADERBOARD_RECALCULATION_TIME
         return
 
     def __clearCache(self):
-        self.__lastUpdateTimestamp = 0
-        self.__eliteRankPositionThreshold = None
-        self.__eliteRankPointsThreshold = None
-        self.__masterRankPositionThreshold = None
-        self.__cachedPages.clear()
-        self.__divisionsFirstPositions.clear()
+        self.__lastUpdateTimestamp = None
+        self.__nextUpdateTimestamp = None
         self.__cachedOwnData = None
         return
-
-    def __getRanksConfig(self):
-        return self.__lobbyContext.getServerSettings().comp7RanksConfig
-
-    @staticmethod
-    def __getRanges(limit, offset, pageSize):
-        startPage, startRecord = divmod(offset, pageSize)
-        endPage = (offset + limit - 1) // pageSize
-        endRecord = startRecord + limit - 1
-        return (
-         (
-          startPage, endPage), (startRecord, endRecord))

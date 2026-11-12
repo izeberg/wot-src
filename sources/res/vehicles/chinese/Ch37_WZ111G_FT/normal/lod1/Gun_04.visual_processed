@@ -52,6 +52,42 @@
 					</node>
 				</node>
 				<node>
+					<identifier>driven_gun</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 -0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>driven_turret</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Visor</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>0.000000 0.497870 -0.127262</row3>
+							</transform>
+							<node>
+								<identifier>Visor_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>0.000000 -0.497870 0.127262</row3>
+								</transform>
+							</node>
+						</node>
+					</node>
+				</node>
+				<node>
 					<identifier>Gun_BlendBone</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
@@ -67,6 +103,7 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
+		<node>Visor_BlendBone</node>
 		<geometry>
 			<vertices>gun_04_Shape.vertices</vertices>
 			<primitive>gun_04_Shape.indices</primitive>
@@ -146,15 +183,15 @@
 						<Bool>false</Bool>
 					</property>
 				</material>
-				<groupOrigin>0.000080 0.035725 -3.370708</groupOrigin>
+				<groupOrigin>-0.000210 0.059653 -3.185391</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.495640 -0.406890 0.244233</min>
-		<max>0.495801 0.478340 6.497182</max>
+		<min>-0.511658 -0.406890 -0.126401</min>
+		<max>0.511238 0.526195 6.497182</max>
 	</boundingBox>
-	<geometrySize>66744</geometrySize>
+	<geometrySize>69376</geometrySize>
 	<minUVDensity>0.005660</minUVDensity>
 </root>

@@ -865,3 +865,23 @@ class ElementPurchaseTooltip(ElementTooltip):
 
     def _packBonusBlock(self, bonus, camo, isApplied):
         return super(ElementPurchaseTooltip, self)._packBonusBlock(bonus, camo, True)
+
+
+class MultiElementAwardTooltip(ElementTooltip):
+
+    def _packBlocks(self, *args):
+        result = []
+        for intCD in args:
+            self._item = self.itemsCache.items.getItemByCD(intCD)
+            topBlocks = [self._packTitleBlock(), self._packIconBlock(self._item.isDim())]
+            result.append(formatters.packBuildUpBlockData(blocks=topBlocks))
+
+        block = self._packCharacteristicsBlock()
+        if block:
+            result.append(block)
+        self.boundVehs = self._item.getBoundVehicles()
+        self.installedVehs = self._item.getInstalledVehicles()
+        block = self._packSuitableBlock()
+        if block:
+            result.append(block)
+        return result

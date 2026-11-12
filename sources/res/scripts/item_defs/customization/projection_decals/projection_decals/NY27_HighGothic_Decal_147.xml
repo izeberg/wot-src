@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
+	<itemGroup>
+		<name>NY27_HighGothic_Decal_147</name>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>styleOnly hiddenInUI formfactor_rect1x2 disableVerticalMirror</tags>
+		<priceGroup>MT projection_decals 100g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<userString>#vehicle_customization:projection_decals/special</userString>
+		<projection_decal>
+			<id>31531</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_01_Decal_147.dds</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_01_Decal_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_01_Decal_147/description</description>
+			<tags>styleOnly hiddenInUI formfactor_rect1x2 disableVerticalMirror</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>31532</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_02_Decal_147.dds</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_02_Decal_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_02_Decal_147/description</description>
+		</projection_decal>
+		<projection_decal>
+			<id>31533</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_03_Decal_147.dds</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_03_Decal_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_03_Decal_147/description</description>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_03_Decal_147_GMM.dds</glossTexture>
+		</projection_decal>
+		<projection_decal>
+			<id>31534</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_04_Decal_147.dds</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_04_Decal_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_04_Decal_147/description</description>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_04_Decal_147_GMM.dds</glossTexture>
+			<tags>styleOnly hiddenInUI formfactor_rect1x2 disableVerticalMirror</tags>
+			<emissionMap>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_04_Decal_147_Emission.dds</emissionMap>
+			<emissionPatternMap>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_04_Decal_147_Pattern.dds</emissionPatternMap>
+			<forwardEmissionBrightness>3</forwardEmissionBrightness>
+			<deferredEmissionBrightness>3</deferredEmissionBrightness>
+			<emissionAnimationSpeed>
+				0.3
+				<!--BW_String-->
+			</emissionAnimationSpeed>
+		</projection_decal>
+	</itemGroup>
+</root>

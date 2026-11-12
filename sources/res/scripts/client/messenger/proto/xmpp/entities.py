@@ -18,12 +18,16 @@ class XMPPUserEntity(LobbyUserEntity):
         self._item = item or createItem(userID)
         self._gos = gos
 
+    def isAnySub(self):
+        return super(XMPPUserEntity, self).isAnySub() and self.getTags() & {USER_TAG.SUB_TO, USER_TAG.SUB_FROM}
+
     def getResourceID(self):
         return self._item.getResources().getHighestPriorityID()
 
     def isCurrentGameContact(self):
-        resource = g_settings.server.XMPP.resource
-        return not resource or self.getResourceID() == resource
+        serverResourceId = g_settings.server.XMPP.resource
+        resourceId = self.getResourceID()
+        return not serverResourceId or not resourceId or resourceId == serverResourceId
 
     def getClientInfo(self):
         return self._item.getClientInfo()

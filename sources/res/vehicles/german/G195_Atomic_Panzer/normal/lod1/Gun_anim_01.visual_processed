@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root_gun</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>-0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Gun_anim_01</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.000000 -0.002377 -1.088676</row3>
+				</transform>
+				<node>
+					<identifier>Gun_anim_01_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.002377 1.088676</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Load_Mech_01</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.000000 -0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Load_Mech_04</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 0.945519 0.325568</row1>
+						<row2>0.000000 -0.325568 0.945519</row2>
+						<row3>0.000000 -0.057016 -2.127343</row3>
+					</transform>
+					<node>
+						<identifier>Load_Mech_05</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.999753 -0.022260</row1>
+							<row2>0.000000 0.022262 0.999751</row2>
+							<row3>0.009935 -0.077646 -0.288954</row3>
+						</transform>
+						<node>
+							<identifier>Load_Mech_05_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 0.952532 -0.304438</row1>
+								<row2>0.000000 -0.304438 -0.952532</row2>
+								<row3>-0.009935 0.773148 2.299616</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Load_Mech_04_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.945519 -0.325568</row1>
+							<row2>0.000000 -0.325568 -0.945519</row2>
+							<row3>0.000000 0.746505 1.992879</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Load_Mech_06</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 -0.170764 -1.338552</row3>
+					</transform>
+					<node>
+						<identifier>Load_Mech_06_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 0.170765 1.338551</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Load_Mech_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 -0.088749 -1.578831</row3>
+					</transform>
+					<node>
+						<identifier>Load_Mech_03</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 0.076104 0.079115</row3>
+						</transform>
+						<node>
+							<identifier>Load_Mech_03_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.000000 0.012645 1.499715</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Load_Mech_2_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 0.088749 1.578831</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Load_Mech_01_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 -0.000000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Porshen_02</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.000000 -0.752167 -0.451457</row3>
+				</transform>
+				<node>
+					<identifier>Porshen_03</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 0.974956 -0.222399</row1>
+						<row2>0.000000 0.222399 0.974956</row2>
+						<row3>0.000000 0.508987 -0.113334</row3>
+					</transform>
+					<node>
+						<identifier>Porshen_03_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.974956 0.222399</row1>
+							<row2>0.000000 0.222399 -0.974956</row2>
+							<row3>0.000000 0.111480 0.604730</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Porshen_02_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.752167 0.451457</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Load_Mech_04_BlendBone</node>
+		<node>Load_Mech_06_BlendBone</node>
+		<node>Load_Mech_03_BlendBone</node>
+		<node>Load_Mech_2_BlendBone</node>
+		<node>Porshen_02_BlendBone</node>
+		<node>Porshen_03_BlendBone</node>
+		<node>Load_Mech_01_BlendBone</node>
+		<node>Gun_anim_01_BlendBone</node>
+		<geometry>
+			<vertices>gun_01_animShape.vertices</vertices>
+			<primitive>gun_01_animShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_turret_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/german/G195_Atomic_Panzer/Atomic_Panzer_guns_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G195_Atomic_Panzer/Atomic_Panzer_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G195_Atomic_Panzer/Atomic_Panzer_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G195_Atomic_Panzer/Atomic_Panzer_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G195_Atomic_Panzer/Atomic_Panzer_turret_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 -0.127526 1.201258</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.340610 -0.730354 -2.590118</min>
+		<max>0.340610 0.475303 0.187600</max>
+	</boundingBox>
+	<geometrySize>80426</geometrySize>
+	<minUVDensity>0.010190</minUVDensity>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G203_JgPz_VII_Waldkatze/normal/lod0/Hatch_anim_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.114997 0.362576 0.293590</min>
+		<max>0.149999 0.623012 0.492240</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/german/G203_JgPz_VII_Waldkatze/normal/lod1/Hatch_anim_01</parent>
+	<extent>32.000000</extent>
+</root>

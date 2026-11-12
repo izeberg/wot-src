@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/italy/It39_CAS_120_Mastino/normal/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.532728 -0.633172 -3.044324</min>
+		<max>1.532592 0.647981 3.249848</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It39_CAS_120_Mastino/normal/lod1/Hull</nodefullVisual>
+</root>

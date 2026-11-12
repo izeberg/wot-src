@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/Hangars/CharacterAnimations/hd_char_h_NY27_0046_Producer/normal/lod1/hd_char_h_NY27_0046_Producer</nodefullVisual>
+	<tank>true</tank>
+	<parent>content/Hangars/CharacterAnimations/hd_char_h_NY27_0046_Producer/normal/lod2/hd_char_h_NY27_0046_Producer</parent>
+	<extent>20.000000</extent>
+	<visibilityBox>
+		<min>-0.784070 -0.000542 -0.844048</min>
+		<max>0.650950 1.597796 0.307180</max>
+	</visibilityBox>
+</root>

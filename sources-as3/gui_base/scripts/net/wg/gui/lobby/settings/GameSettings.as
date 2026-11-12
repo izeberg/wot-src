@@ -345,6 +345,12 @@ package net.wg.gui.lobby.settings
          this.getContent().setBattleContextHintsResetEnabled(param1);
       }
       
+      public function setVehicleDifficultySettingsVisible(param1:Boolean) : void
+      {
+         this.getContent().setVehicleDifficultySettingsVisible(param1);
+         invalidateCounter();
+      }
+      
       public function setLimitedUISettingVisible(param1:Boolean) : void
       {
          var _loc2_:Class = null;

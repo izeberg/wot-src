@@ -1,10 +1,10 @@
 from collections import namedtuple
 
-class TankAcademyConfig(namedtuple('TankAcademyConfig', ('isEnabled', ))):
+class TankAcademyConfig(namedtuple('TankAcademyConfig', ('isEnabled', 'quests'))):
     __slots__ = ()
 
     def __new__(cls, **kwargs):
-        defaults = dict(isEnabled=False)
+        defaults = dict(isEnabled=False, quests={})
         defaults.update(kwargs)
         return super(TankAcademyConfig, cls).__new__(cls, **defaults)
 

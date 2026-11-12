@@ -23,6 +23,10 @@ package net.wg.infrastructure.wulf
       
       function setScale(param1:Number) : void;
       
+      function setIs3DSpaceView(param1:Boolean) : void;
+      
+      function get is3DSpaceView() : Boolean;
+      
       function setHitAreaPaddings(param1:int, param2:int, param3:int, param4:int) : void;
       
       function setCursor(param1:String) : void;

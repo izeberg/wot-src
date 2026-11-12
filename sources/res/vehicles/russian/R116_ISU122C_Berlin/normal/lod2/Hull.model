@@ -2,17 +2,11 @@
 <root>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.58504 -0.567028 -3.53333
-			<!--BW_String-->
-		</min>
-		<max>
-			1.58504 1.8431 3.33636
-			<!--BW_String-->
-		</max>
+		<min>-1.585040 -0.567028 -3.533330</min>
+		<max>1.585040 1.843100 3.336360</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<parent>vehicles/russian/R116_ISU122C_Berlin/normal/lod3/Hull</parent>
-	<extent>96</extent>
+	<extent>96.000000</extent>
 	<nodefullVisual>vehicles/russian/R116_ISU122C_Berlin/normal/lod2/Hull</nodefullVisual>
 </root>

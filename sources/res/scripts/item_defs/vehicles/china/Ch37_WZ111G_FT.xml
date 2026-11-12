@@ -5162,12 +5162,18 @@
 			</models>
 			<traces>
 				<lodDist>FAR</lodDist>
-				<size>
-					0.46 0.66
-					<!--BW_String-->
-				</size>
-				<bufferPrefs>mediumTank</bufferPrefs>
-				<textureSet>ussr_02</textureSet>
+				<activePostmortem>false</activePostmortem>
+				<tracesParams>
+					<trackPairIdx>0</trackPairIdx>
+					<bufferPrefs>mediumTank</bufferPrefs>
+					<textureSet>ussr_02</textureSet>
+					<size>
+						0.46 0.66
+						<!--BW_String-->
+					</size>
+					<offset>0 0</offset>
+					<centerOffsetFactor>1 1</centerOffsetFactor>
+				</tracesParams>
 			</traces>
 			<tracks>
 				<lodDist>MEDIUM_TRACK</lodDist>
@@ -7397,6 +7403,76 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<drivenJoints>
+						<master>
+							<node>Gun</node>
+							<pitch>
+								<row>-15</row>
+								<row>6</row>
+							</pitch>
+							<yaw>
+								<row>0</row>
+							</yaw>
+							<slaves>
+								<slave>
+									<node>driven_gun</node>
+									<pitch>
+										<row>15</row>
+										<row>-6</row>
+									</pitch>
+									<yaw>
+										<row>0</row>
+									</yaw>
+								</slave>
+							</slaves>
+						</master>
+						<master>
+							<node>turret</node>
+							<pitch>
+								<row>0</row>
+							</pitch>
+							<yaw>
+								<row>-12</row>
+								<row>12</row>
+							</yaw>
+							<slaves>
+								<slave>
+									<node>driven_turret</node>
+									<pitch>
+										<row>0</row>
+									</pitch>
+									<yaw>
+										<row>12</row>
+										<row>-12</row>
+									</yaw>
+								</slave>
+							</slaves>
+						</master>
+						<master>
+							<node>Gun</node>
+							<pitch>
+								<row>-15</row>
+								<row>0</row>
+								<row>6</row>
+							</pitch>
+							<yaw>
+								<row>0</row>
+							</yaw>
+							<slaves>
+								<slave>
+									<node>Visor</node>
+									<pitch>
+										<row>-8</row>
+										<row>0</row>
+										<row>0</row>
+									</pitch>
+									<yaw>
+										<row>0</row>
+									</yaw>
+								</slave>
+							</slaves>
+						</master>
+					</drivenJoints>
 					<camouflage>
 						<tiling>
 							0.5 0.5 0.000000 0.000000
@@ -7552,6 +7628,76 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<drivenJoints>
+						<master>
+							<node>Gun</node>
+							<pitch>
+								<row>-15</row>
+								<row>8</row>
+							</pitch>
+							<yaw>
+								<row>0</row>
+							</yaw>
+							<slaves>
+								<slave>
+									<node>driven_gun</node>
+									<pitch>
+										<row>15</row>
+										<row>-8</row>
+									</pitch>
+									<yaw>
+										<row>0</row>
+									</yaw>
+								</slave>
+							</slaves>
+						</master>
+						<master>
+							<node>turret</node>
+							<pitch>
+								<row>0</row>
+							</pitch>
+							<yaw>
+								<row>-12</row>
+								<row>12</row>
+							</yaw>
+							<slaves>
+								<slave>
+									<node>driven_turret</node>
+									<pitch>
+										<row>0</row>
+									</pitch>
+									<yaw>
+										<row>12</row>
+										<row>-12</row>
+									</yaw>
+								</slave>
+							</slaves>
+						</master>
+						<master>
+							<node>Gun</node>
+							<pitch>
+								<row>-15</row>
+								<row>0</row>
+								<row>8</row>
+							</pitch>
+							<yaw>
+								<row>0</row>
+							</yaw>
+							<slaves>
+								<slave>
+									<node>Visor</node>
+									<pitch>
+										<row>-13</row>
+										<row>0</row>
+										<row>0</row>
+									</pitch>
+									<yaw>
+										<row>0</row>
+									</yaw>
+								</slave>
+							</slaves>
+						</master>
+					</drivenJoints>
 					<camouflage>
 						<tiling>
 							0.5 0.5 0.000000 0.000000

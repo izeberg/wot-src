@@ -52,6 +52,51 @@
 					</node>
 				</node>
 				<node>
+					<identifier>driven_gun</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 -0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>driven_turret</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Visor</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>0.000000 0.497870 -0.127262</row3>
+							</transform>
+							<node>
+								<identifier>Visor_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>0.000000 -0.497870 0.127262</row3>
+								</transform>
+							</node>
+						</node>
+					</node>
+					<node>
+						<identifier>driven_gun_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 0.000000 -0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
 					<identifier>Gun_BlendBone</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
@@ -65,8 +110,10 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
+		<node>G_BlendBone</node>
+		<node>driven_gun_BlendBone</node>
+		<node>Visor_BlendBone</node>
 		<geometry>
 			<vertices>gun_05Shape.vertices</vertices>
 			<primitive>gun_05Shape.indices</primitive>
@@ -146,15 +193,15 @@
 						<Bool>false</Bool>
 					</property>
 				</material>
-				<groupOrigin>0.000944 -0.064416 -2.208607</groupOrigin>
+				<groupOrigin>-0.006059 -0.049734 -2.043865</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.538542 -0.601302 0.203391</min>
-		<max>0.540431 0.472470 4.213823</max>
+		<min>-0.556166 -0.601302 -0.126094</min>
+		<max>0.544048 0.501833 4.213823</max>
 	</boundingBox>
-	<geometrySize>98836</geometrySize>
+	<geometrySize>101164</geometrySize>
 	<minUVDensity>0.005883</minUVDensity>
 </root>

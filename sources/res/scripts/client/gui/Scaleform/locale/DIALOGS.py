@@ -920,6 +920,10 @@ class DIALOGS(object):
     EDITABLESTYLES_CONFIRMRESET_CHECKBOXLABEL = '#dialogs:editableStyles/confirmReset/checkboxLabel'
     EDITABLESTYLES_CONFIRMRESET_SUBMIT = '#dialogs:editableStyles/confirmReset/submit'
     EDITABLESTYLES_CONFIRMRESET_CANCEL = '#dialogs:editableStyles/confirmReset/cancel'
+    NEWYEAR_BUYTOY_TITLE = '#dialogs:newYear/buyToy/title'
+    NEWYEAR_BUYTOY_MESSAGE = '#dialogs:newYear/buyToy/message'
+    NEWYEAR_BUYTOY_SUBMIT = '#dialogs:newYear/buyToy/submit'
+    NEWYEAR_BUYTOY_CANCEL = '#dialogs:newYear/buyToy/cancel'
     CONFIRMEQUIPMENTBUYINSTALL_SUBMIT = '#dialogs:confirmEquipmentBuyInstall/submit'
     EQUIPMENTPURCASE_CONFORMATION_ALL = '#dialogs:equipmentPurcase/conformation/all'
     EQUIPMENTBUYINSTALL_PRICE = '#dialogs:equipmentBuyInstall/price'
@@ -2076,6 +2080,10 @@ class DIALOGS(object):
      EDITABLESTYLES_CONFIRMRESET_CHECKBOXLABEL,
      EDITABLESTYLES_CONFIRMRESET_SUBMIT,
      EDITABLESTYLES_CONFIRMRESET_CANCEL,
+     NEWYEAR_BUYTOY_TITLE,
+     NEWYEAR_BUYTOY_MESSAGE,
+     NEWYEAR_BUYTOY_SUBMIT,
+     NEWYEAR_BUYTOY_CANCEL,
      CONFIRMEQUIPMENTBUYINSTALL_SUBMIT,
      EQUIPMENTPURCASE_CONFORMATION_ALL,
      EQUIPMENTBUYINSTALL_PRICE,

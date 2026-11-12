@@ -101,7 +101,10 @@ class AnimatorComponent(PyComponentWrapperBase):
 	def isValid(self, *args, **kwargs): pass
 	def pause(self, *args, **kwargs): pass
 	def reset(self, *args, **kwargs): pass
+	def setBoolParam(self, *args, **kwargs): pass
 	def setFloatParam(self, *args, **kwargs): pass
+	def setIntParam(self, *args, **kwargs): pass
+	def setOnStateNodeChanged(self, *args, **kwargs): pass
 	def setTrigger(self, *args, **kwargs): pass
 	def start(self, *args, **kwargs): pass
 	def startLayer(self, *args, **kwargs): pass

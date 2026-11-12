@@ -619,7 +619,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>AT-SPG role_ATSPG_sniper HD mediumAT-SPG AT-SPG1 tankRammer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals secret testTank lockOutfit</tags>
+		<tags>AT-SPG role_ATSPG_sniper HD mediumAT-SPG AT-SPG1 tankRammer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals</tags>
 		<level>9</level>
 	</F144_Etoile>
 	<F14_AMX40>
@@ -631,16 +631,6 @@
 		<tags>lightTank HD improvedVentilation_class3_user extraHealthReserve_class3_user</tags>
 		<level>4</level>
 	</F14_AMX40>
-	<F14_AMX40_portal>
-		<id>40000</id>
-		<userString>#france_vehicles:AMX40_portal</userString>
-		<shortUserString>#france_vehicles:AMX40_portal_short</shortUserString>
-		<description>#france_vehicles:AMX40_descr</description>
-		<price>1</price>
-		<notInShop>true</notInShop>
-		<tags>lightTank HD improvedVentilation_class3_user extraHealthReserve_class3_user secret event_battles cannot_be_sold</tags>
-		<level>4</level>
-	</F14_AMX40_portal>
 	<F15_AMX_12t>
 		<id>25</id>
 		<userString>#france_vehicles:AMX_12t</userString>
@@ -718,6 +708,21 @@
 		<tags>mediumTank role_MT_support HD mediumTank2 improvedVentilation_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals</tags>
 		<level>10</level>
 	</F18_Bat_Chatillon25t>
+	<F18_Bat_Chatillon25t_02>
+		<id>31022</id>
+		<userString>#france_vehicles:Bat_Chatillon25t_02</userString>
+		<shortUserString>#france_vehicles:Bat_Chatillon25t_02_short</shortUserString>
+		<description>#france_vehicles:Bat_Chatillon25t_02_descr</description>
+		<shortDescriptionSpecial>#france_vehicles:Bat_Chatillon25t_02_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#france_vehicles:Bat_Chatillon25t_02_long_special</longDescriptionSpecial>
+		<price>
+			25000
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>mediumTank role_MT_support HD mediumTank2 improvedVentilation_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals special secret testTank lockOutfit</tags>
+		<level>10</level>
+	</F18_Bat_Chatillon25t_02>
 	<F18_Bat_Chatillon25t_7x7>
 		<id>31002</id>
 		<userString>#france_vehicles:Bat_Chatillon25t_7x7</userString>
@@ -1015,16 +1020,6 @@
 		<tags>lightTank HD improvedVentilation_class3_user extraHealthReserve_class3_user</tags>
 		<level>2</level>
 	</F42_AMR_35>
-	<F43_AMC_35_H>
-		<id>20001</id>
-		<userString>#france_vehicles:F43_AMC_35_H</userString>
-		<shortUserString>#france_vehicles:F43_AMC_35_H_short</shortUserString>
-		<description>#france_vehicles:F43_AMC_35_H_descr</description>
-		<price>1</price>
-		<notInShop>true</notInShop>
-		<tags>lightTank private HD lockOutfit lockCrew lockCrewSkills cannot_be_sold lockEquipment lockShells secret siegeMode dualgun charger portal event_battles mode_hidden builtinStyle restoreWithStyle</tags>
-		<level>1</level>
-	</F43_AMC_35_H>
 	<F43_AMC_35_SH>
 		<id>52</id>
 		<userString>#france_vehicles:AMC_35_SH</userString>

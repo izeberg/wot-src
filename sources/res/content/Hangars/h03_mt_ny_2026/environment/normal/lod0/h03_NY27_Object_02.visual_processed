@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>sShape0.vertices</vertices>
+			<primitive>sShape0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/h03_NY27_Object_02_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>0.100000</Float>
+					</property>
+					<property>
+						selfIlluminationForwardOverride
+						<Vector4>1.000000 1.300000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_enableAvgLumForIllum
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.481915 1.954634 -0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.486140 1.579065 -0.500000</min>
+		<max>-0.477690 2.330203 0.500000</max>
+	</boundingBox>
+	<geometrySize>124</geometrySize>
+	<minUVDensity>0.557993</minUVDensity>
+</root>

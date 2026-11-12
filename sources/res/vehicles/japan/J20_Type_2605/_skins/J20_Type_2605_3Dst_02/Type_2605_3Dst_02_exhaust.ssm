@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>medium</name>
+			<type>trigger</type>
+		</param>
+		<param>
+			<name>high</name>
+			<type>trigger</type>
+		</param>
+	</params>
+	<node>
+		<name>idle</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
+		<transition>
+			<to>onMove</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>high</name>
+				</condition>
+				<condition>
+					<type>trigger</type>
+					<name>medium</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-8.000000 76.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>onMove</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/J20_Type_2605_3Dst_02/J20_Hull_sparks_exhaust.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-10.500000 -27.500000 0.000000</uiPosition>
+	</node>
+</root>

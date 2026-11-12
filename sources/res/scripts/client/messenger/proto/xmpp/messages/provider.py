@@ -1,4 +1,5 @@
 from constants import NOVICE_RESTRICTIONS_BAN_TYPE
+from helpers import dependency
 from messenger.m_constants import PROTO_TYPE
 from messenger.proto.events import g_messengerEvents
 from messenger.proto.xmpp import find_criteria
@@ -7,6 +8,7 @@ from messenger.proto.xmpp.extensions import chat as chat_ext
 from messenger.proto.xmpp.find_criteria import XMPPChannelByJIDFindCriteria, XMPPChannelByNameFindCriteria
 from messenger.proto.xmpp.gloox_wrapper import ClientHolder
 from messenger.storage import storage_getter
+from skeletons.gui.game_control import IReferralProgramController
 
 class ChatProvider(ClientHolder):
     __slots__ = ()
@@ -114,16 +116,18 @@ class ChatProvider(ClientHolder):
             if banItem is None:
                 return True
             if dbID == 0:
-                return True
+                return banItem.banType == NOVICE_RESTRICTIONS_BAN_TYPE
             if banItem.banType != NOVICE_RESTRICTIONS_BAN_TYPE:
                 return False
+            rfCtrl = dependency.instance(IReferralProgramController)
+            recruiterDbId = rfCtrl.getRecruiterDbId()
+            if recruiterDbId and recruiterDbId == dbID:
+                return True
+            if rfCtrl.isRecruit(dbID):
+                return True
             user = self.usersStorage.getUser(dbID, PROTO_TYPE.XMPP)
             if user is None:
                 return False
             if user.isConfirmedFriend():
-                return True
-            from gui.Scaleform.daapi.view.lobby.referral_program.referral_program_helpers import getRecruiterDbId
-            recruiterDbId = getRecruiterDbId()
-            if recruiterDbId == dbID:
                 return True
             return False

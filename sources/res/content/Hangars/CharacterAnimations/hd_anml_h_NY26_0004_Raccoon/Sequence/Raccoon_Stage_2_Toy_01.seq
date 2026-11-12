@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>15.666667</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>15.666667</duration>
+				<resourceID>content/Hangars/CharacterAnimations/hd_anml_h_NY26_0004_Raccoon/Animation/Raccoon_Stage_2_Toy_01.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>15.666667</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>hangar_h03_amb_raccoon_stage_2_toy_01_object</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>9.466667</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-1.317772 0.000000 -0.801903</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.866667</startTime>
+				<value>-1.317772 0.000000 -0.801903</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.158730 -0.000000 -1.830642</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.466667</startTime>
+				<value>-1.222534 -0.000000 -1.900288</value>
+				<inTangent>0.158730 -0.000000 -1.830642</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.433333</startTime>
+				<value>-1.222534 -0.000000 -1.900288</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>1.642203 0.000000 -1.329070</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.766667</startTime>
+				<value>-0.675133 -0.000000 -2.343311</value>
+				<inTangent>1.642203 -0.000000 -1.329070</inTangent>
+				<outTangent>4.464999 0.000000 -1.128160</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.366699 -0.000000 -2.606548</value>
+				<inTangent>4.464999 -0.000000 -1.128160</inTangent>
+				<outTangent>4.817663 0.000000 0.978861</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.233334</startTime>
+				<value>1.490822 -0.000000 -2.378147</value>
+				<inTangent>4.817663 -0.000000 0.978861</inTangent>
+				<outTangent>0.996009 0.000000 3.235806</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.500000</startTime>
+				<value>1.756424 -0.000000 -1.515266</value>
+				<inTangent>0.996009 -0.000000 3.235806</inTangent>
+				<outTangent>-4.082216 0.000000 2.007310</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.700000</startTime>
+				<value>0.939980 -0.000000 -1.113804</value>
+				<inTangent>-4.082216 -0.000000 2.007310</inTangent>
+				<outTangent>-1.023691 0.000000 -0.305585</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.400000</startTime>
+				<value>0.223396 -0.000000 -1.327713</value>
+				<inTangent>-1.023691 -0.000000 -0.305585</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.633334</startTime>
+				<value>0.223396 -0.000000 -1.327713</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-2.841178 0.000000 -0.533712</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.200000</startTime>
+				<value>-1.386604 -0.000000 -1.630150</value>
+				<inTangent>-2.841178 -0.000000 -0.533712</inTangent>
+				<outTangent>1.385881 0.000000 5.473905</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.300000</startTime>
+				<value>-1.248016 -0.000000 -1.082760</value>
+				<inTangent>1.385881 -0.000000 5.473905</inTangent>
+				<outTangent>6.275023 0.000000 -0.823660</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.700000</startTime>
+				<value>1.261993 -0.000000 -1.412224</value>
+				<inTangent>6.275023 -0.000000 -0.823660</inTangent>
+				<outTangent>1.195173 0.000000 5.555226</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.866667</startTime>
+				<value>1.461189 -0.000000 -0.486351</value>
+				<inTangent>1.195173 -0.000000 5.555226</inTangent>
+				<outTangent>-6.676627 0.000000 6.131979</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.033334</startTime>
+				<value>0.348419 -0.000000 0.535645</value>
+				<inTangent>-6.676627 -0.000000 6.131979</inTangent>
+				<outTangent>-5.042157 0.000000 -2.176134</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.233334</startTime>
+				<value>-0.660011 -0.000000 0.100418</value>
+				<inTangent>-5.042157 -0.000000 -2.176134</inTangent>
+				<outTangent>-1.223441 0.000000 -1.655604</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.800000</startTime>
+				<value>-1.353294 -0.000000 -0.837757</value>
+				<inTangent>-1.223441 -0.000000 -1.655604</inTangent>
+				<outTangent>-1.223441 -0.000000 -1.655604</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.066667</startTime>
+				<duration>15.400001</duration>
+				<sequenceSound>hangar_h03_amb_raccoon_stage_2_toy_01_object</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>hangar_h03_amb_raccoon_stage_2_toy_01</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>15.466667</duration>
+				<value>Root|Head_M</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>15.387271</duration>
+				<sequenceSound>hangar_h03_amb_raccoon_stage_2_toy_01</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sound 2</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.100000</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.066667</duration>
+				<sequenceSound>hangar_newyear_add_toy_enot</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

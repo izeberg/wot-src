@@ -145,6 +145,7 @@ class BattleTeamsBasesController(ITeamsBasesController, ViewComponentsController
     def invalidateTeamBasePoints(self, baseTeam, baseID, points, timeLeft, invadersCnt, capturingStopped):
         if baseTeam not in _AVAILABLE_TEAMS_NUMBERS:
             return
+        g_playerEvents.onBaseCapture(baseTeam, baseID, points, timeLeft, invadersCnt, capturingStopped)
         clientID = makeClientTeamBaseID(baseTeam, baseID)
         arenaDP = self.__battleCtx.getArenaDP()
         playerTeam = arenaDP.getNumberOfTeam()

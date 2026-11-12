@@ -40,7 +40,10 @@ def _initializeDefaultSettings(core, data, initialized):
        GAME.CAROUSEL_TYPE: core.getSetting(GAME.CAROUSEL_TYPE), 
        GAME.MINIMAP_MIN_SPOTTING_RANGE: core.getSetting(GAME.MINIMAP_MIN_SPOTTING_RANGE)}
     data['gameExtData2'] = {GAME.CUSTOMIZATION_DISPLAY_TYPE: core.getSetting(GAME.CUSTOMIZATION_DISPLAY_TYPE), 
-       GAME.ENABLE_BATTLE_CONTEXT_HINTS: core.getSetting(GAME.ENABLE_BATTLE_CONTEXT_HINTS)}
+       GAME.ENABLE_BATTLE_CONTEXT_HINTS: core.getSetting(GAME.ENABLE_BATTLE_CONTEXT_HINTS), 
+       GAME.SHOW_VEHICLE_DIFFICULTY_IN_HANGAR: core.getSetting(GAME.SHOW_VEHICLE_DIFFICULTY_IN_HANGAR), 
+       GAME.SHOW_VEHICLE_DIFFICULTY_IN_TECH_TREE: core.getSetting(GAME.SHOW_VEHICLE_DIFFICULTY_IN_TECH_TREE), 
+       GAME.SHOW_VEHICLE_DIFFICULTY_IN_RESEARCH: core.getSetting(GAME.SHOW_VEHICLE_DIFFICULTY_IN_RESEARCH)}
     gameplayData = data['gameplayData'] = {GAME.GAMEPLAY_MASK: AccountSettings.getSettingsDefault('gameplayMask')}
     aimData = data['aimData'] = {'arcade': core.getSetting('arcade'), 
        'sniper': core.getSetting('sniper')}
@@ -1641,6 +1644,27 @@ def _migrateTo150(core, data, initialized):
     data[SETTINGS_SECTIONS.UI_STORAGE_3][UI_STORAGE_KEYS.CLIP_GUN_DUAL_ACCURACY_HIGHLIGHTS_COUNTER] = 0
 
 
+def _migrateTo151(core, data, initialized):
+    data['gameExtData2'].update({GAME.SHOW_VEHICLE_DIFFICULTY_IN_HANGAR: True, 
+       GAME.SHOW_VEHICLE_DIFFICULTY_IN_TECH_TREE: True, 
+       GAME.SHOW_VEHICLE_DIFFICULTY_IN_RESEARCH: True})
+
+
+def _migrateTo152(core, data, initialized):
+    nyStorageData = data['nyStorage']
+    nyStorageData[NewYearStorageKeys.NY_FIRST_ENTRANCE] = True
+    nyStorageData[NewYearStorageKeys.NY_WELCOME_NOTIFICATION] = False
+    nyStorageData[NewYearStorageKeys.NY_PET_TOYS_REMOVED] = False
+    nyStorageData[NewYearStorageKeys.NY_FIRST_QUEST_VIDEO_VISITED] = False
+    nyStorageData[NewYearStorageKeys.NY_FIRST_QUEST_ENTRANCE] = 0
+    nyStorageData[NewYearStorageKeys.DECORATIONS_POPOVER_VIEWED] = False
+    nyStorageData[NewYearStorageKeys.DECORATIONS_POPOVER_BROKEN] = False
+    nyStorageData[NewYearStorageKeys.HAS_TOYS_HINT_SHOWN] = False
+    nyStorageData[NewYearStorageKeys.NY_TAMAGOTCHI_TUTORIAL_COMPLETED] = 0
+    nyStorageData[NewYearStorageKeys.NY_TAMAGOTCHI_RAID_VIEW_ENABLED] = False
+    nyStorageData[NewYearStorageKeys.NY_TAMAGOTCHI_RAID_FIRST_ONBOARDING] = True
+
+
 _versions = (
  (
   1, _initializeDefaultSettings, True, False, False),
@@ -1939,7 +1963,11 @@ _versions = (
  (
   149, _migrateTo149, False, False, False),
  (
-  150, _migrateTo150, False, False, False))
+  150, _migrateTo150, False, False, False),
+ (
+  151, _migrateTo151, False, False, True),
+ (
+  152, _migrateTo152, False, False, False))
 
 @adisp_async
 @adisp_process

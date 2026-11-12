@@ -65,14 +65,6 @@ package
       
       public static const HEADERBUTTON_TOOLTIPS_COSMICSQUAD_BODY:String = "#platoon:headerButton/tooltips/cosmicSquad/body";
       
-      public static const HEADERBUTTON_TOOLTIPS_PORTALSQUAD_HEADER:String = "#platoon:headerButton/tooltips/portalSquad/header";
-      
-      public static const HEADERBUTTON_TOOLTIPS_PORTALSQUAD_BODY:String = "#platoon:headerButton/tooltips/portalSquad/body";
-      
-      public static const HEADERBUTTON_TOOLTIPS_PORTALSQUADOFF_HEADER:String = "#platoon:headerButton/tooltips/portalSquadOff/header";
-      
-      public static const HEADERBUTTON_TOOLTIPS_PORTALSQUADOFF_BODY:String = "#platoon:headerButton/tooltips/portalSquadOff/body";
-      
       public static const BUTTONS_FINDPLAYERS_CAPTION:String = "#platoon:buttons/findPlayers/caption";
       
       public static const BUTTONS_FINDPLAYERS_TOOLTIP_HEADER:String = "#platoon:buttons/findPlayers/tooltip/header";

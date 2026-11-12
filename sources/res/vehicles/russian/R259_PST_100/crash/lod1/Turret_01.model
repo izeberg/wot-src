@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R259_PST_100/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/russian/R259_PST_100/crash/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.286050 -0.208090 -1.263250</min>
+		<max>1.283756 1.141965 1.433278</max>
+	</visibilityBox>
+</root>

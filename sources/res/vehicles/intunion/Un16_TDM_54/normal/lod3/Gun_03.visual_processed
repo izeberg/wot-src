@@ -168,15 +168,15 @@
 						</Float>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.175396 -1.575169</groupOrigin>
+				<groupOrigin>0.000002 0.169490 -1.552750</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.425000 -0.279505 0.050039</min>
-		<max>0.425000 0.630298 3.100298</max>
+		<min>-0.424997 -0.285412 0.027620</min>
+		<max>0.425002 0.624392 3.077880</max>
 	</boundingBox>
-	<geometrySize>29670</geometrySize>
+	<geometrySize>29486</geometrySize>
 	<minUVDensity>0.012744</minUVDensity>
 </root>

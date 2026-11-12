@@ -1,57 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>3.433333</duration>
+	<duration>3.066667</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
 		<resource/>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_23_prepaint</name>
+		<name>stg_16_wheels_12_DS</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_23_paint.model</resource>
-		<track>
-			<name>visibility</name>
-			<type>bool</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>true</value>
-			</frame>
-			<frame>
-				<startTime>3.433333</startTime>
-				<value>true</value>
-			</frame>
-		</track>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/F144_Etoile/normal/lod0/stg_23_Paint.model</resource>
 		<track>
 			<name>material property float</name>
 			<type>float</type>
-			<identifier>s_nd0</identifier>
+			<identifier>s_nd2</identifier>
 			<property>repaintProgeression</property>
 			<frame>
-				<startTime>0.000000</startTime>
+				<startTime>1.000000</startTime>
 				<value>0.000000</value>
-				<inTangent>0.291262</inTangent>
-				<outTangent>0.291262</outTangent>
+				<inTangent>0.600000</inTangent>
+				<outTangent>0.600000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>3.433333</startTime>
+				<startTime>2.666667</startTime>
 				<value>1.000000</value>
-				<inTangent>0.291262</inTangent>
-				<outTangent>0.291262</outTangent>
+				<inTangent>0.600000</inTangent>
+				<outTangent>0.600000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Stage_23</name>
+		<name>stage_23</name>
 		<type>sound</type>
 		<track>
 			<name>attach</name>
 			<type>attach</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<duration>3.333333</duration>
+				<startTime>1.000000</startTime>
+				<duration>2.066667</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -59,19 +47,26 @@
 			<name>position</name>
 			<type>vector3</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<value>0.000000 2.679756 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<startTime>1.000000</startTime>
+				<value>0.000000 0.393213 -1.232433</value>
+				<inTangent>0.000000 -0.000000 1.146117</inTangent>
+				<outTangent>0.000000 -0.000000 1.146117</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.066667</startTime>
+				<value>0.000000 0.393213 1.136208</value>
+				<inTangent>-0.000000 -0.000000 1.146117</inTangent>
+				<outTangent>-0.000000 -0.000000 1.146117</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 		<track>
-			<name>ay_ep_09_seq_stage_23</name>
+			<name>ay_ep_07_seq_stage_22</name>
 			<type>sound</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<duration>3.288792</duration>
+				<startTime>1.000000</startTime>
+				<duration>2.064292</duration>
 				<sequenceSound>ay_seq_stage_23</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>

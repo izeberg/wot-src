@@ -193,6 +193,15 @@ class SettingsCore(ISettingsCore):
           GAME.ENABLE_BATTLE_CONTEXT_HINTS,
           options.StorageAccountSetting(GAME.ENABLE_BATTLE_CONTEXT_HINTS, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
          (
+          GAME.SHOW_VEHICLE_DIFFICULTY_IN_HANGAR,
+          options.StorageAccountSetting(GAME.SHOW_VEHICLE_DIFFICULTY_IN_HANGAR, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
+         (
+          GAME.SHOW_VEHICLE_DIFFICULTY_IN_TECH_TREE,
+          options.StorageAccountSetting(GAME.SHOW_VEHICLE_DIFFICULTY_IN_TECH_TREE, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
+         (
+          GAME.SHOW_VEHICLE_DIFFICULTY_IN_RESEARCH,
+          options.StorageAccountSetting(GAME.SHOW_VEHICLE_DIFFICULTY_IN_RESEARCH, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
+         (
           GAME.ENABLE_THERMAL_VISION_EFFECT,
           options.StorageAccountSetting(GAME.ENABLE_THERMAL_VISION_EFFECT, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
          (

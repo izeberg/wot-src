@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A185_MBT_Revised_V_E2/normal/lod0/Hull</nodefullVisual>
+	<parent>vehicles/american/A185_MBT_Revised_V_E2/normal/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.773375 -0.542050 -3.398342</min>
+		<max>1.773785 0.661164 3.069963</max>
+	</visibilityBox>
+</root>

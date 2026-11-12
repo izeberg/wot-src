@@ -2,6 +2,78 @@
 <root>
 	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<itemGroup>
+		<name>NY27_PAB01_Insignia_147</name>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+		<insignia>
+			<id>31072</id>
+			<texture>gui/maps/vehicles/decals/insignia/custom/NY27_PAB01_Insignia_147_3.dds</texture>
+		</insignia>
+	</itemGroup>
+	<itemGroup>
+		<name>NY27_PAB02_Insignia_147</name>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+		<insignia>
+			<id>31070</id>
+			<texture>gui/maps/vehicles/decals/insignia/custom/NY27_PAB02_Insignia_147_3.dds</texture>
+		</insignia>
+	</itemGroup>
+	<itemGroup>
+		<name>NY27_Un17_Insignia_147</name>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+		<insignia>
+			<id>31073</id>
+			<texture>gui/maps/vehicles/decals/insignia/custom/NY27_Un17_Insignia_147_3.dds</texture>
+		</insignia>
+	</itemGroup>
+	<itemGroup>
+		<name>RUSH26_Insignia_147</name>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+		<insignia>
+			<id>31065</id>
+			<texture>gui/maps/vehicles/decals/insignia/custom/RUSH26_Insignia_147_3.dds</texture>
+		</insignia>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<insignia>
+			<id>31068</id>
+			<texture>gui/maps/vehicles/decals/insignia/custom/RushBlackEdition_01_Insignia_147_3.dds</texture>
+		</insignia>
+		<name>RushBlackEdition_01_Insignia_147</name>
+		<tags>hiddenInUI</tags>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+	</itemGroup>
+	<itemGroup>
+		<name>RushBlackEdition_02_Insignia_147</name>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+		<insignia>
+			<id>31067</id>
+			<texture>gui/maps/vehicles/decals/insignia/custom/RushBlackEdition_02_Insignia_147_3.dds</texture>
+		</insignia>
+	</itemGroup>
+	<itemGroup>
 		<name>WH</name>
 		<userString>#vehicle_customization:insignias/special</userString>
 		<season>ALL</season>
@@ -894,6 +966,18 @@
 		<insignia>
 			<id>31064</id>
 			<texture>gui/maps/vehicles/decals/insignia/custom/Tournament_Insignia_146_3.dds</texture>
+		</insignia>
+	</itemGroup>
+	<itemGroup>
+		<name>J20_Type_2605_3Dst_02_Insignia</name>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>2</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+		<insignia>
+			<id>31066</id>
+			<texture>gui/maps/vehicles/decals/insignia/custom/J20_Type_2605_3Dst_02_Insignia_3.dds</texture>
 		</insignia>
 	</itemGroup>
 	<itemGroup>

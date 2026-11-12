@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s0Shape3.vertices</vertices>
+			<primitive>s0Shape3.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -39,15 +39,14 @@
 						<Texture>content/Hangars/h00_armory_yard/environment/h21_ay03_ladder_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.214932 1.114724 -0.000000</groupOrigin>
+				<groupOrigin>0.214932 1.123536 -0.000000</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.535895 -0.018346 -0.442009</min>
-		<max>0.960117 2.251455 0.436149</max>
+		<min>-0.519821 -0.000723 -0.424466</min>
+		<max>0.949684 2.247794 0.424465</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>15160</geometrySize>
+	<geometrySize>14546</geometrySize>
 	<minUVDensity>0.037969</minUVDensity>
 </root>

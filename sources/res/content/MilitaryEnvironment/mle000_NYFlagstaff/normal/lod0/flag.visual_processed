@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>108</materialKind>
+					<fx>shaders/controlPoint/controlPointFlag_VAT.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/MilitaryEnvironment/mle000_NYFlagstaff/flag_AM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap2
+						<Texture>content/MilitaryEnvironment/mle000_NYFlagstaff/flag_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						dynamicObject
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_AnimationDuration
+						<Float>30.799999</Float>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_posTexture
+						<Texture>content/MilitaryEnvironment/mle000_BaseFlagstaff/Flag_00_16f4_POS_VAT.dds</Texture>
+					</property>
+					<property>
+						g_rotTexture
+						<Texture>content/MilitaryEnvironment/mle000_BaseFlagstaff/Flag_00_R32f_ROT_VAT.dds</Texture>
+					</property>
+					<property>
+						g_timeMode
+						<Int>3</Int>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/MilitaryEnvironment/mle000_NYFlagstaff/flag_GMM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap2
+						<Texture>content/MilitaryEnvironment/mle000_NYFlagstaff/flag_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/MilitaryEnvironment/mle000_NYFlagstaff/flag_ANM.dds</Texture>
+					</property>
+					<property>
+						normalMap2
+						<Texture>content/MilitaryEnvironment/mle000_NYFlagstaff/flag_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>127</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_sequence_0
+						<Vector3>321.000000 761.000000 0.000000</Vector3>
+					</property>
+					<property>
+						g_sequence_1
+						<Vector3>0.000000 320.000000 0.000000</Vector3>
+					</property>
+					<property>
+						g_sequence_2
+						<Vector3>762.000000 1097.000000 0.000000</Vector3>
+					</property>
+					<property>
+						g_enableVAT
+						<Bool>false</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.377693 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.378657 -0.001807 -0.113153</min>
+		<max>0.378657 0.757193 0.113153</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>1336</geometrySize>
+	<minUVDensity>0.053908</minUVDensity>
+</root>

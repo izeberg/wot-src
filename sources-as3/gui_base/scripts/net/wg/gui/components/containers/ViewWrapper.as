@@ -36,6 +36,8 @@ package net.wg.gui.components.containers
       
       private var _cursor:String = "arrow";
       
+      private var _is3DSpaceView:Boolean = false;
+      
       public function ViewWrapper()
       {
          super();
@@ -146,6 +148,16 @@ package net.wg.gui.components.containers
          this.updateHitArea();
          this.updateDebugGraphics();
          dispatchEvent(new Event(Event.RESIZE));
+      }
+      
+      override public function setIs3DSpaceView(param1:Boolean) : void
+      {
+         this._is3DSpaceView = param1;
+      }
+      
+      override public function get is3DSpaceView() : Boolean
+      {
+         return this._is3DSpaceView;
       }
       
       override public function setTexture(param1:BitmapData) : void

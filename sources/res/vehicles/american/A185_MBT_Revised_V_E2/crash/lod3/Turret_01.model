@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A185_MBT_Revised_V_E2/crash/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A185_MBT_Revised_V_E2/crash/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.575342 -0.000013 -2.474088</min>
+		<max>1.409729 1.737596 1.547589</max>
+	</visibilityBox>
+</root>

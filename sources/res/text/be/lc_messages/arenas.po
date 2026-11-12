@@ -17,6 +17,15 @@ msgstr ""
 msgid "01_karelia/name"
 msgstr "Карэлія"
 
+msgid "01_karelia_ny/description"
+msgstr ""
+"Два кірункі для атакі падзяляе балота. Усходні кірунак ідэальны для вядзення"
+" пазіцыйнай вайны, заходні — для баявых манеўраў. Праз балота можна "
+"арганізаваць раптоўную атаку на базу праціўніка."
+
+msgid "01_karelia_ny/name"
+msgstr "Карелия (новогодняя)"
+
 msgid "02_malinovka/description"
 msgstr ""
 "Зыходныя пазіцыі каманд падзелены роўным полем, якое добра прастрэльваецца. "
@@ -28,6 +37,18 @@ msgstr ""
 
 msgid "02_malinovka/name"
 msgstr "Малінаўка"
+
+msgid "02_malinovka_ny/description"
+msgstr ""
+"Зыходныя пазіцыі каманд падзелены роўным полем, якое добра прастрэльваецца. "
+"Мапа добрая для абароны і знішчэння праціўніка сіламі артылерыі. Глыбокія "
+"абыходы з выкарыстаннем укрыццяў — пералескаў, няроўнасцяў мясцовасці і "
+"вясковых хацін — могуць вырашыць вынік бою. Добра скаардынаваная атака праз "
+"поле на высокай хуткасці з падтрымкай артылерыі таксама можа прынесці "
+"поспех, хоць гэта і небяспечна."
+
+msgid "02_malinovka_ny/name"
+msgstr "Малиновка (новогодняя)"
 
 msgid "03_campania_big/description"
 msgstr ""
@@ -60,6 +81,16 @@ msgstr ""
 
 msgid "05_prohorovka/name"
 msgstr "Прохараўка"
+
+msgid "05_prohorovka_ny/description"
+msgstr ""
+"Адкрытая ўзгорыстая мясцовасць, падзеленая чыгуначным насыпам. Групы дрэў "
+"з'яўляюцца выдатным укрыццём для супрацьтанкавых САУ. Атакуючы, сачыце за "
+"флангамі. Абараняючыся, атакуйце флангі праціўніка. Артылерыя мае свабоду "
+"дзеянняў, але надзвычай уразлівая для рэйду хуткасных лёгкіх сілаў."
+
+msgid "05_prohorovka_ny/name"
+msgstr "Прохоровка (новогодняя)"
 
 msgid "06_ensk/description"
 msgstr ""
@@ -357,6 +388,16 @@ msgstr ""
 msgid "23_westfeld/name"
 msgstr "Вэстфільд"
 
+msgid "23_westfeld_ny/description"
+msgstr ""
+"Яскравая і бухматая мясцовасць, з мноствам лясоў і вёсак у розных частках "
+"мапы. Буйны пашкоджаны віядук перасякае ўсходнюю частку даліны. Шматлікія "
+"горныя хрыбты з'яўляюцца выдатным месцам для засады, але шырокія палі робяць"
+" перамяшчэнне між пазіцыямі небяспечным."
+
+msgid "23_westfeld_ny/name"
+msgstr "Вестфилд (новогодняя)"
+
 msgid "250_br_battle_city2-1/description"
 msgstr ""
 "Асноўная задача — застацца апошнім ацалелым гульцом (або звязам).\n"
@@ -378,12 +419,6 @@ msgstr ""
 
 msgid "252_br_battle_city4/name"
 msgstr "Фірнульфір"
-
-msgid "252_br_battle_city4_portal/description"
-msgstr "Разлом!"
-
-msgid "252_br_battle_city4_portal/name"
-msgstr "Территория зла"
 
 msgid "280_cosmic_2026/description"
 msgstr ""
@@ -446,6 +481,15 @@ msgstr ""
 
 msgid "34_redshire/name"
 msgstr "Рэдшыр"
+
+msgid "34_redshire_ny/description"
+msgstr ""
+"Эта карта особенная. Поля, плавно переходящие в холмы, являются отличным "
+"местом для решительных атак. Река в середине карты служит хорошим "
+"ориентиром, а не является препятствием."
+
+msgid "34_redshire_ny/name"
+msgstr "Редшир (новогодняя)"
 
 msgid "35_steppes/description"
 msgstr ""
@@ -657,16 +701,16 @@ msgstr "?empty?"
 msgid "h00_armory_yard/name"
 msgstr "?empty?"
 
+msgid "h03_mt_ny_2026/description"
+msgstr "?empty?"
+
+msgid "h03_mt_ny_2026/name"
+msgstr "?empty?"
+
 msgid "h08_mt_hangar/description"
 msgstr "?empty?"
 
 msgid "h08_mt_hangar/name"
-msgstr "?empty?"
-
-msgid "h13_mt_portal_2025/description"
-msgstr "?empty?"
-
-msgid "h13_mt_portal_2025/name"
 msgstr "?empty?"
 
 msgid "modified"

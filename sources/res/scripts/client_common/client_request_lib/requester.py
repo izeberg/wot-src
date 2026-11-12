@@ -334,8 +334,8 @@ class WGElenAccessor(BaseAccessor):
     def get_my_event_top(self, callback, event_id, fields=None):
         return self._data_source.get_my_event_top(callback, event_id, fields=fields)
 
-    def get_my_leaderboard_position(self, callback, event_id, leaderboard_id, fields=None):
-        return self._data_source.get_my_leaderboard_position(callback, event_id, leaderboard_id, fields=fields)
+    def get_my_leaderboard_position(self, callback, event_id, leaderboard_id, spa_id, fields=None):
+        return self._data_source.get_my_leaderboard_position(callback, event_id, leaderboard_id, spa_id, fields=fields)
 
     def get_player_data(self, callback, fields=None):
         return self._data_source.get_player_data(callback, fields=fields)
@@ -422,6 +422,27 @@ class StatBoxAccessor(BaseAccessor):
         return self._data_source.get_statistic_lootbox(callback)
 
 
+class NyTamagotchiAccessor(BaseAccessor):
+
+    def get_current_state(self, callback, notRecalc):
+        return self._data_source.ny_tamagotchi_get_current_state(callback, notRecalc=notRecalc)
+
+    def get_player_info(self, callback):
+        return self._data_source.ny_tamagotchi_get_player_info(callback)
+
+    def get_leaderboard_page(self, callback, page, isUserPage=False, cumulative=False):
+        return self._data_source.ny_tamagotchi_get_leaderboard_page(callback, page, isUserPage, cumulative=cumulative)
+
+    def get_player_stats(self, callback):
+        return self._data_source.ny_tamagotchi_get_player_stats(callback)
+
+    def buy_items(self, callback, data):
+        return self._data_source.ny_tamagotchi_buy_items(callback, data)
+
+    def activate_items(self, callback, data):
+        return self._data_source.ny_tamagotchi_activate_items(callback, data)
+
+
 class Requester(object):
     available_data_sources = {'stagings': StagingDataAccessor, 
        'fake': FakeDataAccessor, 
@@ -446,6 +467,7 @@ class Requester(object):
     shop = RequestDescriptor(ShopAccessor)
     gold_wagon_info = RequestDescriptor(GoldWagonAccessor)
     statbox = RequestDescriptor(StatBoxAccessor)
+    ny_tamagotchi = RequestDescriptor(NyTamagotchiAccessor)
 
     @classmethod
     def create_requester(cls, url_fetcher, config, client_lang=None, user_agent=None):

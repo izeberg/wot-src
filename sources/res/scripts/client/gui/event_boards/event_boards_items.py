@@ -1009,7 +1009,7 @@ class TopItem(object):
 class MyInfoInLeaderBoard(object):
     EXPECTED_FIELDS = [
      'rank', 'p1', 'p2', 'p3', 'page_number', 'is_inside_viewsize', 'last_in_leaderboard_value',
-     'battles_count', 'clan_tag', 'clan_color']
+     'battles_count', 'clan_tag', 'clan_color', 'last_leaderboard_recalculation_ts']
 
     def __init__(self):
         self.__eventID = None
@@ -1024,6 +1024,7 @@ class MyInfoInLeaderBoard(object):
         self.__battlesCount = None
         self.__clanTag = None
         self.__clanColor = None
+        self.__lastLeaderboardRecalculated = None
         return
 
     def setData(self, rawData, eventID, leaderboardID):
@@ -1043,6 +1044,7 @@ class MyInfoInLeaderBoard(object):
         self.__battlesCount = rawData['battles_count']
         self.__clanTag = rawData['clan_tag']
         self.__clanColor = rawData['clan_color']
+        self.__lastLeaderboardRecalculated = rawData['last_leaderboard_recalculation_ts']
         return SET_DATA_STATUS_CODE.OK
 
     def getEventID(self):
@@ -1080,6 +1082,9 @@ class MyInfoInLeaderBoard(object):
 
     def getClanColor(self):
         return self.__clanColor
+
+    def getLastLeaderboardRecalculated(self):
+        return self.__lastLeaderboardRecalculated
 
     def __isDataStructureValid(self, data):
         if data and isDataSchemaValid(self.EXPECTED_FIELDS, data):
@@ -1217,41 +1222,6 @@ class LeaderBoard(object):
                         return False
 
         return True
-
-
-class Comp7LeaderBoard(LeaderBoard):
-    __CUSTOM_EXPECTED_FIELDS_META = [
-     'elite_rank_position_threshold', 'elite_rank_points_threshold', 'master_rank_position_threshold']
-    EXPECTED_FIELDS_META = LeaderBoard.EXPECTED_FIELDS_META + __CUSTOM_EXPECTED_FIELDS_META
-
-    def __init__(self):
-        super(Comp7LeaderBoard, self).__init__()
-        self.__lastEliteUserPosition = None
-        self.__lastEliteUserRating = None
-        self.__lastMasterRankPositionThreshold = None
-        self.__divisionsFirstPositions = {}
-        return
-
-    def setData(self, rawData, leaderboardID, infoType, leaderboardType):
-        result = super(Comp7LeaderBoard, self).setData(rawData, leaderboardID, infoType, leaderboardType)
-        meta = rawData['meta']
-        self.__lastEliteUserPosition = meta['elite_rank_position_threshold']
-        self.__lastEliteUserRating = meta['elite_rank_points_threshold']
-        self.__lastMasterRankPositionThreshold = meta['master_rank_position_threshold'] or 0
-        self.__divisionsFirstPositions = meta.get('divisions_first_positions', {})
-        return result
-
-    def getRecordsCount(self):
-        return self.__lastMasterRankPositionThreshold
-
-    def getLastEliteUserPosition(self):
-        return self.__lastEliteUserPosition
-
-    def getLastEliteUserRating(self):
-        return self.__lastEliteUserRating
-
-    def getDivisionsFirstPositions(self):
-        return self.__divisionsFirstPositions
 
 
 class InfoItem(object):

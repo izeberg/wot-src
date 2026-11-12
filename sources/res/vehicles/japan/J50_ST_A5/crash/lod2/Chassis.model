@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J50_ST_A5/crash/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/japan/J50_ST_A5/crash/lod2/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.581250 -0.000023 -3.843031</min>
+		<max>1.581117 1.081264 3.245081</max>
+	</visibilityBox>
+</root>

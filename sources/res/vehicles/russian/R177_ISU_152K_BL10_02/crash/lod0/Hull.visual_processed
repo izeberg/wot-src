@@ -100,6 +100,10 @@
 						g_useNormalPackDXT1
 						<Bool>true</Bool>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.002824 0.412072 -0.195658</groupOrigin>
 			</primitiveGroup>

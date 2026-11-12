@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB146_Albion/normal/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.813979 -0.637772 -4.025982</min>
+		<max>1.813980 2.334305 4.085974</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB146_Albion/normal/lod0/Hull</nodefullVisual>
+</root>

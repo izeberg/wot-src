@@ -829,9 +829,11 @@ class CommonStatsBlockConstructor(ModuleTooltipBlockConstructor):
                 result.append(_ModuleExtraStatuses.CLIP_DUAL_GUN)
         elif module.isAutoReloadable(vDescr):
             hasBoost = False
-            for gun in vDescr.type.getGuns():
-                if gun.compactDescr == module.intCD:
-                    hasBoost = gun.autoreloadHasBoost
+            if vDescr:
+                for gun in vDescr.type.getGuns():
+                    if gun.compactDescr == module.intCD:
+                        hasBoost = gun.autoreloadHasBoost
+                        break
 
             result.append(_ModuleExtraStatuses.AUTOLOADER_WITH_BOOST_GUN if hasBoost else _ModuleExtraStatuses.AUTOLOADER_GUN)
         elif module.isDualGun(vDescr) or module.hasDualGunDualAccuracy(vDescr):

@@ -14,14 +14,29 @@ if typing.TYPE_CHECKING:
     from typing import Sequence, Tuple, Callable, Optional
     from Event import Event
 
-class TankAcademyEntryPointView(GFHeaderWidgetView):
+class TankAcademyEntryPointWidget(GFHeaderWidget):
     __slots__ = ()
+
+    def _makeInjectView(self):
+        return TankAcademyEntryPointView()
+
+
+class TankAcademySecondaryEntryPointWidget(GFHeaderWidget):
+    __slots__ = ()
+
+    def _makeInjectView(self):
+        return TankAcademyEntryPointView(True)
+
+
+class TankAcademyEntryPointView(GFHeaderWidgetView):
+    __slots__ = ('__isSecondaryEntry', )
     __tankAcademyController = dependency.descriptor(ITankAcademyController)
     __eventsCache = dependency.descriptor(IEventsCache)
     __settingsCore = dependency.descriptor(ISettingsCore)
 
-    def __init__(self):
+    def __init__(self, isSecondaryEntry=False):
         super(TankAcademyEntryPointView, self).__init__(R.views.tank_academy.lobby.tank_academy.TankAcademyEntryPointView(), TankAcademyEntryPointViewModel())
+        self.__isSecondaryEntry = isSecondaryEntry
 
     @property
     def viewModel(self):
@@ -52,6 +67,7 @@ class TankAcademyEntryPointView(GFHeaderWidgetView):
             currentQuest = self.__tankAcademyController.getCurrentQuest()
             completedQuestsCount = self.__tankAcademyController.getCompletedTankAcademyQuestsCount()
             model.setIsCompleted(currentQuest is None)
+            model.setIsSecondaryEntry(self.__isSecondaryEntry)
             model.setIsMainViewVisited(completedQuestsCount == self.__getLastSeenQuestIdx() and self.__settingsCore.serverSettings.isTankAcademyWelcomeScreenShown())
             model.setUnobtainedVehiclesCount(len(self.__tankAcademyController.getDelayedRewardCurrencyTokens()))
             if currentQuest is not None:
@@ -75,10 +91,3 @@ class TankAcademyEntryPointView(GFHeaderWidgetView):
         hintShowed = self.__settingsCore.serverSettings.getOnceOnlyHintsSetting(entryPointHint, default=False)
         if not hintShowed:
             self.__settingsCore.serverSettings.setOnceOnlyHintsSettings({entryPointHint: True})
-
-
-class TankAcademyEntryPointWidget(GFHeaderWidget):
-    __slots__ = ()
-
-    def _makeInjectView(self):
-        return TankAcademyEntryPointView()

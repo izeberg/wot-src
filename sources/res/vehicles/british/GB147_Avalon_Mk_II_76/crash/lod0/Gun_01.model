@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.670297 -0.213761 -0.815170</min>
+		<max>0.402500 0.241500 1.523695</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB147_Avalon_Mk_II_76/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB147_Avalon_Mk_II_76/crash/lod0/Gun_01</nodefullVisual>
+</root>

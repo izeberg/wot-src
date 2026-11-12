@@ -384,6 +384,22 @@ class Shop(object):
         self.__account._doCmdInt4(AccountCommands.CMD_SELL_C11N_ITEMS, self.__getCacheRevision(), itemCD, count, vehInvID, proxy)
         return
 
+    def exchangeCustomizationResourceItems(self, customizationItems, callback):
+        if self.__ignore:
+            if callback is not None:
+                callback(AccountCommands.RES_NON_PLAYER, '', {})
+            return
+        if callback is not None:
+            proxy = lambda requestID, resultID, errorStr, ext={}: callback(resultID, errorStr, ext)
+        else:
+            proxy = None
+        intArr = []
+        for item in customizationItems:
+            intArr.extend(item)
+
+        self.__account._doCmdIntArr(AccountCommands.CMD_EXCHANGE_CUSTOMIZATION_RESOURCE_ITEMS, intArr, proxy)
+        return
+
     def resetC11nItemsNovelty(self, itemsList, callback):
         if self.__ignore:
             if callback is not None:

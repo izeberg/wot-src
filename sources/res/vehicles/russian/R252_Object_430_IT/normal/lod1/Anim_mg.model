@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/russian/R252_Object_430_IT/normal/lod1/Anim_mg</nodelessVisual>
+	<parent>vehicles/russian/R252_Object_430_IT/normal/lod2/Anim_mg</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.463268 -0.000000 -0.521143</min>
+		<max>0.441748 0.593369 1.490727</max>
+	</visibilityBox>
+</root>

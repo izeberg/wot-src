@@ -54,6 +54,11 @@
 		</GameObject>
 		<GameObject>
 			<name>hd_h08_MTV1_Volume_Lights_01</name>
+			<UUID>5d526cdb-6a8c-4ed4-82a6-bebb10c84ac9</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>hd_h08_MTV1_Volume_Lights_01</name>
 			<UUID>c59627f7-1035-4d9d-8243-1acc05fca638</UUID>
 			<flags>0</flags>
 		</GameObject>
@@ -75,6 +80,11 @@
 		<GameObject>
 			<name>hd_h08_MTV1_Volume_Lights_01</name>
 			<UUID>8be2d3e3-dcae-429f-aac8-c381911c8153</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>hd_h08_MTV1_Volume_Lights_01</name>
+			<UUID>b7b656a8-9348-466a-8b3e-341d5b5cc76a</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
@@ -130,6 +140,11 @@
 		<GameObject>
 			<name>hd_h08_MTV1_Volume_Lights_01</name>
 			<UUID>3318158f-52f2-4cf0-9e0e-b4d8e6f58553</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>hd_h08_MTV1_Volume_Lights_01</name>
+			<UUID>7f76f865-7828-4740-b8e7-72d878b1ae4f</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
@@ -492,6 +507,36 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<objectIndex>33</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>8cb87548-8ae4-4a25-99ee-def6861646e4</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>34</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>8cb87548-8ae4-4a25-99ee-def6861646e4</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>35</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>8cb87548-8ae4-4a25-99ee-def6861646e4</link>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>Transform</type>
@@ -734,7 +779,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-22.4053 0.88956 -82.2633
+							20.9401 0.899372 57.6842
 							<!--BW_String-->
 						</value>
 					</property>
@@ -758,7 +803,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-0.693054 1.00035 -2.17844
+							-22.4053 0.88956 -82.2633
 							<!--BW_String-->
 						</value>
 					</property>
@@ -782,7 +827,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-11.4562 0.868339 -42.4212
+							-0.693054 1.00035 -2.17844
 							<!--BW_String-->
 						</value>
 					</property>
@@ -806,7 +851,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							9.99806 1.00035 37.639
+							-11.4562 0.868339 -42.4212
 							<!--BW_String-->
 						</value>
 					</property>
@@ -830,7 +875,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							10.6046 0.929175 -22.2893
+							9.99806 1.00035 37.639
 							<!--BW_String-->
 						</value>
 					</property>
@@ -854,14 +899,14 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-6.11041 -7.81545 -112.233
+							10.6046 0.929175 -22.2893
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
 						<value>
-							2.22915 2.92627 3.26841
+							2.94904 3.87129 4.32393
 							<!--BW_String-->
 						</value>
 					</property>
@@ -878,7 +923,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							10.6046 0.966068 -42.4212
+							-0.343628 0.959338 -42.4212
 							<!--BW_String-->
 						</value>
 					</property>
@@ -902,14 +947,14 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-0.206573 0.824289 -62.2051
+							-6.11041 -7.81545 -112.233
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
 						<value>
-							2.94904 3.87129 4.32393
+							2.22915 2.92627 3.26841
 							<!--BW_String-->
 						</value>
 					</property>
@@ -926,7 +971,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							22.0508 0.824289 -62.2051
+							10.6046 0.966068 -42.4212
 							<!--BW_String-->
 						</value>
 					</property>
@@ -950,7 +995,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							21.8106 0.824289 -82.0236
+							-0.206573 0.824289 -62.2051
 							<!--BW_String-->
 						</value>
 					</property>
@@ -974,7 +1019,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-0.203873 0.947919 -82.2866
+							22.0508 0.824289 -62.2051
 							<!--BW_String-->
 						</value>
 					</property>
@@ -998,7 +1043,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							21.5493 1.00035 -2.17844
+							21.8106 0.824289 -82.0236
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1022,7 +1067,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-1.01982 1.00035 37.639
+							-0.203873 0.947919 -82.2866
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1046,7 +1091,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-11.6203 0.954035 -22.2893
+							21.5493 1.00035 -2.17844
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1070,7 +1115,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-12.1119 1.00035 37.639
+							-1.01982 1.00035 37.639
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1094,7 +1139,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-11.8495 1.00035 -2.17844
+							-11.6203 0.954035 -22.2893
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1118,7 +1163,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-22.4098 0.824289 -62.2051
+							-12.1119 1.00035 37.639
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1142,6 +1187,78 @@
 					<property>
 						<name>Position</name>
 						<value>
+							-11.8495 1.00035 -2.17844
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							2.94904 3.87129 4.32393
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>28</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-23.3703 0.899869 57.7556
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							2.94904 3.87129 4.32393
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>29</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-22.4098 0.824289 -62.2051
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							2.94904 3.87129 4.32393
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>30</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
 							15.3545 -8.35275 77.4252
 							<!--BW_String-->
 						</value>
@@ -1160,7 +1277,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>28</objectIndex>
+				<objectIndex>31</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1184,7 +1301,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>29</objectIndex>
+				<objectIndex>32</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1208,7 +1325,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>30</objectIndex>
+				<objectIndex>33</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1232,7 +1349,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>31</objectIndex>
+				<objectIndex>34</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1256,7 +1373,7 @@
 				</config>
 			</component>
 			<component>
-				<objectIndex>32</objectIndex>
+				<objectIndex>35</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1874,6 +1991,63 @@
 			</component>
 			<component>
 				<objectIndex>32</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_Volume_Lights_01.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>33</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_Volume_Lights_01.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>34</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_Volume_Lights_01.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>35</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>

@@ -22,8 +22,7 @@ def registerAYAdditionalSystemMessageTypes():
      'ArmoryYardBundlePurchase',
      'FinancialTransactionWithGoldAndArmoryCoinsHeader',
      'FinancialTransactionWithArmoryCoinsHeader',
-     'FinancialTransactionBuyAYCoins',
-     'FinancialTransactionBuyAYFreeCoins'])
+     'FinancialTransactionBuyAYCoins'])
 
 
 def preInit():

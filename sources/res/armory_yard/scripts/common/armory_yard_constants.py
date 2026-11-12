@@ -1,3 +1,4 @@
+import operator
 from enum import Enum
 CMD_COLLECT_REWARDS = 31002
 CMD_BUY_STEP_TOKENS = 31003
@@ -176,3 +177,10 @@ def getQuestCompletedToken(questID):
 ARMORY_YARD_SYS_MSG_PROGRESSION = 'ay_progression'
 ARMORY_YARD_SYS_MSG_POST_PROGRESSION = 'ay_post_progression'
 TOKEN_EXTRA_TIME_TO_LIVE = 4320
+COMPARE_TOKEN_OPERATIONS = {'less': operator.lt, 
+   'greater': operator.gt, 
+   'equal': operator.eq, 
+   'lessOrEqual': operator.le, 
+   'greaterOrEqual': operator.ge}
+SHOP_DEFAULT_CATEGORY = 'other'
+SHOP_CATEGORIES = {'bundle', 'maintain', 'customization', 'economicBooster', 'specialOffers', SHOP_DEFAULT_CATEGORY}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/normal/lod1/Gun_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.173804 -0.875213 -3.105734</min>
+		<max>1.173210 1.364368 7.759290</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/normal/lod0/Gun_01</nodefullVisual>
+</root>

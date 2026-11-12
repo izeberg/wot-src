@@ -29,10 +29,15 @@ getTimeFormat = _py_objects.getTimeFormat
 getDateFormat = _py_objects.getDateFormat
 caseMap = _py_objects.caseMap
 ResourceType = _py_objects.PyResourceType
+MouseEventType = _py_objects.PyMouseEventType
+MouseButton = _py_objects.PyMouseButton
+ModifiersEvent = _py_objects.PyModifiersEvent
+MouseEvent = _py_objects.PyMouseEvent
 __all__ = ('PyObjectArray', 'PyObjectCommand', 'PyGuiApplication', 'ResourceDescriptor',
            'PyObjectViewSettings', 'PyObjectView', 'PyObjectViewModel', 'PyObjectWindowSettings',
            'PyObjectWindow', 'PyObjectWindowsArea', 'isTranslatedKeyValid', 'isTranslatedTextExisted',
            'getTranslatedText', 'getTranslatedPluralText', 'getImagePath', 'getSoundEffectId',
            'getLayoutPath', 'getTranslatedTextByResId', 'getTranslatedPluralTextByResId',
            'getTranslatedKey', 'getNumberFormat', 'getRealFormat', 'getTimeFormat',
-           'getDateFormat', 'caseMap', 'ResourceType')
+           'getDateFormat', 'caseMap', 'ResourceType', 'MouseEventType', 'MouseButton',
+           'ModifiersEvent', 'MouseEvent')

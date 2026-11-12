@@ -218,13 +218,16 @@ class ArmoryYardMainView(ViewImpl, IGlobalListener):
                 self.__tabs[self.__tabId].onUnload()
             if tabID == TabId.SHOP:
                 self.__tabId = None
-                showArmoryYardShopWindow(self.getWindow())
+                showArmoryYardShopWindow(self.getWindow(), onCloseCallback=self.makeCloseCallbackForShop)
                 return
             self.__tabId = tabID
             self.__tabs[self.__tabId].onLoad()
             if self.viewModel:
                 self.viewModel.setTabId(self.__tabId)
         return
+
+    def makeCloseCallbackForShop(self):
+        self.__tabs[TabId.PROGRESS].onLoad()
 
     @classmethod
     def getInstances(cls):

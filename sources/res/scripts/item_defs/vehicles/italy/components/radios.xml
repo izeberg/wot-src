@@ -66,6 +66,19 @@
 			<maxRegenHealth>150</maxRegenHealth>
 			<repairCost>3</repairCost>
 		</R528_LE>
+		<RF_1CA_It39>
+			<id>31007</id>
+			<userString>#italy_vehicles:RF_1CA_It39</userString>
+			<tags/>
+			<level>9</level>
+			<price>50000</price>
+			<notInShop>true</notInShop>
+			<weight>13</weight>
+			<distance>600</distance>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>150</maxRegenHealth>
+			<repairCost>3</repairCost>
+		</RF_1CA_It39>
 		<RV_4>
 			<id>7</id>
 			<userString>#italy_vehicles:RV_4</userString>

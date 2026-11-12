@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s046003Shape0.vertices</vertices>
+			<primitive>s046003Shape0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Tablefull/Tent/h03_NY27_Tent_Prem_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Tablefull/Tent/h03_NY27_Tent_Prem_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Tablefull/Tent/h03_NY27_Tent_Prem_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.024826 3.499878 0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Tablefull/Tent/h03_NY27_Tent_Prem_01_Leaf_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Tablefull/Tent/h03_NY27_Tent_Prem_01_Leaf_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Tablefull/Tent/h03_NY27_Tent_Prem_01_Leaf_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>2.108807 6.510008 -0.001578</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_nd4</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Tablefull/Tent/h03_NY27_Tent_Prem_01_Leaf_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>4.000000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>4.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>2.213104 6.508907 -0.001578</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>s_nd5</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Tablefull/Tent/h03_NY27_Tent_Prem_01_lights_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>100.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>1.150778 2.419011 0.000001</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s3Shape3.vertices</vertices>
+			<stream>s3Shape3.uv2</stream>
+			<stream>s3Shape3.colour</stream>
+			<primitive>s3Shape3.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd3</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Tablefull/Tent/h03_NY27_Tent_Prem_01_Tile_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Tablefull/Tent/h03_NY27_Tent_Prem_01_blend.png</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Tablefull/Tent/h03_NY27_Tent_Prem_01_Tile_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Tablefull/Tent/h03_NY27_Tent_Prem_01_Tile_GBMT.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Stone_17_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Stone_17_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Stone_17_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_01_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.046614 -0.046435 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-2.914054 -0.184728 -5.761680</min>
+		<max>5.007282 8.507878 5.761680</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>628990</geometrySize>
+	<minUVDensity>0.004270</minUVDensity>
+</root>

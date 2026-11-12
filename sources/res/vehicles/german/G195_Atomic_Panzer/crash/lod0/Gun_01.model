@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.538218 -1.119014 -2.588834</min>
+		<max>0.404463 0.556544 4.989470</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/german/G195_Atomic_Panzer/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/german/G195_Atomic_Panzer/crash/lod0/Gun_01</nodefullVisual>
+</root>

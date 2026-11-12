@@ -5918,6 +5918,50 @@
 						0 -0.036 0
 						<!--BW_String-->
 					</shotOffset>
+					<drivenJoints>
+						<master>
+							<node>Gun</node>
+							<table>
+								<row>-20</row>
+								<row>0</row>
+								<row>5</row>
+							</table>
+							<slaves>
+								<slave>
+									<node>Joint_visor</node>
+									<table>
+										<row>-9</row>
+										<row>0</row>
+										<row>3</row>
+									</table>
+								</slave>
+							</slaves>
+						</master>
+						<master>
+							<node>turret</node>
+							<pitch>
+								<row>0</row>
+							</pitch>
+							<yaw>
+								<row>-10</row>
+								<row>0</row>
+								<row>10</row>
+							</yaw>
+							<slaves>
+								<slave>
+									<node>Joint_turret</node>
+									<pitch>
+										<row>0</row>
+									</pitch>
+									<yaw>
+										<row>10</row>
+										<row>0</row>
+										<row>-10</row>
+									</yaw>
+								</slave>
+							</slaves>
+						</master>
+					</drivenJoints>
 					<camouflage>
 						<density>139.432388 133.483093</density>
 						<aoTextureSize>512 512</aoTextureSize>
@@ -6079,6 +6123,50 @@
 						0 -0.036 0
 						<!--BW_String-->
 					</shotOffset>
+					<drivenJoints>
+						<master>
+							<node>Gun</node>
+							<table>
+								<row>-20</row>
+								<row>0</row>
+								<row>5</row>
+							</table>
+							<slaves>
+								<slave>
+									<node>Joint_visor</node>
+									<table>
+										<row>-9</row>
+										<row>0</row>
+										<row>3</row>
+									</table>
+								</slave>
+							</slaves>
+						</master>
+						<master>
+							<node>turret</node>
+							<pitch>
+								<row>0</row>
+							</pitch>
+							<yaw>
+								<row>-10</row>
+								<row>0</row>
+								<row>10</row>
+							</yaw>
+							<slaves>
+								<slave>
+									<node>Joint_turret</node>
+									<pitch>
+										<row>0</row>
+									</pitch>
+									<yaw>
+										<row>10</row>
+										<row>0</row>
+										<row>-10</row>
+									</yaw>
+								</slave>
+							</slaves>
+						</master>
+					</drivenJoints>
 					<camouflage>
 						<density>138.135757 134.000992</density>
 						<aoTextureSize>512 512</aoTextureSize>

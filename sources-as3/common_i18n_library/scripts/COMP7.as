@@ -23,8 +23,6 @@ package
       
       public static const PAGE_HEADING_WEEKLYQUESTS:String = "#comp7:page/heading/weeklyQuests";
       
-      public static const PAGE_HEADING_LEADERBOARD:String = "#comp7:page/heading/leaderboard";
-      
       public static const PAGE_HEADING_YEARLYREWARDS:String = "#comp7:page/heading/yearlyRewards";
       
       public static const PAGE_HEADING_YEARLYSTATISTICS:String = "#comp7:page/heading/yearlyStatistics";
@@ -120,6 +118,10 @@ package
       public static const SIDEBAR_TABS_TOOLTIP_HEADER_LEADERBOARD:String = "#comp7:sidebar/tabs/tooltip/header/leaderboard";
       
       public static const SIDEBAR_TABS_TOOLTIP_BODY_LEADERBOARD:String = "#comp7:sidebar/tabs/tooltip/body/leaderboard";
+      
+      public static const SIDEBAR_TABS_TOOLTIP_HEADER_INFOPAGE:String = "#comp7:sidebar/tabs/tooltip/header/infoPage";
+      
+      public static const SIDEBAR_TABS_TOOLTIP_BODY_INFOPAGE:String = "#comp7:sidebar/tabs/tooltip/body/infoPage";
       
       public static const SIDEBAR_TABS_TOOLTIP_HEADER_YEARLYREWARDS:String = "#comp7:sidebar/tabs/tooltip/header/yearlyRewards";
       
@@ -777,13 +779,17 @@ package
       
       public static const DETAILSHELP_SHOP:String = "#comp7:detailsHelp/shop";
       
-      public static const DETAILSHELP_REWORK_TITLE:String = "#comp7:detailsHelp/rework/title";
+      public static const DETAILSHELP_RULES_TITLE:String = "#comp7:detailsHelp/rules/title";
       
-      public static const DETAILSHELP_REWORK:String = "#comp7:detailsHelp/rework";
+      public static const DETAILSHELP_RULES:String = "#comp7:detailsHelp/rules";
       
       public static const DETAILSHELP_ROLESKILLS_TITLE:String = "#comp7:detailsHelp/roleSkills/title";
       
       public static const DETAILSHELP_ROLESKILLS:String = "#comp7:detailsHelp/roleSkills";
+      
+      public static const DETAILSHELP_REWORK_TITLE:String = "#comp7:detailsHelp/rework/title";
+      
+      public static const DETAILSHELP_REWORK:String = "#comp7:detailsHelp/rework";
       
       public static const DETAILSHELP_RANKS_TITLE:String = "#comp7:detailsHelp/ranks/title";
       
@@ -792,10 +798,6 @@ package
       public static const DETAILSHELP_POI_TITLE:String = "#comp7:detailsHelp/poi/title";
       
       public static const DETAILSHELP_POI:String = "#comp7:detailsHelp/poi";
-      
-      public static const DETAILSHELP_RULES_TITLE:String = "#comp7:detailsHelp/rules/title";
-      
-      public static const DETAILSHELP_RULES:String = "#comp7:detailsHelp/rules";
       
       public static const DETAILSHELP_SEASONMODIFIERS_TITLE:String = "#comp7:detailsHelp/seasonModifiers/title";
       
@@ -852,6 +854,10 @@ package
       public static const BATTLERESULT_SUBTASK_TITLE_RAISE:String = "#comp7:battleResult/subTask/title/raise";
       
       public static const BATTLERESULT_SUBTASK_TITLE_DECREASE:String = "#comp7:battleResult/subTask/title/decrease";
+      
+      public static const BATTLERESULT_SUBTASK_TITLE_ELITE:String = "#comp7:battleResult/subTask/title/elite";
+      
+      public static const BATTLERESULT_SUBTASK_TITLE_CHAMPION:String = "#comp7:battleResult/subTask/title/champion";
       
       public static const BATTLERESULT_SUBTASK_DESCR_GETRATING:String = "#comp7:battleResult/subTask/descr/getRating";
       
@@ -977,10 +983,6 @@ package
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_NEWTYPES:String = "#comp7:whatsNewView/slides/description/newTypes";
       
-      public static const WHATSNEWVIEW_SLIDES_TITLE_REWORK:String = "#comp7:whatsNewView/slides/title/rework";
-      
-      public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_REWORK:String = "#comp7:whatsNewView/slides/description/rework";
-      
       public static const WHATSNEWVIEW_SLIDES_TITLE_MODIFIERS:String = "#comp7:whatsNewView/slides/title/modifiers";
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_MODIFIERS:String = "#comp7:whatsNewView/slides/description/modifiers";
@@ -1003,25 +1005,25 @@ package
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_NEWSEASON:String = "#comp7:whatsNewView/slides/description/newSeason";
       
+      public static const WHATSNEWVIEW_SLIDES_TITLE_ROLESKILLSNEWBIE:String = "#comp7:whatsNewView/slides/title/roleSkillsNewbie";
+      
+      public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_ROLESKILLSNEWBIE:String = "#comp7:whatsNewView/slides/description/roleSkillsNewbie";
+      
       public static const WHATSNEWVIEW_SLIDES_TITLE_VEHICLESONMAP:String = "#comp7:whatsNewView/slides/title/vehiclesOnMap";
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_VEHICLESONMAP:String = "#comp7:whatsNewView/slides/description/vehiclesOnMap";
+      
+      public static const WHATSNEWVIEW_SLIDES_TITLE_RANKSINTRO:String = "#comp7:whatsNewView/slides/title/ranksIntro";
+      
+      public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_RANKSINTRO:String = "#comp7:whatsNewView/slides/description/ranksIntro";
       
       public static const WHATSNEWVIEW_SLIDES_TITLE_POINTSOFINTEREST:String = "#comp7:whatsNewView/slides/title/pointsOfInterest";
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_POINTSOFINTEREST:String = "#comp7:whatsNewView/slides/description/pointsOfInterest";
       
-      public static const WHATSNEWVIEW_SLIDES_TITLE_ROLESKILLSNEWBIE:String = "#comp7:whatsNewView/slides/title/roleSkillsNewbie";
-      
-      public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_ROLESKILLSNEWBIE:String = "#comp7:whatsNewView/slides/description/roleSkillsNewbie";
-      
       public static const WHATSNEWVIEW_SLIDES_TITLE_INTROQUALIFICATION:String = "#comp7:whatsNewView/slides/title/introQualification";
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_INTROQUALIFICATION:String = "#comp7:whatsNewView/slides/description/introQualification";
-      
-      public static const WHATSNEWVIEW_SLIDES_TITLE_RANKSINTRO:String = "#comp7:whatsNewView/slides/title/ranksIntro";
-      
-      public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_RANKSINTRO:String = "#comp7:whatsNewView/slides/description/ranksIntro";
       
       public static const SKILLSELECTVIEW_HEADER_TITLE:String = "#comp7:skillSelectView/header/title";
       

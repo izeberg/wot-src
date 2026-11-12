@@ -205,6 +205,7 @@ package net.wg.gui.components.carousels
             this.listVehicleLevels.y = this.lblVehicleLevel.y + this.lblVehicleLevel.height + LABEL_OFFSET | 0;
             param1 = this.listVehicleLevels.y + this.listVehicleLevels.height + LIST_OFFSET;
          }
+         param1 = this.layoutDifficultySection(param1);
          if(this.initData.specialSectionVisible)
          {
             this.lblSpecials.y = param1;
@@ -236,6 +237,11 @@ package net.wg.gui.components.carousels
          return param1;
       }
       
+      protected function layoutDifficultySection(param1:int) : int
+      {
+         return param1;
+      }
+      
       protected function updateState() : void
       {
          listSetState(this.listNationType,this.stateData.nationsSelected);
@@ -255,11 +261,19 @@ package net.wg.gui.components.carousels
             this.lblHidden.htmlText = this.initData.hiddenLabel;
             this.listHidden.dataProvider = this.initData.hidden;
          }
+         else
+         {
+            this.listHidden.dataProvider = null;
+         }
          this.lblSpecials.visible = this.listSpecials.visible = this.initData.specialSectionVisible;
          if(this.initData.specialSectionVisible)
          {
             this.lblSpecials.htmlText = this.initData.specialsLabel;
             this.listSpecials.dataProvider = this.initData.specials;
+         }
+         else
+         {
+            this.listSpecials.dataProvider = null;
          }
          this.lblVehicleLevel.visible = this.listVehicleLevels.visible = this.initData.tankTierSectionVisible;
          if(this.initData.tankTierSectionVisible)
@@ -267,11 +281,19 @@ package net.wg.gui.components.carousels
             this.lblVehicleLevel.htmlText = this.initData.levelsLabel;
             this.listVehicleLevels.dataProvider = this.initData.levels;
          }
+         else
+         {
+            this.listVehicleLevels.dataProvider = null;
+         }
          this.lblProgressions.visible = this.listProgressions.visible = this.initData.progressionsSectionVisible;
          if(this.initData.progressionsSectionVisible)
          {
             this.lblProgressions.htmlText = this.initData.progressionsLabel;
             this.listProgressions.dataProvider = this.initData.progressions;
+         }
+         else
+         {
+            this.listProgressions.dataProvider = null;
          }
          this.lblNationType.htmlText = this.initData.nationsLabel;
          this.listNationType.dataProvider = this.initData.nations;

@@ -1,5 +1,6 @@
 import sys, CGF
 from cgf_script.component_meta_class import registerComponent
+from cgf_script.creation_predicates import inBattleCreationPredicate
 from soft_exception import SoftException
 
 class Reactions(object):
@@ -99,3 +100,8 @@ def autoregister(presentInAllWorlds=False, category='', domain=CGF.DomainOption.
         return cls
 
     return manager_registrator
+
+
+def autoregisterInBattle(presentInAllWorlds=False, category='', domain=CGF.DomainOption.DomainClient, creationPredicate=None):
+    predicate = lambda x: (creationPredicate is None or creationPredicate(x)) and inBattleCreationPredicate(x)
+    return autoregister(presentInAllWorlds, category, domain, predicate)

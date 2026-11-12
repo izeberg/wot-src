@@ -1167,6 +1167,9 @@ msgstr "Дэколь"
 msgid "bonusName/emblem"
 msgstr "Эмблема"
 
+msgid "bonusName/entitlements/ny27_marketplace_unlock"
+msgstr "Открыт доступ к покупке стилей прошлых лет!"
+
 msgid "bonusName/entitlements/paragon_rewards_choice_v_11"
 msgstr "Тэхніка ХІ узроўню"
 
@@ -1175,9 +1178,6 @@ msgstr "Павелічэнне зніжкі"
 
 msgid "bonusName/entitlements/ranked_202203_access"
 msgstr "Доступ да куплі"
-
-msgid "bonusName/entitlements/razlomsupercoin"
-msgstr "Сердце Ратте"
 
 msgid "bonusName/entitlements/shevents_clan_chevron"
 msgstr "Кланавы шаўрон"
@@ -1233,8 +1233,26 @@ msgstr "Надпіс"
 msgid "bonusName/modification"
 msgstr "Эфект"
 
+msgid "bonusName/newYearSlot"
+msgstr "Новогодний слот"
+
+msgid "bonusName/ny22Fillers"
+msgstr "Антиповторитель"
+
+msgid "bonusName/nyractiv"
+msgstr "Мячик"
+
+msgid "bonusName/nyrfood"
+msgstr "Яблоко"
+
+msgid "bonusName/nyrfun"
+msgstr "Расчёска"
+
 msgid "bonusName/paint"
 msgstr "Фарба"
+
+msgid "bonusName/paintcoin"
+msgstr "Пигмент"
 
 msgid "bonusName/paragonsUnlocks"
 msgstr "Доступ да галіны тэхнікі"
@@ -1256,9 +1274,6 @@ msgstr "Стандартны прызавы бой."
 
 msgid "bonusName/rankedDailyBattles"
 msgstr "Штодзённы прызавы бой."
-
-msgid "bonusName/razlom_coin"
-msgstr "Монеты Разлома"
 
 msgid "bonusName/rewardsSlots"
 msgstr "Слот для исключения карты"
@@ -1373,6 +1388,9 @@ msgstr "Ключ"
 msgid "bonuses/item/lootBoxes"
 msgstr "Кантэйнер"
 
+msgid "bonuses/item/lootBoxesMachine"
+msgstr "Жетоны для автомата удачи"
+
 msgid "bonuses/item/premium"
 msgstr "Агульны прэміум акаўнт (сут):"
 
@@ -1418,6 +1436,12 @@ msgstr "Дзён Танкавага прэміум акаўнту: %(value)s"
 
 msgid "bonuses/tankmen/description"
 msgstr "%(value)s"
+
+msgid "bonuses/variadicDiscount/buttonLabel"
+msgstr "Выбрать"
+
+msgid "bonuses/variadicDiscount/discountAmount"
+msgstr "-{amount}%"
 
 msgid "bonuses/vehicles/crewLvl"
 msgstr "%d%% экіпаж"
@@ -1589,6 +1613,28 @@ msgstr "ШТОДЗЁННЫЯ ЗАДАЧЫ"
 
 msgid "dailyQuests/header/winback"
 msgstr "ЗНОЎ У СТРОЙ"
+
+msgid "dailyQuests/info/NYDailyMissions"
+msgstr ""
+"Стандартные задачи состоят из случайных условий, а выполнять их можно "
+"ежедневно. Как и в Личных боевых задачах, прогресс выполнения стандартных "
+"задач обновляется после каждого боя. Эти задачи предпочтительно выполнять в "
+"день их выдачи, иначе они перенесутся на следующий день, а следующая задача "
+"не будет выдана до выполнения текущей. В период Новогоднего наступления в "
+"задачу обязательно добавляются малые новогодние коробки и праздничные марки "
+"в дополнение к награде."
+
+msgid "dailyQuests/info/dailyMissionTitle"
+msgstr "Стандартныя задачы"
+
+msgid "dailyQuests/info/giftSystemDisabledDailyMissions"
+msgstr ""
+"Стандартные задачи состоят из случайных условий, а выполнять их можно "
+"ежедневно. Как и в Личных боевых задачах, прогресс выполнения стандартных "
+"задач обновляется после каждого боя. Эти задачи предпочтительно выполнять в "
+"день их выдачи, иначе они перенесутся на следующий день, а следующая задача "
+"не будет выдана до выполнения текущей. На период Новогоднего наступления в "
+"каждую задачу обязательно добавляются малые коробки в дополнение к награде."
 
 msgid "dailyQuests/locked/title"
 msgstr "Выканана задач:"
@@ -1776,6 +1822,25 @@ msgstr "прэміум"
 
 msgid "dailyReroll/tooltip/usual"
 msgstr "стандартных"
+
+msgid "dailyWidget/nyCard/title"
+msgstr "Новогодние задачи"
+
+msgid "dailyWidget/nyCard/tooltip/body/default"
+msgstr ""
+"Заходите в этот уютный уголок, чтобы ознакомиться с ежедневными и "
+"еженедельными задачами, выполнение которых будет щедро вознаграждено."
+
+msgid "dailyWidget/nyCard/tooltip/body/disabled"
+msgstr ""
+"Новогодние задачи временно недоступны. Скоро всё встанет на свои места, не "
+"переключайтесь!"
+
+msgid "dailyWidget/nyCard/tooltip/body/done"
+msgstr "В настоящий момент все задачи выполнены. Ждём вас позже!"
+
+msgid "dailyWidget/nyCard/tooltip/header"
+msgstr "Новогодние задачи"
 
 msgid "dailyWidget/progress"
 msgstr "%(currentProgress)s/%(maxProgress)s"
@@ -3512,9 +3577,6 @@ msgstr "Праведзеных баёў у рэжыме «Палігон»"
 msgid "details/dossier/6/battlesCount"
 msgstr "Пройдзеных Баявых навучанняў"
 
-msgid "details/dossier/61/battlesCount"
-msgstr "Проведённых боёв в режиме «Разлом»"
-
 msgid "details/dossier/7/battlesCount"
 msgstr "Адваяваных Камандных баёў"
 
@@ -4885,6 +4947,18 @@ msgstr "Пра штодзённыя задачы"
 msgid "infoPage/infoButtonTooltip/header/winback"
 msgstr "Пра задачы"
 
+msgid "infoPage/lootboxConditions/button"
+msgstr "Так!"
+
+msgid "infoPage/lootboxConditions/default"
+msgstr ""
+"В течение всего праздничного события к наградам за выполнение ежедневных "
+"задач будут дополнительно выданы контейнеры с ёлочными украшениями как за "
+"стандартные задачи, так и за бонусную."
+
+msgid "infoPage/lootboxConditionsTitle"
+msgstr "Контейнеры «Ёлочные украшения» в ежедневных задачах"
+
 msgid "infoPage/missionSwitch/winback"
 msgstr ""
 "Раз на 4 гадзіны любую са стандартных задач можна замяніць на іншую "
@@ -4995,6 +5069,12 @@ msgstr "Стратэгічная задача"
 
 msgid "item/type/specialMission"
 msgstr "Умацаваны раён: асобыя ўказанні"
+
+msgid "lootBox/boxCount"
+msgstr "x%(count)s"
+
+msgid "lootBox/boxesLabel"
+msgstr "Контейнер %(boxName)s %(boxCount)s"
 
 msgid "metrics/state/done"
 msgstr "Завершана"

@@ -9,6 +9,10 @@ class LobbyVehicleMarkerViewMeta(View):
         if self._isDAAPIInited():
             return self.flashObject.as_createMarker(id, vType, vName)
 
+    def as_createNewYearObjectMarkerS(self, id, mType, label):
+        if self._isDAAPIInited():
+            return self.flashObject.as_createNewYearObjectMarker(id, mType, label)
+
     def as_createPlatoonMarkerS(self, id, vType, pName):
         if self._isDAAPIInited():
             return self.flashObject.as_createPlatoonMarker(id, vType, pName)

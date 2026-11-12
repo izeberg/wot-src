@@ -18,7 +18,7 @@ from gui.impl import backport
 from gui.impl.gen import R
 from gui.impl.lobby.customization.settings_constants import CustomizationFilter
 from gui.shared.formatters import icons, text_styles
-from gui.shared.gui_items import GUI_ITEM_TYPE
+from gui.shared.gui_items import GUI_ITEM_TYPE, GUI_ITEM_TYPE_NAMES
 from gui.shared.gui_items.Vehicle import VEHICLE_TAGS, VEHICLE_TYPES_ORDER
 from gui.shared.gui_items.customization.c11n_items import Style
 from gui.shared.gui_items.gui_item_economics import ItemPrice
@@ -113,6 +113,13 @@ class CustomizationTabs(object):
        INSCRIPTIONS: CustomizationFilter.INSCRIPTIONS_GROUP, 
        STYLED_2D: CustomizationFilter.STYLES_2D_GROUP, 
        STYLES_3D: CustomizationFilter.STYLES_3D_GROUP}
+
+
+def getTabItemTypeName(tabId):
+    itemTypeName = GUI_ITEM_TYPE_NAMES[CustomizationTabs.SLOT_TYPES[tabId]]
+    if tabId in CustomizationTabs.STYLES_ALL:
+        itemTypeName = ('{}_{}').format(itemTypeName, CustomizationTabs.STYLE_PREFIX[tabId])
+    return itemTypeName
 
 
 def getTabGroupId(tabId):

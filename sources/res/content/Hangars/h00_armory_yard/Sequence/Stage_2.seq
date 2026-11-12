@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>3.000000</duration>
+	<duration>3.666667</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -12,27 +12,27 @@
 			<property>spawnProgeression</property>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>0.082290</value>
-				<inTangent>0.000135</inTangent>
-				<outTangent>0.000135</outTangent>
-				<tangentMode>0</tangentMode>
+				<value>0.207374</value>
+				<inTangent>0.083389</inTangent>
+				<outTangent>0.231275</outTangent>
+				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>0.133333</startTime>
-				<value>0.082308</value>
-				<inTangent>0.050868</inTangent>
-				<outTangent>0.050868</outTangent>
-				<tangentMode>256</tangentMode>
+				<startTime>0.100000</startTime>
+				<value>0.230501</value>
+				<inTangent>0.231275</inTangent>
+				<outTangent>0.032344</outTangent>
+				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>2.600000</startTime>
+				<startTime>3.266667</startTime>
 				<value>0.332923</value>
-				<inTangent>0.101601</inTangent>
+				<inTangent>0.032344</inTangent>
 				<outTangent>0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>3.000000</startTime>
+				<startTime>3.666667</startTime>
 				<value>0.332923</value>
 				<inTangent>-0.000000</inTangent>
 				<outTangent>-0.000000</outTangent>
@@ -68,7 +68,7 @@
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>2.839458</duration>
+				<duration>2.875000</duration>
 				<sequenceSound>ay_seq_stage_02</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>

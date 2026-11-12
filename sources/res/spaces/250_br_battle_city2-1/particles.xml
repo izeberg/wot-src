@@ -219,6 +219,14 @@
 				particles/content_forward/pfx_textures/eff_tex_h07_new_year_2015.dds
 				<type>primary</type>
 			</path>
+			<path>
+				particles/content_forward/pfx_textures/glow_bloom.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/ny27_clapperboard.dds
+				<type>primary</type>
+			</path>
 		</preloadTextures>
 		<fn_effect_bin>particles/content_forward/pfx/environment/250_br_battle_fire_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld4502_fountainsmall.vfx</fn_effect_bin>
@@ -633,6 +641,10 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_deferred/pfx_textures/flare_1.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_deferred/pfx_textures/250_br_battle_snow_dust_2_2.dds
 				<type>primary</type>
 			</path>
@@ -695,6 +707,14 @@
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex_water.dds
 				<type>water</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/glow_bloom.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/ny27_clapperboard.dds
+				<type>primary</type>
 			</path>
 		</preloadTextures>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/250_br_battle_fire_small.vfx</fn_effect_bin>

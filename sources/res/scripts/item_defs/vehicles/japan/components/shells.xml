@@ -3298,6 +3298,20 @@
 			</damage>
 		</armorSpalls>
 	</_88mm_Sprgr43_J51>
+	<_90mm_APCBC_M82_J50>
+		<id>31026</id>
+		<userString>#japan_vehicles:_90mm_APCBC_M82_J50</userString>
+		<icon>ap</icon>
+		<price>510</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>90</caliber>
+		<isTracer>true</isTracer>
+		<effects>mainArmorPiercing</effects>
+		<damage>
+			<armor>240</armor>
+			<devices>122</devices>
+		</damage>
+	</_90mm_APCBC_M82_J50>
 	<_90mm_AP_M318A1>
 		<id>40</id>
 		<userString>#japan_vehicles:_90mm_AP_M318A1</userString>
@@ -3326,6 +3340,25 @@
 			<devices>122</devices>
 		</damage>
 	</_90mm_AP_M82_late>
+	<_90mm_HEAT_M431_J50>
+		<id>31027</id>
+		<userString>#japan_vehicles:_90mm_HEAT_M431_J50</userString>
+		<icon>hc_premium</icon>
+		<price>4000</price>
+		<improved>true</improved>
+		<kind>HOLLOW_CHARGE</kind>
+		<caliber>90</caliber>
+		<isTracer>true</isTracer>
+		<effects>mainHollowCharge</effects>
+		<damage>
+			<armor>240</armor>
+			<devices>122</devices>
+		</damage>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
+	</_90mm_HEAT_M431_J50>
 	<_90mm_HEAT_Type70>
 		<id>41</id>
 		<userString>#japan_vehicles:_90mm_HEAT_Type70</userString>
@@ -3375,6 +3408,36 @@
 			</damage>
 		</armorSpalls>
 	</_90mm_HE_M71>
+	<_90mm_HE_M71A1_J50>
+		<id>31028</id>
+		<userString>#japan_vehicles:_90mm_HE_M71A1_J50</userString>
+		<icon>he_modern</icon>
+		<price>270</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>90</caliber>
+		<explosionRadius>
+			1.46
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>mainHighExplosive</effects>
+		<damage>
+			<armor>320</armor>
+			<devices>122</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				1.46
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>160</armor>
+				<devices>60</devices>
+			</damage>
+		</armorSpalls>
+	</_90mm_HE_M71A1_J50>
 	<_90mm_HVAP_M304>
 		<id>38</id>
 		<userString>#japan_vehicles:_90mm_HVAP_M304</userString>

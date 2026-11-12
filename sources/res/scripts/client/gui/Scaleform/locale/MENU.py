@@ -258,6 +258,9 @@ class MENU(object):
     TANKCAROUSEL_VEHICLESTATES_INPREMIUMIGRONLY = '#menu:tankCarousel/vehicleStates/inPremiumIgrOnly'
     TANKCAROUSEL_VEHICLESTATES_BUYTANK = '#menu:tankCarousel/vehicleStates/buyTank'
     TANKCAROUSEL_VEHICLESTATES_BUYTANKEMPTYCOUNT = '#menu:tankCarousel/vehicleStates/buyTankEmptyCount'
+    TANKCAROUSEL_VEHICLESTATES_NYTANK = '#menu:tankCarousel/vehicleStates/nyTank'
+    TANKCAROUSEL_VEHICLESTATES_NYTANKEMPTYCOUNT = '#menu:tankCarousel/vehicleStates/nyTankEmptyCount'
+    TANKCAROUSEL_VEHICLESTATES_NYTANKSLOTSFULL = '#menu:tankCarousel/vehicleStates/nyTankSlotsFull'
     TANKCAROUSEL_VEHICLESTATES_BUYSLOT = '#menu:tankCarousel/vehicleStates/buySlot'
     TANKCAROUSEL_VEHICLESTATES_RESTORETANK = '#menu:tankCarousel/vehicleStates/restoreTank'
     TANKCAROUSEL_VEHICLESTATES_RESTORETANKCOUNT = '#menu:tankCarousel/vehicleStates/restoreTankCount'
@@ -1854,7 +1857,6 @@ class MENU(object):
     BONUSTYPE_43 = '#menu:bonusType/43'
     BONUSTYPE_44 = '#menu:bonusType/44'
     BONUSTYPE_50 = '#menu:bonusType/50'
-    BONUSTYPE_61 = '#menu:bonusType/61'
     FORTIFICATIONCTX_ASSIGNEDPLAYERS = '#menu:fortificationCtx/assignedPlayers'
     FORTIFICATIONCTX_PREPAREORDER = '#menu:fortificationCtx/prepareOrder'
     FORTIFICATIONCTX_CLANDESCRIPTION_OPENCLANCARD = '#menu:fortificationCtx/clanDescription/openClanCard'
@@ -2342,6 +2344,13 @@ class MENU(object):
     ROLEEXP_ROLEDESCR_ROLE_SPG_FLAME = '#menu:roleExp/roleDescr/role_SPG_flame'
     ROLEEXP_ROLEDESCR_ROLE_SPG_ASSAULT = '#menu:roleExp/roleDescr/role_SPG_assault'
     ROLEEXP_ROLELABEL = '#menu:roleExp/roleLabel'
+    ROLEEXP_DIFFICULTYLABEL = '#menu:roleExp/difficultyLabel'
+    ROLEEXP_DIFFICULTYNAME_EASY = '#menu:roleExp/difficultyName/easy'
+    ROLEEXP_DIFFICULTYNAME_MEDIUM = '#menu:roleExp/difficultyName/medium'
+    ROLEEXP_DIFFICULTYNAME_HIGH = '#menu:roleExp/difficultyName/high'
+    ROLEEXP_DIFFICULTYNAME_SHORT_EASY = '#menu:roleExp/difficultyName/short/easy'
+    ROLEEXP_DIFFICULTYNAME_SHORT_MEDIUM = '#menu:roleExp/difficultyName/short/medium'
+    ROLEEXP_DIFFICULTYNAME_SHORT_HIGH = '#menu:roleExp/difficultyName/short/high'
     ROLEEXP_ACTION_BLOCKANDTAKEDAMAGE = '#menu:roleExp/action/blockAndTakeDamage'
     ROLEEXP_ACTION_DONEARDAMAGE = '#menu:roleExp/action/doNearDamage'
     ROLEEXP_ACTION_DOOWNDAMAGE = '#menu:roleExp/action/doOwnDamage'
@@ -2387,7 +2396,6 @@ class MENU(object):
     LOADING_BATTLETYPES_300 = '#menu:loading/battleTypes/300'
     LOADING_BATTLETYPES_DESC_300 = '#menu:loading/battleTypes/desc/300'
     HEADERBUTTON_MUSEUM = '#menu:headerButton/museum'
-    CONTEXTMENU_CREATEPORTALSQUAD = '#menu:contextMenu/createPortalSquad'
     CONTEXTMENU_ENUM = (
      CONTEXTMENU_EXCHANGE,
      CONTEXTMENU_VEHICLEINFO,
@@ -2499,8 +2507,7 @@ class MENU(object):
      CONTEXTMENU_CREWWIDGETSENDTOTOBARRACKS,
      CONTEXTMENU_CREWWIDGETDISMISS,
      CONTEXTMENU_CREWWIDGETQUICKTRAINING,
-     CONTEXTMENU_CREWWIDGETCHANGESPECIALIZATION,
-     CONTEXTMENU_CREATEPORTALSQUAD)
+     CONTEXTMENU_CREWWIDGETCHANGESPECIALIZATION)
     NATIONS_ENUM = (
      NATIONS_TITLE,
      NATIONS_USSR,
@@ -2557,6 +2564,9 @@ class MENU(object):
      TANKCAROUSEL_VEHICLESTATES_INPREMIUMIGRONLY,
      TANKCAROUSEL_VEHICLESTATES_BUYTANK,
      TANKCAROUSEL_VEHICLESTATES_BUYTANKEMPTYCOUNT,
+     TANKCAROUSEL_VEHICLESTATES_NYTANK,
+     TANKCAROUSEL_VEHICLESTATES_NYTANKEMPTYCOUNT,
+     TANKCAROUSEL_VEHICLESTATES_NYTANKSLOTSFULL,
      TANKCAROUSEL_VEHICLESTATES_BUYSLOT,
      TANKCAROUSEL_VEHICLESTATES_RESTORETANK,
      TANKCAROUSEL_VEHICLESTATES_RESTORETANKCOUNT,

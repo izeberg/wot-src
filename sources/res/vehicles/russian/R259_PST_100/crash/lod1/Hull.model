@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R259_PST_100/crash/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.601539 0.064959 -3.110444</min>
+		<max>1.590444 1.521948 3.127856</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R259_PST_100/crash/lod1/Hull</nodefullVisual>
+</root>

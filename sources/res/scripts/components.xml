@@ -10,7 +10,6 @@
 		<AccountRankedComponent/>
 		<ArenaRankedComponent/>
 		<AccountNewbieChatLockComponent/>
-		<DynamicVehicleChangeComponent/>
 	</StaticComponents>
 	<DynamicComponents>
 		<OwnVehicle/>
@@ -72,7 +71,5 @@
 		<DualAccuracy/>
 		<DualGunDualAccuracy/>
 		<RankedVoiceComponent/>
-		<MasterVehicleEventsListener/>
-		<VehicleTeamOverride/>
 	</DynamicComponents>
 </root>

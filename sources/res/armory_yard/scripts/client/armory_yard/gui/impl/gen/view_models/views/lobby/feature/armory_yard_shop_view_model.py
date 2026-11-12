@@ -12,7 +12,7 @@ class BackButtonState(IntEnum):
 class ArmoryYardShopViewModel(ViewModel):
     __slots__ = ('onBack', 'onClose', 'onCloseIntro', 'onShowIntro', 'onBuyProduct')
 
-    def __init__(self, properties=5, commands=5):
+    def __init__(self, properties=6, commands=5):
         super(ArmoryYardShopViewModel, self).__init__(properties=properties, commands=commands)
 
     @property
@@ -35,17 +35,23 @@ class ArmoryYardShopViewModel(ViewModel):
     def setCurrency(self, value):
         self._setNumber(2, value)
 
+    def getSpecialOffersLimit(self):
+        return self._getNumber(3)
+
+    def setSpecialOffersLimit(self, value):
+        self._setNumber(3, value)
+
     def getBackButtonState(self):
-        return BackButtonState(self._getNumber(3))
+        return BackButtonState(self._getNumber(4))
 
     def setBackButtonState(self, value):
-        self._setNumber(3, value.value)
+        self._setNumber(4, value.value)
 
     def getItems(self):
-        return self._getArray(4)
+        return self._getArray(5)
 
     def setItems(self, value):
-        self._setArray(4, value)
+        self._setArray(5, value)
 
     @staticmethod
     def getItemsType():
@@ -56,6 +62,7 @@ class ArmoryYardShopViewModel(ViewModel):
         self._addViewModelProperty('tokenPrice', PriceModel())
         self._addBoolProperty('isIntroVisible', False)
         self._addNumberProperty('currency', 0)
+        self._addNumberProperty('specialOffersLimit', 1)
         self._addNumberProperty('backButtonState')
         self._addArrayProperty('items', Array())
         self.onBack = self._addCommand('onBack')

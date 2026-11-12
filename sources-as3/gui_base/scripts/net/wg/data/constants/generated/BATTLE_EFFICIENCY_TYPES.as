@@ -108,12 +108,6 @@ package net.wg.data.constants.generated
       public static const DEALT_DMG_BY_THUNDER_STRIKE:String = "dealtDamageByThunderStrike";
       
       public static const RECEIVED_BY_THUNDER_STRIKE:String = "receivedByThunderStrike";
-      
-      public static const DEALT_DMG_BY_PERIODIC:String = "dealtDamageByPeriodic";
-      
-      public static const RECEIVED_BY_PERIODIC:String = "receivedByPeriodic";
-      
-      public static const HEALTH_ADDED:String = "healthAdded";
        
       
       public function BATTLE_EFFICIENCY_TYPES()

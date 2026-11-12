@@ -101,7 +101,10 @@ package net.wg.gui.lobby.messengerBar.carousel
       {
          this.index = param1.index;
          this.selected = param1.selected;
-         this.openButton.label = param1.label || "";
+         if(this.openButton)
+         {
+            this.openButton.label = param1.label || "";
+         }
       }
       
       protected function applyData() : void

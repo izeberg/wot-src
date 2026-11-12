@@ -13,22 +13,29 @@
 			<frame>
 				<startTime>0.000000</startTime>
 				<value>0.453000</value>
-				<inTangent>0.058286</inTangent>
-				<outTangent>0.058286</outTangent>
-				<tangentMode>0</tangentMode>
+				<inTangent>0.524572</inTangent>
+				<outTangent>0.721449</outTangent>
+				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>2.333333</startTime>
-				<value>0.589000</value>
-				<inTangent>0.058286</inTangent>
-				<outTangent>0.000000</outTangent>
+				<startTime>0.066667</startTime>
+				<value>0.501097</value>
+				<inTangent>0.721449</inTangent>
+				<outTangent>0.020865</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.100000</startTime>
+				<value>0.543523</value>
+				<inTangent>0.020865</inTangent>
+				<outTangent>0.062014</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
 				<startTime>2.833333</startTime>
 				<value>0.589000</value>
-				<inTangent>-0.000000</inTangent>
-				<outTangent>-0.000000</outTangent>
+				<inTangent>0.062014</inTangent>
+				<outTangent>0.062014</outTangent>
 				<tangentMode>1</tangentMode>
 			</frame>
 		</track>
@@ -41,7 +48,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>2.733334</duration>
+				<duration>2.233333</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -61,7 +68,7 @@
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>2.501013</duration>
+				<duration>2.203125</duration>
 				<sequenceSound>ay_seq_stage_04</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>

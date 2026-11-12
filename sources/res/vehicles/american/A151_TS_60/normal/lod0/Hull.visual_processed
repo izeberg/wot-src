@@ -103,8 +103,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>hullShape.vertices</vertices>
+			<primitive>hullShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -186,6 +186,6 @@
 		<min>-1.694503 -0.516980 -3.824262</min>
 		<max>1.696256 1.069268 3.760156</max>
 	</boundingBox>
-	<geometrySize>960748</geometrySize>
+	<geometrySize>960888</geometrySize>
 	<minUVDensity>0.005454</minUVDensity>
 </root>

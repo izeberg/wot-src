@@ -1975,6 +1975,26 @@
 		</projection_decal>
 	</itemGroup>
 	<itemGroup>
+		<name>CalendarReport_Decal_FieryGoat_147</name>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT projection_decals 100g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<userString>#vehicle_customization:projection_decals/special</userString>
+		<projection_decal>
+			<id>31535</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/CalendarReport_Decal_FieryGoat_147.dds</texture>
+			<userString>#vehicle_customization:CalendarReport_Decal_FieryGoat_147/name</userString>
+			<description>#vehicle_customization:CalendarReport_Decal_FieryGoat_147/description</description>
+			<mirror>true</mirror>
+			<tags>disableVerticalMirror formfactor_square direction_left_to_right</tags>
+		</projection_decal>
+	</itemGroup>
+	<itemGroup>
 		<name>Calendar_Decal_137</name>
 		<season>ALL</season>
 		<historical>1</historical>
@@ -2448,6 +2468,32 @@
 		</projection_decal>
 	</itemGroup>
 	<itemGroup>
+		<name>GSOR_01_Decal_147</name>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT projection_decals 100g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>uk:GB109_GSOR_1008</vehicles>
+			</include>
+		</vehicleFilter>
+		<userString>#vehicle_customization:projection_decals/cool</userString>
+		<projection_decal>
+			<id>31529</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/cool/GSOR_01_Decal_01_147.dds</texture>
+			<userString>#vehicle_customization:GSOR_01_Decal_01_147/name</userString>
+			<description>#vehicle_customization:GSOR_01_Decal_01_147/description</description>
+			<tags>fullRGB styleOnly disableVerticalMirror hiddenInUI formfactor_rect1x2 direction_left_to_right</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>31530</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/cool/GSOR_01_Decal_02_147.dds</texture>
+			<userString>#vehicle_customization:GSOR_01_Decal_02_147/name</userString>
+			<description>#vehicle_customization:GSOR_01_Decal_02_147/description</description>
+			<tags>disableVerticalMirror fullRGB direction_right_to_left styleOnly hiddenInUI formfactor_rect1x2</tags>
+		</projection_decal>
+	</itemGroup>
+	<itemGroup>
 		<name>Kin_dza_dza</name>
 		<season>ALL</season>
 		<historical>1</historical>
@@ -2666,6 +2712,155 @@
 			<tags>direction_right_to_left formfactor_square</tags>
 			<userString>#vehicle_customization:MayPvE_Decal_02_2025/name</userString>
 			<description>#vehicle_customization:MayPvE_Decal_02_2025/description</description>
+		</projection_decal>
+	</itemGroup>
+	<itemGroup>
+		<name>NY27_Decal_147</name>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>direction_right_to_left formfactor_square disableVerticalMirror</tags>
+		<priceGroup>MT projection_decals 100g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<userString>#vehicle_customization:projection_decals/special</userString>
+		<projection_decal>
+			<id>31536</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_Decal_01_147.dds</texture>
+			<userString>#vehicle_customization:NY27_Decal_01_147/name</userString>
+			<description>#vehicle_customization:NY27_Decal_01_147/description</description>
+		</projection_decal>
+		<projection_decal>
+			<id>31537</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_Decal_02_147.dds</texture>
+			<userString>#vehicle_customization:NY27_Decal_02_147/name</userString>
+			<description>#vehicle_customization:NY27_Decal_02_147/description</description>
+		</projection_decal>
+		<projection_decal>
+			<id>31538</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_Decal_03_147.dds</texture>
+			<userString>#vehicle_customization:NY27_Decal_03_147/name</userString>
+			<description>#vehicle_customization:NY27_Decal_03_147/description</description>
+		</projection_decal>
+		<projection_decal>
+			<id>31539</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_Decal_04_147.dds</texture>
+			<userString>#vehicle_customization:NY27_Decal_04_147/name</userString>
+			<description>#vehicle_customization:NY27_Decal_04_147/description</description>
+		</projection_decal>
+		<projection_decal>
+			<id>31540</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_Decal_05_147.dds</texture>
+			<userString>#vehicle_customization:NY27_Decal_05_147/name</userString>
+			<description>#vehicle_customization:NY27_Decal_05_147/description</description>
+		</projection_decal>
+		<projection_decal>
+			<id>31541</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_Decal_06_147.dds</texture>
+			<userString>#vehicle_customization:NY27_Decal_06_147/name</userString>
+			<description>#vehicle_customization:NY27_Decal_06_147/description</description>
+		</projection_decal>
+		<projection_decal>
+			<id>31542</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_Decal_07_147.dds</texture>
+			<userString>#vehicle_customization:NY27_Decal_07_147/name</userString>
+			<description>#vehicle_customization:NY27_Decal_07_147/description</description>
+			<tags>direction_right_to_left formfactor_square disableVerticalMirror</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>31543</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_Decal_08_147.dds</texture>
+			<userString>#vehicle_customization:NY27_Decal_08_147/name</userString>
+			<description>#vehicle_customization:NY27_Decal_08_147/description</description>
+		</projection_decal>
+	</itemGroup>
+	<itemGroup>
+		<name>NY27_HighGothic_Decal_147</name>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>styleOnly hiddenInUI formfactor_rect1x2 disableVerticalMirror</tags>
+		<priceGroup>MT projection_decals 100g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<userString>#vehicle_customization:projection_decals/special</userString>
+		<projection_decal>
+			<id>31531</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_01_Decal_147.dds</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_01_Decal_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_01_Decal_147/description</description>
+			<tags>styleOnly hiddenInUI formfactor_rect1x2 disableVerticalMirror</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>31532</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_02_Decal_147.dds</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_02_Decal_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_02_Decal_147/description</description>
+		</projection_decal>
+		<projection_decal>
+			<id>31533</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_03_Decal_147.dds</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_03_Decal_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_03_Decal_147/description</description>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_03_Decal_147_GMM.dds</glossTexture>
+		</projection_decal>
+		<projection_decal>
+			<id>31534</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_04_Decal_147.dds</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_04_Decal_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_04_Decal_147/description</description>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_04_Decal_147_GMM.dds</glossTexture>
+			<tags>styleOnly hiddenInUI formfactor_rect1x2 disableVerticalMirror</tags>
+			<emissionMap>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_04_Decal_147_Emission.dds</emissionMap>
+			<emissionPatternMap>gui/maps/vehicles/decals/projection_decals/special/NY27_HighGothic_04_Decal_147_Pattern.dds</emissionPatternMap>
+			<forwardEmissionBrightness>3</forwardEmissionBrightness>
+			<deferredEmissionBrightness>3</deferredEmissionBrightness>
+			<emissionAnimationSpeed>
+				0.3
+				<!--BW_String-->
+			</emissionAnimationSpeed>
+		</projection_decal>
+	</itemGroup>
+	<itemGroup>
+		<name>NY27_PAB02_Decal_147</name>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT projection_decals 100g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<userString>#vehicle_customization:projection_decals/special</userString>
+		<projection_decal>
+			<id>31544</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_PAB02_Decal_Cover_147.dds</texture>
+			<tags>direction_right_to_left hiddenInUI formfactor_rect1x2 disableVerticalMirror styleOnly</tags>
+			<userString>#vehicle_customization:NY27_PAB02_Decal_Cover_147/name</userString>
+			<description>#vehicle_customization:NY27_PAB02_Decal_Cover_147/description</description>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/NY27_PAB02_Decal_Cover_147_GMM.dds</glossTexture>
+		</projection_decal>
+		<projection_decal>
+			<id>31545</id>
+			<userString>#vehicle_customization:NY27_PAB02_Decal_Left_147/name</userString>
+			<description>#vehicle_customization:NY27_PAB02_Decal_Left_147/description</description>
+			<scaleFactorId>2</scaleFactorId>
+			<tags>direction_right_to_left hiddenInUI formfactor_rect1x2 disableVerticalMirror styleOnly</tags>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_PAB02_Decal_Left_147.dds</texture>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/NY27_PAB02_Decal_Left_147_GMM.dds</glossTexture>
+		</projection_decal>
+		<projection_decal>
+			<id>31546</id>
+			<userString>#vehicle_customization:NY27_PAB02_Decal_Right_147/name</userString>
+			<description>#vehicle_customization:NY27_PAB02_Decal_Right_147/description</description>
+			<scaleFactorId>2</scaleFactorId>
+			<tags>direction_right_to_left hiddenInUI formfactor_rect1x2 disableVerticalMirror styleOnly</tags>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/NY27_PAB02_Decal_Right_147.dds</texture>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/NY27_PAB02_Decal_Right_147_GMM.dds</glossTexture>
 		</projection_decal>
 	</itemGroup>
 	<itemGroup>
@@ -3040,6 +3235,26 @@
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt ussr:R61_Object252_BF</vehicles>
 			</exclude>
 		</vehicleFilter>
+	</itemGroup>
+	<itemGroup>
+		<name>Onslaught26_Decal_147</name>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT projection_decals 100g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<userString>#vehicle_customization:projection_decals/special</userString>
+		<projection_decal>
+			<id>31525</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/Onslaught26_Decal_147.dds</texture>
+			<userString>#vehicle_customization:Onslaught26_Decal_147/name</userString>
+			<description>#vehicle_customization:Onslaught26_Decal_147/description</description>
+			<scaleFactorId>2</scaleFactorId>
+			<tags>formfactor_square styleOnly direction_left_to_right hiddenInUI</tags>
+		</projection_decal>
 	</itemGroup>
 	<itemGroup>
 		<name>PORTAL26_01_Decal_146</name>
@@ -3722,6 +3937,33 @@
 				</exclude>
 			</vehicleFilter>
 		</projection_decal>
+	</itemGroup>
+	<itemGroup>
+		<name>RushBlackEdition_01_Decal_147</name>
+		<season>ALL</season>
+		<historical>1</historical>
+		<userString>#vehicle_customization:projection_decals/special</userString>
+		<projection_decal>
+			<id>31526</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/RushBlackEdition_01_Decal_147.dds</texture>
+			<userString>#vehicle_customization:RushBlackEdition_01_Decal_147/name</userString>
+			<description>#vehicle_customization:RushBlackEdition_01_Decal_147/description</description>
+			<tags>direction_right_to_left disableVerticalMirror formfactor_square hiddenInUI styleOnly</tags>
+			<forwardEmissionBrightness>5</forwardEmissionBrightness>
+			<deferredEmissionBrightness>5</deferredEmissionBrightness>
+			<emissionAnimationSpeed>
+				0.5
+				<!--BW_String-->
+			</emissionAnimationSpeed>
+			<emissionMap>gui/maps/vehicles/decals/projection_decals/special/RushBlackEdition_01_Decal_147_Emission.dds</emissionMap>
+			<emissionPatternMap>gui/maps/vehicles/decals/projection_decals/special/RushBlackEdition_01_Decal_147_Pattern.dds</emissionPatternMap>
+		</projection_decal>
+		<priceGroup>MT projection_decals 100g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<name>RushFireBear_Decal_2024_MT</name>
@@ -8490,7 +8732,7 @@
 			<tags>formfactor_square vehicleBound onlyVerticalMirror</tags>
 			<vehicleFilter>
 				<exclude>
-					<vehicles>china:Ch22_113_Beijing_Opera china:Ch22_113P china:Ch25_121_mod_1971B china:Ch41_WZ_111_QL france:F64_AMX_50Fosh_155 germany:G89_Leopard1_bob germany:G92_VK7201 germany:G98_Waffentrager_E100 germany:G98_Waffentrager_E100_P germany:G98_Waffentrager_E100_WO italy:It08_Progetto_M40_mod_65_bob italy:It20_Carro_Combattimento_45t sweden:S16_Kranvagn_bob uk:GB13_FV215b uk:GB48_FV215b_183 uk:GB70_FV4202_105 uk:GB84_Chieftain_Mk6 uk:GB88_T95_Chieftain_turret uk:GB98_T95_FV4201_Chieftain usa:A69_T110E5_cl usa:A92_M60 usa:A95_T95_E6 usa:A106_M48A2_120 ussr:R93_Object263B ussr:R95_Object_907 ussr:R95_Object_907A ussr:R96_Object_430B ussr:R110_Object_260 ussr:R119_Object_777C ussr:R120_T22SR_A22 ussr:R126_Object_730_5 ussr:R129_Object_257 ussr:R157_Object_279R ussr:R178_Object_780</vehicles>
+					<vehicles>china:Ch22_113_Beijing_Opera china:Ch25_121_mod_1971B china:Ch41_WZ_111_QL france:F64_AMX_50Fosh_155 germany:G89_Leopard1_bob germany:G92_VK7201 germany:G98_Waffentrager_E100 germany:G98_Waffentrager_E100_P italy:It08_Progetto_M40_mod_65_bob italy:It20_Carro_Combattimento_45t sweden:S16_Kranvagn_bob uk:GB13_FV215b uk:GB48_FV215b_183 uk:GB70_FV4202_105 uk:GB84_Chieftain_Mk6 uk:GB88_T95_Chieftain_turret uk:GB98_T95_FV4201_Chieftain usa:A69_T110E5_cl usa:A92_M60 usa:A95_T95_E6 usa:A106_M48A2_120 ussr:R93_Object263B ussr:R95_Object_907 ussr:R95_Object_907A ussr:R96_Object_430B ussr:R110_Object_260 ussr:R119_Object_777C ussr:R120_T22SR_A22 ussr:R126_Object_730_5 ussr:R129_Object_257 ussr:R157_Object_279R ussr:R178_Object_780</vehicles>
 				</exclude>
 				<include>
 					<levels>10</levels>

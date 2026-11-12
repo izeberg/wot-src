@@ -2099,12 +2099,6 @@ package
       
       public static const PREBATTLEMARKER_PREBATTLEMARKER_52:String = "#ingame_gui:prebattlemarker/prebattlemarker_52";
       
-      public static const PREBATTLEMARKER_PREBATTLEMARKER_53:String = "#ingame_gui:prebattlemarker/prebattlemarker_53";
-      
-      public static const PREBATTLEMARKER_PREBATTLEMARKER_54:String = "#ingame_gui:prebattlemarker/prebattlemarker_54";
-      
-      public static const PREBATTLEMARKER_PREBATTLEMARKER_55:String = "#ingame_gui:prebattlemarker/prebattlemarker_55";
-      
       public static const OPTDEVICERESURRECTION_ENGINE:String = "#ingame_gui:optDeviceResurrection/engine";
       
       public static const OPTDEVICERESURRECTION_FUELTANK:String = "#ingame_gui:optDeviceResurrection/fuelTank";

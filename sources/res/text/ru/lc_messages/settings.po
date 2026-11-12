@@ -1414,6 +1414,15 @@ msgstr "Постоянно"
 msgid "game/showVehModelsOnMap/never"
 msgstr "Никогда"
 
+msgid "game/showVehicleDifficultyInHangar/checkbox"
+msgstr "Ангар"
+
+msgid "game/showVehicleDifficultyInResearch/checkbox"
+msgstr "Окно исследования техники"
+
+msgid "game/showVehicleDifficultyInTechTree/checkbox"
+msgstr "Дерево исследований техники"
+
 msgid "game/showVehicleHPinMinimap"
 msgstr "Показывать прочность машин на мини-карте"
 
@@ -1470,6 +1479,9 @@ msgstr "Последняя"
 
 msgid "game/switchEquipment"
 msgstr "Переключение комплектов на экране загрузки"
+
+msgid "game/vehicleDifficulty/label"
+msgstr "Отображение сложности техники"
 
 msgid "gameTitle"
 msgstr "Игра"

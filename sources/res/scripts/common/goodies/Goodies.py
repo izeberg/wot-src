@@ -105,18 +105,18 @@ class Goodies(object):
             self._removeCallback = None
         return
 
-    def __updateCallback(self, goodie, notificationType=GOODIE_NOTIFICATION_TYPE.EMPTY):
+    def __updateCallback(self, goodie, notificationType=GOODIE_NOTIFICATION_TYPE.EMPTY, **kwargs):
         if self._updateCallback is not None:
             callbackRef = self._updateCallback()
             if callbackRef:
-                callbackRef(goodie, notificationType)
+                callbackRef(goodie, notificationType, **kwargs)
         return
 
-    def __removeCallback(self, goodieID):
+    def __removeCallback(self, goodieID, **kwargs):
         if self._removeCallback is not None:
             callbackRef = self._removeCallback()
             if callbackRef:
-                callbackRef(goodieID)
+                callbackRef(goodieID, **kwargs)
         return
 
     def __append(self, goodieDefinition, state=None, expiration=None, counter=None, notificationType=GOODIE_NOTIFICATION_TYPE.EMPTY):
@@ -128,22 +128,22 @@ class Goodies(object):
             self.__updateCallback(goodie, notificationType)
             return
 
-    def __erase(self, goodieID):
+    def __erase(self, goodieID, **kwargs):
         goodie = self.actualGoodies.get(goodieID, None)
         if goodie is None:
             return
         else:
             del self.actualGoodies[goodieID]
-            self.__removeCallback(goodieID)
+            self.__removeCallback(goodieID, **kwargs)
             return
 
-    def __updateCounter(self, goodieDefinition, counter, state=None, notificationType=GOODIE_NOTIFICATION_TYPE.REMOVED):
-        goodie = goodieDefinition.createGoodie(counter=counter, state=state)
+    def __updateCounter(self, goodieDefinition, counter, state=None, expiration=None, notificationType=GOODIE_NOTIFICATION_TYPE.REMOVED, **kwargs):
+        goodie = goodieDefinition.createGoodie(counter=counter, state=state, expiration=expiration)
         if goodie is None:
             return
         else:
             self.actualGoodies[goodieDefinition.uid] = goodie
-            self.__updateCallback(goodie, notificationType)
+            self.__updateCallback(goodie, notificationType, **kwargs)
             return
 
     def __update(self, goodieID):
@@ -330,7 +330,7 @@ class Goodies(object):
             self.__erase(goodieID)
             return
 
-    def remove(self, goodieID, goodie=None, goodieDefinition=None, count=1):
+    def remove(self, goodieID, goodie=None, goodieDefinition=None, count=1, **kwargs):
         if goodie is None:
             goodie = self.actualGoodies.get(goodieID, None)
             if goodie is None:
@@ -341,7 +341,12 @@ class Goodies(object):
                 return
         counter = goodie.counter - count
         if counter <= 0:
-            self.__erase(goodieID)
+            self.__erase(goodieID, **kwargs)
         else:
-            self.__updateCounter(goodieDefinition, counter)
+            state = None
+            expiration = None
+            if kwargs.get('isRaidConsumption', False) and goodie.state == GOODIE_STATE.ACTIVE:
+                state = GOODIE_STATE.ACTIVE
+                expiration = goodie.expiration
+            self.__updateCounter(goodieDefinition, counter, state=state, expiration=expiration, **kwargs)
         return

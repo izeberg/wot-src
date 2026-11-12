@@ -140,12 +140,9 @@
 			<slot>
 				<slotType>clan</slotType>
 				<slotId>10000</slotId>
-				<rayStart>0.001925 0.610557 2.917706</rayStart>
-				<rayEnd>
-					-0.000048 0.422319 2.85016
-					<!--BW_String-->
-				</rayEnd>
-				<rayUp>-0.027474 0.337873 -0.940791</rayUp>
+				<rayStart>0.005987 0.998083 3.056762</rayStart>
+				<rayEnd>-0.005851 -0.131347 2.651487</rayEnd>
+				<rayUp>-0.026992 0.337873 -0.940804</rayUp>
 				<size>
 					0.32044
 					<!--BW_String-->
@@ -2715,10 +2712,10 @@
 					<slotType>inscription</slotType>
 					<slotId>34000</slotId>
 					<rayStart>
-						1.397242 0.4287 0.073447
+						1.38566 0.4287 0.073447
 						<!--BW_String-->
 					</rayStart>
-					<rayEnd>1.229016 0.320831 0.081458</rayEnd>
+					<rayEnd>1.217434 0.320831 0.081458</rayEnd>
 					<rayUp>-0.540221 0.841392 -0.014857</rayUp>
 					<size>1</size>
 					<isUVProportional>false</isUVProportional>

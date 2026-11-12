@@ -2,11 +2,11 @@
 <root>
 	<materialNames/>
 	<visibilityBox>
-		<min>-0.432997 -0.398946 0.076107</min>
-		<max>0.459625 0.396498 4.549750</max>
+		<min>-0.456711 -0.398946 -0.300315</min>
+		<max>0.526432 0.469284 4.549751</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<parent>vehicles/russian/R116_ISU122C_Berlin/normal/lod1/Gun_01</parent>
-	<extent>32</extent>
+	<extent>32.000000</extent>
 	<nodefullVisual>vehicles/russian/R116_ISU122C_Berlin/normal/lod0/Gun_01</nodefullVisual>
 </root>

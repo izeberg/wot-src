@@ -6,6 +6,7 @@ class SOUNDS(CONST_CONTAINER):
     COMMON_SOUND_SPACE = 'armory_yard'
     COMMON_SOUND_INTRO_SPACE = 'armory_yard_intro'
     COMMON_SOUND_VIDEO_REWARD_SPACE = 'armory_yard_reward_video'
+    COMMON_SOUND_REWARD_SCREEN_SPACE = 'armory_yard_reward_screen'
     STATE_PLACE = 'STATE_hangar_place'
     STATE_PLACE_AY = 'STATE_hangar_place_customization'
     STATE_PLACE_VEHICLE_PREVIEW = 'STATE_ay_preview'
@@ -30,3 +31,4 @@ ARMORY_YARD_INTRO_SOUND_SPACE = CommonSoundSpaceSettings(name=SOUNDS.COMMON_SOUN
    StatesGroup.VIDEO_OVERLAY: States.VIDEO_OVERLAY_ON}, exitStates={StatesGroup.VIDEO_OVERLAY: States.VIDEO_OVERLAY_OFF}, persistentSounds=(), stoppableSounds=(), priorities=(), autoStart=True, enterEvent='', exitEvent='')
 ARMORY_YARD_REWARD_VIDEO_SOUND_SPACE = CommonSoundSpaceSettings(name=SOUNDS.COMMON_SOUND_VIDEO_REWARD_SPACE, entranceStates={StatesGroup.VIDEO_OVERLAY: States.VIDEO_OVERLAY_ON}, exitStates={StatesGroup.VIDEO_OVERLAY: States.VIDEO_OVERLAY_OFF}, persistentSounds=(), stoppableSounds=(), priorities=(), autoStart=True, enterEvent='', exitEvent='')
 ARMORY_YARD_VEHICLE_PREVIEW_SOUND_SPACE = CommonSoundSpaceSettings(name=SOUNDS.COMMON_SOUND_SPACE, entranceStates={SOUNDS.STATE_PLACE_VEHICLE_PREVIEW: SOUNDS.STATE_PLACE_VEHICLE_PREVIEW_ENTER}, exitStates={SOUNDS.STATE_PLACE_VEHICLE_PREVIEW: SOUNDS.STATE_PLACE_VEHICLE_PREVIEW_EXIT}, persistentSounds=(), stoppableSounds=(), priorities=(), autoStart=True, enterEvent='', exitEvent='')
+ARMORY_YAR_REWARD_SCREEN_SOUND_SPACE = CommonSoundSpaceSettings(name=SOUNDS.COMMON_SOUND_REWARD_SCREEN_SPACE, entranceStates={StatesGroup.OVERLAY_HANGAR_GENERAL: States.OVERLAY_HANGAR_GENERAL_ON}, exitStates={StatesGroup.OVERLAY_HANGAR_GENERAL: States.OVERLAY_HANGAR_GENERAL_OFF}, persistentSounds=(), stoppableSounds=(), priorities=(), autoStart=True, enterEvent='', exitEvent='')

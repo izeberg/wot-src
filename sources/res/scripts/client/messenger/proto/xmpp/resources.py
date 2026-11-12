@@ -1,11 +1,13 @@
 from constants import IGR_TYPE, NOVICE_RESTRICTIONS_BAN_TYPE
 from gui.shared.utils.decorators import ReprInjector
+from helpers import dependency
 from messenger.m_constants import PROTO_TYPE, USER_TAG
 from messenger.proto.xmpp.gloox_constants import PRESENCES_ORDER, PRESENCE, SUBSCRIPTION
 from messenger.proto.xmpp.wrappers import ExtsInfo
 from messenger.proto.xmpp.xmpp_constants import XMPP_ITEM_TYPE, XMPP_BAN_COMPONENT
 from messenger.storage import storage_getter
 from messenger import g_settings
+from skeletons.gui.game_control import IReferralProgramController
 
 @ReprInjector.simple('priority', 'message', 'presence', ('__exts', 'exts'), ('__mucInfo',
                                                                              'muc'))
@@ -54,8 +56,11 @@ class Resource(object):
                 return True
             if Resource.__isConfirmedFriend(user):
                 return False
-            from gui.Scaleform.daapi.view.lobby.referral_program.referral_program_helpers import getRecruiterDbId
-            if getRecruiterDbId() == dbID:
+            rfCtrl = dependency.instance(IReferralProgramController)
+            recruiterDbId = rfCtrl.getRecruiterDbId()
+            if recruiterDbId and recruiterDbId == dbID:
+                return False
+            if rfCtrl.isRecruit(dbID):
                 return False
             return True
 

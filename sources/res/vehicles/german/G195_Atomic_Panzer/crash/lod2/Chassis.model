@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G195_Atomic_Panzer/crash/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/german/G195_Atomic_Panzer/crash/lod2/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.730586 0.028358 -3.432515</min>
+		<max>1.730595 1.363607 5.767424</max>
+	</visibilityBox>
+</root>

@@ -16,6 +16,8 @@ BATTLE_RESULTS = [
  (
   'brDeathChunkKills', int, 0, None, 'skip', ENTRY_TYPE.SERVER),
  (
+  'brIsFreeRepair', bool, False, None, 'max', ENTRY_TYPE.SERVER),
+ (
   'modulesDescriptors', list, [], None, 'extend', ENTRY_TYPE.SERVER),
  (
   'achivedLevel', int, 1, None, 'skip', ENTRY_TYPE.VEHICLE_ALL),

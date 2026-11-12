@@ -103,50 +103,71 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>hullShape.vertices</vertices>
+			<primitive>hullShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_hull_01</identifier>
-					<property>
-						selfIllumination
-						<Float>0.000000</Float>
-					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/russian/R177_ISU_152K_BL10_02/ISU_152K_BL10_02_hull_01_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/russian/R177_ISU_152K_BL10_02/ISU_152K_BL10_02_hull_01_ANM.dds</Texture>
-					</property>
+					<materialKind>0</materialKind>
+					<identifier>tank_hull_01</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/russian/R177_ISU_152K_BL10_02/ISU_152K_BL10_02_hull_01_AM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R177_ISU_152K_BL10_02/ISU_152K_BL10_02_hull_01_AO.dds</Texture>
 					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/R177_ISU_152K_BL10_02/ISU_152K_BL10_02_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R177_ISU_152K_BL10_02/ISU_152K_BL10_02_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R177_ISU_152K_BL10_02/ISU_152K_BL10_02_hull_01_AO.dds</Texture>
 					</property>
 					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_detailUVTiling
-						<Vector4>8.416440 8.416440 0.000000 0.000000</Vector4>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-0.001968 0.957069 -0.063363</groupOrigin>
@@ -154,45 +175,66 @@
 			<primitiveGroup>
 				1
 				<material>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>tank_equipment</identifier>
-					<property>
-						selfIllumination
-						<Float>0.000000</Float>
-					</property>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/russian/R177_ISU_152K_BL10_02/ISU_152K_BL10_02_equipment_01_AM.dds</Texture>
-					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R177_ISU_152K_BL10_02/ISU_152K_BL10_02_equipment_01_AO.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/russian/R177_ISU_152K_BL10_02/ISU_152K_BL10_02_equipment_01_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/russian/R177_ISU_152K_BL10_02/ISU_152K_BL10_02_equipment_01_ANM.dds</Texture>
 					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						metallicGlossMap
+						<Texture>vehicles/russian/R177_ISU_152K_BL10_02/ISU_152K_BL10_02_equipment_01_GMM.dds</Texture>
 					</property>
 					<property>
-						g_detailUVTiling
-						<Vector4>4.208220 4.208220 0.000000 0.000000</Vector4>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R177_ISU_152K_BL10_02/ISU_152K_BL10_02_equipment_01_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R177_ISU_152K_BL10_02/ISU_152K_BL10_02_equipment_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.831146 -0.292247</groupOrigin>
@@ -203,6 +245,6 @@
 		<min>-1.651494 -0.574908 -3.800872</min>
 		<max>1.647559 2.489047 3.423417</max>
 	</boundingBox>
-	<geometrySize>1499150</geometrySize>
+	<geometrySize>1494006</geometrySize>
 	<minUVDensity>0.000848</minUVDensity>
 </root>

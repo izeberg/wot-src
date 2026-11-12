@@ -131,13 +131,6 @@
 			<undamaged>vehicles/sweden/S22_Strv_S1/normal/lod0/Hull.model</undamaged>
 			<destroyed>vehicles/sweden/S22_Strv_S1/crash/lod0/Hull.model</destroyed>
 			<exploded>vehicles/sweden/S22_Strv_S1/crash/lod0/Hull.model</exploded>
-			<sets>
-				<S22_Strv_S1_GJ_3DSt>
-					<undamaged>vehicles/sweden/S22_Strv_S1/_skins/S22_Strv_S1_GJ_3DSt/normal/lod0/Hull.model</undamaged>
-					<destroyed>vehicles/sweden/S22_Strv_S1/_skins/S22_Strv_S1_GJ_3DSt/crash/lod0/Hull.model</destroyed>
-					<exploded>vehicles/sweden/S22_Strv_S1/_skins/S22_Strv_S1_GJ_3DSt/crash/lod0/Hull.model</exploded>
-				</S22_Strv_S1_GJ_3DSt>
-			</sets>
 		</models>
 		<swinging>
 			<lodDist>FAR</lodDist>
@@ -1938,98 +1931,6 @@
 				<clipAngle>0.060512</clipAngle>
 				<anchorShift>0.200657</anchorShift>
 			</slot>
-			<slot>
-				<slotType>projectionDecal</slotType>
-				<slotId>15080</slotId>
-				<tags>formfactor_square</tags>
-				<compatibleModels>S22_Strv_S1_GJ_3DSt</compatibleModels>
-				<position>
-					0.939845 1.54084 1.63415
-					<!--BW_String-->
-				</position>
-				<rotation>
-					0.233179 -0.000003 3.14157
-					<!--BW_String-->
-				</rotation>
-				<scale>
-					0.541192 0.140927 0.54119
-					<!--BW_String-->
-				</scale>
-				<showOn>16</showOn>
-				<anchorShift>0.016009</anchorShift>
-			</slot>
-			<slot>
-				<slotType>projectionDecal</slotType>
-				<slotId>15081</slotId>
-				<tags>formfactor_square</tags>
-				<compatibleModels>S22_Strv_S1_GJ_3DSt</compatibleModels>
-				<position>
-					1.71873 1.51791 -0.102502
-					<!--BW_String-->
-				</position>
-				<rotation>
-					1.56769 0.090945 1.65491
-					<!--BW_String-->
-				</rotation>
-				<scale>
-					0.560912 0.146062 0.56091
-					<!--BW_String-->
-				</scale>
-				<showOn>16</showOn>
-				<anchorShift>-0.043211</anchorShift>
-			</slot>
-			<slot>
-				<slotType>projectionDecal</slotType>
-				<slotId>15082</slotId>
-				<tags>formfactor_square</tags>
-				<compatibleModels>S22_Strv_S1_GJ_3DSt</compatibleModels>
-				<position>
-					-1.47465 1.64056 0.343809
-					<!--BW_String-->
-				</position>
-				<rotation>
-					2.71217 1.56535 -0.003362
-					<!--BW_String-->
-				</rotation>
-				<scale>0.336585 0.087647 0.336584</scale>
-				<showOn>16</showOn>
-				<anchorShift>0.069692</anchorShift>
-			</slot>
-			<slot>
-				<slotType>projectionDecal</slotType>
-				<slotId>15083</slotId>
-				<tags>formfactor_square</tags>
-				<compatibleModels>S22_Strv_S1_GJ_3DSt</compatibleModels>
-				<position>
-					0.006289 1.6296 0.553799
-					<!--BW_String-->
-				</position>
-				<rotation>
-					0.217015 -0 3.14159
-					<!--BW_String-->
-				</rotation>
-				<scale>0.578943 0.224569 0.578943</scale>
-				<showOn>16</showOn>
-				<clipAngle>0.006976</clipAngle>
-				<anchorShift>0.155068</anchorShift>
-			</slot>
-			<slot>
-				<slotType>projectionDecal</slotType>
-				<slotId>15084</slotId>
-				<tags>formfactor_square</tags>
-				<compatibleModels>S22_Strv_S1_GJ_3DSt</compatibleModels>
-				<position>
-					-0.609748 1.57613 -2.70457
-					<!--BW_String-->
-				</position>
-				<rotation>
-					2.98522 -0.000001 -0.000004
-					<!--BW_String-->
-				</rotation>
-				<scale>0.435369 0.168879 0.435369</scale>
-				<showOn>16</showOn>
-				<anchorShift>0.114099</anchorShift>
-			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -2092,13 +1993,6 @@
 				<undamaged>vehicles/sweden/S22_Strv_S1/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/sweden/S22_Strv_S1/crash/lod0/Chassis.model</destroyed>
 				<exploded>vehicles/sweden/S22_Strv_S1/crash/lod0/Chassis.model</exploded>
-				<sets>
-					<S22_Strv_S1_GJ_3DSt>
-						<undamaged>vehicles/sweden/S22_Strv_S1/_skins/S22_Strv_S1_GJ_3DSt/normal/lod0/Chassis.model</undamaged>
-						<destroyed>vehicles/sweden/S22_Strv_S1/_skins/S22_Strv_S1_GJ_3DSt/crash/lod0/Chassis.model</destroyed>
-						<exploded>vehicles/sweden/S22_Strv_S1/_skins/S22_Strv_S1_GJ_3DSt/crash/lod0/Chassis.model</exploded>
-					</S22_Strv_S1_GJ_3DSt>
-				</sets>
 			</models>
 			<traces>
 				<lodDist>FAR</lodDist>
@@ -2495,11 +2389,6 @@
 						<model>vehicles/sweden/S22_Strv_S1/track/segment.model</model>
 						<length>0.147158</length>
 					</mainSegment>
-					<modelSets>
-						<S22_Strv_S1_GJ_3DSt>
-							<mainSegmentModel>vehicles/sweden/S22_Strv_S1/_skins/S22_Strv_S1_GJ_3DSt/track/segment.model</mainSegmentModel>
-						</S22_Strv_S1_GJ_3DSt>
-					</modelSets>
 					<collisionHull>
 						<bottom/>
 						<top>
@@ -2826,11 +2715,6 @@
 						<model>vehicles/sweden/S22_Strv_S1/track/segment.model</model>
 						<length>0.147158</length>
 					</mainSegment>
-					<modelSets>
-						<S22_Strv_S1_GJ_3DSt>
-							<mainSegmentModel>vehicles/sweden/S22_Strv_S1/_skins/S22_Strv_S1_GJ_3DSt/track/segment.model</mainSegmentModel>
-						</S22_Strv_S1_GJ_3DSt>
-					</modelSets>
 					<collisionHull>
 						<bottom/>
 						<top>
@@ -3216,13 +3100,6 @@
 						<undamaged>vehicles/sweden/S22_Strv_S1/normal/lod0/Gun_02.model</undamaged>
 						<destroyed>vehicles/sweden/S22_Strv_S1/crash/lod0/Gun_02.model</destroyed>
 						<exploded>vehicles/sweden/S22_Strv_S1/crash/lod0/Gun_02.model</exploded>
-						<sets>
-							<S22_Strv_S1_GJ_3DSt>
-								<undamaged>vehicles/sweden/S22_Strv_S1/_skins/S22_Strv_S1_GJ_3DSt/normal/lod0/Gun_02.model</undamaged>
-								<destroyed>vehicles/sweden/S22_Strv_S1/_skins/S22_Strv_S1_GJ_3DSt/crash/lod0/Gun_02.model</destroyed>
-								<exploded>vehicles/sweden/S22_Strv_S1/_skins/S22_Strv_S1_GJ_3DSt/crash/lod0/Gun_02.model</exploded>
-							</S22_Strv_S1_GJ_3DSt>
-						</sets>
 					</models>
 					<hitTester>
 						<collisionModelServer>vehicles/sweden/S22_Strv_S1/collision/Gun_02.model</collisionModelServer>
@@ -3295,13 +3172,6 @@
 				<undamaged>vehicles/sweden/S22_Strv_S1/normal/lod0/Turret_01.model</undamaged>
 				<destroyed>vehicles/sweden/S22_Strv_S1/crash/lod0/Turret_01.model</destroyed>
 				<exploded>vehicles/sweden/S22_Strv_S1/crash/lod0/Turret_01.model</exploded>
-				<sets>
-					<S22_Strv_S1_GJ_3DSt>
-						<undamaged>vehicles/sweden/S22_Strv_S1/_skins/S22_Strv_S1_GJ_3DSt/normal/lod0/Turret_01.model</undamaged>
-						<destroyed>vehicles/sweden/S22_Strv_S1/_skins/S22_Strv_S1_GJ_3DSt/crash/lod0/Turret_01.model</destroyed>
-						<exploded>vehicles/sweden/S22_Strv_S1/_skins/S22_Strv_S1_GJ_3DSt/crash/lod0/Turret_01.model</exploded>
-					</S22_Strv_S1_GJ_3DSt>
-				</sets>
 			</models>
 			<hitTester>
 				<collisionModelServer>vehicles/sweden/S22_Strv_S1/collision/Turret_01.model</collisionModelServer>

@@ -74,6 +74,9 @@ msgstr "Якую можна даследаваць"
 msgid "popover/counter"
 msgstr "Паказваецца машын: %(count)s"
 
+msgid "popover/label/difficulties"
+msgstr "Сложность"
+
 msgid "popover/label/hidden"
 msgstr "Дадаткова"
 
@@ -153,6 +156,12 @@ msgstr "Паказваць/схаваць тэхніку, якая ўдзель�
 
 msgid "tooltip/debut_boxes/header"
 msgstr "«Нашы перамогі»"
+
+msgid "tooltip/difficulty/body"
+msgstr "Включить/отключить отображение техники с данной сложностью освоения."
+
+msgid "tooltip/difficulty/header"
+msgstr "Сложность техники"
 
 msgid "tooltip/early_access/body"
 msgstr "Паказваць/схаваць тэхніку падзеі «Ранні доступ»."

@@ -216,8 +216,9 @@ class _DailyMissionsCompletedCount(LimitedUICondition):
     __eventsCache = dependency.descriptor(IEventsCache)
 
     def _getValue(self):
-        quests = self.__eventsCache.getDailyQuests(filterFunc=lambda q: q.isCompleted())
-        return len(quests.keys())
+        commonQuests = self.__eventsCache.getDailyQuests(filterFunc=lambda q: q.isCompleted())
+        premiumQuests = self.__eventsCache.getDailyPremiumQuests(filterFunc=lambda q: q.isCompleted())
+        return len(commonQuests.keys()) + len(premiumQuests.keys())
 
     def _getEvents(self):
         return (

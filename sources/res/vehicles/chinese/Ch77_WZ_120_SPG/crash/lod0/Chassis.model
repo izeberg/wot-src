@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.623080 -0.000072 -3.705491</min>
+		<max>1.609935 1.081018 3.785439</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch77_WZ_120_SPG/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch77_WZ_120_SPG/crash/lod0/Chassis</nodefullVisual>
+</root>

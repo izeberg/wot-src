@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Hatch_01</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.140127 0.401459 0.030165</row3>
+				</transform>
+				<node>
+					<identifier>Hatch_02</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.046573 -0.025054 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Hatch_03</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.021226 -0.061553 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Hatch_03_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.114779 -0.314852 -0.030165</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Hatch_02_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.093554 -0.376405 -0.030165</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Hatch_01_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.140127 -0.401459 -0.030165</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Hatch_05</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.087529 -0.014459 0.048889</row3>
+				</transform>
+				<node>
+					<identifier>Hatch_04</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.008000 0.023000 -0.004010</row3>
+					</transform>
+					<node>
+						<identifier>Hatch_04_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.079529 -0.008541 -0.044879</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Hatch_05_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.087529 0.014459 -0.048889</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>j_sleeve</identifier>
+				<transform>
+					<row0>0.000000 0.000000 -1.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>1.000000 0.000000 0.000000</row2>
+					<row3>0.001164 0.023727 0.079889</row3>
+				</transform>
+				<node>
+					<identifier>j_sleeve_BlendBone</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>1.000000 0.000000 0.000000</row2>
+						<row3>0.079889 -0.023727 -0.001164</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Root_BlendBone</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Root_BlendBone</node>
+		<node>Hatch_04_BlendBone</node>
+		<node>Hatch_01_BlendBone</node>
+		<node>Hatch_05_BlendBone</node>
+		<geometry>
+			<vertices>gun_01_anim_Shape.vertices</vertices>
+			<primitive>gun_01_anim_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_guns_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/japan/J50_ST_A5/ST_A5_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/japan/J50_ST_A5/ST_A5_guns_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/japan/J50_ST_A5/ST_A5_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/japan/J50_ST_A5/ST_A5_guns_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000000 0.119222 0.599580</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>j_sleeve_BlendBone</node>
+		<geometry>
+			<vertices>n_metal1_Shape.vertices</vertices>
+			<primitive>n_metal1_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>n_metal0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Sleeves/Sleeve_100mm/TST_shell_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/Sleeves/Sleeve_100mm/TST_shell_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Sleeves/Sleeve_100mm/TST_shell_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Sleeves/Sleeve_100mm/TST_shell_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.001164 0.023727 -0.079889</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.207992 -0.175180 -1.605371</min>
+		<max>0.207992 0.413624 0.406211</max>
+	</boundingBox>
+	<geometrySize>17766</geometrySize>
+	<minUVDensity>0.014059</minUVDensity>
+</root>

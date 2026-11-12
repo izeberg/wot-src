@@ -2,17 +2,11 @@
 <root>
 	<tank>true</tank>
 	<parent>vehicles/chinese/Ch33_60G_FT/normal/lod4/Gun_01</parent>
-	<extent>192</extent>
-	<nodefullVisual>vehicles/chinese/Ch33_60G_FT/normal/lod3/Gun_01</nodefullVisual>
+	<extent>192.000000</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-0.412961 -0.326483 -0.0841863
-			<!--BW_String-->
-		</min>
-		<max>
-			0.414914 0.463846 3.50332
-			<!--BW_String-->
-		</max>
+		<min>-0.412961 -0.326483 -0.084187</min>
+		<max>0.414914 0.463846 3.503318</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/chinese/Ch33_60G_FT/normal/lod3/Gun_01</nodefullVisual>
 </root>

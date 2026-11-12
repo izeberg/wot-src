@@ -4,6 +4,7 @@ from gui.impl.battle.battle_page.battle_context_hints.battle_context_hints_prese
 from gui.battle_control.battle_context_hints.activation_triggers import HintActivationTrigger
 from gui.battle_control.battle_context_hints.applying_triggers import HintApplyingTrigger
 from gui.battle_control.battle_context_hints.hint_lifecycle_managers import HintLifecycleMgr
+from gui.battle_control.battle_context_hints.hint_sounds import HintSoundEvent
 from gui.battle_control.battle_context_hints.settings_data_block import HintDataBlock
 HintDescriptor = NamedTuple('HintDescriptor', [
  (
@@ -25,7 +26,7 @@ HintDescriptor = NamedTuple('HintDescriptor', [
  (
   'dataBlock', HintDataBlock),
  (
-  'soundEvent', Optional[str]),
+  'soundEvent', Optional[HintSoundEvent]),
  (
   'delay', float),
  (

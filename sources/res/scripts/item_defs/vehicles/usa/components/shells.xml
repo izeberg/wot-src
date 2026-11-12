@@ -1164,6 +1164,34 @@
 			<devices>165</devices>
 		</damage>
 	</_120mm_APBC_M358_A184>
+	<_120mm_APBC_M358_A185>
+		<id>31096</id>
+		<userString>#usa_vehicles:_120mm_APBC_M358_A185</userString>
+		<icon>ap</icon>
+		<price>1280</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeArmorPiercing</effects>
+		<damage>
+			<armor>440</armor>
+			<devices>165</devices>
+		</damage>
+	</_120mm_APBC_M358_A185>
+	<_120mm_APBC_M358_A186>
+		<id>31099</id>
+		<userString>#usa_vehicles:_120mm_APBC_M358_A186</userString>
+		<icon>ap</icon>
+		<price>1110</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeArmorPiercing</effects>
+		<damage>
+			<armor>440</armor>
+			<devices>165</devices>
+		</damage>
+	</_120mm_APBC_M358_A186>
 	<_120mm_APCR_M358_A106>
 		<id>31104</id>
 		<userString>#usa_vehicles:_120mm_APCR_M358</userString>
@@ -1454,6 +1482,71 @@
 			<!--BW_String-->
 		</piercingPowerLossFactorByDistance>
 	</_120mm_HEAT_M469_A184>
+	<_120mm_HEAT_M469_A185>
+		<id>31097</id>
+		<userString>#usa_vehicles:_120mm_HEAT_M469_A185</userString>
+		<icon>ap_fsds_premium</icon>
+		<price>5200</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_FSDS</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeAPFSDS</effects>
+		<damage>
+			<armor>440</armor>
+			<devices>160</devices>
+		</damage>
+		<maxDistanceInsideVehicle>40</maxDistanceInsideVehicle>
+		<damageRandomization>
+			0.0
+			<!--BW_String-->
+		</damageRandomization>
+		<distanceDamage>
+			<isEnabled>true</isEnabled>
+			<damage>
+				<min>154</min>
+				<max>726</max>
+			</damage>
+			<distance>
+				<min>
+					1.0
+					<!--BW_String-->
+				</min>
+				<max>
+					6.0
+					<!--BW_String-->
+				</max>
+			</distance>
+			<ignoreModules>true</ignoreModules>
+		</distanceDamage>
+		<hitDeviceChanceMultiplier>
+			0.3
+			<!--BW_String-->
+		</hitDeviceChanceMultiplier>
+		<hitCrewChanceMultiplier>
+			0.3
+			<!--BW_String-->
+		</hitCrewChanceMultiplier>
+	</_120mm_HEAT_M469_A185>
+	<_120mm_HEAT_M469_A186>
+		<id>31100</id>
+		<userString>#usa_vehicles:_120mm_HEAT_M469_A186</userString>
+		<icon>hc_premium</icon>
+		<price>5200</price>
+		<improved>true</improved>
+		<kind>HOLLOW_CHARGE</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeHollowCharge</effects>
+		<damage>
+			<armor>440</armor>
+			<devices>165</devices>
+		</damage>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
+	</_120mm_HEAT_M469_A186>
 	<_120mm_HEAT_M830>
 		<id>164</id>
 		<userString>#usa_vehicles:_120mm_HEAT_M830</userString>
@@ -1664,6 +1757,66 @@
 			</damage>
 		</armorSpalls>
 	</_120mm_HE_M356_A184>
+	<_120mm_HE_M356_A185>
+		<id>31098</id>
+		<userString>#usa_vehicles:_120mm_HE_M356_A185</userString>
+		<icon>he_modern</icon>
+		<price>1090</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>120</caliber>
+		<explosionRadius>
+			2.42
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>largeHighExplosive</effects>
+		<damage>
+			<armor>530</armor>
+			<devices>165</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				2.42
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>265</armor>
+				<devices>85</devices>
+			</damage>
+		</armorSpalls>
+	</_120mm_HE_M356_A185>
+	<_120mm_HE_M356_A186>
+		<id>31101</id>
+		<userString>#usa_vehicles:_120mm_HE_M356_A186</userString>
+		<icon>he_modern</icon>
+		<price>790</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>120</caliber>
+		<explosionRadius>
+			2.42
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>largeHighExplosive</effects>
+		<damage>
+			<armor>530</armor>
+			<devices>165</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				2.42
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>265</armor>
+				<devices>85</devices>
+			</damage>
+		</armorSpalls>
+	</_120mm_HE_M356_A186>
 	<_120mm_HE_M358>
 		<id>206</id>
 		<userString>#usa_vehicles:_120mm_HE_M358</userString>
@@ -3107,33 +3260,6 @@
 			<protectFromIndirectHits>internal tankmen</protectFromIndirectHits>
 		</deviceDamagePossibility>
 	</_240mm_HE_M146>
-	<_240mm_HE_M146_portal_ability_shell>
-		<id>40005</id>
-		<userString>#usa_vehicles:_240mm_HE_M146</userString>
-		<icon>he_spg_stun</icon>
-		<price>2500</price>
-		<notInShop>True</notInShop>
-		<kind>HIGH_EXPLOSIVE</kind>
-		<caliber>240</caliber>
-		<explosionRadius>
-			12.4
-			<!--BW_String-->
-		</explosionRadius>
-		<hasStun>true</hasStun>
-		<stunDuration>
-			20.5
-			<!--BW_String-->
-		</stunDuration>
-		<isTracer>true</isTracer>
-		<effects>hugeSH</effects>
-		<damage>
-			<armor>1100</armor>
-			<devices>160</devices>
-		</damage>
-		<deviceDamagePossibility>
-			<protectFromIndirectHits>internal tankmen</protectFromIndirectHits>
-		</deviceDamagePossibility>
-	</_240mm_HE_M146_portal_ability_shell>
 	<_240mm_HE_M160>
 		<id>49</id>
 		<userString>#usa_vehicles:_240mm_HE_M160</userString>

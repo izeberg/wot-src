@@ -178,6 +178,15 @@ package net.wg.gui.components.containers
       {
       }
       
+      public function setIs3DSpaceView(param1:Boolean) : void
+      {
+      }
+      
+      public function get is3DSpaceView() : Boolean
+      {
+         return false;
+      }
+      
       public function setSize(param1:uint, param2:uint) : void
       {
       }

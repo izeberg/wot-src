@@ -50,6 +50,14 @@ class Tokens(object):
         self.__commandsProxy.perform(AccountCommands.CMD_LOOTBOX_OPEN_BY_KEY, boxID, count, keyID, proxy)
         return
 
+    def openBoxesBySelection(self, boxID, index, callback):
+        if callback is not None:
+            proxy = lambda requestID, resultID, errorStr, ext={}: callback(resultID, errorStr, ext)
+        else:
+            proxy = None
+        self.__commandsProxy.perform(AccountCommands.CMD_LOOTBOX_OPEN_SELECTION, boxID, index, proxy)
+        return
+
     def getInfoLootBox(self, boxIDs, callback):
         if callback is not None:
             proxy = lambda requestID, resultID, errorStr, ext={}: callback(resultID, errorStr, ext)

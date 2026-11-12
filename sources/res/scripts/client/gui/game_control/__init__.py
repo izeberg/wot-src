@@ -103,6 +103,7 @@ def getGameControllersConfig(manager):
     from gui.game_control.summer_sale_controller import SummerSaleController
     from gui.game_control.control_point_override_controller import ControlPointOverrideController
     from gui.game_control.session_progress_rewards_controller import SessionProgressRewardsController
+    from gui.game_control.customization_resource_controller import CustomizationResourceController
     tracker = GameStateTracker()
     tracker.init()
     manager.addInstance(_interface.IGameStateTracker, tracker, finalizer='fini')
@@ -114,7 +115,11 @@ def getGameControllersConfig(manager):
         method(interface, controller, finalizer='fini')
 
     _config(_interface.ISeniorityAwardsController, _SeniorityAwardsController())
-    _config(_interface.IFestivityController, manager.getService(IFestivityFactory).getController())
+    festivityFactory = manager.getService(IFestivityFactory)
+    festivityController = festivityFactory.getController()
+    _config(_interface.IFestivityController, festivityController)
+    if festivityFactory.getChildControllerInterface() is not None:
+        manager.addInstance(festivityFactory.getChildControllerInterface(), festivityController)
     _config(_interface.IReloginController, _Relogin())
     _config(_interface.IAOGASController, _AOGAS())
     _config(_interface.IGameSessionController, _GameSessions())
@@ -201,7 +206,9 @@ def getGameControllersConfig(manager):
     _config(_interface.IBattleModifiersController, BattleModifiersController())
     _config(_interface.ISummerSaleController, SummerSaleController())
     _config(_interface.IControlPointOverrideController, ControlPointOverrideController())
+    _config(_interface.ICustomizationResourceController, CustomizationResourceController())
     _config(_interface.ITankAcademyController, TankAcademyController())
     _config(_interface.IMuseumOfGloryController, MuseumOfGloryController())
     _config(_interface.ISessionProgressRewardsController, SessionProgressRewardsController())
     collectGameControllers(_config)
+    return

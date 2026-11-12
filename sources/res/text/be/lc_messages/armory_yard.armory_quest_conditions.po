@@ -178,7 +178,7 @@ msgid "conditions/postbattle/plus/damageDealt/damageBlockedByArmor"
 msgstr "Сумарна прычыніць і заблакаваць %(value)s адз. пашкоджанняў за бой."
 
 msgid "quest_1/condition_1/description"
-msgstr "Заработать 30 000 ед. «чистого» опыта."
+msgstr "Заработать 15 000 ед. «чистого» опыта."
 
 msgid "quest_10/condition_1/description"
 msgstr ""
@@ -189,20 +189,19 @@ msgid "quest_100/condition_1/description"
 msgstr "Нанести 6500 ед. урона в каждом из 2 боёв."
 
 msgid "quest_100/condition_2/description"
-msgstr "Прычыніць 8500 адз. пашкоджанняў у 2 баях."
+msgstr "Нанести 9000 ед. урона в каждом из 2 боёв."
 
 msgid "quest_101/condition_1/description"
 msgstr "8 раз попасть в топ-2 по опыту среди обеих команд."
 
 msgid "quest_101/condition_2/description"
-msgstr ""
-"Заняць першае месца паводле досведу сярод абедзвюх камандаў у 10 баях."
+msgstr "8 раз занять первое место по опыту среди обеих команд."
 
 msgid "quest_102/condition_1/description"
 msgstr "Заблокировать 4500 ед. урона и выжить."
 
 msgid "quest_102/condition_2/description"
-msgstr "Заблакаваць 5500 адз. пашкоджанняў і ацалець."
+msgstr "Заблокировать 6000 ед. урона и выжить."
 
 msgid "quest_104/condition_1/description"
 msgstr "Прычыніць 18% ад пашкоджанняў сваёй каманды ў 4 баях."
@@ -223,7 +222,7 @@ msgid "quest_108/condition_1/description"
 msgstr "Передать разведданные для нанесения 45 000 ед. урона."
 
 msgid "quest_108/condition_2/description"
-msgstr "Передать разведданные для нанесения 50 000 ед. урона."
+msgstr "Передать разведданные для нанесения 60 000 ед. урона."
 
 msgid "quest_109/condition_1/description"
 msgstr "Уничтожить 55 машин противника."
@@ -232,9 +231,7 @@ msgid "quest_11/condition_1/description"
 msgstr "Нанести 3500 ед. урона и заблокировать 3500 ед. урона за бой."
 
 msgid "quest_11/condition_2/description"
-msgstr ""
-"Прычыніць 4500 адз. пашкоджанняў і заблакаваць 4500 адз. пашкоджанняў за "
-"бой."
+msgstr "Нанести 5000 ед. урона и заблокировать 5000 ед. урона за бой."
 
 msgid "quest_111/condition_1/description"
 msgstr "25 раз нанести 1500 ед. урона и победить."
@@ -281,7 +278,7 @@ msgid "quest_120/condition_1/description"
 msgstr "17 раз попасть в топ-4 своей команды по опыту и победить."
 
 msgid "quest_120/condition_2/description"
-msgstr "11 раз попасть в топ-2 своей команды по опыту и победить."
+msgstr "17 раз попасть в топ-2 своей команды по опыту и победить."
 
 msgid "quest_121/condition_1/description"
 msgstr "15 раз попасть в топ-4 своей команды по урону и победить."
@@ -302,25 +299,31 @@ msgid "quest_124/condition_1/description"
 msgstr "Нанести 9000 ед. урона лёгким танкам противника."
 
 msgid "quest_124/condition_2/description"
-msgstr "Нанести 10 500 ед. урона лёгким танкам противника."
+msgstr "Нанести 12 500 ед. урона лёгким танкам противника."
 
 msgid "quest_125/condition_1/description"
 msgstr "Нанести 37 000 ед. урона ПТ-САУ или САУ противника."
 
+msgid "quest_125/condition_2/description"
+msgstr "Нанести 50 000 ед. урона ПТ-САУ противника."
+
 msgid "quest_126/condition_1/description"
 msgstr "Нанести 45 000 ед. урона средним танкам противника."
+
+msgid "quest_126/condition_2/description"
+msgstr "Нанести 60 000 ед. урона средним танкам противника."
 
 msgid "quest_127/condition_1/description"
 msgstr "Нанести 60 000 ед. урона тяжёлым танкам противника."
 
 msgid "quest_127/condition_2/description"
-msgstr "Нанести 60 000 ед. урона тяжёлым танкам противника."
+msgstr "Нанести 85 000 ед. урона тяжёлым танкам противника."
 
 msgid "quest_128/condition_1/description"
 msgstr "Заблокировать 4250 ед. урона в 2 боях."
 
 msgid "quest_128/condition_2/description"
-msgstr "Заблакаваць 5250 адз. пашкоджанняў у 2 баях."
+msgstr "Заблокировать 5750 ед. урона в 2 боях."
 
 msgid "quest_129/condition_1/description"
 msgstr ""
@@ -337,31 +340,28 @@ msgid "quest_130/condition_1/description"
 msgstr "Суммарно нанести и заблокировать 5000 ед. урона в каждом из 10 боёв."
 
 msgid "quest_130/condition_2/description"
-msgstr ""
-"Сумарна прычыніць і заблакаваць 5500 адз. пашкоджанняў у кожным з 10 баёў."
+msgstr "Суммарно нанести и заблокировать 7000 ед. урона в каждом из 10 боёв."
 
 msgid "quest_131/condition_1/description"
 msgstr "8 раз обнаружить не менее 4 машин противника и победить."
 
 msgid "quest_132/condition_1/description"
-msgstr ""
-"Передать разведданные для нанесения 2000 ед. урона в каждом из 10 боёв."
+msgstr "Передать в 10 боях разведданные для нанесения 2000 урона."
 
 msgid "quest_132/condition_2/description"
-msgstr ""
-"Передать разведданные для нанесения 3000 ед. урона в каждом из 10 боёв."
+msgstr "Передать в 10 боях разведданные для нанесения 3000 урона."
 
 msgid "quest_133/condition_1/description"
 msgstr "Заблокировать 200 попаданий."
 
 msgid "quest_133/condition_2/description"
-msgstr "Заблокировать 185 попаданий."
+msgstr "Заблокировать 270 попаданий."
 
 msgid "quest_134/condition_1/description"
 msgstr "12 раз нанести 2500 ед. урона и победить."
 
 msgid "quest_134/condition_2/description"
-msgstr "10 раз нанести 3500 ед. урона и победить."
+msgstr "12 раз нанести 3500 ед. урона и победить."
 
 msgid "quest_135/condition_1/description"
 msgstr ""
@@ -375,7 +375,7 @@ msgid "quest_137/condition_1/description"
 msgstr "Нанести 125 000 ед. урона."
 
 msgid "quest_137/condition_2/description"
-msgstr "Нанести 165 000 ед. урона."
+msgstr "Нанести 170 000 ед. урона."
 
 msgid "quest_138/condition_1/description"
 msgstr "Нанести урон или критические повреждения 200 машинам противника."
@@ -397,16 +397,16 @@ msgid "quest_141/condition_2/description"
 msgstr "Нанести 205 000 ед. урона."
 
 msgid "quest_142/condition_1/description"
-msgstr "Заблокировать 60 000 ед. урона."
+msgstr "Заблокировать 70 000 ед. урона."
 
 msgid "quest_142/condition_2/description"
-msgstr "Заблокировать 85 000 ед. урона."
+msgstr "Заблокировать 95 000 ед. урона."
 
 msgid "quest_143/condition_1/description"
 msgstr "7 раз занять первое место по урону среди обеих команд."
 
 msgid "quest_143/condition_2/description"
-msgstr "16 раз занять первое место по урону среди обеих команд."
+msgstr "14 раз занять первое место по урону среди обеих команд."
 
 msgid "quest_144/condition_1/description"
 msgstr "Уничтожить 95 машин противника."
@@ -415,7 +415,7 @@ msgid "quest_145/condition_1/description"
 msgstr "Заработать 1200 ед. «чистого» опыта в каждом из 3 боёв."
 
 msgid "quest_145/condition_2/description"
-msgstr "Заработать 1400 ед. «чистого» опыта в каждом из 4 боёв."
+msgstr "Заработать 1400 ед. «чистого» опыта в каждом из 3 боёв."
 
 msgid "quest_146/condition_1/description"
 msgstr "Уничтожить 6 машин противника за бой."
@@ -440,7 +440,7 @@ msgid "quest_149/condition_1/description"
 msgstr "Заблокировать 6500 ед. урона за бой."
 
 msgid "quest_149/condition_2/description"
-msgstr "Заблокировать 7500 ед. урона за бой."
+msgstr "Заблокировать 8750 ед. урона за бой."
 
 msgid "quest_15/condition_1/description"
 msgstr "Прычыніць 15% ад пашкоджанняў сваёй каманды ў 4 баях."
@@ -452,7 +452,7 @@ msgid "quest_150/condition_1/description"
 msgstr "Нанести 6500 ед. урона и уничтожить 5 машин противника за бой."
 
 msgid "quest_150/condition_2/description"
-msgstr "Нанести 7500 ед. урона и уничтожить 4 машины противника за бой."
+msgstr "Нанести 8500 ед. урона и уничтожить 4 машины противника за бой."
 
 msgid "quest_151/condition_1/description"
 msgstr ""
@@ -465,20 +465,16 @@ msgid "quest_152/condition_2/description"
 msgstr "Прычыніць 50% ад пашкоджанняў сваёй каманды ў 2 баях."
 
 msgid "quest_153/condition_1/description"
-msgstr ""
-"Посодействовать в нанесении 6000 ед. урона технике противника за бой, "
-"передавая разведданные или сбивая гусеницы."
+msgstr "Посодействовать в нанесении 6000 ед. урона за бой."
 
 msgid "quest_153/condition_2/description"
-msgstr ""
-"Посодействовать в нанесении 6500 ед. урона технике противника за бой, "
-"передавая разведданные или сбивая гусеницы."
+msgstr "Посодействовать в нанесении 8000 ед. урона за бой."
 
 msgid "quest_154/condition_1/description"
 msgstr "Получить 230 непробитий."
 
 msgid "quest_154/condition_2/description"
-msgstr "Получить 270 непробитий."
+msgstr "Получить 310 непробитий."
 
 msgid "quest_156/condition_1/description"
 msgstr ""
@@ -498,7 +494,7 @@ msgid "quest_16/condition_1/description"
 msgstr "Заблокировать 40 000 ед. урона."
 
 msgid "quest_16/condition_2/description"
-msgstr "Заблокировать 27 000 ед. урона."
+msgstr "Заблокировать 55 000 ед. урона."
 
 msgid "quest_160/condition_1/description"
 msgstr "Нанести урон или критические повреждения 375 машинам противника."
@@ -507,7 +503,7 @@ msgid "quest_161/condition_1/description"
 msgstr "Нанести 200 000 ед. урона."
 
 msgid "quest_161/condition_2/description"
-msgstr "Нанести 250 000 ед. урона."
+msgstr "Нанести 270 000 ед. урона."
 
 msgid "quest_162/condition_1/description"
 msgstr "Совершить 250 критических попаданий."
@@ -524,10 +520,10 @@ msgid "quest_165/condition_1/description"
 msgstr "30 раз заработать 800 ед. «чистого» опыта и победить."
 
 msgid "quest_166/condition_1/description"
-msgstr "16 раз попасть в топ-3 своей команды по опыту и победить."
+msgstr "24 раза попасть в топ-4 своей команды по опыту и победить."
 
 msgid "quest_166/condition_2/description"
-msgstr "20 раз попасть в топ-2 своей команды по опыту и победить."
+msgstr "24 раз попасть в топ-2 своей команды по опыту и победить."
 
 msgid "quest_167/condition_1/description"
 msgstr "Победить и выжить в 33 боях."
@@ -536,43 +532,43 @@ msgid "quest_168/condition_1/description"
 msgstr "14 раз нанести 3500 ед. урона и победить."
 
 msgid "quest_168/condition_2/description"
-msgstr "14 раз нанести 4250 ед. урона и победить."
+msgstr "14 раз нанести 5000 ед. урона и победить."
 
 msgid "quest_169/condition_1/description"
 msgstr "Нанести 4500 ед. урона в каждом из 12 боёв."
 
 msgid "quest_169/condition_2/description"
-msgstr "Нанести 5500 ед. урона в каждом из 12 боёв."
+msgstr "Нанести 6250 ед. урона в каждом из 12 боёв."
 
 msgid "quest_17/condition_1/description"
 msgstr "Передать разведданные для нанесения 35 000 ед. урона."
 
 msgid "quest_17/condition_2/description"
-msgstr "Передать разведданные для нанесения 37 500 ед. урона."
+msgstr "Передать разведданные для нанесения 50 000 ед. урона."
 
 msgid "quest_170/condition_1/description"
 msgstr "Нанести урон лёгким танкам противника 45 раз."
 
 msgid "quest_170/condition_2/description"
-msgstr "Нанести урон лёгким танкам противника 40 раз."
+msgstr "Нанести урон лёгким танкам противника 60 раз."
 
 msgid "quest_171/condition_1/description"
 msgstr "Нанести урон ПТ-САУ противника 125 раз."
 
 msgid "quest_171/condition_2/description"
-msgstr "Нанести урон ПТ-САУ противника 150 раз."
+msgstr "Нанести урон ПТ-САУ противника 170 раз."
 
 msgid "quest_172/condition_1/description"
 msgstr "Нанести урон средним танкам противника 130 раз."
 
 msgid "quest_172/condition_2/description"
-msgstr "Нанести урон средним танкам противника 160 раз."
+msgstr "Нанести урон средним танкам противника 175 раз."
 
 msgid "quest_173/condition_1/description"
 msgstr "Нанести урон тяжёлым танкам противника 195 раз."
 
 msgid "quest_173/condition_2/description"
-msgstr "Нанести урон тяжёлым танкам противника 250 раз."
+msgstr "Нанести урон тяжёлым танкам противника 265 раз."
 
 msgid "quest_174/condition_1/description"
 msgstr ""
@@ -580,14 +576,10 @@ msgstr ""
 "собственной машины."
 
 msgid "quest_175/condition_1/description"
-msgstr ""
-"Нанести 60 000 ед. урона противнику, не будучи обнаруженным в момент его "
-"нанесения."
+msgstr "Нанести 60 000 ед. урона, не будучи обнаруженным в момент нанесения."
 
 msgid "quest_175/condition_2/description"
-msgstr ""
-"Нанести 55 000 ед. урона противнику, не будучи обнаруженным в момент его "
-"нанесения."
+msgstr "Нанести 85 000 ед. урона, не будучи обнаруженным в момент нанесения."
 
 msgid "quest_176/condition_1/description"
 msgstr "Уничтожить 35 машин противника с дистанции менее 100 метров."
@@ -596,7 +588,7 @@ msgid "quest_177/condition_1/description"
 msgstr "Передать разведданные для нанесения 75 000 ед. урона."
 
 msgid "quest_177/condition_2/description"
-msgstr "Передать разведданные для нанесения 90 000 ед. урона."
+msgstr "Передать разведданные для нанесения 100 000 ед. урона."
 
 msgid "quest_178/condition_1/description"
 msgstr ""
@@ -721,8 +713,7 @@ msgid "quest_203/condition_1/description"
 msgstr "Суммарно нанести и заблокировать 8000 ед. урона в каждом из 2 боёв."
 
 msgid "quest_203/condition_2/description"
-msgstr ""
-"Сумарна прычыніць і заблакаваць 10 000 адз. пашкоджанняў у кожным з 2 баёў."
+msgstr "Суммарно нанести и заблокировать 11 000 ед. урона в каждом из 2 боёв."
 
 msgid "quest_204/condition_1/description"
 msgstr "Обнаружить 5 машин противника, оставаясь необнаруженным, в 2 боях."
@@ -746,26 +737,22 @@ msgid "quest_207/condition_1/description"
 msgstr "Заслужыць любы эпічны медаль."
 
 msgid "quest_208/condition_1/description"
-msgstr ""
-"Нанести не менее 5500 ед. урона и заблокировать не менее 3000 ед. урона за "
-"бой."
+msgstr "Заблокировать не менее 3000 и нанести не менее 5500 ед. урона за бой."
 
 msgid "quest_208/condition_2/description"
-msgstr ""
-"Прычыніць не менш за 7000 адз. пашкоджанняў і заблакаваць не менш за 4500 "
-"адз. пашкоджанняў за бой."
+msgstr "Заблокировать не менее 4500 и нанести не менее 7500 ед. урона за бой."
 
 msgid "quest_209/condition_1/description"
 msgstr "Заблокировать 60 000 ед. урона."
 
 msgid "quest_209/condition_2/description"
-msgstr "Заблокировать 70 000 ед. урона."
+msgstr "Заблокировать 85 000 ед. урона."
 
 msgid "quest_21/condition_1/description"
 msgstr "Нанести 90 000 ед. урона."
 
 msgid "quest_21/condition_2/description"
-msgstr "Нанести 110 000 ед. урона."
+msgstr "Нанести 120 000 ед. урона."
 
 msgid "quest_210/condition_1/description"
 msgstr "Передать разведданные для нанесения 50 000 ед. урона."
@@ -827,13 +814,13 @@ msgid "quest_225/condition_1/description"
 msgstr "23 раза попасть в топ-6 своей команды по опыту и победить."
 
 msgid "quest_225/condition_2/description"
-msgstr "17 раз попасть в топ-4 своей команды по опыту и победить."
+msgstr "23 раз попасть в топ-3 своей команды по опыту и победить."
 
 msgid "quest_226/condition_1/description"
 msgstr "17 раз попасть в топ-4 своей команды по урону и победить."
 
 msgid "quest_226/condition_2/description"
-msgstr "14 раз попасть в топ-2 своей команды по урону и победить."
+msgstr "17 раз попасть в топ-2 своей команды по урону и победить."
 
 msgid "quest_227/condition_1/description"
 msgstr "Уничтожить не менее 3 машин противника в каждом из 7 боёв."
@@ -842,7 +829,7 @@ msgid "quest_228/condition_1/description"
 msgstr "7 раз нанести 4000 ед. урона и победить."
 
 msgid "quest_228/condition_2/description"
-msgstr "5 раз нанести 5500 ед. урона и победить."
+msgstr "7 раз нанести 5500 ед. урона и победить."
 
 msgid "quest_229/condition_1/description"
 msgstr "Нанести 4500 ед. урона в 6 боях."
@@ -854,9 +841,7 @@ msgid "quest_23/condition_1/description"
 msgstr "Победить в 15 боях и нанести 1250 ед. урона в каждом победном бою."
 
 msgid "quest_23/condition_2/description"
-msgstr ""
-"Перамагчы ў 17 баях і прычыніць 1500 адз. пашкоджанняў у кожным пераможным "
-"баі."
+msgstr "Победить в 15 боях и нанести 1700 ед. урона в каждом победном бою."
 
 msgid "quest_230/condition_1/description"
 msgstr "Уничтожить 7 лёгких танков."
@@ -892,13 +877,13 @@ msgid "quest_238/condition_1/description"
 msgstr "Заблокировать 185 попаданий."
 
 msgid "quest_238/condition_2/description"
-msgstr "Заблакаваць 180 траплянняў."
+msgstr "Заблокировать 250 попаданий."
 
 msgid "quest_239/condition_1/description"
 msgstr "10 раз нанести 3000 ед. урона и победить."
 
 msgid "quest_239/condition_2/description"
-msgstr "8 раз нанести 4250 ед. урона и победить."
+msgstr "10 раз нанести 4250 ед. урона и победить."
 
 msgid "quest_24/condition_1/description"
 msgstr "Уничтожить суммарно 14 машин противника в первые 3 минуты боя."
@@ -1044,10 +1029,10 @@ msgstr ""
 "Атрымаць як мінімум адну ўзнагароду з катэгорыі «Герой бітвы» ў 3 баях."
 
 msgid "quest_27/condition_1/description"
-msgstr "9 раз попасть в топ-5 своей команды по опыту и победить."
+msgstr "12 раз попасть в топ-6 своей команды по опыту и победить."
 
 msgid "quest_27/condition_2/description"
-msgstr "14 раз попасть в топ-3 своей команды по опыту и победить."
+msgstr "12 раз попасть в топ-3 своей команды по опыту и победить."
 
 msgid "quest_270/condition_1/description"
 msgstr "Знішчыць 15 машын праціўніка з дыстанцыі менш за 100 метраў."
@@ -1204,13 +1189,13 @@ msgid "quest_299/condition_1/description"
 msgstr "Перамагчы ў 45 баях."
 
 msgid "quest_3/condition_1/description"
-msgstr "Уничтожить 25 машин противника."
+msgstr "Уничтожить 40 машин противника."
 
 msgid "quest_30/condition_1/description"
 msgstr "8 раз нанести 2500 ед. урона и победить."
 
 msgid "quest_30/condition_2/description"
-msgstr "5 раз нанести более 3500 ед. урона и победить."
+msgstr "8 раз нанести 3500 ед. урона и победить."
 
 msgid "quest_300/condition_1/description"
 msgstr "Заработать 45 000 ед. «чистого» опыта."
@@ -1250,7 +1235,7 @@ msgid "quest_309/condition_1/description"
 msgstr "Знішчыць таранам 5 машын праціўніка."
 
 msgid "quest_31/condition_1/description"
-msgstr "Уничтожить 6 лёгких танков."
+msgstr "Уничтожить 6 лёгких танков противника."
 
 msgid "quest_310/condition_1/description"
 msgstr "Знішчыць 35 машын праціўніка за першыя 4 хвіліны бою."
@@ -1297,10 +1282,10 @@ msgid "quest_320/condition_1/description"
 msgstr "Знішчыць 2 машыны праціўніка розных тыпаў у 12 баях."
 
 msgid "quest_322/condition_1/description"
-msgstr "Заработать 25 000 ед. «чистого» опыта, играя на FV249 Castle."
+msgstr "Заработать 25 000 ед. «чистого» опыта."
 
 msgid "quest_323/condition_1/description"
-msgstr "15 раз нанести 1200 ед. урона и победить, играя на FV249 Castle."
+msgstr "15 раз нанести 1200 ед. урона и победить."
 
 msgid "quest_324/condition_1/description"
 msgstr "Обнаружить не менее 5 машин противника и победить в 3 боях."
@@ -1340,6 +1325,11 @@ msgstr "Уничтожить 7 машин противника уровнем �
 msgid "quest_335/condition_1/description"
 msgstr "30 раз попасть в топ-5 своей команды по опыту."
 
+msgid "quest_337/condition_1/description"
+msgstr ""
+"Нанести урон или критические повреждения 4 машинам противника в каждом из 33"
+" боёв."
+
 msgid "quest_34/condition_1/description"
 msgstr "Уничтожить 14 тяжёлых танков противника."
 
@@ -1352,14 +1342,10 @@ msgstr ""
 "машины."
 
 msgid "quest_37/condition_1/description"
-msgstr ""
-"Нанести 30 000 ед. урона противнику, не будучи обнаруженным в момент его "
-"нанесения."
+msgstr "Нанести 30 000 ед. урона, не будучи обнаруженным в момент нанесения."
 
 msgid "quest_37/condition_2/description"
-msgstr ""
-"Нанести 35 000 ед. урона противнику, не будучи обнаруженным в момент его "
-"нанесения."
+msgstr "Нанести 42 000 ед. урона, не будучи обнаруженным в момент нанесения."
 
 msgid "quest_38/condition_1/description"
 msgstr ""
@@ -1367,7 +1353,7 @@ msgstr ""
 
 msgid "quest_38/condition_2/description"
 msgstr ""
-"Нанести 1500 ед. урона и уничтожить машину противника в каждом из 20 боёв."
+"Нанести 1700 ед. урона и уничтожить машину противника в каждом из 18 боёв."
 
 msgid "quest_39/condition_1/description"
 msgstr ""
@@ -1378,18 +1364,16 @@ msgid "quest_4/condition_1/description"
 msgstr "Уничтожить 2 машины разных типов в каждом из 7 боёв."
 
 msgid "quest_40/condition_1/description"
-msgstr ""
-"Нанести 25 000 ед. урона технике противника с дистанции более 300 метров."
+msgstr "Нанести 25 000 ед. урона с дистанции более 300 метров."
 
 msgid "quest_40/condition_2/description"
-msgstr ""
-"Нанести 27 000 ед. урона технике противника с дистанции более 300 метров."
+msgstr "Нанести 35 000 ед. урона с дистанции более 300 метров."
 
 msgid "quest_41/condition_1/description"
 msgstr "Суммарно нанести и заблокировать 3000 ед. урона в каждом из 12 боёв."
 
 msgid "quest_41/condition_2/description"
-msgstr "Суммарно нанести и заблокировать 4500 ед. урона в каждом из 10 боёв."
+msgstr "Суммарно нанести и заблокировать 4500 ед. урона в каждом из 12 боёв."
 
 msgid "quest_42/condition_1/description"
 msgstr "Нанести урон 120 машинам противника."
@@ -1448,7 +1432,7 @@ msgid "quest_55/condition_1/description"
 msgstr "Нанести 6500 ед. урона за бой."
 
 msgid "quest_55/condition_2/description"
-msgstr "Нанести 7500 ед. урона за бой."
+msgstr "Нанести 9000 ед. урона за бой."
 
 msgid "quest_56/condition_1/description"
 msgstr "Заблокировать 5000 ед. урона за бой."
@@ -1465,8 +1449,8 @@ msgstr ""
 
 msgid "quest_58/condition_1/description"
 msgstr ""
-"Нанести урон или критические повреждения 6 машинам противника в каждом "
-"из 6 боёв."
+"Нанести урон или критические повреждения 7 машинам противника в каждом "
+"из 3 боёв."
 
 msgid "quest_59/condition_1/description"
 msgstr ""
@@ -1493,7 +1477,7 @@ msgid "quest_62/condition_1/description"
 msgstr "Получить 165 непробитий."
 
 msgid "quest_62/condition_2/description"
-msgstr "Получить 165 непробитий."
+msgstr "Получить 225 непробитий."
 
 msgid "quest_63/condition_1/description"
 msgstr "Уничтожить 40 машин противника."
@@ -1514,10 +1498,10 @@ msgid "quest_68/condition_1/description"
 msgstr "Совершить 160 критических попаданий."
 
 msgid "quest_69/condition_1/description"
-msgstr "25 раз попасть в топ-5 своей команды по опыту."
+msgstr "32 раза попасть в топ-6 своей команды по урону."
 
 msgid "quest_69/condition_2/description"
-msgstr "50 раз попасть в топ-4 своей команды по опыту."
+msgstr "32 раза попасть в топ-3 своей команды по урону."
 
 msgid "quest_7/condition_1/description"
 msgstr "Уничтожить 5 машин противника за бой."
@@ -1540,7 +1524,7 @@ msgid "quest_73/condition_1/description"
 msgstr "23 раза попасть в топ-4 своей команды по опыту."
 
 msgid "quest_73/condition_2/description"
-msgstr "17 раз попасть в топ-2 своей команды по опыту."
+msgstr "23 раза попасть в топ-2 своей команды по опыту."
 
 msgid "quest_74/condition_1/description"
 msgstr "В 32 боях нанести урона больше, чем прочность собственной машины."
@@ -1552,7 +1536,7 @@ msgid "quest_76/condition_1/description"
 msgstr "8 раз нанести 3000 ед. урона и победить."
 
 msgid "quest_76/condition_2/description"
-msgstr "5 раз нанести 4250 ед. урона и победить."
+msgstr "8 раз нанести 4250 ед. урона и победить."
 
 msgid "quest_77/condition_1/description"
 msgstr "Нанести 3750 ед. урона в 8 боях."
@@ -1561,16 +1545,16 @@ msgid "quest_77/condition_2/description"
 msgstr "Нанести 5000 ед. урона в 8 боях."
 
 msgid "quest_78/condition_1/description"
-msgstr "Нанести урон лёгким танкам противника 23 раз."
+msgstr "Нанести урон лёгким танкам противника 23 раза."
 
 msgid "quest_78/condition_2/description"
-msgstr "Нанести урон лёгким танкам противника 23 раза."
+msgstr "Нанести урон лёгким танкам противника 31 раз."
 
 msgid "quest_79/condition_1/description"
 msgstr "Нанести урон ПТ-САУ противника 70 раз."
 
 msgid "quest_79/condition_2/description"
-msgstr "Нанести урон ПТ-САУ противника 80 раз."
+msgstr "Нанести урон ПТ-САУ противника 95 раз."
 
 msgid "quest_8/condition_1/description"
 msgstr ""
@@ -1583,13 +1567,13 @@ msgid "quest_80/condition_1/description"
 msgstr "Нанести урон средним танкам противника 80 раз."
 
 msgid "quest_80/condition_2/description"
-msgstr "Нанести урон средним танкам противника 80 раз."
+msgstr "Нанести урон средним танкам противника 110 раз."
 
 msgid "quest_81/condition_1/description"
 msgstr "Нанести урон тяжёлым танкам противника 110 раз."
 
 msgid "quest_81/condition_2/description"
-msgstr "Нанести урон тяжёлым танкам противника 135 раз."
+msgstr "Нанести урон тяжёлым танкам противника 150 раз."
 
 msgid "quest_82/condition_1/description"
 msgstr ""
@@ -1604,10 +1588,10 @@ msgstr ""
 "Знішчыць 2 машыны праціўніка і здабыць 900 адз. «чыстага» досведу 5 разоў."
 
 msgid "quest_86/condition_1/description"
-msgstr "Заблокировать 45 000 ед. урона за любое количество боёв."
+msgstr "Заблокировать 55 000 ед. урона за любое количество боёв."
 
 msgid "quest_86/condition_2/description"
-msgstr "Заблокировать 50 000 ед. урона за любое количество боёв."
+msgstr "Заблокировать 75 000 ед. урона за любое количество боёв."
 
 msgid "quest_87/condition_1/description"
 msgstr "Нанести урон или критические повреждения 160 машинам противника."
@@ -1622,7 +1606,7 @@ msgid "quest_9/condition_1/description"
 msgstr "7 раз попасть в топ-2 своей команды по опыту."
 
 msgid "quest_9/condition_2/description"
-msgstr "6 раз занять первое место по опыту в своей команде."
+msgstr "7 раз занять первое место по опыту в своей команде."
 
 msgid "quest_90/condition_1/description"
 msgstr "Заработать 30 000 ед. «чистого» опыта за любое количество боёв."
@@ -1649,7 +1633,7 @@ msgid "quest_95/condition_1/description"
 msgstr "Суммарно нанести, получить и заблокировать 400 000 ед. урона."
 
 msgid "quest_95/condition_2/description"
-msgstr "Суммарно нанести, получить и заблокировать 500 000 ед. урона."
+msgstr "Суммарно нанести, получить и заблокировать 550 000 ед. урона."
 
 msgid "quest_96/condition_1/description"
 msgstr ""

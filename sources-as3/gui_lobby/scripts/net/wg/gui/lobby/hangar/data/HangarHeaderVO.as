@@ -12,6 +12,10 @@ package net.wg.gui.lobby.hangar.data
       
       public var isVisible:Boolean = false;
       
+      public var isNYWidgetVisible:Boolean = false;
+      
+      public var isPostNYEnabled:Boolean = false;
+      
       private var _questsGroups:Vector.<HeaderQuestGroupVO> = null;
       
       public function HangarHeaderVO(param1:Object)

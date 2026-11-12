@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>110</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/hd_env_EVT_NY27_Garland_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.913725 0.423529 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>50.000000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>70.000000</Float>
+					</property>
+					<property>
+						alphaReference
+						<Int>8</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						destBlend
+						<Int>7</Int>
+					</property>
+				</material>
+				<groupOrigin>-12.671936 298.132172 1587.053711</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-836.810364 -0.000078 1281.347046</min>
+		<max>811.466492 433.182648 1909.612427</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>52746</geometrySize>
+	<minUVDensity>0.000132</minUVDensity>
+</root>

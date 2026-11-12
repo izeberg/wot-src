@@ -1,6 +1,6 @@
 from adisp import adisp_process
-from account_helpers.settings_core.settings_constants import OnceOnlyHints
-from constants import ROLE_TYPE
+from account_helpers.settings_core.settings_constants import GAME, OnceOnlyHints
+from constants import Configs, ROLE_TYPE
 from CurrentVehicle import g_currentVehicle
 from constants import RENEWABLE_SUBSCRIPTION_CONFIG
 from gui import makeHtmlString
@@ -110,6 +110,7 @@ class AmmunitionPanel(AmmunitionPanelMeta, IGlobalListener):
             self.__applyCustomizationNewCounter(vehicle)
             self.__updateDevices(vehicle)
             isElite = vehicle.isElite and viewState.isEliteShown()
+            showDifficulty = self.__settingsCore.getSetting(GAME.SHOW_VEHICLE_DIFFICULTY_IN_HANGAR)
             self.as_updateVehicleStatusS({'message': msgString, 
                'rentAvailable': rentAvailable, 
                'isElite': isElite, 
@@ -118,7 +119,8 @@ class AmmunitionPanel(AmmunitionPanelMeta, IGlobalListener):
                'vehicleName': ('{}').format(vehicle.shortUserName), 
                'roleId': vehicle.role if viewState.isRoleShown() else ROLE_TYPE.NOT_DEFINED, 
                'roleMessage': getRoleMessage(g_currentVehicle.item.role) if viewState.isRoleShown() else '', 
-               'vehicleCD': vehicle.intCD})
+               'vehicleCD': vehicle.intCD, 
+               'difficulty': vehicle.difficulty if showDifficulty else None})
             serverSettings = self.__settingsCore.serverSettings
             tutorialStorage = getTutorialGlobalStorage()
             if tutorialStorage is not None:
@@ -138,7 +140,7 @@ class AmmunitionPanel(AmmunitionPanelMeta, IGlobalListener):
         self.update()
 
     def __onServerSettingChanged(self, diff):
-        if RENEWABLE_SUBSCRIPTION_CONFIG in diff:
+        if RENEWABLE_SUBSCRIPTION_CONFIG in diff or Configs.VEHICLE_DIFFICULTY_CONFIG.value in diff:
             self.update()
 
     def __applyCustomizationNewCounter(self, vehicle):

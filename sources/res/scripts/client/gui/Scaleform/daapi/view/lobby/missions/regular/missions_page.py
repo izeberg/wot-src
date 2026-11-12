@@ -125,10 +125,10 @@ class MissionsPage(LobbySubView, MissionsPageMeta):
     def onTabSelected(self, alias, prefix):
         for tab, soundEvents in self.__VOICED_TABS.iteritems():
             if alias == tab and self.__currentTabAlias != tab:
-                self.soundManager.playSound(soundEvents[0])
+                self.soundManager.playInstantSound(soundEvents[0])
                 break
             elif alias != tab and self.__currentTabAlias == tab:
-                self.soundManager.playSound(soundEvents[1])
+                self.soundManager.playInstantSound(soundEvents[1])
                 break
 
         if self.__currentTabAlias == QUESTS_ALIASES.BATTLE_PASS_MISSIONS_VIEW_PY_ALIAS and self.currentTab is not None:

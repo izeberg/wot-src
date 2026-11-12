@@ -95,6 +95,7 @@ class CameraFlightComponent(PyComponentWrapperBase):
 	cameraName = property(lambda self: None)
 	def clear(self, *args, **kwargs): pass
 	def destroy(self, *args, **kwargs): pass
+	dofStartProgress = property(lambda self: None)
 	def id(self, *args, **kwargs): pass
 	maxDuration = property(lambda self: None)
 	minDuration = property(lambda self: None)

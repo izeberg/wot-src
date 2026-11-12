@@ -166,10 +166,6 @@
 						<Texture>vehicles/italy/It36_Gasta/Gasta_hull_01_AO.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>

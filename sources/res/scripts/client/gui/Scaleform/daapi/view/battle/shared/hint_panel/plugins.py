@@ -15,6 +15,7 @@ from gui.Scaleform.daapi.view.battle.shared.hint_panel.crosshair_hint_plugin imp
 from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE, CROSSHAIR_VIEW_ID
 from gui.impl import backport
 from gui.impl.gen import R
+from gui.limited_ui.lui_rules_storage import LuiRules
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
 from gui.shared.events import GameEvent, ViewEventType, LoadViewEvent
 from gui.shared.utils.key_mapping import getReadableKey, getVirtualKey
@@ -25,6 +26,7 @@ from items import makeIntCompactDescrByID
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.battle_session import IBattleSessionProvider
 from skeletons.gui.lobby_context import ILobbyContext
+from skeletons.gui.game_control import ILimitedUIController
 if typing.TYPE_CHECKING:
     from items.vehicles import VehicleDescriptor
 _logger = logging.getLogger(__name__)
@@ -546,6 +548,7 @@ class PreBattleHintPlugin(HintPanelPlugin):
                  '__helpHintSettings', '__isInDisplayPeriod', '__haveReqLevel', '__vehicleId')
     sessionProvider = dependency.descriptor(IBattleSessionProvider)
     lobbyContext = dependency.descriptor(ILobbyContext)
+    limitedUIController = dependency.descriptor(ILimitedUIController)
 
     def __init__(self, parentObj):
         super(PreBattleHintPlugin, self).__init__(parentObj)
@@ -612,11 +615,10 @@ class PreBattleHintPlugin(HintPanelPlugin):
         return
 
     def _getHint(self):
-        serverSettings = self.lobbyContext.getServerSettings()
         if self.__hintInQueue is CommandMapping.CMD_SHOW_HELP:
             return self._makeHintData(R.strings.ingame_gui.helpScreen, HintPriority.HELP, HelpHintContext.MECHANICS)
         if self.__hintInQueue is CommandMapping.CMD_QUEST_PROGRESS_SHOW:
-            if serverSettings.isPersonalMissionsEnabled():
+            if self.__isPersonalMissionsAvailable():
                 return self._makeHintData(R.strings.ingame_gui.battleProgress, HintPriority.QUESTS)
 
     def _makeHintData(self, resourceRoot, priority, hintCtx=None):
@@ -677,7 +679,7 @@ class PreBattleHintPlugin(HintPanelPlugin):
         return self.__checkHintConditions(typeDescriptor) and self.__isInDisplayPeriod and self._haveHintsLeft(self.__helpHintSettings[self.__vehicleId])
 
     def __canDisplayQuestHint(self):
-        return self.__isInDisplayPeriod and self._haveHintsLeft(self.__questHintSettings) and self.__haveReqLevel and self.sessionProvider.arenaVisitor.getArenaGuiType() in ARENA_GUI_TYPE.RANDOM_RANGE and self.lobbyContext.getServerSettings().isPersonalMissionsEnabled()
+        return self.__isInDisplayPeriod and self._haveHintsLeft(self.__questHintSettings) and self.__haveReqLevel and self.sessionProvider.arenaVisitor.getArenaGuiType() in ARENA_GUI_TYPE.RANDOM_RANGE and self.__isPersonalMissionsAvailable()
 
     def __onHintTimeCooldown(self, lastHint):
         if lastHint == CommandMapping.CMD_SHOW_HELP and self.__canDisplayQuestHint():
@@ -718,6 +720,9 @@ class PreBattleHintPlugin(HintPanelPlugin):
             self.__hintInQueue = None
         self.__questHintSettings = self._updateCounterOnUsed(self.__questHintSettings)
         return
+
+    def __isPersonalMissionsAvailable(self):
+        return self.lobbyContext.getServerSettings().isPersonalMissionsEnabled() and self.limitedUIController.isRuleCompleted(LuiRules.PERSONAL_MISSIONS_CONTENT)
 
 
 class RoleHelpPlugin(HintPanelPlugin):

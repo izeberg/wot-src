@@ -2315,6 +2315,20 @@ package
       
       public static const PLATFORMCURRENCYMSG_DEBITED_HONEY_COIN:String = "#messenger:platformCurrencyMsg/debited/honey_coin";
       
+      public static const PLATFORMCURRENCYMSG_DEBITED_PAINTCOIN:String = "#messenger:platformCurrencyMsg/debited/paintcoin";
+      
+      public static const PLATFORMCURRENCYMSG_RECEIVED_NYRFOOD:String = "#messenger:platformCurrencyMsg/received/nyrfood";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_NYRFOOD:String = "#messenger:platformCurrencyMsg/debited/nyrfood";
+      
+      public static const PLATFORMCURRENCYMSG_RECEIVED_NYRFUN:String = "#messenger:platformCurrencyMsg/received/nyrfun";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_NYRFUN:String = "#messenger:platformCurrencyMsg/debited/nyrfun";
+      
+      public static const PLATFORMCURRENCYMSG_RECEIVED_NYRACTIV:String = "#messenger:platformCurrencyMsg/received/nyractiv";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_NYRACTIV:String = "#messenger:platformCurrencyMsg/debited/nyractiv";
+      
       public static const PLATFORMCURRENCYMSG_RECEIVED_FREEXP:String = "#messenger:platformCurrencyMsg/received/freeXP";
       
       public static const PLATFORMCURRENCYMSG_DEBITED_FREEXP:String = "#messenger:platformCurrencyMsg/debited/freeXP";
@@ -2525,6 +2539,8 @@ package
       
       public static const SERVICECHANNELMESSAGES_CHATSUNLOCKED_PRIVATE:String = "#messenger:serviceChannelMessages/chatsUnlocked/private";
       
+      public static const SERVICECHANNELMESSAGES_CHATSUNLOCKED_FOOTER:String = "#messenger:serviceChannelMessages/chatsUnlocked/footer";
+      
       public static const SERVICECHANNELMESSAGES_TRADINGCARAVANCOINADDED_TITLE:String = "#messenger:serviceChannelMessages/tradingCaravanCoinAdded/title";
       
       public static const SERVICECHANNELMESSAGES_TRADINGCARAVANCOINADDED_BODY:String = "#messenger:serviceChannelMessages/tradingCaravanCoinAdded/body";
@@ -2566,10 +2582,6 @@ package
       public static const SERVICECHANNELMESSAGES_SESSIONPROGRESSREWARDSCOMPLETE_HEADER:String = "#messenger:serviceChannelMessages/sessionProgressRewardsComplete/header";
       
       public static const SERVICECHANNELMESSAGES_SESSIONPROGRESSREWARDSCOMPLETE_BODY:String = "#messenger:serviceChannelMessages/sessionProgressRewardsComplete/body";
-      
-      public static const PLATFORMCURRENCYMSG_RECEIVED_RAZLOM_COIN:String = "#messenger:platformCurrencyMsg/received/razlom_coin";
-      
-      public static const PLATFORMCURRENCYMSG_DEBITED_RAZLOM_COIN:String = "#messenger:platformCurrencyMsg/debited/razlom_coin";
       
       public static const SERVICECHANNELMESSAGES_SYSTEMMIXERVOLUMEDISABLEDSYSMESSAGE_HEADER:String = "#messenger:serviceChannelMessages/systemMixerVolumeDisabledSysMessage/header";
       

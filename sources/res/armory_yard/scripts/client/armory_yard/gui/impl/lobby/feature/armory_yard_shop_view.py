@@ -4,32 +4,33 @@ from armory_yard.gui.impl.lobby.feature.armory_yard_shop_base import ArmoryYardS
 from armory_yard.gui.impl.lobby.feature.tooltips.armory_yard_currency_tooltip_view import ArmoryYardCurrencyTooltipView
 from armory_yard.gui.impl.lobby.feature.tooltips.armory_yard_simple_tooltip_view import ArmoryYardSimpleTooltipView
 from armory_yard.gui.impl.gen.view_models.views.lobby.feature.armory_yard_shop_view_model import ArmoryYardShopViewModel, BackButtonState
-from armory_yard.gui.impl.gen.view_models.views.lobby.feature.armory_yard_main_view_model import TabId
 from armory_yard.gui.window_events import showArmoryYardShopBuyWindow
 from armory_yard.gui.shared.shop_bonus_packers import packShopItem
+from armory_yard_helpers import evaluatePrerequisiteToken
 from frameworks.wulf import WindowFlags, WindowLayer, ViewSettings, ViewFlags
 from gui.impl.gen import R
 from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.impl.pub.lobby_window import LobbyWindow
 from gui.impl.wrappers.user_compound_price_model import PriceModelBuilder
-from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getShopRootUrl
 from gui.shared.money import Money
-from gui.shop import showIngameShop, Origin
 from helpers import dependency
 from skeletons.gui.game_control import IArmoryYardShopController, IArmoryYardController
+from skeletons.gui.shared import IItemsCache
 _logger = logging.getLogger(__name__)
 
 class ArmoryYardShopView(ArmoryYardShopBaseView):
-    __slots__ = ('__isArmoryVisiting', )
+    __slots__ = ('__isArmoryVisiting', '__onCloseCallback')
     __ayShopCtrl = dependency.descriptor(IArmoryYardShopController)
     __ayCtrl = dependency.descriptor(IArmoryYardController)
+    __itemsCache = dependency.descriptor(IItemsCache)
 
-    def __init__(self, layoutID, onLoadedCallback=None):
+    def __init__(self, layoutID, onLoadedCallback=None, onCloseCallback=None):
         settings = ViewSettings(layoutID)
         settings.flags = ViewFlags.LOBBY_TOP_SUB_VIEW
         settings.model = ArmoryYardShopViewModel()
         super(ArmoryYardShopView, self).__init__(settings, onLoadedCallback)
         self.__isArmoryVisiting = self.__ayCtrl.isArmoryVisiting
+        self.__onCloseCallback = onCloseCallback
 
     @property
     def viewModel(self):
@@ -59,7 +60,16 @@ class ArmoryYardShopView(ArmoryYardShopBaseView):
                 PriceModelBuilder.fillPriceModel(vm.tokenPrice, Money.makeMoney(self.__ayShopCtrl.conversionPrices))
                 items = vm.getItems()
                 items.clear()
+                amountValues = []
                 for productId, product in self.__ayShopCtrl.products.iteritems():
+                    prerequisiteToken = product.get('prerequisiteToken')
+                    if prerequisiteToken:
+                        tokenID = prerequisiteToken.get('id')
+                        tokensAmount = self.__itemsCache.items.tokens.getTokenCount(tokenID)
+                        isBlocked, diff = evaluatePrerequisiteToken(prerequisiteToken, tokensAmount)
+                        amountValues.append(diff)
+                        if isBlocked:
+                            continue
                     item = packShopItem(productId, product)
                     if item is None:
                         _logger.error('ArmoryYardShop product %s failed pack', productId)
@@ -67,14 +77,13 @@ class ArmoryYardShopView(ArmoryYardShopBaseView):
                         items.addViewModel(item)
 
                 items.invalidate()
+                vm.setSpecialOffersLimit(min(amountValues) if amountValues else 0)
             return
 
     def onBack(self):
+        if self.__onCloseCallback:
+            self.__onCloseCallback()
         self.destroyWindow()
-        if self.__isArmoryVisiting:
-            self.__ayCtrl.goToArmoryYard(tabId=TabId.PROGRESS)
-        else:
-            showIngameShop(getShopRootUrl(), Origin.HANGAR_TOP_MENU)
 
     def _getEvents(self):
         return (
@@ -120,5 +129,5 @@ class ArmoryYardShopView(ArmoryYardShopBaseView):
 class ArmoryYardShopWindow(LobbyWindow):
     __slots__ = ()
 
-    def __init__(self, parent=None, onLoadedCallback=None):
-        super(ArmoryYardShopWindow, self).__init__(wndFlags=WindowFlags.WINDOW, layer=WindowLayer.TOP_SUB_VIEW, content=ArmoryYardShopView(R.views.armory_yard.lobby.feature.ArmoryYardShopView(), onLoadedCallback=onLoadedCallback), parent=parent)
+    def __init__(self, parent=None, onLoadedCallback=None, onCloseCallback=None):
+        super(ArmoryYardShopWindow, self).__init__(wndFlags=WindowFlags.WINDOW, layer=WindowLayer.TOP_SUB_VIEW, content=ArmoryYardShopView(R.views.armory_yard.lobby.feature.ArmoryYardShopView(), onLoadedCallback=onLoadedCallback, onCloseCallback=onCloseCallback), parent=parent)

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<itemGroup>
+		<name>NY27_Inscription_147</name>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT inscriptions 25g notInShop</priceGroup>
+		<type>inscription</type>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<decal>
+			<id>31489</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/NY27_Inscription_01_147.dds</texture>
+			<userString>#vehicle_customization:NY27_Inscription_01_147/name</userString>
+			<description>#vehicle_customization:NY27_Inscription_01_147/description</description>
+		</decal>
+		<decal>
+			<id>31490</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/NY27_Inscription_02_147.dds</texture>
+			<userString>#vehicle_customization:NY27_Inscription_02_147/name</userString>
+			<description>#vehicle_customization:NY27_Inscription_02_147/description</description>
+		</decal>
+		<decal>
+			<id>31491</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/NY27_Inscription_03_147.dds</texture>
+			<userString>#vehicle_customization:NY27_Inscription_03_147/name</userString>
+			<description>#vehicle_customization:NY27_Inscription_03_147/description</description>
+		</decal>
+		<decal>
+			<id>31492</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/NY27_Inscription_04_147.dds</texture>
+			<userString>#vehicle_customization:NY27_Inscription_04_147/name</userString>
+			<description>#vehicle_customization:NY27_Inscription_04_147/description</description>
+		</decal>
+	</itemGroup>
+</root>

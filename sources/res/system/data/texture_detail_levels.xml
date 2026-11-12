@@ -152,6 +152,37 @@
 			</directory>
 		</directory>
 		<directory>
+			<path>Hangars</path>
+			<directory>
+				<path>h03_mt_ny_2025</path>
+				<directory>
+					<path>environment</path>
+					<rule>
+						<allowSplit>false</allowSplit>
+						<pattern>.*hd_h03_NY25_0015_Robot_1_AM\.dds</pattern>
+					</rule>
+				</directory>
+			</directory>
+			<directory>
+				<path>h03_mt_ny_2026</path>
+				<directory>
+					<path>environment</path>
+					<rule>
+						<allowSplit>false</allowSplit>
+						<pattern>.*h03_NY27_Object_02_AM\.dds</pattern>
+					</rule>
+					<rule>
+						<allowSplit>false</allowSplit>
+						<pattern>.*h03_NY27_RacconTV_Screen_AM\.dds</pattern>
+					</rule>
+					<rule>
+						<allowSplit>false</allowSplit>
+						<pattern>.*h03_NY26_Object_10_1_AM\.dds</pattern>
+					</rule>
+				</directory>
+			</directory>
+		</directory>
+		<directory>
 			<path>MilitaryEnvironment</path>
 			<directory>
 				<path>00_Tiles</path>

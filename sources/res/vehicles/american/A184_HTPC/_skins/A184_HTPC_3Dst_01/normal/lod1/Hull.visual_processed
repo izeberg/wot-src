@@ -132,6 +132,10 @@
 						</Float>
 					</property>
 					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
 						g_maskBias
 						<Float>
 							0.18
@@ -144,7 +148,10 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>8.028001 4.014000 0.000000 0.000000</Vector4>
+						<Vector4>
+							8.028 7.014 0.0 0.0
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -155,12 +162,20 @@
 						<Texture>vehicles/american/A184_HTPC/_skins/A184_HTPC_3Dst_01/HTPC_3Dst_01_hull_01_ANM.dds</Texture>
 					</property>
 					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/american/A184_HTPC/_skins/A184_HTPC_3Dst_01/HTPC_3Dst_01_hull_01_AO.dds</Texture>
 					</property>
 					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
 					</property>
 					<property>
 						g_detailPowerAlbedo
@@ -170,14 +185,14 @@
 						</Float>
 					</property>
 				</material>
-				<groupOrigin>0.028390 0.073352 -0.017294</groupOrigin>
+				<groupOrigin>0.028390 0.073352 -0.029090</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-1.723465 -0.503123 -3.956939</min>
-		<max>1.780244 0.649826 3.922351</max>
+		<max>1.780244 0.649826 3.898760</max>
 	</boundingBox>
-	<geometrySize>479690</geometrySize>
-	<minUVDensity>0.000826</minUVDensity>
+	<geometrySize>248058</geometrySize>
+	<minUVDensity>0.000712</minUVDensity>
 </root>

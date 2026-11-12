@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd3</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>4</Int>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/hd_env_EVT_NY27_Garland_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>1.000000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>80.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 2.003166 0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Outland/hd_out_EVT_NY27_0013_GlowingBall/hd_out_EVT_NY27_0013_GlowingBall_01_fwd_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>1.000000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>22.000000</Float>
+					</property>
+					<sortOrder>1</sortOrder>
+				</material>
+				<groupOrigin>0.000000 2.004218 0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Outland/hd_out_EVT_NY27_0013_GlowingBall/hd_out_EVT_NY27_0013_GlowingBall_fwd_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 0.654902 0.254902 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>3.000000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>200.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.000000 2.652465 0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Outland/hd_out_EVT_NY27_0013_GlowingBall/hd_out_EVT_NY27_0013_GlowingBall_fwd_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Outland/hd_out_EVT_NY27_0013_GlowingBall/hd_out_EVT_NY27_0013_GlowingBall_fwd_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Outland/hd_out_EVT_NY27_0013_GlowingBall/hd_out_EVT_NY27_0013_GlowingBall_fwd_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 2.676709 -0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-2.001342 0.001432 -2.001338</min>
+		<max>2.001341 5.303498 2.001338</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>112114</geometrySize>
+	<minUVDensity>0.011583</minUVDensity>
+</root>

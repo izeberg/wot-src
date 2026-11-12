@@ -721,9 +721,6 @@ msgstr "Полигон"
 msgid "bonusType/6"
 msgstr "Боевое обучение"
 
-msgid "bonusType/61"
-msgstr "Разлом"
-
 msgid "bonusType/7"
 msgstr "Командный бой"
 
@@ -1118,9 +1115,6 @@ msgstr "Создать взвод события"
 
 msgid "contextMenu/createMapboxSquad"
 msgstr "Разведка боем: создать взвод"
-
-msgid "contextMenu/createPortalSquad"
-msgstr "Взвод события «Разлом»"
 
 msgid "contextMenu/createPrivateChannel"
 msgstr "Отправить сообщение"
@@ -5783,6 +5777,27 @@ msgstr "Оказывайте помощь в уничтожении против
 msgid "roleExp/action/searchEnemy"
 msgstr "Обнаруживайте технику противника."
 
+msgid "roleExp/difficultyLabel"
+msgstr "Сложность:"
+
+msgid "roleExp/difficultyName/easy"
+msgstr "Низкая сложность"
+
+msgid "roleExp/difficultyName/high"
+msgstr "Высокая сложность"
+
+msgid "roleExp/difficultyName/medium"
+msgstr "Средняя сложность"
+
+msgid "roleExp/difficultyName/short/easy"
+msgstr "Низкая"
+
+msgid "roleExp/difficultyName/short/high"
+msgstr "Высокая"
+
+msgid "roleExp/difficultyName/short/medium"
+msgstr "Средняя"
+
 msgid "roleExp/roleDescr/role_ATSPG_assault"
 msgstr ""
 "Машины с невысокой подвижностью, но мощным фронтальным бронированием. "
@@ -6513,6 +6528,15 @@ msgstr "?empty?"
 
 msgid "tankCarousel/vehicleStates/notpresent"
 msgstr "Нет в Ангаре"
+
+msgid "tankCarousel/vehicleStates/nyTank"
+msgstr "Новогодняя техника"
+
+msgid "tankCarousel/vehicleStates/nyTankEmptyCount"
+msgstr "Свободных слотов: %(count)d"
+
+msgid "tankCarousel/vehicleStates/nyTankSlotsFull"
+msgstr "Все слоты заняты"
 
 msgid "tankCarousel/vehicleStates/rentable"
 msgstr "Доступна аренда машины"

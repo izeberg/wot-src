@@ -4,4 +4,8 @@
 	<parent>vehicles/russian/R177_ISU_152K_BL10/crash/lod4/Gun_01</parent>
 	<extent>192.000000</extent>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.393877 -0.484300 -0.711812</min>
+		<max>0.435722 0.394908 5.859393</max>
+	</visibilityBox>
 </root>

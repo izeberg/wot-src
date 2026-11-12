@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>0.000000</duration>
+	<duration>3.696750</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -9,13 +9,87 @@
 	<sequenceObject>
 		<name>stg_26_FullTank</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/GB142_FV249_Castle/normal/lod0/stg_26_FullTank.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/F144_Etoile/normal/lod0/stg_26_done.model</resource>
 		<track>
 			<name>visibility</name>
 			<type>bool</type>
 			<frame>
 				<startTime>0.000000</startTime>
 				<value>true</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Number_Lamps</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/normal/lod0/h00_AY26_EP10_Number_Lamps.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-8.937698 0.039617 -9.511619</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -84.099998 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Decoration</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/normal/lod0/h00_AY26_EP10_Decoration_02.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.145000 -1.520000 3.992000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ay_ui_lights_on</name>
+		<type>sound</type>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.696750</duration>
+				<sequenceSound>ay_ui_lights_on</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
 			</frame>
 		</track>
 	</sequenceObject>

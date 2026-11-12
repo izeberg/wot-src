@@ -440,14 +440,19 @@ class _AsyncExecutorNonRec(object):
     def __step(self, nextop, *args):
         while True:
             try:
-                future = nextop(*args)
+                try:
+                    future = nextop(*args)
+                finally:
+                    del nextop
+                    del args
+
                 handler = getattr(future, 'cancel', None)
                 self.__promise.set_cancel_handler(handler)
                 continuation, recurse = self.__resume_cont()
                 future.then(partial(self.__resume, continuation=continuation))
                 if not recurse:
                     return recurse.append(None)
-                nextop, args = recurse
+                nextop, args = recurse.pop()
             except AsyncReturn as r:
                 return self.__promise.set_value(r.value)
             except StopIteration:
@@ -460,7 +465,7 @@ class _AsyncExecutorNonRec(object):
     def __resume_cont(self):
         storage = []
         return (
-         lambda first, *rest: storage.extend((first, rest)) if not storage else self.__step(first, *rest),
+         lambda first, *rest: storage.append((first, rest)) if not storage else self.__step(first, *rest),
          storage)
 
     def __resume(self, result, continuation):

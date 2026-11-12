@@ -18,6 +18,7 @@ class ArmoryYardShopController(IArmoryYardShopController, IGlobalListener):
     def __init__(self):
         self.__eventManager = EventManager()
         self.__products = {}
+        self.__prerequisiteTokens = set()
         self.onProductsUpdate = Event(self.__eventManager)
         self.onAYCoinsUpdate = Event(self.__eventManager)
         self.onSettingsUpdate = Event(self.__eventManager)
@@ -79,14 +80,20 @@ class ArmoryYardShopController(IArmoryYardShopController, IGlobalListener):
 
     def __productUpdate(self, limits):
         self.__products = {}
+        self.__prerequisiteTokens = set()
         for productId, productParams in self.__settings.get('products', {}).iteritems():
             limit = limits.get(productId, 0)
             if 'limit' in productParams and limit >= productParams['limit']:
                 continue
             self.__products[productId] = productParams
             self.__products[productId]['currCount'] = limit
+            if 'prerequisiteToken' in productParams:
+                prerequisiteTokenID = productParams['prerequisiteToken'].get('id')
+                if prerequisiteTokenID is not None:
+                    self.__prerequisiteTokens.add(prerequisiteTokenID)
 
         self.onProductsUpdate()
+        return
 
     def __subscribe(self):
         self.__lobbyContext.getServerSettings().onServerSettingsChange += self.__onServerSettingsChanged
@@ -99,6 +106,9 @@ class ArmoryYardShopController(IArmoryYardShopController, IGlobalListener):
     def isBundle(self, productId):
         productInfo = self.products.get(productId)
         return productInfo and 'exclusiveVehicle' in productInfo
+
+    def isPrerequisiteToken(self, tokenID):
+        return tokenID in self.__prerequisiteTokens
 
     def fini(self):
         self.__unsubscribe()

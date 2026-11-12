@@ -69,6 +69,10 @@
 						</Float>
 					</property>
 					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
 						g_maskBias
 						<Float>
 							0.18
@@ -81,7 +85,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>8.028001 4.014000 0.000000 0.000000</Vector4>
+						<Vector4>8.028000 4.014000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -110,10 +114,6 @@
 							<!--BW_String-->
 						</Float>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>-0.047626 0.919877 -1.027556</groupOrigin>
 			</primitiveGroup>
@@ -123,6 +123,6 @@
 		<min>-1.582089 0.000009 -3.254118</min>
 		<max>1.486837 1.839745 1.199005</max>
 	</boundingBox>
-	<geometrySize>720688</geometrySize>
+	<geometrySize>274672</geometrySize>
 	<minUVDensity>0.000503</minUVDensity>
 </root>

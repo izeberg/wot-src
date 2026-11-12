@@ -954,7 +954,10 @@
 					<isLeft>true</isLeft>
 					<name>WD_L4</name>
 					<geometry>
-						<radius>0.320493</radius>
+						<radius>
+							0.4138
+							<!--BW_String-->
+						</radius>
 					</geometry>
 					<isLeading>true</isLeading>
 					<trackPairIdx>0</trackPairIdx>
@@ -993,7 +996,10 @@
 					<isLeft>false</isLeft>
 					<name>WD_R4</name>
 					<geometry>
-						<radius>0.320493</radius>
+						<radius>
+							0.4138
+							<!--BW_String-->
+						</radius>
 					</geometry>
 					<isLeading>true</isLeading>
 					<trackPairIdx>0</trackPairIdx>
@@ -1486,7 +1492,10 @@
 						<segmentSyncPivotOffset>0</segmentSyncPivotOffset>
 						<sync>
 							<name>WD_L4</name>
-							<startAngle>2.979355</startAngle>
+							<startAngle>
+								0.15
+								<!--BW_String-->
+							</startAngle>
 							<teethCount>13</teethCount>
 						</sync>
 						<sync>
@@ -1773,7 +1782,10 @@
 						<segmentSyncPivotOffset>0</segmentSyncPivotOffset>
 						<sync>
 							<name>WD_R4</name>
-							<startAngle>2.979413</startAngle>
+							<startAngle>
+								0.15
+								<!--BW_String-->
+							</startAngle>
 							<teethCount>13</teethCount>
 						</sync>
 						<sync>
@@ -2013,7 +2025,7 @@
 			<guns>
 				<_105mm_T254_ACIT>
 					shared
-					<maxAmmo>45</maxAmmo>
+					<maxAmmo>48</maxAmmo>
 					<unlocks/>
 					<armor>
 						<gun>40</gun>
@@ -2026,14 +2038,14 @@
 						</maxPitch>
 					</pitchLimits>
 					<clip>
-						<count>3</count>
-						<rate>24</rate>
+						<count>4</count>
+						<rate>15</rate>
 					</clip>
 					<shotDispersionRadius>
 						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>30</reloadTime>
+					<reloadTime>34</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12

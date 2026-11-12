@@ -6,6 +6,8 @@ from items.components.c11n_constants import CustomizationNamesToTypes, Customiza
 from optional_bonuses import BONUS_MERGERS
 from soft_exception import SoftException
 AVAILABLE_STATISTICS_STORAGE = ('pdata', 'webservice')
+SELECTION_CARDS_COUNT_KEY = 'selectionCardsCount'
+OPEN_BY_DEFAULT_ID = 'openByDefaultId'
 if TYPE_CHECKING:
     from typing import Any, Callable, Dict, List, Union
 

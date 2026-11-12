@@ -95,6 +95,7 @@ def createVehicleDataModel(node):
     vehicle = node.getItem()
     if vehicle:
         fillVehicleInfo(vehicleData, vehicle)
+        vehicleData.setDifficulty(vehicle.difficulty or 0)
         BuyPriceModelBuilder.clearPriceModel(vehicleData.price)
         BuyPriceModelBuilder.fillPriceModelByItemPrice(vehicleData.price, vehicle.getBuyPrice(), checkBalanceAvailability=True)
         fillUnlockModel(vehicleData.unlock, node.getUnlockProps())
@@ -131,7 +132,10 @@ def updateVehiclesInfo(model, diff):
     for vehicleData in vehiclesData:
         diffNode = diff.get(vehicleData.getNodeId(), None)
         if diffNode:
-            fillVehicleInfo(vehicleData, diffNode.getItem())
+            vehicle = diffNode.getItem()
+            fillVehicleInfo(vehicleData, vehicle)
+            difficulty = vehicle.difficulty
+            vehicleData.setDifficulty(0 if difficulty is None else difficulty)
 
     vehiclesData.invalidate()
     return

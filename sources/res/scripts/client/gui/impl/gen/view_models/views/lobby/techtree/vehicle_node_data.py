@@ -5,7 +5,7 @@ from gui.impl.gen.view_models.views.lobby.techtree.item_unlock import ItemUnlock
 class VehicleNodeData(VehicleInfoModel):
     __slots__ = ()
 
-    def __init__(self, properties=14, commands=0):
+    def __init__(self, properties=15, commands=0):
         super(VehicleNodeData, self).__init__(properties=properties, commands=commands)
 
     @property
@@ -36,9 +36,16 @@ class VehicleNodeData(VehicleInfoModel):
     def setCanAddToCompare(self, value):
         self._setBool(13, value)
 
+    def getDifficulty(self):
+        return self._getNumber(14)
+
+    def setDifficulty(self, value):
+        self._setNumber(14, value)
+
     def _initialize(self):
         super(VehicleNodeData, self)._initialize()
         self._addViewModelProperty('price', PriceModel())
         self._addViewModelProperty('unlock', ItemUnlock())
         self._addNumberProperty('nodeId', 0)
         self._addBoolProperty('canAddToCompare', False)
+        self._addNumberProperty('difficulty', 0)

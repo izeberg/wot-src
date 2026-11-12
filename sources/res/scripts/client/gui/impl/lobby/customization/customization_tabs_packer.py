@@ -1,8 +1,7 @@
 from CurrentVehicle import g_currentVehicle
 from gui.customization.constants import CustomizationModes
 from gui.impl.gen.view_models.views.lobby.customization.customization_tab_item_model import CustomizationTabItemModel
-from gui.impl.lobby.customization.shared import CustomizationTabs, getTabGroupId, checkSlotsFilling
-from gui.shared.gui_items import GUI_ITEM_TYPE_NAMES
+from gui.impl.lobby.customization.shared import CustomizationTabs, checkSlotsFilling, getTabGroupId, getTabItemTypeName
 from gui.shared.gui_items.customization.c11n_items import Style
 
 def fillTabsModel(tabsModel, ctx, carouselDP):
@@ -41,15 +40,13 @@ def getItemTabsData(ctx, carouselDP):
     selectedGroupId, _ = getTabGroupId(ctx.tabId)
     for tabId in visibleTabs:
         slotType = CustomizationTabs.SLOT_TYPES[tabId]
-        itemTypeName = GUI_ITEM_TYPE_NAMES[slotType]
+        itemTypeName = getTabItemTypeName(tabId)
         slotsCount, filledSlotsCount = checkSlotsFilling(outfit, slotType)
         groupId, _ = getTabGroupId(tabId)
         showPlus = filledSlotsCount < slotsCount and selectedGroupId == groupId
         tabItemTypes = CustomizationTabs.ITEM_TYPES[tabId]
         noveltyCounter = 0
         if tabId in CustomizationTabs.STYLES_ALL:
-            prefix = CustomizationTabs.STYLE_PREFIX[tabId]
-            itemTypeName = itemTypeName + ('_{}').format(prefix)
             newItems = [ item for item in vehicle.getNewC11nItems(proxy) if isinstance(item, Style) ]
             for item in newItems:
                 if item.is3D and tabId == CustomizationTabs.STYLED_3D or not item.is3D and tabId == CustomizationTabs.STYLED_2D:

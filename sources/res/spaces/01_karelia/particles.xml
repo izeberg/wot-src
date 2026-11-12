@@ -44,6 +44,10 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_forward/pfx_textures/glow_bloom.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_misc_7.dds
 				<type>primary</type>
 			</path>
@@ -77,6 +81,10 @@
 			</path>
 			<path>
 				particles/content_forward/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/ny27_clapperboard.dds
 				<type>primary</type>
 			</path>
 		</preloadTextures>
@@ -295,6 +303,18 @@
 			</path>
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex_distortion.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/glow_bloom.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/flare_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/ny27_clapperboard.dds
 				<type>primary</type>
 			</path>
 		</preloadTextures>

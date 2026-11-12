@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A186_M103_Improved/crash/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-2.016264 -1.154598 -4.044816</min>
+		<max>2.075738 0.832065 4.718873</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A186_M103_Improved/crash/lod3/Hull</nodefullVisual>
+</root>

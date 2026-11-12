@@ -484,6 +484,22 @@
 				<!--BW_String-->
 			</repairCost>
 		</A_220A_Ch76>
+		<A_220A_Ch77>
+			<id>31019</id>
+			<userString>#china_vehicles:A_220A_Ch77</userString>
+			<tags/>
+			<level>10</level>
+			<notInShop>true</notInShop>
+			<price>51600</price>
+			<weight>40</weight>
+			<distance>720</distance>
+			<maxHealth>250</maxHealth>
+			<maxRegenHealth>75</maxRegenHealth>
+			<repairCost>
+				3.5
+				<!--BW_String-->
+			</repairCost>
+		</A_220A_Ch77>
 		<A_220B_1_113>
 			<id>253</id>
 			<userString>#china_vehicles:A-220B_1</userString>

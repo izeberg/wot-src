@@ -3644,7 +3644,25 @@ RECORDS = (
  (
   'singleAchievements', 'portal2026Medal_1', 'p', 'B', 1),
  (
-  'singleAchievements', 'portal2026Medal_2', 'p', 'B', 1))
+  'singleAchievements', 'portal2026Medal_2', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_6_2', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_6_2_champion_0', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_6_2_champion_1', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_6_2_champion_2', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_6_2_legend_0', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_6_2_legend_1', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_6_2_legend_2', 'p', 'B', 1),
+ (
+  'singleAchievements', 'NY27_AtmsphrLevel', 'p', 'B', 1),
+ (
+  'singleAchievements', 'NY27_CelebTaskCompleted', 'p', 'B', 1))
 RECORD_INDICES = dict((rec[:2], idx) for idx, rec in enumerate(RECORDS))
 RECORD_DB_IDS = {('total', 'creationTime'): 68, 
    ('total', 'lastBattleTime'): 7, 
@@ -5468,7 +5486,16 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', 'comp7_6_1_legend_2'): 31182, 
    ('singleAchievements', 'portal2026Medal_1'): 31183, 
    ('singleAchievements', 'portal2026Medal_2'): 31184, 
-   ('singleAchievements', '16YearsOfService'): 31185}
+   ('singleAchievements', '16YearsOfService'): 31185, 
+   ('singleAchievements', 'comp7_6_2'): 31186, 
+   ('singleAchievements', 'comp7_6_2_champion_0'): 31187, 
+   ('singleAchievements', 'comp7_6_2_champion_1'): 31188, 
+   ('singleAchievements', 'comp7_6_2_champion_2'): 31189, 
+   ('singleAchievements', 'comp7_6_2_legend_0'): 31190, 
+   ('singleAchievements', 'comp7_6_2_legend_1'): 31191, 
+   ('singleAchievements', 'comp7_6_2_legend_2'): 31192, 
+   ('singleAchievements', 'NY27_AtmsphrLevel'): 31193, 
+   ('singleAchievements', 'NY27_CelebTaskCompleted'): 31194}
 DB_ID_TO_RECORD = dict([ (value, key) for key, value in RECORD_DB_IDS.iteritems() ])
 RECORD_DB_IDS.update({('vehTypeFrags', ''): 863, 
    ('a15x15Cut', ''): 864, 

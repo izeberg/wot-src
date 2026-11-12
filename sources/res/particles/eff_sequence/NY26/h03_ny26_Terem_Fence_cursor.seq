@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>4.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>snowflakes_trail_01</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h03_ny26_snowflakes.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>18.246792 -3.004627 3.423691</value>
+				<inTangent>-3.640358 -0.000000 18.970116</inTangent>
+				<outTangent>-3.640358 -0.000000 18.970116</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>21.108940 2.000000 25.158409</value>
+				<inTangent>10.921277 3.946994 25.755051</inTangent>
+				<outTangent>10.921277 3.946994 25.755051</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.666667</startTime>
+				<value>41.771526 2.711227 36.527298</value>
+				<inTangent>41.416996 -1.823134 -0.363798</inTangent>
+				<outTangent>41.416996 -1.823134 -0.363798</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>49.334496 1.666124 -5.587227</value>
+				<inTangent>-8.041694 -4.466915 -90.153244</inTangent>
+				<outTangent>-8.041694 -4.466915 -90.153244</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.333333</startTime>
+				<value>19.185333 1.666124 -35.737213</value>
+				<inTangent>-25.036985 -0.000000 -2.797357</inTangent>
+				<outTangent>-25.036985 -0.000000 -2.797357</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>18.246799 -3.004630 3.423690</value>
+				<inTangent>1.323851 30.404346 4.988846</inTangent>
+				<outTangent>1.323851 30.404346 4.988846</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>3.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>7.531240</inTangent>
+				<outTangent>7.531240</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.012196</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>65795</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.666667</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>0.006573</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-8.042504</inTangent>
+				<outTangent>-8.042504</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>particleSize</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

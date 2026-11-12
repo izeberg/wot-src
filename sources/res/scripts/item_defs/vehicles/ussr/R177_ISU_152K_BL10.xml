@@ -5009,6 +5009,50 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<drivenJoints>
+						<master>
+							<node>Gun</node>
+							<table>
+								<row>-11</row>
+								<row>0</row>
+								<row>5</row>
+							</table>
+							<slaves>
+								<slave>
+									<node>Joint_visor</node>
+									<table>
+										<row>-13</row>
+										<row>0</row>
+										<row>2</row>
+									</table>
+								</slave>
+							</slaves>
+						</master>
+						<master>
+							<node>turret</node>
+							<pitch>
+								<row>0</row>
+							</pitch>
+							<yaw>
+								<row>-10</row>
+								<row>0</row>
+								<row>10</row>
+							</yaw>
+							<slaves>
+								<slave>
+									<node>Joint_turret</node>
+									<pitch>
+										<row>0</row>
+									</pitch>
+									<yaw>
+										<row>10</row>
+										<row>0</row>
+										<row>-10</row>
+									</yaw>
+								</slave>
+							</slaves>
+						</master>
+					</drivenJoints>
 					<camouflage>
 						<density>
 							111.166 122.182

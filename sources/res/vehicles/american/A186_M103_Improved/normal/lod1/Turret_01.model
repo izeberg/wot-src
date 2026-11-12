@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A186_M103_Improved/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.617322 -0.000927 -2.863392</min>
+		<max>1.617322 1.856539 1.512752</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A186_M103_Improved/normal/lod1/Turret_01</nodefullVisual>
+</root>

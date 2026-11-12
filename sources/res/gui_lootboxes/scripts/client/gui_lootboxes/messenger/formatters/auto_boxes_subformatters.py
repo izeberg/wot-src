@@ -1,6 +1,6 @@
 import BigWorld, typing
-from adisp import adisp_async, adisp_process
 from dossiers2.ui.achievements import BADGES_BLOCK
+from adisp import adisp_async, adisp_process
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.server_events.bonuses import getMergedBonusesFromDicts
@@ -8,8 +8,8 @@ from gui.shared.gui_items.dossier import getAchievementFactory
 from gui.shared.gui_items.loot_box import ALL_LUNAR_NY_LOOT_BOX_TYPES, EventLootBoxes, WTLootBoxes, NewYearLootBoxes
 from helpers import dependency, time_utils
 from messenger import g_settings
-from messenger.formatters.service_channel import LootBoxAchievesFormatter, QuestAchievesFormatter, ServiceChannelFormatter, WaitItemsSyncFormatter
-from messenger.formatters.service_channel_helpers import MessageData, getCustomizationItemData, getRewardsForBoxes
+from messenger.formatters.service_channel import QuestAchievesFormatter, LootBoxAchievesFormatter, ServiceChannelFormatter, WaitItemsSyncFormatter
+from messenger.formatters.service_channel_helpers import MessageData, getRewardsForBoxes, getCustomizationItemData
 from skeletons.gui.game_control import ISummerSaleController
 from skeletons.gui.shared import IItemsCache
 from shared_utils import first
@@ -260,7 +260,7 @@ class ImmediatelyOpenLootBoxFormatter(AsyncAutoLootBoxSubFormatter):
 
     @classmethod
     def __getLootBoxType(cls):
-        cls.__immediatelyOpenBoxType.update(lb.getType() for lb in cls.__itemsCache.items.tokens.getLootBoxes().values() if lb.isImmediatelyOpen)
+        cls.__immediatelyOpenBoxType.update(lb.getType() for lb in cls.__itemsCache.items.tokens.getLootBoxes().values() if lb.isImmediatelyOpen())
         return cls.__immediatelyOpenBoxType
 
     def __formHeader(self, boxID):

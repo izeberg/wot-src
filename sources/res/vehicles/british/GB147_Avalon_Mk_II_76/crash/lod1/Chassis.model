@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB147_Avalon_Mk_II_76/crash/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.457352 0.010964 -3.181671</min>
+		<max>1.456984 1.060236 3.218654</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB147_Avalon_Mk_II_76/crash/lod1/Chassis</nodefullVisual>
+</root>

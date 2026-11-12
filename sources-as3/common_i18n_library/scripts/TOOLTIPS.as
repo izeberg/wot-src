@@ -81,6 +81,12 @@ package
       
       public static const HANGAR_UNLOCKBUTTON:String = "#tooltips:hangar/unlockButton";
       
+      public static const HANGAR_VEHICLEDIFFICULTY_1:String = "#tooltips:hangar/vehicleDifficulty/1";
+      
+      public static const HANGAR_VEHICLEDIFFICULTY_2:String = "#tooltips:hangar/vehicleDifficulty/2";
+      
+      public static const HANGAR_VEHICLEDIFFICULTY_3:String = "#tooltips:hangar/vehicleDifficulty/3";
+      
       public static const HANGAR_CREW_RUDY_DOG:String = "#tooltips:hangar/crew/rudy/dog";
       
       public static const HEADER_ELITEICON:String = "#tooltips:header/eliteIcon";
@@ -1558,6 +1564,18 @@ package
       public static const HANGAR_MENU_BODY:String = "#tooltips:hangar/menu/body";
       
       public static const HANGAR_STATUS_TORENT:String = "#tooltips:hangar/status/toRent";
+      
+      public static const HANGAR_VEHICLEDIFFICULTY_1_HEADER:String = "#tooltips:hangar/vehicleDifficulty/1/header";
+      
+      public static const HANGAR_VEHICLEDIFFICULTY_1_BODY:String = "#tooltips:hangar/vehicleDifficulty/1/body";
+      
+      public static const HANGAR_VEHICLEDIFFICULTY_2_HEADER:String = "#tooltips:hangar/vehicleDifficulty/2/header";
+      
+      public static const HANGAR_VEHICLEDIFFICULTY_2_BODY:String = "#tooltips:hangar/vehicleDifficulty/2/body";
+      
+      public static const HANGAR_VEHICLEDIFFICULTY_3_HEADER:String = "#tooltips:hangar/vehicleDifficulty/3/header";
+      
+      public static const HANGAR_VEHICLEDIFFICULTY_3_BODY:String = "#tooltips:hangar/vehicleDifficulty/3/body";
       
       public static const CREWBUNDLE_HOWTOGET:String = "#tooltips:crewBundle/howToGet";
       
@@ -4104,6 +4122,18 @@ package
       public static const AWARDITEM_COMPLETIONTOKENS_7_4_HEADER:String = "#tooltips:awardItem/completionTokens_7_4/header";
       
       public static const AWARDITEM_COMPLETIONTOKENS_7_4_BODY:String = "#tooltips:awardItem/completionTokens_7_4/body";
+      
+      public static const AWARDITEM_NYRFOOD_HEADER:String = "#tooltips:awardItem/nyrfood/header";
+      
+      public static const AWARDITEM_NYRFOOD_BODY:String = "#tooltips:awardItem/nyrfood/body";
+      
+      public static const AWARDITEM_NYRFUN_HEADER:String = "#tooltips:awardItem/nyrfun/header";
+      
+      public static const AWARDITEM_NYRFUN_BODY:String = "#tooltips:awardItem/nyrfun/body";
+      
+      public static const AWARDITEM_NYRACTIV_HEADER:String = "#tooltips:awardItem/nyractiv/header";
+      
+      public static const AWARDITEM_NYRACTIV_BODY:String = "#tooltips:awardItem/nyractiv/body";
       
       public static const AWARDITEM_TANKMEN_BODY:String = "#tooltips:awardItem/tankmen/body";
       
@@ -8301,11 +8331,25 @@ package
       
       public static const AWARDITEM_SACOIN_HEADER:String = "#tooltips:awardItem/sacoin/header";
       
+      public static const AWARDITEM_SACOIN_HEADERCOUNTER:String = "#tooltips:awardItem/sacoin/headerCounter";
+      
       public static const AWARDITEM_SACOIN_BODY:String = "#tooltips:awardItem/sacoin/body";
       
-      public static const AWARDITEM_RAZLOM_COIN_HEADER:String = "#tooltips:awardItem/razlom_coin/header";
+      public static const NOTRECRUITEDTANKMAN_NY27_SNOWMAIDEN_1_LABEL:String = "#tooltips:notrecruitedtankman/ny27_snowmaiden_1/label";
       
-      public static const AWARDITEM_RAZLOM_COIN_BODY:String = "#tooltips:awardItem/razlom_coin/body";
+      public static const NOTRECRUITEDTANKMAN_NY27_SNOWMAIDEN_1_DESC:String = "#tooltips:notrecruitedtankman/ny27_snowmaiden_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY27_SNOWMAIDEN_2_LABEL:String = "#tooltips:notrecruitedtankman/ny27_snowmaiden_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY27_SNOWMAIDEN_2_DESC:String = "#tooltips:notrecruitedtankman/ny27_snowmaiden_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY27_SNOWMAIDEN_3_LABEL:String = "#tooltips:notrecruitedtankman/ny27_snowmaiden_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY27_SNOWMAIDEN_3_DESC:String = "#tooltips:notrecruitedtankman/ny27_snowmaiden_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY27_SNOWMAIDEN_4_LABEL:String = "#tooltips:notrecruitedtankman/ny27_snowmaiden_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY27_SNOWMAIDEN_4_DESC:String = "#tooltips:notrecruitedtankman/ny27_snowmaiden_4/desc";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

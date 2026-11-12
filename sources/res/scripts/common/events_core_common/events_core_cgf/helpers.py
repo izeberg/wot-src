@@ -10,13 +10,13 @@ if IS_EDITOR:
 else:
     from Vehicle import Vehicle
 
-def getVehicleFromGO(vehicleGO, spaceID, ignoreStatus=False):
+def getVehicleFromGO(vehicleGO, spaceID):
     hierarchyManager = CGF.HierarchyManager(spaceID)
     if not hierarchyManager:
         return None
     else:
         parentGO = hierarchyManager.getTopMostParent(vehicleGO)
         vehicle = parentGO.findComponentByType(Vehicle)
-        if not vehicle or vehicle.isDestroyed or IS_CELLAPP and vehicle.status < 0 and not ignoreStatus:
+        if not vehicle or IS_CELLAPP and vehicle.status < 0:
             return None
         return vehicle

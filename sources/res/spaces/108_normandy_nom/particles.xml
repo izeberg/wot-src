@@ -140,11 +140,11 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_split_sparks.dds
+				particles/content_deferred/pfx_textures/eff_tex_83_kharkiv_fire.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_83_kharkiv_fire.dds
+				particles/content_deferred/pfx_textures/eff_tex_split_sparks.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -194,6 +194,18 @@
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex_force_field.dds
 				<type>forcefields</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/glow_bloom.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/flare_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/ny27_clapperboard.dds
+				<type>primary</type>
 			</path>
 		</preloadTextures>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_roof_03.vfx</fn_effect_bin>
@@ -548,15 +560,11 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_tex_83_kharkiv_fire.dds
-				<type>primary</type>
-			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_split_fire_smoke_1.dds
-				<type>primary</type>
-			</path>
-			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_smoke_4.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_83_kharkiv_fire.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -564,15 +572,19 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_forward/pfx_textures/eff_tex_split_fire_smoke_1.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_forward/pfx_textures/eff_tex_long.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/tracers.dds
+				particles/content_forward/pfx_textures/eff_leaves.dds
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_forward/pfx_textures/eff_leaves.dds
+				particles/content_forward/pfx_textures/tracers.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -612,6 +624,10 @@
 				<type>primary</type>
 			</path>
 			<path>
+				particles/content_forward/pfx_textures/glow_bloom.dds
+				<type>primary</type>
+			</path>
+			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_misc_7.dds
 				<type>primary</type>
 			</path>
@@ -633,6 +649,10 @@
 			</path>
 			<path>
 				particles/content_forward/pfx_textures/eff_tex_split_splash_1.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/ny27_clapperboard.dds
 				<type>primary</type>
 			</path>
 		</preloadTextures>

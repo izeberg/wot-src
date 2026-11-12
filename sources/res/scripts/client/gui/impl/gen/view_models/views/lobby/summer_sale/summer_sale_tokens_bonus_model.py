@@ -4,28 +4,28 @@ from gui.impl.gen.view_models.views.lobby.summer_sale.price_model import PriceMo
 class SummerSaleTokensBonusModel(TokenBonusModel):
     __slots__ = ()
 
-    def __init__(self, properties=14, commands=0):
+    def __init__(self, properties=15, commands=0):
         super(SummerSaleTokensBonusModel, self).__init__(properties=properties, commands=commands)
 
     @property
     def price(self):
-        return self._getViewModel(11)
+        return self._getViewModel(12)
 
     @staticmethod
     def getPriceType():
         return PriceModel
 
     def getProductCode(self):
-        return self._getString(12)
+        return self._getString(13)
 
     def setProductCode(self, value):
-        self._setString(12, value)
+        self._setString(13, value)
 
     def getInInventory(self):
-        return self._getBool(13)
+        return self._getBool(14)
 
     def setInInventory(self, value):
-        self._setBool(13, value)
+        self._setBool(14, value)
 
     def _initialize(self):
         super(SummerSaleTokensBonusModel, self)._initialize()

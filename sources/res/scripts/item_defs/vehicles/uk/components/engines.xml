@@ -864,6 +864,27 @@
 			<rpm_min>304</rpm_min>
 			<rpm_max>2090</rpm_max>
 		</Leyland_1A>
+		<Leyland_L30_GB147>
+			<id>31026</id>
+			<userString>#gb_vehicles:Leyland_L30_GB147</userString>
+			<tags>diesel</tags>
+			<level>8</level>
+			<price>44000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
+			<power>590</power>
+			<weight>912</weight>
+			<maxHealth>247</maxHealth>
+			<maxRegenHealth>123</maxRegenHealth>
+			<repairCost>5</repairCost>
+			<fireStartingChance>
+				0.15
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>309</rpm_min>
+			<rpm_max>2281</rpm_max>
+		</Leyland_L30_GB147>
 		<Leyland_L60_No_4>
 			<id>78</id>
 			<userString>#gb_vehicles:Leyland_L60_No_4</userString>
@@ -906,24 +927,6 @@
 			<rpm_min>475</rpm_min>
 			<rpm_max>1950</rpm_max>
 		</Leyland_L60_No_4_A>
-		<Leyland_L60_No_4_H>
-			<id>20002</id>
-			<userString>#gb_vehicles:Leyland_L60_No_4_H</userString>
-			<tags>diesel</tags>
-			<level>3</level>
-			<price>0</price>
-			<notInShop>true</notInShop>
-			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
-			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
-			<power>1475</power>
-			<weight>1000</weight>
-			<maxHealth>103</maxHealth>
-			<maxRegenHealth>65</maxRegenHealth>
-			<repairCost>0</repairCost>
-			<fireStartingChance>0</fireStartingChance>
-			<rpm_min>300</rpm_min>
-			<rpm_max>2300</rpm_max>
-		</Leyland_L60_No_4_H>
 		<Leyland_L60_No_4_Mk_1A>
 			<id>102</id>
 			<userString>#gb_vehicles:Leyland_L60_No_4_Mk_1A</userString>
@@ -1657,8 +1660,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>455</rpm_min>
-			<rpm_max>2141</rpm_max>
+			<rpm_min>485</rpm_min>
+			<rpm_max>2047</rpm_max>
 		</Rolls_Royce_Griffon_GB138>
 		<Rolls_Royce_Griffon_IGR>
 			<id>60007</id>
@@ -2116,24 +2119,6 @@
 			<rpm_min>399</rpm_min>
 			<rpm_max>2551</rpm_max>
 		</Rolls_Royse_Meteor_A>
-		<Rolls_Royse_Meteor_H>
-			<id>20000</id>
-			<userString>#gb_vehicles:Rolls_Royse_Meteor_H</userString>
-			<tags>gasoline</tags>
-			<level>1</level>
-			<price>0</price>
-			<notInShop>true</notInShop>
-			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
-			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
-			<power>590</power>
-			<weight>1000</weight>
-			<maxHealth>103</maxHealth>
-			<maxRegenHealth>65</maxRegenHealth>
-			<repairCost>0</repairCost>
-			<fireStartingChance>0</fireStartingChance>
-			<rpm_min>409</rpm_min>
-			<rpm_max>2517</rpm_max>
-		</Rolls_Royse_Meteor_H>
 		<Rolls_Royse_Meteor_M120>
 			<id>35</id>
 			<userString>#gb_vehicles:Rolls_Royse_Meteor_M120</userString>
@@ -2506,24 +2491,6 @@
 			<rpm_min>500</rpm_min>
 			<rpm_max>2000</rpm_max>
 		</Rolls_Royse_Meteor_Mk_XI_supercharged>
-		<Rolls_Royse_Meteor_Mk_XI_supercharged_H>
-			<id>20001</id>
-			<userString>#gb_vehicles:Rolls_Royse_Meteor_Mk_XI_supercharged_H</userString>
-			<tags>gasoline</tags>
-			<level>3</level>
-			<price>0</price>
-			<notInShop>true</notInShop>
-			<wwsoundPC>eng_ContinentalR_pc</wwsoundPC>
-			<wwsoundNPC>eng_ContinentalR_npc</wwsoundNPC>
-			<power>1180</power>
-			<weight>1000</weight>
-			<maxHealth>103</maxHealth>
-			<maxRegenHealth>65</maxRegenHealth>
-			<repairCost>0</repairCost>
-			<fireStartingChance>0</fireStartingChance>
-			<rpm_min>418</rpm_min>
-			<rpm_max>2263</rpm_max>
-		</Rolls_Royse_Meteor_Mk_XI_supercharged_H>
 		<Rolls_Royse_Meteor_Mk_XI_supercharged_SH>
 			<id>10001</id>
 			<userString>#gb_vehicles:Rolls_Royse_Meteor_Mk_XI_supercharged_SH</userString>
@@ -2662,6 +2629,27 @@
 			<rpm_min>302</rpm_min>
 			<rpm_max>2630</rpm_max>
 		</Unit_2983F>
+		<Unit_2983F_GB146>
+			<id>31022</id>
+			<userString>#gb_vehicles:Unit_2983F_GB146</userString>
+			<tags>gasoline</tags>
+			<level>11</level>
+			<price>150000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_ContinentalR_pc</wwsoundPC>
+			<wwsoundNPC>eng_ContinentalR_npc</wwsoundNPC>
+			<power>1100</power>
+			<weight>750</weight>
+			<maxHealth>320</maxHealth>
+			<maxRegenHealth>160</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<fireStartingChance>
+				0.2
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>441</rpm_min>
+			<rpm_max>2188</rpm_max>
+		</Unit_2983F_GB146>
 		<Vauxhall_Bedford_Twin_Six>
 			<id>29</id>
 			<userString>#gb_vehicles:Vauxhall_Bedford_Twin_Six</userString>

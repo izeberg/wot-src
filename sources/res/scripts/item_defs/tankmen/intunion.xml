@@ -5929,5 +5929,85 @@
 				<_31176>tankmen_WDR2026_3.png</_31176>
 			</icons>
 		</tankmen_WDR2026_3>
+		<ny27_snowmaiden_1>
+			<groupID>31177</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31177>#intunion_tankmen:names/ny27_snowmaiden_1_n</_31177>
+			</firstNames>
+			<lastNames>
+				<_31177>#intunion_tankmen:names/ny27_snowmaiden_1</_31177>
+			</lastNames>
+			<icons>
+				<_31177>ny27_snowmaiden_1.png</_31177>
+			</icons>
+		</ny27_snowmaiden_1>
+		<ny27_snowmaiden_2>
+			<groupID>31178</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31178>#intunion_tankmen:names/ny27_snowmaiden_2_n</_31178>
+			</firstNames>
+			<lastNames>
+				<_31178>#intunion_tankmen:names/ny27_snowmaiden_2</_31178>
+			</lastNames>
+			<icons>
+				<_31178>ny27_snowmaiden_2.png</_31178>
+			</icons>
+		</ny27_snowmaiden_2>
+		<ny27_snowmaiden_3>
+			<groupID>31179</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31179>#intunion_tankmen:names/ny27_snowmaiden_3_n</_31179>
+			</firstNames>
+			<lastNames>
+				<_31179>#intunion_tankmen:names/ny27_snowmaiden_3</_31179>
+			</lastNames>
+			<icons>
+				<_31179>ny27_snowmaiden_3.png</_31179>
+			</icons>
+		</ny27_snowmaiden_3>
+		<ny27_snowmaiden_4>
+			<groupID>31180</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31180>#intunion_tankmen:names/ny27_snowmaiden_4_n</_31180>
+			</firstNames>
+			<lastNames>
+				<_31180>#intunion_tankmen:names/ny27_snowmaiden_4</_31180>
+			</lastNames>
+			<icons>
+				<_31180>ny27_snowmaiden_4.png</_31180>
+			</icons>
+		</ny27_snowmaiden_4>
 	</premiumGroups>
 </root>

@@ -189,6 +189,8 @@ package net.wg.data.constants.generated
       
       public static const TECH_CUSTOMIZATION_ITEM_AWARD:String = "techCustomizationItemAward";
       
+      public static const COLLAPSE_CUSTOMIZATION_ITEM_AWARD:String = "collapseCustomizationItemAward";
+      
       public static const TECH_CUSTOMIZATION_ITEM_PURCHASE:String = "techCustomizationItemPurchase";
       
       public static const TECH_CUSTOMIZATION_NONHISTORIC_ITEM:String = "techCustomizationNonhistoricItem";
@@ -401,9 +403,15 @@ package net.wg.data.constants.generated
       
       public static const SQUAD_BONUS:String = "squadBonus";
       
+      public static const NY_CREDIT_BONUS:String = "nyTotalCreditBonus";
+      
+      public static const NY_FILLERS:String = "nyFillers";
+      
       public static const GF_TEST_TOOLTIP:String = "gfTestTooltip";
       
       public static const WOT_PLUS:String = "wotPlus";
+      
+      public static const NY_STATIC_DOG_TAG_INFO:String = "nyStaticDogTagInfo";
       
       public static const BATTLE_PASS_AS3_TOOLTIP_CALL:String = "battlePassAS3TooltipCall";
       
@@ -815,6 +823,8 @@ package net.wg.data.constants.generated
       
       public static const ARMORY_YARD_ENTRY_POINT_BEFORE_PROGRESSION:String = "armoryYardEntryPointBeforeProgression";
       
+      public static const NEW_YEAR_AWARD_VEHICLE:String = "newYearAwardVehicle";
+      
       public static const DEBUT_BOXES_BADGE:String = "debutBoxesBadge";
       
       public static const PERSONAL_MISSIONS_ANNOUNCE:String = "pmAnnounce";
@@ -851,7 +861,7 @@ package net.wg.data.constants.generated
       
       public static const BOOTCAMP_SET:Array = [BOOTCAMP_AWARD_MEDAL,BOOTCAMP_REWARD_PROGRESS,BOOTCAMP_LESSON_PROGRESS];
       
-      public static const CUSTOMIZATION_SET:Array = [TECH_CUSTOMIZATION_ITEM,TECH_CUSTOMIZATION_NONHISTORIC_ITEM,TECH_CUSTOMIZATION_FANTASTICAL_ITEM,TECH_CUSTOMIZATION_POPOVER_ITEM,TECH_CUSTOMIZATION_ITEM_ICON,TECH_CUSTOMIZATION_ITEM_AWARD,TECH_CUSTOMIZATION_ITEM_PURCHASE,SHOP_CUSTOMIZATION_ITEM,TECH_CUSTOMIZATION_CHAINED_ITEM];
+      public static const CUSTOMIZATION_SET:Array = [TECH_CUSTOMIZATION_ITEM,TECH_CUSTOMIZATION_NONHISTORIC_ITEM,TECH_CUSTOMIZATION_FANTASTICAL_ITEM,TECH_CUSTOMIZATION_POPOVER_ITEM,TECH_CUSTOMIZATION_ITEM_ICON,TECH_CUSTOMIZATION_ITEM_AWARD,TECH_CUSTOMIZATION_ITEM_PURCHASE,SHOP_CUSTOMIZATION_ITEM,TECH_CUSTOMIZATION_CHAINED_ITEM,COLLAPSE_CUSTOMIZATION_ITEM_AWARD];
       
       public static const CYBER_SPORT_SET:Array = [CYBER_SPORT_SLOT,CYBER_SPORT_SLOT_SELECTED,CYBER_SPORT_SELECTED_VEHICLE,SELECTED_VEHICLE_TRADEOFF,CYBER_SPORT_TEAM,CYBER_SPORT_UNIT_LEVEL,CYBER_SPORT_VEHICLE_NOT_READY,SQUAD_SLOT_VEHICLE_SELECTED];
       
@@ -934,6 +944,8 @@ package net.wg.data.constants.generated
       public static const LB_LOBBY_SET:Array = [LOOT_BOXES_VEHICLE_BLUEPRINT_FRAGMENT,LOOT_BOX_TOOLTIP,LOOT_BOX_KEY_TOOLTIP,LOOT_BOX_GUARANTEED_REWARD_TOOLTIP,LOOT_BOX_EXTENDED_TOOLTIP];
       
       public static const ARMORY_YARD_LOBBY_SET:Array = [ARMORY_YARD_AWARD_VEHICLE,ARMORY_YARD_ENTRY_POINT_ACTIVE,ARMORY_YARD_ENTRY_POINT_BEFORE_PROGRESSION];
+      
+      public static const NEW_YEAR_LOBBY_SET:Array = [NEW_YEAR_AWARD_VEHICLE,NY_CREDIT_BONUS,NY_FILLERS,NY_STATIC_DOG_TAG_INFO];
       
       public static const WOT_PLUS_SET:Array = [WOT_PLUS];
       

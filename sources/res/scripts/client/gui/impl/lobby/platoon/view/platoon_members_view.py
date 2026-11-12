@@ -1,4 +1,4 @@
-import logging, typing
+import logging
 from enum import Enum
 import BigWorld, VOIP
 from CurrentVehicle import g_currentVehicle
@@ -44,7 +44,6 @@ from helpers.CallbackDelayer import CallbackDelayer
 from messenger.m_constants import PROTO_TYPE
 from messenger.proto import proto_getter
 from messenger.proto.events import g_messengerEvents
-from shared_utils import findFirst
 from skeletons.gui.game_control import IPlatoonController, IComp7Controller, IEpicBattleMetaGameController, IRankedBattlesController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
@@ -55,9 +54,6 @@ from gui.impl.pub.tooltip_window import SimpleTooltipContent
 from messenger.ext import channel_num_gen
 from uilogging.rename_testing.loggers import RenameTestingUILogger
 from adisp import adisp_process
-if typing.TYPE_CHECKING:
-    from helpers.server_settings import Comp7RanksConfig
-    from comp7_ranks_common import Comp7Division
 _logger = logging.getLogger(__name__)
 _strButtons = R.strings.platoon.buttons
 
@@ -820,11 +816,12 @@ class Comp7MembersView(SquadMembersView):
         playerData = slotData.get('player', {})
         queueInfo = playerData.get('extraData', {}).get('comp7EnqueueData', {})
         rank = queueInfo.get('rank', 0)
+        divisionIndex = queueInfo.get('divisionIndex', 0)
         rating = queueInfo.get('rating', 0)
         isOnline = bool(queueInfo.get('isOnline', 0))
-        division = self.__getDivision(rank, rating)
+        division = comp7_shared.getPlayerDivisionByRankAndIndex(rank, divisionIndex)
         if division is None:
-            _logger.error("Failed to get player's division. dbID: %d; rank: %d; rating: %d", playerData.get('dbID'), rank, rating)
+            _logger.error("Failed to get player's division. dbID: %d; rank: %d; rating: %d, divisionIndex: %d", playerData.get('dbID'), rank, rating, divisionIndex)
             return
         else:
             slotModel.rankData.setRank(comp7_shared.getRankEnumValue(division))
@@ -851,12 +848,6 @@ class Comp7MembersView(SquadMembersView):
             return len(self.__unitMgr.unit.getPlayers()) < self.__unitMgr.unit.getSquadSize()
         else:
             return False
-
-    @classmethod
-    def __getDivision(cls, rank, rating):
-        ranksConfig = cls._lobbyContext.getServerSettings().comp7RanksConfig
-        division = findFirst(lambda d: rating in d.range, ranksConfig.divisionsByRank.get(rank, ()))
-        return division
 
 
 class RankedMembersView(SquadMembersView):

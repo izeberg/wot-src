@@ -3,8 +3,8 @@
 	<parent>vehicles/russian/R177_ISU_152K_BL10/normal/lod3/Gun_01</parent>
 	<extent>96.000000</extent>
 	<visibilityBox>
-		<min>-0.393877 -0.484300 0.237847</min>
-		<max>0.435722 0.394909 5.859393</max>
+		<min>-0.412358 -0.484289 -0.099418</min>
+		<max>0.451119 0.442336 5.859393</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/russian/R177_ISU_152K_BL10/normal/lod2/Gun_01</nodefullVisual>

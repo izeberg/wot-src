@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J50_ST_A5/normal/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.580170 -0.000684 -3.220226</min>
+		<max>1.580170 1.075544 3.202111</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/japan/J50_ST_A5/normal/lod1/Chassis</nodefullVisual>
+</root>

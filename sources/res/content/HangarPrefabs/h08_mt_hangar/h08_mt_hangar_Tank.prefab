@@ -161,7 +161,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-4.57764e-05 -7.81802e-09 4.57764e-05
+							-4.57764e-05 0.500301 4.57764e-05
 							<!--BW_String-->
 						</value>
 					</property>
@@ -215,7 +215,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-16.6876 3.24372 -1.52588e-05
+							-19.6325 3.81618 -1.52588e-05
 							<!--BW_String-->
 						</value>
 					</property>
@@ -229,7 +229,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.191985 1.57079 -9.46042e-07
+							0.191986 1.5708 -2.10983e-07
 							<!--BW_String-->
 						</value>
 					</property>
@@ -511,25 +511,19 @@
 					</property>
 					<property>
 						<name>DistLimits</name>
-						<value>
-							6 13.2
-							<!--BW_String-->
-						</value>
+						<value>6 11</value>
 					</property>
 					<property>
 						<name>StartYaw</name>
-						<value>
-							-118.541
-							<!--BW_String-->
-						</value>
+						<value>-100</value>
 					</property>
 					<property>
 						<name>StartPitch</name>
-						<value>-12</value>
+						<value>-15</value>
 					</property>
 					<property>
 						<name>StartDist</name>
-						<value>12</value>
+						<value>9</value>
 					</property>
 				</config>
 			</component>
@@ -551,7 +545,7 @@
 					</property>
 					<property>
 						<name>DistLimits</name>
-						<value>12 16</value>
+						<value>12 15</value>
 					</property>
 					<property>
 						<name>StartYaw</name>
@@ -563,7 +557,7 @@
 					</property>
 					<property>
 						<name>StartDist</name>
-						<value>16</value>
+						<value>15</value>
 					</property>
 				</config>
 			</component>
@@ -863,10 +857,6 @@
 						<name>Draw Frustrum</name>
 						<value>0</value>
 					</property>
-					<property>
-						<name>Draw Orbit Area</name>
-						<value>0</value>
-					</property>
 				</config>
 			</component>
 			<component>
@@ -879,10 +869,6 @@
 					</property>
 					<property>
 						<name>Draw Frustrum</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Draw Orbit Area</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -899,10 +885,6 @@
 						<name>Draw Frustrum</name>
 						<value>0</value>
 					</property>
-					<property>
-						<name>Draw Orbit Area</name>
-						<value>0</value>
-					</property>
 				</config>
 			</component>
 			<component>
@@ -915,10 +897,6 @@
 					</property>
 					<property>
 						<name>Draw Frustrum</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Draw Orbit Area</name>
 						<value>0</value>
 					</property>
 				</config>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB146_Albion/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.710034 -0.000018 -3.726357</min>
+		<max>1.710034 1.277236 3.718300</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB146_Albion/normal/lod0/Chassis</nodefullVisual>
+</root>

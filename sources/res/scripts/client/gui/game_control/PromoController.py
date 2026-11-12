@@ -152,10 +152,6 @@ class PromoController(IPromoController):
     def onDisconnected(self):
         self.__stop()
 
-    def onPortalStop(self):
-        if self.isTeaserOpen():
-            self.__stop()
-
     def isActive(self):
         return self.__lobbyContext.getServerSettings().isFieldPostEnabled() and not self.__bootcamp.isInBootcamp()
 

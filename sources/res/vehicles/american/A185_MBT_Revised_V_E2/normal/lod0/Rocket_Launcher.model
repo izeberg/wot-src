@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.646877 -0.239656 -0.201197</min>
+		<max>1.646877 0.400344 0.671976</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/american/A185_MBT_Revised_V_E2/normal/lod0/Rocket_Launcher</nodefullVisual>
+	<parent>vehicles/american/A185_MBT_Revised_V_E2/normal/lod1/Rocket_Launcher</parent>
+</root>

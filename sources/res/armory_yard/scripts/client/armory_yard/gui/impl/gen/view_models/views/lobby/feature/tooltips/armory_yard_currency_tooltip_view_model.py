@@ -55,4 +55,4 @@ class ArmoryYardCurrencyTooltipViewModel(ViewModel):
         self._addNumberProperty('questsForToken', 0)
         self._addNumberProperty('startTimestamp', 0)
         self._addNumberProperty('endTimestamp', 0)
-        self._addStringProperty('currency', ArmoryYardCurrencies.PROGRESSIONTOKEN.value)
+        self._addStringProperty('currency', ArmoryYardCurrencies.ARMORYCOIN.value)

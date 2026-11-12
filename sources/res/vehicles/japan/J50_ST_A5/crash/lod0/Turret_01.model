@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.266584 -0.059831 -1.229844</min>
+		<max>1.266497 1.198925 1.230587</max>
+	</visibilityBox>
+	<parent>vehicles/japan/J50_ST_A5/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/japan/J50_ST_A5/crash/lod0/Turret_01</nodefullVisual>
+</root>

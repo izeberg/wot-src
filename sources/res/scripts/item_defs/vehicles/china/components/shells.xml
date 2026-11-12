@@ -1449,6 +1449,20 @@
 			<devices>173</devices>
 		</damage>
 	</_130mm_CB-472_BZ74>
+	<_130mm_Cb_482_Ch77>
+		<id>31037</id>
+		<userString>#china_vehicles:_130mm_Cb_482_Ch77</userString>
+		<icon>ap_cr</icon>
+		<price>1215</price>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>130</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeAPCR</effects>
+		<damage>
+			<armor>530</armor>
+			<devices>180</devices>
+		</damage>
+	</_130mm_Cb_482_Ch77>
 	<_130mm_Chuan_bei_462G>
 		<id>126</id>
 		<userString>#china_vehicles:_130mm_Chuan_bei_462G</userString>
@@ -1677,6 +1691,25 @@
 			<!--BW_String-->
 		</piercingPowerLossFactorByDistance>
 	</_130mm_Po_130G>
+	<_130mm_Po_482S_Ch77>
+		<id>31038</id>
+		<userString>#china_vehicles:_130mm_Po_482S_Ch77</userString>
+		<icon>hc_premium</icon>
+		<price>5200</price>
+		<improved>true</improved>
+		<kind>HOLLOW_CHARGE</kind>
+		<caliber>130</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeHollowCharge</effects>
+		<damage>
+			<armor>530</armor>
+			<devices>180</devices>
+		</damage>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
+	</_130mm_Po_482S_Ch77>
 	<_130mm_Po_M_65>
 		<id>138</id>
 		<userString>#china_vehicles:_130mm_Po_M_65</userString>
@@ -1726,6 +1759,36 @@
 			</damage>
 		</armorSpalls>
 	</_130mm_SB-472_BZ74>
+	<_130mm_Sb_482M_Ch77>
+		<id>31039</id>
+		<userString>#china_vehicles:_130mm_Sb_482M_Ch77</userString>
+		<icon>he_modern</icon>
+		<price>1020</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>130</caliber>
+		<explosionRadius>
+			2.78
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>largeHighExplosive</effects>
+		<damage>
+			<armor>660</armor>
+			<devices>180</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				2.78
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>330</armor>
+				<devices>90</devices>
+			</damage>
+		</armorSpalls>
+	</_130mm_Sb_482M_Ch77>
 	<_130mm_Sha_bao_482G>
 		<id>87</id>
 		<userString>#china_vehicles:_130mm_Sha_bao_482G</userString>

@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>gun_03_Shape.vertices</vertices>
-			<primitive>gun_03_Shape.indices</primitive>
+			<vertices>gun_03Shape.vertices</vertices>
+			<primitive>gun_03Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -59,6 +59,6 @@
 		<min>-0.425000 -0.572449 -1.520923</min>
 		<max>0.425404 0.618149 3.100101</max>
 	</boundingBox>
-	<geometrySize>37546</geometrySize>
+	<geometrySize>39360</geometrySize>
 	<minUVDensity>0.013823</minUVDensity>
 </root>

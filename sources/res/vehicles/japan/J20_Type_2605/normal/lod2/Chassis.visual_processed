@@ -1378,37 +1378,62 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_R_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/japan/tracks/Type_4_track_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/japan/tracks/Type_4_track_ANM.dds</Texture>
-					</property>
+					<materialKind>0</materialKind>
+					<identifier>track_mat_R_skinned</identifier>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/japan/tracks/Type_4_track_AM.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>64</Int>
+						metallicGlossMap
+						<Texture>vehicles/japan/tracks/Type_4_track_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						doubleSided
-						<Bool>true</Bool>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
+						g_detailUVTiling
+						<Vector4>3.507000 0.877000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/japan/tracks/Type_4_track_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>1.516387 0.785785 0.132897</groupOrigin>
@@ -1443,37 +1468,62 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_L_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/japan/tracks/Type_4_track_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/japan/tracks/Type_4_track_ANM.dds</Texture>
-					</property>
+					<materialKind>0</materialKind>
+					<identifier>track_mat_L_skinned</identifier>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/japan/tracks/Type_4_track_AM.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>64</Int>
+						metallicGlossMap
+						<Texture>vehicles/japan/tracks/Type_4_track_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						doubleSided
-						<Bool>true</Bool>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
+						g_detailUVTiling
+						<Vector4>3.507000 0.877000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/japan/tracks/Type_4_track_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.516387 0.785785 0.132897</groupOrigin>
@@ -1488,8 +1538,6 @@
 		<node>Track_L4_BlendBone</node>
 		<node>Track_L6_BlendBone</node>
 		<node>Track_L8_BlendBone</node>
-		<node>WD_L0_BlendBone</node>
-		<node>WD_L6_BlendBone</node>
 		<node>W_L0_BlendBone</node>
 		<node>W_L1_BlendBone</node>
 		<node>W_L2_BlendBone</node>
@@ -1500,43 +1548,35 @@
 		<node>W_L7_BlendBone</node>
 		<node>W_L8_BlendBone</node>
 		<node>W_L9_BlendBone</node>
+		<node>WD_L0_BlendBone</node>
+		<node>WD_L1_BlendBone</node>
+		<node>WD_L2_BlendBone</node>
+		<node>WD_L3_BlendBone</node>
+		<node>WD_L4_BlendBone</node>
+		<node>WD_L5_BlendBone</node>
+		<node>WD_L6_BlendBone</node>
 		<geometry>
-			<vertices>exportChassL1Shape.vertices</vertices>
-			<primitive>exportChassL1Shape.indices</primitive>
+			<vertices>chassis_LShape.vertices</vertices>
+			<primitive>chassis_LShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
-					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
-					</property>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/japan/J20_Type_2605/Type_2605_chassis_01_AM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/japan/J20_Type_2605/Type_2605_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
+						metallicGlossMap
+						<Texture>vehicles/japan/J20_Type_2605/Type_2605_chassis_01_GMM.dds</Texture>
 					</property>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>
 						g_detailPowerGloss
 						<Float>
@@ -1547,24 +1587,13 @@
 					<property>
 						g_maskBias
 						<Float>
-							0.22
+							0.18
 							<!--BW_String-->
 						</Float>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/japan/J20_Type_2605/Type_2605_chassis_01_GMM.dds</Texture>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						g_detailUVTiling
-						<Vector4>
-							4.20822 4.20822 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -1573,6 +1602,21 @@
 					<property>
 						normalMap
 						<Texture>vehicles/japan/J20_Type_2605/Type_2605_chassis_01_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/japan/J20_Type_2605/Type_2605_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.464113 0.821712 0.088548</groupOrigin>
@@ -1587,8 +1631,6 @@
 		<node>Track_R4_BlendBone</node>
 		<node>Track_R6_BlendBone</node>
 		<node>Track_R8_BlendBone</node>
-		<node>WD_R0_BlendBone</node>
-		<node>WD_R6_BlendBone</node>
 		<node>W_R0_BlendBone</node>
 		<node>W_R1_BlendBone</node>
 		<node>W_R2_BlendBone</node>
@@ -1599,43 +1641,35 @@
 		<node>W_R7_BlendBone</node>
 		<node>W_R8_BlendBone</node>
 		<node>W_R9_BlendBone</node>
+		<node>WD_R0_BlendBone</node>
+		<node>WD_R1_BlendBone</node>
+		<node>WD_R2_BlendBone</node>
+		<node>WD_R3_BlendBone</node>
+		<node>WD_R4_BlendBone</node>
+		<node>WD_R5_BlendBone</node>
+		<node>WD_R6_BlendBone</node>
 		<geometry>
-			<vertices>exportChassR1Shape.vertices</vertices>
-			<primitive>exportChassR1Shape.indices</primitive>
+			<vertices>chassis_RShape.vertices</vertices>
+			<primitive>chassis_RShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
-					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
-					</property>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/japan/J20_Type_2605/Type_2605_chassis_01_AM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/japan/J20_Type_2605/Type_2605_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
+						metallicGlossMap
+						<Texture>vehicles/japan/J20_Type_2605/Type_2605_chassis_01_GMM.dds</Texture>
 					</property>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>
 						g_detailPowerGloss
 						<Float>
@@ -1646,24 +1680,13 @@
 					<property>
 						g_maskBias
 						<Float>
-							0.22
+							0.18
 							<!--BW_String-->
 						</Float>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/japan/J20_Type_2605/Type_2605_chassis_01_GMM.dds</Texture>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						g_detailUVTiling
-						<Vector4>
-							4.20822 4.20822 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -1672,6 +1695,21 @@
 					<property>
 						normalMap
 						<Texture>vehicles/japan/J20_Type_2605/Type_2605_chassis_01_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/japan/J20_Type_2605/Type_2605_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>1.467759 0.821712 0.088548</groupOrigin>
@@ -1683,6 +1721,6 @@
 		<min>-2.018930 0.007665 -5.041364</min>
 		<max>2.026223 1.570340 4.812313</max>
 	</boundingBox>
-	<geometrySize>436900</geometrySize>
+	<geometrySize>438620</geometrySize>
 	<minUVDensity>0.014323</minUVDensity>
 </root>

@@ -33,6 +33,7 @@ from gui.shared.gui_items.vehicle_equipment import VehicleEquipment, SUPPORT_EXT
 from gui.shared.money import MONEY_UNDEFINED, Currency, Money
 from gui.shared.utils import makeSearchableString
 from gui.shared.utils.functions import replaceHyphenToUnderscore
+from gui.shared.utils.vehicle_difficulty_helper import getVehicleDifficulty
 from helpers import i18n, time_utils, dependency
 from items import vehicles, tankmen, customizations, getTypeInfoByName, getTypeOfCompactDescr, filterIntCDsByItemType
 from items.components.c11n_constants import SeasonType, CustomizationType, HIDDEN_CAMOUFLAGE_ID, ApplyArea, CUSTOM_STYLE_POOL_ID, ItemTags, EMPTY_ITEM_ID
@@ -181,7 +182,6 @@ class VEHICLE_TAGS(CONST_CONTAINER):
     HIDDEN = 'hidden_in_hangar'
     RESTORE_WITH_STYLE = 'restoreWithStyle'
     BUILTIN_STYLE = 'builtinStyle'
-    PORTAL = 'portal'
 
 
 DISCLAIMER_TAGS = frozenset((VEHICLE_TAGS.T34_DISCLAIMER,))
@@ -636,10 +636,10 @@ class Vehicle(FittingItem):
         return
 
     def _getOutfitComponent(self, proxy, style, styleProgressionLevel, styleSerialNumber, season):
-        if style is not None:
+        if style is not None and season != SeasonType.EVENT:
             return self.__getStyledOutfitComponent(proxy, style, styleProgressionLevel, styleSerialNumber, season)
         else:
-            if self._isStyleInstalled:
+            if self._isStyleInstalled and season != SeasonType.EVENT:
                 return self.__getEmptyOutfitComponent()
             return self.__getCustomOutfitComponent(proxy, season)
 
@@ -1586,10 +1586,6 @@ class Vehicle(FittingItem):
     def isEarnCrystals(self):
         return checkForTags(self.tags, VEHICLE_TAGS.EARN_CRYSTALS)
 
-    @property
-    def isOnlyForPortalBattlesVehicle(self):
-        return checkForTags(self.tags, VEHICLE_TAGS.PORTAL)
-
     def getCrystalsEarnedInfo(self):
         limit = 0
         stats = self.itemsCache.items.stats
@@ -1661,6 +1657,10 @@ class Vehicle(FittingItem):
     @property
     def isAutoRentStyle(self):
         return bool(self.settings & VEHICLE_SETTINGS_FLAG.AUTO_RENT_CUSTOMIZATION)
+
+    @property
+    def difficulty(self):
+        return getVehicleDifficulty(self.intCD, itemsCache=self.itemsCache, lobbyContext=self.lobbyContext)
 
     @property
     def role(self):

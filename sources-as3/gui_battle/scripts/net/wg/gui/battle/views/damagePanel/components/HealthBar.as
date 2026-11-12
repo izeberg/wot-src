@@ -38,11 +38,6 @@ package net.wg.gui.battle.views.damagePanel.components
          this.progressMC = null;
       }
       
-      public function setProgressImageName(param1:String) : void
-      {
-         this.progressMC.image.imageName = param1;
-      }
-      
       public function set progress(param1:int) : void
       {
          var _loc2_:int = 0;

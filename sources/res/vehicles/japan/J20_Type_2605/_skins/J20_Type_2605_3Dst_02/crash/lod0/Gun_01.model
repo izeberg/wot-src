@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/crash/lod0/Gun_01</nodefullVisual>
+	<parent>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/crash/lod1/Gun_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.415004 -0.364367 -1.347042</min>
+		<max>0.415004 0.546914 4.607588</max>
+	</visibilityBox>
+</root>

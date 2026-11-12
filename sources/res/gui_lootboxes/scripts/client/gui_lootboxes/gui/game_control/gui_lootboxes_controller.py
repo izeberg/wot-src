@@ -131,6 +131,9 @@ class GuiLootBoxesController(IGuiLootBoxesController):
     def getDayLimit(self):
         return self.__getConfig().lootBoxBuyDayLimit
 
+    def getOpenByDefaultId(self):
+        return self.__getConfig().openByDefaultId
+
     def openShop(self, lootboxID=None):
         if self.isBuyAvailable():
             lootBox = self.__itemsCache.items.tokens.getLootBoxByID(int(lootboxID)) if lootboxID else None

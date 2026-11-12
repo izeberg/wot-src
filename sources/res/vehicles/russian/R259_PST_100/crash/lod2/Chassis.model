@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R259_PST_100/crash/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/russian/R259_PST_100/crash/lod2/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.574393 -0.002276 -3.004677</min>
+		<max>1.574391 1.095523 3.112173</max>
+	</visibilityBox>
+</root>

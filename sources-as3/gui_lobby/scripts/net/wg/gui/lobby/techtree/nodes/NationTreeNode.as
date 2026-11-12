@@ -12,6 +12,7 @@ package net.wg.gui.lobby.techtree.nodes
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.CONTEXT_MENU_HANDLER_TYPE;
    import net.wg.data.constants.generated.TOOLTIPS_CONSTANTS;
+   import net.wg.gui.components.controls.Image;
    import net.wg.gui.components.controls.TradeIco;
    import net.wg.gui.lobby.techtree.TechTreeEvent;
    import net.wg.gui.lobby.techtree.constants.ColorIndex;
@@ -33,6 +34,16 @@ package net.wg.gui.lobby.techtree.nodes
    
    public class NationTreeNode extends Renderer implements IBorderHighlighted
    {
+      
+      private static const DIFFICULTY_ICON_SIZE:int = 8;
+      
+      private static const DIFFICULTY_ICONS_COUNT:int = 3;
+      
+      private static const DIFFICULTY_X_OFFSET:int = -1;
+      
+      private static const DIFFICULTY_Y_OFFSET:int = -11;
+      
+      private static const DIFFICULTY_TOOLTIPS:Vector.<String> = new <String>[Values.EMPTY_STR,TOOLTIPS.HANGAR_VEHICLEDIFFICULTY_1,TOOLTIPS.HANGAR_VEHICLEDIFFICULTY_2,TOOLTIPS.HANGAR_VEHICLEDIFFICULTY_3];
       
       private static const LABEL_ANIM_START:String = "animStart";
       
@@ -126,6 +137,14 @@ package net.wg.gui.lobby.techtree.nodes
       private var _isFirstTimeActionShow:Boolean = false;
       
       private var _trade:TradeIco = null;
+      
+      private var _difficultyInfo:Sprite = null;
+      
+      private var _difficultyIcons:Vector.<Image> = null;
+      
+      private var _difficulty:int = 0;
+      
+      private var _difficultyHovered:Boolean = false;
       
       private var _tooltipMgr:ITooltipMgr;
       
@@ -244,11 +263,18 @@ package net.wg.gui.lobby.techtree.nodes
          visible = !(this.isBlueprintMode && !canHaveBlueprint());
          if(!visible)
          {
+            this._difficultyInfo.visible = false;
+            if(this._difficultyHovered)
+            {
+               this._difficultyHovered = false;
+               this._tooltipMgr.hide();
+            }
             return;
          }
          super.validateData();
          this.vehicleImage.alpha = stateProps.cmpAlpha;
          this.vehicleImage.source = this.getIconPath();
+         this.updateDifficultyInfo();
          this.typeAndLevel.setOwner(this);
          this.nameTF.text = getItemName();
          var _loc1_:Boolean = isLocked();
@@ -369,6 +395,7 @@ package net.wg.gui.lobby.techtree.nodes
       
       override protected function onDispose() : void
       {
+         var _loc1_:Image = null;
          if(this.techTreeEventAnimMc)
          {
             this.techTreeEventAnimMc = null;
@@ -418,6 +445,21 @@ package net.wg.gui.lobby.techtree.nodes
             this.eaField.dispose();
             this.eaField = null;
          }
+         if(this._difficultyInfo != null)
+         {
+            this._difficultyInfo.removeEventListener(MouseEvent.ROLL_OVER,this.onDifficultyRollOverHandler);
+            this._difficultyInfo.removeEventListener(MouseEvent.ROLL_OUT,this.onDifficultyRollOutHandler);
+            this._difficultyInfo.removeEventListener(MouseEvent.CLICK,this.onDifficultyClickHandler);
+            for each(_loc1_ in this._difficultyIcons)
+            {
+               _loc1_.dispose();
+            }
+            this._difficultyIcons.length = 0;
+            this._difficultyIcons = null;
+            this._difficultyInfo.graphics.clear();
+            removeChild(this._difficultyInfo);
+            this._difficultyInfo = null;
+         }
          if(this._trade)
          {
             this.removeChild(this._trade);
@@ -462,6 +504,7 @@ package net.wg.gui.lobby.techtree.nodes
       override protected function configUI() : void
       {
          super.configUI();
+         this.createDifficultyInfo();
          if(!isEarlyAccess)
          {
             this.blueprintPlus.addEventListener(MouseEvent.ROLL_OVER,this.onBlueprintPlusRollOverHandler,false,0,true);
@@ -505,6 +548,65 @@ package net.wg.gui.lobby.techtree.nodes
       {
          this.techTreeEventAnimMc.gotoAndStop(1);
          this.earlyAccessAnimMc.gotoAndStop(1);
+      }
+      
+      private function createDifficultyInfo() : void
+      {
+         var _loc2_:Image = null;
+         this._difficultyInfo = new Sprite();
+         this._difficultyInfo.visible = false;
+         this._difficultyInfo.mouseChildren = false;
+         this._difficultyInfo.graphics.beginFill(0,0);
+         this._difficultyInfo.graphics.drawRect(0,0,DIFFICULTY_ICONS_COUNT * DIFFICULTY_ICON_SIZE,DIFFICULTY_ICON_SIZE);
+         this._difficultyInfo.graphics.endFill();
+         this._difficultyIcons = new Vector.<Image>();
+         var _loc1_:int = 0;
+         while(_loc1_ < DIFFICULTY_ICONS_COUNT)
+         {
+            _loc2_ = new Image();
+            _loc2_.mouseEnabled = _loc2_.mouseChildren = false;
+            _loc2_.smoothing = true;
+            _loc2_.x = _loc1_ * DIFFICULTY_ICON_SIZE;
+            this._difficultyInfo.addChild(_loc2_);
+            this._difficultyIcons.push(_loc2_);
+            _loc1_++;
+         }
+         this._difficultyInfo.addEventListener(MouseEvent.ROLL_OVER,this.onDifficultyRollOverHandler);
+         this._difficultyInfo.addEventListener(MouseEvent.ROLL_OUT,this.onDifficultyRollOutHandler);
+         this._difficultyInfo.addEventListener(MouseEvent.CLICK,this.onDifficultyClickHandler);
+         addChild(this._difficultyInfo);
+      }
+      
+      private function updateDifficultyInfo() : void
+      {
+         var _loc1_:int = getNodeData().difficulty;
+         this._difficultyInfo.visible = container is ResearchItems && !this.isBlueprintMode && _loc1_ > 0 && _loc1_ <= DIFFICULTY_ICONS_COUNT;
+         if(this._difficultyHovered && this._tooltipMgr != null)
+         {
+            if(!this._difficultyInfo.visible)
+            {
+               this._difficultyHovered = false;
+               this._tooltipMgr.hide();
+            }
+            else if(this._difficulty != _loc1_)
+            {
+               this._tooltipMgr.showComplex(DIFFICULTY_TOOLTIPS[_loc1_]);
+            }
+         }
+         this._difficulty = _loc1_;
+         if(!this._difficultyInfo.visible)
+         {
+            return;
+         }
+         var _loc2_:DisplayObject = this.vehicleImage as DisplayObject;
+         this._difficultyInfo.x = _loc2_.x + DIFFICULTY_X_OFFSET;
+         this._difficultyInfo.y = _loc2_.y + DIFFICULTY_Y_OFFSET;
+         var _loc3_:int = 0;
+         while(_loc3_ < DIFFICULTY_ICONS_COUNT)
+         {
+            this._difficultyIcons[_loc3_].source = _loc3_ < _loc1_ ? RES_ICONS.MAPS_ICONS_VEHICLEDIFFICULTY_8X8_FILLED : RES_ICONS.MAPS_ICONS_VEHICLEDIFFICULTY_8X8_EMPTY;
+            _loc3_++;
+         }
       }
       
       private function setTradeIcon() : void
@@ -574,6 +676,10 @@ package net.wg.gui.lobby.techtree.nodes
       {
          var _loc1_:Vector.<DisplayObject> = super.mouseEnabledChildren;
          _loc1_.push(this.button);
+         if(this._difficultyInfo != null)
+         {
+            _loc1_.push(this._difficultyInfo);
+         }
          if(!isEarlyAccess)
          {
             _loc1_.push(this.blueprintPlus);
@@ -654,6 +760,37 @@ package net.wg.gui.lobby.techtree.nodes
          if(this.earlyAccessBorder)
          {
             this.earlyAccessBorder.gotoAndStop(this.getEarlyAccessBorderState());
+         }
+      }
+      
+      private function onDifficultyRollOverHandler(param1:MouseEvent) : void
+      {
+         this._difficultyHovered = true;
+         if(this._tooltipMgr != null && dataInited && this._difficultyInfo.visible)
+         {
+            this._tooltipMgr.showComplex(DIFFICULTY_TOOLTIPS[this._difficulty]);
+         }
+      }
+      
+      private function onDifficultyRollOutHandler(param1:MouseEvent) : void
+      {
+         this._difficultyHovered = false;
+         if(this._tooltipMgr != null)
+         {
+            this._tooltipMgr.hide();
+         }
+      }
+      
+      private function onDifficultyClickHandler(param1:MouseEvent) : void
+      {
+         if(App.utils.commons.isRightButton(param1))
+         {
+            this.showContextMenu();
+         }
+         else
+         {
+            App.contextMenuMgr.hide();
+            this.onHitClickHandler(param1);
          }
       }
       

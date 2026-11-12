@@ -11,6 +11,7 @@
 				<inactivate>TankCarouselOnScene</inactivate>
 				<inactivate>HangarOptionalDeviceSlotsOnScene</inactivate>
 				<inactivate>HangarPanelShellsOnScene</inactivate>
+				<run-trigger>MissionsTabValidationTrigger</run-trigger>
 			</post-effects>
 			<runtime-effects>
 				<show-hint>
@@ -312,6 +313,14 @@
 				<scaleform>hangar</scaleform>
 				<scaleform>ammunitionSetupView</scaleform>
 			</excluded-views>
+			<on-effects>
+				<refuse-training/>
+			</on-effects>
+		</trigger>
+		<trigger>
+			MissionsTabValidationTrigger
+			<type>missions-tab-changed</type>
+			<alias>BattleMattersMissionView</alias>
 			<on-effects>
 				<refuse-training/>
 			</on-effects>

@@ -52,6 +52,42 @@
 					</node>
 				</node>
 				<node>
+					<identifier>Joint_01</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.000000 0.000194 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Joint_03</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Joint_02</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>0.000000 0.491434 -0.276000</row3>
+							</transform>
+							<node>
+								<identifier>Joint_02_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.000000 -0.491628 0.276000</row3>
+								</transform>
+							</node>
+						</node>
+					</node>
+				</node>
+				<node>
 					<identifier>Gun_BlendBone</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
@@ -67,9 +103,10 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Gun_BlendBone</node>
 		<node>G_BlendBone</node>
+		<node>Joint_02_BlendBone</node>
 		<geometry>
-			<vertices>gun_01_Shape.vertices</vertices>
-			<primitive>gun_01_Shape.indices</primitive>
+			<vertices>gun_01Shape.vertices</vertices>
+			<primitive>gun_01Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -98,15 +135,15 @@
 						<Texture>vehicles/czech/Cz39_SD_122_49_Sekera/SD_122_49_Sekera_proxy_AO.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.001838 0.013337 -3.363793</groupOrigin>
+				<groupOrigin>-0.000002 0.150264 -3.028707</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.284186 -0.318646 0.396294</min>
-		<max>0.280510 0.345320 6.331293</max>
+		<min>-0.510363 -0.318646 -0.273879</min>
+		<max>0.510360 0.619174 6.331293</max>
 	</boundingBox>
-	<geometrySize>3278</geometrySize>
+	<geometrySize>3784</geometrySize>
 	<minUVDensity>0.003445</minUVDensity>
 </root>

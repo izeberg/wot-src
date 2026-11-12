@@ -19,3 +19,6 @@ class MissionsGroupedViewMeta(MissionView):
 
     def onClickOpenEventBtn(self, eventType):
         self._printOverrideError('onClickOpenEventBtn')
+
+    def onNyQuestsClick(self):
+        self._printOverrideError('onNyQuestsClick')

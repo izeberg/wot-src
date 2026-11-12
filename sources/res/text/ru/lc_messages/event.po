@@ -23,6 +23,421 @@ msgstr "На Глобальной карте"
 msgid "craftMachine/title"
 msgstr "Летняя экспедиция"
 
+msgid "customizationResource/card/limitReached"
+msgstr "Достигнут максимум"
+
+msgid "customizationResource/card/selectedCount"
+msgstr "x{packSize}"
+
+msgid "customizationResource/card/tooltips/isLimitReached/body"
+msgstr ""
+"Достигнуто максимальное количество элементов, которые можно обменять в "
+"рамках одной транзакции ({limit} элементов). Вы можете отменить выбор одного"
+" из элементов, чтобы добавить другой."
+
+msgid "customizationResource/card/tooltips/isLimitReached/header"
+msgstr "Достигнут максимум для обмена"
+
+msgid "customizationResource/card/tooltips/maxSelected/body"
+msgstr ""
+"Выбраны все элементы данного типа, которые есть на Складе. Для добавления к "
+"обмену элементов внешнего вида, которые нанесены на технику, необходимо их "
+"сначала снять."
+
+msgid "customizationResource/card/tooltips/maxSelected/header"
+msgstr "Выбраны все элементы со Cклада"
+
+msgid "customizationResource/card/warning"
+msgstr "Нанесён на технику"
+
+msgid "customizationResource/categoryTooltip/descriptions/camouflage"
+msgstr ""
+"Камуфляж — трёхкомпонентные цветовые схемы (башня/орудие/корпус), подходят "
+"для нанесения на большинство машин. Для бонуса к маскировке нужно нанести "
+"камуфляж на корпус."
+
+msgid "customizationResource/categoryTooltip/descriptions/emblem"
+msgstr ""
+"Эмблемы наносятся на определённые места машины и подчёркивают её "
+"индивидуальность."
+
+msgid "customizationResource/categoryTooltip/descriptions/inscription"
+msgstr ""
+"Надписи наносятся на определённые места машины и подчёркивают её "
+"индивидуальность."
+
+msgid "customizationResource/categoryTooltip/descriptions/modification"
+msgstr ""
+"Эффекты изменяют внешний вид покрытия машины: старят его или наоборот делают"
+" новее."
+
+msgid "customizationResource/categoryTooltip/descriptions/paint"
+msgstr ""
+"Краски изменяют базовый цвет машины, не влияют на показатель маскировки."
+
+msgid "customizationResource/categoryTooltip/descriptions/projectionDecal"
+msgstr ""
+"Декали — крупные наклейки — наносятся на определённые места машины и "
+"подчёркивают её индивидуальность."
+
+msgid "customizationResource/categoryTooltip/descriptions/style"
+msgstr ""
+"2D-стили добавляют бонус к маскировке, подходят для нанесения на большинство"
+" машин."
+
+msgid "customizationResource/categoryTooltip/descriptions/style-3d"
+msgstr ""
+"3D-стили придают уникальный внешний вид определённой машине, добавляют бонус"
+" к маскировке, содержат тематические компоненты и элементы наружного обвеса."
+
+msgid "customizationResource/categoryTooltip/header"
+msgstr "Выбрано %(category)s: %(selectedCount)d"
+
+msgid "customizationResource/categoryTooltip/multiplierSign"
+msgstr "x"
+
+msgid "customizationResource/categoryTooltip/otherCount"
+msgstr "И ещё: %(otherCount)d"
+
+msgid "customizationResource/categoryTooltip/selectedText"
+msgstr ""
+"Выбранные элементы внешнего вида будут обменяны на пигменты после "
+"подтверждения."
+
+msgid "customizationResource/checkbox/tooltip/camouflage"
+msgstr "камуфляжные схемы"
+
+msgid "customizationResource/checkbox/tooltip/emblem"
+msgstr "эмблемы"
+
+msgid "customizationResource/checkbox/tooltip/inscription"
+msgstr "надписи"
+
+msgid "customizationResource/checkbox/tooltip/modification"
+msgstr "эффекты"
+
+msgid "customizationResource/checkbox/tooltip/paint"
+msgstr "краски"
+
+msgid "customizationResource/checkbox/tooltip/projectionDecal"
+msgstr "декали"
+
+msgid "customizationResource/checkbox/tooltip/style"
+msgstr "2D-стили"
+
+msgid "customizationResource/checkbox/tooltip/style-3d"
+msgstr "3D-стили"
+
+msgid "customizationResource/currencyTooltip/acquisition/description"
+msgstr ""
+"Элементы внешнего вида можно обменять на пигмент. Количество ресурсов, "
+"которое можно получить за обмен элемента внешнего вида, указано в левом "
+"верхнем углу карточки элемента на экране обмена."
+
+msgid "customizationResource/currencyTooltip/acquisition/title"
+msgstr "Способ получения"
+
+msgid "customizationResource/currencyTooltip/available/label"
+msgstr "Доступно: %(period)s"
+
+msgid "customizationResource/currencyTooltip/available/period"
+msgstr ""
+"С %(startDay)d %(startMonth)s %(startTime)s по %(endDay)d %(endMonth)s "
+"%(endYear)d г. %(endTime)s"
+
+msgid "customizationResource/currencyTooltip/description"
+msgstr "Используется для покупки товаров в специальной категории Магазина."
+
+msgid "customizationResource/currencyTooltip/inStock"
+msgstr "В наличии: %(count)s"
+
+msgid "customizationResource/currencyTooltip/subtitle"
+msgstr "Особый ресурс события"
+
+msgid "customizationResource/currencyTooltip/title"
+msgstr "Пигмент"
+
+msgid "customizationResource/endDateText"
+msgstr "До %(day) %(month)"
+
+msgid "customizationResource/eventFinishFormat"
+msgstr "До завершения: "
+
+msgid "customizationResource/exchangeConfirmation/cancel"
+msgstr "Отмена"
+
+msgid "customizationResource/exchangeConfirmation/captcha/error"
+msgstr "Введено неверное значение."
+
+msgid "customizationResource/exchangeConfirmation/captcha/prompt"
+msgstr ""
+"Для подтверждения обмена введите количество всех выбранных элементов "
+"(выбрано элементов: %(count)s)."
+
+msgid "customizationResource/exchangeConfirmation/confirm"
+msgstr "Подтвердить"
+
+msgid "customizationResource/exchangeConfirmation/reward"
+msgstr "После обмена будет начислено:"
+
+msgid "customizationResource/exchangeConfirmation/title"
+msgstr "Обменять указанные элементы на пигменты?"
+
+msgid "customizationResource/exchangeConfirmation/warning"
+msgstr ""
+"Выбранные элементы внешнего вида будут <b>безвозвратно</b> обменяны на "
+"пигменты."
+
+msgid "customizationResource/exitConfirmation/cancel"
+msgstr "Отменить"
+
+msgid "customizationResource/exitConfirmation/confirm"
+msgstr "Выйти"
+
+msgid "customizationResource/exitConfirmation/description"
+msgstr "При выходе с экрана выбор всех элементов внешнего вида будет сброшен."
+
+msgid "customizationResource/exitConfirmation/title"
+msgstr "Выйти без сохранения изменений?"
+
+msgid "customizationResource/filters/appliedToggleBody"
+msgstr ""
+"Включить/отключить отображение имеющихся элементов внешнего вида, нанесённых"
+" на технику."
+
+msgid "customizationResource/filters/appliedToggleHeader"
+msgstr "На технике"
+
+msgid "customizationResource/filters/editableToggleBody"
+msgstr "Включить/отключить отображение изменяемых стилей."
+
+msgid "customizationResource/filters/editableToggleHeader"
+msgstr "Изменяемые стили"
+
+msgid "customizationResource/filters/inventoryToggleBody"
+msgstr ""
+"Включить/отключить отображение элементов внешнего вида в наличии на Складе."
+
+msgid "customizationResource/filters/inventoryToggleHeader"
+msgstr "На Складе"
+
+msgid "customizationResource/introView/closeButton"
+msgstr "ЗАКРЫТЬ"
+
+msgid "customizationResource/introView/closeButtonText"
+msgstr "Так точно!"
+
+msgid "customizationResource/introView/description/first"
+msgstr ""
+"В период проведения события можно обменять элементы внешнего вида на "
+"пигменты. Для этого перейдите в интерфейс обмена, нажав на кнопку «Перейти к"
+" обмену»."
+
+msgid "customizationResource/introView/description/second"
+msgstr ""
+"Обменять можно только те элементы, которые есть на Складе: краски, надписи, "
+"эмблемы, камуфляжные схемы, декали, эффекты, 2D- и 3D-стили. Если элемент "
+"нанесён на технику — сначала необходимо его снять."
+
+msgid "customizationResource/introView/description/third"
+msgstr ""
+"Потратить пигменты можно на свободный опыт (тестовый). После окончания "
+"события за каждую единицу неиспользованного ресурса вы получите 5 единиц "
+"свободного опыта."
+
+msgid "customizationResource/introView/header/subTitle"
+msgstr "Время проведения: %(startDate)s – %(endDate)s"
+
+msgid "customizationResource/introView/header/title"
+msgstr "ПИГМЕНТНАЯ ЛАВКА"
+
+msgid "customizationResource/introView/title/first"
+msgstr "О событии"
+
+msgid "customizationResource/introView/title/second"
+msgstr "Обмен элементов"
+
+msgid "customizationResource/introView/title/third"
+msgstr "Товары за пигменты"
+
+msgid "customizationResource/lessThanMinute"
+msgstr "Доступно ещё: < 1 мин."
+
+msgid "customizationResource/mainView/about"
+msgstr "О СОБЫТИИ"
+
+msgid "customizationResource/mainView/cancelSelect"
+msgstr "Отменить выбор"
+
+msgid "customizationResource/mainView/closeButton"
+msgstr "ЗАКРЫТЬ"
+
+msgid "customizationResource/mainView/commonTitle"
+msgstr "Общие"
+
+msgid "customizationResource/mainView/counter"
+msgstr "%(selectedCount)s / %(availableCount)s"
+
+msgid "customizationResource/mainView/exchangeButton"
+msgstr "Обменять"
+
+msgid "customizationResource/mainView/exchangeDisableText"
+msgstr "Выберите элементы внешнего вида из представленных категорий"
+
+msgid "customizationResource/mainView/exchangeEnableText"
+msgstr "После обмена будет начислено:"
+
+msgid "customizationResource/mainView/exchangeSelectedText"
+msgstr "Выбрано элементов:"
+
+msgid "customizationResource/mainView/filters/emptyDescription"
+msgstr "Измените параметры или сбросьте фильтр."
+
+msgid "customizationResource/mainView/filters/emptyTitle"
+msgstr "По вашему запросу ничего не найдено"
+
+msgid "customizationResource/mainView/filters/resetFilter"
+msgstr "Нажмите, чтобы сбросить настройки фильтра на состояние по умолчанию."
+
+msgid "customizationResource/mainView/filters/selectedTitle"
+msgstr "Показано:"
+
+msgid "customizationResource/mainView/limitText"
+msgstr ""
+"За одну транзакцию можно обменять не более %(limit)s элементов внешнего "
+"вида."
+
+msgid "customizationResource/mainView/resetFiltersBtn/label"
+msgstr "Сбросить фильтр"
+
+msgid "customizationResource/mainView/selectAll"
+msgstr "Выбрать {category} (макс. количество)"
+
+msgid "customizationResource/mainView/shownTitle"
+msgstr "Показано:"
+
+msgid "customizationResource/mainView/subTitle"
+msgstr "Выбранные элементы внешнего вида будут обменяны на пигменты."
+
+msgid "customizationResource/mainView/title"
+msgstr "ОБМЕН ЭЛЕМЕНТОВ ВНЕШНЕГО ВИДА"
+
+msgid "customizationResource/mainView/tooltips/limitReached/body"
+msgstr ""
+"Достигнут лимит на количество элементов, которые можно обменять за одну "
+"транзакцию."
+
+msgid "customizationResource/mainView/tooltips/limitReached/header"
+msgstr "Выбрано максимальное количество"
+
+msgid "customizationResource/mainView/tooltips/noItems/body"
+msgstr "На Складе нет элементов данного типа."
+
+msgid "customizationResource/mainView/tooltips/selectAll/alert"
+msgstr ""
+"После подтверждения все выбранные элементы будут безвозвратно обменяны на "
+"пигменты."
+
+msgid "customizationResource/mainView/tooltips/selectAll/body"
+msgstr ""
+"Выбрать {category} со Склада для обмена. Будет выбрано максимальное "
+"количество элементов, которое возможно обменять за одну транзакцию. "
+"Элементы, нанесённые на технику, не будут выбраны. Снимите отметку, чтобы "
+"отменить выбор всех элементов."
+
+msgid "customizationResource/mainView/tooltips/selectAll/header"
+msgstr "Выбрать {category} (макс. количество)"
+
+msgid "customizationResource/rewardView/closeButton"
+msgstr "ЗАКРЫТЬ"
+
+msgid "customizationResource/rewardView/description"
+msgstr ""
+"За пигменты можно приобрести свободный опыт в соответствующей категории "
+"Магазина."
+
+msgid "customizationResource/rewardView/okButton"
+msgstr "Так точно!"
+
+msgid "customizationResource/rewardView/title"
+msgstr "%(currencyName)s начислен!"
+
+msgid "customizationResource/shortSubTitle"
+msgstr "Обновлены лимиты"
+
+msgid "customizationResource/subTitle"
+msgstr "Обновлены еженедельные лимиты"
+
+msgid "customizationResource/tabs/counter"
+msgstr "%(selectedCount)s/%(availableCount)s"
+
+msgid "customizationResource/tabs/items/camouflage"
+msgstr "Камуфляж"
+
+msgid "customizationResource/tabs/items/emblem"
+msgstr "Эмблемы"
+
+msgid "customizationResource/tabs/items/inscription"
+msgstr "Надписи"
+
+msgid "customizationResource/tabs/items/modification"
+msgstr "Эффекты"
+
+msgid "customizationResource/tabs/items/paint"
+msgstr "Краски"
+
+msgid "customizationResource/tabs/items/projectionDecal"
+msgstr "Декали"
+
+msgid "customizationResource/tabs/items/style"
+msgstr "2D-стили"
+
+msgid "customizationResource/tabs/items/style-3d"
+msgstr "3D-стили"
+
+msgid "customizationResource/tabs/tooltip/camouflage"
+msgstr "камуфляжных схем"
+
+msgid "customizationResource/tabs/tooltip/emblem"
+msgstr "эмблем"
+
+msgid "customizationResource/tabs/tooltip/inscription"
+msgstr "надписей"
+
+msgid "customizationResource/tabs/tooltip/modification"
+msgstr "эффектов"
+
+msgid "customizationResource/tabs/tooltip/paint"
+msgstr "красок"
+
+msgid "customizationResource/tabs/tooltip/projectionDecal"
+msgstr "декалей"
+
+msgid "customizationResource/tabs/tooltip/style"
+msgstr "2D-стилей"
+
+msgid "customizationResource/tabs/tooltip/style-3d"
+msgstr "3D-стилей"
+
+msgid "customizationResource/title"
+msgstr "ПИГМЕНТНАЯ ЛАВКА"
+
+msgid "customizationResource/tooltip/disabled/body"
+msgstr ""
+"Обмен элементов внешнего вида временно недоступен, возвращайтесь позже."
+
+msgid "customizationResource/tooltip/disabled/header"
+msgstr "Недоступно по техническим причинам"
+
+msgid "customizationResource/tooltip/noItems/body"
+msgstr "У вас нет элементов внешнего вида, которые можно обменять на пигмент."
+
+msgid "customizationResource/tooltip/noItems/header"
+msgstr "Нет подходящих элементов внешнего вида"
+
+msgid "customizationResource/unavailable/text"
+msgstr "Временно недоступно"
+
 msgid "punishmentWindow/reason/event_afk"
 msgstr "Бездействие в бою"
 
@@ -36,7 +451,7 @@ msgid "shopSales/eventFinishFormat"
 msgstr "До завершения: %(timerText)"
 
 msgid "shopSales/eventStartFormat"
-msgstr "До начала: %(timerText)"
+msgstr "До старта: %(timerText)"
 
 msgid "shopSales/title"
 msgstr "ТОРГОВЫЙ КАРАВАН"

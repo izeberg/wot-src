@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<materialNames/>
-	<visibilityBox>
-		<min>
-			-2.01893 0.00766468 -5.04136
-			<!--BW_String-->
-		</min>
-		<max>
-			2.02622 1.57034 4.81231
-			<!--BW_String-->
-		</max>
-	</visibilityBox>
-	<tank>true</tank>
 	<parent>vehicles/japan/J20_Type_2605/normal/lod3/Chassis</parent>
-	<extent>96</extent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
 	<nodefullVisual>vehicles/japan/J20_Type_2605/normal/lod2/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-2.018930 0.007665 -5.041364</min>
+		<max>2.026223 1.570340 4.812313</max>
+	</visibilityBox>
 </root>

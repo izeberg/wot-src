@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/chinese/Ch77_WZ_120_SPG/normal/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/chinese/Ch77_WZ_120_SPG/normal/lod3/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.726255 -0.556664 -4.592466</min>
+		<max>1.663491 4.937430 3.857560</max>
+	</visibilityBox>
+</root>

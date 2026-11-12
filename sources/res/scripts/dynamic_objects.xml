@@ -330,21 +330,6 @@
 			</pixie>
 		</effects>
 	</FireCircleEffect>
-	<InfluenceZoneCircleVisual>
-		<ally>
-			<visual>content/Interface/TargetPoint/circle_reload_aura.model</visual>
-			<color>0xFF8FD0DC</color>
-			<enableAccurateCollision>False</enableAccurateCollision>
-			<maxUpdateInterval>
-				0.04
-				<!--BW_String-->
-			</maxUpdateInterval>
-			<overTerrainHeight>
-				0.5
-				<!--BW_String-->
-			</overTerrainHeight>
-		</ally>
-	</InfluenceZoneCircleVisual>
 	<InspireAreaVisual>
 		<ally>
 			<visual>content/Interface/TargetPoint/inspire.model</visual>
@@ -841,20 +826,6 @@
 			</effect>
 		</enemy>
 	</epicMinesIdleEffect>
-	<epicMinesIdleBlueEffect>
-		<ally>
-			<effect>
-				<path_fwd>particles/content_deferred/GFX_models/gameplay/br_mine_filed/mines_allies_blue.seq</path_fwd>
-				<path>particles/content_deferred/GFX_models/gameplay/br_mine_filed/mines_allies_blue.seq</path>
-			</effect>
-		</ally>
-		<enemy>
-			<effect>
-				<path_fwd>particles/content_deferred/GFX_models/gameplay/br_mine_filed/mines_enemy.seq</path_fwd>
-				<path>particles/content_deferred/GFX_models/gameplay/br_mine_filed/mines_enemy.seq</path>
-			</effect>
-		</enemy>
-	</epicMinesIdleBlueEffect>
 	<minesBlowUpEffect>
 		<timeline>
 			<lightingEnd>
@@ -1198,9 +1169,6 @@
 		<flagPath>content/MilitaryEnvironment/mle000_PTFlagstaff/normal/lod0/mle000_PTFlagstaff01_Flag.model</flagPath>
 		<flagstaffPath>content/MilitaryEnvironment/mle000_PTFlagstaff/normal/lod0/mle000_PTFlagstaff01.model</flagstaffPath>
 	</flag>
-	<portalVFXPrefabs>
-		<prefab>particles/content_deferred/GFX_models/portal26_event/procedure/procedure_portal.prefab</prefab>
-	</portalVFXPrefabs>
 	<museumOfGlory>
 		<path>content/Hangars/h16_mt_museum/environment/h01_VD26_Diorama_1_AM.dds</path>
 		<path>content/Hangars/h16_mt_museum/environment/h01_VD26_Diorama_2_AM.dds</path>
@@ -1215,5 +1183,10 @@
 	<flag>
 		<flagPath>content/MilitaryEnvironment/mle000_BDAYFlagstaff/normal/lod0/mle000_BDAYFlagstaff01_Flag.model</flagPath>
 		<flagstaffPath>content/MilitaryEnvironment/mle000_BDAYFlagstaff/normal/lod0/mle000_BDAYFlagstaff01.model</flagstaffPath>
+	</flag>
+	<flag>
+		<flagPath>content/MilitaryEnvironment/mle000_NYFlagstaff/normal/lod0/flag.model</flagPath>
+		<flagstaffPath>content/MilitaryEnvironment/mle000_NYFlagstaff/normal/lod0/mle000_NYFlagstaff01.model</flagstaffPath>
+		<prefab>content/CGFPrefabs/Flagstaff/mle000_NYFlagstaff_VFX_prefab.prefab</prefab>
 	</flag>
 </root>

@@ -1423,8 +1423,6 @@ package
       
       public static const PREBATTLE_REQUEST_NAME_CHANGE_FUN_SUB_MODE:String = "#system_messages:prebattle/request/name/CHANGE_FUN_SUB_MODE";
       
-      public static const PREBATTLE_REQUEST_NAME_PORTAL_SET_BATTLE_LEVEL:String = "#system_messages:prebattle/request/name/PORTAL_SET_BATTLE_LEVEL";
-      
       public static const FORTIFICATION_REQUEST_NAME_CREATE_FORT:String = "#system_messages:fortification/request/name/CREATE_FORT";
       
       public static const FORTIFICATION_REQUEST_NAME_DELETE_FORT:String = "#system_messages:fortification/request/name/DELETE_FORT";
@@ -2814,6 +2812,48 @@ package
       public static const PARAGONS_CHAPTERCOMPLETED_TITLE:String = "#system_messages:paragons/chapterCompleted/title";
       
       public static const PARAGONS_CHAPTERCOMPLETED_TEXT:String = "#system_messages:paragons/chapterCompleted/text";
+      
+      public static const CUSTOMIZATIONRESOURCE_EXCHANGE_CATEGORYITEM:String = "#system_messages:customizationResource/exchange/categoryItem";
+      
+      public static const CUSTOMIZATIONRESOURCE_CATEGORIES_PAINTS:String = "#system_messages:customizationResource/categories/paints";
+      
+      public static const CUSTOMIZATIONRESOURCE_CATEGORIES_INSCRIPTIONS:String = "#system_messages:customizationResource/categories/inscriptions";
+      
+      public static const CUSTOMIZATIONRESOURCE_CATEGORIES_EMBLEMS:String = "#system_messages:customizationResource/categories/emblems";
+      
+      public static const CUSTOMIZATIONRESOURCE_CATEGORIES_CAMOUFLAGES:String = "#system_messages:customizationResource/categories/camouflages";
+      
+      public static const CUSTOMIZATIONRESOURCE_CATEGORIES_PROJECTIONDECALS:String = "#system_messages:customizationResource/categories/projectionDecals";
+      
+      public static const CUSTOMIZATIONRESOURCE_CATEGORIES_MODIFICATIONS:String = "#system_messages:customizationResource/categories/modifications";
+      
+      public static const CUSTOMIZATIONRESOURCE_CATEGORIES_STYLES2D:String = "#system_messages:customizationResource/categories/styles2D";
+      
+      public static const CUSTOMIZATIONRESOURCE_CATEGORIES_STYLES3D:String = "#system_messages:customizationResource/categories/styles3D";
+      
+      public static const CUSTOMIZATIONRESOURCE_EXCHANGE_SUCCESS_TITLE:String = "#system_messages:customizationResource/exchange/success/title";
+      
+      public static const CUSTOMIZATIONRESOURCE_EXCHANGE_SUCCESS_BODY:String = "#system_messages:customizationResource/exchange/success/body";
+      
+      public static const CUSTOMIZATIONRESOURCE_EXCHANGE_ERROR_TITLE:String = "#system_messages:customizationResource/exchange/error/title";
+      
+      public static const CUSTOMIZATIONRESOURCE_EXCHANGE_ERROR_BODY:String = "#system_messages:customizationResource/exchange/error/body";
+      
+      public static const CUSTOMIZATIONRESOURCE_PURCHASE_RECEIPT_TITLE:String = "#system_messages:customizationResource/purchase/receipt/title";
+      
+      public static const CUSTOMIZATIONRESOURCE_PURCHASE_RECEIPT_BODY:String = "#system_messages:customizationResource/purchase/receipt/body";
+      
+      public static const CUSTOMIZATIONRESOURCE_COMPENSATION_TITLE:String = "#system_messages:customizationResource/compensation/title";
+      
+      public static const CUSTOMIZATIONRESOURCE_COMPENSATION_BODY:String = "#system_messages:customizationResource/compensation/body";
+      
+      public static const CUSTOMIZATIONRESOURCE_SWITCH_EVENT_ENABLED_BODY:String = "#system_messages:customizationResource/switch/event/enabled/body";
+      
+      public static const CUSTOMIZATIONRESOURCE_SWITCH_EVENT_DISABLED_BODY:String = "#system_messages:customizationResource/switch/event/disabled/body";
+      
+      public static const CUSTOMIZATIONRESOURCE_SWITCH_EXCHANGE_ENABLED_BODY:String = "#system_messages:customizationResource/switch/exchange/enabled/body";
+      
+      public static const CUSTOMIZATIONRESOURCE_SWITCH_EXCHANGE_DISABLED_BODY:String = "#system_messages:customizationResource/switch/exchange/disabled/body";
        
       
       public function SYSTEM_MESSAGES()

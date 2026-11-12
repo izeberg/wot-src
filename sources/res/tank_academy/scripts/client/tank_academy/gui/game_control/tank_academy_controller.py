@@ -15,17 +15,19 @@ from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.connection_mgr import IConnectionManager
 from skeletons.gui.game_control import IBootcampController, ITankAcademyController
 from skeletons.gui.lobby_context import ILobbyContext
+from skeletons.gui.offers import IOffersDataProvider
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
 from tank_academy.gui.game_control.tank_academy_hints_helper import TankAcademyHintsHelper
 from tank_academy.helpers.server_settings import TankAcademyConfig
 from tank_academy.gui.selectable_reward.selectable_reward_manager import TankAcademySelectableRewardManager
 from tank_academy.gui.server_events.event_items import TankAcademyQuest, TankAcademyTokenQuest, TankAcademyGroup
-from tank_academy.gui.server_events.events_helpers import isTankAcademyQuestID, isTankAcademyOfferToken, isTankAcademyDelayedRewardCurrencyToken
+from tank_academy.gui.server_events.events_helpers import isTankAcademyQuestID, isTankAcademyOfferToken, isTankAcademyDelayedRewardCurrencyToken, buildTankAcademyOfferTokenPrefix
 from tank_academy.gui.shared.event_dispatcher import showTankAcademyReward
 from tank_academy_common.tank_academy_constants import GAME_PARAMS_KEY, TANK_ACADEMY_UNLOCK_TOKEN, TANK_ACADEMY_COMPLETE_TOKEN, AB_TEST_FEATURE_NAME, AB_TEST_DEFAULT_GROUP_NAME
 if typing.TYPE_CHECKING:
     from typing import Optional, Union, List, Callable, Tuple
+    from account_helpers.offers.events_data import OfferEventData
     from gui.server_events.bonuses import SelectableBonus
     from gui.server_events.event_items import Quest, Group
 _CLIENT_REWARD_IDX = -1
@@ -38,6 +40,7 @@ class TankAcademyController(ITankAcademyController):
     __tankAcademySelectableRewardMgr = TankAcademySelectableRewardManager
     __bootcampController = dependency.descriptor(IBootcampController)
     __settingsCore = dependency.descriptor(ISettingsCore)
+    __offersProvider = dependency.descriptor(IOffersDataProvider)
     __slots__ = ('_em', 'onStateChanged', 'onFinish', '_isEnabled', '_isAvailable',
                  '__isWaitingToken', '__savedRewards', '__hasDelayedRewards', '__isFinished',
                  '__abTestGroup', '__hangarWidgetAlias', '__suppressedPostBattleArenaUniqueIDs',
@@ -194,6 +197,11 @@ class TankAcademyController(ITankAcademyController):
             return [ group for group in groups if filterFunc(group) ]
         return groups
 
+    def getTankAcademyOffers(self, filterFunc=None):
+        offerTokenPrefix = buildTankAcademyOfferTokenPrefix(self.__abTestGroup)
+        return [ offer for offer in self.__offersProvider.getAllOffers() if offer.token.startswith(offerTokenPrefix) and (filterFunc is None or filterFunc(offer))
+               ]
+
     def getCountTankAcademyQuests(self):
         return len(self.getTankAcademyQuests())
 
@@ -319,6 +327,12 @@ class TankAcademyController(ITankAcademyController):
         else:
             _, _, newQuestNumber = migrationInfo
             return newQuestNumber > 1
+
+    def hasQuestTutorial(self, quest):
+        return self.getTutorialChapter(quest) is not None
+
+    def getTutorialChapter(self, quest):
+        return self.__getConfig().quests.get(quest.getID(), {}).get('tutorialChapter', None)
 
     def _getIsEnabled(self):
         isEnabled = self.isEnabledByConfig() and not self.__bootcampController.isInBootcamp()

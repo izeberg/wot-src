@@ -9,8 +9,8 @@ class NewYearMandarinsConverterFormatter(ServiceChannelFormatter):
     _MSG_TEMPLATE = 'NewYearMandarinsConverts'
 
     def format(self, message, *args):
-        data = message.data['extData']['newYear25']
-        mandarins = data.get('ny25_mandarin', 0) * -1
+        data = message.data['extData']['newYear27']
+        mandarins = data.get('ny27_mandarin', 0) * -1
         machineCount = data.get('machine_coin', 0)
         msgR = R.strings.messenger.serviceChannelMessages.newYearMandarinsConvert
         if machineCount:

@@ -143,9 +143,9 @@ class ArmoryYardListener(_NotificationListener):
         smType = SystemMessages.SM_TYPE.ArmoryYardBundlePurchase if isBundle else SystemMessages.SM_TYPE.ArmoryYardInformationHeader
         SystemMessages.pushMessage(text=text, type=smType, priority=NotificationPriorityLevel.MEDIUM, messageData={'header': backport.text(R.strings.messenger.serviceChannelMessages.sysMsg.titles.purchase())})
 
-    def __payed(self, isPostProgression, count, price=None, currency=Currency.GOLD):
-        bodySection = self.ARMORY_YARD_TEXT.postPayed if isPostProgression else self.ARMORY_YARD_TEXT.payed
-        messageType = SystemMessages.SM_TYPE.FinancialTransactionBuyAYFreeCoins if isPostProgression else SystemMessages.SM_TYPE.FinancialTransactionBuyAYCoins
+    def __payed(self, count, price=None, currency=Currency.GOLD):
+        bodySection = self.ARMORY_YARD_TEXT.payed
+        messageType = SystemMessages.SM_TYPE.FinancialTransactionBuyAYCoins
         messageResID = bodySection.single() if count == 1 else bodySection.multiple()
         SystemMessages.pushMessage(text=backport.text(messageResID, count=count), type=messageType, priority=NotificationPriorityLevel.MEDIUM, messageData={'header': self.__getHeader()})
         if price is None or currency not in self.CURRENCY_TYPE_MAP:

@@ -641,6 +641,10 @@ package scaleform.clik.controls
          var _loc4_:uint = 0;
          while(_loc4_ < _loc3_)
          {
+            if(_baseDisposed)
+            {
+               return;
+            }
             _loc5_ = this.getRendererAt(_loc4_);
             _loc6_ = this._scrollPosition * (this._direction == DirectionMode.HORIZONTAL ? this._totalRows : this._totalColumns) + _loc4_;
             _loc7_ = new ListData(_loc6_,itemToLabel(param1[_loc4_]),_selectedIndex == _loc6_);

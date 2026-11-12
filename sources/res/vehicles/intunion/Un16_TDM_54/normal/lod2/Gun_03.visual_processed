@@ -105,8 +105,8 @@
 		<node>G_L_BlendBone</node>
 		<node>G_R_BlendBone</node>
 		<geometry>
-			<vertices>gun_03_Shape.vertices</vertices>
-			<primitive>gun_03_Shape.indices</primitive>
+			<vertices>gun_03Shape.vertices</vertices>
+			<primitive>gun_03Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -168,15 +168,15 @@
 						</Float>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.175364 -1.575045</groupOrigin>
+				<groupOrigin>0.000002 0.169458 -1.552626</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.425000 -0.270000 0.050039</min>
-		<max>0.425000 0.620728 3.100051</max>
+		<min>-0.424998 -0.275906 0.027620</min>
+		<max>0.425002 0.614822 3.077632</max>
 	</boundingBox>
-	<geometrySize>55356</geometrySize>
+	<geometrySize>57838</geometrySize>
 	<minUVDensity>0.014829</minUVDensity>
 </root>

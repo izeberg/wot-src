@@ -4,10 +4,6 @@ from gui.impl.lobby.video.video_sound_manager import IVideoSoundManager, SoundMa
 from shared_utils import CONST_CONTAINER
 
 class ArmoryYardSounds(CONST_CONTAINER):
-    VIDEO_ARMOUR = 'ay_vid_stage_armour'
-    VIDEO_GUN = 'ay_vid_stage_gun'
-    VIDEO_TURRET = 'ay_vid_stage_turret'
-    VIDEO_TRACKS = 'ay_vid_stage_tracks'
     VIDEO_REWARD = 'ay_vid_stage_reward'
     VIDEO_INTRO = 'ay_vid_stage_intro'
     VIDEO_PAUSE = 'ay_video_pause'
@@ -16,10 +12,10 @@ class ArmoryYardSounds(CONST_CONTAINER):
 
 
 class ArmoryYardVideoSoundControl(IVideoSoundManager):
-    __VIDEO_TO_SOUND = {'ay_armour': ArmoryYardSounds.VIDEO_ARMOUR, 
-       'ay_gun': ArmoryYardSounds.VIDEO_GUN, 
-       'ay_turret': ArmoryYardSounds.VIDEO_TURRET, 
-       'ay_tracks': ArmoryYardSounds.VIDEO_TRACKS, 
+    __VIDEO_TO_SOUND = {'ay_armour': None, 
+       'ay_gun': None, 
+       'ay_turret': None, 
+       'ay_tracks': None, 
        'ay_reward': ArmoryYardSounds.VIDEO_REWARD, 
        'ay_intro': ArmoryYardSounds.VIDEO_INTRO}
 

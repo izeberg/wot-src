@@ -684,9 +684,9 @@ msgstr "Увеличение обзора."
 
 msgid "comp7_ally_support/descr/active"
 msgstr ""
-"На наступныя {colorTagOpen}%(duration)d с{colorTagClose} экіпаж атрымлівае бонус {colorTagOpen}%(crewBuff_1).1f/%(crewBuff_2).1f/%(crewBuff_3).1f%%{colorTagClose} да ўзроўню валодання асноўнай спецыяльнасцю за кожную машыну іншай ролі ў вашай камандзе.\n"
+"На следующие {colorTagOpen}%(duration)d с{colorTagClose} экипаж получает бонус {colorTagOpen}%(crewBuff_1).1f/%(crewBuff_2).1f/%(crewBuff_3).1f%%{colorTagClose} к уровню владения основной специальностью за каждый уникальный навык, выбранный на машинах союзников.\n"
 "\n"
-"Пры разліку бонусу ад навыку заўсёды ўлічваецца ваша машына."
+"Ваша машина всегда учитывается при расчёте бонуса от навыка."
 
 msgid "comp7_ally_support/name"
 msgstr "Адзін за ўсіх"

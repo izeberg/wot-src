@@ -30,6 +30,11 @@ package net.wg.mock.utils
          return null;
       }
       
+      public function hasFocusInside(param1:InteractiveObject) : Boolean
+      {
+         return false;
+      }
+      
       public function hasModalFocus(param1:IView) : Boolean
       {
          return false;

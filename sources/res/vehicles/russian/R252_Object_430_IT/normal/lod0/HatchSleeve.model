@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R252_Object_430_IT/normal/lod0/HatchSleeve</nodefullVisual>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<parent>vehicles/russian/R252_Object_430_IT/normal/lod1/HatchSleeve</parent>
+	<visibilityBox>
+		<min>0.170516 0.794507 -1.483250</min>
+		<max>0.429875 1.178889 -1.181444</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB147_Avalon_Mk_II_76/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/british/GB147_Avalon_Mk_II_76/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.157642 0.000000 -1.212525</min>
+		<max>1.155792 1.632372 1.227459</max>
+	</visibilityBox>
+</root>

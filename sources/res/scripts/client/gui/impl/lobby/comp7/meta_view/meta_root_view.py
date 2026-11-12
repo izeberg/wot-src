@@ -2,9 +2,11 @@ import logging, typing
 from frameworks.wulf import ViewFlags, ViewSettings, WindowLayer
 from gui import GUI_SETTINGS
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
+from gui.Scaleform.daapi.view.lobby.comp7.web_handlers import createComp7LeaderboardWebHandlers
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.impl.backport import BackportTooltipWindow
 from gui.impl.backport.backport_tooltip import createTooltipData
+from gui.impl.common.browser import Browser, BrowserSettings
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.comp7.meta_view.root_view_model import RootViewModel
 from gui.impl.gen.view_models.views.lobby.comp7.meta_view.tab_model import MetaRootViews, TabModel
@@ -89,6 +91,8 @@ class MetaRootView(ViewImpl, IGlobalListener):
     def _finalize(self):
         self.__removeListeners()
         self.__clearPages()
+        self.setChildView(MetaRootViews.LEADERBOARD, None)
+        return
 
     def _onLoading(self, *args, **kwargs):
         tabId = kwargs.pop('tabId', None)
@@ -100,6 +104,7 @@ class MetaRootView(ViewImpl, IGlobalListener):
         self.__initPages()
         self.__updateTabs()
         self.switchPage(self.__tabId, *args, **kwargs)
+        self.setChildView(MetaRootViews.LEADERBOARD, Browser(GUI_SETTINGS.lookup('comp7LeaderboardURL'), BrowserSettings(R.views.common.Browser()), createComp7LeaderboardWebHandlers()))
         comp7_model_helpers.setScheduleInfo(model=self.viewModel.scheduleInfo)
         self.__addListeners()
         return
@@ -146,8 +151,9 @@ class MetaRootView(ViewImpl, IGlobalListener):
          ProgressionPage(self.viewModel.progressionModel, self),
          RankRewardsPage(self.viewModel.rankRewardsModel, self),
          WeeklyQuestsPage(self.viewModel.weeklyQuestsModel, self),
-         LeaderboardPage(self.viewModel.leaderboardModel, self))
+         LeaderboardPage(None, self))
         self.__pages = {p.pageId:p for p in pages}
+        return
 
     def __clearPages(self):
         if self.__currentPage.isLoaded:

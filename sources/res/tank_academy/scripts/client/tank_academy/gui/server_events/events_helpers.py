@@ -3,24 +3,26 @@ from gui.impl import backport
 from gui.impl.gen import R
 from gui.Scaleform.daapi.view.lobby.server_events.events_helpers import QuestPostBattleInfo
 from gui.server_events import conditions, formatters
-from tank_academy_common.tank_academy_constants import AB_TEST_DEFAULT_GROUP_NAME
+from tank_academy_common.tank_academy_constants import AB_TEST_DEFAULT_GROUP_NAME, TANK_ACADEMY_OFFER_TOKEN_PREFIX
 from tank_academy.gui.server_events.events_constants import TANK_ACADEMY_QUEST_PREFIX, TANK_ACADEMY_QUEST_GROUP_PREFIX
-_DELAYED_REWARD_OFFER_TOKEN_PREFIX = 'offer:tank_academy'
 
 def isTankAcademyOfferVehicleToken(token):
-    return token.startswith(_DELAYED_REWARD_OFFER_TOKEN_PREFIX)
+    return token.startswith(TANK_ACADEMY_OFFER_TOKEN_PREFIX)
 
 
 def isTankAcademyOfferToken(token):
     return isTankAcademyOfferVehicleToken(token) and not token.endswith('_gift')
 
 
-def isTankAcademyDelayedRewardToken(token):
-    return isTankAcademyOfferToken(token)
-
-
 def isTankAcademyDelayedRewardCurrencyToken(token):
     return isTankAcademyOfferVehicleToken(token) and token.endswith('_gift')
+
+
+def buildTankAcademyOfferTokenPrefix(abTestGroup):
+    prefix = TANK_ACADEMY_OFFER_TOKEN_PREFIX
+    if abTestGroup is not None and abTestGroup != AB_TEST_DEFAULT_GROUP_NAME:
+        prefix += '_' + abTestGroup
+    return prefix + ':'
 
 
 def isTankAcademyQuestID(questID):

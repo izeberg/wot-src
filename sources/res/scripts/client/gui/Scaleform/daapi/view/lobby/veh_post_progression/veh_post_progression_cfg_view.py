@@ -1,4 +1,5 @@
 from functools import partial
+from account_helpers.settings_core.settings_constants import GAME
 from adisp import adisp_process
 from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
@@ -17,6 +18,7 @@ from gui.veh_post_progression.sounds import PP_VIEW_SOUND_SPACE
 from gui.veh_post_progression.vo_builders.cfg_page_vos import getDataVO, getTitleVO
 from helpers import dependency
 from nation_change.nation_change_helpers import iterVehTypeCDsInNationGroup
+from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.game_control import IVehicleComparisonBasket, IHeroTankController
 from skeletons.gui.shared import IItemsCache
 _HERO_PREVIEW_ALIASES = (
@@ -32,6 +34,7 @@ class VehiclePostProgressionCfgView(VehiclePostProgressionViewMeta):
     __cmpBasket = dependency.descriptor(IVehicleComparisonBasket)
     __itemsCache = dependency.descriptor(IItemsCache)
     __heroTanks = dependency.descriptor(IHeroTankController)
+    __settingsCore = dependency.descriptor(ISettingsCore)
 
     def __init__(self, ctx=None):
         super(VehiclePostProgressionCfgView, self).__init__(ctx)
@@ -70,6 +73,7 @@ class VehiclePostProgressionCfgView(VehiclePostProgressionViewMeta):
            'cache.mayConsumeWalletResources': self._updateData})
         self.__cmpBasket.onChange += self.__onCmpBasketChange
         self.__cmpBasket.onSwitchChange += self._updateData
+        self.__settingsCore.onSettingsChanged += self.__onSettingsChanged
         progressionInjectView = self._progressionInject.getInjectView()
         progressionInjectView.onGoBackAction += self.__onGoBackAction
         progressionInjectView.onResearchAction += self.__onResearchAction
@@ -78,6 +82,7 @@ class VehiclePostProgressionCfgView(VehiclePostProgressionViewMeta):
         g_clientUpdateManager.removeObjectCallbacks(self)
         self.__cmpBasket.onSwitchChange -= self._updateData
         self.__cmpBasket.onChange -= self.__onCmpBasketChange
+        self.__settingsCore.onSettingsChanged -= self.__onSettingsChanged
         progressionInjectView = self._progressionInject.getInjectView()
         if progressionInjectView:
             progressionInjectView.onResearchAction -= self.__onResearchAction
@@ -113,6 +118,10 @@ class VehiclePostProgressionCfgView(VehiclePostProgressionViewMeta):
 
     def _updateTitle(self):
         self.as_setVehicleTitleS(getTitleVO(self._vehicle))
+
+    def __onSettingsChanged(self, diff):
+        if GAME.SHOW_VEHICLE_DIFFICULTY_IN_RESEARCH in diff:
+            self._updateTitle()
 
     def __onCmpBasketChange(self, changedData):
         if changedData.isFullChanged:

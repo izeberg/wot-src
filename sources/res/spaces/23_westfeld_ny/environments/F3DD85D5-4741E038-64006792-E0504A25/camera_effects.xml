@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<effectMap>spaces/23_westfeld_ny/environments/F3DD85D5-4741E038-64006792-E0504A25/camera_effects_map.dds</effectMap>
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/23ny_westfeld_snow.vfx</name>
+		<alignToTerrain>false</alignToTerrain>
+		<useCameraTarget>true</useCameraTarget>
+	</effect>
+</root>

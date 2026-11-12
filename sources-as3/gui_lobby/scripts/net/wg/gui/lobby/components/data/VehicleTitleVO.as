@@ -26,6 +26,8 @@ package net.wg.gui.lobby.components.data
       
       public var roleText:String = "";
       
+      public var difficulty:int = -1;
+      
       public var showInfoIcon:Boolean = true;
       
       private var _ability:AbilityBlockVO = null;

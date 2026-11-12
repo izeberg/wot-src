@@ -317,6 +317,9 @@ class _QuestRecruitInfo(_BaseRecruitInfo):
     def getHowToGetInfo(self):
         return ''
 
+    def getAdditionalAlert(self):
+        return ''
+
     def getNewSkillCount(self, onlyFull=False):
         if self._hasNewSkill:
             return (1, 0)
@@ -371,6 +374,12 @@ class _TokenRecruitInfo(_BaseRecruitInfo):
         if dynAccessor.isValid() and dynAccessor.dyn('howToGetInfo').isValid():
             return backport.text(dynAccessor.howToGetInfo())
         return backport.text(R.strings.tooltips.notrecruitedtankman.tankman.howToGetInfo())
+
+    def getAdditionalAlert(self):
+        dynAccessor = R.strings.tooltips.notrecruitedtankman.dyn(self._sourceID)
+        if dynAccessor.isValid() and dynAccessor.dyn('additionalAlert').isValid():
+            return backport.text(dynAccessor.additionalAlert())
+        return EMPTY_STRING
 
     def getFullUserNameByNation(self, nationID=None):
         if nationID is None:

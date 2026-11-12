@@ -56,6 +56,12 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var enableBattleContextHints:SettingsControlProp = null;
       
+      public var showVehicleDifficultyInHangar:SettingsControlProp = null;
+      
+      public var showVehicleDifficultyInTechTree:SettingsControlProp = null;
+      
+      public var showVehicleDifficultyInResearch:SettingsControlProp = null;
+      
       public var minimapAlpha:SettingsControlProp = null;
       
       public var enablePostMortemDelay:SettingsControlProp = null;
@@ -184,6 +190,9 @@ package net.wg.gui.lobby.settings.vo.config
             "gameplay_epicDomination":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "gameplay_devMaps":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "enableBattleContextHints":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
+            "showVehicleDifficultyInHangar":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
+            "showVehicleDifficultyInTechTree":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
+            "showVehicleDifficultyInResearch":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "minimapAlpha":createControl(ControlsFactory.TYPE_SLIDER).build(),
             "enablePostMortemDelay":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "enableOpticalSnpEffect":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
@@ -283,6 +292,12 @@ package net.wg.gui.lobby.settings.vo.config
          this.gameplay_devMaps = null;
          this.enableBattleContextHints.dispose();
          this.enableBattleContextHints = null;
+         this.showVehicleDifficultyInHangar.dispose();
+         this.showVehicleDifficultyInHangar = null;
+         this.showVehicleDifficultyInTechTree.dispose();
+         this.showVehicleDifficultyInTechTree = null;
+         this.showVehicleDifficultyInResearch.dispose();
+         this.showVehicleDifficultyInResearch = null;
          this.minimapAlpha.dispose();
          this.minimapAlpha = null;
          this.enablePostMortemDelay.dispose();

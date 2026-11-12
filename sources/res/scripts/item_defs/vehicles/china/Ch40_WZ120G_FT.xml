@@ -5082,6 +5082,76 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<drivenJoints>
+						<master>
+							<node>Gun</node>
+							<pitch>
+								<row>-15</row>
+								<row>6</row>
+							</pitch>
+							<yaw>
+								<row>0</row>
+							</yaw>
+							<slaves>
+								<slave>
+									<node>driven_gun</node>
+									<pitch>
+										<row>15</row>
+										<row>-6</row>
+									</pitch>
+									<yaw>
+										<row>0</row>
+									</yaw>
+								</slave>
+							</slaves>
+						</master>
+						<master>
+							<node>turret</node>
+							<pitch>
+								<row>0</row>
+							</pitch>
+							<yaw>
+								<row>-10</row>
+								<row>10</row>
+							</yaw>
+							<slaves>
+								<slave>
+									<node>driven_turret</node>
+									<pitch>
+										<row>0</row>
+									</pitch>
+									<yaw>
+										<row>10</row>
+										<row>-10</row>
+									</yaw>
+								</slave>
+							</slaves>
+						</master>
+						<master>
+							<node>Gun</node>
+							<pitch>
+								<row>-15</row>
+								<row>-2</row>
+								<row>6</row>
+							</pitch>
+							<yaw>
+								<row>0</row>
+							</yaw>
+							<slaves>
+								<slave>
+									<node>Visor</node>
+									<pitch>
+										<row>-1</row>
+										<row>8</row>
+										<row>10</row>
+									</pitch>
+									<yaw>
+										<row>0</row>
+									</yaw>
+								</slave>
+							</slaves>
+						</master>
+					</drivenJoints>
 					<camouflage>
 						<tiling>
 							0.5 0.5 0.000000 0.000000

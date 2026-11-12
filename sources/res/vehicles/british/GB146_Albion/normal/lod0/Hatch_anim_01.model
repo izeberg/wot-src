@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB146_Albion/normal/lod0/Hatch_anim_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.792068 0.498383 0.459220</min>
+		<max>-1.568070 0.725806 0.751717</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB146_Albion/normal/lod1/Hatch_anim_01</parent>
+	<extent>32.000000</extent>
+</root>

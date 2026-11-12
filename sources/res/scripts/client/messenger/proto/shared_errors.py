@@ -1,9 +1,8 @@
 from gui.Scaleform.locale.MESSENGER import MESSENGER as I18N_MESSENGER
 from gui.impl import backport
-from helpers import i18n, int2roman, dependency
+from helpers import i18n
 from messenger.m_constants import CLIENT_ERROR_NAMES, CLIENT_ACTION_NAMES, CLIENT_ERROR_ID
 from messenger.proto.interfaces import IChatError
-from skeletons.gui.lobby_context import ILobbyContext
 
 class I18nErrorID(object):
     __slots__ = ('errorID', )
@@ -128,20 +127,6 @@ def makeChatBanError(endTime, reason):
     else:
         msg = i18n.makeString('#chat:errors/chatbannedpermanent', banReason=reason)
     return msg
-
-
-def makeNoviceChatBanError():
-    lobbyContext = dependency.instance(ILobbyContext)
-    serverSettings = lobbyContext.getServerSettings()
-    conf = serverSettings.newbieChatLockConfig
-    return i18n.makeString('#chat:errors/novicerestrictions', battles=conf.battlesCountThreshold, level=int2roman(conf.vehicleLevelThreshold))
-
-
-def makeNoviceChatBanErrorShort():
-    lobbyContext = dependency.instance(ILobbyContext)
-    serverSettings = lobbyContext.getServerSettings()
-    conf = serverSettings.newbieChatLockConfig
-    return i18n.makeString('#chat:errors/novicerestrictionsshort', battles=conf.battlesCountThreshold, level=int2roman(conf.vehicleLevelThreshold))
 
 
 class ChatBanError(IChatError):

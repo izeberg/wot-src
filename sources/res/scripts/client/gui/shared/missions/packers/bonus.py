@@ -784,7 +784,7 @@ class Customization3Dand2DbonusUIPacker(CustomizationBonusUIPacker):
 
 
 class StyleProgressBonusUIPacker(BaseBonusUIPacker):
-    __c11nService = dependency.descriptor(ICustomizationService)
+    _c11nService = dependency.descriptor(ICustomizationService)
 
     @classmethod
     def _getBonusModel(cls):
@@ -801,7 +801,7 @@ class StyleProgressBonusUIPacker(BaseBonusUIPacker):
         styleID = bonus.getStyleID()
         branchID = bonus.getBranchID()
         progressLevel = bonus.getProgressLevel()
-        camo = getProgressionStyleCamouflage(styleID, branchID, progressLevel)
+        camo = getProgressionStyleCamouflage(styleID, branchID, progressLevel if progressLevel else 1)
         if camo is not None:
             icon = cls._getIcon(styleID, progressLevel)
             label = cls._getLabel(camo)
@@ -1205,11 +1205,17 @@ class CurrenciesBonusUIPacker(SimpleBonusUIPacker):
 
     @classmethod
     def _getContentId(cls, bonus):
-        return cls._getCurrencyPacker(bonus).getContentId(bonus)
+        customPacker = cls._getCurrencyPacker(bonus)
+        if customPacker:
+            return customPacker.getContentId(bonus)
+        return super(CurrenciesBonusUIPacker, cls)._getContentId(bonus)
 
     @classmethod
     def _getToolTip(cls, bonus):
-        return cls._getCurrencyPacker(bonus).getToolTip(bonus)
+        customPacker = cls._getCurrencyPacker(bonus)
+        if customPacker:
+            return customPacker.getToolTip(bonus)
+        return super(CurrenciesBonusUIPacker, cls)._getToolTip(bonus)
 
 
 class BonusUIPacker(object):
@@ -1311,9 +1317,11 @@ def packMissionsBonusModelAndTooltipData(bonuses, packer, model, tooltipData=Non
                     bonusTooltipList = list(bonusTooltipList)
                 else:
                     bonusList = sorted(bonusList, cmp=sort(bonus.getName()))
+            bonusContentIdList = packer.getContentId(bonus)
             for bonusIndex, item in enumerate(bonusList):
                 item.setIndex(bonusIndexTotal)
                 tooltipIdx = str(bonusIndexTotal)
+                item.setTooltipContentId(str(bonusContentIdList[bonusIndex]))
                 if hasattr(item, 'setTooltipId'):
                     item.setTooltipId(tooltipIdx)
                 model.addViewModel(item)

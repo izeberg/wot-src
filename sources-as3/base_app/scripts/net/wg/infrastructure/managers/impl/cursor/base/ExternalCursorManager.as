@@ -5,6 +5,7 @@ package net.wg.infrastructure.managers.impl.cursor.base
    import flash.utils.Dictionary;
    import net.wg.data.constants.Errors;
    import net.wg.infrastructure.events.ExternalCursorEvent;
+   import net.wg.infrastructure.wulf.IViewWrapper;
    
    public class ExternalCursorManager extends BaseCursorManager
    {
@@ -116,6 +117,12 @@ package net.wg.infrastructure.managers.impl.cursor.base
          var _loc2_:IEventDispatcher = IEventDispatcher(param1.target);
          assert(_loc2_ in this._components,Errors.CANT_EMPTY);
          this._components[_loc2_] = param1.cursor;
+         var _loc3_:IViewWrapper = _loc2_ as IViewWrapper;
+         if(_loc3_ && _loc3_.is3DSpaceView)
+         {
+            forceSetCursor(param1.cursor);
+            return;
+         }
          if(_loc2_ == this._hoveredComponent)
          {
             this.resetCursor();

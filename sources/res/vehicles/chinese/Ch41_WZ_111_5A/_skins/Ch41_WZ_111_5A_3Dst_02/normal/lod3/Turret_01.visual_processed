@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.006195 0.305941 1.288111</row3>
+					<row3>-0.005454 0.330756 1.289072</row3>
 				</transform>
 			</node>
 		</node>
@@ -31,8 +31,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>lod3_turret_01_turret_turret_Shape.vertices</vertices>
+			<primitive>lod3_turret_01_turret_turret_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -98,7 +98,7 @@
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.013396 0.686321 0.065529</groupOrigin>
+				<groupOrigin>-0.012655 0.711136 0.066491</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -140,13 +140,13 @@
 						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_3Dst_02/WZ_111_5A_3Dst_02_equipment_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.009870 0.575928 -0.049321</groupOrigin>
+				<groupOrigin>-0.009129 0.600743 -0.048359</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.526031 -0.024567 -2.303095</min>
-		<max>1.506291 1.397209 2.204453</max>
+		<min>-1.525290 0.000248 -2.302133</min>
+		<max>1.507032 1.422024 2.205415</max>
 	</boundingBox>
 	<geometrySize>83538</geometrySize>
 	<minUVDensity>0.001490</minUVDensity>

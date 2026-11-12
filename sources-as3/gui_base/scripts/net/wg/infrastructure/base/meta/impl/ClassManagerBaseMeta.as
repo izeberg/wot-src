@@ -212,6 +212,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.common.lobbyVehicleMarkers.CustomMarkerVO;
    import net.wg.gui.components.common.lobbyVehicleMarkers.LobbyVehicleMarkers;
    import net.wg.gui.components.common.lobbyVehicleMarkers.LobbyVehicleMarkersVO;
+   import net.wg.gui.components.common.lobbyVehicleMarkers.NewYearObjectMarker;
    import net.wg.gui.components.common.lobbyVehicleMarkers.PlatoonMarker;
    import net.wg.gui.components.common.lobbyVehicleMarkers.PlatoonMarkerVO;
    import net.wg.gui.components.common.markers.AnimateExplosion;
@@ -687,6 +688,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.tooltips.layout.TooltipVerticalLayout;
    import net.wg.gui.components.vehicleHitArea.VehicleHitArea;
    import net.wg.gui.components.vehicleHitArea.VehicleHitAreaComponent;
+   import net.wg.gui.components.vehicleStatus.VehicleDifficulty;
    import net.wg.gui.components.vehicleStatus.VehicleStatus;
    import net.wg.gui.components.vehicleStatus.VehicleStatusMsg;
    import net.wg.gui.components.vehicleStatus.data.VehicleStatusVO;
@@ -1354,6 +1356,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_COMMON_LOBBYVEHICLEMARKERS_LOBBYVEHICLEMARKERS:Class = LobbyVehicleMarkers;
       
       public static const NET_WG_GUI_COMPONENTS_COMMON_LOBBYVEHICLEMARKERS_LOBBYVEHICLEMARKERSVO:Class = LobbyVehicleMarkersVO;
+      
+      public static const NET_WG_GUI_COMPONENTS_COMMON_LOBBYVEHICLEMARKERS_NEWYEAROBJECTMARKER:Class = NewYearObjectMarker;
       
       public static const NET_WG_GUI_COMPONENTS_COMMON_LOBBYVEHICLEMARKERS_PLATOONMARKER:Class = PlatoonMarker;
       
@@ -2304,6 +2308,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_VEHICLEHITAREA_VEHICLEHITAREA:Class = VehicleHitArea;
       
       public static const NET_WG_GUI_COMPONENTS_VEHICLEHITAREA_VEHICLEHITAREACOMPONENT:Class = VehicleHitAreaComponent;
+      
+      public static const NET_WG_GUI_COMPONENTS_VEHICLESTATUS_VEHICLEDIFFICULTY:Class = VehicleDifficulty;
       
       public static const NET_WG_GUI_COMPONENTS_VEHICLESTATUS_VEHICLESTATUS:Class = VehicleStatus;
       

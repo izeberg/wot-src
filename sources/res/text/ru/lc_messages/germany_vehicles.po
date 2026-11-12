@@ -166,25 +166,8 @@ msgstr "?empty?"
 msgid "Chassis_G00_Feuerbunker"
 msgstr "Огнемёт"
 
-msgid "Chassis_G00_Mausekonig_V01"
-msgstr "Фенрир"
-
-msgid "Chassis_G00_PzVI_Tiger_P"
-msgstr "Tiger (P) verstärkteketten"
-
-msgid "Chassis_G00_PzVI_Tiger_P_short"
-msgstr ""
-"Tiger (P)\n"
-"verstärkteketten"
-
-msgid "Chassis_G00_Ratte_V1"
-msgstr "Ratte"
-
 msgid "Chassis_G00_Startgestell"
 msgstr "Nebelwerfer 41"
-
-msgid "Chassis_G00_Typ_205"
-msgstr "Сурт"
 
 msgid "Chassis_G04_PzVI_Tiger_IA"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
@@ -410,6 +393,9 @@ msgstr "E 50 Alkett"
 msgid "Chassis_G194_E_50_GT_Alkett_Prod_02"
 msgstr "Gepard"
 
+msgid "Chassis_G195_Atomic_Panzer"
+msgstr "Atomic Panzer"
+
 msgid "Chassis_G196_E_75_Ausf_B_Doppel"
 msgstr "E 75"
 
@@ -418,6 +404,9 @@ msgstr "E 94"
 
 msgid "Chassis_G201_Flakpanzer_5_5_cm_Coelian_Kr"
 msgstr "Panther Ausf. F"
+
+msgid "Chassis_G203_JgPz_VII_Waldkatze"
+msgstr "JgPz VII"
 
 msgid "Chassis_G58_VK4502P"
 msgstr "VK 45.02(P) Ausf. B"
@@ -436,9 +425,6 @@ msgstr "Aufklärungspanzer V"
 
 msgid "Chassis_G98_Waffentrager_E100_P"
 msgstr "Waffenträger auf E 100 (P)"
-
-msgid "Chassis_G98_Waffentrager_E100_WO"
-msgstr "WT 12"
 
 msgid "Chassis_GW_Elefant"
 msgstr "G.W. Tiger (P)"
@@ -967,12 +953,6 @@ msgstr "FuG 12 A"
 msgid "FuG12D"
 msgstr "FuG 12"
 
-msgid "FuG12_G00"
-msgstr "FuG 12"
-
-msgid "FuG12_G00_"
-msgstr "FuG 12"
-
 msgid "FuG12_G197"
 msgstr "FuG 12"
 
@@ -1099,48 +1079,6 @@ msgstr "Брандер 21"
 msgid "G00_K_bomber__HW_21_AI_short"
 msgstr "Брандер 21"
 
-msgid "G00_Mausekonig_V01"
-msgstr "Фенрир"
-
-msgid "G00_Mausekonig_V01_descr"
-msgstr "?empty?"
-
-msgid "G00_Mausekonig_V01_short"
-msgstr "Фенрир"
-
-msgid "G00_PzVI_Tiger_P"
-msgstr "Сколль"
-
-msgid "G00_PzVI_Tiger_P_descr"
-msgstr ""
-"26 мая 1941 года Адольф Гитлер приказал доктору Порше и компании Henschel "
-"разработать прототипы нового тяжёлого танка, которые были продемонстрированы"
-" фюреру 20 апреля 1942 года. Машина разработки Порше не пошла в производство"
-" из-за слишком сложной системы привода и управления, а также необходимости "
-"использования большого количества меди. Позднее 90 оставшихся корпусов "
-"переделали в ПТ-САУ Ferdinand."
-
-msgid "G00_PzVI_Tiger_P_short"
-msgstr "Сколль"
-
-msgid "G00_Ratte"
-msgstr "Ратте"
-
-msgid "G00_Ratte_V1"
-msgstr "Ратте"
-
-msgid "G00_Ratte_V1_descr"
-msgstr "G00_Ratte_V1 description"
-
-msgid "G00_Ratte_V1_short"
-msgstr "Ратте"
-
-msgid "G00_Ratte_descr"
-msgstr "Ратте"
-
-msgid "G00_Ratte_short"
-msgstr "Ратте"
-
 msgid "G00_Startgestell"
 msgstr "РСЗО"
 
@@ -1149,20 +1087,6 @@ msgstr "РСЗО"
 
 msgid "G00_Startgestell_short"
 msgstr "РСЗО"
-
-msgid "G00_Typ_205"
-msgstr "Сурт"
-
-msgid "G00_Typ_205_descr"
-msgstr ""
-"Летом 1942 года фирма Porsche получила заказ на проведение опытно-"
-"конструкторских работ по созданию танка прорыва с максимально допустимыми "
-"уровнями защиты и мощности вооружения. Typ 205 Mäuschen стал одним "
-"из эскизных проектов в процессе разработки сверхтяжёлого танка Maus, "
-"от которого не отличался компоновкой. Машина не была реализована в металле."
-
-msgid "G00_Typ_205_short"
-msgstr "Сурт"
 
 msgid "G04"
 msgstr "G04"
@@ -2712,6 +2636,28 @@ msgstr "E 50 GT"
 msgid "G194_E_50_GT_Alkett_Prod_short_special"
 msgstr "Газотурбинный двигатель, хорошая живучесть"
 
+msgid "G195_Atomic_Panzer"
+msgstr "Atomic Panzer"
+
+msgid "G195_Atomic_Panzer_descr"
+msgstr ""
+"В начале 50-х годов в ряде стран начались работы над перспективными танками, имевшими крайне необычную конфигурацию. Во второй половине 50-х годов к этим работам присоединились немецкие инженеры. К тому моменту стала популярна концепция танка для «атомной войны». Считалось, что такой танк должен иметь герметизированное и изолированное от боеукладки боевое отделение. В Германии такой проект получил обозначение «Atomic Panzer». В танке применили крайне необычные для того времени решения: башню с вынесенной наружу орудийной установкой и механизмом заряжания конвейерного типа, активную гидропневматическую подвеску, позволявшую изменять угол наклона корпуса. Ввиду своей сложности и дороговизны проект не был реализован в металле, предпочтение было отдано классическим вариантам компоновки.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "G195_Atomic_Panzer_long_special"
+msgstr ""
+"Динамичный снайперский средний танк. Обладает хорошими показателями "
+"мобильности, точным и комфортным орудием. Также машина оборудована "
+"гидропневматической подвеской, что способствует отличным УВН. Бронирование в"
+" любой проекции довольно скромное, поэтому следует играть осмотрительно."
+
+msgid "G195_Atomic_Panzer_short"
+msgstr "Atomic Pz."
+
+msgid "G195_Atomic_Panzer_short_special"
+msgstr "Хорошее орудие и мобильность, гидропневматическая подвеска"
+
 msgid "G196_E_75_Ausf_B_Doppel"
 msgstr "E 75 Ausf B Doppel"
 
@@ -2781,6 +2727,28 @@ msgstr "Coelian"
 msgid "G201_Flakpanzer_5_5_cm_Coelian_Kr_short_special"
 msgstr ""
 "Автоматическое орудие, отличная точность, высокий комфорт ведения огня"
+
+msgid "G203_JgPz_VII_Waldkatze"
+msgstr "JgPz VII WaldKatze"
+
+msgid "G203_JgPz_VII_Waldkatze_descr"
+msgstr ""
+"Параллельно с разработкой «Леопарда» в ФРГ велась разработка и САУ — истребителя танков — с более тяжёлым вооружением. Один из проектов 1959 года JgPz VII Waldkatze («Лесной кот») предусматривал оригинальную конструкцию с вынесенной установкой вооружения. В состав вооружения входила мощная 120-мм пушка с автоматическим заряжанием, усиленная парой спаренных автоматических пушек, а для защиты от воздушных атак в корме корпуса разместили зенитную турель с дистанционным управлением. Большой диапазон УВН и адаптацию к неровностям местности планировалось обеспечить за счёт применения гидропневматической подвески с возможностью изменения угла наклона корпуса. Подвеска в совокупности с пневматическими шинами на катках обеспечивала бы высокую плавность хода. Силовая установка, в которой использовался 830-сильный дизельный двигатель MB838, должна была быть унифицирована с разрабатываемым «Леопардом». Однако большие трудности с размещением комбинированного вооружения и множество сложных новаторских решений не дали проекту билет в жизнь.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "G203_JgPz_VII_Waldkatze_long_special"
+msgstr ""
+"Динамичная самоходка с башней полного вращения, комфортным и точным орудием."
+" Бронирование слабое, но отличные показатели маскировки и своеобразная "
+"конструкция орудийной установки, в которую непросто попасть, заметно "
+"добавляют живучести."
+
+msgid "G203_JgPz_VII_Waldkatze_short"
+msgstr "WaldKatze"
+
+msgid "G203_JgPz_VII_Waldkatze_short_special"
+msgstr "Хорошая динамика и маскировка, башня полного вращения "
 
 msgid "G20_Marder_II"
 msgstr "Marder II"
@@ -3024,29 +2992,6 @@ msgstr "Великолепное орудие, вращающаяся башня
 
 msgid "G98_Waffentrager_E100_P_short_special"
 msgstr "Магазинная система заряжания, высокая огневая мощь"
-
-msgid "G98_Waffentrager_E100_WO"
-msgstr "WT 12"
-
-msgid "G98_Waffentrager_E100_WO_descr"
-msgstr ""
-"Вариант установки зенитных орудий большого калибра на шасси танка Е 100. Предполагалось использовать пушки калибром 128 и 150 миллиметров с магазинной системой заряжания. Разработка проекта была остановлена в связи с окончанием Второй мировой войны.\n"
-"\n"
-"Характеристики машины могут быть изменены без компенсации."
-
-msgid "G98_Waffentrager_E100_WO_long_special"
-msgstr ""
-"Немецкая ПТ-САУ X уровня, обладающая мощным орудием с магазинной системой "
-"заряжания. Огромная огневая мощь позволяет быстро уничтожать технику "
-"противника, а высокое бронепробитие и хорошая точность дают возможность "
-"вести огонь с дальних дистанций. В то же время у машины практически нет "
-"брони."
-
-msgid "G98_Waffentrager_E100_WO_short"
-msgstr "WT 12"
-
-msgid "G98_Waffentrager_E100_WO_short_special"
-msgstr "Великолепное орудие, вращающаяся башня"
 
 msgid "G98_Waffentrager_E100_long_special"
 msgstr ""
@@ -3491,9 +3436,6 @@ msgstr "Luchs"
 msgid "Luchsketten_Ausf_B"
 msgstr "Luchs verstärkteketten"
 
-msgid "MAN_V12Z32_44"
-msgstr "MAN V12Z32/44"
-
 msgid "MB-503"
 msgstr "Daimler-Benz MB 503"
 
@@ -3542,9 +3484,6 @@ msgstr "MB 509"
 msgid "MB509_StGM"
 msgstr "Daimler-Benz MB 509"
 
-msgid "MB509_V01"
-msgstr "MB 509"
-
 msgid "MB517"
 msgstr "MB 517"
 
@@ -3562,6 +3501,12 @@ msgstr "MB 837 K"
 
 msgid "MB_838_CAM_500_EB"
 msgstr "MB-838 CaM-500"
+
+msgid "MB_838_CAM_500_G203"
+msgstr "MB-838 CaM-500"
+
+msgid "MB_880_EA500F_G195"
+msgstr "MB-880 Ea-500F"
 
 msgid "MB_881"
 msgstr "MB 881"
@@ -4038,9 +3983,6 @@ msgstr "2x Porsche Typ 100/3"
 msgid "Porsche_Typ_100_3A"
 msgstr "2x Porsche Typ 100/3A"
 
-msgid "Porsche_Typ_100_3_G00"
-msgstr "2x Porsche Typ 100/3"
-
 msgid "Porsche_Typ_101_1_x2"
 msgstr "2 x Porsche Typ 101/1"
 
@@ -4048,9 +3990,6 @@ msgid "Porsche_Typ_205_2"
 msgstr "Porsche Typ 205/2"
 
 msgid "Porsche_Typ_220"
-msgstr "DB 603 A1"
-
-msgid "Porsche_Typ_220_G00"
 msgstr "DB 603 A1"
 
 msgid "Praga_AusfIV"
@@ -4853,9 +4792,6 @@ msgstr "Radio"
 msgid "Radio_VK4502P_G"
 msgstr "FuG5 W"
 
-msgid "Ratte_Radio"
-msgstr "10WSc"
-
 msgid "Renault"
 msgstr "Renault"
 
@@ -4918,6 +4854,12 @@ msgid "SEM_25A"
 msgstr "SEM 25A"
 
 msgid "SEM_25A_EB"
+msgstr "SEM 25A"
+
+msgid "SEM_25A_G195"
+msgstr "SEM 25A"
+
+msgid "SEM_25A_G203"
 msgstr "SEM 25A"
 
 msgid "SEM_25B"
@@ -5114,17 +5056,8 @@ msgstr "?empty?"
 msgid "Turret_1_G00_Feuerbunker"
 msgstr "Огнемёт"
 
-msgid "Turret_1_G00_Mausekonig_V01"
-msgstr "Фенрир"
-
-msgid "Turret_1_G00_Ratte_V1"
-msgstr "Ratte"
-
 msgid "Turret_1_G00_Startgestell"
 msgstr "Nebelwerfer 41"
-
-msgid "Turret_1_G00_Typ_205"
-msgstr "Сурт"
 
 msgid "Turret_1_G04_PzVI_Tiger_IA"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
@@ -5337,6 +5270,9 @@ msgstr "E 50 Alkett K.18"
 msgid "Turret_1_G194_E_50_GT_Alkett_Prod_02"
 msgstr "Gepard"
 
+msgid "Turret_1_G195_Atomic_Panzer"
+msgstr "Atomic Panzer"
+
 msgid "Turret_1_G196_E_75_Ausf_B_Doppel"
 msgstr "Doppel"
 
@@ -5345,6 +5281,9 @@ msgstr "E 94"
 
 msgid "Turret_1_G201_Flakpanzer_5_5_cm_Coelian_Kr"
 msgstr "Coelian Turm"
+
+msgid "Turret_1_G203_JgPz_VII_Waldkatze"
+msgstr "JgPz VII"
 
 msgid "Turret_1_G58_VK4502P"
 msgstr "VK 45.02 (P) Ausf. B"
@@ -5363,9 +5302,6 @@ msgstr "Aufklärungspanzer V"
 
 msgid "Turret_1_G98_Waffentrager_E100_P"
 msgstr "Waffenträger auf E 100 (P)"
-
-msgid "Turret_1_G98_Waffentrager_E100_WO"
-msgstr "WT 12"
 
 msgid "Turret_1_GW_Elefant"
 msgstr "G.W. Tiger (P)"
@@ -5508,14 +5444,6 @@ msgstr "E 50 Basiert"
 
 msgid "Turret_2_E-75"
 msgstr "E 75 Ausf. B"
-
-msgid "Turret_2_G00_PzVI_Tiger_P"
-msgstr "Tiger (P) Neuer Turm"
-
-msgid "Turret_2_G00_PzVI_Tiger_P_short"
-msgstr ""
-"Tiger (P)\n"
-"Neuer Turm"
 
 msgid "Turret_2_G113_SP_I_C"
 msgstr "Spähpanzer SP I C PT II Rh.-Nr. WK-G2"
@@ -6287,9 +6215,6 @@ msgstr "10WSc F"
 msgid "_10WSc_MK"
 msgstr "10WSc"
 
-msgid "_10WSc_MK_V01"
-msgstr "10WSc"
-
 msgid "_10WSc_StGM"
 msgstr "10WSc"
 
@@ -6298,6 +6223,12 @@ msgstr "10WSc A"
 
 msgid "_120mm_APDS_DM14"
 msgstr "DM14"
+
+msgid "_120mm_APDS_DT13_G195"
+msgstr "DT 13A1"
+
+msgid "_120mm_APDS_DT13_G203"
+msgstr "DT 13A1"
 
 msgid "_120mm_DT11_G180"
 msgstr "DT 11"
@@ -6317,8 +6248,20 @@ msgstr "120 mm Delta"
 msgid "_120mm_HEAT_DM12_MZ"
 msgstr "DM12 MZ"
 
+msgid "_120mm_HEAT_DT12_G195"
+msgstr "DT 12"
+
+msgid "_120mm_HEAT_DT12_G203"
+msgstr "DT 12"
+
 msgid "_120mm_HE_DM10"
 msgstr "DM10"
+
+msgid "_120mm_HE_DT11_G195"
+msgstr "DT 11"
+
+msgid "_120mm_HE_DT11_G203"
+msgstr "DT 11"
 
 msgid "_120mm_HlGr57"
 msgstr "Pzgr 57 mod."
@@ -6341,8 +6284,14 @@ msgstr "Pzgr 59"
 msgid "_120mm_RhD"
 msgstr "120 mm RhD"
 
+msgid "_120mm_Rh_2A_G203"
+msgstr "128 mm Rh 2A"
+
 msgid "_120mm_Rh_E1"
 msgstr "12 cm Rh E1"
+
+msgid "_120mm_Rh_E1_G195"
+msgstr "12 cm Rh E1 Kanone"
 
 msgid "_120mm_Rh_Kanone_G180"
 msgstr "12 cm Rh Kanone"
@@ -6386,9 +6335,6 @@ msgstr "12,8 cm Kw.K. 44 L/55"
 msgid "_128mm_KwK44_L55_G"
 msgstr "12,8 cm Kw.K. 44 L/55"
 
-msgid "_128mm_KwK44_L55_G00"
-msgstr "12,8 cm Kw.K. 44 L/55"
-
 msgid "_128mm_KwK44_L55_N"
 msgstr "12,8 cm Kw.K. Ausf. E"
 
@@ -6396,9 +6342,6 @@ msgid "_128mm_KwK44_L55_SH"
 msgstr "12,8 cm Kw.K. 44 L/55"
 
 msgid "_128mm_KwK44_L55_x2"
-msgstr "12,8 cm Kw.K. 44 L/55 x2"
-
-msgid "_128mm_KwK44_L55_x2_V01"
 msgstr "12,8 cm Kw.K. 44 L/55 x2"
 
 msgid "_128mm_KwK46_L61"
@@ -6452,9 +6395,6 @@ msgstr "Pzgr 39 A"
 msgid "_128mm_PzGr39D"
 msgstr "Pzgr 39 D"
 
-msgid "_128mm_PzGr39D_V01"
-msgstr "Pzgr 39 D"
-
 msgid "_128mm_PzGr39E"
 msgstr "Pzgr 39 E"
 
@@ -6466,9 +6406,6 @@ msgstr "Pzgr 39 L"
 
 msgid "_128mm_PzGr39_E"
 msgstr "Pzgr 39 E"
-
-msgid "_128mm_PzGr39_G00"
-msgstr "Pzgr 39"
 
 msgid "_128mm_PzGr39_GW"
 msgstr "Pzgr 39"
@@ -6760,18 +6697,6 @@ msgstr "Gr. 18 Stg"
 
 msgid "_210mm_Sprg18_Ausf_G"
 msgstr "Gr. 18"
-
-msgid "_283mm_PzGr_L44"
-msgstr "Pz.Gr. L/4,4"
-
-msgid "_283mm_SKC_34"
-msgstr "28 cm SKC/34"
-
-msgid "_283mm_SprGr_L44"
-msgstr "Spr.Gr. L/4,4 Bdz"
-
-msgid "_283mm_SprGr_L46"
-msgstr "Spr.Gr. L/4,6 Kz"
 
 msgid "_2x_Hanomag_Boxer"
 msgstr "2x Hanomag Boxer"
@@ -7100,9 +7025,6 @@ msgstr "8,8 cm Kw.K. 43 L/71"
 msgid "_88mm_KwK_43_L71_Dual"
 msgstr "8,8 cm Kw.K. 43 L/71 D"
 
-msgid "_88mm_KwK_43_L71_G00"
-msgstr "8,8 cm Kw.K. 43 L/71"
-
 msgid "_88mm_KwK_43_L71_N"
 msgstr "8,8 cm Kw.K. 43 L/71 mod.Vlt"
 
@@ -7155,9 +7077,6 @@ msgid "_88mm_Pzgr39_1"
 msgstr "Pzgr. 39/1 Flak 41"
 
 msgid "_88mm_Pzgr39_43"
-msgstr "Pzgr 39/43"
-
-msgid "_88mm_Pzgr39_43_G00"
 msgstr "Pzgr 39/43"
 
 msgid "_88mm_Pzgr39_43_d"

@@ -82,6 +82,38 @@
 						g_secondLDir
 						<Float>0.000000</Float>
 					</property>
+					<property>
+						g_enableStars
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_starsMap
+						<Texture/>
+					</property>
+					<property>
+						g_starsMaskMap
+						<Texture/>
+					</property>
+					<property>
+						g_starsTiling
+						<Float>4.000000</Float>
+					</property>
+					<property>
+						g_starsExposure
+						<Float>10.000000</Float>
+					</property>
+					<property>
+						g_enableStarsBlink
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_starsBlinkNoiseTiling
+						<Float>2.000000</Float>
+					</property>
+					<property>
+						g_starsBlinkNoiseScrollSpeed
+						<Float>0.750000</Float>
+					</property>
 				</material>
 				<groupOrigin>0.007034 0.000000 0.005043</groupOrigin>
 			</primitiveGroup>

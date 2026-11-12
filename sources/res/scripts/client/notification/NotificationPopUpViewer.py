@@ -55,10 +55,18 @@ class NotificationPopUpViewer(NotificationPopUpViewerMeta, BaseNotificationView)
 
     def setListClear(self):
         self.__noDisplayingPopups = True
-        if self._model is not None and self._model.getDisplayState() == NOTIFICATION_STATE.POPUPS:
-            if self.__pendingMessagesQueue:
+        if self._model is None or self._model.getDisplayState() != NOTIFICATION_STATE.POPUPS:
+            return
+        if not self.__pendingMessagesQueue:
+            return
+        else:
+            if self.__lockedNotificationPriority:
+                return
+            if self.__pendingMessagesQueue[0].isAlert():
                 self.__showAlertMessage(self.__pendingMessagesQueue.pop(0))
-        return
+            else:
+                self.__showMessagesFromQueue()
+            return
 
     def getMessageActualTime(self, msTime):
         return TimeFormatter.getActualMsgTimeStr(msTime)
@@ -183,6 +191,7 @@ class NotificationPopUpViewer(NotificationPopUpViewerMeta, BaseNotificationView)
             g_messengerEvents.onLockPopUpMessages += self.__onLockPopUpMassages
             g_messengerEvents.onUnlockPopUpMessages += self.__onUnlockPopUpMessages
             g_messengerEvents.onNotificationsClear += self.__onNotificationsClear
+            g_messengerEvents.onNotificationPopUpViewerStarted()
             self._model.setup()
         else:
             g_playerEvents.onLoadingMilestoneReached += self._onLoadingMilestoneReached

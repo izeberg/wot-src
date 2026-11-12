@@ -1,5 +1,6 @@
 package net.wg.infrastructure.managers.utils.impl
 {
+   import flash.display.DisplayObject;
    import flash.display.InteractiveObject;
    import flash.display.Sprite;
    import flash.display.Stage;
@@ -35,6 +36,24 @@ package net.wg.infrastructure.managers.utils.impl
          super();
          this._focusHandler = FocusHandler.getInstance();
          this.init();
+      }
+      
+      public function hasFocusInside(param1:InteractiveObject) : Boolean
+      {
+         if(!param1 || !param1.stage)
+         {
+            return false;
+         }
+         var _loc2_:DisplayObject = App.utils.focusHandler.getFocus(0);
+         while(_loc2_ != null && _loc2_ != param1.stage)
+         {
+            if(_loc2_ == param1)
+            {
+               return true;
+            }
+            _loc2_ = _loc2_.parent;
+         }
+         return false;
       }
       
       public function dispose() : void

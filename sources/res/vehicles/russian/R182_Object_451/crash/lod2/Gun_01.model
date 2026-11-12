@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/russian/R182_Object_451/crash/lod2/Gun_01</nodelessVisual>
+	<parent>vehicles/russian/R182_Object_451/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.542305 -0.332340 -1.289794</min>
+		<max>0.540458 0.315468 5.142073</max>
+	</visibilityBox>
+</root>

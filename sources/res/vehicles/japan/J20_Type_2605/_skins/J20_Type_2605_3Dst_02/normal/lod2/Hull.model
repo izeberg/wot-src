@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/normal/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/normal/lod2/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-2.137697 -0.907560 -5.432636</min>
+		<max>2.137697 1.023365 4.792783</max>
+	</visibilityBox>
+</root>

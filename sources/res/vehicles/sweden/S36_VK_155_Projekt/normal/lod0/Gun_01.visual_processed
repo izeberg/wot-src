@@ -25,21 +25,12 @@
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 				<node>
-					<identifier>HP_gunAnim</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
 					<identifier>G</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 3.000000</row3>
+						<row3>0.000000 0.000000 4.029212</row3>
 					</transform>
 					<node>
 						<identifier>HP_gunFire</identifier>
@@ -47,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-0.000757 -0.001731 4.758586</row3>
+							<row3>-0.000757 -0.001731 3.726080</row3>
 						</transform>
 					</node>
 					<node>
@@ -56,7 +47,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>0.000000 0.000000 -3.000000</row3>
+							<row3>0.000000 0.000000 -4.029212</row3>
 						</transform>
 					</node>
 				</node>
@@ -66,7 +57,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 -0.287532 0.530257</row3>
+						<row3>0.000000 -0.297056 0.528908</row3>
 					</transform>
 					<node>
 						<identifier>expr_BlendBone</identifier>
@@ -74,7 +65,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>0.000000 0.287532 -0.530257</row3>
+							<row3>0.000000 0.297056 -0.528908</row3>
 						</transform>
 					</node>
 				</node>
@@ -94,7 +85,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.474514 0.000000 0.000000</row3>
+					<row3>0.000000 0.000000 -0.059176</row3>
 				</transform>
 				<node>
 					<identifier>static_joint_BlendBone</identifier>
@@ -102,7 +93,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>-0.474514 0.000000 -0.000000</row3>
+						<row3>0.000000 0.000000 0.059176</row3>
 					</transform>
 				</node>
 			</node>
@@ -115,30 +106,31 @@
 		<node>static_joint_BlendBone</node>
 		<node>expr_BlendBone</node>
 		<geometry>
-			<vertices>gun_01_Shape.vertices</vertices>
-			<primitive>gun_01_Shape.indices</primitive>
+			<vertices>gun_01Shape.vertices</vertices>
+			<primitive>gun_01Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_guns_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_guns_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						g_detailUVTiling
-						<Vector4>7.013999 3.507000 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
 						<Float>
 							0.35
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
 							<!--BW_String-->
 						</Float>
 					</property>
@@ -150,36 +142,35 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_GMM.dds</Texture>
+						g_detailUVTiling
+						<Vector4>7.014000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_ID.dds</Texture>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-0.000297 0.244577 -2.326778</groupOrigin>
@@ -191,6 +182,6 @@
 		<min>-1.173804 -0.875213 -3.105735</min>
 		<max>1.173210 1.364367 7.759290</max>
 	</boundingBox>
-	<geometrySize>530884</geometrySize>
+	<geometrySize>626812</geometrySize>
 	<minUVDensity>0.008641</minUVDensity>
 </root>

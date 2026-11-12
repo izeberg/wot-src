@@ -1620,7 +1620,9 @@ SYS_MESSAGE_TYPE = Enumeration('systemMessageType', [
  'immediatelyOpenBoxReward',
  'excludedMapSlotKillSwitch',
  'bonusExcludedMapPremium',
- 'sessionProgressRewards'])
+ 'sessionProgressRewards',
+ 'chatsUnlocked',
+ 'battleRoyaleFreeRepair'])
 SYS_MESSAGE_IMPORTANCE = Enumeration('systemMessageImportance', [
  'normal',
  'high'])

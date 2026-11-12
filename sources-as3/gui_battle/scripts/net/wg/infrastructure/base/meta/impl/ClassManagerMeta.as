@@ -859,7 +859,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.ribbonsPanel.RibbonCtrl;
    import net.wg.gui.battle.views.ribbonsPanel.RibbonQueue;
    import net.wg.gui.battle.views.ribbonsPanel.RibbonsPanel;
-   import net.wg.gui.battle.views.ribbonsPanel.RibbonsPanelBase;
    import net.wg.gui.battle.views.ribbonsPanel.RibbonsPool;
    import net.wg.gui.battle.views.ribbonsPanel.data.RibbonAnimationStates;
    import net.wg.gui.battle.views.ribbonsPanel.data.RibbonQueueItem;
@@ -2743,8 +2742,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_RIBBONQUEUE:Class = RibbonQueue;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_RIBBONSPANEL:Class = RibbonsPanel;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_RIBBONSPANELBASE:Class = RibbonsPanelBase;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_RIBBONSPOOL:Class = RibbonsPool;
       

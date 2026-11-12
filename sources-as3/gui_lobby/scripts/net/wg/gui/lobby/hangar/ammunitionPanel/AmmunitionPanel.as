@@ -27,6 +27,8 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
       
       public static const SLOTS_HEIGHT_AND_OFFSET:int = 30;
       
+      private static const CAROUSEL_CLEARANCE:int = 23;
+      
       private static const INV_BUTTONS_ENABLED:String = "InvButtonsEnabled";
       
       private static const VEHICLE_STATUS_INVALID:String = "vehicleStatusInvalid";
@@ -231,6 +233,7 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
          this.toRent.addEventListener(MouseEvent.ROLL_OVER,this.onBtnRollOverHandler);
          this.toRent.addEventListener(MouseEvent.ROLL_OUT,this.onBtnRollOutHandler);
          this.toRent.addEventListener(ButtonEvent.CLICK,this.onToRentClickHandler);
+         this.vehicleStatus.difficulty.showBackground = true;
          this.vehicleStatus.addEventListener(VehicleStatusEvent.RESIZE,this.onVehicleStatusResizeHandler);
          this._utils.helpLayout.registerComponent(this);
          _deferredDispose = true;
@@ -285,6 +288,11 @@ package net.wg.gui.lobby.hangar.ammunitionPanel
          this._changeNationIsNew = param4;
          this._changeNationTooltip = param3;
          invalidate(INV_NATION_CHANGE_BUTTON_STATE);
+      }
+      
+      override public function get height() : Number
+      {
+         return super.height + CAROUSEL_CLEARANCE;
       }
       
       public function updateStage(param1:Number, param2:Number) : void

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<itemGroup>
+		<name>GSOR_01_Decal_147</name>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT projection_decals 100g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>uk:GB109_GSOR_1008</vehicles>
+			</include>
+		</vehicleFilter>
+		<userString>#vehicle_customization:projection_decals/cool</userString>
+		<projection_decal>
+			<id>31529</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/cool/GSOR_01_Decal_01_147.dds</texture>
+			<userString>#vehicle_customization:GSOR_01_Decal_01_147/name</userString>
+			<description>#vehicle_customization:GSOR_01_Decal_01_147/description</description>
+			<tags>fullRGB styleOnly disableVerticalMirror hiddenInUI formfactor_rect1x2 direction_left_to_right</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>31530</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/cool/GSOR_01_Decal_02_147.dds</texture>
+			<userString>#vehicle_customization:GSOR_01_Decal_02_147/name</userString>
+			<description>#vehicle_customization:GSOR_01_Decal_02_147/description</description>
+			<tags>disableVerticalMirror fullRGB direction_right_to_left styleOnly hiddenInUI formfactor_rect1x2</tags>
+		</projection_decal>
+	</itemGroup>
+</root>

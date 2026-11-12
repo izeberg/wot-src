@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A185_MBT_Revised_V_E2/crash/lod2/Gun_01</nodefullVisual>
+	<parent>vehicles/american/A185_MBT_Revised_V_E2/crash/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.534579 -0.318556 -1.576694</min>
+		<max>0.534527 0.383831 6.228921</max>
+	</visibilityBox>
+</root>

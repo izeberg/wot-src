@@ -72,7 +72,7 @@ package net.wg.infrastructure.managers.utils.impl
       
       private static const STATES_BASIC_SHADOW_FILTER:DropShadowFilter = new DropShadowFilter(1,270,0,1,1,1,1,0,false,false,false);
       
-      private static const TF_SIZE_SLIM:uint = 13;
+      private static const TF_SIZE_SLIM:uint = 12;
       
       private static const TF_SIZE_HEAVY:uint = 15;
        

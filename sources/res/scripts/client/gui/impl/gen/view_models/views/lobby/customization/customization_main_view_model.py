@@ -1,3 +1,4 @@
+from enum import Enum
 from frameworks.wulf import ViewModel
 from gui.impl.gen.view_models.views.lobby.customization.customization_bill_data_model import CustomizationBillDataModel
 from gui.impl.gen.view_models.views.lobby.customization.customization_carousel_model import CustomizationCarouselModel
@@ -10,6 +11,12 @@ from gui.impl.gen.view_models.views.lobby.customization.customization_tabs_model
 from gui.impl.gen.view_models.views.lobby.customization.customization_toolbar_model import CustomizationToolbarModel
 from gui.impl.gen.view_models.views.lobby.customization.progression_styles.stage_switcher_widget_model import StageSwitcherWidgetModel
 
+class StatusEnum(Enum):
+    ACTIVE = 'active'
+    ENDING = 'ending'
+    DISABLED = 'disabled'
+
+
 class CustomizationMainViewModel(ViewModel):
     __slots__ = ('onClose', 'onCloseCarouselView', 'onCloseBinEsc', 'onCloseStyleInfoEsc',
                  'onExpandCarousel', 'onMoveSpace', 'onSelectItem', 'onUnselectItem',
@@ -17,9 +24,9 @@ class CustomizationMainViewModel(ViewModel):
                  'clearFilter', 'onHoverItem', 'onHoverTab', 'onClickDecalsBanner',
                  'onEditItem', 'onCloseEditItem', 'onSceneOverChange', 'onSceneDraggingChange',
                  'onSceneClick', 'onBuyItems', 'onProgressiveInfoButtonClick', 'onPressSelectNextItem',
-                 'onRequestItems')
+                 'onRequestItems', 'toCustomizationResourceEvent')
 
-    def __init__(self, properties=20, commands=25):
+    def __init__(self, properties=25, commands=26):
         super(CustomizationMainViewModel, self).__init__(properties=properties, commands=commands)
 
     @property
@@ -162,6 +169,36 @@ class CustomizationMainViewModel(ViewModel):
     def setIsOnboardingViewOpened(self, value):
         self._setBool(19, value)
 
+    def getIsCustomizationResourceEntryPointAvailable(self):
+        return self._getBool(20)
+
+    def setIsCustomizationResourceEntryPointAvailable(self, value):
+        self._setBool(20, value)
+
+    def getIsAloneBanner(self):
+        return self._getBool(21)
+
+    def setIsAloneBanner(self, value):
+        self._setBool(21, value)
+
+    def getTimer(self):
+        return self._getNumber(22)
+
+    def setTimer(self, value):
+        self._setNumber(22, value)
+
+    def getStatus(self):
+        return StatusEnum(self._getString(23))
+
+    def setStatus(self, value):
+        self._setString(23, value.value)
+
+    def getIsLimitsUpdated(self):
+        return self._getBool(24)
+
+    def setIsLimitsUpdated(self, value):
+        self._setBool(24, value)
+
     def _initialize(self):
         super(CustomizationMainViewModel, self)._initialize()
         self._addViewModelProperty('carouselModel', CustomizationCarouselModel())
@@ -184,6 +221,11 @@ class CustomizationMainViewModel(ViewModel):
         self._addBoolProperty('isProgressiveItemsViewVisible', False)
         self._addBoolProperty('isFilterPopoverOpened', False)
         self._addBoolProperty('isOnboardingViewOpened', False)
+        self._addBoolProperty('isCustomizationResourceEntryPointAvailable', False)
+        self._addBoolProperty('isAloneBanner', False)
+        self._addNumberProperty('timer', 123456789)
+        self._addStringProperty('status', StatusEnum.ACTIVE.value)
+        self._addBoolProperty('isLimitsUpdated', False)
         self.onClose = self._addCommand('onClose')
         self.onCloseCarouselView = self._addCommand('onCloseCarouselView')
         self.onCloseBinEsc = self._addCommand('onCloseBinEsc')
@@ -209,3 +251,4 @@ class CustomizationMainViewModel(ViewModel):
         self.onProgressiveInfoButtonClick = self._addCommand('onProgressiveInfoButtonClick')
         self.onPressSelectNextItem = self._addCommand('onPressSelectNextItem')
         self.onRequestItems = self._addCommand('onRequestItems')
+        self.toCustomizationResourceEvent = self._addCommand('toCustomizationResourceEvent')

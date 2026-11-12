@@ -103,18 +103,26 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>hullShape.vertices</vertices>
+			<primitive>hullShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_hull_01</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_hull_01</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						g_detailUVTiling
-						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/russian/R166_SU_D15/SU_D15_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/R166_SU_D15/SU_D15_hull_01_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -124,11 +132,8 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_maskBias
@@ -138,40 +143,38 @@
 						</Float>
 					</property>
 					<property>
+						g_detailUVTiling
+						<Vector4>
+							7.014 7.014 0.0 0.0
+							<!--BW_String-->
+						</Vector4>
+					</property>
+					<property>
 						g_detailPower
 						<Float>5</Float>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/russian/R166_SU_D15/SU_D15_hull_01_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/russian/R166_SU_D15/SU_D15_hull_01_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R166_SU_D15/SU_D15_hull_01_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R166_SU_D15/SU_D15_hull_01_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
 						alphaReference
-						<Int>90</Int>
+						<Int>128</Int>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>0.050072 0.564007 -0.053196</groupOrigin>
@@ -182,6 +185,6 @@
 		<min>-1.528948 -0.653478 -3.247591</min>
 		<max>1.629091 1.781492 3.141198</max>
 	</boundingBox>
-	<geometrySize>160182</geometrySize>
+	<geometrySize>159662</geometrySize>
 	<minUVDensity>0.000783</minUVDensity>
 </root>

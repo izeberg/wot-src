@@ -188,32 +188,6 @@
 			<maxRegenHealth>75</maxRegenHealth>
 			<repairCost>3</repairCost>
 		</FuG12_FL>
-		<FuG12_G00>
-			<id>40011</id>
-			<userString>#germany_vehicles:FuG12_G00</userString>
-			<tags/>
-			<level>9</level>
-			<price>43200</price>
-			<notInShop>true</notInShop>
-			<weight>150</weight>
-			<distance>710</distance>
-			<maxHealth>150</maxHealth>
-			<maxRegenHealth>75</maxRegenHealth>
-			<repairCost>3</repairCost>
-		</FuG12_G00>
-		<FuG12_G00_>
-			<id>40012</id>
-			<userString>#germany_vehicles:FuG12_G00_</userString>
-			<tags/>
-			<level>9</level>
-			<price>43200</price>
-			<notInShop>true</notInShop>
-			<weight>150</weight>
-			<distance>710</distance>
-			<maxHealth>150</maxHealth>
-			<maxRegenHealth>75</maxRegenHealth>
-			<repairCost>3</repairCost>
-		</FuG12_G00_>
 		<FuG12_G197>
 			<id>31013</id>
 			<userString>#germany_vehicles:FuG12_G197</userString>
@@ -971,22 +945,6 @@
 			<maxRegenHealth>75</maxRegenHealth>
 			<repairCost>3</repairCost>
 		</Radio_VK4502P_G>
-		<Ratte_Radio>
-			<id>41010</id>
-			<userString>#germany_vehicles:Ratte_Radio</userString>
-			<tags/>
-			<level>10</level>
-			<notInShop>true</notInShop>
-			<price>51600</price>
-			<weight>160</weight>
-			<distance>720</distance>
-			<maxHealth>250</maxHealth>
-			<maxRegenHealth>75</maxRegenHealth>
-			<repairCost>
-				3.5
-				<!--BW_String-->
-			</repairCost>
-		</Ratte_Radio>
 		<SEM25>
 			<id>20</id>
 			<userString>#germany_vehicles:SEM25</userString>
@@ -1066,6 +1024,38 @@
 				<!--BW_String-->
 			</repairCost>
 		</SEM_25A_EB>
+		<SEM_25A_G195>
+			<id>31016</id>
+			<userString>#germany_vehicles:SEM_25A_G195</userString>
+			<tags/>
+			<level>11</level>
+			<price>85000</price>
+			<notInShop>true</notInShop>
+			<weight>50</weight>
+			<distance>750</distance>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>108</maxRegenHealth>
+			<repairCost>
+				3.5
+				<!--BW_String-->
+			</repairCost>
+		</SEM_25A_G195>
+		<SEM_25A_G203>
+			<id>31015</id>
+			<userString>#germany_vehicles:SEM_25A_G203</userString>
+			<tags/>
+			<level>11</level>
+			<price>85000</price>
+			<notInShop>true</notInShop>
+			<weight>50</weight>
+			<distance>750</distance>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>108</maxRegenHealth>
+			<repairCost>
+				3.5
+				<!--BW_String-->
+			</repairCost>
+		</SEM_25A_G203>
 		<SEM_25B>
 			<id>258</id>
 			<userString>#germany_vehicles:SEM_25B</userString>
@@ -1210,22 +1200,6 @@
 				<!--BW_String-->
 			</repairCost>
 		</_10WSc_MK>
-		<_10WSc_MK_V01>
-			<id>41012</id>
-			<userString>#germany_vehicles:_10WSc_MK_V01</userString>
-			<tags/>
-			<level>11</level>
-			<notInShop>true</notInShop>
-			<price>60000</price>
-			<weight>160</weight>
-			<distance>720</distance>
-			<maxHealth>250</maxHealth>
-			<maxRegenHealth>75</maxRegenHealth>
-			<repairCost>
-				3.5
-				<!--BW_String-->
-			</repairCost>
-		</_10WSc_MK_V01>
 		<_10WSc_StGM>
 			<id>31008</id>
 			<userString>#germany_vehicles:_10WSc_StGM</userString>

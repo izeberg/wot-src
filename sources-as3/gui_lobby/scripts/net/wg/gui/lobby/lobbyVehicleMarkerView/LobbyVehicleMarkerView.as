@@ -5,6 +5,7 @@ package net.wg.gui.lobby.lobbyVehicleMarkerView
    import net.wg.data.constants.Linkages;
    import net.wg.gui.components.common.lobbyVehicleMarkers.CustomMarker;
    import net.wg.gui.components.common.lobbyVehicleMarkers.LobbyVehicleMarkers;
+   import net.wg.gui.components.common.lobbyVehicleMarkers.NewYearObjectMarker;
    import net.wg.gui.components.common.lobbyVehicleMarkers.PlatoonMarker;
    import net.wg.infrastructure.base.meta.ILobbyVehicleMarkerViewMeta;
    import net.wg.infrastructure.base.meta.impl.LobbyVehicleMarkerViewMeta;
@@ -55,6 +56,16 @@ package net.wg.gui.lobby.lobbyVehicleMarkerView
       {
          var _loc4_:PlatoonMarker = App.instance.utils.classFactory.getComponent(Linkages.PLATOON_VEH_MARKER,PlatoonMarker);
          _loc4_.setVehicleInfo(param2,param3);
+         addChild(_loc4_);
+         this._markers[param1] = _loc4_;
+         return _loc4_;
+      }
+      
+      public function as_createNewYearObjectMarker(param1:int, param2:String, param3:String) : DisplayObject
+      {
+         var _loc4_:NewYearObjectMarker = App.instance.utils.classFactory.getComponent(Linkages.NEW_YEAR_OBJECT_MARKER,NewYearObjectMarker);
+         _loc4_.setType(param2);
+         _loc4_.setLabel(param3);
          addChild(_loc4_);
          this._markers[param1] = _loc4_;
          return _loc4_;

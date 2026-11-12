@@ -1519,6 +1519,24 @@ msgstr "Выбраны экіпаж будзе няспынна назапашв
 msgid "awardItem/idle_crew_xp/header"
 msgstr "Курс падрыхтоўкі экіпажа"
 
+msgid "awardItem/nyractiv/body"
+msgstr "Любимая игрушка енота. Заполняет шкалу «Активность»."
+
+msgid "awardItem/nyractiv/header"
+msgstr "Мячик"
+
+msgid "awardItem/nyrfood/body"
+msgstr "Любимый продукт питания енота. Заполняет шкалу «Сытость»."
+
+msgid "awardItem/nyrfood/header"
+msgstr "Яблоко"
+
+msgid "awardItem/nyrfun/body"
+msgstr "Любимый предмет личной гигиены енота. Заполняет шкалу «Комфорт»."
+
+msgid "awardItem/nyrfun/header"
+msgstr "Расчёска"
+
 msgid "awardItem/oneof/body"
 msgstr "Колькасць узнагарод і іх вартасць залежаць ад пазіцыі ў Ладары."
 
@@ -1606,15 +1624,6 @@ msgstr "Вы зможаце купіць тавары з раздзела «Та
 msgid "awardItem/ranked_202203_access/header"
 msgstr "Доступ да куплі"
 
-msgid "awardItem/razlom_coin/body"
-msgstr ""
-"Находясь в мире Разлома, вы сможете зарабатывать особые монеты, которые "
-"можно обменять на ценные предметы в Пункте снабжения. Монеты можно получить "
-"в награду за закрытие этапов Разлома или найти внутри особых наборов."
-
-msgid "awardItem/razlom_coin/header"
-msgstr "Монета Разлома"
-
 msgid "awardItem/rewardsSlots/body1"
 msgstr ""
 "Это четвёртый слот, и он позволяет исключить выбранную карту из ротации "
@@ -1640,11 +1649,14 @@ msgstr[2] "На %(days)d дней"
 
 msgid "awardItem/sacoin/body"
 msgstr ""
-"Выдаюцца за баявыя заслугі. Пасля завяршэння падзеі рэшта жэтонаў будзе "
-"спісаная."
+"Выдаются за боевые заслуги. После завершения события оставшиеся жетоны будут"
+" списаны."
 
 msgid "awardItem/sacoin/header"
 msgstr "Жетоны ветерана"
+
+msgid "awardItem/sacoin/headerCounter"
+msgstr "%(count)s шт. жетонов за выслугу лет"
 
 msgid "awardItem/slots/body"
 msgstr "Дадатковы вольны слот для новай машыны ў Гаражы."
@@ -5867,6 +5879,29 @@ msgstr ""
 msgid "hangar/unlockButton/header"
 msgstr "Даследаваць"
 
+msgid "hangar/vehicleDifficulty/1/body"
+msgstr "Эта машина проста в освоении и использовании. Подойдет любому игроку."
+
+msgid "hangar/vehicleDifficulty/1/header"
+msgstr "Сложность техники"
+
+msgid "hangar/vehicleDifficulty/2/body"
+msgstr ""
+"Эта машина имеет оптимальную сложность освоения. Подойдет большинству "
+"игроков, но требует понимания механик игры."
+
+msgid "hangar/vehicleDifficulty/2/header"
+msgstr "Сложность техники"
+
+msgid "hangar/vehicleDifficulty/3/body"
+msgstr ""
+"Большой потенциал, но высокая цена ошибки. Эта машина требует глубокого "
+"знания механик игры. Игровой процесс может отличаться от привычных моделей "
+"поведения."
+
+msgid "hangar/vehicleDifficulty/3/header"
+msgstr "Сложность техники"
+
 msgid "hangarCamCheckbox/body"
 msgstr ""
 "Уключыць анімаваную зваротную сувязь Гаража\n"
@@ -7233,7 +7268,10 @@ msgid "multiselection/alert/header"
 msgstr "Тэхніка не выбрана"
 
 msgid "newbie_restrictions/condition/battlesCountThreshold"
-msgstr "Провести %(battlesCount)s боёв в режиме «Случайный бой»."
+msgid_plural "battlesCountThreshold"
+msgstr[0] "Провести %(battlesCount)s полноценный бой в игровых режимах."
+msgstr[1] "Провести %(battlesCount)s полноценных боя в игровых режимах."
+msgstr[2] "Провести %(battlesCount)s полноценных боёв в игровых режимах."
 
 msgid "newbie_restrictions/condition/isInClan"
 msgstr "Уступіць у клан."
@@ -7246,7 +7284,7 @@ msgid "newbie_restrictions/condition/separator"
 msgstr "або"
 
 msgid "newbie_restrictions/condition/vehicleLevelThreshold"
-msgstr "Получить любую машину %(level)s уровня или выше (кроме арендной)."
+msgstr "Владеть техникой %(level)s уровня или выше."
 
 msgid "newbie_restrictions/footer/arcade/desc"
 msgstr ""
@@ -7260,14 +7298,12 @@ msgstr "Об Аркаде"
 
 msgid "newbie_restrictions/footer/chats/desc"
 msgstr ""
-"Получив доступ, вы сможете общаться в общем и боевом чатах с игроками, "
-"а также получать и писать личные сообщения игрокам, находящимся вне вашего "
-"списка контактов. До получения доступа вы можете использовать чат взвода, "
-"чат клана и личные сообщения от списка контактов, а также от вашего "
-"командира по реферальной программе."
+"• Полноценным боем в игровом режиме считается завершённый с любым результатом бой, проведённый в таких режимах как: Случайный бой, Генеральное сражение, Натиск, Ранговый бой, Укрепрайоны (Вылазки и Спринты), Стальной охотник, Полигон, бои на Глобальной карте.\n"
+"\n"
+"• Владение техникой означает наличие в Ангаре машин, которые не попадают под определение арендных, доступных по подписке, тестовой, а также выдаваемых для специального игрового события."
 
 msgid "newbie_restrictions/footer/chats/title"
-msgstr "Об игровых чатах"
+msgstr "Об условиях получения доступа"
 
 msgid "newbie_restrictions/footer/comp7/desc"
 msgstr ""
@@ -8561,6 +8597,42 @@ msgstr ""
 
 msgid "notrecruitedtankman/ny26_terentij/label"
 msgstr "Наш Новы год 2026"
+
+msgid "notrecruitedtankman/ny27_snowmaiden_1/desc"
+msgstr ""
+"Выдавалась в награду за определённые действия в рамках события «Новый год "
+"2027». У девушки изучено «Боевое братство», а также достаточно опыта на "
+"дополнительный навык на выбор."
+
+msgid "notrecruitedtankman/ny27_snowmaiden_1/label"
+msgstr "Новый год 2027"
+
+msgid "notrecruitedtankman/ny27_snowmaiden_2/desc"
+msgstr ""
+"Выдавалась в награду за определённые действия в рамках события «Новый год "
+"2027». У девушки изучено «Боевое братство», а также достаточно опыта на "
+"дополнительный навык на выбор."
+
+msgid "notrecruitedtankman/ny27_snowmaiden_2/label"
+msgstr "Новый год 2027"
+
+msgid "notrecruitedtankman/ny27_snowmaiden_3/desc"
+msgstr ""
+"Выдавалась в награду за определённые действия в рамках события «Новый год "
+"2027». У девушки изучено «Боевое братство», а также достаточно опыта на "
+"дополнительный навык на выбор."
+
+msgid "notrecruitedtankman/ny27_snowmaiden_3/label"
+msgstr "Новый год 2027"
+
+msgid "notrecruitedtankman/ny27_snowmaiden_4/desc"
+msgstr ""
+"Выдавалась в награду за определённые действия в рамках события «Новый год "
+"2027». У девушки изучено «Боевое братство», а также достаточно опыта на "
+"дополнительный навык на выбор."
+
+msgid "notrecruitedtankman/ny27_snowmaiden_4/label"
+msgstr "Новый год 2027"
 
 msgid "notrecruitedtankman/offspring_commander/desc"
 msgstr ""
@@ -13324,8 +13396,7 @@ msgstr "Час, за які гармата ахалодзіцца і будзе 
 
 msgid "tank_params/desc/avgDamage"
 msgstr ""
-"Сярэднія пашкоджанні, якія прычыняюцца базавым снарадам за адзін стрэл пры "
-"прабіцці брані."
+"Средний урон, наносимый базовым снарядом за один выстрел при пробитии брони."
 
 msgid "tank_params/desc/avgDamagePerMinute"
 msgstr ""
@@ -13339,8 +13410,8 @@ msgstr ""
 
 msgid "tank_params/desc/avgPiercingPower"
 msgstr ""
-"Сярэдняя таўшчыня брані, якая прабіваецца базавым снарадам з улікам яго "
-"нармалізацыі."
+"Средняя толщина брони, пробиваемая базовым снарядом с учётом его "
+"нормализации."
 
 msgid "tank_params/desc/burstFireRate"
 msgstr ""
@@ -13367,8 +13438,8 @@ msgstr ""
 
 msgid "tank_params/desc/chassisRotationSpeed"
 msgstr ""
-"Хуткасць павароту корпуса машыны вакол сваёй восі, а таксама хуткасць змены "
-"курсу падчас руху (манеўранасць)."
+"Скорость вращения корпуса машины вокруг своей оси, а также скорость смены "
+"курса при движении (манёвренность)."
 
 msgid "tank_params/desc/circularVisionRadius"
 msgstr ""
@@ -13403,8 +13474,8 @@ msgstr ""
 
 msgid "tank_params/desc/enginePower"
 msgstr ""
-"Параметр адказвае за максімальную хуткасць, дынаміку разгону і хуткасць "
-"павароту корпуса машыны."
+"Параметр отвечает за максимальную скорость, динамику разгона и скорость "
+"поворота корпуса машины."
 
 msgid "tank_params/desc/enginePowerPerTon"
 msgstr ""
@@ -13501,8 +13572,8 @@ msgstr "Колькасць стрэлаў за секунду."
 
 msgid "tank_params/desc/reloadTimeSecs"
 msgstr ""
-"Час, за які гармата (або абедзве гарматы, калі ў машыны спараная гарматная "
-"ўстаноўка) будзе гатовая да чарговага стрэлу."
+"Время, за которое орудие (или оба орудия, если у машины спаренная орудийная "
+"установка) будет готово к очередному выстрелу."
 
 msgid "tank_params/desc/reuseCount"
 msgstr ""
@@ -13511,8 +13582,8 @@ msgstr ""
 
 msgid "tank_params/desc/rocketAccelerationEnginePower"
 msgstr ""
-"Параметр адказвае за максімальную хуткасць, дынаміку разгону і хуткасць "
-"павароту корпуса машыны."
+"Параметр отвечает за максимальную скорость, динамику разгона и скорость "
+"поворота корпуса машины."
 
 msgid "tank_params/desc/rocketAccelerationReuseAndDuration"
 msgstr ""
@@ -13526,8 +13597,8 @@ msgstr ""
 
 msgid "tank_params/desc/shotDispersionAngle"
 msgstr ""
-"Паказвае, на колькі метраў снарад можа адхіліцца ад пункта прыцэльвання за "
-"кожныя 100 метраў адлегласці да цэлі."
+"Показывает, на сколько метров снаряд может отклониться от точки прицеливания"
+" за каждые 100 метров расстояния до цели."
 
 msgid "tank_params/desc/shotDispersionAngle/withAutoShoot"
 msgstr ""
@@ -13619,8 +13690,9 @@ msgstr "Таўшчыня брані вежы машыны: лоб/борт/ка�
 
 msgid "tank_params/desc/turretRotationSpeed"
 msgstr ""
-"Колькасць градусаў за секунду, на якую гармата павернецца ў сектары абстрэлу"
-" разам з вежай або ў нерухомай рубцы (звычайны/адмысловы рэжым)."
+"Количество градусов в секунду, на которое орудие переведётся в секторе "
+"обстрела вместе с башней или в неподвижной рубке (обычный / специальный "
+"режим)."
 
 msgid "tank_params/desc/turretYawLimits"
 msgstr ""
@@ -13941,7 +14013,7 @@ msgid "tillTime/days"
 msgstr "%(day)s сут."
 
 msgid "tillTime/hours"
-msgstr "%(hour)s гадз"
+msgstr "%(hour)s ч."
 
 msgid "tillTime/lessMin"
 msgstr "менш за хвіліну"

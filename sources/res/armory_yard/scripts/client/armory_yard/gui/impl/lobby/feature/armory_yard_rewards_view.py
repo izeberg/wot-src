@@ -1,4 +1,5 @@
 from copy import deepcopy
+from armory_yard.gui.Scaleform.daapi.view.lobby.hangar.sound_constants import ARMORY_YAR_REWARD_SCREEN_SOUND_SPACE
 from armory_yard.gui.impl.lobby.feature.tooltips.armory_yard_currency_tooltip_view import ArmoryYardCurrencyTooltipView
 from armory_yard.gui.impl.lobby.feature.tooltips.rest_reward_tooltip_view import RestRewardTooltipView
 from armory_yard.gui.shared.bonus_packers import getArmoryYardBonusPacker, getArmoryYardMainRewardBonusPacker
@@ -24,6 +25,7 @@ class ArmoryYardRewardsView(ViewImpl):
     __itemsCache = dependency.descriptor(IItemsCache)
     __armoryYardCtrl = dependency.descriptor(IArmoryYardController)
     __MAX_MAIN_BONUSES = 3
+    _COMMON_SOUND_SPACE = ARMORY_YAR_REWARD_SCREEN_SOUND_SPACE
     __slots__ = ('__tooltipData', '__rawBonuses', '__mainBonuses', '__vehicles', '__state',
                  '__closeCallback', '__stages', '__bonuses', '__isFinalReward')
 

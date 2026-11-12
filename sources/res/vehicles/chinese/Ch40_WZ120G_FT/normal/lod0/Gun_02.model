@@ -12,7 +12,7 @@
 		</max>
 	</visibilityBox>
 	<tank>true</tank>
-	<nodefullVisual>vehicles/chinese/Ch40_WZ120G_FT/normal/lod0/Gun_02</nodefullVisual>
 	<parent>vehicles/chinese/Ch40_WZ120G_FT/normal/lod1/Gun_02</parent>
 	<extent>32</extent>
+	<nodefullVisual>vehicles/chinese/Ch40_WZ120G_FT/normal/lod0/Gun_02</nodefullVisual>
 </root>

@@ -1,10 +1,14 @@
 import typing
 from constants import RP_PGB_POINT, RP_POINT
 from gui.battle_pass.battle_pass_constants import ChapterState
+from gui.customization_resource.customization_resource_constants import StateEnum
 from gui.game_control.wallet import WalletController
+from gui.impl import backport
+from gui.impl.gen import R
 from gui.shared.money import Currency
+from gui.impl.lobby.customization_resource.customization_resource_exchange_data_provider import CustomizationResourceExchangeDataProvider
 from helpers import dependency
-from skeletons.gui.game_control import IBattlePassController
+from skeletons.gui.game_control import IBattlePassController, ICustomizationResourceController
 from skeletons.gui.shared.utils.requesters import IStatsRequester
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
@@ -33,6 +37,22 @@ def formatWalletCurrencyStatuses(stats):
     statuses.update({currencyCode:WalletController.STATUS.getKeyByValue(statusCode).lower() for currencyCode, statusCode in stats.dynamicCurrencyStatuses.iteritems()})
     statuses['free_xp'] = WalletController.STATUS.getKeyByValue(stats.currencyStatuses[Currency.FREE_XP]).lower()
     return statuses
+
+
+@dependency.replace_none_kwargs(customizationResourceController=ICustomizationResourceController)
+def formatCustomizationResourceState(customizationResourceController=None):
+    dataProvider = CustomizationResourceExchangeDataProvider(customizationResourceController.config.blacklist, customizationResourceController.config.priceGroups)
+    response = {}
+    if not customizationResourceController.isEnabled() or not customizationResourceController.isExchangeEnabled():
+        state = StateEnum.DISABLED
+    elif not dataProvider.isAnyItemsToExchange():
+        state = StateEnum.NO_ITEMS
+    else:
+        state = StateEnum.ACTIVE
+    if state == StateEnum.NO_ITEMS or state == StateEnum.DISABLED:
+        response['tooltip'] = {'header': backport.text(R.strings.event.customizationResource.tooltip.dyn(state.value).header()), 'body': backport.text(R.strings.event.customizationResource.tooltip.dyn(state.value).body())}
+    response['state'] = state.value
+    return response
 
 
 @dependency.replace_none_kwargs(battlePass=IBattlePassController)

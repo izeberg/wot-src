@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>vehicleBound</tags>
+		<priceGroup>MT 2D styles universal 1000g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>france:F144_Etoile</vehicles>
+			</include>
+		</vehicleFilter>
+		<style>
+			<id>31663</id>
+			<texture>gui/maps/vehicles/styles/AYF144_Etoile_Style_147.png</texture>
+			<userString>#vehicle_customization:AYF144_Etoile_Style_147/name</userString>
+			<description>#vehicle_customization:AYF144_Etoile_Style_147/description</description>
+			<longDescriptionSpecial>#vehicle_customization:AYF144_Etoile_Style_147/longDescription</longDescriptionSpecial>
+			<outfits>
+				<outfit>
+					<season>all</season>
+					<modifications>
+						<item>3</item>
+					</modifications>
+					<paints>
+						<item>
+							<id>31602</id>
+							<appliedTo>20753</appliedTo>
+						</item>
+					</paints>
+					<camouflages>
+						<item>
+							<id>31644</id>
+							<patternSize>1</patternSize>
+							<appliedTo>272</appliedTo>
+							<palette>0</palette>
+						</item>
+						<item>
+							<id>31645</id>
+							<patternSize>1</patternSize>
+							<appliedTo>4096</appliedTo>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+				</outfit>
+			</outfits>
+		</style>
+		<maxNumber>1</maxNumber>
+	</itemGroup>
+</root>

@@ -8,6 +8,7 @@ from gui.battle_results.settings import PLAYER_TEAM_RESULT
 from constants import FAIRPLAY_VIOLATIONS
 from gui.impl import backport
 from gui.impl.gen.resources import R
+from gui.impl.gen.view_models.views.lobby.comp7.main_widget_model import Rank
 from gui.impl.gen.view_models.views.lobby.comp7.meta_view.qualification_battle import BattleState
 from gui.impl.lobby.comp7 import comp7_shared, comp7_i18n_helpers
 from gui.shared.formatters import text_styles
@@ -116,7 +117,7 @@ class Comp7RankBlock(base.StatsBlock):
         prevRank, prevDivisionIdx = avatarResults.get('comp7Rank', (0, 0))
         prevDivision = comp7_shared.getPlayerDivisionByRankAndIndex(prevRank, prevDivisionIdx)
         currentRating = max(prevRating + achievedRating, 0)
-        currentDivision = comp7_shared.getPlayerDivision(currentRating)
+        currentDivision = prevDivision if prevRank == Rank.SIXTH.value else comp7_shared.getPlayerDivisionByRating(currentRating)
         currentRankValue = comp7_shared.getRankEnumValue(currentDivision).value
         rankName = comp7_i18n_helpers.RANK_MAP[currentRankValue]
         self.linkage = COMP7_CONSTS.COMP7_RANK_SUB_TASK_UI
@@ -133,21 +134,28 @@ class Comp7RankBlock(base.StatsBlock):
     @classmethod
     def __getDescription(cls, achievedRating, division):
         isExtraRank = EXTRA_RANK_TAG in division.tags
-        isElite = comp7_shared.isElite()
+        isElite = division.rank == Rank.SIXTH.value
         extraPropertyName = ''
         if isExtraRank:
             extraPropertyName = 'Elite' if isElite else 'Master'
         propertyName = ('{}{}Rating').format('get' if achievedRating >= 0 else 'lose', extraPropertyName if extraPropertyName else '')
         ranksConfig = cls.__lobbyCtx.getServerSettings().comp7RanksConfig
         ratingText = R.strings.comp7.battleResult.subTask.descr.dyn(propertyName)()
-        return text_styles.main(backport.text(ratingText, topPercentage=ranksConfig.eliteRankPercent))
+        params = {'topPercentage': ranksConfig.eliteRankPercent}
+        if isElite:
+            params.update(topPercentage=division.elitePercent, division=comp7_i18n_helpers.getDivisionLocale(comp7_shared.getDivisionEnumValue(division)))
+        return text_styles.main(backport.text(ratingText, **params))
 
     @staticmethod
     def __getTitle(division, prevDivision):
         currentRankValue = comp7_shared.getRankEnumValue(division).value
         currentDivisionValue = comp7_shared.getDivisionEnumValue(division)
-        if EXTRA_RANK_TAG in division.tags:
-            return text_styles.middleTitle(comp7_i18n_helpers.getRankLocale(currentRankValue))
+        isElite = division.rank == Rank.SIXTH.value
+        isChampion = division.rank == Rank.FIFTH.value
+        if isElite:
+            return text_styles.middleTitle(backport.text(R.strings.comp7.battleResult.subTask.title.elite(), rank=comp7_i18n_helpers.getRankLocale(currentRankValue), division=comp7_i18n_helpers.getDivisionLocale(currentDivisionValue)))
+        if isChampion:
+            return text_styles.middleTitle(backport.text(R.strings.comp7.battleResult.subTask.title.champion(), rank=comp7_i18n_helpers.getRankLocale(currentRankValue), division=comp7_i18n_helpers.getDivisionLocale(currentDivisionValue)))
         if division.dvsnID < prevDivision.dvsnID:
             title = R.strings.comp7.battleResult.subTask.title.c_raise()
         elif division.dvsnID > prevDivision.dvsnID:

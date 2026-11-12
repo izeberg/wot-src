@@ -96,15 +96,6 @@
 						<row3>0.000000 0.000000 0.000000</row3>
 					</transform>
 				</node>
-				<node>
-					<identifier>s_ramp0</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
 			</node>
 		</node>
 	</node>
@@ -112,57 +103,16 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Rotate_bone_BlendBone</node>
 		<geometry>
-			<vertices>sShape6.vertices</vertices>
-			<primitive>sShape6.indices</primitive>
+			<vertices>s6Shape.vertices</vertices>
+			<stream>s6Shape.colour</stream>
+			<primitive>s6Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>s_nd6_skinned</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>108</materialKind>
 					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
-					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_EU_259_WindMill/hd_bld_EU_259_WindMill_01_BANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_EU_259_WindMill/hd_bld_EU_259_WindMill_01_BGMM.dds</Texture>
-					</property>
-					<property>
-						g_enableAO
-						<Bool>true</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/hd_bld_EU_259_WindMill/hd_bld_EU_259_WindMill_01_BAM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>false</Bool>
-					</property>
-				</material>
-				<groupOrigin>-0.397265 15.221364 3.279485</groupOrigin>
-			</primitiveGroup>
-		</geometry>
-	</renderSet>
-	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>s0</node>
-		<geometry>
-			<vertices>sShape0.vertices</vertices>
-			<primitive>sShape0.indices</primitive>
-			<primitiveGroup>
-				0
-				<material>
-					<identifier>s_nd0</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>111</materialKind>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						alphaReference
 						<Int>124</Int>
@@ -172,20 +122,12 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_EU_259_WindMill/hd_bld_EU_259_WindMill_01_BAM.dds</Texture>
 					</property>
 					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_EU_259_WindMill/hd_bld_EU_259_WindMill_01_BANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_EU_259_WindMill/hd_bld_EU_259_WindMill_01_BGMM.dds</Texture>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_enableAO
@@ -195,33 +137,74 @@
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_EU_259_WindMill/hd_bld_EU_259_WindMill_01_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_EU_259_WindMill/hd_bld_EU_259_WindMill_01_BANM.dds</Texture>
+					</property>
 				</material>
-				<groupOrigin>0.005490 8.503312 -0.489324</groupOrigin>
+				<groupOrigin>-0.381485 15.070112 3.279481</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>s_ramp0</node>
+		<node>s0</node>
 		<geometry>
-			<vertices>s_rampShape0.vertices</vertices>
-			<primitive>s_rampShape0.indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_ramp_0</identifier>
-					<collisionFlags>131</collisionFlags>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<materialKind>111</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						alphaReference
+						<Int>124</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_EU_259_WindMill/hd_bld_EU_259_WindMill_01_BAM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_EU_259_WindMill/hd_bld_EU_259_WindMill_01_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_EU_259_WindMill/hd_bld_EU_259_WindMill_01_BANM.dds</Texture>
+					</property>
 				</material>
-				<groupOrigin>0.010681 0.096885 -4.802205</groupOrigin>
+				<groupOrigin>0.005490 8.503313 -0.489325</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-10.627082 -0.341302 -6.320259</min>
-		<max>9.832551 25.717199 4.566253</max>
+		<min>-10.605664 -0.341301 -5.544902</min>
+		<max>9.842692 25.408834 4.566253</max>
 	</boundingBox>
-	<geometrySize>5030</geometrySize>
+	<geometrySize>8340</geometrySize>
 	<minUVDensity>0.000818</minUVDensity>
 </root>

@@ -18,6 +18,8 @@ package net.wg.gui.lobby.vehiclePreview.data
       
       public var roleId:int = -1;
       
+      public var difficulty:int = -1;
+      
       public var compareBtnTooltip:String = "";
       
       public var showCompareBtn:Boolean;

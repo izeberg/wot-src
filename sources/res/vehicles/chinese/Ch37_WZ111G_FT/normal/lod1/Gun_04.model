@@ -2,17 +2,11 @@
 <root>
 	<tank>true</tank>
 	<parent>vehicles/chinese/Ch37_WZ111G_FT/normal/lod2/Gun_04</parent>
-	<extent>64</extent>
+	<extent>64.000000</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-0.49564 -0.40689 0.244233
-			<!--BW_String-->
-		</min>
-		<max>
-			0.495801 0.47834 6.49718
-			<!--BW_String-->
-		</max>
+		<min>-0.511658 -0.406890 -0.126401</min>
+		<max>0.511238 0.526195 6.497182</max>
 	</visibilityBox>
 	<nodefullVisual>vehicles/chinese/Ch37_WZ111G_FT/normal/lod1/Gun_04</nodefullVisual>
 </root>

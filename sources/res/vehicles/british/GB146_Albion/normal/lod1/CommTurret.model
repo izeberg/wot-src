@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB146_Albion/normal/lod1/CommTurret</nodefullVisual>
+	<parent>vehicles/british/GB146_Albion/normal/lod2/CommTurret</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.520346 -0.000001 -0.841090</min>
+		<max>0.524949 0.651147 1.365194</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

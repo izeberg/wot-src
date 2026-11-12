@@ -158,8 +158,8 @@ class EventBoardsController(IEventBoardController, IEventBoardsListener):
 
     @adisp_async
     @adisp_process
-    def getMyLeaderboardInfo(self, eventID, leaderboardID, callback, showNotification=True):
-        milbResponse = yield self.sendRequest(EventBoardsGetMyLeaderboardPositionCtx(eventID, leaderboardID, showNotification))
+    def getMyLeaderboardInfo(self, eventID, leaderboardID, spaID, callback, showNotification=True):
+        milbResponse = yield self.sendRequest(EventBoardsGetMyLeaderboardPositionCtx(eventID, leaderboardID, spaID, showNotification))
         if milbResponse is not None:
             myInfoData = MyInfoInLeaderBoard()
             statusCode = myInfoData.setData(milbResponse.getData(), eventID, leaderboardID)

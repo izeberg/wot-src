@@ -411,6 +411,7 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
            'isMultinational': vehicle.hasNationGroup, 
            'roleText': getRoleTextWithIcon(vehicle.role, vehicle.roleLabel), 
            'roleId': vehicle.role, 
+           'difficulty': vehicle.difficulty, 
            'vehicleCD': vehicle.intCD}
         return result
 
@@ -442,7 +443,8 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
            'style': self.__ctx.get('style'), 
            'backBtnLabel': self._backBtnLabel, 
            'previewAppearance': self.__previewAppearance, 
-           'disableHints': self.__disableHints})
+           'disableHints': self.__disableHints, 
+           'showCloseBtn': self.__showCloseBtn})
 
     def __onVehicleLoading(self, ctxEvent):
         if self.__customizationCD is not None and not ctxEvent.ctx.get('started'):

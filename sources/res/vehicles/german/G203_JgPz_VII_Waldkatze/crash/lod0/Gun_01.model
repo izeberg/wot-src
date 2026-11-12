@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.512424 -1.147075 -0.583237</min>
+		<max>0.512424 1.006363 8.604697</max>
+	</visibilityBox>
+	<parent>vehicles/german/G203_JgPz_VII_Waldkatze/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/german/G203_JgPz_VII_Waldkatze/crash/lod0/Gun_01</nodelessVisual>
+</root>

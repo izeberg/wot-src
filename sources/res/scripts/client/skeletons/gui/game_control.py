@@ -47,7 +47,7 @@ if typing.TYPE_CHECKING:
     from gui.shared.gui_items.Tankman import TankmanSkill
     from gui.shared.money import Currency, DynamicMoney, Money, CURRENCY_TYPE
     from gui.shared.utils.requesters.EpicMetaGameRequester import EpicMetaGameRequester
-    from helpers.server_settings import BattleRoyaleConfig, EpicGameConfig, GiftSystemConfig, RankedBattlesConfig, VehiclePostProgressionConfig, _MapboxConfig, Comp7Config, WinbackConfig, EarlyAccessConfig, ModeSelectorConfig, ParagonsConfig
+    from helpers.server_settings import BattleRoyaleConfig, EpicGameConfig, GiftSystemConfig, RankedBattlesConfig, VehiclePostProgressionConfig, _MapboxConfig, Comp7Config, WinbackConfig, EarlyAccessConfig, ModeSelectorConfig, ParagonsConfig, CustomizationResourceConfig
     from items.vehicles import VehicleType
     from season_common import GameSeason, GameSeasonCycle
     from items.artefacts import Equipment
@@ -59,6 +59,7 @@ if typing.TYPE_CHECKING:
     from account_helpers.paragons import Paragons
     from gui.game_control.paragons_controller import _ParagonsBranchesController
     from account_helpers import AccountSettings
+    from account_helpers.offers.events_data import OfferEventData
     from gui.game_control.summer_sale_controller import ProductsStates
     from gui.Scaleform.daapi.view.lobby.hangar.entry_points.gf_header_widget import GFWidgetAliases
     BattlePassBonusOpts = Optional[(TokensBonus, BattlePassSelectTokensBonus)]
@@ -547,7 +548,7 @@ class IPlatoonController(IGameController):
     def setPlatoonPopoverPosition(self, xPopoverOffset):
         raise NotImplementedError
 
-    def togglePlayerReadyAction(self, callback, checkAmmo=True):
+    def togglePlayerReadyAction(self, callback):
         raise NotImplementedError
 
     def getChannelController(self):
@@ -1749,6 +1750,9 @@ class ICraftmachineController(IGameController):
 
 class ICalendarController(IGameController):
 
+    def mustShow(self):
+        raise NotImplementedError
+
     def updateHeroAdventActionInfo(self):
         raise NotImplementedError
 
@@ -1783,6 +1787,12 @@ class IReferralProgramController(IGameController):
     def isShouldIndicate(self):
         raise NotImplementedError
 
+    def getRecruiterDbId(self):
+        raise NotImplementedError
+
+    def isRecruit(self, dbID):
+        raise NotImplementedError
+
 
 class IClanNotificationController(IGameController):
 
@@ -1798,11 +1808,52 @@ class IClanNotificationController(IGameController):
 
 class IFestivityController(IGameController):
     onStateChanged = None
+    onUpdateSlot = None
+    onSetHangToyEffectEnabled = None
 
     def isEnabled(self):
         raise NotImplementedError
 
+    def isInProgress(self):
+        raise NotImplementedError
+
+    def isPostEvent(self):
+        raise NotImplementedError
+
     def getHangarQuestsFlagData(self):
+        raise NotImplementedError
+
+    def getHangarWidgetLinkage(self):
+        raise NotImplementedError
+
+    def getHangarEdgeColor(self):
+        raise NotImplementedError
+
+    def isWidgetVisible(self, prbState, alias=None):
+        raise NotImplementedError
+
+    def isCreditBonusVisible(self, prbState):
+        raise NotImplementedError
+
+    def isOnboardingFinished(self):
+        raise NotImplementedError
+
+    @property
+    def firstEnterVideo(self):
+        raise NotImplementedError
+
+
+class IFestivityFirstEnterVideoController(IGameController):
+    onIntroComplete = None
+
+    def shouldStartIntro(self):
+        raise NotImplementedError
+
+    @property
+    def isActive(self):
+        raise NotImplementedError
+
+    def tryStartIntro(self):
         raise NotImplementedError
 
 
@@ -2568,6 +2619,9 @@ class IGuiLootBoxesController(IGameController, IEntitlementsConsumer):
     def getDayLimit(self):
         raise NotImplementedError
 
+    def getOpenByDefaultId(self):
+        raise NotImplementedError
+
     def openShop(self, lootboxID=None):
         raise NotImplementedError
 
@@ -2608,6 +2662,9 @@ class IGuiLootBoxesController(IGameController, IEntitlementsConsumer):
         raise NotImplementedError
 
     def getGuiLootBoxByTokenID(self, tokenID):
+        raise NotImplementedError
+
+    def getInfoPageURL(self, lootboxType):
         raise NotImplementedError
 
 
@@ -3574,6 +3631,9 @@ class IArmoryYardShopController(IGameController):
 
     @property
     def isProgressionCompleted(self):
+        raise NotImplementedError
+
+    def isPrerequisiteToken(self, tokenID):
         raise NotImplementedError
 
     def isBundle(self, productId):
@@ -4725,6 +4785,46 @@ class IControlPointOverrideController(IGameController):
     pass
 
 
+class ICustomizationResourceController(IGameController):
+    onEventSettingsUpdated = None
+
+    def config(self):
+        raise NotImplementedError
+
+    def getStartTime(self):
+        raise NotImplementedError
+
+    def getExpiryTime(self):
+        raise NotImplementedError
+
+    def getCurrencyCode(self):
+        raise NotImplementedError
+
+    def getCurrencyBalance(self):
+        raise NotImplementedError
+
+    def isEnabled(self):
+        raise NotImplementedError
+
+    def isExchangeEnabled(self):
+        raise NotImplementedError
+
+    def isFinished(self):
+        raise NotImplementedError
+
+    def isStarted(self):
+        raise NotImplementedError
+
+    def isEnding(self):
+        raise NotImplementedError
+
+    def getLocalEndDate(self):
+        raise NotImplementedError
+
+    def getLocalStartDate(self):
+        raise NotImplementedError
+
+
 class ITankAcademyController(IGameController):
     onStateChanged = None
     onFinish = None
@@ -4795,6 +4895,9 @@ class ITankAcademyController(IGameController):
     def getTankAcademyQuestGroups(self, filterFunc=None):
         raise NotImplementedError
 
+    def getTankAcademyOffers(self, filterFunc=None):
+        raise NotImplementedError
+
     def getCountTankAcademyQuests(self):
         raise NotImplementedError
 
@@ -4859,6 +4962,12 @@ class ITankAcademyController(IGameController):
         raise NotImplementedError
 
     def isMigrationUpdatesScenario(self):
+        raise NotImplementedError
+
+    def hasQuestTutorial(self, quest):
+        raise NotImplementedError
+
+    def getTutorialChapter(self, quest):
         raise NotImplementedError
 
 

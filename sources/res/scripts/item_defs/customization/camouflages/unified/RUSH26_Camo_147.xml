@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>31612</id>
+			<userString>#vehicle_customization:RUSH26_Camo_01_147/name</userString>
+			<description>#vehicle_customization:RUSH26_Camo_01_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-1.021716</HULL>
+				<TURRET>-1.021716</TURRET>
+				<GUN>-1.021716</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.64 2.64
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-11.36 -12.45
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<texture>vehicles/russian/Camouflage/RUSH26_Camo_01_147.dds</texture>
+		</camouflage>
+		<style>31630</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31613</id>
+			<texture>vehicles/russian/Camouflage/RUSH26_Camo_02_147.dds</texture>
+			<userString>#vehicle_customization:RUSH26_Camo_02_147/name</userString>
+			<description>#vehicle_customization:RUSH26_Camo_02_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-1.021716</HULL>
+				<TURRET>-1.021716</TURRET>
+				<GUN>-1.021716</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.64 2.64
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-11.36 -12.45
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/RUSH26_Camo_02_147_GMM.dds</glossMetallicMap>
+		</camouflage>
+		<style>31631</style>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31614</id>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<texture>vehicles/russian/Camouflage/RUSH26_Camo_03_147.dds</texture>
+			<userString>#vehicle_customization:RUSH26_Camo_03_147/name</userString>
+			<description>#vehicle_customization:RUSH26_Camo_03_147/description</description>
+			<forceUv0>true</forceUv0>
+			<rotation>
+				<HULL>-1.021716</HULL>
+				<TURRET>-1.021716</TURRET>
+				<GUN>-1.021716</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.64 2.64
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-11.36 -12.45
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/RUSH26_Camo_03_147_GMM.dds</glossMetallicMap>
+		</camouflage>
+		<style>31632</style>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31615</id>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<texture>vehicles/russian/Camouflage/RUSH26_Camo_04_147.dds</texture>
+			<userString>#vehicle_customization:RUSH26_Camo_04_147/name</userString>
+			<description>#vehicle_customization:RUSH26_Camo_04_147/description</description>
+			<forceUv0>true</forceUv0>
+			<rotation>
+				<HULL>-1.021716</HULL>
+				<TURRET>-1.021716</TURRET>
+				<GUN>-1.021716</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.64 2.64
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-11.36 -12.45
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/RUSH26_Camo_04_147_GMM.dds</glossMetallicMap>
+			<normalMap>vehicles/russian/Camouflage/RUSH26_Camo_04_147_Normal.dds</normalMap>
+		</camouflage>
+		<style>31633</style>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31616</id>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<texture>vehicles/russian/Camouflage/RUSH26_Camo_05_147.dds</texture>
+			<userString>#vehicle_customization:RUSH26_Camo_05_147/name</userString>
+			<description>#vehicle_customization:RUSH26_Camo_05_147/description</description>
+			<exclusionImpact>
+				0.5
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<rotation>
+				<HULL>-1.021716</HULL>
+				<TURRET>-1.021716</TURRET>
+				<GUN>-1.021716</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.64 2.64
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-11.36 -12.45
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/RUSH26_Camo_05_147_GMM.dds</glossMetallicMap>
+			<normalMap>vehicles/russian/Camouflage/RUSH26_Camo_05_147_Normal.dds</normalMap>
+		</camouflage>
+		<style>31634</style>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31617</id>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<texture>vehicles/russian/Camouflage/RUSH26_Camo_06_147.dds</texture>
+			<userString>#vehicle_customization:RUSH26_Camo_06_147/name</userString>
+			<description>#vehicle_customization:RUSH26_Camo_06_147/description</description>
+			<exclusionImpact>
+				0.2
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<rotation>
+				<HULL>-1.021716</HULL>
+				<TURRET>-1.021716</TURRET>
+				<GUN>-1.021716</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.64 2.64
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-11.36 -12.45
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/RUSH26_Camo_06_147_GMM.dds</glossMetallicMap>
+			<emissionMap>vehicles/russian/Camouflage/RUSH26_Camo_06_147_Emission.dds</emissionMap>
+			<emissionPatternMap>vehicles/russian/Camouflage/RUSH26_Camo_06_147_Pattern.dds</emissionPatternMap>
+			<forwardEmissionBrightness>6</forwardEmissionBrightness>
+			<deferredEmissionBrightness>6</deferredEmissionBrightness>
+			<emissionAnimationSpeed>
+				0.6
+				<!--BW_String-->
+			</emissionAnimationSpeed>
+		</camouflage>
+		<style>31635</style>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+	</itemGroup>
+</root>

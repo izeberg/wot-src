@@ -4,11 +4,12 @@ from gui.Scaleform.locale.INGAME_GUI import INGAME_GUI as I18N_INGAME_GUI
 from helpers import i18n, html, time_utils
 from helpers.time_utils import makeLocalServerTime
 from messenger.proto.interfaces import IChatError
-from messenger.proto.shared_errors import ChatCoolDownError, ClientActionError, I18nActionID, I18nErrorID, makeNoviceChatBanErrorShort, makeChatBanError, ChatBanError
+from messenger.proto.shared_errors import ChatCoolDownError, ClientActionError, I18nActionID, I18nErrorID, makeChatBanError, ChatBanError
 from messenger_common_chat2 import MESSENGER_ACTION_IDS as _ACTIONS
 from messenger_common_chat2 import MESSENGER_ERRORS as _ERRORS
 from messenger_common_chat2 import MESSENGER_LIMITS as _LIMITS
 from gui.impl import backport
+from gui.impl.gen import R
 import BigWorld
 
 def getChatActionName(actionID):
@@ -168,7 +169,7 @@ class _ChatBanErrorShort(ChatBanError):
 
     def getMessage(self):
         if self._banType == NOVICE_RESTRICTIONS_BAN_TYPE:
-            msg = makeNoviceChatBanErrorShort()
+            msg = backport.text(R.strings.chat.errors.novicerestrictionsshort())
         else:
             msg = makeChatBanError(self._endTime, self._reason)
         return msg

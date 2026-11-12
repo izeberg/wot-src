@@ -73,6 +73,12 @@ package net.wg.data.constants.generated
       
       public static const EARLY_ACCESS_SECONDARY_ENTRY_POINT:String = "EarlyAccessSecondaryEntryPoint";
       
+      public static const NY_TANK_CAROUSEL_BTN_CONTAINER:String = "NYBtnEnvSwitcherContainer";
+      
+      public static const NY_TANK_CAROUSEL_BTN_TIP_CONTAINER:String = "NYBtnEnvSwitcherTipContainer";
+      
+      public static const NY_MAIN_WIDGET_UI:String = "NYMainWidgetUI";
+      
       public static const VEH_PARAM_RENDERER_STATE_SIMPLE_TOP:String = "simpleTop";
       
       public static const VEH_PARAM_RENDERER_STATE_SIMPLE_BOTTOM:String = "simpleBottom";
@@ -192,6 +198,10 @@ package net.wg.data.constants.generated
       public static const SUMMER_SALE_ENTRY_POINT:String = "SummerSaleEntryPoint";
       
       public static const TANK_ACADEMY_ENTRY_POINT:String = "TankAcademyEntryPoint";
+      
+      public static const CUSTOMIZATION_RESOURCE_ENTRY_POINT:String = "CustomizationResourceEntryPoint";
+      
+      public static const TANK_ACADEMY_SECONDARY_ENTRY_POINT:String = "TankAcademySecondaryEntryPoint";
        
       
       public function HANGAR_ALIASES()

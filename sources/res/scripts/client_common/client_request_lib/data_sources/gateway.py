@@ -571,10 +571,11 @@ class GatewayDataAccessor(base.BaseDataAccessor):
         get_data = {'event_id': event_id}
         return self._request_data(callback, url, get_data, 'GET')
 
-    def get_my_leaderboard_position(self, callback, event_id, leaderboard_id, fields=None):
+    def get_my_leaderboard_position(self, callback, event_id, leaderboard_id, spa_id, fields=None):
         url = '/wgelen/wot/v1/get_my_leaderboard_position'
         get_data = {'event_id': event_id, 
-           'leaderboard_id': leaderboard_id}
+           'leaderboard_id': leaderboard_id, 
+           'spa': spa_id}
         return self._request_data(callback, url, get_data, 'GET')
 
     def get_player_data(self, callback, fields=None):
@@ -680,6 +681,32 @@ class GatewayDataAccessor(base.BaseDataAccessor):
     def get_statistic_lootbox(self, callback):
         url = '/statbox/api/v1/get_statistic_lootbox'
         return self._request_data(callback, url)
+
+    def ny_tamagotchi_get_current_state(self, callback, notRecalc):
+        url = '/nytamagochi/api/player/current_state'
+        return self._request_data(callback, url, method='GET', get_data={'not_recalc': notRecalc})
+
+    def ny_tamagotchi_get_player_info(self, callback):
+        url = '/nytamagochi/api/player/info'
+        return self._request_data(callback, url, method='GET')
+
+    def ny_tamagotchi_get_leaderboard_page(self, callback, page, isUserPage=False, cumulative=False):
+        url = '/nytamagochi/api/leaderboard'
+        return self._request_data(callback, url, method='GET', get_data={'page': page, 'current_user_page': isUserPage, 'cumulative': cumulative})
+
+    def ny_tamagotchi_get_player_stats(self, callback):
+        url = '/nytamagochi/api/player/stats'
+        return self._request_data(callback, url, method='GET')
+
+    def ny_tamagotchi_buy_items(self, callback, data):
+        url = '/nytamagochi/api/inventory/buy'
+        headers = {'content-type': 'application/json'}
+        return self._request_data(callback, url, method='POST', headers=headers, post_data=data)
+
+    def ny_tamagotchi_activate_items(self, callback, data):
+        url = '/nytamagochi/api/inventory/activate'
+        headers = {'content-type': 'application/json'}
+        return self._request_data(callback, url, method='POST', headers=headers, post_data=data)
 
     def _get_formatted_language_code(self):
         return self.client_lang.replace('_', '-')

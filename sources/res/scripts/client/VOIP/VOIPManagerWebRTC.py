@@ -38,6 +38,7 @@ class VOIPManagerWebRTC(VOIPHandler):
         self.__channelUsers = {}
         self.__dbid = 0
         self.__eventManager = em = Event.EventManager()
+        self.__wwiseMuffled = False
         self.onCaptureDevicesUpdated = Event.Event(em)
         self.onPlayerSpeaking = Event.Event(em)
         self.onInitialized = Event.Event(em)
@@ -236,10 +237,13 @@ class VOIPManagerWebRTC(VOIPHandler):
         self.setMicrophoneVolume(int(round(SoundGroups.g_instance.getVolume(VOIPCommon.KEY_VOIP_MIC_WEBRTC) * 100)))
 
     def __muffleMasterVolume(self):
+        self.__wwiseMuffled = True
         SoundGroups.g_instance.muffleWWISEVolume()
 
     def __restoreMasterVolume(self):
-        SoundGroups.g_instance.restoreWWISEVolume()
+        if self.__wwiseMuffled:
+            self.__wwiseMuffled = False
+            SoundGroups.g_instance.restoreWWISEVolume()
 
     def setMicMute(self, muted=True):
         if not self.__initialized:
@@ -398,7 +402,9 @@ class VOIPManagerWebRTC(VOIPHandler):
             _logger.error('Participant is not updated: %r', data)
             return
         dbid = int(data[VOIPCommon.KEY_PARTICIPANT_URI])
+        ownPlayer = False
         if dbid == 0:
+            ownPlayer = True
             dbid = self.__getOwnPlayerDBID()
             if not self.__channelUsers:
                 return
@@ -407,10 +413,10 @@ class VOIPManagerWebRTC(VOIPHandler):
             channelUser = self.__channelUsers[dbid]
             if channelUser['talking'] != talking:
                 channelUser['talking'] = talking
-                if self.__isAnyoneTalking():
-                    self.__muffleMasterVolume()
-                else:
-                    self.__restoreMasterVolume()
+        if ownPlayer and talking or self.__isAnyoneTalking():
+            self.__muffleMasterVolume()
+        else:
+            self.__restoreMasterVolume()
         self.onPlayerSpeaking(dbid, talking)
 
     def __getOwnPlayerDBID(self):

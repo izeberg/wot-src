@@ -13,6 +13,8 @@ package net.wg.gui.components.carousels.data
       
       private static const LEVELS_SELECTED:String = "levels";
       
+      private static const DIFFICULTIES_SELECTED:String = "difficulties";
+      
       private static const HIDDEN_SELECTED:String = "hidden";
       
       private static const PROGRESSIONS_SELECTED:String = "progressions";
@@ -31,6 +33,8 @@ package net.wg.gui.components.carousels.data
       private var _specialsSelected:Vector.<Boolean> = null;
       
       private var _levelsSelected:Vector.<Boolean> = null;
+      
+      private var _difficultiesSelected:Vector.<Boolean> = null;
       
       private var _hiddenSelected:Vector.<Boolean> = null;
       
@@ -82,6 +86,15 @@ package net.wg.gui.components.carousels.data
             }
             return false;
          }
+         if(param1 == DIFFICULTIES_SELECTED)
+         {
+            this._difficultiesSelected = new Vector.<Boolean>();
+            for each(_loc3_ in param2)
+            {
+               this._difficultiesSelected.push(_loc3_);
+            }
+            return false;
+         }
          if(param1 == HIDDEN_SELECTED)
          {
             this._hiddenSelected = new Vector.<Boolean>();
@@ -118,6 +131,11 @@ package net.wg.gui.components.carousels.data
          this._specialsSelected = null;
          this._levelsSelected.splice(0,this._levelsSelected.length);
          this._levelsSelected = null;
+         if(this._difficultiesSelected != null)
+         {
+            this._difficultiesSelected.splice(0,this._difficultiesSelected.length);
+            this._difficultiesSelected = null;
+         }
          this._hiddenSelected.splice(0,this._hiddenSelected.length);
          this._hiddenSelected = null;
          this._rolesStates.dispose();
@@ -145,6 +163,11 @@ package net.wg.gui.components.carousels.data
       public function get levelsSelected() : Vector.<Boolean>
       {
          return this._levelsSelected;
+      }
+      
+      public function get difficultiesSelected() : Vector.<Boolean>
+      {
+         return this._difficultiesSelected;
       }
       
       public function get hiddenSelected() : Vector.<Boolean>

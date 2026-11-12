@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>3.000000</duration>
+	<duration>3.500000</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -14,18 +14,32 @@
 				<startTime>0.000000</startTime>
 				<value>0.333000</value>
 				<inTangent>0.105882</inTangent>
-				<outTangent>0.044762</outTangent>
+				<outTangent>0.089524</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>2.666667</startTime>
+				<startTime>0.333333</startTime>
+				<value>0.362841</value>
+				<inTangent>0.089524</inTangent>
+				<outTangent>0.033233</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>0.424876</value>
+				<inTangent>0.033233</inTangent>
+				<outTangent>0.028437</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.166667</startTime>
 				<value>0.452365</value>
-				<inTangent>0.044762</inTangent>
+				<inTangent>0.028437</inTangent>
 				<outTangent>0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>3.000000</startTime>
+				<startTime>3.500000</startTime>
 				<value>0.452365</value>
 				<inTangent>-0.000000</inTangent>
 				<outTangent>-0.000000</outTangent>
@@ -41,7 +55,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>2.966667</duration>
+				<duration>3.166667</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -61,7 +75,7 @@
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>2.787493</duration>
+				<duration>3.156250</duration>
 				<sequenceSound>ay_seq_stage_03</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>

@@ -22,7 +22,7 @@ class DAAPIEntity(EventSystemEntity):
     def turnDAAPIoff(self, isScriptSet):
         if isScriptSet:
             self.__flashObject.script = None
-            self.__isDAAPIInited = False
+        self.__isDAAPIInited = False
         self.__flashObject = None
         return
 

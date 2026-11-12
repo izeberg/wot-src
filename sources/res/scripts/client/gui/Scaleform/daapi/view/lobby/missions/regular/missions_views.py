@@ -1,10 +1,15 @@
+import typing
 from functools import partial
 import BigWorld
 from adisp import adisp_process
+from new_year.ny_constants import ViewAliases
+from th_async import th_async, th_await
+from skeletons.gui.impl import INewYearNavigation
 from constants import PremiumConfigs
 from debug_utils import LOG_ERROR
 from frameworks.wulf import ViewStatus
 from gui import DialogsInterface, makeHtmlString
+from gui.gift_system.constants import HubUpdateReason
 from gui.Scaleform.Waiting import Waiting
 from gui.Scaleform.daapi.settings import BUTTON_LINKAGES
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
@@ -38,10 +43,9 @@ from helpers import dependency
 from helpers.events_handler import EventsHandler
 from helpers.i18n import makeString as _ms
 from shared_utils import nextTick
-from skeletons.gui.game_control import IBrowserController, IDebutBoxesController, IMarathonEventsController, IReloginController, ISummerSaleController
+from skeletons.gui.game_control import IBrowserController, IDebutBoxesController, IMarathonEventsController, IReloginController, ISummerSaleController, IFestivityController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
-from th_async import th_async, th_await
 from uilogging.marathon.loggers import MarathonLogger, MarathonEvents
 
 class _GroupedMissionsView(MissionsGroupedViewMeta):
@@ -359,6 +363,8 @@ class MissionsEventBoardsView(MissionsEventBoardsViewMeta):
 class MissionsCategoriesView(_GroupedMissionsView):
     _lobbyContext = dependency.descriptor(ILobbyContext)
     __summerSaleController = dependency.descriptor(ISummerSaleController)
+    _festivityController = dependency.descriptor(IFestivityController)
+    _newYearNavigation = dependency.descriptor(INewYearNavigation)
     __showDQInMissionsTab = False
 
     @classmethod
@@ -389,12 +395,17 @@ class MissionsCategoriesView(_GroupedMissionsView):
         if eventType == QUESTS_ALIASES.SUMMER_SALE_EVENT:
             showMissionsTemporary()
 
+    def onNyQuestsClick(self):
+        self._newYearNavigation.showViewAfterPrbSwitch(ViewAliases.QUESTS_VIEW)
+
     def _populate(self):
         super(MissionsCategoriesView, self)._populate()
         self._lobbyContext.getServerSettings().onServerSettingsChange += self.__onServerSettingsChange
+        self._festivityController.onStateChanged += self.__festivityStateChanged
 
     def _dispose(self):
         self._lobbyContext.getServerSettings().onServerSettingsChange -= self.__onServerSettingsChange
+        self._festivityController.onStateChanged -= self.__festivityStateChanged
         super(MissionsCategoriesView, self)._dispose()
 
     @staticmethod
@@ -404,12 +415,19 @@ class MissionsCategoriesView(_GroupedMissionsView):
     def _getViewQuestFilter(self):
         return self.getViewQuestFilter()
 
+    def _onGiftHubUpdate(self, reason, extra=None):
+        if reason == HubUpdateReason.SETTINGS:
+            self._filterMissions()
+
     def __onServerSettingsChange(self, diff):
         if PremiumConfigs.PREM_QUESTS not in diff:
             return
         diffConfig = diff.get(PremiumConfigs.PREM_QUESTS)
         if 'enabled' in diffConfig:
             self._onEventsUpdate()
+
+    def __festivityStateChanged(self):
+        self._filterMissions()
 
 
 class TemporaryMissionsTabView(InjectComponentAdaptor, TemporaryMissionsViewMeta, EventsHandler):

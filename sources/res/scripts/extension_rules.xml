@@ -30,6 +30,10 @@
 			<type>merge</type>
 		</rule>
 		<rule>
+			<pattern>gui/gui_settings\.xml$</pattern>
+			<type>include</type>
+		</rule>
+		<rule>
 			<pattern>gui/messenger\.xml$</pattern>
 			<type>merge</type>
 		</rule>
@@ -60,6 +64,10 @@
 		<rule>
 			<pattern>gui/sound_notifications\.xml$</pattern>
 			<type>include</type>
+		</rule>
+		<rule>
+			<pattern>.*/arena_defs/_list_\.xml$</pattern>
+			<type>merge</type>
 		</rule>
 	</xml_whitelist>
 </root>

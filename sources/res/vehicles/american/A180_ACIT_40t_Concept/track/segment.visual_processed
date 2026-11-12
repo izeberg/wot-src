@@ -18,13 +18,25 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tanck_track</identifier>
+					<identifier>track_mat</identifier>
 					<fx>shaders/std_effects/PBS_tank_tracks.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>255</collisionFlags>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/american/tracks/A180_ACIT_40t_Concept_track_segment_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicGlossMap
@@ -35,16 +47,8 @@
 						<Texture>vehicles/american/tracks/A180_ACIT_40t_Concept_track_segment_ANM.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_detailUVTiling
-						<Vector4>1.753420 1.753420 0.000000 0.000000</Vector4>
+						<Vector4>1.507000 1.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_useDetailMetallic
@@ -53,10 +57,6 @@
 					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.000000 0.000000</groupOrigin>
@@ -67,6 +67,6 @@
 		<min>-0.239998 -0.084798 -0.099783</min>
 		<max>0.239998 0.084798 0.099783</max>
 	</boundingBox>
-	<geometrySize>5430</geometrySize>
+	<geometrySize>6990</geometrySize>
 	<minUVDensity>1.558348</minUVDensity>
 </root>

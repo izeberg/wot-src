@@ -12,9 +12,9 @@ package net.wg.gui.components.vehicleStatus
       
       public var textField:TextField = null;
       
-      public var bg:Sprite = null;
-      
       public var hitMc:Sprite = null;
+      
+      public var messageBg:Sprite = null;
       
       private var _message:String = null;
       
@@ -27,7 +27,7 @@ package net.wg.gui.components.vehicleStatus
       {
          super.configUI();
          hitArea = this.hitMc;
-         this.bg.mouseEnabled = this.bg.mouseChildren = false;
+         this.messageBg.mouseEnabled = this.messageBg.mouseChildren = false;
       }
       
       override protected function draw() : void
@@ -39,13 +39,14 @@ package net.wg.gui.components.vehicleStatus
             {
                this.textField.htmlText = this._message;
                App.utils.commons.updateTextFieldSize(this.textField);
-               invalidateSize();
             }
-            if(isInvalid(InvalidationType.SIZE))
-            {
-               this.bg.x = this.textField.width - this.bg.width >> 1;
-               this.bg.y = this.textField.height - this.bg.height >> 1;
-            }
+         }
+         if(isInvalid(InvalidationType.DATA,InvalidationType.SIZE))
+         {
+            this.messageBg.x = this.textField.x;
+            this.messageBg.y = this.textField.y;
+            this.messageBg.width = this.width;
+            this.messageBg.height = this.height;
          }
       }
       
@@ -53,8 +54,8 @@ package net.wg.gui.components.vehicleStatus
       {
          hitArea = null;
          this.textField = null;
-         this.bg = null;
          this.hitMc = null;
+         this.messageBg = null;
          super.onDispose();
       }
       

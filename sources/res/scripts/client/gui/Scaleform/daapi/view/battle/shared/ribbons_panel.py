@@ -212,10 +212,7 @@ _RIBBONS_FMTS = {_BET.CAPTURE: _baseRibbonFormatter,
    _BET.RECEIVED_BY_CLING_BRANDER: _singleVehRibbonFormatter, 
    _BET.DEALT_DMG_BY_THUNDER_STRIKE: _singleVehRibbonFormatter, 
    _BET.RECEIVED_BY_THUNDER_STRIKE: _singleVehRibbonFormatter, 
-   _BET.PERK: _perkRibbonFormatter, 
-   _BET.RECEIVED_BY_PERIODIC: _singleVehRibbonFormatter, 
-   _BET.DEALT_DMG_BY_PERIODIC: _singleVehRibbonFormatter, 
-   _BET.HEALTH_ADDED: _baseRibbonFormatter}
+   _BET.PERK: _perkRibbonFormatter}
 _SHOT_PASSION_INT_CD = 2817787
 _ABILITY_MODIFIERS_BY_CDS = {_SHOT_PASSION_INT_CD: _BET.DAMAGE_MODIFIER_ABILITY}
 _DISPLAY_PRECONDITIONS = {_BET.DETECTION: lambda dp, ribbon: dp.getVehicleInfo(ribbon.getVehIDs()[0]).vehicleType.compactDescr > 0}
@@ -233,17 +230,8 @@ class BattleRibbonsPanel(RibbonsPanelMeta, IArenaVehiclesController):
         self.__isExtendedAnim = True
         self.__isVisible = True
         self.__arenaDP = self.sessionProvider.getCtx().getArenaDP()
-        self.__ribbonsAggregator = self._createRibbonAggregator()
+        self.__ribbonsAggregator = ribbons_aggregator.createRibbonsAggregator()
         self.__delayedRibbons = []
-
-    def _createRibbonAggregator(self):
-        return ribbons_aggregator.createRibbonsAggregator()
-
-    def _getRibbonAggregator(self):
-        return self.__ribbonsAggregator
-
-    def _getArenaDP(self):
-        return self.__arenaDP
 
     def onShow(self, ribbonID):
         sound = _SHOW_RIBBON_SOUND_NAME
@@ -314,12 +302,8 @@ class BattleRibbonsPanel(RibbonsPanelMeta, IArenaVehiclesController):
     def _getRibbonFormatter(self, ribbonType):
         return _RIBBONS_FMTS.get(ribbonType)
 
-    @classmethod
-    def _getAdditionalRibbons(cls):
-        return []
-
     def _getViewData(self):
-        ribbons = [
+        return [
          [
           _BET.ARMOR, backport.text(R.strings.ingame_gui.efficiencyRibbons.armor())],
          [
@@ -417,8 +401,6 @@ class BattleRibbonsPanel(RibbonsPanelMeta, IArenaVehiclesController):
           backport.text(R.strings.ingame_gui.efficiencyRibbons.receivedByThunderStrike())],
          [
           _BET.PERK, '']]
-        ribbons.extend(self._getAdditionalRibbons())
-        return ribbons
 
     def __processDelayedRibbons(self):
         for ribbon, method in ((self.__ribbonsAggregator.getRibbon(ribbonID), method) for ribbonID, method in self.__delayedRibbons):
@@ -510,9 +492,6 @@ class BattleRibbonsPanel(RibbonsPanelMeta, IArenaVehiclesController):
 
     def __checkUserPreferences(self, ribbon):
         return self.__userPreferences.get(ribbon.getType(), True)
-
-    def __isPanelEnabled(self):
-        return self.sessionProvider.arenaVisitor.gui.isEventBattle() or self.__enabled
 
     def __checkControllingOwnVehicle(self):
         return avatar_getter.getPlayerVehicleID() == self.sessionProvider.shared.vehicleState.getControllingVehicleID()

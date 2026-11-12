@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<name>#arenas:34_redshire_ny/name</name>
+	<description>#arenas:34_redshire_ny/description</description>
+	<geometry>spaces/34_redshire_ny</geometry>
+	<estimatedLoad>
+		0.3
+		<!--BW_String-->
+	</estimatedLoad>
+	<boundingBox>
+		<bottomLeft>-500.000000 -500.000000</bottomLeft>
+		<upperRight>500.000000 500.000000</upperRight>
+	</boundingBox>
+	<roundLength>900</roundLength>
+	<minimap>spaces/34_redshire_ny/mmap.dds</minimap>
+	<vehicleCamouflageKind>winter</vehicleCamouflageKind>
+	<maxPlayersInTeam>15</maxPlayersInTeam>
+	<wwmusicSetup>
+		<wwmusicLoading>music_winter_redshire_loading_screen</wwmusicLoading>
+		<wwmusicIntensive>music_redshire_dron_intensive</wwmusicIntensive>
+		<wwmusicRelaxed>music_redshire_dron_relaxed</wwmusicRelaxed>
+		<wwmusicStop>music_dron_stop</wwmusicStop>
+		<wwmusicEndbattleStop>music_dron_endbattle_stop</wwmusicEndbattleStop>
+		<wwmusicResultWin>music_redshire_result_win</wwmusicResultWin>
+		<wwmusicResultDrawn>music_redshire_result_drawn</wwmusicResultDrawn>
+		<wwmusicResultDefeat>music_redshire_result_defeat</wwmusicResultDefeat>
+	</wwmusicSetup>
+	<wwambientSound>ambient_wind_winter_02</wwambientSound>
+	<water>
+		<texScale>0</texScale>
+		<freqX>0</freqX>
+		<freqZ>0</freqZ>
+	</water>
+	<gameplayTypes>
+		<ctf>
+			<teamBasePositions>
+				<team1>
+					<position1>-3.365387 -426.434448</position1>
+				</team1>
+				<team2>
+					<position1>-0.017403 410.252808</position1>
+				</team2>
+			</teamBasePositions>
+		</ctf>
+		<domination>
+			<teamSpawnPoints>
+				<team1>
+					<position>183.085953 -325.564270</position>
+				</team1>
+				<team2>
+					<position>123.042641 441.046173</position>
+				</team2>
+			</teamSpawnPoints>
+			<controlPoint>-199.817245 39.771599</controlPoint>
+		</domination>
+		<assault>
+			<winnerIfTimeout>1</winnerIfTimeout>
+			<teamSpawnPoints>
+				<team1>
+					<position>-391.177002 134.738007</position>
+					<position>-433.924988 -130.621994</position>
+				</team1>
+				<team2>
+					<position>227.291000 226.914001</position>
+					<position>222.462006 -314.529999</position>
+				</team2>
+			</teamSpawnPoints>
+			<teamBasePositions>
+				<team1>
+					<position1>-263.662598 13.934292</position1>
+				</team1>
+				<team2/>
+			</teamBasePositions>
+		</assault>
+		<assault2>
+			<winnerIfTimeout>1</winnerIfTimeout>
+			<winnerIfExtermination>1</winnerIfExtermination>
+			<teamSpawnPoints>
+				<team1>
+					<position>-330.686249 359.319916</position>
+				</team1>
+				<team2>
+					<position>301.464111 -171.248413</position>
+				</team2>
+			</teamSpawnPoints>
+			<teamBasePositions>
+				<team1>
+					<position1>-410.010315 -155.523071</position1>
+					<position2>196.023468 351.158661</position2>
+				</team1>
+				<team2/>
+			</teamBasePositions>
+		</assault2>
+		<comp7>
+			<winnerIfTimeout>1</winnerIfTimeout>
+			<winnerIfExtermination>1</winnerIfExtermination>
+			<teamSpawnPoints>
+				<team1>
+					<position>-327.491211 357.684235</position>
+				</team1>
+				<team2>
+					<position>284.690796 -166.135818</position>
+				</team2>
+			</teamSpawnPoints>
+			<visualScript>
+				<server>
+					<plan>PointsOfInterest/pointsOfInterest</plan>
+				</server>
+			</visualScript>
+			<recon>
+				<flyDirections>
+					<flyDirection>
+						<team>1</team>
+						<direction>0 0 1</direction>
+					</flyDirection>
+					<flyDirection>
+						<team>2</team>
+						<direction>0 0 1</direction>
+					</flyDirection>
+				</flyDirections>
+			</recon>
+			<pointsOfInterestUDO>
+				<point>
+					<position>-126.798447 -448.938019</position>
+					<type>3</type>
+				</point>
+				<point>
+					<position>-73.180466 -137.363235</position>
+					<type>3</type>
+				</point>
+				<point>
+					<position>-95.495415 230.291214</position>
+					<type>3</type>
+				</point>
+				<point>
+					<position>181.295166 157.372849</position>
+					<type>4</type>
+				</point>
+				<point>
+					<position>-471.015747 106.060318</position>
+					<type>4</type>
+				</point>
+			</pointsOfInterestUDO>
+			<teamBasePositions>
+				<team1>
+					<position1>-442.764984 -143.328293</position1>
+					<position2>196.214264 366.289581</position2>
+				</team1>
+				<team2/>
+			</teamBasePositions>
+		</comp7>
+	</gameplayTypes>
+</root>

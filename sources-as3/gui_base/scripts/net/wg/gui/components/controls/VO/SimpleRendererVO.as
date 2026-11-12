@@ -10,6 +10,8 @@ package net.wg.gui.components.controls.VO
       
       public var value:String = "";
       
+      public var label:String = "";
+      
       public var selected:Boolean = false;
       
       public var enabled:Boolean = true;

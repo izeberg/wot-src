@@ -52,8 +52,6 @@ package net.wg.gui.components.crosshairPanel.components.coolantAbility
       
       private var _penaltyTweenValue:Number = 0;
       
-      private var _baseReloadingTime:Number = 0;
-      
       private var _diffTextInitialY:Number = 0;
       
       private var _activePenaltyTimeoutTween:Tween = null;
@@ -117,6 +115,7 @@ package net.wg.gui.components.crosshairPanel.components.coolantAbility
       
       public function updateReloadingPenalty(param1:Number, param2:Number) : void
       {
+         var _loc3_:Number = NaN;
          if(this._penalty == param2)
          {
             return;
@@ -124,7 +123,6 @@ package net.wg.gui.components.crosshairPanel.components.coolantAbility
          if(this._penalty == Values.ZERO)
          {
             dispatchEvent(new Event(ACTIVATED));
-            this._baseReloadingTime = param1;
             this.abilityModMc.alpha = Values.ZERO;
             this.penaltyTweenValue = param2;
             this.showPenalty();
@@ -133,11 +131,11 @@ package net.wg.gui.components.crosshairPanel.components.coolantAbility
          {
             dispatchEvent(new Event(DEACTIVATED));
             this.hidePenalty();
-            if(this._penalty > this._baseReloadingTime)
+            _loc3_ = Math.round(param1 * 100) / 100;
+            if(this._penalty > _loc3_)
             {
                this.showAbilityMod();
             }
-            this._baseReloadingTime = Values.ZERO;
          }
          else if(!this._isDiffAnimPlay)
          {

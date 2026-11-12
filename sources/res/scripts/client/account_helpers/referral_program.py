@@ -69,3 +69,11 @@ class ReferralProgram(object):
             proxy = None
         self.__account._doCmdInt(AccountCommands.CMD_RP_RESET_RECRUIT_DELTA, 0, proxy)
         return
+
+    def isRecruit(self, databaseID, callback):
+        if callback is not None:
+            proxy = lambda requestID, resultID, errorStr, ext=None: callback(resultID, bool((ext or {}).get('isRecruit', False)) if resultID >= 0 else False)
+        else:
+            proxy = None
+        self.__account._doCmdInt(AccountCommands.CMD_RP_IS_RECRUIT, int(databaseID or 0), proxy)
+        return

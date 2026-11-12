@@ -38,6 +38,9 @@ class GuiLootBoxesControllerStub(IGuiLootBoxesController):
     def getDayLimit(self):
         return 0
 
+    def getOpenByDefaultId(self):
+        return 0
+
     def openShop(self, lootboxID=None):
         pass
 
@@ -88,3 +91,6 @@ class GuiLootBoxesControllerStub(IGuiLootBoxesController):
 
     def getGuiLootBoxByTokenID(self, tokenID):
         return
+
+    def getInfoPageURL(self, lootboxType):
+        return ''

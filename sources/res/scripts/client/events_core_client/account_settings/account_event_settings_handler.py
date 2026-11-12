@@ -31,9 +31,9 @@ class AccountEventSettingsHandler(object):
         AccountSettings.setNotifications(self._eventKey, notifications)
 
     def migrateAccount(self):
-        expiryDate = self.settings.get(self._expiryTimeKey, 0)
+        expiryDate = self.settings.get(self._expiryTimeKey)
         currentTime = time_utils.getServerUTCTime()
-        if expiryDate < currentTime:
+        if expiryDate and expiryDate < currentTime:
             self.__reset()
         finishDate = self._eventController.getEventFinishTime()
         if self._eventController.isEnabled() and finishDate > currentTime and not expiryDate:

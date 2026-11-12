@@ -7,4 +7,5 @@ __name__ = 'Windowing'
 __package__ = None
 def addWindowAccessibilitynHandler(*args, **kwargs): pass
 def isWindowAccessible(*args, **kwargs): pass
+def isWindowMinimized(*args, **kwargs): pass
 def removeWindowAccessibilityHandler(*args, **kwargs): pass

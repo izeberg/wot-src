@@ -127,6 +127,11 @@
 					<destroyed>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_BXI_3DSt/crash/lod0/Hull.model</destroyed>
 					<exploded>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_BXI_3DSt/crash/lod0/Hull.model</exploded>
 				</J20_Type_2605_BXI_3DSt>
+				<J20_Type_2605_3Dst_02>
+					<undamaged>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/crash/lod0/Hull.model</exploded>
+				</J20_Type_2605_3Dst_02>
 			</sets>
 		</models>
 		<swinging>
@@ -164,14 +169,17 @@
 				<slotType>clan</slotType>
 				<slotId>10000</slotId>
 				<rayStart>
-					1.11901 0.813392 2.55121
+					0.063324 0.813392 2.55121
 					<!--BW_String-->
 				</rayStart>
 				<rayEnd>
-					1.11901 0.779387 2.43613
+					0.063324 0.779387 2.43613
 					<!--BW_String-->
 				</rayEnd>
-				<rayUp>0 1 0</rayUp>
+				<rayUp>
+					0 0.959009 -0.283377
+					<!--BW_String-->
+				</rayUp>
 				<size>
 					0.32
 					<!--BW_String-->
@@ -1952,6 +1960,11 @@
 						<destroyed>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_BXI_3DSt/crash/lod0/Chassis.model</destroyed>
 						<exploded>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_BXI_3DSt/crash/lod0/Chassis.model</exploded>
 					</J20_Type_2605_BXI_3DSt>
+					<J20_Type_2605_3Dst_02>
+						<undamaged>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/crash/lod0/Chassis.model</exploded>
+					</J20_Type_2605_3Dst_02>
 				</sets>
 			</models>
 			<traces>
@@ -2572,6 +2585,12 @@
 						<UTiles>1</UTiles>
 						<VTiles>1</VTiles>
 					</atlas>
+					<modelSets>
+						<J20_Type_2605_3Dst_02>
+							<segmentModelLeft>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/track/segment.model</segmentModelLeft>
+							<segmentModelRight>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/track/segment.model</segmentModelRight>
+						</J20_Type_2605_3Dst_02>
+					</modelSets>
 				</trackPair>
 				<lodDist>SPLINE_TRACK</lodDist>
 			</splineDesc>
@@ -2605,6 +2624,11 @@
 						<model>vehicles/japan/J20_Type_2605/track/segment.model</model>
 						<length>0.157659</length>
 					</mainSegment>
+					<modelSets>
+						<J20_Type_2605_3Dst_02>
+							<mainSegmentModel>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/track/segment.model</mainSegmentModel>
+						</J20_Type_2605_3Dst_02>
+					</modelSets>
 					<collisionHull>
 						<bottom/>
 						<top>
@@ -3218,6 +3242,11 @@
 						<model>vehicles/japan/J20_Type_2605/track/segment.model</model>
 						<length>0.157659</length>
 					</mainSegment>
+					<modelSets>
+						<J20_Type_2605_3Dst_02>
+							<mainSegmentModel>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/track/segment.model</mainSegmentModel>
+						</J20_Type_2605_3Dst_02>
+					</modelSets>
 					<collisionHull>
 						<bottom/>
 						<top>
@@ -3941,6 +3970,11 @@
 								<destroyed>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_BXI_3DSt/crash/lod0/Gun_01.model</destroyed>
 								<exploded>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_BXI_3DSt/crash/lod0/Gun_01.model</exploded>
 							</J20_Type_2605_BXI_3DSt>
+							<J20_Type_2605_3Dst_02>
+								<undamaged>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/crash/lod0/Gun_01.model</exploded>
+							</J20_Type_2605_3Dst_02>
 						</sets>
 					</models>
 					<hitTester>
@@ -4023,6 +4057,27 @@
 								<!--BW_String-->
 							</size>
 						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49001</slotId>
+							<rayStart>
+								0 -0.000927 2.48
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								0 -0.000927 3.28
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.195 0 0
+								<!--BW_String-->
+							</rayUp>
+							<compatibleModels>J20_Type_2605_3Dst_02</compatibleModels>
+							<size>
+								0.8
+								<!--BW_String-->
+							</size>
+						</slot>
 					</customizationSlots>
 					<customization>
 						<customizableVehicleAreas>
@@ -4100,6 +4155,11 @@
 								<destroyed>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_BXI_3DSt/crash/lod0/Gun_02.model</destroyed>
 								<exploded>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_BXI_3DSt/crash/lod0/Gun_02.model</exploded>
 							</J20_Type_2605_BXI_3DSt>
+							<J20_Type_2605_3Dst_02>
+								<undamaged>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/normal/lod0/Gun_02.model</undamaged>
+								<destroyed>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/crash/lod0/Gun_02.model</destroyed>
+								<exploded>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/crash/lod0/Gun_02.model</exploded>
+							</J20_Type_2605_3Dst_02>
 						</sets>
 					</models>
 					<hitTester>
@@ -4182,6 +4242,27 @@
 								<!--BW_String-->
 							</size>
 						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49001</slotId>
+							<rayStart>
+								0 -0.000927 2.48
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								0 -0.000927 3.28
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.234 0 0
+								<!--BW_String-->
+							</rayUp>
+							<compatibleModels>J20_Type_2605_3Dst_02</compatibleModels>
+							<size>
+								0.8
+								<!--BW_String-->
+							</size>
+						</slot>
 					</customizationSlots>
 					<customization>
 						<customizableVehicleAreas>
@@ -4217,6 +4298,11 @@
 						<destroyed>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_BXI_3DSt/crash/lod0/Turret_01.model</destroyed>
 						<exploded>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_BXI_3DSt/crash/lod0/Turret_01.model</exploded>
 					</J20_Type_2605_BXI_3DSt>
+					<J20_Type_2605_3Dst_02>
+						<undamaged>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst_02/crash/lod0/Turret_01.model</exploded>
+					</J20_Type_2605_3Dst_02>
 				</sets>
 			</models>
 			<hitTester>

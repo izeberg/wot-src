@@ -2740,7 +2740,10 @@
 						</master>
 					</drivenJoints>
 					<camouflage>
-						<density>118.608772 117.969971</density>
+						<density>
+							100 145.969971
+							<!--BW_String-->
+						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
 				</_100mm_Type_59_2_Dual>

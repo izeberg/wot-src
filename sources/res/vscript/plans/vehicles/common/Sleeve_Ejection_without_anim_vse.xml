@@ -40,7 +40,7 @@
 				<id>Variable_9</id>
 				<params>
 					<param>
-						renderPipeline
+						isHavokEnabled
 						<name>Variable Name</name>
 						<type>StringT</type>
 					</param>
@@ -257,14 +257,14 @@
 				<slots/>
 			</block>
 			<block>
-				<class>OnAnyVehicleShoot</class>
-				<id>OnAnyVehicleShoot_2</id>
+				<class>If</class>
+				<id>If_3</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_3</id>
+				<class>OnAnyVehicleShoot</class>
+				<id>OnAnyVehicleShoot_2</id>
 				<params/>
 				<slots/>
 			</block>
@@ -338,6 +338,24 @@
 			</block>
 			<block>
 				<class>SetVariable</class>
+				<id>SetVariable_5</id>
+				<buddy>Variable_9</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>SetVariable</class>
 				<id>SetVariable_1</id>
 				<buddy>Variable_2</buddy>
 				<params>
@@ -354,24 +372,6 @@
 				<id>StartScript_1</id>
 				<params/>
 				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_5</id>
-				<buddy>Variable_9</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>value</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -405,7 +405,7 @@
 				<slots>
 					<slot>
 						<name>settingName</name>
-						<const>\RENDER_PIPELINE\</const>
+						<const>\HAVOK_ENABLED\</const>
 					</slot>
 				</slots>
 			</block>
@@ -478,7 +478,7 @@
 				<slots>
 					<slot>
 						<name>b</name>
-						<const>\0\</const>
+						<const>\1\</const>
 					</slot>
 				</slots>
 			</block>
@@ -742,6 +742,78 @@
 				</params>
 				<slots/>
 			</block>
+			<block>
+				<class>If</class>
+				<id>If_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_6</id>
+				<buddy>Variable_9</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>OnGameSettingsChanged</class>
+				<id>OnGameSettingsChanged_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_2</id>
+				<buddy>Variable_9</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_3</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>b</name>
+						<const>\0\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetGameSetting</class>
+				<id>GetGameSetting_2</id>
+				<params>
+					<param>
+						int
+						<name>Game Setting Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>settingName</name>
+						<const>\HAVOK_ENABLED\</const>
+					</slot>
+				</slots>
+			</block>
 		</blocks>
 		<connections>
 			<connection>
@@ -835,6 +907,12 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>If_1</from>
+				<input>input</input>
+				<to>SetVariable_5</to>
+				<output>true</output>
+			</connection>
+			<connection>
 				<from>SetVariable_5</from>
 				<input>input</input>
 				<to>SetVariable_1</to>
@@ -845,12 +923,6 @@
 				<input>value</input>
 				<to>SetVariable_1</to>
 				<output>vehicle</output>
-			</connection>
-			<connection>
-				<from>If_1</from>
-				<input>input</input>
-				<to>SetVariable_5</to>
-				<output>true</output>
 			</connection>
 			<connection>
 				<from>SpawnComponent_1</from>
@@ -1090,6 +1162,48 @@
 				<from>GetVariable_4</from>
 				<input>gameObject</input>
 				<to>IsValid_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>OnGameSettingsChanged_1</from>
+				<input>input</input>
+				<to>If_2</to>
+				<output>onChanged</output>
+			</connection>
+			<connection>
+				<from>CompareIntegers_2</from>
+				<input>value</input>
+				<to>If_2</to>
+				<output>equal</output>
+			</connection>
+			<connection>
+				<from>If_2</from>
+				<input>input</input>
+				<to>SetVariable_6</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>CompareIntegers_3</from>
+				<input>value</input>
+				<to>SetVariable_6</to>
+				<output>greater</output>
+			</connection>
+			<connection>
+				<from>GetVariable_2</from>
+				<input>a</input>
+				<to>CompareIntegers_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetGameSetting_2</from>
+				<input>b</input>
+				<to>CompareIntegers_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetGameSetting_2</from>
+				<input>a</input>
+				<to>CompareIntegers_3</to>
 				<output>value</output>
 			</connection>
 		</connections>

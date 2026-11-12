@@ -20,6 +20,11 @@ class TankAcademyEntryPointTooltipView(ViewImpl):
     def viewModel(self):
         return super(TankAcademyEntryPointTooltipView, self).getViewModel()
 
+    def _getEvents(self):
+        return (
+         (
+          self.__tankAcademyController.onStateChanged, self.__onStateChanged),)
+
     def _onLoading(self, *args, **kwargs):
         super(TankAcademyEntryPointTooltipView, self)._onLoading()
         with self.viewModel.transaction() as (model):
@@ -42,3 +47,7 @@ class TankAcademyEntryPointTooltipView(ViewImpl):
             if self.__tankAcademyController.isFinished() and self.__tankAcademyController.hasUnobtainedDelayedRewards():
                 model.setEndDate(self.__tankAcademyController.getDelayedRewardExpirationTime())
         return
+
+    def __onStateChanged(self, *_, **__):
+        if not self.__tankAcademyController.isActive():
+            self.destroyWindow()

@@ -84,17 +84,21 @@ class PerksController(ViewComponentsController):
     def _onArenaPeriodChange(self, period, *args):
         if self._prevArenaPeriod == period:
             return
-        self._prevArenaPeriod = period
-        if period != ARENA_PERIOD.BATTLE:
-            return
-        ctrl = self.sessionProvider.shared.vehicleState
-        vehicle = ctrl.getControllingVehicle()
-        for viewCmp in self._viewComponents:
-            viewCmp.setPerks(vehicle.perks)
-            viewCmp.updatePerks(self._prevPanelState, {})
+        else:
+            self._prevArenaPeriod = period
+            if period != ARENA_PERIOD.BATTLE:
+                return
+            ctrl = self.sessionProvider.shared.vehicleState
+            vehicle = ctrl.getControllingVehicle()
+            for viewCmp in self._viewComponents:
+                if vehicle is not None:
+                    viewCmp.setPerks(vehicle.perks)
+                viewCmp.updatePerks(self._prevPanelState, {})
 
-        for perkID in self._prevPanelState.keys():
-            self.onPerkChanged({_DATA_KEY_PERK_ID: perkID})
+            for perkID in self._prevPanelState.keys():
+                self.onPerkChanged({_DATA_KEY_PERK_ID: perkID})
+
+            return
 
     @staticmethod
     def _getCurrentState(source, prevState):

@@ -295,7 +295,7 @@ msgid "guaranteedRewardTooltip/block1/vehicle/text"
 msgstr ""
 "Гарантированный танк — техника %(level)s уровня из списка возможных наград "
 "в контейнерах. Вы гарантированно получите танк, которого ещё нет на вашем "
-"аккаунте, из %(bonus)s. Если танк выпадет ранее, отсчёт начнётся заново."
+"аккаунте, из: %(bonus)s Если танк выпадет ранее, отсчёт начнётся заново."
 
 msgid "guaranteedRewardTooltip/block1/vehicle/title"
 msgstr "Механіка гарантаванага танка"
@@ -308,15 +308,16 @@ msgstr "Агульны лічыльнік узнагарод:"
 
 msgid "guaranteedRewardTooltip/block3/text"
 msgstr ""
-"Маёмасць змешчана ў тры паслядоўныя спісы/этапы. Каб перайсці да наступнага "
-"спіса, трэба атрымаць усю маёмасць з «Асноўных узнагарод» бягучага спіса."
+"Имущество помещено в четыре последовательных списка/этапа. Чтобы перейти к "
+"следующему списку, нужно получить всё имущество из «Основных наград» "
+"текущего списка."
 
 msgid "guaranteedRewardTooltip/block3/title"
 msgstr "Гарантаваная ўзнагарода з этапаў"
 
 msgid "guaranteedRewardTooltip/block4/bonus/text"
 msgstr ""
-"Узнагароды з трэцяга спіса можна атрымліваць неабмежаваную колькасць разоў."
+"Награду из четвёртого списка можно получать неограниченное количество раз."
 
 msgid "guaranteedRewardTooltip/block4/vehicle/text"
 msgstr ""
@@ -374,7 +375,7 @@ msgid "lootboxRotationTooltip/description3"
 msgstr "Машына, якая выпала паўторна, будзе кампенсавана ў адпаведнай валюце."
 
 msgid "lootboxRotationTooltip/stage"
-msgstr "Этап"
+msgstr "Этап %(stage)s"
 
 msgid "lootboxRotationTooltip/title"
 msgstr "Спісы змесціва"
@@ -455,6 +456,9 @@ msgstr ""
 msgid "lootboxesWithKeys/about/default"
 msgstr "Пра кантэйнер"
 
+msgid "lootboxesWithKeys/about/ny_2027_big"
+msgstr "Пра кантэйнеры з этапамі"
+
 msgid "lootboxesWithKeys/about/tanks_birthday_2025_large"
 msgstr "Пра кантэйнеры падзеі"
 
@@ -510,8 +514,17 @@ msgstr "У ГАРАЖ"
 msgid "openBoxScreen/backBtn/1"
 msgstr "У КРАМУ"
 
+msgid "openBoxScreen/backBtn/10"
+msgstr "К ПИРОТЕХНИКЕ"
+
+msgid "openBoxScreen/backBtn/11"
+msgstr "К АТТРАКЦИОНУ"
+
+msgid "openBoxScreen/backBtn/12"
+msgstr "К ПИТОМЦУ"
+
 msgid "openBoxScreen/backBtn/2"
-msgstr "НА ПЛОШЧУ"
+msgstr "В ГОРОДОК"
 
 msgid "openBoxScreen/backBtn/3"
 msgstr "ДА АСКЕПКАЎ"
@@ -520,7 +533,19 @@ msgid "openBoxScreen/backBtn/4"
 msgstr "ДА РЭФЕРАЛЬНАЙ ПРАГРАМЫ"
 
 msgid "openBoxScreen/backBtn/5"
-msgstr "К ПРАЗДНИКУ"
+msgstr "К ПРАЗДНИЧНОЙ ЕЛИ"
+
+msgid "openBoxScreen/backBtn/6"
+msgstr "К ТЕРЕМУ"
+
+msgid "openBoxScreen/backBtn/7"
+msgstr "К ИНСТАЛЛЯЦИИ"
+
+msgid "openBoxScreen/backBtn/8"
+msgstr "К СТОЛОВОЙ"
+
+msgid "openBoxScreen/backBtn/9"
+msgstr "К ГОРКЕ"
 
 msgid "openBoxScreen/backBtnMain"
 msgstr "У Гараж"
@@ -545,6 +570,12 @@ msgstr ""
 "Каб атрымаць кантэйнеры, бярыце ўдзел у&nbsp;пэўных падзеях "
 "і&nbsp;выконвайце звязаныя з&nbsp;імі баявыя задачы. Пэўныя кантэйнеры можна"
 " дакупіць у&nbsp;гульнявой Краме."
+
+msgid "openBySelect/skipVideo"
+msgstr "ПРОПУСТИТЬ"
+
+msgid "openBySelect/title"
+msgstr "ВЫБЕРИТЕ КАРТОЧКУ"
 
 msgid "optional/buy"
 msgstr "Дакупіць"
@@ -611,6 +642,9 @@ msgstr "Кантэйнеры"
 msgid "possibleRewards/premium"
 msgstr "Танкавы прэміум акаўнт"
 
+msgid "possibleRewards/stage"
+msgstr "ЭТАП СБОРА ОСНОВНЫХ НАГРАД"
+
 msgid "possibleRewards/vehicle"
 msgstr "Тэхніка"
 
@@ -632,13 +666,10 @@ msgstr ""
 "аздобка I-V узроўню і штосьці са спіса каштоўнай маёмасці. Калі ўся тэхніка "
 "ўжо сабрана, наступныя яе выпадзенні будуць кампенсаваны гульнявой валютай."
 
-msgid "probabilitiesOverlay/boxMainRewards"
-msgstr "Асноўныя ўзнагароды"
-
 msgid "probabilitiesOverlay/guaranteedFrequencies"
 msgstr ""
-"Гарантаваная ўзнагарода з {brown_Open}этапу %(stage)s{brown_Close} кожны "
-"{brown_Open}%(count)s кантэйнер{brown_Close}"
+"Гарантированная награда из этапа каждый {brown_Open}%(count)s "
+"контейнер{brown_Close}"
 
 msgid "probabilitiesOverlay/optional/header"
 msgstr "ІМАВЕРНАСЦЬ ВЫПАДАННЯ"
@@ -654,6 +685,28 @@ msgstr "Этап %(stage)"
 
 msgid "probabilitiesOverlay/tabTooltip"
 msgstr "Узнагароды са %(stage)s спіса маёмасці."
+
+msgid "probabilitiesOverlayTooltip/slotTitle/body/completed"
+msgstr "Награды этого этапа полностью собраны и перестанут выпадать. "
+
+msgid "probabilitiesOverlayTooltip/slotTitle/body/current"
+msgstr ""
+"Из контейнеров с некоторой вероятностью будут выпадать награды текущего "
+"этапа."
+
+msgid "probabilitiesOverlayTooltip/slotTitle/body/disabled"
+msgstr ""
+"Соберите все награды предыдущего этапа, чтобы получить доступ к наградам "
+"этого этапа."
+
+msgid "probabilitiesOverlayTooltip/slotTitle/header/completed"
+msgstr "Этап пройден"
+
+msgid "probabilitiesOverlayTooltip/slotTitle/header/current"
+msgstr "Текущий этап"
+
+msgid "probabilitiesOverlayTooltip/slotTitle/header/disabled"
+msgstr "Этап заблокирован"
 
 msgid "probabilityGuaranteedRewardTooltip/multiply"
 msgstr "• Этап %(stage)s — %(boxNumber)s кантэйнера;"
@@ -965,6 +1018,12 @@ msgstr "Прыбыў гарантаваны танк!"
 
 msgid "videoreward/header/title"
 msgstr "Гарантаваная ўзнагарода!"
+
+msgid "videoreward/openBySelect/buttonPreview/title"
+msgstr "Паглядзець у Гаражы"
+
+msgid "videoreward/openBySelect/header/title"
+msgstr "ПОПОЛНЕНИЕ АНГАРА!"
 
 msgid "welcomeScreen/button/acceptButton"
 msgstr "Так!"

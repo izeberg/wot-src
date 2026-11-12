@@ -11,6 +11,7 @@ package net.wg.gui.lobby.vehiclePreview.infoPanel
    import net.wg.gui.components.advanced.ViewStackEx;
    import net.wg.gui.components.controls.Image;
    import net.wg.gui.components.controls.tabs.OrangeTabMenu;
+   import net.wg.gui.components.vehicleStatus.VehicleDifficulty;
    import net.wg.gui.events.ViewStackEvent;
    import net.wg.gui.lobby.components.vehPostProgression.EntryPointButton;
    import net.wg.gui.lobby.techtree.TechTreeEvent;
@@ -86,6 +87,10 @@ package net.wg.gui.lobby.vehiclePreview.infoPanel
       
       private static const ROLE_Y_SHIFT_SMALL:int = 6;
       
+      private static const SEPARATOR_GAP:int = 8;
+      
+      private static const NO_ROLE_DIFFICULTY_X_OFFSET:int = 5;
+      
       private static const VEH_POST_PROGRESSION_BTN_HEIGHT:int = 42;
       
       private static const BULLET_VISIBILITY_INVALID:String = "BULLET_VISIBILITY_INVALID";
@@ -110,6 +115,10 @@ package net.wg.gui.lobby.vehiclePreview.infoPanel
       public var viewStack:ViewStackEx = null;
       
       public var roleTF:TextField = null;
+      
+      public var difficulty:VehicleDifficulty = null;
+      
+      public var difficultySeparator:Sprite = null;
       
       public var vehPostProgressionBtn:EntryPointButton = null;
       
@@ -159,6 +168,9 @@ package net.wg.gui.lobby.vehiclePreview.infoPanel
          this.roleTF.addEventListener(MouseEvent.ROLL_OVER,this.onRoleTFRollOverHandler);
          this.roleTF.addEventListener(MouseEvent.ROLL_OUT,this.onRoleTFRollOutHandler);
          this.roleTF.visible = false;
+         this.difficulty.addEventListener(Event.RESIZE,this.onDifficultyResizeHandler);
+         this.difficultySeparator.mouseEnabled = this.difficultySeparator.mouseChildren = false;
+         this.difficultySeparator.visible = false;
          this.viewStack.addEventListener(ViewStackEvent.VIEW_CHANGED,this.onViewStackViewChangedHandler);
          this.vehPostProgressionBtn.isSoundEnabled = true;
          this.vehPostProgressionBtn.addEventListener(ButtonEvent.CLICK,this.onVehPostProgressionBtnClickHandler);
@@ -186,6 +198,10 @@ package net.wg.gui.lobby.vehiclePreview.infoPanel
          this.roleTF.removeEventListener(MouseEvent.ROLL_OVER,this.onRoleTFRollOverHandler);
          this.roleTF.removeEventListener(MouseEvent.ROLL_OUT,this.onRoleTFRollOutHandler);
          this.roleTF = null;
+         this.difficulty.removeEventListener(Event.RESIZE,this.onDifficultyResizeHandler);
+         this.difficulty.dispose();
+         this.difficulty = null;
+         this.difficultySeparator = null;
          this.vehicleTypeIcon.removeEventListener(Event.CHANGE,this.onIconChangeHandler);
          this.vehicleTypeIcon.dispose();
          this.vehicleTypeIcon = null;
@@ -207,6 +223,7 @@ package net.wg.gui.lobby.vehiclePreview.infoPanel
          var _loc5_:int = 0;
          var _loc6_:int = 0;
          var _loc7_:int = 0;
+         var _loc8_:int = 0;
          super.draw();
          if(this._data)
          {
@@ -222,6 +239,8 @@ package net.wg.gui.lobby.vehiclePreview.infoPanel
                   this.roleTF.htmlText = this._data.roleText;
                   this._commons.updateTextFieldSize(this.roleTF,true,false);
                }
+               this.difficulty.setDifficulty(this._data.difficulty);
+               this.difficulty.validateNow();
                this.updatePostProgressionVisibility();
                invalidateSize();
             }
@@ -251,25 +270,25 @@ package net.wg.gui.lobby.vehiclePreview.infoPanel
                this.vehicleTypeIcon.x = this.vehicleLevelTF.width + _loc3_ >> 0;
                this.vehicleNameTF.x = this.vehicleTypeIcon.x + this.vehicleTypeIcon.width + _loc3_ >> 0;
                this.nationChangeIcon.x = this.vehicleNameTF.x + this.vehicleNameTF.width + NATION_CHANGE_IMG_X_SHIFT >> 0;
-               _loc4_ = 0;
-               if(this.roleTF.visible)
+               _loc4_ = this.roleTF.visible || this.difficulty.visible ? (!!this._isSmallHeight ? int(ROLE_Y_SHIFT_SMALL) : int(ROLE_Y_SHIFT_BIG)) : int(0);
+               _loc5_ = this.vehicleNameTF.y + this.vehicleNameTF.height + _loc4_ >> 0;
+               this.layoutRoleAndDifficulty(_loc5_);
+               if(this.roleTF.visible || this.difficulty.visible)
                {
-                  _loc4_ = !!this._isSmallHeight ? int(ROLE_Y_SHIFT_SMALL) : int(ROLE_Y_SHIFT_BIG);
-                  this.roleTF.y = this.vehicleNameTF.y + this.vehicleNameTF.height + _loc4_ >> 0;
-                  _loc4_ += this.roleTF.height;
+                  _loc4_ += this.getRoleRowHeight(_loc5_);
                }
-               _loc5_ = !!this._isSmallHeight ? int(TAB_BAR_Y_SHIFT_SMALL) : int(TAB_BAR_Y_SHIFT_BIG);
-               this.tabButtonBar.y = this.vehicleNameTF.y + this.vehicleNameTF.height + _loc5_ + _loc4_ >> 0;
+               _loc6_ = !!this._isSmallHeight ? int(TAB_BAR_Y_SHIFT_SMALL) : int(TAB_BAR_Y_SHIFT_BIG);
+               this.tabButtonBar.y = this.vehicleNameTF.y + this.vehicleNameTF.height + _loc6_ + _loc4_ >> 0;
                this.tabButtonBar.width = App.appWidth >> 1;
                this.tabButtonBar.validateNow();
-               _loc6_ = !!this._isSmallHeight ? int(VIEW_STACK_Y_SHIFT_SMALL) : int(VIEW_STACK_Y_SHIFT_BIG);
-               this.viewStack.y = this.tabButtonBar.y + _loc6_ >> 0;
+               _loc7_ = !!this._isSmallHeight ? int(VIEW_STACK_Y_SHIFT_SMALL) : int(VIEW_STACK_Y_SHIFT_BIG);
+               this.viewStack.y = this.tabButtonBar.y + _loc7_ >> 0;
                this.viewStack.setSize(this.width,height - this.viewStack.y);
                if(this.vehPostProgressionBtn.visible)
                {
-                  _loc7_ = this.viewStack.y + this.viewStack.currentView.height + (!!this._isSmallHeight ? 0 : POST_PROGRESSION_BTN_Y_OFFSET);
+                  _loc8_ = this.viewStack.y + this.viewStack.currentView.height + (!!this._isSmallHeight ? 0 : POST_PROGRESSION_BTN_Y_OFFSET);
                   this.vehPostProgressionBtn.isSmall = this._isSmallWidth;
-                  this.vehPostProgressionBtn.y = _loc7_;
+                  this.vehPostProgressionBtn.y = _loc8_;
                }
             }
          }
@@ -365,6 +384,56 @@ package net.wg.gui.lobby.vehiclePreview.infoPanel
       }
       
       private function onIconChangeHandler(param1:Event) : void
+      {
+         invalidateSize();
+      }
+      
+      private function layoutRoleAndDifficulty(param1:int) : void
+      {
+         var _loc2_:Boolean = this.roleTF.visible && this.difficulty.visible;
+         this.difficultySeparator.visible = _loc2_;
+         var _loc3_:Number = this.roleTF.x;
+         if(this.roleTF.visible)
+         {
+            this.roleTF.y = param1;
+            _loc3_ += this.roleTF.width;
+         }
+         else
+         {
+            _loc3_ += NO_ROLE_DIFFICULTY_X_OFFSET;
+         }
+         if(_loc2_)
+         {
+            this.difficultySeparator.x = _loc3_ + SEPARATOR_GAP;
+            _loc3_ += this.difficultySeparator.width + SEPARATOR_GAP * 2;
+         }
+         if(this.difficulty.visible)
+         {
+            this.difficulty.x = _loc3_;
+            this.difficulty.y = param1;
+            this.difficulty.alignLabelTo(!!this.roleTF.visible ? this.roleTF : null);
+         }
+         if(_loc2_)
+         {
+            this.difficultySeparator.y = param1 + (Math.max(this.roleTF.height,this.difficulty.height) - this.difficultySeparator.height >> 1);
+         }
+      }
+      
+      private function getRoleRowHeight(param1:int) : int
+      {
+         var _loc2_:int = !!this.roleTF.visible ? int(this.roleTF.height) : int(0);
+         if(this.difficulty.visible)
+         {
+            _loc2_ = Math.max(_loc2_,this.difficulty.y - param1 + this.difficulty.height);
+         }
+         if(this.roleTF.visible && this.difficulty.visible)
+         {
+            _loc2_ = Math.max(_loc2_,this.difficultySeparator.y - param1 + this.difficultySeparator.height);
+         }
+         return _loc2_;
+      }
+      
+      private function onDifficultyResizeHandler(param1:Event) : void
       {
          invalidateSize();
       }

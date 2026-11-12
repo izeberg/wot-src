@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un17_RDT_62/_skins/Un17_RDT_62_3Dst_01/normal/lod2/Hatch_anim_01</nodefullVisual>
+	<parent>vehicles/intunion/Un17_RDT_62/_skins/Un17_RDT_62_3Dst_01/normal/lod3/Hatch_anim_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.225266 0.387927 -0.115100</min>
+		<max>0.225046 0.420468 0.370287</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

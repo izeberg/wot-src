@@ -6,6 +6,8 @@ package net.wg.gui.lobby.missions.event
    {
       
       public static const SHOW_WAITING:String = "showWaiting";
+      
+      public static const GOTO_NY_QUESTS:String = "nyBannerGotoDailyQuests";
        
       
       public var isWaiting:Boolean;

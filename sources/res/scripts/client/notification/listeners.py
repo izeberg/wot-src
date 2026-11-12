@@ -1,9 +1,9 @@
-import copy, json, logging, time, datetime, weakref, typing, WWISE, BigWorld
+import copy, json, time, datetime, weakref, typing, WWISE, logging
 from collections import defaultdict
 from functools import partial
 from PlayerEvents import g_playerEvents
 from account_helpers import AccountSettings
-from account_helpers.AccountSettings import INTEGRATED_AUCTION_NOTIFICATIONS, IS_BATTLE_PASS_MARATHON_STARTED, TRADING_CARAVAN_NOTIFICATIONS, PROGRESSIVE_REWARD_VISITED, RESOURCE_WELL_END_SHOWN, RESOURCE_WELL_NOTIFICATIONS, RESOURCE_WELL_START_SHOWN, SENIORITY_AWARDS_COINS_REMINDER_SHOWN_TIMESTAMP, REFERRAL_PROGRAM_PGB_FULL, SUBSCRIPTION_LAST_EXPIRATION_NOTIFICATION, BattleMatters, EarlyAccess, Paragons, PREMIUM_QUESTS_NOTIFICATION, CUSTOM_NOTIFICATIONS, BLACK_MARKET_AUCTION_NOTIFICATIONS
+from account_helpers.AccountSettings import INTEGRATED_AUCTION_NOTIFICATIONS, IS_BATTLE_PASS_MARATHON_STARTED, TRADING_CARAVAN_NOTIFICATIONS, PROGRESSIVE_REWARD_VISITED, RESOURCE_WELL_END_SHOWN, RESOURCE_WELL_NOTIFICATIONS, RESOURCE_WELL_START_SHOWN, SENIORITY_AWARDS_COINS_REMINDER_SHOWN_TIMESTAMP, REFERRAL_PROGRAM_PGB_FULL, SUBSCRIPTION_LAST_EXPIRATION_NOTIFICATION, BattleMatters, EarlyAccess, Paragons, PREMIUM_QUESTS_NOTIFICATION, CUSTOM_NOTIFICATIONS, BLACK_MARKET_AUCTION_NOTIFICATIONS, CUSTOMIZATION_RESOURCE_EVENT_DISABLED_MSG_SEEN, CUSTOMIZATION_RESOURCE_EXCHANGE_DISABLED_MSG_SEEN
 from adisp import adisp_process
 from personal_missions import PM_BRANCH
 from paragons_helpers import pushParagonsBranchIsUnavalableMessage, pushParagonsBranchIsAvalableMessage, pushParagonsEnableMessage, pushParagonsContinuingMessage, pushParagonsBranchResetAvailableMessage, pushParagonsNewStageAvailableMessage, pushParagonsDisableMessage
@@ -58,15 +58,15 @@ from helpers.time_utils import getTimestampByStrDate
 from messenger import MessengerEntry
 from messenger.formatters import TimeFormatter
 from messenger.m_constants import PROTO_TYPE, SCH_CLIENT_MSG_TYPE, USER_ACTION_ID
+from ids_generators import SequenceIDGenerator
 from messenger.proto import proto_getter
 from messenger.proto.events import g_messengerEvents
 from messenger.proto.xmpp.xmpp_constants import XMPP_ITEM_TYPE
 from nations import AVAILABLE_NAMES
-from notification.decorators import BattlePassLockButtonDecorator, BattlePassSwitchChapterReminderDecorator, C11nMessageDecorator, C2DProgressionStyleDecorator, ClanAppActionDecorator, ClanAppsDecorator, ClanInvitesActionDecorator, ClanInvitesDecorator, ClanSingleAppDecorator, ClanSingleInviteDecorator, CollectionsLockButtonDecorator, EmailConfirmationReminderMessageDecorator, FriendshipRequestDecorator, CustomNotificationsStartDecorator, IntegratedAuctionStageFinishDecorator, IntegratedAuctionStageStartDecorator, LockButtonMessageDecorator, MapboxButtonDecorator, MessageDecorator, MissingEventsDecorator, PrbInviteDecorator, ProgressiveRewardDecorator, RecruitReminderMessageDecorator, ResourceWellLockButtonDecorator, ResourceWellStartDecorator, SeniorityAwardsDecorator, NotifyCenterPopUpDecorator, WotPlusIntroViewMessageDecorator, BattleMattersReminderDecorator, C11nProgressiveItemDecorator, TradingCaravanRefillDecorator, EarlyAccessDecorator, BlackMarketVehicleAuctionStageStartDecorator, BlackMarketVehicleAuctionStageFinishDecorator, BlackMarketAuctionStageStartDecorator, BlackMarketAuctionStageFinishDecorator, ParagonsCoinsCustomMessageDecorator
+from notification.decorators import BattlePassLockButtonDecorator, BattlePassSwitchChapterReminderDecorator, C11nMessageDecorator, C2DProgressionStyleDecorator, ClanAppActionDecorator, ClanAppsDecorator, ClanInvitesActionDecorator, ClanInvitesDecorator, ClanSingleAppDecorator, ClanSingleInviteDecorator, CollectionsLockButtonDecorator, EmailConfirmationReminderMessageDecorator, FriendshipRequestDecorator, CustomNotificationsStartDecorator, IntegratedAuctionStageFinishDecorator, IntegratedAuctionStageStartDecorator, LockButtonMessageDecorator, MapboxButtonDecorator, MessageDecorator, MissingEventsDecorator, PrbInviteDecorator, ProgressiveRewardDecorator, RecruitReminderMessageDecorator, ResourceWellLockButtonDecorator, ResourceWellStartDecorator, SeniorityAwardsDecorator, NotifyCenterPopUpDecorator, WotPlusIntroViewMessageDecorator, BattleMattersReminderDecorator, C11nProgressiveItemDecorator, TradingCaravanRefillDecorator, EarlyAccessDecorator, BlackMarketVehicleAuctionStageStartDecorator, BlackMarketVehicleAuctionStageFinishDecorator, BlackMarketAuctionStageStartDecorator, BlackMarketAuctionStageFinishDecorator, GiftSystemOperationsFactory, PsaCoinReminderMessageDecorator, ParagonsCoinsCustomMessageDecorator
 from notification.settings import NOTIFICATION_TYPE, NotificationData
-from shared_utils import first
 from skeletons.gui.battle_matters import IBattleMattersController
-from skeletons.gui.game_control import IBattlePassController, IBootcampController, ICollectionsSystemController, IEventsNotificationsController, IGameSessionController, ILimitedUIController, IResourceWellController, ISeniorityAwardsController, ISteamCompletionController, IReferralProgramController, IWotPlusController, IEarlyAccessController, IParagonsController, IUnseenEventsCounter
+from skeletons.gui.game_control import IBattlePassController, IBootcampController, ICollectionsSystemController, ICustomizationResourceController, IEventsNotificationsController, IGameSessionController, ILimitedUIController, IResourceWellController, ISeniorityAwardsController, ISteamCompletionController, IReferralProgramController, IWotPlusController, IEarlyAccessController, IParagonsController, IUnseenEventsCounter
 from skeletons.gui.goodies import IGoodiesCache
 from skeletons.gui.impl import INotificationWindowController
 from skeletons.gui.lobby_context import ILobbyContext
@@ -77,6 +77,7 @@ from skeletons.gui.shared import IItemsCache
 from tutorial.control.context import GLOBAL_FLAG
 from tutorial.control.game_vars import getVehicleByIntCD
 from th_async import th_async, th_await
+from shared_utils import first
 if typing.TYPE_CHECKING:
     from typing import List, Dict, Optional, Any, Type
     from notification.NotificationsModel import NotificationsModel
@@ -274,6 +275,15 @@ class _NotificationListener(object):
 
     def request(self):
         pass
+
+    def fetchNoficationData(self, notification):
+        jsonData = {}
+        try:
+            jsonData = json.loads(notification.data)
+        except (ValueError, TypeError):
+            LOG_ERROR('Invalid json in notification data.')
+
+        return jsonData
 
 
 class _NotifyCenterNotificationListener(_NotificationListener):
@@ -1814,8 +1824,9 @@ class IntegratedAuctionListener(_NotificationListener):
     def __tryNotify(self, notifications):
         for notification in notifications:
             if notification.eventType in (AUCTION_START_EVENT_TYPE, AUCTION_FINISH_EVENT_TYPE):
-                notificationData = json.loads(notification.data)
-                self.__addNotification(notificationData, notification.eventType)
+                notificationData = self.fetchNoficationData(notification)
+                if notificationData:
+                    self.__addNotification(notificationData, notification.eventType)
 
     def __addNotification(self, data, eventType):
         model = self._model()
@@ -1863,7 +1874,9 @@ class IntegratedAuctionListener(_NotificationListener):
     def __isFinishNotificationActive(self):
         for notification in self.__eventNotifications.getEventsNotifications():
             if notification.eventType == AUCTION_FINISH_EVENT_TYPE:
-                data = json.loads(notification.data)
+                data = self.fetchNoficationData(notification)
+                if not data:
+                    continue
                 startDate = getTimestampByStrDate(str(data['startDate']))
                 endDate = getTimestampByStrDate(str(data['endDate']))
                 if startDate - self.__TIME_TO_SHOW_SOON <= time_utils.getServerUTCTime() < endDate:
@@ -1924,8 +1937,9 @@ class BlackMarketListener(_NotificationListener):
     def __tryNotify(self, notifications):
         for notification in notifications:
             if notification.eventType in self.__EVENT_TYPE_TO_SETTING.keys() and self.__luiController.isRuleCompleted(LuiRules.BLACK_MARKET_ENTRY_POINT):
-                notificationData = json.loads(notification.data)
-                self.__addNotification(notificationData, notification.eventType)
+                notificationData = self.fetchNoficationData(notification)
+                if notificationData:
+                    self.__addNotification(notificationData, notification.eventType)
 
     def __addNotification(self, data, eventType):
         model = self._model()
@@ -1979,7 +1993,9 @@ class BlackMarketListener(_NotificationListener):
     def __isFinishNotificationActive(self):
         for notification in self.__eventNotifications.getEventsNotifications():
             if notification.eventType in (BLACK_MARKET_VEHICLE_FINISH_EVENT_TYPE, BLACK_MARKET_FINISH_EVENT_TYPE):
-                data = json.loads(notification.data)
+                data = self.fetchNoficationData(notification)
+                if not data:
+                    continue
                 startDate = getTimestampByStrDate(str(data['startDate']))
                 endDate = getTimestampByStrDate(str(data['endDate']))
                 if startDate - self.__TIME_TO_SHOW_SOON <= time_utils.getServerUTCTime() < endDate:
@@ -2027,8 +2043,9 @@ class TradingCaravanListener(_NotificationListener):
     def __tryNotify(self, notifications):
         for notification in notifications:
             if notification.eventType == TRADING_CARAVAN_REFILL_EVENT_TYPE and self.__luiController.isRuleCompleted(LuiRules.SHOP_SALES_ENTRY_POINT):
-                notificationData = json.loads(notification.data)
-                self.__addNotification(notificationData, notification.eventType)
+                notificationData = self.fetchNoficationData(notification)
+                if notificationData:
+                    self.__addNotification(notificationData, notification.eventType)
 
     def __addNotification(self, data, eventType):
         model = self._model()
@@ -2112,8 +2129,9 @@ class CustomNotificationListener(_NotificationListener):
     def __tryNotify(self, notifications):
         for notification in notifications:
             if notification.eventType == CUSTOM_NOTIFICATIONS_EVENT_TYPE and self.__luiController.isRuleCompleted(LuiRules.SHOP_SALES_ENTRY_POINT):
-                notificationData = json.loads(notification.data)
-                self.__addNotification(notificationData, notification.eventType)
+                notificationData = self.fetchNoficationData(notification)
+                if notificationData:
+                    self.__addNotification(notificationData, notification.eventType)
 
     def __addNotification(self, data, eventType):
         model = self._model()
@@ -2237,7 +2255,9 @@ class CollectionsListener(_NotificationListener, EventsHandler):
             self.__onCollectionsRenewEvent(notification)
 
     def __onCollectionStartEvent(self, notification):
-        notificationData = json.loads(notification.data)
+        notificationData = self.fetchNoficationData(notification)
+        if not notificationData:
+            return
         collectionID = int(notificationData['collectionId'])
         collection = self.__collections.getCollection(collectionID)
         luiRuleID = self.__getLuiRuleIDByCollectionID(collection.name)
@@ -2257,7 +2277,9 @@ class CollectionsListener(_NotificationListener, EventsHandler):
             self.__pushCollectionsCustomMessage(backport.text(self.__NOTIFICATIONS.updatedEntry.title()), backport.text(self.__NOTIFICATIONS.updatedEntry.text()), SM_TYPE.CollectionsEntry)
 
     def __onCollectionsRenewEvent(self, notification):
-        notificationData = json.loads(notification.data)
+        notificationData = self.fetchNoficationData(notification)
+        if not notificationData:
+            return
         collections = (c for c in (self.__collections.getCollection(collectionID) for collectionID in notificationData['collectionsIds']) if c is not None)
         for collection in collections:
             if not isCollectionRenewSeen(collection.collectionId):
@@ -2482,6 +2504,112 @@ class BattleMattersTaskReminderListener(BaseReminderListener, EventsHandler):
     def __isToday(timestamp):
         todayStart, todayEnd = time_utils.getDayTimeBoundsForLocal(time_utils.getServerUTCTime())
         return todayStart <= timestamp <= todayEnd
+
+
+class PsaCoinReminderListener(_NotificationListener):
+    __bootCampController = dependency.descriptor(IBootcampController)
+    __saCtrl = dependency.descriptor(ISeniorityAwardsController)
+    __itemsCache = dependency.descriptor(IItemsCache)
+    MSG_ID = 0
+
+    def start(self, model):
+        result = super(PsaCoinReminderListener, self).start(model)
+        if result:
+            self.__saCtrl.onUpdated += self.__tryNotify
+            self.__itemsCache.onSyncCompleted += self.__tryNotify
+            self.__tryNotify()
+        return result
+
+    def stop(self):
+        super(PsaCoinReminderListener, self).stop()
+        self.__saCtrl.onUpdated -= self.__tryNotify
+        self.__itemsCache.onSyncCompleted -= self.__tryNotify
+
+    def __tryNotify(self, *_):
+        if self.__bootCampController.isInBootcamp():
+            return
+        coinsCount = self.__saCtrl.getSACoin()
+        if not self.__saCtrl.isEnabled or coinsCount <= 0:
+            self.__onCoinsRemoved()
+        else:
+            msgPrLevel = NotificationPriorityLevel.LOW
+            notification = PsaCoinReminderMessageDecorator(self.MSG_ID, coinsCount, msgPrLevel)
+            self.__onCoinsAdded(notification)
+
+    def __onCoinsAdded(self, newNotification):
+        model = self._model()
+        if model:
+            prevNotifacation = model.getNotification(NOTIFICATION_TYPE.PSACOIN_REMINDER, newNotification.getID())
+            if prevNotifacation is None:
+                model.addNotification(newNotification)
+            else:
+                savedCount = newNotification.getSavedData()
+                prevSavedCount = prevNotifacation.getSavedData()
+                if prevSavedCount != savedCount:
+                    model.updateNotification(NOTIFICATION_TYPE.PSACOIN_REMINDER, newNotification.getID(), newNotification.getEntity(), False)
+        return
+
+    def __onCoinsRemoved(self):
+        model = self._model()
+        if model:
+            model.removeNotification(NOTIFICATION_TYPE.PSACOIN_REMINDER, self.MSG_ID)
+
+
+class GiftSystemOperationsListener(_NotificationListener, UsersInfoHelper):
+    __NOTIFICATION_TYPE = NOTIFICATION_TYPE.GIFT_SYSTEM_OPERATION
+
+    def __init__(self):
+        super(GiftSystemOperationsListener, self).__init__()
+        self.__idGenerator = SequenceIDGenerator()
+        self.__userNamePendingNotifications = defaultdict(set)
+
+    def start(self, model):
+        result = super(GiftSystemOperationsListener, self).start(model)
+        g_eventBus.addListener(events.GiftSystemOperationEvent.GIFT_SENT, self.__onGiftSent)
+        g_eventBus.addListener(events.GiftSystemOperationEvent.GIFT_OPENED, self.__onGiftOpened)
+        return result
+
+    def stop(self):
+        self.__userNamePendingNotifications.clear()
+        g_eventBus.removeListener(events.GiftSystemOperationEvent.GIFT_SENT, self.__onGiftSent)
+        g_eventBus.removeListener(events.GiftSystemOperationEvent.GIFT_OPENED, self.__onGiftOpened)
+        super(GiftSystemOperationsListener, self).stop()
+
+    def onUserNamesReceived(self, names):
+        model = self._model()
+        if not model:
+            return
+        for userDBID, userName in names.iteritems():
+            if userDBID not in self.__userNamePendingNotifications:
+                continue
+            for entityID in self.__userNamePendingNotifications[userDBID]:
+                operationDecorator = model.getNotification(self.__NOTIFICATION_TYPE, entityID)
+                if not operationDecorator:
+                    continue
+                operationDecorator.setUserInfo(userName)
+                model.updateNotification(self.__NOTIFICATION_TYPE, entityID, operationDecorator.getEntity(), False)
+
+            self.__userNamePendingNotifications[userDBID] = set()
+
+    def __onGiftOpened(self, event):
+        self.__addOperationNofication(GiftSystemOperationsFactory.createGiftOpenedDecorator, event.ctx)
+
+    def __onGiftSent(self, event):
+        self.__addOperationNofication(GiftSystemOperationsFactory.createGiftSentDecorator, event.ctx)
+
+    def __addOperationNofication(self, factory, ctx):
+        model = self._model()
+        if not model:
+            return
+        notification = factory(self.__idGenerator.next(), model, ctx)
+        userName = self.getUserName(notification.getUserID())
+        if userName:
+            notification.initUserInfo(userName, self.getUserClanAbbrev(notification.getUserID()))
+        else:
+            self.__userNamePendingNotifications[notification.getUserID()].add(notification.getID())
+            self.syncUsersInfo()
+        if notification:
+            model.addNotification(notification)
 
 
 class EarlyAccessListener(_NotificationListener):
@@ -2890,28 +3018,6 @@ class EpicBattleNotificationListener(_NotificationListener):
         return
 
 
-class NewbieChatLockNotificationListener(_NotificationListener):
-    __slots__ = ('__lobbyContext', )
-    __lobbyContext = dependency.descriptor(ILobbyContext)
-
-    def start(self, model):
-        result = super(NewbieChatLockNotificationListener, self).start(model)
-        g_playerEvents.onNewbieChatLockingStateChanged += self.__onNewbieChatLockingStateChanged
-        return result
-
-    def stop(self):
-        g_playerEvents.onNewbieChatLockingStateChanged -= self.__onNewbieChatLockingStateChanged
-        super(NewbieChatLockNotificationListener, self).stop()
-
-    def __onNewbieChatLockingStateChanged(self):
-        if self.__lobbyContext.getServerSettings().newbieChatLockConfig.enabled and not self.__chatLocked():
-            SystemMessages.pushMessage(text='', type=SystemMessages.SM_TYPE.ChatsUnlocked)
-
-    @staticmethod
-    def __chatLocked():
-        return bool(BigWorld.player().AccountNewbieChatLockComponent.chatLocked)
-
-
 class OptDevicesRestoreListener(_NotificationListener):
     __slots__ = ('__currentState', )
     __lobbyContext = dependency.descriptor(ILobbyContext)
@@ -2949,6 +3055,65 @@ class OptDevicesRestoreListener(_NotificationListener):
         messageRes = base.switch_on if isEnabled else base.switch_off
         msgType = SystemMessages.SM_TYPE.InformationHeader if isEnabled else SystemMessages.SM_TYPE.ErrorHeader
         SystemMessages.pushMessage(text=backport.text(messageRes.body()), type=msgType, priority=NotificationPriorityLevel.MEDIUM, messageData={'header': backport.text(messageRes.title())})
+
+
+class CustomizationResourceListener(_NotificationListener):
+    __customizationResourceController = dependency.descriptor(ICustomizationResourceController)
+
+    def __init__(self):
+        super(CustomizationResourceListener, self).__init__()
+        self.__isSubscribed = False
+
+    def start(self, model):
+        result = super(CustomizationResourceListener, self).start(model)
+        if result and not self.__isSubscribed:
+            self.__customizationResourceController.onEventSettingsUpdated += self.__onEventSettingsUpdated
+            self.__isSubscribed = True
+            self.__showInterruptedExchangeError()
+            self.__onEventSettingsUpdated()
+        return result
+
+    def stop(self):
+        if self.__isSubscribed:
+            self.__customizationResourceController.onEventSettingsUpdated -= self.__onEventSettingsUpdated
+            self.__isSubscribed = False
+        super(CustomizationResourceListener, self).stop()
+
+    def __onEventSettingsUpdated(self):
+        config = self.__customizationResourceController.config
+        currentTime = time_utils.getServerUTCTime()
+        if not config.startDate <= currentTime < config.endDate:
+            self.__clearSwitchNotifications()
+            return
+        isEnabled = bool(config.isEnabled)
+        isExchangeEnabled = bool(config.customizationExchange)
+        self.__updateSwitchNotification(isEnabled, CUSTOMIZATION_RESOURCE_EVENT_DISABLED_MSG_SEEN, R.strings.system_messages.customizationResource.switch.event)
+        if isEnabled:
+            self.__updateSwitchNotification(isExchangeEnabled, CUSTOMIZATION_RESOURCE_EXCHANGE_DISABLED_MSG_SEEN, R.strings.system_messages.customizationResource.switch.exchange)
+
+    @staticmethod
+    def __updateSwitchNotification(isEnabled, settingsKey, texts):
+        disabledMessageSeen = bool(AccountSettings.getNotifications(settingsKey))
+        if isEnabled == disabledMessageSeen:
+            messageType = SystemMessages.SM_TYPE.Information if isEnabled else SystemMessages.SM_TYPE.ErrorSimple
+            message = texts.enabled if isEnabled else texts.disabled
+            SystemMessages.pushMessage(text=backport.text(message.body()), type=messageType, priority=NotificationPriorityLevel.MEDIUM)
+            AccountSettings.setNotifications(settingsKey, not isEnabled)
+
+    @staticmethod
+    def __clearSwitchNotifications():
+        for settingsKey in (
+         CUSTOMIZATION_RESOURCE_EVENT_DISABLED_MSG_SEEN,
+         CUSTOMIZATION_RESOURCE_EXCHANGE_DISABLED_MSG_SEEN):
+            if AccountSettings.getNotifications(settingsKey):
+                AccountSettings.setNotifications(settingsKey, False)
+
+    @staticmethod
+    def __showInterruptedExchangeError():
+        from gui.customization_resource import customization_resource_notifications as notifications
+        if notifications.isExchangePending():
+            notifications.clearExchangePending()
+            notifications.pushExchangeError()
 
 
 class ParagonsCoinsListener(_NotificationListener):
@@ -3038,7 +3203,7 @@ registerNotificationsListeners((
  ReferralProgramListener, BattleMattersTaskReminderListener, TradingCaravanListener, CustomNotificationListener,
  SubscriptionListener, EarlyAccessListener, PersonalMissionsListener, ParagonsListener,
  DailyBonusQuestListener, EpicBattleNotificationListener, OptDevicesRestoreListener,
- NewbieChatLockNotificationListener, ParagonsCoinsListener))
+ CustomizationResourceListener, ParagonsCoinsListener))
 
 class NotificationsListeners(_NotificationListener):
 

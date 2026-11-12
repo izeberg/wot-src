@@ -215,6 +215,14 @@ msgstr ""
 "реализовывать потенциал машины в бою. В наборе боны, компоненты, свободный "
 "опыт, Танковый премиум аккаунт и многое другое."
 
+msgid "product/bundle/longDescription/episode9"
+msgstr ""
+"В наборе вы найдёте полностью снаряжённый британский тяжёлый премиум танк IX"
+" уровня FV249 Castle с оборудованием и универсальным стилем, а также разное "
+"имущество, позволяющее комфортно проводить время в игре и эффективно "
+"реализовывать потенциал машины в бою. В наборе боны, компоненты, свободный "
+"опыт, Танковый премиум аккаунт и многое другое."
+
 msgid "product/bundle/title"
 msgstr "%(vehicleName)s: заряжен и готов к бою"
 
@@ -358,6 +366,9 @@ msgstr "ОБСЛУЖИВАНИЕ"
 msgid "shopView/shop/sections/other"
 msgstr "ПРОЧЕЕ"
 
+msgid "shopView/shop/sections/specialOffers"
+msgstr "СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ"
+
 msgid "shopView/shop/sections/vehicle"
 msgstr "ТЕХНИКА"
 
@@ -378,6 +389,9 @@ msgstr "Обслуживание"
 
 msgid "shopView/shop/tabs/other"
 msgstr "Прочее"
+
+msgid "shopView/shop/tabs/specialOffers"
+msgstr "Спецпредложение"
 
 msgid "shopView/shop/tabs/vehicle"
 msgstr "Техника"
@@ -412,3 +426,11 @@ msgstr "Повторный просмотр краткого описания р
 
 msgid "tooltip/shop/info/header"
 msgstr "Повтор интро"
+
+msgid "widgets/specialOffersWidget/description"
+msgstr ""
+"Забрать можно только {brown_open}одну единицу оборудования{brown_close} из списка. \n"
+" После подтверждения изменить решение нельзя и остальные товары станут недоступны."
+
+msgid "widgets/specialOffersWidget/title"
+msgstr "Доступно оборудование для покупки: %(count)s ед."

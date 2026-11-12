@@ -107,6 +107,13 @@
 			<undamaged>vehicles/sweden/S36_VK_155_Projekt/normal/lod0/Hull.model</undamaged>
 			<destroyed>vehicles/sweden/S36_VK_155_Projekt/crash/lod0/Hull.model</destroyed>
 			<exploded>vehicles/sweden/S36_VK_155_Projekt/crash/lod0/Hull.model</exploded>
+			<sets>
+				<S36_VK_155_Projekt_3Dst_01>
+					<undamaged>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/crash/lod0/Hull.model</exploded>
+				</S36_VK_155_Projekt_3Dst_01>
+			</sets>
 		</models>
 		<swinging>
 			<lodDist>FAR</lodDist>
@@ -991,6 +998,19 @@
 				<showOn>16</showOn>
 				<clipAngle>0.956789</clipAngle>
 			</slot>
+			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15047</slotId>
+				<tags>formfactor_square</tags>
+				<compatibleModels>S36_VK_155_Projekt_3Dst_01</compatibleModels>
+				<position>
+					-1.27083 1.57801 2.489948
+					<!--BW_String-->
+				</position>
+				<rotation>0.138008 -0.000457 3.117443</rotation>
+				<scale>0.736654 0.303819 0.736654</scale>
+				<showOn>16</showOn>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -1047,6 +1067,13 @@
 				<undamaged>vehicles/sweden/S36_VK_155_Projekt/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/sweden/S36_VK_155_Projekt/crash/lod0/Chassis.model</destroyed>
 				<exploded>vehicles/sweden/S36_VK_155_Projekt/crash/lod0/Chassis.model</exploded>
+				<sets>
+					<S36_VK_155_Projekt_3Dst_01>
+						<undamaged>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/crash/lod0/Chassis.model</exploded>
+					</S36_VK_155_Projekt_3Dst_01>
+				</sets>
 			</models>
 			<traces>
 				<lodDist>MEDIUM</lodDist>
@@ -1646,6 +1673,12 @@
 						<UTiles>1</UTiles>
 						<VTiles>1</VTiles>
 					</atlas>
+					<modelSets>
+						<S36_VK_155_Projekt_3Dst_01>
+							<segmentModelLeft>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/track/segment_L.model</segmentModelLeft>
+							<segmentModelRight>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/track/segment_R.model</segmentModelRight>
+						</S36_VK_155_Projekt_3Dst_01>
+					</modelSets>
 				</trackPair>
 				<lodDist>SPLINE_TRACK</lodDist>
 			</splineDesc>
@@ -1666,6 +1699,11 @@
 						<model>vehicles/sweden/S36_VK_155_Projekt/track/segment.model</model>
 						<length>0.135209</length>
 					</mainSegment>
+					<modelSets>
+						<S36_VK_155_Projekt_3Dst_01>
+							<mainSegmentModel>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/track/segment_L.model</mainSegmentModel>
+						</S36_VK_155_Projekt_3Dst_01>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>
@@ -1939,6 +1977,11 @@
 						<model>vehicles/sweden/S36_VK_155_Projekt/track/segment.model</model>
 						<length>0.135209</length>
 					</mainSegment>
+					<modelSets>
+						<S36_VK_155_Projekt_3Dst_01>
+							<mainSegmentModel>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/track/segment_R.model</mainSegmentModel>
+						</S36_VK_155_Projekt_3Dst_01>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>
@@ -2747,6 +2790,26 @@
 							<verticalMirror>true</verticalMirror>
 						</slot>
 						<slot>
+							<slotType>projectionDecal</slotType>
+							<slotId>45029</slotId>
+							<tags>formfactor_square</tags>
+							<compatibleModels>S36_VK_155_Projekt_3Dst_01</compatibleModels>
+							<position>-0.653125 2.785339 -3.540585</position>
+							<rotation>1.634076 -0.023173 -0.023127</rotation>
+							<scale>0.539968 1.765015 0.539968</scale>
+							<showOn>4096</showOn>
+						</slot>
+						<slot>
+							<slotType>projectionDecal</slotType>
+							<slotId>45030</slotId>
+							<tags>formfactor_square</tags>
+							<compatibleModels>S36_VK_155_Projekt_3Dst_01</compatibleModels>
+							<position>0.652531 2.785339 -3.540585</position>
+							<rotation>1.634077 0.023173 -0.023127</rotation>
+							<scale>0.539968 1.765015 0.539968</scale>
+							<showOn>4096</showOn>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -2779,33 +2842,70 @@
 						<undamaged>vehicles/sweden/S36_VK_155_Projekt/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/sweden/S36_VK_155_Projekt/crash/lod0/Gun_01.model</destroyed>
 						<exploded>vehicles/sweden/S36_VK_155_Projekt/crash/lod0/Gun_01.model</exploded>
+						<sets>
+							<S36_VK_155_Projekt_3Dst_01>
+								<undamaged>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/crash/lod0/Gun_01.model</exploded>
+							</S36_VK_155_Projekt_3Dst_01>
+						</sets>
 					</models>
 					<hitTester>
 						<collisionModelServer>vehicles/sweden/S36_VK_155_Projekt/collision/Gun_01.model</collisionModelServer>
 						<collisionModelClient>vehicles/sweden/S36_VK_155_Projekt/collision_client/Gun_01.model</collisionModelClient>
 					</hitTester>
+					<edgeByVisualModel>false</edgeByVisualModel>
+					<effects>shot_huge_mb</effects>
 					<drivenJoints>
 						<master>
 							<node>Gun</node>
-							<table>
-								<row>-90</row>
+							<pitch>
+								<row>-40</row>
 								<row>0</row>
-								<row>90</row>
-							</table>
+							</pitch>
+							<yaw>
+								<row>0</row>
+							</yaw>
 							<slaves>
 								<slave>
 									<node>expr</node>
-									<table>
-										<row>90</row>
+									<pitch>
+										<row>50</row>
 										<row>0</row>
-										<row>-90</row>
-									</table>
+									</pitch>
+									<yaw>
+										<row>0</row>
+									</yaw>
 								</slave>
 							</slaves>
 						</master>
+						<sets>
+							<S36_VK_155_Projekt_3Dst_01>
+								<master>
+									<node>Gun</node>
+									<pitch>
+										<row>-40</row>
+										<row>0</row>
+									</pitch>
+									<yaw>
+										<row>0</row>
+									</yaw>
+									<slaves>
+										<slave>
+											<node>expr</node>
+											<pitch>
+												<row>50</row>
+												<row>0</row>
+											</pitch>
+											<yaw>
+												<row>0</row>
+											</yaw>
+										</slave>
+									</slaves>
+								</master>
+							</S36_VK_155_Projekt_3Dst_01>
+						</sets>
 					</drivenJoints>
-					<edgeByVisualModel>false</edgeByVisualModel>
-					<effects>shot_huge_mb</effects>
 					<camouflage>
 						<density>
 							98.36174 98.009239
@@ -2819,6 +2919,13 @@
 				<undamaged>vehicles/sweden/S36_VK_155_Projekt/normal/lod0/Turret_01.model</undamaged>
 				<destroyed>vehicles/sweden/S36_VK_155_Projekt/crash/lod0/Turret_01.model</destroyed>
 				<exploded>vehicles/sweden/S36_VK_155_Projekt/crash/lod0/Turret_01.model</exploded>
+				<sets>
+					<S36_VK_155_Projekt_3Dst_01>
+						<undamaged>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/sweden/S36_VK_155_Projekt/_skins/S36_VK_155_Projekt_3Dst_01/crash/lod0/Turret_01.model</exploded>
+					</S36_VK_155_Projekt_3Dst_01>
+				</sets>
 			</models>
 			<hitTester>
 				<collisionModelServer>vehicles/sweden/S36_VK_155_Projekt/collision/Turret_01.model</collisionModelServer>
@@ -3098,6 +3205,37 @@
 					<rotation>0.002066 -1.550338 1.570098</rotation>
 					<scale>1.303414 0.908049 1.303414</scale>
 					<showOn>256</showOn>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35021</slotId>
+					<tags>formfactor_square</tags>
+					<compatibleModels>S36_VK_155_Projekt_3Dst_01</compatibleModels>
+					<position>-0.818609 2.161628 0.453924</position>
+					<rotation>1.528881 -0.340601 2.801316</rotation>
+					<scale>0.575076 0.575076 0.575076</scale>
+					<showOn>256</showOn>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35022</slotId>
+					<tags>formfactor_square</tags>
+					<compatibleModels>S36_VK_155_Projekt_3Dst_01</compatibleModels>
+					<position>0.814068 2.159522 0.458158</position>
+					<rotation>1.528882 0.340611 -2.861265</rotation>
+					<scale>0.575076 0.575076 0.575076</scale>
+					<showOn>256</showOn>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35023</slotId>
+					<tags>formfactor_square</tags>
+					<compatibleModels>S36_VK_155_Projekt_3Dst_01</compatibleModels>
+					<position>-0.727349 2.781451 -0.089764</position>
+					<rotation>0.004684 0.005482 3.126101</rotation>
+					<scale>0.681268 0.681268 0.681269</scale>
+					<showOn>256</showOn>
+					<verticalMirror>true</verticalMirror>
 				</slot>
 			</customizationSlots>
 			<customization>

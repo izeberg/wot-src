@@ -3,6 +3,8 @@ import typing
 from CurrentVehicle import g_currentVehicle
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import NATION_CHANGE_VIEWED
+from account_helpers.settings_core.settings_constants import GAME
+from constants import Configs
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.techtree.go_back_helper import BackButtonContextKeys, getBackBtnDescription
 from gui.techtree import dumpers
@@ -42,6 +44,7 @@ from helpers.blueprint_generator import g_blueprintGenerator
 from helpers.i18n import makeString as _ms
 from items import getTypeOfCompactDescr
 from nation_change.nation_change_helpers import iterVehTypeCDsInNationGroup
+from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.game_control import IBootcampController, ITradeInController
 from skeletons.gui.shared import IItemsCache
 from tutorial.control.context import GLOBAL_FLAG
@@ -169,6 +172,7 @@ _BANNER_GETTERS = {States.RESTORE: _getRestoreBannerStr,
 class Research(ResearchMeta):
     __tradeIn = dependency.descriptor(ITradeInController)
     __bootcamp = dependency.descriptor(IBootcampController)
+    __settingsCore = dependency.descriptor(ISettingsCore)
 
     def __init__(self, ctx=None, skipConfirm=False):
         super(Research, self).__init__(ResearchItemsData(dumpers.ResearchItemsObjDumper()))
@@ -365,8 +369,12 @@ class Research(ResearchMeta):
         self.__preloadingBP = self._data.getRootCD()
         g_blueprintGenerator.generate(self.__preloadingBP)
         self._vehPostProgressionEntryPoint = VehPostProgressionEntryPoint(self)
+        self.__settingsCore.onSettingsChanged += self.__onSettingsChanged
+        self._lobbyContext.getServerSettings().onServerSettingsChange += self.__onServerSettingsChanged
 
     def _dispose(self):
+        self._lobbyContext.getServerSettings().onServerSettingsChange -= self.__onServerSettingsChanged
+        self.__settingsCore.onSettingsChanged -= self.__onSettingsChanged
         if self.__preloadingBP is not None:
             g_blueprintGenerator.cancel(self.__preloadingBP)
             self.__preloadingBP = None
@@ -432,6 +440,7 @@ class Research(ResearchMeta):
                             'isElite': root.isElite, 
                             'statusStr': self.__getRootStatusStr(root), 
                             'roleText': getRoleTextWithIcon(root.role, root.roleLabel), 
+                            'difficulty': root.difficulty or 0 if self.__settingsCore.getSetting(GAME.SHOW_VEHICLE_DIFFICULTY_IN_RESEARCH) else 0, 
                             'ability': getAbilityVO(self.vehicle)}, 
            'vehicleButton': {'shopIconPath': getShopVehicleIconPath(STORE_CONSTANTS.ICON_SIZE_MEDIUM, root.name.split(':')[1]), 
                              'compareBtnVisible': not self.__bootcamp.isInBootcamp(), 
@@ -534,6 +543,14 @@ class Research(ResearchMeta):
 
     def __onTradeOffSelectedChanged(self, _=None):
         self.redraw()
+
+    def __onSettingsChanged(self, diff):
+        if GAME.SHOW_VEHICLE_DIFFICULTY_IN_RESEARCH in diff:
+            self.redraw()
+
+    def __onServerSettingsChanged(self, diff):
+        if Configs.VEHICLE_DIFFICULTY_CONFIG.value in diff:
+            self.redraw()
 
     @staticmethod
     def __getRootStatusStr(root):

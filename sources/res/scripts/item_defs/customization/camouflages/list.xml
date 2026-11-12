@@ -417,6 +417,56 @@
 		<userString>#vehicle_customization:camouflage/transparent</userString>
 	</itemGroup>
 	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31635</id>
+			<texture>vehicles/russian/Camouflage/AY27_MP_Camo_147.dds</texture>
+			<userString>#vehicle_customization:AY27_MP_Camo_147/name</userString>
+			<description>#vehicle_customization:AY27_MP_Camo_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<exclusionImpact>
+				0.6
+				<!--BW_String-->
+			</exclusionImpact>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-0.145211</HULL>
+				<TURRET>-0.145211</TURRET>
+				<GUN>-0.145211</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					1.6 1.6
+					<!--BW_String-->
+				</factor>
+				<offset>
+					0.22 0.71
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
 		<season>ALL</season>
 		<historical>1</historical>
 		<camouflage>
@@ -458,6 +508,78 @@
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
 			</exclude>
 		</vehicleFilter>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>vehicleBound hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>france:F144_Etoile</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>31644</id>
+			<texture>vehicles/russian/Camouflage/AYF144_Etoile_Camo_TurretHull_147.dds</texture>
+			<userString>#vehicle_customization:AYF144_Etoile_Camo_TurretHull_147/name</userString>
+			<description>#vehicle_customization:AYF144_Etoile_Camo_TurretHull_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<exclusionImpact>
+				0.9
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 13</c3>
+				</palette>
+			</palettes>
+			<tiling>
+				<france:F144_Etoile>1 1 0 0</france:F144_Etoile>
+			</tiling>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>vehicleBound hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>france:F144_Etoile</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>31645</id>
+			<texture>vehicles/russian/Camouflage/AYF144_Etoile_Camo_Gun_147.dds</texture>
+			<userString>#vehicle_customization:AYF144_Etoile_Camo_Gun_147/name</userString>
+			<description>#vehicle_customization:AYF144_Etoile_Camo_Gun_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 13</c3>
+				</palette>
+			</palettes>
+			<tiling>
+				<france:F144_Etoile>1 1 0 0</france:F144_Etoile>
+			</tiling>
+		</camouflage>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:camouflage/opaque</userString>
@@ -5688,61 +5810,6 @@
 		<userString>#vehicle_customization:camouflage/opaque</userString>
 	</itemGroup>
 	<itemGroup>
-		<season>ALL</season>
-		<historical>0</historical>
-		<camouflage>
-			<id>31394</id>
-			<scales>
-				1.2 1 0.7
-				<!--BW_String-->
-			</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<texture>vehicles/russian/Camouflage/Bot_Camo_138.dds</texture>
-			<userString>#vehicle_customization:Bot_Camo_138/name</userString>
-			<description>#vehicle_customization:Bot_Camo_138/description</description>
-			<exclusionImpact>
-				0.45
-				<!--BW_String-->
-			</exclusionImpact>
-			<rotation>
-				<HULL>-0.366519</HULL>
-				<TURRET>-0.366519</TURRET>
-				<GUN>-0.366519</GUN>
-			</rotation>
-			<tilingSettings>
-				<type>relative</type>
-				<factor>
-					1.9 1.9
-					<!--BW_String-->
-				</factor>
-				<offset>0 0</offset>
-			</tilingSettings>
-			<emissionMap>vehicles/russian/Camouflage/Bot_Camo_138_Emission.dds</emissionMap>
-			<emissionPatternMap>vehicles/russian/Camouflage/Bot_Camo_138_Pattern.dds</emissionPatternMap>
-			<forwardEmissionBrightness>3</forwardEmissionBrightness>
-			<deferredEmissionBrightness>3</deferredEmissionBrightness>
-			<emissionAnimationSpeed>
-				0.3
-				<!--BW_String-->
-			</emissionAnimationSpeed>
-		</camouflage>
-		<userString>#vehicle_customization:camouflage/opaque</userString>
-		<tags>hiddenInUI fullRGB</tags>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R47_ISU-152_Zveroboj ussr:R61_Object252_BF</vehicles>
-			</exclude>
-		</vehicleFilter>
-	</itemGroup>
-	<itemGroup>
 		<userString>#vehicle_customization:camouflage/opaque</userString>
 		<season>ALL</season>
 		<historical>1</historical>
@@ -6227,6 +6294,54 @@
 		<tags>styleOnly fullRGB questsProgression hiddenInUI</tags>
 		<priceGroup>MT camouflages 50g notInShop</priceGroup>
 		<style>31577</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31639</id>
+			<texture>vehicles/russian/Camouflage/CalendarReport_Camo_147.dds</texture>
+			<userString>#vehicle_customization:CalendarReport_Camo_147/name</userString>
+			<description>#vehicle_customization:CalendarReport_Camo_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<exclusionImpact>
+				0.6
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-3.141593</HULL>
+				<TURRET>-3.141593</TURRET>
+				<GUN>-3.141593</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>2 2</factor>
+				<offset>
+					0.02 0.4
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:camouflage/opaque</userString>
@@ -9410,6 +9525,127 @@
 		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>uk:GB109_GSOR_1008</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>31636</id>
+			<texture>vehicles/russian/Camouflage/GSOR_01_Camo_Hull_147.dds</texture>
+			<userString>#vehicle_customization:GSOR_01_Camo_Hull_147/name</userString>
+			<description>#vehicle_customization:GSOR_01_Camo_Hull_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tiling>
+				<uk:GB109_GSOR_1008>
+					0.25 0.25 0 0
+					<!--BW_String-->
+				</uk:GB109_GSOR_1008>
+			</tiling>
+			<exclusionImpact>
+				0.05
+				<!--BW_String-->
+			</exclusionImpact>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>uk:GB109_GSOR_1008</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>31637</id>
+			<texture>vehicles/russian/Camouflage/GSOR_01_Camo_Gun_147.dds</texture>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<userString>#vehicle_customization:GSOR_01_Camo_Gun_147/name</userString>
+			<description>#vehicle_customization:GSOR_01_Camo_Gun_147/description</description>
+			<tiling>
+				<uk:GB109_GSOR_1008>
+					0.25 0.5 0 0
+					<!--BW_String-->
+				</uk:GB109_GSOR_1008>
+			</tiling>
+			<exclusionImpact>
+				0.05
+				<!--BW_String-->
+			</exclusionImpact>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>uk:GB109_GSOR_1008</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>31638</id>
+			<texture>vehicles/russian/Camouflage/GSOR_01_Camo_Turret_147.dds</texture>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<userString>#vehicle_customization:GSOR_01_Camo_Turret_147/name</userString>
+			<description>#vehicle_customization:GSOR_01_Camo_Turret_147/description</description>
+			<tiling>
+				<uk:GB109_GSOR_1008>
+					0.5 0.5 0 0
+					<!--BW_String-->
+				</uk:GB109_GSOR_1008>
+			</tiling>
+			<exclusionImpact>
+				0.05
+				<!--BW_String-->
+			</exclusionImpact>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
 		<userString>#vehicle_customization:camouflage/transparent</userString>
 		<season>ALL</season>
 		<historical>1</historical>
@@ -10442,6 +10678,714 @@
 					<!--BW_String-->
 				</offset>
 			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31629</id>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<texture>vehicles/russian/Camouflage/NY27_02_Camo_147.dds</texture>
+			<userString>#vehicle_customization:NY27_02_Camo_147/name</userString>
+			<description>#vehicle_customization:NY27_02_Camo_147/description</description>
+			<forceUv0>true</forceUv0>
+			<rotation>
+				<HULL>-0.464956</HULL>
+				<TURRET>-0.464956</TURRET>
+				<GUN>-0.464956</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>2 2</factor>
+				<offset>
+					-5.22 3.39
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31628</id>
+			<texture>vehicles/russian/Camouflage/NY27_03_Camo_147.dds</texture>
+			<userString>#vehicle_customization:NY27_03_Camo_147/name</userString>
+			<description>#vehicle_customization:NY27_03_Camo_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>0.436332</HULL>
+				<TURRET>0.436332</TURRET>
+				<GUN>0.436332</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.2 2.2
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-0.27 2.76
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31627</id>
+			<texture>vehicles/russian/Camouflage/NY27_04_Camo_147.dds</texture>
+			<userString>#vehicle_customization:NY27_04_Camo_147/name</userString>
+			<description>#vehicle_customization:NY27_04_Camo_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<exclusionImpact>
+				0.5
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>1.570796</HULL>
+				<TURRET>1.570796</TURRET>
+				<GUN>1.570796</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					1.4 1.4
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-15.34 -15.02
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31630</id>
+			<texture>vehicles/russian/Camouflage/NY27_05_Camo_147.dds</texture>
+			<userString>#vehicle_customization:NY27_05_Camo_147/name</userString>
+			<description>#vehicle_customization:NY27_05_Camo_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<exclusionImpact>
+				0.5
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>0.785398</HULL>
+				<TURRET>0.785398</TURRET>
+				<GUN>0.785398</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					1.5 1.5
+					<!--BW_String-->
+				</factor>
+				<offset>
+					1.35 0.24
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31631</id>
+			<texture>vehicles/russian/Camouflage/NY27_06_Camo_147.dds</texture>
+			<userString>#vehicle_customization:NY27_06_Camo_147/name</userString>
+			<description>#vehicle_customization:NY27_06_Camo_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<exclusionImpact>
+				0.5
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>
+					-0.20944
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					-0.20944
+					<!--BW_String-->
+				</TURRET>
+				<GUN>
+					-0.20944
+					<!--BW_String-->
+				</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					1.6 1.6
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-1.72 -3.26
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/NY27_06_Camo_147_GMM.dds</glossMetallicMap>
+			<normalMap>vehicles/russian/Camouflage/NY27_06_Camo_147_Normal.dds</normalMap>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<camouflage>
+			<id>31611</id>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<texture>vehicles/russian/Camouflage/NY27_01_Camo_147.dds</texture>
+			<userString>#vehicle_customization:NY27_01_Camo_147/name</userString>
+			<description>#vehicle_customization:NY27_01_Camo_147/description</description>
+			<exclusionImpact>
+				0.5
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<rotation>
+				<HULL>-1.570796</HULL>
+				<TURRET>-1.570796</TURRET>
+				<GUN>-1.570796</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					1.8 1.8
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-3.64 -2.43
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31640</id>
+			<texture>vehicles/russian/Camouflage/NY27_HighGothic_01_Camo_147.dds</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_01_Camo_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_01_Camo_147/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>1.570796</HULL>
+				<TURRET>1.570796</TURRET>
+				<GUN>1.570796</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.5 2.5
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-1.97 0.61
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+		<style>31659</style>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31641</id>
+			<texture>vehicles/russian/Camouflage/NY27_HighGothic_02_Camo_147.dds</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_02_Camo_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_02_Camo_147/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>1.570796</HULL>
+				<TURRET>1.570796</TURRET>
+				<GUN>1.570796</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.5 2.5
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-1.97 0.61
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+		<style>31660</style>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31642</id>
+			<texture>vehicles/russian/Camouflage/NY27_HighGothic_03_Camo_147.dds</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_03_Camo_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_03_Camo_147/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<exclusionImpact>
+				0.7
+				<!--BW_String-->
+			</exclusionImpact>
+			<rotation>
+				<HULL>1.570796</HULL>
+				<TURRET>1.570796</TURRET>
+				<GUN>1.570796</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.5 2.5
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-1.97 0.61
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+		<style>31661</style>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31643</id>
+			<texture>vehicles/russian/Camouflage/NY27_HighGothic_04_Camo_147.dds</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_04_Camo_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_04_Camo_147/description</description>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<exclusionImpact>
+				0.5
+				<!--BW_String-->
+			</exclusionImpact>
+			<rotation>
+				<HULL>1.570796</HULL>
+				<TURRET>1.570796</TURRET>
+				<GUN>1.570796</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.5 2.5
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-1.97 0.61
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+		<style>31662</style>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<camouflage>
+			<id>31648</id>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<texture>vehicles/russian/Camouflage/NY27_PAB01_Camo_TurretGun_147.dds</texture>
+			<userString>#vehicle_customization:NY27_PAB01_Camo_TurretGun_147/name</userString>
+			<description>#vehicle_customization:NY27_PAB01_Camo_TurretGun_147/description</description>
+			<exclusionImpact>
+				0.5
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<rotation>
+				<HULL>-0.959931</HULL>
+				<TURRET>-0.959931</TURRET>
+				<GUN>-0.959931</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>2 2</factor>
+				<offset>
+					1.26 0.95
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/NY27_PAB01_Camo_TurretGun_147_GMM.dds</glossMetallicMap>
+		</camouflage>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<camouflage>
+			<id>31649</id>
+			<scales>
+				1.3 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<texture>vehicles/russian/Camouflage/NY27_PAB01_Camo_Hull_147.dds</texture>
+			<userString>#vehicle_customization:NY27_PAB01_Camo_Hull_147/name</userString>
+			<description>#vehicle_customization:NY27_PAB01_Camo_Hull_147/description</description>
+			<exclusionImpact>
+				0.5
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<rotation>
+				<HULL>-0.959931</HULL>
+				<TURRET>-0.959931</TURRET>
+				<GUN>-0.959931</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>2 2</factor>
+				<offset>
+					1.26 0.95
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/NY27_PAB01_Camo_Hull_147_GMM.dds</glossMetallicMap>
+		</camouflage>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31646</id>
+			<texture>vehicles/russian/Camouflage/NY27_PAB02_Camo_Hull_147.dds</texture>
+			<userString>#vehicle_customization:NY27_PAB02_Camo_Hull_147/name</userString>
+			<description>#vehicle_customization:NY27_PAB02_Camo_Hull_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<exclusionImpact>
+				0.5
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>1.570796</HULL>
+				<TURRET>1.570796</TURRET>
+				<GUN>1.570796</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.8 2.8
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-3.37 -2.43
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/NY27_PAB02_Camo_Hull_147_GMM.dds</glossMetallicMap>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31647</id>
+			<texture>vehicles/russian/Camouflage/NY27_PAB02_Camo_Turret_147.dds</texture>
+			<userString>#vehicle_customization:NY27_PAB02_Camo_Turret_147/name</userString>
+			<description>#vehicle_customization:NY27_PAB02_Camo_Turret_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<exclusionImpact>
+				0.5
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>1.570796</HULL>
+				<TURRET>1.570796</TURRET>
+				<GUN>1.570796</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.12 2.12
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-1.57 -0.35
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/NY27_PAB02_Camo_Turret_147_GMM.dds</glossMetallicMap>
 		</camouflage>
 	</itemGroup>
 	<itemGroup>
@@ -12135,6 +13079,53 @@
 	<itemGroup>
 		<season>ALL</season>
 		<historical>1</historical>
+		<camouflage>
+			<id>31621</id>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<texture>vehicles/russian/Camouflage/Onslaught26_Camo_147.dds</texture>
+			<userString>#vehicle_customization:Onslaught26_Camo_147/name</userString>
+			<description>#vehicle_customization:Onslaught26_Camo_147/description</description>
+			<rotation>
+				<HULL>-0.087266</HULL>
+				<TURRET>-0.087266</TURRET>
+				<GUN>-0.087266</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					1.8 1.8
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-2.25 -1.55
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/Onslaught26_Camo_147_GMM.dds</glossMetallicMap>
+		</camouflage>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
 		<priceGroup>MT camouflages 50g notInShop</priceGroup>
 		<camouflage>
 			<id>31460</id>
@@ -12619,261 +13610,6 @@
 		</camouflage>
 	</itemGroup>
 	<itemGroup>
-		<userString>#vehicle_customization:camouflage/opaque</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<tags>fullRGB hiddenInUI</tags>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
-		<vehicleFilter>
-			<include>
-				<vehicles>germany:G00_Typ_205</vehicles>
-			</include>
-		</vehicleFilter>
-		<camouflage>
-			<id>31583</id>
-			<texture>vehicles/russian/Camouflage/PORTAL26_Camo_Gun_146.dds</texture>
-			<userString>#vehicle_customization:PORTAL26_Camo_Gun_146/name</userString>
-			<description>#vehicle_customization:PORTAL26_Camo_Gun_146/description</description>
-			<scales>
-				1.2 1 0.7
-				<!--BW_String-->
-			</scales>
-			<exclusionImpact>
-				0.2
-				<!--BW_String-->
-			</exclusionImpact>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<glossMetallicMap>vehicles/russian/Camouflage/PORTAL26_Camo_Gun_146_GMM.dds</glossMetallicMap>
-			<normalMap>vehicles/russian/Camouflage/PORTAL26_Camo_Gun_146_Normal.dds</normalMap>
-			<tiling>
-				<germany:G00_Typ_205>
-					1.135 1.135 0 0
-					<!--BW_String-->
-				</germany:G00_Typ_205>
-			</tiling>
-			<forceUv0>true</forceUv0>
-		</camouflage>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:camouflage/opaque</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<tags>fullRGB hiddenInUI</tags>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
-		<vehicleFilter>
-			<include>
-				<vehicles>germany:G00_Typ_205</vehicles>
-			</include>
-		</vehicleFilter>
-		<camouflage>
-			<id>31584</id>
-			<texture>vehicles/russian/Camouflage/PORTAL26_Camo_Turret_146.dds</texture>
-			<userString>#vehicle_customization:PORTAL26_Camo_Turret_146/name</userString>
-			<description>#vehicle_customization:PORTAL26_Camo_Turret_146/description</description>
-			<scales>
-				1.2 1 0.7
-				<!--BW_String-->
-			</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<glossMetallicMap>vehicles/russian/Camouflage/PORTAL26_Camo_Turret_146_GMM.dds</glossMetallicMap>
-			<normalMap>vehicles/russian/Camouflage/PORTAL26_Camo_Turret_146_Normal.dds</normalMap>
-			<tiling>
-				<germany:G00_Typ_205>
-					1.4 1.4 0 0
-					<!--BW_String-->
-				</germany:G00_Typ_205>
-			</tiling>
-			<exclusionImpact>
-				0.2
-				<!--BW_String-->
-			</exclusionImpact>
-			<forceUv0>true</forceUv0>
-		</camouflage>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:camouflage/opaque</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<tags>fullRGB hiddenInUI</tags>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
-		<vehicleFilter>
-			<include>
-				<vehicles>germany:G00_Typ_205</vehicles>
-			</include>
-		</vehicleFilter>
-		<camouflage>
-			<id>31585</id>
-			<texture>vehicles/russian/Camouflage/PORTAL26_Camo_Hull_146.dds</texture>
-			<userString>#vehicle_customization:PORTAL26_Camo_Hull_146/name</userString>
-			<description>#vehicle_customization:PORTAL26_Camo_Hull_146/description</description>
-			<scales>
-				1.2 1 0.7
-				<!--BW_String-->
-			</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<glossMetallicMap>vehicles/russian/Camouflage/PORTAL26_Camo_Hull_146_GMM.dds</glossMetallicMap>
-			<normalMap>vehicles/russian/Camouflage/PORTAL26_Camo_Hull_146_Normal.dds</normalMap>
-			<exclusionImpact>
-				0.2
-				<!--BW_String-->
-			</exclusionImpact>
-			<tiling>
-				<germany:G00_Typ_205>
-					1 1 0 0.8
-					<!--BW_String-->
-				</germany:G00_Typ_205>
-			</tiling>
-			<forceUv0>true</forceUv0>
-		</camouflage>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:camouflage/opaque</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<tags>fullRGB hiddenInUI</tags>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
-		<vehicleFilter>
-			<include>
-				<vehicles>germany:G00_PzVI_Tiger_P</vehicles>
-			</include>
-		</vehicleFilter>
-		<camouflage>
-			<id>31586</id>
-			<scales>
-				1.2 1 0.7
-				<!--BW_String-->
-			</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<texture>vehicles/russian/Camouflage/PORTAL26_Tiger_Camo_Gun_146.dds</texture>
-			<userString>#vehicle_customization:PORTAL26_Tiger_Camo_Gun_146/name</userString>
-			<description>#vehicle_customization:PORTAL26_Tiger_Camo_Gun_146/description</description>
-			<exclusionImpact>
-				0.2
-				<!--BW_String-->
-			</exclusionImpact>
-			<forceUv0>true</forceUv0>
-			<tiling>
-				<germany:G00_PzVI_Tiger_P>
-					1.9 1.9 0.001 -0.993
-					<!--BW_String-->
-				</germany:G00_PzVI_Tiger_P>
-			</tiling>
-			<glossMetallicMap>vehicles/russian/Camouflage/PORTAL26_Tiger_Camo_Gun_146_GMM.dds</glossMetallicMap>
-			<normalMap>vehicles/russian/Camouflage/PORTAL26_Tiger_Camo_Gun_146_Normal.dds</normalMap>
-		</camouflage>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:camouflage/opaque</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<tags>fullRGB hiddenInUI</tags>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
-		<vehicleFilter>
-			<include>
-				<vehicles>germany:G00_PzVI_Tiger_P</vehicles>
-			</include>
-		</vehicleFilter>
-		<camouflage>
-			<id>31587</id>
-			<scales>
-				1.2 1 0.7
-				<!--BW_String-->
-			</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<texture>vehicles/russian/Camouflage/PORTAL26_Tiger_Camo_Turret_146.dds</texture>
-			<exclusionImpact>
-				0.2
-				<!--BW_String-->
-			</exclusionImpact>
-			<forceUv0>true</forceUv0>
-			<userString>#vehicle_customization:PORTAL26_Tiger_Camo_Turret_146/name</userString>
-			<description>#vehicle_customization:PORTAL26_Tiger_Camo_Turret_146/description</description>
-			<tiling>
-				<germany:G00_PzVI_Tiger_P>
-					1.558 1.558 0.001 0.003
-					<!--BW_String-->
-				</germany:G00_PzVI_Tiger_P>
-			</tiling>
-			<glossMetallicMap>vehicles/russian/Camouflage/PORTAL26_Tiger_Camo_Turret_146_GMM.dds</glossMetallicMap>
-			<normalMap>vehicles/russian/Camouflage/PORTAL26_Tiger_Camo_Turret_146_Normal.dds</normalMap>
-		</camouflage>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:camouflage/opaque</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<tags>fullRGB hiddenInUI</tags>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
-		<vehicleFilter>
-			<include>
-				<vehicles>germany:G00_PzVI_Tiger_P</vehicles>
-			</include>
-		</vehicleFilter>
-		<camouflage>
-			<id>31588</id>
-			<scales>
-				1.2 1 0.7
-				<!--BW_String-->
-			</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<tiling>
-				<germany:G00_PzVI_Tiger_P>1 1 0 0</germany:G00_PzVI_Tiger_P>
-			</tiling>
-			<texture>vehicles/russian/Camouflage/PORTAL26_Tiger_Camo_Hull_146.dds</texture>
-			<exclusionImpact>
-				0.2
-				<!--BW_String-->
-			</exclusionImpact>
-			<forceUv0>true</forceUv0>
-			<userString>#vehicle_customization:PORTAL26_Tiger_Camo_Hull_146/name</userString>
-			<description>#vehicle_customization:PORTAL26_Tiger_Camo_Hull_146/description</description>
-			<glossMetallicMap>vehicles/russian/Camouflage/PORTAL26_Tiger_Camo_Hull_146_GMM.dds</glossMetallicMap>
-			<normalMap>vehicles/russian/Camouflage/PORTAL26_Tiger_Camo_Gun_146_Normal.dds</normalMap>
-		</camouflage>
-	</itemGroup>
-	<itemGroup>
 		<season>ALL</season>
 		<historical>1</historical>
 		<priceGroup>MT camouflages 50g notInShop</priceGroup>
@@ -13097,6 +13833,53 @@
 			</tilingSettings>
 			<userString>#vehicle_customization:PUB_2024_Camo_Winter_MT/name</userString>
 			<description>#vehicle_customization:PUB_2024_Camo_Winter_MT/description</description>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31634</id>
+			<texture>vehicles/russian/Camouflage/PUB_Orenburg_Camo_147.dds</texture>
+			<userString>#vehicle_customization:PUB_Orenburg_Camo_147/name</userString>
+			<description>#vehicle_customization:PUB_Orenburg_Camo_147/description</description>
+			<scales>
+				1.3 1.03 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-0.226893</HULL>
+				<TURRET>-0.226893</TURRET>
+				<GUN>-0.226893</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.72 2.72
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-3.03 1.4
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
 		</camouflage>
 	</itemGroup>
 	<itemGroup>
@@ -14566,6 +15349,317 @@
 		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>31612</id>
+			<userString>#vehicle_customization:RUSH26_Camo_01_147/name</userString>
+			<description>#vehicle_customization:RUSH26_Camo_01_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-1.021716</HULL>
+				<TURRET>-1.021716</TURRET>
+				<GUN>-1.021716</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.64 2.64
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-11.36 -12.45
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<texture>vehicles/russian/Camouflage/RUSH26_Camo_01_147.dds</texture>
+		</camouflage>
+		<style>31630</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31613</id>
+			<texture>vehicles/russian/Camouflage/RUSH26_Camo_02_147.dds</texture>
+			<userString>#vehicle_customization:RUSH26_Camo_02_147/name</userString>
+			<description>#vehicle_customization:RUSH26_Camo_02_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-1.021716</HULL>
+				<TURRET>-1.021716</TURRET>
+				<GUN>-1.021716</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.64 2.64
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-11.36 -12.45
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/RUSH26_Camo_02_147_GMM.dds</glossMetallicMap>
+		</camouflage>
+		<style>31631</style>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31614</id>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<texture>vehicles/russian/Camouflage/RUSH26_Camo_03_147.dds</texture>
+			<userString>#vehicle_customization:RUSH26_Camo_03_147/name</userString>
+			<description>#vehicle_customization:RUSH26_Camo_03_147/description</description>
+			<forceUv0>true</forceUv0>
+			<rotation>
+				<HULL>-1.021716</HULL>
+				<TURRET>-1.021716</TURRET>
+				<GUN>-1.021716</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.64 2.64
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-11.36 -12.45
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/RUSH26_Camo_03_147_GMM.dds</glossMetallicMap>
+		</camouflage>
+		<style>31632</style>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31615</id>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<texture>vehicles/russian/Camouflage/RUSH26_Camo_04_147.dds</texture>
+			<userString>#vehicle_customization:RUSH26_Camo_04_147/name</userString>
+			<description>#vehicle_customization:RUSH26_Camo_04_147/description</description>
+			<forceUv0>true</forceUv0>
+			<rotation>
+				<HULL>-1.021716</HULL>
+				<TURRET>-1.021716</TURRET>
+				<GUN>-1.021716</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.64 2.64
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-11.36 -12.45
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/RUSH26_Camo_04_147_GMM.dds</glossMetallicMap>
+			<normalMap>vehicles/russian/Camouflage/RUSH26_Camo_04_147_Normal.dds</normalMap>
+		</camouflage>
+		<style>31633</style>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31616</id>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<texture>vehicles/russian/Camouflage/RUSH26_Camo_05_147.dds</texture>
+			<userString>#vehicle_customization:RUSH26_Camo_05_147/name</userString>
+			<description>#vehicle_customization:RUSH26_Camo_05_147/description</description>
+			<exclusionImpact>
+				0.5
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<rotation>
+				<HULL>-1.021716</HULL>
+				<TURRET>-1.021716</TURRET>
+				<GUN>-1.021716</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.64 2.64
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-11.36 -12.45
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/RUSH26_Camo_05_147_GMM.dds</glossMetallicMap>
+			<normalMap>vehicles/russian/Camouflage/RUSH26_Camo_05_147_Normal.dds</normalMap>
+		</camouflage>
+		<style>31634</style>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB styleOnly questsProgression</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31617</id>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<texture>vehicles/russian/Camouflage/RUSH26_Camo_06_147.dds</texture>
+			<userString>#vehicle_customization:RUSH26_Camo_06_147/name</userString>
+			<description>#vehicle_customization:RUSH26_Camo_06_147/description</description>
+			<exclusionImpact>
+				0.2
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<rotation>
+				<HULL>-1.021716</HULL>
+				<TURRET>-1.021716</TURRET>
+				<GUN>-1.021716</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>
+					2.64 2.64
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-11.36 -12.45
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/RUSH26_Camo_06_147_GMM.dds</glossMetallicMap>
+			<emissionMap>vehicles/russian/Camouflage/RUSH26_Camo_06_147_Emission.dds</emissionMap>
+			<emissionPatternMap>vehicles/russian/Camouflage/RUSH26_Camo_06_147_Pattern.dds</emissionPatternMap>
+			<forwardEmissionBrightness>6</forwardEmissionBrightness>
+			<deferredEmissionBrightness>6</deferredEmissionBrightness>
+			<emissionAnimationSpeed>
+				0.6
+				<!--BW_String-->
+			</emissionAnimationSpeed>
+		</camouflage>
+		<style>31635</style>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+	</itemGroup>
+	<itemGroup>
 		<season>ALL</season>
 		<historical>1</historical>
 		<tags>hiddenInUI styleOnly</tags>
@@ -14618,6 +15712,114 @@
 			</metallic>
 		</camouflage>
 		<userString>#vehicle_customization:camouflage/transparent</userString>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31626</id>
+			<texture>vehicles/russian/Camouflage/RushBlackEdition_01_Camo_147.dds</texture>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<glossMetallicMap>vehicles/russian/Camouflage/RushBlackEdition_01_Camo_147_GMM.dds</glossMetallicMap>
+			<emissionMap>vehicles/russian/Camouflage/RushBlackEdition_01_Camo_147_Emission.dds</emissionMap>
+			<emissionPatternMap>vehicles/russian/Camouflage/RushBlackEdition_01_Camo_147_Pattern.dds</emissionPatternMap>
+			<normalMap>vehicles/russian/Camouflage/RushBlackEdition_01_Camo_147_Normal.dds</normalMap>
+			<userString>#vehicle_customization:RushBlackEdition_01_Camo_147/name</userString>
+			<description>#vehicle_customization:RushBlackEdition_01_Camo_147/description</description>
+			<exclusionImpact>
+				0.5
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<rotation>
+				<HULL>-1.021716</HULL>
+				<TURRET>-1.021716</TURRET>
+				<GUN>-1.021716</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>2 2</factor>
+				<offset>
+					-11.2 -12.39
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<forwardEmissionBrightness>5</forwardEmissionBrightness>
+			<deferredEmissionBrightness>5</deferredEmissionBrightness>
+			<emissionAnimationSpeed>
+				0.6
+				<!--BW_String-->
+			</emissionAnimationSpeed>
+		</camouflage>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/transparent</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31625</id>
+			<texture>vehicles/russian/Camouflage/RushBlackEdition_02_Camo_147.dds</texture>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<exclusionImpact>
+				0.75
+				<!--BW_String-->
+			</exclusionImpact>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 0</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-1.021716</HULL>
+				<TURRET>-1.021716</TURRET>
+				<GUN>-1.021716</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relative</type>
+				<factor>2 2</factor>
+				<offset>
+					-11.2 -12.39
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/RushBlackEdition_02_Camo_147_GMM.dds</glossMetallicMap>
+			<normalMap>vehicles/russian/Camouflage/RushBlackEdition_02_Camo_147_Normal.dds</normalMap>
+			<userString>#vehicle_customization:RushBlackEdition_02_Camo_147/name</userString>
+			<description>#vehicle_customization:RushBlackEdition_02_Camo_147/description</description>
+		</camouflage>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:camouflage/opaque</userString>
@@ -18875,6 +20077,94 @@
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R47_ISU-152_Zveroboj ussr:R61_Object252_BF</vehicles>
 			</exclude>
 		</vehicleFilter>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31632</id>
+			<texture>vehicles/russian/Camouflage/TC_02_LetItGo_Camo_147.dds</texture>
+			<userString>#vehicle_customization:TC_02_LetItGo_Camo_147/name</userString>
+			<description>#vehicle_customization:TC_02_LetItGo_Camo_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-1.361357</HULL>
+				<TURRET>-1.361357</TURRET>
+				<GUN>-1.361357</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.2 2.2
+					<!--BW_String-->
+				</factor>
+				<offset>-10 -8</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI fullRGB</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>31633</id>
+			<texture>vehicles/russian/Camouflage/TC_03_LetItGo_Camo_147.dds</texture>
+			<userString>#vehicle_customization:TC_03_LetItGo_Camo_147/name</userString>
+			<description>#vehicle_customization:TC_03_LetItGo_Camo_147/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<forceUv0>true</forceUv0>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>0.174533</HULL>
+				<TURRET>0.174533</TURRET>
+				<GUN>0.174533</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>2 2</factor>
+				<offset>
+					-14.7 -11.7
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:camouflage/opaque</userString>
@@ -24433,6 +25723,10 @@
 					1 1 -1 -0.1
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1 1 -1 -0.1
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1 1 -1 -0.1
 					<!--BW_String-->
@@ -25399,10 +26693,6 @@
 					1.4 1.4 1.7 3.3
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.4 1.4 1.7 3.3
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					2.1 2.1 1.7 3.3
 					<!--BW_String-->
@@ -25679,6 +26969,10 @@
 					2.2 2.2 1.7 3.3
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.2 2.2 1.7 3.3
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.2 2.2 1.7 3.3
 					<!--BW_String-->
@@ -28679,10 +29973,6 @@
 					1.4 1.4 1.3 0.3
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.4 1.4 1.3 0.3
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					2.1 2.1 1.3 0.3
 					<!--BW_String-->
@@ -28979,6 +30269,10 @@
 					2.2 2.2 1.3 0.3
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.2 2.2 1.3 0.3
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.2 2.2 1.3 0.3
 					<!--BW_String-->
@@ -31984,10 +33278,6 @@
 					1.4 1.4 0.000000 4.4
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.4 1.4 0.000000 4.4
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					2.1 2.1 0.000000 4.4
 					<!--BW_String-->
@@ -32268,6 +33558,10 @@
 					2.2 2.2 0.000000 4.4
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.2 2.2 0.000000 4.4
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.2 2.2 0.000000 4.4
 					<!--BW_String-->
@@ -35212,6 +36506,10 @@
 					2.11 2.11 -0.36 -0.19
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.11 2.11 -0.36 -0.19
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.11 2.11 -0.36 -0.19
 					<!--BW_String-->
@@ -35538,10 +36836,6 @@
 					2.32 2.32 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.32 2.32 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					2.2 2.2 0.000000 0.000000
 					<!--BW_String-->
@@ -35810,6 +37104,10 @@
 					2.18 2.18 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.18 2.18 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.18 2.18 0.000000 0.000000
 					<!--BW_String-->
@@ -39019,10 +40317,6 @@
 					2.8 2.8 0.9 1.3
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.8 2.8 0.9 1.3
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					3 3 0.000000 2
 					<!--BW_String-->
@@ -39311,6 +40605,10 @@
 					2.6 2.6 0.000000 0.1
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.6 2.6 0.000000 0.1
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.6 2.6 0.000000 0.1
 					<!--BW_String-->
@@ -42215,10 +43513,6 @@
 					2.1 2.1 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.1 2.1 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					4.1 4.1 0.000000 0.000000
 					<!--BW_String-->
@@ -42491,6 +43785,10 @@
 					1.6 1.6 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.6 1.6 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.6 1.6 0.000000 0.000000
 					<!--BW_String-->
@@ -45461,10 +46759,6 @@
 					1 1 1.69 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1 1 1.69 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2 2 0.6 1.76
 					<!--BW_String-->
@@ -45745,6 +47039,10 @@
 					1 1 0.99 0.42
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1 1 0.99 0.42
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1 1 0.99 0.42
 					<!--BW_String-->
@@ -48838,6 +50136,10 @@
 					1.85 1.85 -0.27 -0.05
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.85 1.85 -0.27 -0.05
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.85 1.85 -0.27 -0.05
 					<!--BW_String-->
@@ -52035,6 +53337,10 @@
 					1.85 1.85 -0.27 -0.05
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.85 1.85 -0.27 -0.05
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.85 1.85 -0.27 -0.05
 					<!--BW_String-->
@@ -54961,6 +56267,10 @@
 					2.5 2.5 0.29 -0.08
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.5 2.5 0.29 -0.08
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.5 2.5 0.29 -0.08
 					<!--BW_String-->
@@ -55213,10 +56523,6 @@
 					0.56 0.56 0.64 2.08
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					0.56 0.56 0.64 2.08
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.09 1.09 0.69 1.98
 					<!--BW_String-->
@@ -55493,6 +56799,10 @@
 					0.56 0.56 14.82 0.15
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.56 0.56 14.82 0.15
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.56 0.56 14.82 0.15
 					<!--BW_String-->
@@ -58741,10 +60051,6 @@
 					1.43 1.43 0.000000 -0.23
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.43 1.43 0.000000 -0.23
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.43 1.43 0.000000 -0.23
 					<!--BW_String-->
@@ -59009,6 +60315,10 @@
 					1.49 1.49 -0.29 0.13
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.49 1.49 -0.29 0.13
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.49 1.49 -0.29 0.13
 					<!--BW_String-->
@@ -61943,6 +63253,10 @@
 					1.8 1.8 0.34 0.21
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.8 1.8 0.34 0.21
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.8 1.8 0.34 0.21
 					<!--BW_String-->
@@ -63207,6 +64521,10 @@
 					1.9 1.9 -0.57 0.17
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.9 1.9 -0.57 0.17
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.9 1.9 -0.57 0.17
 					<!--BW_String-->
@@ -63477,10 +64795,6 @@
 					1.29 1.29 0.01 2.43
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.29 1.29 0.01 2.43
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.32 1.32 0.48 3.8
 					<!--BW_String-->
@@ -63738,6 +65052,10 @@
 					1.57739 1.57739 0.01 7.86
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.57739 1.57739 0.01 7.86
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.57739 1.57739 0.01 7.86
 					<!--BW_String-->
@@ -67346,10 +68664,6 @@
 					1.32 1.32 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.32 1.32 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2.64 2.64 0.000000 0.000000
 					<!--BW_String-->
@@ -67626,6 +68940,10 @@
 					0.85 0.85 0.09 0.76
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.85 0.85 0.09 0.76
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.85 0.85 0.09 0.76
 					<!--BW_String-->
@@ -70807,6 +72125,10 @@
 					2.18 2.18 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.18 2.18 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.18 2.18 0.000000 0.000000
 					<!--BW_String-->
@@ -73948,6 +75270,10 @@
 					2.08 2.08 -0.47 -0.38
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.08 2.08 -0.47 -0.38
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.08 2.08 -0.47 -0.38
 					<!--BW_String-->
@@ -74116,10 +75442,6 @@
 					1.3 1.3 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.3 1.3 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
@@ -74404,6 +75726,10 @@
 					3.5 3.5 0.38 0.68
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					3.5 3.5 0.38 0.68
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					3.5 3.5 0.38 0.68
 					<!--BW_String-->
@@ -77428,10 +78754,6 @@
 					1.3 1.3 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.3 1.3 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
@@ -77728,6 +79050,10 @@
 					3.5 3.5 0.38 0.68
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					3.5 3.5 0.38 0.68
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					3.5 3.5 0.38 0.68
 					<!--BW_String-->
@@ -80776,10 +82102,6 @@
 					1.3 1.3 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.3 1.3 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
@@ -81064,6 +82386,10 @@
 					3.5 3.5 0.38 0.68
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					3.5 3.5 0.38 0.68
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					3.5 3.5 0.38 0.68
 					<!--BW_String-->
@@ -84096,10 +85422,6 @@
 					1.3 1.3 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.3 1.3 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
@@ -84396,6 +85718,10 @@
 					3.5 3.5 0.38 0.68
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					3.5 3.5 0.38 0.68
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					3.5 3.5 0.38 0.68
 					<!--BW_String-->
@@ -87699,6 +89025,10 @@
 					2.4 2.4 0.2 0.94
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.4 2.4 0.2 0.94
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.4 2.4 0.2 0.94
 					<!--BW_String-->
@@ -88094,10 +89424,6 @@
 					2.08 2.08 0.2 0.11
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.08 2.08 0.2 0.11
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					5 5 0.000000 -0.23
 					<!--BW_String-->
@@ -88366,6 +89692,10 @@
 					2 2 4.84 5.66
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2 2 4.84 5.66
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2 2 4.84 5.66
 					<!--BW_String-->
@@ -91230,10 +92560,6 @@
 					2.08 2.08 0.2 0.11
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.08 2.08 0.2 0.11
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					5 5 0.000000 -0.23
 					<!--BW_String-->
@@ -91510,6 +92836,10 @@
 					2 2 4.84 5.66
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2 2 4.84 5.66
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2 2 4.84 5.66
 					<!--BW_String-->
@@ -94434,10 +95764,6 @@
 					2.08 2.08 0.2 0.11
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.08 2.08 0.2 0.11
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					5 5 0.000000 -0.23
 					<!--BW_String-->
@@ -94710,6 +96036,10 @@
 					2 2 4.84 5.66
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2 2 4.84 5.66
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2 2 4.84 5.66
 					<!--BW_String-->
@@ -97582,10 +98912,6 @@
 					2 2 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2 2 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					2.5 2.5 0.000000 0.000000
 					<!--BW_String-->
@@ -97866,6 +99192,10 @@
 					1.9 1.9 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.9 1.9 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.9 1.9 0.000000 0.000000
 					<!--BW_String-->
@@ -100680,10 +102010,6 @@
 					1.05 1.05 1.97 1.27
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.13 1.13 2.1 1.74
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.03 1.03 3.58 2.05
 					<!--BW_String-->
@@ -100972,6 +102298,10 @@
 					1 1 0.25 0.6
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1 1 0.25 0.6
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1 1 0.25 0.6
 					<!--BW_String-->
@@ -104020,6 +105350,10 @@
 					1 1 -0.44 -1.34
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1 1 -0.44 -1.34
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1 1 -0.44 -1.34
 					<!--BW_String-->
@@ -104340,6 +105674,10 @@
 					1.05 1.05 2.06 1.07
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.05 1.05 2.06 1.07
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.05 1.05 2.06 1.07
 					<!--BW_String-->
@@ -104593,10 +105931,6 @@
 					1.5 1.5 0.42 0.83
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.5 1.5 0.42 0.83
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.2 1.2 0.24 0.5
 					<!--BW_String-->
@@ -104869,6 +106203,10 @@
 					0.97 0.97 0.35 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.97 0.97 0.35 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.97 0.97 0.35 0.000000
 					<!--BW_String-->
@@ -111333,10 +112671,6 @@
 					1.6 1.6 2.84 2.57
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.5 1.5 1.02 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					3 3 0.53 1.84
 					<!--BW_String-->
@@ -111637,6 +112971,10 @@
 					1.4 1.4 2.32 4.19
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.4 1.4 2.32 4.19
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.4 1.4 2.32 4.19
 					<!--BW_String-->
@@ -114534,10 +115872,6 @@
 					1.6 1.6 1.07 3
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.5 1.5 1.02 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					3 3 0.53 1.84
 					<!--BW_String-->
@@ -114838,6 +116172,10 @@
 					1.4 1.4 2.32 4.19
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.4 1.4 2.32 4.19
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.4 1.4 2.32 4.19
 					<!--BW_String-->
@@ -117735,10 +119073,6 @@
 					1.6 1.6 1.07 3
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.5 1.5 1.02 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					3 3 0.53 1.84
 					<!--BW_String-->
@@ -118035,6 +119369,10 @@
 					1.4 1.4 2.32 4.19
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.4 1.4 2.32 4.19
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.4 1.4 2.32 4.19
 					<!--BW_String-->
@@ -120932,10 +122270,6 @@
 					1.6 1.6 1.07 3
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.5 1.5 1.02 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					3 3 0.53 1.84
 					<!--BW_String-->
@@ -121240,6 +122574,10 @@
 					1.4 1.4 2.32 4.19
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.4 1.4 2.32 4.19
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.4 1.4 2.32 4.19
 					<!--BW_String-->
@@ -124365,10 +125703,6 @@
 					5.14 5.14 -0.11 -0.23
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					5.14 5.14 -0.11 -0.52
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					5.14 5.14 -0.11 -0.52
 					<!--BW_String-->
@@ -124673,6 +126007,10 @@
 					3.94 3.94 2.08 5.24
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					3.94 3.94 2.08 5.24
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					3.94 3.94 2.08 5.24
 					<!--BW_String-->
@@ -127616,6 +128954,10 @@
 					2.1 2.1 0.9 2.28
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.1 2.1 0.9 2.28
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.1 2.1 0.9 2.28
 					<!--BW_String-->
@@ -127879,10 +129221,6 @@
 					1.15 1.15 7.21 5.83
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.15 1.15 7.21 5.83
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.15 1.15 7.21 5.83
 					<!--BW_String-->
@@ -128163,6 +129501,10 @@
 					1 1 7.71 7.56
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1 1 7.71 7.56
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1 1 7.71 7.56
 					<!--BW_String-->
@@ -132157,10 +133499,6 @@
 					2.2 2.2 0.09 0.15
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.2 2.2 0.09 0.15
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2.7 2.7 0.6 0.9
 					<!--BW_String-->
@@ -132481,6 +133819,10 @@
 					3.6 3.6 0.6 0.5
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					3.6 3.6 0.6 0.5
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					3.6 3.6 0.6 0.5
 					<!--BW_String-->
@@ -134543,10 +135885,6 @@
 					1.3 1.3 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.2 1.2 1.1 0.89
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.3 1.3 0.000000 0.000000
 					<!--BW_String-->
@@ -134839,6 +136177,10 @@
 					0.85 0.85 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.85 0.85 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.85 0.85 0.000000 0.000000
 					<!--BW_String-->
@@ -137873,10 +139215,6 @@
 					2.6 2.6 0.48 0.57
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.6 2.6 0.48 0.57
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2.71 2.71 -0.11 -0.52
 					<!--BW_String-->
@@ -138177,6 +139515,10 @@
 					2.36 2.36 1.29 2.09
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.36 2.36 1.29 2.09
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.36 2.36 1.29 2.09
 					<!--BW_String-->
@@ -142680,6 +144022,10 @@
 					2.1 2.1 0.08 0.56
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.1 2.1 0.08 0.56
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.1 2.1 0.08 0.56
 					<!--BW_String-->
@@ -143110,6 +144456,10 @@
 					2.3 2.3 0.36 1.54
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.3 2.3 0.36 1.54
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.3 2.3 0.36 1.54
 					<!--BW_String-->
@@ -143259,6 +144609,10 @@
 					2.2 2.2 -0.01 1.04
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.2 2.2 -0.01 1.04
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.2 2.2 -0.01 1.04
 					<!--BW_String-->
@@ -143450,10 +144804,6 @@
 					1.17 1.17 2.67 0.58
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.13 1.13 2.1 1.74
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.16 1.16 3.64 1.48
 					<!--BW_String-->
@@ -143750,6 +145100,10 @@
 					1.03 1.03 0.66 -0.44
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.03 1.03 0.66 -0.44
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.03 1.03 0.66 -0.44
 					<!--BW_String-->
@@ -147044,6 +148398,10 @@
 					1.9 1.9 1.32781 -0.751646
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.9 1.9 1.32781 -0.751646
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.9 1.9 1.32781 -0.751646
 					<!--BW_String-->
@@ -147296,10 +148654,6 @@
 					0.92 0.92 0.91 3.75
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					0.92 0.92 0.91 3.75
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.71 1.71 0.47 0.77
 					<!--BW_String-->
@@ -147616,6 +148970,10 @@
 					1.04 1.04 2.89 0.93
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.04 1.04 2.89 0.93
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.04 1.04 2.89 0.93
 					<!--BW_String-->
@@ -150603,10 +151961,6 @@
 					1.05 1.05 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					0.98 0.98 0.000000 1.84
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					0.95 0.95 0.000000 0.000000
 					<!--BW_String-->
@@ -150755,6 +152109,10 @@
 					0.9 0.9 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.9 0.9 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.9 0.9 0.000000 0.000000
 					<!--BW_String-->
@@ -152353,10 +153711,6 @@
 					0.79 0.79 0.78 0.12
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.32 1.32 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2.64 2.64 0.000000 0.000000
 					<!--BW_String-->
@@ -152641,6 +153995,10 @@
 					0.86 0.86 5.32 4.31
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.86 0.86 5.32 4.31
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.86 0.86 5.32 4.31
 					<!--BW_String-->
@@ -155589,10 +156947,6 @@
 					4.12 4.12 -0.23 -0.35
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					4.12 4.12 -0.23 -0.35
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					5 5 0.000000 -0.23
 					<!--BW_String-->
@@ -155873,6 +157227,10 @@
 					3.5 3.5 4.84 5.66
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					3.5 3.5 4.84 5.66
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					3.5 3.5 4.84 5.66
 					<!--BW_String-->
@@ -158844,10 +160202,6 @@
 					0.56 0.56 1.38 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					0.56 0.56 0.89 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					0.5 0.5 3.3 0.000000
 					<!--BW_String-->
@@ -158992,6 +160346,10 @@
 					0.44 0.44 2.44 5.36
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.44 0.44 2.44 5.36
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.44 0.44 2.44 5.36
 					<!--BW_String-->
@@ -160548,10 +161906,6 @@
 					2.42 2.42 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.42 2.42 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					5.2 5.2 0.000000 0.000000
 					<!--BW_String-->
@@ -160840,6 +162194,10 @@
 					2.78 2.78 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.78 2.78 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.78 2.78 0.000000 0.000000
 					<!--BW_String-->
@@ -163835,6 +165193,10 @@
 					2.2 2.2 0.07 6.5389
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.2 2.2 0.07 6.5389
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.2 2.2 0.07 6.5389
 					<!--BW_String-->
@@ -164007,6 +165369,10 @@
 					1.5 1.5 1.33 -0.51
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.5 1.5 1.33 -0.51
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.5 1.5 1.33 -0.51
 					<!--BW_String-->
@@ -164532,10 +165898,6 @@
 					1.8 1.8 1.56 0.48
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.8 1.8 1.56 0.48
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.97 1.97 -0.33 0.11
 					<!--BW_String-->
@@ -164848,6 +166210,10 @@
 					1.15 1.15 0.17 1.76
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.15 1.15 0.17 1.76
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.15 1.15 0.17 1.76
 					<!--BW_String-->
@@ -167888,10 +169254,6 @@
 					2.2 2.2 0.09 0.15
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.2 2.2 0.09 0.15
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					2.7 2.7 0.6 0.9
 					<!--BW_String-->
@@ -168180,6 +169542,10 @@
 					1.5 1.5 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.5 1.5 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.5 1.5 0.000000 0.000000
 					<!--BW_String-->
@@ -171126,10 +172492,6 @@
 					3 3 -0.67 0.32
 					<!--BW_String-->
 				</china:Ch19_121_7x7>
-				<china:Ch22_113P>
-					4.18 4.18 1.66 1.77
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.56 1.56 0.31 -0.09
 					<!--BW_String-->
@@ -171234,6 +172596,10 @@
 					1.25 1.25 3.86 6.37
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.25 1.25 3.86 6.37
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.25 1.25 3.86 6.37
 					<!--BW_String-->
@@ -172645,10 +174011,6 @@
 					2.5 2.5 1.52 1.66
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.5 2.5 1.52 1.66
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					3.8 3.8 0.000000 0.46
 					<!--BW_String-->
@@ -172921,6 +174283,10 @@
 					2 2 0.000000 0.69
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2 2 0.000000 0.69
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2 2 0.000000 0.69
 					<!--BW_String-->
@@ -175805,10 +177171,6 @@
 					1 1 1.98 0.67
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1 1 1.98 0.67
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.5 1.5 0.6 2.22
 					<!--BW_String-->
@@ -176089,6 +177451,10 @@
 					0.8 0.8 0.3 1.14
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.8 0.8 0.3 1.14
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.8 0.8 0.3 1.14
 					<!--BW_String-->
@@ -178951,10 +180317,6 @@
 					1.7 1.7 0.64 2.08
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.7 1.7 0.64 2.08
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					3.8 3.8 0.67 1.98
 					<!--BW_String-->
@@ -179235,6 +180597,10 @@
 					2 2 0.71 0.94
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2 2 0.71 0.94
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2 2 0.71 0.94
 					<!--BW_String-->
@@ -182103,10 +183469,6 @@
 					1 1 1.98 0.67
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1 1 1.98 0.67
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.5 1.5 0.6 2.22
 					<!--BW_String-->
@@ -182391,6 +183753,10 @@
 					0.8 0.8 0.3 1.14
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.8 0.8 0.3 1.14
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.8 0.8 0.3 1.14
 					<!--BW_String-->
@@ -185235,10 +186601,6 @@
 					2.5 2.5 1.52 1.66
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.5 2.5 1.52 1.66
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					3.8 3.8 0.000000 0.46
 					<!--BW_String-->
@@ -185515,6 +186877,10 @@
 					2 2 0.000000 0.69
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2 2 0.000000 0.69
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2 2 0.000000 0.69
 					<!--BW_String-->
@@ -188395,10 +189761,6 @@
 					1.2 1.2 2.36 1.66
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.2 1.2 2.36 1.66
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2.5 2.5 0.53 4.13
 					<!--BW_String-->
@@ -188683,6 +190045,10 @@
 					1 1 0.88 0.92
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1 1 0.88 0.92
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1 1 0.88 0.92
 					<!--BW_String-->
@@ -191507,10 +192873,6 @@
 					1.2 1.2 1.94 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.2 1.2 1.94 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2 2 2.79 3.18
 					<!--BW_String-->
@@ -191799,6 +193161,10 @@
 					1 1 0.42 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1 1 0.42 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1 1 0.42 0.000000
 					<!--BW_String-->
@@ -194722,10 +196088,6 @@
 					1.2 1.2 1.94 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.2 1.2 1.94 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2 2 2.79 3.18
 					<!--BW_String-->
@@ -195010,6 +196372,10 @@
 					1 1 0.42 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1 1 0.42 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1 1 0.42 0.000000
 					<!--BW_String-->
@@ -197846,10 +199212,6 @@
 					1.2 1.2 2.36 1.66
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.2 1.2 2.36 1.66
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2.5 2.5 0.53 4.13
 					<!--BW_String-->
@@ -198130,6 +199492,10 @@
 					1 1 0.88 0.92
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1 1 0.88 0.92
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1 1 0.88 0.92
 					<!--BW_String-->
@@ -200958,10 +202324,6 @@
 					1.5 1.5 1.02 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.5 1.5 1.02 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					3 3 0.53 1.84
 					<!--BW_String-->
@@ -201258,6 +202620,10 @@
 					1.5 1.5 0.63 1.24
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.5 1.5 0.63 1.24
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.5 1.5 0.63 1.24
 					<!--BW_String-->
@@ -204152,10 +205518,6 @@
 					1 1 1.69 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1 1 1.69 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2 2 0.6 1.76
 					<!--BW_String-->
@@ -204432,6 +205794,10 @@
 					1 1 0.99 0.42
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1 1 0.99 0.42
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1 1 0.99 0.42
 					<!--BW_String-->
@@ -207312,6 +208678,10 @@
 					2.30811 2.30811 0.4 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.30811 2.30811 0.4 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.30811 2.30811 0.4 0.000000
 					<!--BW_String-->
@@ -209568,10 +210938,6 @@
 					4 4 0.3 0.2
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					4 4 0.3 0.2
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch24_Type64>
 					4 4 0.000000 0.000000
 					<!--BW_String-->
@@ -210625,10 +211991,6 @@
 					1.7 1.7 1.73 1.83
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.7 1.7 1.73 1.83
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.96 1.96 0.000000 0.000000
 					<!--BW_String-->
@@ -210897,6 +212259,10 @@
 					1.65 1.65 -0.76 -0.49
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.65 1.65 -0.76 -0.49
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.65 1.65 -0.76 -0.49
 					<!--BW_String-->
@@ -214489,6 +215855,10 @@
 					0.95 0.95 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.95 0.95 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.95 0.95 0.000000 0.000000
 					<!--BW_String-->
@@ -217682,10 +219052,6 @@
 					1.95 1.95 0.24 1.68
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.95 1.95 0.24 1.66
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					3.8 3.8 1.04 1.98
 					<!--BW_String-->
@@ -217946,6 +219312,10 @@
 					1.86 1.86 1.22 1.51
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.86 1.86 1.22 1.51
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.86 1.86 1.22 1.51
 					<!--BW_String-->
@@ -220750,10 +222120,6 @@
 					2.6 2.6 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.6 2.6 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					2.8 2.8 0.34 0.26
 					<!--BW_String-->
@@ -221030,6 +222396,10 @@
 					1.2 1.2 0.2 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.2 1.2 0.2 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.2 1.2 0.2 0.000000
 					<!--BW_String-->
@@ -223970,10 +225340,6 @@
 					2.6 2.6 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.6 2.6 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					2.8 2.8 0.34 0.26
 					<!--BW_String-->
@@ -224262,6 +225628,10 @@
 					1.2 1.2 0.2 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.2 1.2 0.2 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.2 1.2 0.2 0.000000
 					<!--BW_String-->
@@ -227226,10 +228596,6 @@
 					2.6 2.6 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.6 2.6 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					2.8 2.8 0.34 0.26
 					<!--BW_String-->
@@ -227514,6 +228880,10 @@
 					1.2 1.2 0.2 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.2 1.2 0.2 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.2 1.2 0.2 0.000000
 					<!--BW_String-->
@@ -230440,10 +231810,6 @@
 					2.2 2.2 0.09 0.15
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.2 2.2 0.09 0.15
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					2.7 2.7 0.6 0.9
 					<!--BW_String-->
@@ -230720,6 +232086,10 @@
 					1.5 1.5 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.5 1.5 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.5 1.5 0.000000 0.000000
 					<!--BW_String-->
@@ -234209,10 +235579,6 @@
 					2.6 2.6 -1.54 9.43
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.51 2.51 8.11 5.22
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					2.61 2.61 -0.46 -0.31
 					<!--BW_String-->
@@ -234317,6 +235683,10 @@
 					3.3 3.3 0.91 0.37
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					3.3 3.3 0.91 0.37
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					3.3 3.3 0.91 0.37
 					<!--BW_String-->
@@ -235507,6 +236877,10 @@
 					1.09 1.09 0.31 -0.78
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.09 1.09 0.31 -0.78
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.09 1.09 0.31 -0.78
 					<!--BW_String-->
@@ -235971,6 +237345,10 @@
 					1.2 1.2 1.22 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.2 1.2 1.22 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.2 1.2 1.22 0.000000
 					<!--BW_String-->
@@ -239258,6 +240636,10 @@
 					1.1 1.1 1.16 0.77
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.1 1.1 1.16 0.77
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.1 1.1 1.16 0.77
 					<!--BW_String-->
@@ -242700,10 +244082,6 @@
 					1.7 1.7 -0.11 -0.23
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.6 1.6 0.000000 -0.52
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.43 1.43 0.000000 -0.23
 					<!--BW_String-->
@@ -242976,6 +244354,10 @@
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.49 1.49 4.84 5.66
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
@@ -245936,10 +247318,6 @@
 					1.7 1.7 -0.11 -0.23
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.6 1.6 0.000000 -0.52
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.43 1.43 0.000000 -0.23
 					<!--BW_String-->
@@ -246208,6 +247586,10 @@
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.49 1.49 4.84 5.66
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
@@ -249128,10 +250510,6 @@
 					1.7 1.7 -0.11 -0.23
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.6 1.6 0.000000 -0.52
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.43 1.43 0.000000 -0.23
 					<!--BW_String-->
@@ -249404,6 +250782,10 @@
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.49 1.49 4.84 5.66
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
@@ -252364,10 +253746,6 @@
 					1.7 1.7 -0.11 -0.23
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.6 1.6 0.000000 -0.52
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.43 1.43 0.000000 -0.23
 					<!--BW_String-->
@@ -252636,6 +254014,10 @@
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.49 1.49 4.84 5.66
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
@@ -255556,10 +256938,6 @@
 					1.7 1.7 -0.11 -0.23
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.6 1.6 0.000000 -0.52
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.43 1.43 0.000000 -0.23
 					<!--BW_String-->
@@ -255836,6 +257214,10 @@
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.49 1.49 4.84 5.66
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
@@ -258796,10 +260178,6 @@
 					1.7 1.7 -0.11 -0.23
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.6 1.6 0.000000 -0.52
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.43 1.43 0.000000 -0.23
 					<!--BW_String-->
@@ -259068,6 +260446,10 @@
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.49 1.49 4.84 5.66
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
@@ -261984,10 +263366,6 @@
 					1.7 1.7 -0.11 -0.23
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.6 1.6 0.000000 -0.52
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.43 1.43 0.000000 -0.23
 					<!--BW_String-->
@@ -262260,6 +263638,10 @@
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.49 1.49 4.84 5.66
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
@@ -265220,10 +266602,6 @@
 					1.7 1.7 -0.11 -0.23
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.6 1.6 0.000000 -0.52
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.43 1.43 0.000000 -0.23
 					<!--BW_String-->
@@ -265492,6 +266870,10 @@
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.49 1.49 4.84 5.66
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
@@ -268408,10 +269790,6 @@
 					1.7 1.7 -0.11 -0.23
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.6 1.6 0.000000 -0.52
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.43 1.43 0.000000 -0.23
 					<!--BW_String-->
@@ -268684,6 +270062,10 @@
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.49 1.49 4.84 5.66
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
@@ -271640,10 +273022,6 @@
 					1.7 1.7 -0.11 -0.23
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.6 1.6 0.000000 -0.52
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.43 1.43 0.000000 -0.23
 					<!--BW_String-->
@@ -271912,6 +273290,10 @@
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.49 1.49 4.84 5.66
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.49 1.49 4.84 5.66
 					<!--BW_String-->
@@ -276643,10 +278025,6 @@
 					1.3 1.3 3.31 2.09
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.3 1.3 3.31 2.09
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.87 1.87 -0.11 -0.52
 					<!--BW_String-->
@@ -276951,6 +278329,10 @@
 					1.2 1.2 9.86 7.5
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.2 1.2 9.86 7.5
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.2 1.2 9.86 7.5
 					<!--BW_String-->
@@ -279919,10 +281301,6 @@
 					2 2 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2 2 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					2.5 2.5 0.000000 0.000000
 					<!--BW_String-->
@@ -280203,6 +281581,10 @@
 					1.9 1.9 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.9 1.9 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.9 1.9 0.000000 0.000000
 					<!--BW_String-->
@@ -283187,10 +284569,6 @@
 					2 2 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2 2 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					2.5 2.5 0.000000 0.000000
 					<!--BW_String-->
@@ -283467,6 +284845,10 @@
 					1.9 1.9 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.9 1.9 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.9 1.9 0.000000 0.000000
 					<!--BW_String-->
@@ -286435,10 +287817,6 @@
 					1.17 1.17 2.67 0.58
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.13 1.13 2.1 1.74
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.16 1.16 3.64 1.48
 					<!--BW_String-->
@@ -286731,6 +288109,10 @@
 					1.03 1.03 0.66 -0.44
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.03 1.03 0.66 -0.44
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.03 1.03 0.66 -0.44
 					<!--BW_String-->
@@ -289643,10 +291025,6 @@
 					1.17 1.17 2.67 0.58
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.13 1.13 2.1 1.74
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.16 1.16 3.64 1.48
 					<!--BW_String-->
@@ -289939,6 +291317,10 @@
 					1.03 1.03 0.66 -0.44
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.03 1.03 0.66 -0.44
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.03 1.03 0.66 -0.44
 					<!--BW_String-->
@@ -292851,10 +294233,6 @@
 					1.17 1.17 2.67 0.58
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.13 1.13 2.1 1.74
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.16 1.16 3.64 1.48
 					<!--BW_String-->
@@ -293147,6 +294525,10 @@
 					1.03 1.03 0.66 -0.44
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.03 1.03 0.66 -0.44
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.03 1.03 0.66 -0.44
 					<!--BW_String-->
@@ -296077,10 +297459,6 @@
 					2.57 2.57 -0.11 -0.23
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.57 2.57 -0.11 -0.52
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2.57 2.57 -0.11 -0.52
 					<!--BW_String-->
@@ -296381,6 +297759,10 @@
 					1.97 1.97 2.08 5.24
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.97 1.97 2.08 5.24
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.97 1.97 2.08 5.24
 					<!--BW_String-->
@@ -299351,10 +300733,6 @@
 					1.8 1.8 3.13 0.53
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.8 1.8 1.56 0.48
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.97 1.97 -0.33 0.11
 					<!--BW_String-->
@@ -299667,6 +301045,10 @@
 					1.15 1.15 0.18 1.75
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.15 1.15 0.18 1.75
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.15 1.15 0.18 1.75
 					<!--BW_String-->
@@ -303001,6 +304383,10 @@
 					2.1 2.1 0.08 0.56
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.1 2.1 0.08 0.56
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.1 2.1 0.08 0.56
 					<!--BW_String-->
@@ -303252,6 +304638,10 @@
 					1.5 1.5 1.33 -0.51
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.5 1.5 1.33 -0.51
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.5 1.5 1.33 -0.51
 					<!--BW_String-->
@@ -304212,6 +305602,10 @@
 					1.97 1.97 -9.33 -3.12
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.97 1.97 -9.33 -3.12
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.97 1.97 -9.33 -3.12
 					<!--BW_String-->
@@ -305167,10 +306561,6 @@
 					1.6 1.6 0.5 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.6 1.6 0.5 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
@@ -305415,6 +306805,10 @@
 					1.8 1.8 0.37 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.8 1.8 0.37 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.8 1.8 0.37 0.000000
 					<!--BW_String-->
@@ -308282,10 +309676,6 @@
 					1.6 1.6 0.5 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.6 1.6 0.5 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
@@ -308546,6 +309936,10 @@
 					1.8 1.8 0.37 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.8 1.8 0.37 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.8 1.8 0.37 0.000000
 					<!--BW_String-->
@@ -311435,10 +312829,6 @@
 					1.6 1.6 0.5 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.6 1.6 0.5 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
@@ -311695,6 +313085,10 @@
 					1.8 1.8 0.37 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.8 1.8 0.37 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.8 1.8 0.37 0.000000
 					<!--BW_String-->
@@ -314808,10 +316202,6 @@
 					1 1.76 4.19 0.39
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1 1.76 4.19 0.39
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.87 1.87 -0.11 -0.52
 					<!--BW_String-->
@@ -315028,6 +316418,10 @@
 					1 1.75 3.35 3
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1 1.75 3.35 3
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1 1.75 3.35 3
 					<!--BW_String-->
@@ -317045,10 +318439,6 @@
 					1 1.76 4.19 0.39
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1 1.76 4.19 0.39
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.87 1.87 -0.11 -0.52
 					<!--BW_String-->
@@ -317265,6 +318655,10 @@
 					1 1.75 3.35 3
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1 1.75 3.35 3
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1 1.75 3.35 3
 					<!--BW_String-->
@@ -319282,10 +320676,6 @@
 					1 1.76 4.19 0.39
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1 1.76 4.19 0.39
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.87 1.87 -0.11 -0.52
 					<!--BW_String-->
@@ -319502,6 +320892,10 @@
 					1 1.75 3.35 3
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1 1.75 3.35 3
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1 1.75 3.35 3
 					<!--BW_String-->
@@ -321431,10 +322825,6 @@
 					0.87 0.87 2.25 2.03
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					0.87 0.87 2.25 2.03
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch25_121_mod_1971B>
 					2.43 2.43 0.64 0.63
 					<!--BW_String-->
@@ -321499,6 +322889,10 @@
 					0.76 0.76 8.34 1.21
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.76 0.76 8.34 1.21
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.76 0.76 8.34 1.21
 					<!--BW_String-->
@@ -322050,10 +323444,6 @@
 					1.7 1.06 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.7 1.06 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch25_121_mod_1971B>
 					3.6 2.25 0.000000 0.000000
 					<!--BW_String-->
@@ -322118,6 +323508,10 @@
 					1.47 0.92 0.02 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.47 0.92 0.02 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.47 0.92 0.02 0.000000
 					<!--BW_String-->
@@ -322724,10 +324118,6 @@
 					0.87 0.87 2.25 2.03
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					0.87 0.87 2.25 2.03
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch25_121_mod_1971B>
 					2.43 2.43 0.64 0.63
 					<!--BW_String-->
@@ -322792,6 +324182,10 @@
 					0.76 0.76 8.34 1.21
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.76 0.76 8.34 1.21
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.76 0.76 8.34 1.21
 					<!--BW_String-->
@@ -323343,10 +324737,6 @@
 					1.7 1.06 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.7 1.06 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch25_121_mod_1971B>
 					3.6 2.25 0.000000 0.000000
 					<!--BW_String-->
@@ -323411,6 +324801,10 @@
 					1.47 0.92 0.02 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.47 0.92 0.02 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.47 0.92 0.02 0.000000
 					<!--BW_String-->
@@ -323904,10 +325298,6 @@
 					0.87 0.87 2.25 2.03
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					0.87 0.87 2.25 2.03
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch25_121_mod_1971B>
 					2.43 2.43 0.64 0.63
 					<!--BW_String-->
@@ -323972,6 +325362,10 @@
 					0.76 0.76 8.34 1.21
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.76 0.76 8.34 1.21
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.76 0.76 8.34 1.21
 					<!--BW_String-->
@@ -324523,10 +325917,6 @@
 					1.7 1.06 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.7 1.06 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch25_121_mod_1971B>
 					3.6 2.25 0.000000 0.000000
 					<!--BW_String-->
@@ -324591,6 +325981,10 @@
 					1.47 0.92 0.02 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.47 0.92 0.02 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.47 0.92 0.02 0.000000
 					<!--BW_String-->
@@ -325265,10 +326659,6 @@
 					1.04 1.04 0.5 0.17
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.04 1.04 0.5 0.17
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2.64 2.64 0.000000 0.000000
 					<!--BW_String-->
@@ -325553,6 +326943,10 @@
 					1 1 0.32 0.01
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1 1 0.32 0.01
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1 1 0.32 0.01
 					<!--BW_String-->
@@ -328539,10 +329933,6 @@
 					1.04 1.04 0.5 0.17
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.04 1.04 0.5 0.17
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2.64 2.64 0.000000 0.000000
 					<!--BW_String-->
@@ -328823,6 +330213,10 @@
 					1 1 0.32 0.01
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1 1 0.32 0.01
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1 1 0.32 0.01
 					<!--BW_String-->
@@ -332363,6 +333757,10 @@
 					1.5 1.5 1.33 -0.51
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.5 1.5 1.33 -0.51
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.5 1.5 1.33 -0.51
 					<!--BW_String-->
@@ -333196,6 +334594,10 @@
 					0.85 0.85 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.85 0.85 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.85 0.85 0.000000 0.000000
 					<!--BW_String-->
@@ -336257,10 +337659,6 @@
 					0.79 1.34 0.64 2.15
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					0.78 1.71 0.64 2.09
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					3.8 3.8 0.67 1.98
 					<!--BW_String-->
@@ -336545,6 +337943,10 @@
 					0.86 1.35 0.71 1.73
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.86 1.35 0.71 1.73
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.86 1.35 0.71 1.73
 					<!--BW_String-->
@@ -339446,10 +340848,6 @@
 					1.53 1.53 1.25 0.4
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.53 1.53 1.25 0.4
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2.61 2.61 -0.33 0.11
 					<!--BW_String-->
@@ -339758,6 +341156,10 @@
 					1.46 1.46 -0.08 0.42
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.46 1.46 -0.08 0.42
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.46 1.46 -0.08 0.42
 					<!--BW_String-->
@@ -342803,10 +344205,6 @@
 					1.53 1.53 1.25 0.4
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.53 1.53 1.25 0.4
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2.61 2.61 -0.33 0.11
 					<!--BW_String-->
@@ -343115,6 +344513,10 @@
 					1.46 1.46 -0.08 0.42
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.46 1.46 -0.08 0.42
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.46 1.46 -0.08 0.42
 					<!--BW_String-->
@@ -346156,10 +347558,6 @@
 					1.53 1.53 1.25 0.4
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.53 1.53 1.25 0.4
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2.61 2.61 -0.33 0.11
 					<!--BW_String-->
@@ -346468,6 +347866,10 @@
 					1.46 1.46 -0.08 0.42
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.46 1.46 -0.08 0.42
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.46 1.46 -0.08 0.42
 					<!--BW_String-->
@@ -349417,6 +350819,10 @@
 					2.1 2.1 0.22 1.199
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.1 2.1 0.22 1.199
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.1 2.1 0.22 1.199
 					<!--BW_String-->
@@ -349591,6 +350997,10 @@
 					2.7 2.7 -0.01 3.0398
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.7 2.7 -0.01 3.0398
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.7 2.7 -0.01 3.0398
 					<!--BW_String-->
@@ -349783,6 +351193,10 @@
 					2.7 2.7 12.9414 15.11
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.7 2.7 12.9414 15.11
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.7 2.7 12.9414 15.11
 					<!--BW_String-->
@@ -350044,10 +351458,6 @@
 					2 2 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2 2 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					4.72 4.72 1.11 0.000000
 					<!--BW_String-->
@@ -350352,6 +351762,10 @@
 					1.9 1.9 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.9 1.9 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.9 1.9 0.000000 0.000000
 					<!--BW_String-->
@@ -353474,6 +354888,10 @@
 					1.8 1.8 -0.13 1.96
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.8 1.8 -0.13 1.96
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.8 1.8 -0.13 1.96
 					<!--BW_String-->
@@ -353790,10 +355208,6 @@
 					1.71 1.71 0.47 0.77
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.71 1.71 0.47 0.77
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					1.71 1.71 0.47 0.77
 					<!--BW_String-->
@@ -354086,6 +355500,10 @@
 					1.15 1.15 2.94 0.82
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.15 1.15 2.94 0.82
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.15 1.15 2.94 0.82
 					<!--BW_String-->
@@ -357176,10 +358594,6 @@
 					1.17 1.17 2.67 0.58
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.13 1.13 2.1 1.74
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					1.16 1.16 3.64 1.48
 					<!--BW_String-->
@@ -357476,6 +358890,10 @@
 					1.03 1.03 0.66 -0.44
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.03 1.03 0.66 -0.44
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.03 1.03 0.66 -0.44
 					<!--BW_String-->
@@ -360429,10 +361847,6 @@
 					1.4 1.4 1.14 4.63
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.49 1.49 0.94 2.94
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2.61 2.61 -0.33 0.11
 					<!--BW_String-->
@@ -360709,6 +362123,10 @@
 					1.42 1.42 -0.08 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.42 1.42 -0.08 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.42 1.42 -0.08 0.000000
 					<!--BW_String-->
@@ -363776,6 +365194,10 @@
 					0.64 0.64 6.41 7.62
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					0.64 0.64 6.41 7.62
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					0.64 0.64 6.41 7.62
 					<!--BW_String-->
@@ -364402,10 +365824,6 @@
 					1.6 1.6 1.31 4.96
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					1.6 1.6 0.94 2.99
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch22_113_Beijing_Opera>
 					2.8 2.8 4.32 0.11
 					<!--BW_String-->
@@ -364714,6 +366132,10 @@
 					1.5 1.5 1.02 0.07
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.5 1.5 1.02 0.07
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.5 1.5 1.02 0.07
 					<!--BW_String-->
@@ -367960,6 +369382,10 @@
 					1.5 1.5 1.33 -0.51
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.5 1.5 1.33 -0.51
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.5 1.5 1.33 -0.51
 					<!--BW_String-->
@@ -369219,10 +370645,6 @@
 					2.4 2.4 0.000000 0.000000
 					<!--BW_String-->
 				</china:Ch22_113>
-				<china:Ch22_113P>
-					2.4 2.4 0.000000 0.000000
-					<!--BW_String-->
-				</china:Ch22_113P>
 				<china:Ch23_112>
 					3.9 3.9 0.000000 0.000000
 					<!--BW_String-->
@@ -369519,6 +370941,10 @@
 					2.2 2.2 0.000000 0.000000
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.2 2.2 0.000000 0.000000
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.2 2.2 0.000000 0.000000
 					<!--BW_String-->
@@ -372764,6 +374190,10 @@
 					1.39189 1.39189 0.000000 1.67922
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.39189 1.39189 0.000000 1.67922
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.39189 1.39189 0.000000 1.67922
 					<!--BW_String-->
@@ -379808,6 +381238,10 @@
 					1.39189 1.39189 0.01 1.69922
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.39189 1.39189 0.01 1.69922
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.39189 1.39189 0.01 1.69922
 					<!--BW_String-->
@@ -380506,6 +381940,10 @@
 					2 2 9.86 14.9
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2 2 9.86 14.9
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2 2 9.86 14.9
 					<!--BW_String-->
@@ -380824,6 +382262,10 @@
 					2.28 2.28 10.451 14.8798
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					2.28 2.28 10.451 14.8798
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					2.28 2.28 10.451 14.8798
 					<!--BW_String-->
@@ -381925,10 +383367,6 @@
 					2.3 2.3 0.000000 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.3 2.3 0.000000 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2.8 2.8 0.000000 0.000000
 					<!--BW_String-->
@@ -382185,10 +383623,6 @@
 					1.3 1.3 0.4 0.5
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					1.3 1.3 0.4 0.5
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2 2 0.000000 0.000000
 					<!--BW_String-->
@@ -382445,10 +383879,6 @@
 					1.5 1.5 0.6 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					1.5 1.5 0.6 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					1.5 1.5 0.74 0.27
 					<!--BW_String-->
@@ -382709,10 +384139,6 @@
 					1.4 1.4 0.000000 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					1.4 1.4 0.000000 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					1.9 1.9 1.7 1.4
 					<!--BW_String-->
@@ -382965,10 +384391,6 @@
 					1.4 1.4 0.000000 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					1.4 1.4 0.000000 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					1.9 1.9 1.7 1.4
 					<!--BW_String-->
@@ -383221,10 +384643,6 @@
 					1.4 1.4 0.000000 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					1.4 1.4 0.000000 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					1.9 1.9 1.7 1.4
 					<!--BW_String-->
@@ -383477,10 +384895,6 @@
 					1.3 1.3 0.000000 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					1.3 1.3 0.000000 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
@@ -383741,10 +385155,6 @@
 					2.5 2.5 1 0.42
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.5 2.5 1 0.42
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2.5 2.5 0.9 0.32
 					<!--BW_String-->
@@ -383997,10 +385407,6 @@
 					2 2 0.000000 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2 2 0.000000 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2.5 2.5 0.000000 0.000000
 					<!--BW_String-->
@@ -384249,10 +385655,6 @@
 					2.7 2.7 0.000000 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.7 2.7 0.000000 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2.9 2.9 0.000000 0.000000
 					<!--BW_String-->
@@ -384505,10 +385907,6 @@
 					2.6 2.6 0.000000 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.6 2.6 0.000000 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2.8 2.8 0.34 0.26
 					<!--BW_String-->
@@ -384809,10 +386207,6 @@
 					3 3 0.4 2.6
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					3 3 0.4 2.6
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					4 4 0.5 0.21
 					<!--BW_String-->
@@ -385068,10 +386462,6 @@
 					2.7 2.7 0.41 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.7 2.7 0.41 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3.2 3.2 0.000000 0.000000
 					<!--BW_String-->
@@ -385335,10 +386725,6 @@
 					2.4 2.4 4.3 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.4 2.4 4.3 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3.3 3.3 0.000000 0.000000
 					<!--BW_String-->
@@ -385591,10 +386977,6 @@
 					2.4 2.4 0.22 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.24 2.24 0.22 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2.8 2.8 0.2 0.09
 					<!--BW_String-->
@@ -385846,10 +387228,6 @@
 					2.4 2.4 0.46 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.4 2.4 0.46 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3.1 3.1 0.42 0.000000
 					<!--BW_String-->
@@ -386097,10 +387475,6 @@
 					3.5 3.5 0.7 0.25
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					3.5 3.5 0.7 0.25
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3.5 3.5 0.43 0.000000
 					<!--BW_String-->
@@ -386360,10 +387734,6 @@
 					2 2 0.7 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2 2 0.7 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2.1 2.1 0.000000 0.3
 					<!--BW_String-->
@@ -386615,10 +387985,6 @@
 					1.6 1.6 0.000000 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					1.6 1.6 0.000000 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3.4 3.5 0.000000 0.000000
 					<!--BW_String-->
@@ -386828,10 +388194,6 @@
 					2.5 2.5 0.87 0.78
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.5 2.5 0.87 0.78
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3.7 3.7 0.000000 0.000000
 					<!--BW_String-->
@@ -387096,10 +388458,6 @@
 					1.67 1.67 0.67 1.98
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					1.67 1.67 0.67 1.98
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					1.67 1.67 1.69 0.34
 					<!--BW_String-->
@@ -387360,10 +388718,6 @@
 					1.67 1.67 0.67 1.98
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					1.67 1.67 0.67 1.98
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					1.67 1.67 1.69 0.34
 					<!--BW_String-->
@@ -387624,10 +388978,6 @@
 					1.67 1.67 0.67 1.98
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					1.67 1.67 0.67 1.98
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					1.67 1.67 1.69 0.34
 					<!--BW_String-->
@@ -387883,10 +389233,6 @@
 					4.6 4.6 1.3 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					4.6 4.6 1.3 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					5.2 5.2 0.52 0.000000
 					<!--BW_String-->
@@ -388147,10 +389493,6 @@
 					3 3 0.14 0.12
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					3 3 0.14 0.12
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3 3 0.43 0.06
 					<!--BW_String-->
@@ -388464,10 +389806,6 @@
 					2.8 2.8 0.7 0.35
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.8 2.8 0.7 0.35
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3 3 0.06 0.000000
 					<!--BW_String-->
@@ -388724,10 +390062,6 @@
 					2 2 0.66 0.53
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.4 2.4 0.06 0.21
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2.2 2.2 0.34 0.58
 					<!--BW_String-->
@@ -388983,10 +390317,6 @@
 					2.5 2.5 0.25 0.25
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.5 2.5 0.25 0.25
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2.2 2.2 0.3 0.6
 					<!--BW_String-->
@@ -389250,10 +390580,6 @@
 					2.9 2.9 0.2 0.48
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.9 2.9 0.2 0.48
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2.2 2.2 0.71 0.06
 					<!--BW_String-->
@@ -389505,10 +390831,6 @@
 					2.8 2.8 0.54 0.71
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.8 2.8 0.54 0.71
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3.2 3.2 0.69 0.26
 					<!--BW_String-->
@@ -389764,10 +391086,6 @@
 					2 2 0.6 0.33
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2 2 0.6 0.33
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2.4 2.4 0.86 0.000000
 					<!--BW_String-->
@@ -390023,10 +391341,6 @@
 					3.2 3.2 0.22 0.37
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					3.2 3.2 0.22 0.37
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					4.4 4.4 0.83 0.9
 					<!--BW_String-->
@@ -390282,10 +391596,6 @@
 					2.7 2.7 0.6 0.43
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.7 2.7 0.6 0.43
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3.1 3.1 0.14 0.22
 					<!--BW_String-->
@@ -390541,10 +391851,6 @@
 					4.3 4.3 0.28 0.34
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					4.3 4.3 0.28 0.34
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					6 6 0.33 0.3
 					<!--BW_String-->
@@ -390887,10 +392193,6 @@
 					1.6 1.6 0.5 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					1.6 1.6 0.5 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
@@ -391186,10 +392488,6 @@
 					3.4 3.4 0.28 0.07
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					3.4 3.4 0.28 0.07
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3.4 3.4 1.1 0.7
 					<!--BW_String-->
@@ -391437,10 +392735,6 @@
 					3.2 3.2 0.000000 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					3.2 3.2 0.000000 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3.4 3.4 1.1 0.7
 					<!--BW_String-->
@@ -391688,10 +392982,6 @@
 					2.9 2.9 0.1 0.22
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.9 2.9 0.1 0.22
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3.4 3.4 1.1 0.7
 					<!--BW_String-->
@@ -391939,10 +393229,6 @@
 					3 3 0.21 0.21
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					3 3 0.21 0.21
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3.4 3.4 1.1 0.7
 					<!--BW_String-->
@@ -392187,10 +393473,6 @@
 					2 2 0.38 0.56
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2 2 0.38 0.56
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2.2 2.2 0.56 0.02
 					<!--BW_String-->
@@ -392439,10 +393721,6 @@
 					2.4 2.4 0.000000 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.4 2.4 0.000000 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3.9 3.9 0.000000 0.000000
 					<!--BW_String-->
@@ -392691,10 +393969,6 @@
 					3.1 3.1 0.32 0.000000
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					3.1 3.1 0.32 0.000000
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					3.7 3.7 1.4 1.4
 					<!--BW_String-->
@@ -392951,10 +394225,6 @@
 					2.2 2.2 0.4 0.6
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.2 2.2 0.4 0.6
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2.8 2.8 0.000000 0.000000
 					<!--BW_String-->
@@ -393203,10 +394473,6 @@
 					2.2 2.2 0.09 0.15
 					<!--BW_String-->
 				</Ch22_113>
-				<Ch22_113P>
-					2.2 2.2 0.09 0.15
-					<!--BW_String-->
-				</Ch22_113P>
 				<Ch23_112>
 					2.7 2.7 0.6 0.9
 					<!--BW_String-->
@@ -396701,6 +397967,10 @@
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					1.8 1.8 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
@@ -397123,6 +398393,10 @@
 					2.4 2.4 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					2.4 2.4 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					2.4 2.4 0.000000 0.000000
 					<!--BW_String-->
@@ -397552,6 +398826,10 @@
 					1.6 1.6 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					1.6 1.6 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					1.6 1.6 0.000000 0.000000
 					<!--BW_String-->
@@ -397969,6 +399247,10 @@
 					1.82 1.82 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					1.82 1.82 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					1.82 1.82 0.000000 0.000000
 					<!--BW_String-->
@@ -398394,6 +399676,10 @@
 					1.82 1.82 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					1.82 1.82 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					1.82 1.82 0.000000 0.000000
 					<!--BW_String-->
@@ -398823,6 +400109,10 @@
 					1.82 1.82 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					1.82 1.82 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					1.82 1.82 0.000000 0.000000
 					<!--BW_String-->
@@ -399252,6 +400542,10 @@
 					3.5 3.5 0.38 0.68
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					3.5 3.5 0.38 0.68
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					3.5 3.5 0.38 0.68
 					<!--BW_String-->
@@ -399685,6 +400979,10 @@
 					2.6 2.6 0.1 0.12
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					2.6 2.6 0.1 0.12
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					2.6 2.6 0.1 0.12
 					<!--BW_String-->
@@ -400039,147 +401337,6 @@
 		</camouflage>
 	</itemGroup>
 	<itemGroup>
-		<userString>#vehicle_customization:camouflage/transparent</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<camouflage>
-			<id>31618</id>
-			<description>#vehicle_customization:PortalTanks_camo/description</description>
-			<userString>#vehicle_customization:PortalTanks_camo/label</userString>
-			<scales>1 1 1</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<emissionMap>vehicles/french/F43_AMC_35_H/AMC_35_H_guns_Emissive.dds</emissionMap>
-			<emissionPatternMap>vehicles/russian/Camouflage/ClanReward_02_Camo_2025_Pattern.dds</emissionPatternMap>
-			<exclusionImpact>
-				0.35
-				<!--BW_String-->
-			</exclusionImpact>
-			<emissionAnimationSpeed>
-				0.5
-				<!--BW_String-->
-			</emissionAnimationSpeed>
-			<tilingSettings>
-				<type>relative</type>
-				<factor>1.000000 1.000000</factor>
-				<offset>0.000000 0.000000</offset>
-			</tilingSettings>
-			<tiling>
-				<france:F43_AMC_35_H>1 1 0 0</france:F43_AMC_35_H>
-			</tiling>
-			<forwardEmissionBrightness>5</forwardEmissionBrightness>
-			<deferredEmissionBrightness>5</deferredEmissionBrightness>
-			<texture>vehicles/french/F43_AMC_35_H/AMC_35_H_guns_Emissive.dds</texture>
-		</camouflage>
-		<vehicleFilter>
-			<include>
-				<vehicles>france:F43_AMC_35_H</vehicles>
-				<nations>france</nations>
-			</include>
-		</vehicleFilter>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:camouflage/transparent</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<camouflage>
-			<id>31604</id>
-			<description>#vehicle_customization:PortalTanks_camo/description</description>
-			<userString>#vehicle_customization:PortalTanks_camo/label</userString>
-			<scales>1 1 1</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<emissionMap>vehicles/french/F43_AMC_35_H/AMC_35_H_hull_Emissive.dds</emissionMap>
-			<emissionPatternMap>vehicles/russian/Camouflage/ClanReward_02_Camo_2025_Pattern.dds</emissionPatternMap>
-			<exclusionImpact>
-				0.35
-				<!--BW_String-->
-			</exclusionImpact>
-			<emissionAnimationSpeed>
-				0.5
-				<!--BW_String-->
-			</emissionAnimationSpeed>
-			<tilingSettings>
-				<type>relative</type>
-				<factor>1.000000 1.000000</factor>
-				<offset>0.000000 0.000000</offset>
-			</tilingSettings>
-			<tiling>
-				<france:F43_AMC_35_H>1 1 0 0</france:F43_AMC_35_H>
-			</tiling>
-			<forwardEmissionBrightness>5</forwardEmissionBrightness>
-			<deferredEmissionBrightness>5</deferredEmissionBrightness>
-			<texture>vehicles/french/F43_AMC_35_H/AMC_35_H_hull_Emissive.dds</texture>
-		</camouflage>
-		<vehicleFilter>
-			<include>
-				<vehicles>france:F43_AMC_35_H</vehicles>
-				<nations>france</nations>
-			</include>
-		</vehicleFilter>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:camouflage/transparent</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<camouflage>
-			<id>31605</id>
-			<description>#vehicle_customization:PortalTanks_camo/description</description>
-			<userString>#vehicle_customization:PortalTanks_camo/label</userString>
-			<scales>1 1 1</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<emissionMap>vehicles/french/F43_AMC_35_H/AMC_35_H_turret_Emissive.dds</emissionMap>
-			<emissionPatternMap>vehicles/russian/Camouflage/ClanReward_02_Camo_2025_Pattern.dds</emissionPatternMap>
-			<exclusionImpact>
-				0.35
-				<!--BW_String-->
-			</exclusionImpact>
-			<emissionAnimationSpeed>
-				0.5
-				<!--BW_String-->
-			</emissionAnimationSpeed>
-			<tilingSettings>
-				<type>relative</type>
-				<factor>1.000000 1.000000</factor>
-				<offset>0.000000 0.000000</offset>
-			</tilingSettings>
-			<tiling>
-				<france:F43_AMC_35_H>1 1 0 0</france:F43_AMC_35_H>
-			</tiling>
-			<forwardEmissionBrightness>5</forwardEmissionBrightness>
-			<deferredEmissionBrightness>5</deferredEmissionBrightness>
-			<texture>vehicles/french/F43_AMC_35_H/AMC_35_H_turret_Emissive.dds</texture>
-		</camouflage>
-		<vehicleFilter>
-			<include>
-				<vehicles>france:F43_AMC_35_H</vehicles>
-				<nations>france</nations>
-			</include>
-		</vehicleFilter>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
-	</itemGroup>
-	<itemGroup>
 		<userString>#vehicle_customization:camouflage/opaque</userString>
 		<season>ALL</season>
 		<historical>1</historical>
@@ -400467,6 +401624,10 @@
 					1.9 1.9 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					1.9 1.9 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					1.9 1.9 0.000000 0.000000
 					<!--BW_String-->
@@ -400892,6 +402053,10 @@
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					1.8 1.8 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
@@ -401317,6 +402482,10 @@
 					1.2 1.2 0.2 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					1.2 1.2 0.2 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					1.2 1.2 0.2 0.000000
 					<!--BW_String-->
@@ -402074,6 +403243,10 @@
 					4.4 4.8 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					4.4 4.8 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					4.4 4.8 0.000000 0.000000
 					<!--BW_String-->
@@ -402487,6 +403660,10 @@
 					1.92 1.92 -0.08 0.42
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.92 1.92 -0.08 0.42
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.92 1.92 -0.08 0.42
 					<!--BW_String-->
@@ -402879,6 +404056,10 @@
 					1.7 1.7 0.19 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					1.7 1.7 0.19 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					1.7 1.7 0.19 0.000000
 					<!--BW_String-->
@@ -403307,6 +404488,10 @@
 					2 2 0.44 0.62
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					2 2 0.44 0.62
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					2 2 0.44 0.62
 					<!--BW_String-->
@@ -403818,6 +405003,10 @@
 					1.08 1.08 2.31 5.47
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.08 1.08 2.31 5.47
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.08 1.08 2.31 5.47
 					<!--BW_String-->
@@ -404202,6 +405391,10 @@
 					2.2 4.6 0.06 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					2.2 4.6 0.06 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					2.2 4.6 0.06 0.000000
 					<!--BW_String-->
@@ -404659,6 +405852,10 @@
 					1.08 1.08 2.31 5.47
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.08 1.08 2.31 5.47
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.08 1.08 2.31 5.47
 					<!--BW_String-->
@@ -405027,6 +406224,10 @@
 					4.4 4.8 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					4.4 4.8 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					4.4 4.8 0.000000 0.000000
 					<!--BW_String-->
@@ -405403,6 +406604,10 @@
 					2.4 2.4 0.33 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					2.4 2.4 0.33 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					2.4 2.4 0.33 0.000000
 					<!--BW_String-->
@@ -405835,6 +407040,10 @@
 					2.2 2.2 0.55 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					2.2 2.2 0.55 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					2.2 2.2 0.55 0.000000
 					<!--BW_String-->
@@ -406267,6 +407476,10 @@
 					1.9 1.9 0.31 0.6
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					1.9 1.9 0.31 0.6
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					1.9 1.9 0.31 0.6
 					<!--BW_String-->
@@ -406711,6 +407924,10 @@
 					1.6 1.6 0.28 0.46
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					1.6 1.6 0.28 0.46
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					1.6 1.6 0.28 0.46
 					<!--BW_String-->
@@ -407143,6 +408360,10 @@
 					2.2 2.2 1 4.3
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					2.2 2.2 1 4.3
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					2.2 2.2 1 4.3
 					<!--BW_String-->
@@ -407587,6 +408808,10 @@
 					2.2 2.2 0.58 0.84
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					2.2 2.2 0.58 0.84
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					2.2 2.2 0.58 0.84
 					<!--BW_String-->
@@ -408011,6 +409236,10 @@
 					2.1 2.1 0.75 0.74
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					2.1 2.1 0.75 0.74
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					2.1 2.1 0.75 0.74
 					<!--BW_String-->
@@ -408484,6 +409713,10 @@
 					1.44 1.44 -0.08 0.42
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.44 1.44 -0.08 0.42
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.44 1.44 -0.08 0.42
 					<!--BW_String-->
@@ -408930,6 +410163,10 @@
 					2.1 2.1 0.35 0.1
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					2.1 2.1 0.35 0.1
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					2.1 2.1 0.35 0.1
 					<!--BW_String-->
@@ -409358,6 +410595,10 @@
 					3 3 0.57 0.26
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					3 3 0.57 0.26
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					3 3 0.57 0.26
 					<!--BW_String-->
@@ -409831,6 +411072,10 @@
 					1.64 1.64 -0.08 0.42
 					<!--BW_String-->
 				</france:F18_Bat_Chatillon25t>
+				<france:F18_Bat_Chatillon25t_02>
+					1.64 1.64 -0.08 0.42
+					<!--BW_String-->
+				</france:F18_Bat_Chatillon25t_02>
 				<france:F18_Bat_Chatillon25t_cl>
 					1.64 1.64 -0.08 0.42
 					<!--BW_String-->
@@ -410223,6 +411468,10 @@
 					2.5 2.5 0.31 0.51
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					2.5 2.5 0.31 0.51
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					2.5 2.5 0.31 0.51
 					<!--BW_String-->
@@ -410644,6 +411893,10 @@
 					1.8 1.8 0.37 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					1.8 1.8 0.37 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					1.8 1.8 0.37 0.000000
 					<!--BW_String-->
@@ -411068,6 +412321,10 @@
 					3.4 3.4 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					3.4 3.4 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					3.4 3.4 0.000000 0.000000
 					<!--BW_String-->
@@ -411492,6 +412749,10 @@
 					3 2.9 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					3 2.9 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					3 2.9 0.000000 0.000000
 					<!--BW_String-->
@@ -411920,6 +413181,10 @@
 					3.1 3.1 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					3.1 3.1 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					3.1 3.1 0.000000 0.000000
 					<!--BW_String-->
@@ -412344,6 +413609,10 @@
 					2.7 2.8 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					2.7 2.8 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					2.7 2.8 0.000000 0.000000
 					<!--BW_String-->
@@ -412769,6 +414038,10 @@
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					1.8 1.8 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					1.8 1.8 0.000000 0.000000
 					<!--BW_String-->
@@ -413190,6 +414463,10 @@
 					2.2 2.2 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					2.2 2.2 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					2.2 2.2 0.000000 0.000000
 					<!--BW_String-->
@@ -413611,6 +414888,10 @@
 					2.4 2.4 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					2.4 2.4 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					2.4 2.4 0.000000 0.000000
 					<!--BW_String-->
@@ -414040,6 +415321,10 @@
 					1.9 1.9 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					1.9 1.9 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					1.9 1.9 0.000000 0.000000
 					<!--BW_String-->
@@ -414473,6 +415758,10 @@
 					1.5 1.5 0.000000 0.000000
 					<!--BW_String-->
 				</F18_Bat_Chatillon25t>
+				<F18_Bat_Chatillon25t_02>
+					1.5 1.5 0.000000 0.000000
+					<!--BW_String-->
+				</F18_Bat_Chatillon25t_02>
 				<F18_Bat_Chatillon25t_cl>
 					1.5 1.5 0.000000 0.000000
 					<!--BW_String-->
@@ -420426,54 +421715,6 @@
 				<offset>0.000000 0.000000</offset>
 			</tilingSettings>
 		</camouflage>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:camouflage/transparent</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<camouflage>
-			<description>#vehicle_customization:PortalTanks_camo/description</description>
-			<userString>#vehicle_customization:PortalTanks_camo/label</userString>
-			<id>31579</id>
-			<scales>
-				1.2 1 0.7
-				<!--BW_String-->
-			</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<emissionMap>vehicles/german/G00_Mausekonig_V01/Mausekonig_V01_hull_01_emission.dds</emissionMap>
-			<emissionPatternMap>vehicles/german/Camouflage/Smoldering_MT_PatternMap.dds</emissionPatternMap>
-			<texture>vehicles/german/G00_Mausekonig_V01/Mausekonig_V01_hull_01_AM.dds</texture>
-			<exclusionImpact>
-				0.35
-				<!--BW_String-->
-			</exclusionImpact>
-			<emissionAnimationSpeed>
-				0.2
-				<!--BW_String-->
-			</emissionAnimationSpeed>
-			<tilingSettings>
-				<type>relative</type>
-				<factor>1.000000 1.000000</factor>
-				<offset>0.000000 0.000000</offset>
-			</tilingSettings>
-			<tiling>
-				<germany:G00_Mausekonig_V01>1 1 0 0</germany:G00_Mausekonig_V01>
-			</tiling>
-		</camouflage>
-		<vehicleFilter>
-			<include>
-				<vehicles>germany:G00_Mausekonig_V01</vehicles>
-				<nations>germany</nations>
-			</include>
-		</vehicleFilter>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:camouflage/opaque</userString>
@@ -458308,147 +459549,6 @@
 		</camouflage>
 	</itemGroup>
 	<itemGroup>
-		<userString>#vehicle_customization:camouflage/transparent</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<camouflage>
-			<id>31619</id>
-			<description>#vehicle_customization:PortalTanks_camo/description</description>
-			<userString>#vehicle_customization:PortalTanks_camo/label</userString>
-			<scales>1 1 1</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<emissionMap>vehicles/poland/Pl17_DS_PZlnz_H/DS_PZlnz_H_guns_Emissive.dds</emissionMap>
-			<emissionPatternMap>vehicles/russian/Camouflage/ClanReward_02_Camo_2025_Pattern.dds</emissionPatternMap>
-			<exclusionImpact>
-				0.35
-				<!--BW_String-->
-			</exclusionImpact>
-			<emissionAnimationSpeed>
-				0.5
-				<!--BW_String-->
-			</emissionAnimationSpeed>
-			<forwardEmissionBrightness>5</forwardEmissionBrightness>
-			<deferredEmissionBrightness>5</deferredEmissionBrightness>
-			<tilingSettings>
-				<type>relative</type>
-				<factor>1.000000 1.000000</factor>
-				<offset>0.000000 0.000000</offset>
-			</tilingSettings>
-			<tiling>
-				<poland:Pl17_DS_PZlnz_H>1 1 0 0</poland:Pl17_DS_PZlnz_H>
-			</tiling>
-			<texture>vehicles/poland/Pl17_DS_PZlnz_H/DS_PZlnz_H_guns_Emissive.dds</texture>
-		</camouflage>
-		<vehicleFilter>
-			<include>
-				<vehicles>poland:Pl17_DS_PZlnz_H</vehicles>
-				<nations>poland</nations>
-			</include>
-		</vehicleFilter>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:camouflage/transparent</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<camouflage>
-			<id>31601</id>
-			<description>#vehicle_customization:PortalTanks_camo/description</description>
-			<userString>#vehicle_customization:PortalTanks_camo/label</userString>
-			<scales>1 1 1</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<emissionMap>vehicles/poland/Pl17_DS_PZlnz_H/DS_PZlnz_SH_hull_01_Emissive.dds</emissionMap>
-			<emissionPatternMap>vehicles/russian/Camouflage/ClanReward_02_Camo_2025_Pattern.dds</emissionPatternMap>
-			<exclusionImpact>
-				0.35
-				<!--BW_String-->
-			</exclusionImpact>
-			<emissionAnimationSpeed>
-				0.5
-				<!--BW_String-->
-			</emissionAnimationSpeed>
-			<deferredEmissionBrightness>5</deferredEmissionBrightness>
-			<tilingSettings>
-				<type>relative</type>
-				<factor>1.000000 1.000000</factor>
-				<offset>0.000000 0.000000</offset>
-			</tilingSettings>
-			<tiling>
-				<poland:Pl17_DS_PZlnz_H>1 1 0 0</poland:Pl17_DS_PZlnz_H>
-			</tiling>
-			<texture>vehicles/poland/Pl17_DS_PZlnz_H/DS_PZlnz_SH_hull_01_Emissive.dds</texture>
-			<forwardEmissionBrightness>5</forwardEmissionBrightness>
-		</camouflage>
-		<vehicleFilter>
-			<include>
-				<vehicles>poland:Pl17_DS_PZlnz_H</vehicles>
-				<nations>poland</nations>
-			</include>
-		</vehicleFilter>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:camouflage/transparent</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<camouflage>
-			<id>31606</id>
-			<description>#vehicle_customization:PortalTanks_camo/description</description>
-			<userString>#vehicle_customization:PortalTanks_camo/label</userString>
-			<scales>1 1 1</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<emissionMap>vehicles/poland/Pl17_DS_PZlnz_H/DS_PZlnz_SH_turret_01_Emissive.dds</emissionMap>
-			<emissionPatternMap>vehicles/russian/Camouflage/ClanReward_02_Camo_2025_Pattern.dds</emissionPatternMap>
-			<exclusionImpact>
-				0.35
-				<!--BW_String-->
-			</exclusionImpact>
-			<emissionAnimationSpeed>
-				0.5
-				<!--BW_String-->
-			</emissionAnimationSpeed>
-			<tilingSettings>
-				<type>relative</type>
-				<factor>1.000000 1.000000</factor>
-				<offset>0.000000 0.000000</offset>
-			</tilingSettings>
-			<tiling>
-				<poland:Pl17_DS_PZlnz_H>1 1 0 0</poland:Pl17_DS_PZlnz_H>
-			</tiling>
-			<texture>vehicles/poland/Pl17_DS_PZlnz_H/DS_PZlnz_SH_turret_01_Emissive.dds</texture>
-			<forwardEmissionBrightness>5</forwardEmissionBrightness>
-			<deferredEmissionBrightness>5</deferredEmissionBrightness>
-		</camouflage>
-		<vehicleFilter>
-			<include>
-				<vehicles>poland:Pl17_DS_PZlnz_H</vehicles>
-				<nations>poland</nations>
-			</include>
-		</vehicleFilter>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
-	</itemGroup>
-	<itemGroup>
 		<userString>#vehicle_customization:camouflage/opaque</userString>
 		<season>ALL</season>
 		<historical>1</historical>
@@ -472817,100 +473917,6 @@
 				<offset>0.000000 0.000000</offset>
 			</tilingSettings>
 		</camouflage>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:camouflage/transparent</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<camouflage>
-			<id>31602</id>
-			<description>#vehicle_customization:PortalTanks_camo/description</description>
-			<userString>#vehicle_customization:PortalTanks_camo/label</userString>
-			<scales>1 1 1</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<emissionMap>vehicles/british/GB107_Cavalier_H/Cavalier_H_hull_Emissive.dds</emissionMap>
-			<emissionPatternMap>vehicles/russian/Camouflage/ClanReward_02_Camo_2025_Pattern.dds</emissionPatternMap>
-			<exclusionImpact>
-				0.35
-				<!--BW_String-->
-			</exclusionImpact>
-			<emissionAnimationSpeed>
-				0.5
-				<!--BW_String-->
-			</emissionAnimationSpeed>
-			<tilingSettings>
-				<type>relative</type>
-				<factor>1.000000 1.000000</factor>
-				<offset>0.000000 0.000000</offset>
-			</tilingSettings>
-			<tiling>
-				<uk:GB107_Cavalier_H>1 1 0 0</uk:GB107_Cavalier_H>
-			</tiling>
-			<forwardEmissionBrightness>5</forwardEmissionBrightness>
-			<deferredEmissionBrightness>5</deferredEmissionBrightness>
-			<texture>vehicles/british/GB107_Cavalier_H/Cavalier_H_hull_Emissive.dds</texture>
-		</camouflage>
-		<vehicleFilter>
-			<include>
-				<vehicles>uk:GB107_Cavalier_H</vehicles>
-				<nations>uk</nations>
-			</include>
-		</vehicleFilter>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:camouflage/transparent</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<camouflage>
-			<id>31603</id>
-			<description>#vehicle_customization:PortalTanks_camo/description</description>
-			<userString>#vehicle_customization:PortalTanks_camo/label</userString>
-			<scales>1 1 1</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<emissionMap>vehicles/british/GB107_Cavalier_H/Cavalier_H_turret_Emissive.dds</emissionMap>
-			<emissionPatternMap>vehicles/russian/Camouflage/ClanReward_02_Camo_2025_Pattern.dds</emissionPatternMap>
-			<exclusionImpact>
-				0.35
-				<!--BW_String-->
-			</exclusionImpact>
-			<emissionAnimationSpeed>
-				0.5
-				<!--BW_String-->
-			</emissionAnimationSpeed>
-			<forwardEmissionBrightness>5</forwardEmissionBrightness>
-			<deferredEmissionBrightness>5</deferredEmissionBrightness>
-			<tilingSettings>
-				<type>relative</type>
-				<factor>1.000000 1.000000</factor>
-				<offset>0.000000 0.000000</offset>
-			</tilingSettings>
-			<tiling>
-				<uk:GB107_Cavalier_H>1 1 0 0</uk:GB107_Cavalier_H>
-			</tiling>
-			<texture>vehicles/british/GB107_Cavalier_H/Cavalier_H_turret_Emissive.dds</texture>
-		</camouflage>
-		<vehicleFilter>
-			<include>
-				<vehicles>uk:GB107_Cavalier_H</vehicles>
-				<nations>uk</nations>
-			</include>
-		</vehicleFilter>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:camouflage/opaque</userString>
@@ -513106,6 +514112,44 @@
 		<userString>#vehicle_customization:camouflage/opaque</userString>
 		<season>ALL</season>
 		<historical>1</historical>
+		<tags>notInShop styleOnly</tags>
+		<priceGroup>MT camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>ussr:R77_KV2</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>31623</id>
+			<texture>vehicles/russian/R77_KV2/_skins/R77_KV2_3Dst_02/KV2_3dst_02_hull_01_AM.dds</texture>
+			<description>#vehicle_customization:R77_KV2_3Dst_02_camo/description</description>
+			<userString>#vehicle_customization:R77_KV2_3Dst_02_camo/label</userString>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<emissionMap>vehicles/russian/R77_KV2/_skins/R77_KV2_3Dst_02/KV2_3dst_02_hull_01_emissive.dds</emissionMap>
+			<emissionPatternMap>vehicles/russian/Camouflage/RushIceBear_06_Camo_2024_MT_PatternMap.dds</emissionPatternMap>
+			<forwardEmissionBrightness>7</forwardEmissionBrightness>
+			<deferredEmissionBrightness>7</deferredEmissionBrightness>
+			<emissionAnimationSpeed>0</emissionAnimationSpeed>
+			<tiling>
+				<ussr:R77_KV2>1 1 0 0</ussr:R77_KV2>
+			</tiling>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
 		<priceGroup>MT camouflages 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
@@ -527048,100 +528092,6 @@
 				</offset>
 			</tilingSettings>
 		</camouflage>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:camouflage/transparent</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<camouflage>
-			<id>31593</id>
-			<description>#vehicle_customization:PortalTanks_camo/description</description>
-			<userString>#vehicle_customization:PortalTanks_camo/label</userString>
-			<scales>1 1 1</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<emissionMap>vehicles/russian/R46_KV-13_H/R46_KV-13_H_hull_01_Emissive.dds</emissionMap>
-			<emissionPatternMap>vehicles/russian/Camouflage/ClanReward_02_Camo_2025_Pattern.dds</emissionPatternMap>
-			<exclusionImpact>
-				0.35
-				<!--BW_String-->
-			</exclusionImpact>
-			<emissionAnimationSpeed>
-				0.5
-				<!--BW_String-->
-			</emissionAnimationSpeed>
-			<texture>vehicles/russian/R46_KV-13_H/R46_KV-13_H_hull_01_Emissive.dds</texture>
-			<deferredEmissionBrightness>5</deferredEmissionBrightness>
-			<forwardEmissionBrightness>5</forwardEmissionBrightness>
-			<tilingSettings>
-				<type>relative</type>
-				<factor>1.000000 1.000000</factor>
-				<offset>0.000000 0.000000</offset>
-			</tilingSettings>
-			<tiling>
-				<ussr:R46_KV-13_H>1 1 0 0</ussr:R46_KV-13_H>
-			</tiling>
-		</camouflage>
-		<vehicleFilter>
-			<include>
-				<vehicles>ussr:R46_KV-13_H</vehicles>
-				<nations>ussr</nations>
-			</include>
-		</vehicleFilter>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:camouflage/transparent</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<camouflage>
-			<id>31620</id>
-			<description>#vehicle_customization:PortalTanks_camo/description</description>
-			<userString>#vehicle_customization:PortalTanks_camo/label</userString>
-			<scales>1 1 1</scales>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<emissionMap>vehicles/russian/R46_KV-13_H/R46_KV-13_H_turret_01_Emissive.dds</emissionMap>
-			<emissionPatternMap>vehicles/russian/Camouflage/ClanReward_02_Camo_2025_Pattern.dds</emissionPatternMap>
-			<exclusionImpact>
-				0.35
-				<!--BW_String-->
-			</exclusionImpact>
-			<emissionAnimationSpeed>
-				0.5
-				<!--BW_String-->
-			</emissionAnimationSpeed>
-			<texture>vehicles/russian/R46_KV-13_H/R46_KV-13_H_turret_01_Emissive.dds</texture>
-			<deferredEmissionBrightness>5</deferredEmissionBrightness>
-			<forwardEmissionBrightness>5</forwardEmissionBrightness>
-			<tilingSettings>
-				<type>relative</type>
-				<factor>1.000000 1.000000</factor>
-				<offset>0.000000 0.000000</offset>
-			</tilingSettings>
-			<tiling>
-				<ussr:R46_KV-13_H>1 1 0 0</ussr:R46_KV-13_H>
-			</tiling>
-		</camouflage>
-		<vehicleFilter>
-			<include>
-				<vehicles>ussr:R46_KV-13_H</vehicles>
-				<nations>ussr</nations>
-			</include>
-		</vehicleFilter>
-		<priceGroup>MT camouflages 50g notInShop</priceGroup>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:camouflage/transparent</userString>

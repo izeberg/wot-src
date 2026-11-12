@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB146_Albion/normal/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/british/GB146_Albion/normal/lod3/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.544381 -0.472536 -0.010766</min>
+		<max>0.545450 0.851732 6.084647</max>
+	</visibilityBox>
+</root>

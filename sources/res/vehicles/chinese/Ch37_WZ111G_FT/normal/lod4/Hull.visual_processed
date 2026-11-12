@@ -103,8 +103,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>lod4_hull_01_hull_hull_Shape.vertices</vertices>
+			<primitive>lod4_hull_01_hull_hull_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -149,7 +149,7 @@
 						<Int>0</Int>
 					</property>
 				</material>
-				<groupOrigin>-0.014027 0.425838 0.000870</groupOrigin>
+				<groupOrigin>0.235105 0.425838 -0.032145</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -200,9 +200,9 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.881967 -0.624437 -3.730080</min>
-		<max>1.764776 2.212228 3.731819</max>
+		<min>-1.881967 -0.624437 -3.796110</min>
+		<max>2.263040 2.212228 3.731819</max>
 	</boundingBox>
-	<geometrySize>10504</geometrySize>
+	<geometrySize>10440</geometrySize>
 	<minUVDensity>0.001035</minUVDensity>
 </root>

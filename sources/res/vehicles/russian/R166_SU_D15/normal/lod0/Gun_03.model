@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>-0.381859 -0.425224 0.143750</min>
-		<max>0.381341 0.341874 1.882507</max>
+		<min>-0.486519 -0.425224 -0.195511</min>
+		<max>0.484681 0.401474 1.882507</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<parent>vehicles/russian/R166_SU_D15/normal/lod1/Gun_03</parent>

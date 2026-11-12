@@ -1,5 +1,7 @@
 package net.wg.gui.components.vehicleStatus
 {
+   import flash.display.Sprite;
+   import flash.events.Event;
    import flash.events.MouseEvent;
    import flash.text.TextField;
    import net.wg.data.constants.Directions;
@@ -36,6 +38,12 @@ package net.wg.gui.components.vehicleStatus
       private static const MESSAGE_Y:int = 38;
       
       private static const MESSAGE_Y_OFFSET:int = -6;
+      
+      private static const SEPARATOR_GAP:int = 8;
+      
+      private static const SEPARATOR_HEIGHT:int = 24;
+      
+      private static const DIFFICULTY_NO_ROLE_OFFSET_Y:int = 4;
        
       
       public var tankTypeIcon:TankTypeIco;
@@ -47,6 +55,10 @@ package net.wg.gui.components.vehicleStatus
       public var message:VehicleStatusMsg = null;
       
       public var roleMessage:VehicleStatusMsg = null;
+      
+      public var difficulty:VehicleDifficulty = null;
+      
+      public var difficultySeparator:Sprite = null;
       
       private var _data:VehicleStatusVO = null;
       
@@ -69,18 +81,30 @@ package net.wg.gui.components.vehicleStatus
          this.tankTypeIcon.mouseEnabled = this.tankTypeIcon.mouseChildren = false;
          this.roleMessage.addEventListener(MouseEvent.ROLL_OVER,this.onRoleMessageRollOverHandler);
          this.roleMessage.addEventListener(MouseEvent.ROLL_OUT,this.onRoleMessageRollOutHandler);
+         this.difficulty.addEventListener(Event.RESIZE,this.onDifficultyResizeHandler);
+         this.difficultySeparator.mouseEnabled = this.difficultySeparator.mouseChildren = false;
+         this.difficultySeparator.visible = false;
+         if(this.difficultySeparator.height > SEPARATOR_HEIGHT)
+         {
+            this.difficultySeparator.height = SEPARATOR_HEIGHT;
+         }
+         setChildIndex(this.difficultySeparator,numChildren - 1);
       }
       
       override protected function onDispose() : void
       {
          this.roleMessage.removeEventListener(MouseEvent.ROLL_OVER,this.onRoleMessageRollOverHandler);
          this.roleMessage.removeEventListener(MouseEvent.ROLL_OUT,this.onRoleMessageRollOutHandler);
+         this.difficulty.removeEventListener(Event.RESIZE,this.onDifficultyResizeHandler);
          this.roleMessage.dispose();
          this.roleMessage = null;
          this.message.dispose();
          this.message = null;
          this.tankTypeIcon.dispose();
          this.tankTypeIcon = null;
+         this.difficulty.dispose();
+         this.difficulty = null;
+         this.difficultySeparator = null;
          this.vehicleName = null;
          this.vehicleLevel = null;
          this._data = null;
@@ -130,6 +154,8 @@ package net.wg.gui.components.vehicleStatus
                   this.roleMessage.setMessage(_loc5_);
                   this.roleMessage.validateNow();
                }
+               this.difficulty.setDifficulty(this._data.difficulty);
+               this.difficulty.validateNow();
                invalidateSize();
             }
             if(isInvalid(InvalidationType.SIZE))
@@ -150,11 +176,14 @@ package net.wg.gui.components.vehicleStatus
                this.tankTypeIcon.x -= _loc10_;
                this.vehicleName.x -= _loc10_;
                _loc11_ = MESSAGE_Y;
-               if(this.roleMessage.visible)
+               if(this.roleMessage.visible || this.isDifficultyVisible)
                {
-                  this.roleMessage.x = -this.roleMessage.width >> 1;
-                  this.roleMessage.y = _loc11_;
+                  this.layoutRoleAndDifficulty(_loc11_);
                   _loc11_ += MESSAGE_Y + MESSAGE_Y_OFFSET;
+               }
+               else
+               {
+                  this.difficultySeparator.visible = false;
                }
                if(this.message.visible)
                {
@@ -172,7 +201,7 @@ package net.wg.gui.components.vehicleStatus
          {
             this._vehicleStateHelpLayoutId = name + HELP_LAYOUT_ID_DELIMITER + Math.random();
          }
-         var _loc1_:Boolean = this.message.visible || this.roleMessage.visible;
+         var _loc1_:Boolean = this.message.visible || this.roleMessage.visible || this.isDifficultyVisible;
          var _loc2_:HelpLayoutVO = new HelpLayoutVO();
          _loc2_.x = -HELP_LAYOUT_WIDTH >> 1;
          _loc2_.y = Boolean(y + _loc1_) ? int(HELP_LAYOUT_OFFSET_Y) : int(HELP_LAYOUT_NO_BG_OFFSET_Y);
@@ -196,14 +225,18 @@ package net.wg.gui.components.vehicleStatus
       
       override public function get height() : Number
       {
-         var _loc1_:int = this.vehicleName.height;
+         var _loc1_:Number = this.vehicleName.height;
+         if(this.roleMessage.visible)
+         {
+            _loc1_ = Math.max(_loc1_,this.roleMessage.y + this.roleMessage.height);
+         }
+         if(this.isDifficultyVisible)
+         {
+            _loc1_ = Math.max(_loc1_,this.difficulty.y + this.difficulty.height);
+         }
          if(this.message.visible)
          {
-            _loc1_ = this.message.y + this.message.height;
-         }
-         else if(this.roleMessage.visible)
-         {
-            _loc1_ = this.roleMessage.y + this.roleMessage.height;
+            _loc1_ = Math.max(_loc1_,this.message.y + this.message.height);
          }
          return _loc1_;
       }
@@ -216,6 +249,61 @@ package net.wg.gui.components.vehicleStatus
       public function get statusStartY() : int
       {
          return this.y + this.message.y;
+      }
+      
+      private function get isDifficultyVisible() : Boolean
+      {
+         return this.difficulty.visible;
+      }
+      
+      private function layoutRoleAndDifficulty(param1:int) : void
+      {
+         var _loc2_:Number = NaN;
+         var _loc4_:Number = NaN;
+         this.difficultySeparator.visible = this.roleMessage.visible && this.isDifficultyVisible;
+         _loc2_ = !!this.roleMessage.visible ? Number(this.getRoleTextRight()) : Number(0);
+         var _loc3_:Number = _loc2_;
+         if(this.isDifficultyVisible)
+         {
+            _loc3_ += this.difficulty.width;
+         }
+         if(this.difficultySeparator.visible)
+         {
+            _loc3_ += this.difficultySeparator.width + SEPARATOR_GAP * 2;
+         }
+         _loc4_ = -_loc3_ >> 1;
+         if(this.roleMessage.visible)
+         {
+            this.roleMessage.x = _loc4_;
+            this.roleMessage.y = param1;
+            _loc4_ += _loc2_;
+         }
+         if(this.difficultySeparator.visible)
+         {
+            this.difficultySeparator.x = _loc4_ + SEPARATOR_GAP;
+            _loc4_ += this.difficultySeparator.width + SEPARATOR_GAP * 2;
+         }
+         if(this.isDifficultyVisible)
+         {
+            this.difficulty.x = _loc4_;
+            this.difficulty.y = param1 + (!!this.roleMessage.visible ? this.roleMessage.textField.y : 0);
+            this.difficulty.alignLabelTo(!!this.roleMessage.visible ? this.roleMessage.textField : null);
+         }
+         if(this.difficultySeparator.visible)
+         {
+            this.difficultySeparator.y = this.difficulty.y + (Math.max(this.roleMessage.textField.height,this.difficulty.height) - this.difficultySeparator.height >> 1);
+         }
+      }
+      
+      private function getRoleTextRight() : Number
+      {
+         var _loc1_:TextField = this.roleMessage.textField;
+         return _loc1_.x + (_loc1_.width + _loc1_.textWidth) / 2;
+      }
+      
+      private function onDifficultyResizeHandler(param1:Event) : void
+      {
+         invalidateSize();
       }
       
       private function onRoleMessageRollOverHandler(param1:MouseEvent) : void

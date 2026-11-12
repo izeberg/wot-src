@@ -20,9 +20,6 @@
 		<Turret_1_AMX40>
 			<id>17</id>
 		</Turret_1_AMX40>
-		<Turret_1_AMX40_portal>
-			<id>40000</id>
-		</Turret_1_AMX40_portal>
 		<Turret_1_AMX50_Foch>
 			<id>58</id>
 		</Turret_1_AMX50_Foch>
@@ -125,6 +122,9 @@
 		<Turret_1_Bat_Chatillon25t>
 			<id>21</id>
 		</Turret_1_Bat_Chatillon25t>
+		<Turret_1_Bat_Chatillon25t_02>
+			<id>31024</id>
+		</Turret_1_Bat_Chatillon25t_02>
 		<Turret_1_Bat_Chatillon25t_7x7>
 			<id>31007</id>
 		</Turret_1_Bat_Chatillon25t_7x7>
@@ -305,9 +305,6 @@
 		<Turret_1_F97_ELC_EVEN_90_FL>
 			<id>141</id>
 		</Turret_1_F97_ELC_EVEN_90_FL>
-		<Turret_1_F97_ELC_EVEN_90_H>
-			<id>20001</id>
-		</Turret_1_F97_ELC_EVEN_90_H>
 		<Turret_1_F97_ELC_EVEN_90_SH>
 			<id>10000</id>
 		</Turret_1_F97_ELC_EVEN_90_SH>
@@ -410,9 +407,6 @@
 		<Turret_2_F109_AMD_Panhard_178B>
 			<id>132</id>
 		</Turret_2_F109_AMD_Panhard_178B>
-		<Turret_2_F62_ELC_AMX_H>
-			<id>20002</id>
-		</Turret_2_F62_ELC_AMX_H>
 		<Turret_2_F62_ELC_AMX_SH>
 			<id>10001</id>
 		</Turret_2_F62_ELC_AMX_SH>
@@ -443,9 +437,6 @@
 		<Turret_2_Somua_S35>
 			<id>68</id>
 		</Turret_2_Somua_S35>
-		<Turret_3_F87_Bat-Chatillon12t_H>
-			<id>20003</id>
-		</Turret_3_F87_Bat-Chatillon12t_H>
 		<Turret_3_F87_Bat-Chatillon12t_SH>
 			<id>10002</id>
 		</Turret_3_F87_Bat-Chatillon12t_SH>

@@ -50,6 +50,113 @@ class PyGuiApplication(pybind11_object):
 	windowsManager = property(lambda self: None)
 
 
+class PyModifiersEvent(pybind11_object):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyModifiersEvent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
+class PyMouseButton(pybind11_object):
+	BACK = PyMouseButton.BACK
+	FORWARD = PyMouseButton.FORWARD
+	LEFT = PyMouseButton.LEFT
+	MIDDLE = PyMouseButton.MIDDLE
+	NONE = PyMouseButton.NONE
+	RIGHT = PyMouseButton.RIGHT
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = u'Members:\n\n  FORWARD\n\n  MIDDLE\n\n  NONE\n\n  RIGHT\n\n  BACK\n\n  LEFT'
+	__entries = {u'FORWARD': (PyMouseButton.FORWARD, None), u'MIDDLE': (PyMouseButton.MIDDLE, None), u'NONE': (PyMouseButton.NONE, None), u'RIGHT': (PyMouseButton.RIGHT, None), u'BACK': (PyMouseButton.BACK, None), u'LEFT': (PyMouseButton.LEFT, None)}
+	def __eq__(self, *args, **kwargs): pass
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __getstate__(self, *args, **kwargs): pass
+	def __hash__(self, *args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __int__(self, *args, **kwargs): pass
+	def __long__(self, *args, **kwargs): pass
+	__members__ = {u'FORWARD': PyMouseButton.FORWARD, u'MIDDLE': PyMouseButton.MIDDLE, u'NONE': PyMouseButton.NONE, u'RIGHT': PyMouseButton.RIGHT, u'BACK': PyMouseButton.BACK, u'LEFT': PyMouseButton.LEFT}
+	__module__ = '_wulf'
+	def __ne__(self, *args, **kwargs): pass
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyMouseButton'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(self, *args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __setstate__(self, *args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	name = property(lambda self: None)
+
+
+class PyMouseEvent(PyModifiersEvent):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyMouseEvent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
+class PyMouseEventType(pybind11_object):
+	MOUSE_DOWN = PyMouseEventType.MOUSE_DOWN
+	MOUSE_ENTER = PyMouseEventType.MOUSE_ENTER
+	MOUSE_LEAVE = PyMouseEventType.MOUSE_LEAVE
+	MOUSE_MOVE = PyMouseEventType.MOUSE_MOVE
+	MOUSE_UP = PyMouseEventType.MOUSE_UP
+	MOUSE_WHEEL = PyMouseEventType.MOUSE_WHEEL
+	UNDEFINED = PyMouseEventType.UNDEFINED
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = u'Members:\n\n  MOUSE_DOWN\n\n  MOUSE_UP\n\n  UNDEFINED\n\n  MOUSE_MOVE\n\n  MOUSE_LEAVE\n\n  MOUSE_WHEEL\n\n  MOUSE_ENTER'
+	__entries = {u'MOUSE_DOWN': (PyMouseEventType.MOUSE_DOWN, None), u'MOUSE_UP': (PyMouseEventType.MOUSE_UP, None), u'UNDEFINED': (PyMouseEventType.UNDEFINED, None), u'MOUSE_MOVE': (PyMouseEventType.MOUSE_MOVE, None), u'MOUSE_LEAVE': (PyMouseEventType.MOUSE_LEAVE, None), u'MOUSE_WHEEL': (PyMouseEventType.MOUSE_WHEEL, None), u'MOUSE_ENTER': (PyMouseEventType.MOUSE_ENTER, None)}
+	def __eq__(self, *args, **kwargs): pass
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __getstate__(self, *args, **kwargs): pass
+	def __hash__(self, *args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __int__(self, *args, **kwargs): pass
+	def __long__(self, *args, **kwargs): pass
+	__members__ = {u'MOUSE_DOWN': PyMouseEventType.MOUSE_DOWN, u'MOUSE_UP': PyMouseEventType.MOUSE_UP, u'MOUSE_ENTER': PyMouseEventType.MOUSE_ENTER, u'MOUSE_MOVE': PyMouseEventType.MOUSE_MOVE, u'MOUSE_WHEEL': PyMouseEventType.MOUSE_WHEEL, u'MOUSE_LEAVE': PyMouseEventType.MOUSE_LEAVE, u'UNDEFINED': PyMouseEventType.UNDEFINED}
+	__module__ = '_wulf'
+	def __ne__(self, *args, **kwargs): pass
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyMouseEventType'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(self, *args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __setstate__(self, *args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	name = property(lambda self: None)
+
+
 class PyObjectEntity(pybind11_object):
 	def __delattr__(*args, **kwargs): pass
 	__doc__ = None
@@ -463,6 +570,7 @@ class PyObjectWindow(PyObjectEntity):
 	def isModal(self, *args, **kwargs): pass
 	layer = property(lambda self: None)
 	def load(self, *args, **kwargs): pass
+	name = property(lambda self: None)
 	object = property(lambda self: None)
 	parent = property(lambda self: None)
 	def reload(self, *args, **kwargs): pass

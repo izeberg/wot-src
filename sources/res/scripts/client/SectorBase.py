@@ -24,16 +24,32 @@ class _SectorBaseSettingsCache(object):
         self.flagBackgroundTex = settings.readString('flagBackgroundTex', '')
         self.flagScale = settings.readVector3('flagScale', Vector3())
         self.flagNodeAliasName = settings.readString('flagNodeAliasName', '')
+        self.flagEffectPrefab = self.__getFlagEffectPrefab()
+
+    def __getFlagEffectPrefab(self):
+        controlPointConfig = self.__getControlPointConfig()
+        if controlPointConfig:
+            return controlPointConfig.effectPrefab
+        return ''
 
     def __getFlagModels(self, settings):
-        controlPointConfig = self._lobbyContext.getServerSettings().controlPointConfig
-        if controlPointConfig.isEnabled:
+        controlPointConfig = self.__getControlPointConfig()
+        flagPath = ''
+        flagstaffPath = ''
+        if controlPointConfig:
             flagPath = controlPointConfig.flagPath
             flagstaffPath = controlPointConfig.flagstaffPath
+        flagPath = flagPath if flagPath else settings.readString('flagModelName', '')
+        flagstaffPath = flagstaffPath if flagstaffPath else settings.readString('flagstaffModelName', '')
+        return (
+         flagPath, flagstaffPath)
+
+    def __getControlPointConfig(self):
+        config = self._lobbyContext.getServerSettings().controlPointConfig
+        if config.isEnabled:
+            return config
         else:
-            flagPath = settings.readString('flagModelName', '')
-            flagstaffPath = settings.readString('flagstaffModelName', '')
-        return (flagPath, flagstaffPath)
+            return
 
 
 ENVIRONMENT_EFFECTS_CONFIG_FILE = 'scripts/dynamic_objects.xml'
@@ -95,7 +111,7 @@ class SectorBase(BigWorld.Entity):
         if self.__isCapturedOnStart != self.isCaptured:
             self.set_isCaptured(self.__isCapturedOnStart)
         teamParams = self.__getTeamParams()
-        flagSettings = FlagSettings(flagCompounModel=prereqs[_g_sectorBaseSettings.flagStaffModelName], flagAlias=_g_sectorBaseSettings.flagNodeAliasName, flagAnim=prereqs[_g_sectorBaseSettings.flagAnim], flagBackgroundTex=_g_sectorBaseSettings.flagBackgroundTex, spaceID=self.spaceID)
+        flagSettings = FlagSettings(flagCompounModel=prereqs[_g_sectorBaseSettings.flagStaffModelName], flagAlias=_g_sectorBaseSettings.flagNodeAliasName, flagAnim=prereqs[_g_sectorBaseSettings.flagAnim], flagBackgroundTex=_g_sectorBaseSettings.flagBackgroundTex, spaceID=self.spaceID, flagEffectPrefab=_g_sectorBaseSettings.flagEffectPrefab, teamId=self.team, baseId=self.baseID)
         self.__flagModel.setupFlag(self.position, flagSettings, teamParams[0])
         self.__terrainSelectedArea = BigWorld.PyTerrainSelectedArea()
         self.__terrainSelectedArea.setup(_g_sectorBaseSettings.radiusModel, Vector2(self.radius * 2.0, self.radius * 2.0), self._OVER_TERRAIN_HEIGHT, teamParams[0])

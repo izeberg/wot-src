@@ -10,6 +10,7 @@
 				<inactivate>HangarButtonWasClicked</inactivate>
 				<inactivate>TankCarouselOnScene</inactivate>
 				<inactivate>TuningBtnOnScene</inactivate>
+				<run-trigger>MissionsTabValidationTrigger</run-trigger>
 			</post-effects>
 			<runtime-effects>
 				<show-hint>
@@ -204,6 +205,14 @@
 				<scaleform>hangar</scaleform>
 				<wulf>R.views.lobby.customization.CustomizationMainView</wulf>
 			</excluded-views>
+			<on-effects>
+				<refuse-training/>
+			</on-effects>
+		</trigger>
+		<trigger>
+			MissionsTabValidationTrigger
+			<type>missions-tab-changed</type>
+			<alias>BattleMattersMissionView</alias>
 			<on-effects>
 				<refuse-training/>
 			</on-effects>

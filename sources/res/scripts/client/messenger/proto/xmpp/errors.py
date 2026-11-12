@@ -1,10 +1,12 @@
 from constants import NOVICE_RESTRICTIONS_BAN_TYPE
 from gui.Scaleform.locale.MESSENGER import MESSENGER as I18N_MESSENGER
+from gui.impl import backport
+from gui.impl.gen import R
 from helpers import i18n, time_utils
 from messenger.m_constants import CLIENT_ACTION_ID, CLIENT_ERROR_ID
 from messenger.proto.interfaces import IChatError
 from messenger.proto import shared_errors
-from messenger.proto.shared_errors import ClientActionError, ChatBanError, makeNoviceChatBanErrorShort, makeChatBanError
+from messenger.proto.shared_errors import ClientActionError, ChatBanError, makeChatBanError
 from messenger.proto.xmpp.extensions.error import StanzaErrorExtension, ProjectErrorExtension, DEF_STANZA_ERROR_CONDITION
 from messenger.proto.xmpp.extensions.shared_handlers import IQHandler, ProxyHandler
 from messenger.proto.xmpp import xmpp_constants
@@ -152,7 +154,7 @@ class _ChatBannedError(ChatBanError):
 
     def getMessage(self):
         if self._banType == NOVICE_RESTRICTIONS_BAN_TYPE:
-            msg = makeNoviceChatBanErrorShort()
+            msg = backport.text(R.strings.chat.errors.novicerestrictions())
         else:
             msg = makeChatBanError(self._endTime, self._reason)
         return msg

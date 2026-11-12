@@ -11,6 +11,7 @@ from hangar_camera_manager import HangarCameraManager
 from c11n_logic_manager import C11nLogicManager
 from view_camera_sync import ViewCameraSyncManager, ViewCameraLinksManager
 from marker_component import LobbyGFMarkersManager
+from view_components import ViewTextureControlManager
 
 @registerRule
 class SelectionRule(Rule):
@@ -35,6 +36,10 @@ class SelectionRule(Rule):
 
     @registerManager(ClientSelectableComponentsManager)
     def reg5(self):
+        return
+
+    @registerManager(ViewTextureControlManager)
+    def reg6(self):
         return
 
 

@@ -1304,88 +1304,64 @@ class _OpenTradingCaravanRefill(_OpenShopSalesEventMainView):
         return ('showTradingCaravanRefill', )
 
 
-class _OpenArmoryYardMain(NavigationDisabledActionHandler):
-    __ctrl = dependency.descriptor(IArmoryYardController)
-    __rerollCtrl = dependency.descriptor(IArmoryYardRerollController)
+class _ArmoryYardBaseActionHandler(NavigationDisabledActionHandler):
+    _ctrl = dependency.descriptor(IArmoryYardController)
+    _rerollCtrl = dependency.descriptor(IArmoryYardRerollController)
 
     @classmethod
     def getNotType(cls):
         return NOTIFICATION_TYPE.MESSAGE
+
+    def doAction(self, model, entityID, action):
+        rerollContext = self._rerollCtrl.getRerollContext()
+        if rerollContext is not None:
+            self._ctrl.goToArmoryYard(tabId=ArmoryTabId.QUESTS, ctx=rerollContext)
+        else:
+            self._goToArmoryYard()
+        return
+
+    def _goToArmoryYard(self):
+        raise NotImplementedError()
+
+
+class _OpenArmoryYardMain(_ArmoryYardBaseActionHandler):
 
     @classmethod
     def getActions(cls):
         return ('openArmoryYardMain', )
 
-    def doAction(self, model, entityID, action):
-        rerollContext = self.__rerollCtrl.getRerollContext()
-        if rerollContext is not None:
-            self.__ctrl.goToArmoryYard(tabId=ArmoryTabId.QUESTS, ctx=rerollContext)
-        else:
-            self.__ctrl.goToArmoryYard()
-        return
+    def _goToArmoryYard(self):
+        self._ctrl.goToArmoryYard()
 
 
-class _OpenArmoryYardBuyView(NavigationDisabledActionHandler):
-    __ctrl = dependency.descriptor(IArmoryYardController)
-    __rerollCtrl = dependency.descriptor(IArmoryYardRerollController)
-
-    @classmethod
-    def getNotType(cls):
-        return NOTIFICATION_TYPE.MESSAGE
+class _OpenArmoryYardBuyView(_ArmoryYardBaseActionHandler):
 
     @classmethod
     def getActions(cls):
         return ('openArmoryYardBuy', )
 
-    def doAction(self, model, entityID, action):
-        rerollContext = self.__rerollCtrl.getRerollContext()
-        if rerollContext is not None:
-            self.__ctrl.goToArmoryYard(tabId=ArmoryTabId.QUESTS, ctx=rerollContext)
-        else:
-            self.__ctrl.goToArmoryYard(ctx={'loadBuyView': True})
-        return
+    def _goToArmoryYard(self):
+        self._ctrl.goToArmoryYard(ctx={'loadBuyView': True})
 
 
-class _OpenArmoryYardQuest(NavigationDisabledActionHandler):
-    __ctrl = dependency.descriptor(IArmoryYardController)
-    __rerollCtrl = dependency.descriptor(IArmoryYardRerollController)
-
-    @classmethod
-    def getNotType(cls):
-        return NOTIFICATION_TYPE.MESSAGE
+class _OpenArmoryYardQuest(_ArmoryYardBaseActionHandler):
 
     @classmethod
     def getActions(cls):
         return ('openArmoryYardQuest', )
 
-    def doAction(self, model, entityID, action):
-        rerollContext = self.__rerollCtrl.getRerollContext()
-        if rerollContext is not None:
-            self.__ctrl.goToArmoryYard(tabId=ArmoryTabId.QUESTS, ctx=rerollContext)
-        else:
-            self.__ctrl.goToArmoryYardQuests()
-        return
+    def _goToArmoryYard(self):
+        self._ctrl.goToArmoryYardQuests()
 
 
-class _OpenArmoryYardRerollQuest(NavigationDisabledActionHandler):
-    __ctrl = dependency.descriptor(IArmoryYardController)
-    __rerollCtrl = dependency.descriptor(IArmoryYardRerollController)
-
-    @classmethod
-    def getNotType(cls):
-        return NOTIFICATION_TYPE.MESSAGE
+class _OpenArmoryYardRerollQuest(_ArmoryYardBaseActionHandler):
 
     @classmethod
     def getActions(cls):
         return ('openArmoryYardRerollQuest', )
 
-    def doAction(self, model, entityID, action):
-        rerollContext = self.__rerollCtrl.getRerollContext()
-        if rerollContext is not None:
-            self.__ctrl.goToArmoryYard(tabId=ArmoryTabId.QUESTS, ctx=rerollContext)
-        else:
-            self.__ctrl.goToArmoryYard(tabId=ArmoryTabId.PROGRESS)
-        return
+    def _goToArmoryYard(self):
+        self._ctrl.goToArmoryYard(tabId=ArmoryTabId.PROGRESS)
 
 
 class _OpenWotPlusIntroView(ActionHandler):

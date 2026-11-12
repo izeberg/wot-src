@@ -8,6 +8,8 @@ package net.wg.gui.lobby.hangar.eventEntryPoint
    import net.wg.infrastructure.base.meta.IEventEntryPointsContainerMeta;
    import net.wg.infrastructure.base.meta.impl.EventEntryPointsContainerMeta;
    import net.wg.infrastructure.events.LifeCycleEvent;
+   import net.wg.infrastructure.interfaces.IManagedContent;
+   import net.wg.utils.IFocusHandler;
    import net.wg.utils.IStageSizeDependComponent;
    import net.wg.utils.StageSizeBoundaries;
    import net.wg.utils.helpLayout.HelpLayoutVO;
@@ -197,12 +199,26 @@ package net.wg.gui.lobby.hangar.eventEntryPoint
       
       private function removeEntriesFromContainer() : void
       {
-         var _loc1_:EntryPoint = null;
-         for each(_loc1_ in this._entryByLinkageMap)
+         var _loc2_:EntryPoint = null;
+         var _loc3_:IManagedContent = null;
+         var _loc1_:IFocusHandler = App.utils.focusHandler;
+         if(_loc1_.hasFocusInside(this))
          {
-            if(_loc1_.entryPointDO)
+            _loc3_ = parent as IManagedContent;
+            if(_loc3_)
             {
-               removeChild(_loc1_.entryPointDO);
+               _loc1_.setModalFocus(_loc3_);
+            }
+            else
+            {
+               App.utils.asserter.assert(false,"parent must be hangar");
+            }
+         }
+         for each(_loc2_ in this._entryByLinkageMap)
+         {
+            if(_loc2_.entryPointDO)
+            {
+               removeChild(_loc2_.entryPointDO);
             }
          }
       }

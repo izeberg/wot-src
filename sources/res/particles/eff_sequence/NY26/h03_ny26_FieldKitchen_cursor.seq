@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>4.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>snowflakes_trail_01</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h03_ny26_snowflakes.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.937634 2.000000 10.584549</value>
+				<inTangent>-133.093719 -0.000000 -3.581991</inTangent>
+				<outTangent>-17.395546 -0.000000 -4.862830</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>-5.677902 2.000000 0.316311</value>
+				<inTangent>-0.226757 -0.000000 -11.178880</inTangent>
+				<outTangent>-0.226757 -0.000000 -11.178880</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.441364 2.000000 -9.099268</value>
+				<inTangent>10.547879 -0.000000 -1.497926</inTangent>
+				<outTangent>10.547879 -0.000000 -1.497926</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>6.760139 2.000000 1.045767</value>
+				<inTangent>-0.041758 -0.000000 16.570301</inTangent>
+				<outTangent>-0.041758 -0.000000 16.570301</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.937634 2.000000 10.584500</value>
+				<inTangent>-5.822507 0.000004 0.167957</inTangent>
+				<outTangent>-5.822507 0.000004 0.167957</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>7.531240</inTangent>
+				<outTangent>7.531240</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.012196</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>65795</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.666667</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>0.006573</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-8.042504</inTangent>
+				<outTangent>-8.042504</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>particleSize</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

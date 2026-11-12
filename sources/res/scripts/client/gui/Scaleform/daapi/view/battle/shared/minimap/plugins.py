@@ -99,7 +99,6 @@ class PersonalEntriesPlugin(common.SimplePlugin, IArenaVehiclesController):
             ctrl.onPostMortemSwitched += self.__onPostMortemSwitched
             ctrl.onVehicleStateUpdated += self._onVehicleStateUpdated
             ctrl.onRespawnBaseMoving += self.__onRespawnBaseMoving
-            ctrl.onVehiclePossessed += self.__onVehiclePossessed
         ctrl = self.sessionProvider.shared.feedback
         if ctrl is not None:
             ctrl.onMinimapFeedbackReceived += self.__onMinimapFeedbackReceived
@@ -118,7 +117,6 @@ class PersonalEntriesPlugin(common.SimplePlugin, IArenaVehiclesController):
             ctrl.onPostMortemSwitched -= self.__onPostMortemSwitched
             ctrl.onVehicleStateUpdated -= self._onVehicleStateUpdated
             ctrl.onRespawnBaseMoving -= self.__onRespawnBaseMoving
-            ctrl.onVehiclePossessed -= self.__onVehiclePossessed
         ctrl = self.sessionProvider.shared.feedback
         if ctrl is not None:
             ctrl.onMinimapFeedbackReceived -= self.__onMinimapFeedbackReceived
@@ -161,9 +159,6 @@ class PersonalEntriesPlugin(common.SimplePlugin, IArenaVehiclesController):
     def __getFlameDistance():
         return BigWorld.player().getVehicleDescriptor().shot.maxDistance
 
-    def __onVehiclePossessed(self):
-        self._invalidateMarkup(True)
-
     def initControlMode(self, mode, available):
         super(PersonalEntriesPlugin, self).initControlMode(mode, available)
         self.__cameraIDs.clear()
@@ -179,10 +174,15 @@ class PersonalEntriesPlugin(common.SimplePlugin, IArenaVehiclesController):
 
     def updateControlMode(self, mode, vehicleID):
         super(PersonalEntriesPlugin, self).updateControlMode(mode, vehicleID)
+        if mode == _CTRL_MODE.POSTMORTEM and vehicleID != self.__killerVehicleID:
+            killer = BigWorld.entities.get(self.__killerVehicleID)
+            if killer is None:
+                self.__killerVehicleID = 0
         self.__updateCameraEntries()
         self.__updateViewPointEntry(vehicleID)
         self._updateDeadPointEntry()
         self._invalidateMarkup()
+        return
 
     def clearCamera(self):
         if self.__currentCameraIDs:

@@ -162,7 +162,7 @@ class _ProgressionTabPresenter(object):
         else:
             if self.__state.isAnimation:
                 self.__onSkipAnimation()
-            if self.__armoryYardCtrl.isStarterPackAvailable() and not self.__armoryYardCtrl.isPostProgressionState:
+            if self.__armoryYardCtrl.isStarterPackAvailable():
                 showArmoryYardBundlesWindow(parent=self.__parent)
             else:
                 showArmoryYardBuyWindow(parent=self.__parent, onLoadedCallback=lambda _=None: self.__onBuyWindowLoadStateChange(True), onClosedCallback=lambda _=None: self.__onCloseBuyWindow())

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>2.500000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>magic_sparkle</name>
+		<type>particle</type>
+		<resource>particles/environment/hangar/h03_ny25_snowflakes.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>3.415928 0.122246 4.061771</value>
+				<inTangent>38.106079 4.664728 -17.448891</inTangent>
+				<outTangent>38.106079 4.664728 -17.448891</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.133333</startTime>
+				<value>4.914162 0.768574 -2.862370</value>
+				<inTangent>-6.918231 1.186255 -42.064884</inTangent>
+				<outTangent>-6.015242 1.186255 -48.883980</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.383333</startTime>
+				<value>-6.642483 3.151676 -0.816189</value>
+				<inTangent>15.394505 5.683271 53.778862</inTangent>
+				<outTangent>15.394505 5.683271 53.778862</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.553948</startTime>
+				<value>0.659676 3.558296 5.005729</value>
+				<inTangent>58.325676 8.302588 3.817646</inTangent>
+				<outTangent>58.325676 8.302588 3.817646</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.750000</startTime>
+				<value>4.713772 5.647226 -1.929771</value>
+				<inTangent>-8.390744 8.601425 -22.082905</inTangent>
+				<outTangent>-8.390744 8.601425 -22.082905</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.083333</startTime>
+				<value>-4.215073 7.719994 0.533669</value>
+				<inTangent>-10.723857 8.281138 35.280247</inTangent>
+				<outTangent>-10.723857 8.281138 35.280247</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>2.270031 8.389905 1.293247</value>
+				<inTangent>0.434547 10.779633 -77.958214</inTangent>
+				<outTangent>0.434547 10.779633 -72.811562</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.850000</startTime>
+				<value>-3.193821 12.623892 1.475475</value>
+				<inTangent>8.481957 5.976985 21.520016</inTangent>
+				<outTangent>8.481957 5.976985 21.520016</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.033334</startTime>
+				<value>2.270031 12.889736 3.762619</value>
+				<inTangent>18.352951 4.917911 -10.586906</inTangent>
+				<outTangent>18.352951 4.917911 -10.586906</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.166667</startTime>
+				<value>3.190453 14.007835 -0.723915</value>
+				<inTangent>-10.216022 16.945936 -32.691860</inTangent>
+				<outTangent>-40.452435 16.945936 -60.273132</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.300000</startTime>
+				<value>-1.374004 16.525764 -1.033138</value>
+				<inTangent>7.436245 15.441874 27.989431</inTangent>
+				<outTangent>7.436245 15.441874 27.989431</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.425385</startTime>
+				<value>-0.344559 18.325552 0.916142</value>
+				<inTangent>17.024445 20.802078 -0.554691</inTangent>
+				<outTangent>17.024445 20.802078 -0.554691</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>1.583389 20.358816 -0.326626</value>
+				<inTangent>25.838615 27.250072 -16.655737</inTangent>
+				<outTangent>25.838615 27.250072 -16.655737</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

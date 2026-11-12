@@ -23,6 +23,7 @@ class StatTrackNumberComponent(object):
 class StatTrackComponentManager(CGF.ComponentManager):
     _MAX_DIGIT = '9'
     _DARK_ZERO = '*'
+    _NO_INFO_VALUE = -1
 
     def __init__(self, *args):
         super(StatTrackComponentManager, self).__init__(*args)
@@ -48,11 +49,15 @@ class StatTrackComponentManager(CGF.ComponentManager):
     @onAddedQuery(StatTrackNumberComponent, CGF.GameObject)
     def onAdded(self, statTrackComponent, gameObject):
         vehicleID = self.__getVehicleID(gameObject)
-        counterValue = self.__getFragsCount(vehicleID)
-        counterValue = STAT_TRACK_PROHIBITED_VALUES.get(counterValue, counterValue)
-        counterValue = self.__formatValue(counterValue, statTrackComponent.digitNumber)
-        self.__updateComponentCounter(statTrackComponent, counterValue)
-        self.__vehWithStatTrack[vehicleID].add(statTrackComponent)
+        if vehicleID is None:
+            return
+        else:
+            counterValue = self.__getFragsCount(vehicleID)
+            counterValue = STAT_TRACK_PROHIBITED_VALUES.get(counterValue, counterValue)
+            counterValue = self.__formatValue(counterValue, statTrackComponent.digitNumber)
+            self.__updateComponentCounter(statTrackComponent, counterValue)
+            self.__vehWithStatTrack[vehicleID].add(statTrackComponent)
+            return
 
     @onRemovedQuery(StatTrackNumberComponent, CGF.GameObject)
     def onRemoved(self, statTrackComponent, gameObject):
@@ -92,7 +97,7 @@ class StatTrackComponentManager(CGF.ComponentManager):
         return counterValue
 
     def __formatValue(self, counterValue, digitNumber):
-        if counterValue == -1:
+        if counterValue == self._NO_INFO_VALUE:
             LOG_WARNING('No info about vehicle frags from server')
             counterValue = 0
         counterValueStr = str(counterValue)

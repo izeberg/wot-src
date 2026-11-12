@@ -2,6 +2,7 @@ import BigWorld
 from CurrentVehicle import g_currentVehicle
 from frameworks.wulf import WindowFlags, WindowLayer, WindowStatus
 from gui.Scaleform.framework.entities.sf_window import SFWindow
+from gui.shared import g_eventBus, events, EVENT_BUS_SCOPE
 from gui.techtree.research_items_data import ResearchItemsData
 from helpers import dependency
 from skeletons.gui.impl import IGuiLoader
@@ -9,7 +10,8 @@ from skeletons.gui.shared import IItemsCache
 from tutorial.control.triggers import Trigger, TriggerWithSubscription, TriggerWithValidateVar
 from tutorial.logger import LOG_DEBUG
 __all__ = ('TimerTrigger', 'IsCollectibleVehicleTrigger', 'CurrentVehicleChangedTrigger',
-           'ItemsCacheSyncTrigger', 'ResearchGoToNextVehicleTrigger', 'ViewLoadedTrigger')
+           'ItemsCacheSyncTrigger', 'ResearchGoToNextVehicleTrigger', 'ViewLoadedTrigger',
+           'MissionsTabChangedTrigger')
 _TRACKED_VIEW_LAYERS = frozenset((
  WindowLayer.VIEW,
  WindowLayer.SUB_VIEW,
@@ -70,6 +72,32 @@ class ViewLoadedTrigger(Trigger):
         self._tutorial.interruptCurrentEffect()
         self.toggle()
         self.clear()
+
+
+class MissionsTabChangedTrigger(Trigger):
+
+    def __init__(self, triggerID, alias):
+        super(MissionsTabChangedTrigger, self).__init__(triggerID)
+        self.__alias = alias
+
+    def run(self):
+        if self.isSubscribed:
+            return
+        g_eventBus.addListener(events.MissionsEvent.ON_TAB_CHANGED, self.__onMissionsTabChanged, EVENT_BUS_SCOPE.LOBBY)
+        self.isSubscribed = True
+
+    def clear(self):
+        if self.isSubscribed:
+            g_eventBus.removeListener(events.MissionsEvent.ON_TAB_CHANGED, self.__onMissionsTabChanged, EVENT_BUS_SCOPE.LOBBY)
+            self.isSubscribed = False
+        super(MissionsTabChangedTrigger, self).clear()
+
+    def __onMissionsTabChanged(self, event):
+        LOG_DEBUG('MissionsTabChangedTrigger.onMissionsTabChanged', self.getID(), event.ctx)
+        if event.ctx != self.__alias:
+            self._tutorial.interruptCurrentEffect()
+            self.toggle()
+            self.clear()
 
 
 class TimerTrigger(TriggerWithValidateVar):

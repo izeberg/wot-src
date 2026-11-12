@@ -380,7 +380,10 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'BattlePassCommonPr_21', 'clan_season_26_first', 'clan_season_26_last',
  'comp7_6_1', 'comp7_6_1_champion_0', 'comp7_6_1_champion_1', 'comp7_6_1_champion_2',
  'comp7_6_1_legend_0', 'comp7_6_1_legend_1', 'comp7_6_1_legend_2',
- 'portal2026Medal_1', 'portal2026Medal_2', '16YearsOfService']
+ 'portal2026Medal_1', 'portal2026Medal_2', '16YearsOfService',
+ 'comp7_6_2', 'comp7_6_2_champion_0', 'comp7_6_2_champion_1', 'comp7_6_2_champion_2',
+ 'comp7_6_2_legend_0', 'comp7_6_2_legend_1', 'comp7_6_2_legend_2',
+ 'NY27_AtmsphrLevel', 'NY27_CelebTaskCompleted']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -459,7 +462,10 @@ _singleAchievementsPopUps = [
  'BattlePassCommonPr_21', 'clan_season_26_first', 'clan_season_26_last', 'comp7_6_1',
  'comp7_6_1_champion_0', 'comp7_6_1_champion_1', 'comp7_6_1_champion_2',
  'comp7_6_1_legend_0', 'comp7_6_1_legend_1', 'comp7_6_1_legend_2',
- 'portal2026Medal_1', 'portal2026Medal_2', '16YearsOfService']
+ 'portal2026Medal_1', 'portal2026Medal_2', '16YearsOfService',
+ 'comp7_6_2', 'comp7_6_2_champion_0', 'comp7_6_2_champion_1', 'comp7_6_2_champion_2',
+ 'comp7_6_2_legend_0', 'comp7_6_2_legend_1', 'comp7_6_2_legend_2',
+ 'NY27_AtmsphrLevel', 'NY27_CelebTaskCompleted']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']

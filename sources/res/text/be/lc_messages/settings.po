@@ -1413,6 +1413,15 @@ msgstr "Заўсёды"
 msgid "game/showVehModelsOnMap/never"
 msgstr "Ніколі"
 
+msgid "game/showVehicleDifficultyInHangar/checkbox"
+msgstr "Ангар"
+
+msgid "game/showVehicleDifficultyInResearch/checkbox"
+msgstr "Окно исследования техники"
+
+msgid "game/showVehicleDifficultyInTechTree/checkbox"
+msgstr "Дерево исследования техники"
+
 msgid "game/showVehicleHPinMinimap"
 msgstr "Паказваць трываласць машын на міні-карце"
 
@@ -1469,6 +1478,9 @@ msgstr "Апошняя"
 
 msgid "game/switchEquipment"
 msgstr "Пераключэнне камплектаў на экране загрузкі"
+
+msgid "game/vehicleDifficulty/label"
+msgstr "Отображение сложности техники"
 
 msgid "gameTitle"
 msgstr "Гульня"

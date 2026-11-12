@@ -2,4 +2,8 @@
 <root>
 	<nodelessVisual>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_3Dst/crash/lod4/Gun_01</nodelessVisual>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.427485 -0.303216 -1.324035</min>
+		<max>0.434491 0.535499 4.610488</max>
+	</visibilityBox>
 </root>

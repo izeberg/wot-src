@@ -132,6 +132,10 @@
 						</Float>
 					</property>
 					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
 						g_maskBias
 						<Float>
 							0.18
@@ -178,6 +182,6 @@
 		<min>-2.605874 -0.932438 -5.707867</min>
 		<max>2.438780 1.182700 5.266860</max>
 	</boundingBox>
-	<geometrySize>156234</geometrySize>
-	<minUVDensity>0.000140</minUVDensity>
+	<geometrySize>156386</geometrySize>
+	<minUVDensity>0.000153</minUVDensity>
 </root>

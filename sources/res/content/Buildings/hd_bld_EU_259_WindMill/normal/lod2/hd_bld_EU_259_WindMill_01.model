@@ -2,15 +2,9 @@
 <root>
 	<nodefullVisual>content/Buildings/hd_bld_EU_259_WindMill/normal/lod2/hd_bld_EU_259_WindMill_01</nodefullVisual>
 	<parent>content/Buildings/hd_bld_EU_259_WindMill/normal/lod3/hd_bld_EU_259_WindMill_01</parent>
-	<extent>225</extent>
+	<extent>225.000000</extent>
 	<visibilityBox>
-		<min>
-			-11.3584 -1.28792 -6.32026
-			<!--BW_String-->
-		</min>
-		<max>
-			9.80933 25.1326 4.58466
-			<!--BW_String-->
-		</max>
+		<min>-10.657664 -0.341301 -5.544902</min>
+		<max>9.950973 25.674900 4.584665</max>
 	</visibilityBox>
 </root>

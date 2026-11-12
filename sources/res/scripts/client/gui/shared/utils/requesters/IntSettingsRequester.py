@@ -1,6 +1,7 @@
-import logging
+import AccountCommands, logging
 from functools import wraps
 from copy import copy
+import traceback
 from account_helpers.AccountSettings import MAPBOX_CAROUSEL_FILTER_1, MAPBOX_CAROUSEL_FILTER_2, FUN_RANDOM_CAROUSEL_FILTER_1, FUN_RANDOM_CAROUSEL_FILTER_2, COMP7_CAROUSEL_FILTER_1, COMP7_CAROUSEL_FILTER_2, VERSUS_AI_CAROUSEL_FILTER_1, VERSUS_AI_CAROUSEL_FILTER_2
 import BigWorld, constants
 from adisp import adisp_async, adisp_process
@@ -139,7 +140,10 @@ class IntSettingsRequester(object):
 
     def _response(self, resID, value, callback):
         if resID < 0:
-            _logger.error('[class %s] There is error while getting data from cache: %s[%d]', self.__class__.__name__, code2str(resID), resID)
+            if resID == AccountCommands.RES_NON_PLAYER:
+                _logger.warning('Trying to get Account cache, when cache is destroyed, class %s. Trace stack:\n%s', self.__class__.__name__, ('').join(traceback.format_list(traceback.extract_stack(limit=7))))
+            else:
+                _logger.error('[class %s] There is error while getting data from cache: %s[%d]', self.__class__.__name__, code2str(resID), resID)
             return callback(dict())
         self.__isSynced = True
         callback(copy(value))

@@ -61,37 +61,66 @@
 					</transform>
 				</node>
 			</node>
+			<node>
+				<identifier>Joint_turret</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.001174 0.010000</row3>
+				</transform>
+				<node>
+					<identifier>Joint_visor</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 0.990268 0.139173</row1>
+						<row2>0.000000 -0.139173 0.990268</row2>
+						<row3>0.000000 0.336451 -0.192898</row3>
+					</transform>
+					<node>
+						<identifier>Joint_visor_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.990268 -0.139173</row1>
+							<row2>0.000000 -0.139173 -0.990268</row2>
+							<row3>0.000000 -0.307493 0.238009</row3>
+						</transform>
+					</node>
+				</node>
+			</node>
 		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
+		<node>Joint_visor_BlendBone</node>
 		<geometry>
-			<vertices>gun_01Shape2.vertices</vertices>
-			<primitive>gun_01Shape2.indices</primitive>
+			<vertices>gun_0Shape1.vertices</vertices>
+			<primitive>gun_0Shape1.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_guns_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_guns_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						g_detailUVTiling
-						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/russian/R166_SU_D15/SU_D15_guns_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/R166_SU_D15/SU_D15_guns_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/R166_SU_D15/SU_D15_guns_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
 						<Float>
 							0.35
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
 							<!--BW_String-->
 						</Float>
 					</property>
@@ -103,47 +132,88 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/russian/R166_SU_D15/SU_D15_guns_GMM.dds</Texture>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/russian/R166_SU_D15/SU_D15_guns_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R166_SU_D15/SU_D15_guns_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R166_SU_D15/SU_D15_guns_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/R166_SU_D15/SU_D15_guns_ID.dds</Texture>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>0.000376 -0.043275 -1.558803</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_hull_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R166_SU_D15/SU_D15_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R166_SU_D15/SU_D15_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/R166_SU_D15/SU_D15_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R166_SU_D15/SU_D15_hull_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000934 0.289352 -0.127025</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.383150 -0.428425 0.144386</min>
-		<max>0.383902 0.341874 2.973220</max>
+		<min>-0.488996 -0.428425 -0.184312</min>
+		<max>0.487129 0.400284 2.973220</max>
 	</boundingBox>
-	<geometrySize>47364</geometrySize>
-	<minUVDensity>0.028609</minUVDensity>
+	<geometrySize>50304</geometrySize>
+	<minUVDensity>0.010016</minUVDensity>
 </root>

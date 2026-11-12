@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:italy>italy</xmlns:italy>
+	<xmlns:intunion>intunion</xmlns:intunion>
 	<itemGroup>
 		<name>23February_Paint_140</name>
 		<userString>#vehicle_customization:repaint/color_group_04</userString>
@@ -187,6 +199,49 @@
 		<name>A176_OTAC_LK_7605_Paint_142</name>
 	</itemGroup>
 	<itemGroup>
+		<name>AY27_MP_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31591</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:AY27_MP_Paint_01_147/name</userString>
+			<description>#vehicle_customization:AY27_MP_Paint_01_147/description</description>
+			<color>96 12 12 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+		</paint>
+		<paint>
+			<id>31592</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:AY27_MP_Paint_02_147/name</userString>
+			<description>#vehicle_customization:AY27_MP_Paint_02_147/description</description>
+			<color>29 95 84 255</color>
+			<gloss>
+				0.4
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.3
+				<!--BW_String-->
+			</metallic>
+		</paint>
+	</itemGroup>
+	<itemGroup>
 		<name>AY8_Paint_142</name>
 		<userString>#vehicle_customization:repaint/color_group_04</userString>
 		<season>ALL</season>
@@ -213,6 +268,34 @@
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
 			</exclude>
 		</vehicleFilter>
+	</itemGroup>
+	<itemGroup>
+		<name>AYF144_Etoile_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI vehicleBound</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>france:F144_Etoile</vehicles>
+			</include>
+		</vehicleFilter>
+		<paint>
+			<id>31602</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:AYF144_Etoile_Paint_147/name</userString>
+			<description>#vehicle_customization:AYF144_Etoile_Paint_147/description</description>
+			<color>22 22 26 255</color>
+			<gloss>
+				0.55
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.25
+				<!--BW_String-->
+			</metallic>
+		</paint>
 	</itemGroup>
 	<itemGroup>
 		<name>Alpha_2024</name>
@@ -2858,34 +2941,6 @@
 		</paint>
 	</itemGroup>
 	<itemGroup>
-		<name>Bot_Paint_138</name>
-		<season>ALL</season>
-		<historical>0</historical>
-		<userString>#vehicle_customization:repaint/color_group_04</userString>
-		<paint>
-			<id>31388</id>
-			<color>17 17 21 255</color>
-			<gloss>
-				0.6
-				<!--BW_String-->
-			</gloss>
-			<metallic>
-				0.25
-				<!--BW_String-->
-			</metallic>
-			<texture>gui/maps/vehicles/repaints/custom_color_23.png</texture>
-			<userString>#vehicle_customization:Bot_Paint_138/name</userString>
-			<description>#vehicle_customization:Bot_Paint_138/description</description>
-		</paint>
-		<tags>hiddenInUI</tags>
-		<priceGroup>paints 20g notInShop</priceGroup>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
-			</exclude>
-		</vehicleFilter>
-	</itemGroup>
-	<itemGroup>
 		<userString>#vehicle_customization:repaint/color_group_04</userString>
 		<season>ALL</season>
 		<historical>1</historical>
@@ -3078,6 +3133,34 @@
 			</gloss>
 			<metallic>
 				0.2
+				<!--BW_String-->
+			</metallic>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>CalendarReport_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31593</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:CalendarReport_Paint_147/name</userString>
+			<description>#vehicle_customization:CalendarReport_Paint_147/description</description>
+			<color>183 156 130 255</color>
+			<gloss>
+				0.5
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.3
 				<!--BW_String-->
 			</metallic>
 		</paint>
@@ -4414,6 +4497,34 @@
 		</paint>
 	</itemGroup>
 	<itemGroup>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>uk:GB109_GSOR_1008</vehicles>
+			</include>
+		</vehicleFilter>
+		<paint>
+			<id>31594</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:GSOR_01_Paint_147/name</userString>
+			<description>#vehicle_customization:GSOR_01_Paint_147/description</description>
+			<color>123 83 43 255</color>
+			<gloss>
+				0.5
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.48
+				<!--BW_String-->
+			</metallic>
+		</paint>
+		<name>GSOR_01_Paint_147</name>
+	</itemGroup>
+	<itemGroup>
 		<name>Gjel_Paint_144</name>
 		<userString>#vehicle_customization:repaint/color_group_04</userString>
 		<vehicleFilter>
@@ -4891,6 +5002,348 @@
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
 			</exclude>
 		</vehicleFilter>
+	</itemGroup>
+	<itemGroup>
+		<name>NY27_02_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31585</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_02_Paint_147/name</userString>
+			<description>#vehicle_customization:NY27_02_Paint_147/description</description>
+			<color>64 63 84 255</color>
+			<gloss>
+				0.6
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.4
+				<!--BW_String-->
+			</metallic>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>NY27_03_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31584</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_03_Paint_147/name</userString>
+			<description>#vehicle_customization:NY27_03_Paint_147/description</description>
+			<color>30 39 66 255</color>
+			<gloss>
+				0.4
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.4
+				<!--BW_String-->
+			</metallic>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>NY27_04_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31582</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_04_Paint_01_147/name</userString>
+			<description>#vehicle_customization:NY27_04_Paint_01_147/description</description>
+			<color>71 42 27 255</color>
+			<gloss>
+				0.48
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+		</paint>
+		<paint>
+			<id>31583</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_04_Paint_02_147/name</userString>
+			<description>#vehicle_customization:NY27_04_Paint_02_147/description</description>
+			<color>81 92 31 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>NY27_05_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31586</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_05_Paint_147/name</userString>
+			<description>#vehicle_customization:NY27_05_Paint_147/description</description>
+			<color>20 52 103 255</color>
+			<gloss>
+				0.6
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.4
+				<!--BW_String-->
+			</metallic>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>NY27_06_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31587</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<color>173 110 0 255</color>
+			<gloss>
+				0.75
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.8
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:NY27_06_Paint_147/name</userString>
+			<description>#vehicle_customization:NY27_06_Paint_147/description</description>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>NY27_HighGothic_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31595</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_01_Paint_01_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_01_Paint_01_147/description</description>
+			<color>38 31 29 255</color>
+			<gloss>
+				0.5
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.3
+				<!--BW_String-->
+			</metallic>
+		</paint>
+		<paint>
+			<id>31596</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_02_Paint_01_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_02_Paint_01_147/description</description>
+			<color>38 35 37 255</color>
+			<gloss>
+				0.5
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.5
+				<!--BW_String-->
+			</metallic>
+		</paint>
+		<paint>
+			<id>31597</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_03_Paint_01_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_03_Paint_01_147/description</description>
+			<color>26 32 38 255</color>
+			<gloss>
+				0.6
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.3
+				<!--BW_String-->
+			</metallic>
+		</paint>
+		<paint>
+			<id>31600</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_04_Paint_02_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_04_Paint_02_147/description</description>
+			<color>26 32 38 255</color>
+			<gloss>
+				0.6
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.3
+				<!--BW_String-->
+			</metallic>
+		</paint>
+		<paint>
+			<id>31601</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_HighGothic_04_Paint_03_147/name</userString>
+			<description>#vehicle_customization:NY27_HighGothic_04_Paint_03_147/description</description>
+			<color>94 30 28 255</color>
+			<gloss>
+				0.7
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.7
+				<!--BW_String-->
+			</metallic>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>NY27_PAB01_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31605</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_PAB01_Paint_147/name</userString>
+			<description>#vehicle_customization:NY27_PAB01_Paint_147/description</description>
+			<color>160 127 21 255</color>
+			<gloss>
+				0.65
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.8
+				<!--BW_String-->
+			</metallic>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>NY27_PAB02_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31603</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_PAB02_Paint_01_147/name</userString>
+			<description>#vehicle_customization:NY27_PAB02_Paint_01_147/description</description>
+			<color>184 184 184 255</color>
+			<gloss>
+				0.85
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.5
+				<!--BW_String-->
+			</metallic>
+		</paint>
+		<paint>
+			<id>31604</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_PAB02_Paint_02_147/name</userString>
+			<description>#vehicle_customization:NY27_PAB02_Paint_02_147/description</description>
+			<color>152 105 42 255</color>
+			<gloss>
+				0.8
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.6
+				<!--BW_String-->
+			</metallic>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>NY27_01_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31578</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:NY27_01_Paint_147/name</userString>
+			<description>#vehicle_customization:NY27_01_Paint_147/description</description>
+			<color>20 30 49 255</color>
+			<gloss>
+				0.48
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+		</paint>
 	</itemGroup>
 	<itemGroup>
 		<name>NY_01_Paint_139</name>
@@ -5639,6 +6092,34 @@
 		</paint>
 	</itemGroup>
 	<itemGroup>
+		<name>Onslaught26_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31579</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<color>26 36 48 255</color>
+			<gloss>
+				0.6
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.4
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:Onslaught26_Paint_147/name</userString>
+			<description>#vehicle_customization:Onslaught26_Paint_147/description</description>
+		</paint>
+	</itemGroup>
+	<itemGroup>
 		<name>OnslaughtShop_01_Paint_141</name>
 		<userString>#vehicle_customization:repaint/color_group_04</userString>
 		<season>ALL</season>
@@ -5865,62 +6346,6 @@
 		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
-		<name>PORTAL26_Paint_146</name>
-		<userString>#vehicle_customization:repaint/color_group_04</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<tags>hiddenInUI</tags>
-		<priceGroup>paints 20g notInShop</priceGroup>
-		<vehicleFilter>
-			<include>
-				<vehicles>germany:G00_Typ_205</vehicles>
-			</include>
-		</vehicleFilter>
-		<paint>
-			<id>31567</id>
-			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
-			<color>27 27 27 255</color>
-			<gloss>
-				0.5
-				<!--BW_String-->
-			</gloss>
-			<metallic>
-				0.2
-				<!--BW_String-->
-			</metallic>
-			<userString>#vehicle_customization:PORTAL26_Paint_146/name</userString>
-			<description>#vehicle_customization:PORTAL26_Paint_146/description</description>
-		</paint>
-	</itemGroup>
-	<itemGroup>
-		<name>PORTAL26_Tiger_Paint_146</name>
-		<userString>#vehicle_customization:repaint/color_group_04</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<paint>
-			<id>31568</id>
-			<color>27 27 27 255</color>
-			<gloss>
-				0.5
-				<!--BW_String-->
-			</gloss>
-			<metallic>
-				0.2
-				<!--BW_String-->
-			</metallic>
-			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
-			<userString>#vehicle_customization:PORTAL26_Tiger_Paint_146/name</userString>
-			<description>#vehicle_customization:PORTAL26_Tiger_Paint_146/description</description>
-		</paint>
-		<tags>hiddenInUI</tags>
-		<priceGroup>paints 20g notInShop</priceGroup>
-		<vehicleFilter>
-			<include>
-				<vehicles>germany:G00_PzVI_Tiger_P</vehicles>
-			</include>
-		</vehicleFilter>
-	</itemGroup>
-	<itemGroup>
 		<name>PUB26_01_Paint_146</name>
 		<userString>#vehicle_customization:repaint/color_group_04</userString>
 		<season>ALL</season>
@@ -6055,6 +6480,34 @@
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
 			</exclude>
 		</vehicleFilter>
+	</itemGroup>
+	<itemGroup>
+		<name>PUB_Orenburg_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31590</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:PUB_Orenburg_Paint_147/name</userString>
+			<description>#vehicle_customization:PUB_Orenburg_Paint_147/description</description>
+			<color>64 63 84 255</color>
+			<gloss>
+				0.6
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.4
+				<!--BW_String-->
+			</metallic>
+		</paint>
 	</itemGroup>
 	<itemGroup>
 		<name>ParagonsS2_Paint_141</name>
@@ -8141,6 +8594,62 @@
 			</gloss>
 			<metallic>
 				0.2
+				<!--BW_String-->
+			</metallic>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>TC_02_LetItGo_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31588</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:TC_02_LetItGo_Paint_147/name</userString>
+			<description>#vehicle_customization:TC_02_LetItGo_Paint_147/description</description>
+			<color>25 27 43 255</color>
+			<gloss>
+				0.6
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>TC_03_LetItGo_Paint_147</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>31589</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_DEV.png</texture>
+			<userString>#vehicle_customization:TC_03_LetItGo_Paint_147/name</userString>
+			<description>#vehicle_customization:TC_03_LetItGo_Paint_147/description</description>
+			<color>23 29 40 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
 				<!--BW_String-->
 			</metallic>
 		</paint>

@@ -26,7 +26,7 @@ class ArmoryYardLogger(MetricsLogger):
             else:
                 for condition in chain(quest.bonusCondition.getItems(), quest.postBattleCondition.getItems()):
                     if condition.getTotal():
-                        self._addQuestProgress(snapshot, questId, quest)
+                        self._addQuestProgress(snapshot, questId, condition)
 
         return snapshot
 

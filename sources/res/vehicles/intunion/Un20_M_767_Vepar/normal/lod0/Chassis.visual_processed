@@ -951,6 +951,15 @@
 						</transform>
 					</node>
 				</node>
+				<node>
+					<identifier>Tank_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 -0.500000 0.000000</row3>
+					</transform>
+				</node>
 			</node>
 		</node>
 	</node>
@@ -1051,8 +1060,8 @@
 		<node>Track_R3_BlendBone</node>
 		<node>Track_R2_BlendBone</node>
 		<node>Track_R1_BlendBone</node>
-		<node>V_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
+		<node>V_BlendBone</node>
 		<node>Track_VD_R1_BlendBone</node>
 		<node>Track_VD_R0_BlendBone</node>
 		<geometry>
@@ -1235,6 +1244,7 @@
 		<node>V_BlendBone</node>
 		<node>Track_R1_BlendBone</node>
 		<node>Track_R5_BlendBone</node>
+		<node>Tank_BlendBone</node>
 		<node>Track_R2_BlendBone</node>
 		<node>Track_R4_BlendBone</node>
 		<node>Track_R3_BlendBone</node>

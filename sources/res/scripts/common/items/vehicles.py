@@ -47,7 +47,7 @@ from extension_utils import ResMgr, importClass
 from battle_modifiers_common import BattleParams, BattleModifiers, ModifiersContext
 from constants import ARENA_BONUS_TYPE, ARENA_BONUS_TYPE_NAMES
 if IS_UE_EDITOR:
-    from meta_objects.items.vehicle_items_meta.utils import getEffectNameByEffect
+    from meta_objects.items.vehicle_items_meta.utils import getEffectNameByEffect, getPostProgressionTreeName
     from combined_data_section import CombinedDataSection
     from reflection import ReflectedObject
     from wrapped_reflection_framework import reflectedNamedTuple
@@ -193,8 +193,7 @@ VEHICLE_MISC_ATTRIBUTE_FACTOR_NAMES = (
  'chassisHealthAfterHysteresisFactor',
  'centerRotationFwdSpeedFactor',
  'moduleDamageFactor',
- 'engineAndFuelTanksDamageFactor',
- 'receivedDamageFactor')
+ 'engineAndFuelTanksDamageFactor')
 VEHICLE_MISC_ATTRIBUTE_FACTOR_INDICES = dict((value, index) for index, value in enumerate(VEHICLE_MISC_ATTRIBUTE_FACTOR_NAMES))
 
 class EnhancementItem(object):
@@ -322,7 +321,6 @@ def vehicleAttributeFactors():
        'repeatedStunDurationFactor': 1.0, 
        'healthFactor': 1.0, 
        'damageFactor': 1.0, 
-       'receivedDamageFactor': 1.0, 
        'enginePowerFactor': 1.0, 
        'deathZones/sensitivityFactor': 1.0, 
        'xRayFactor': 1.0, 
@@ -352,9 +350,7 @@ def vehicleAttributeFactors():
        'engineHealthFactor': 1.0, 
        'chassisHealthFactor': 1.0, 
        'trackRammingDamageFactor': 1.0, 
-       'penaltyReloadTime': 0.0, 
-       'vehicle/canBeDamaged': True, 
-       'vehicle/canBeRammed': True}
+       'penaltyReloadTime': 0.0}
     for ten in TANKMAN_EXTRA_NAMES:
         factors[ten + CHANCE_TO_HIT_SUFFIX_FACTOR] = 0.0
 
@@ -1589,7 +1585,6 @@ class VehicleDescriptor(object):
            'radioDistanceFactor': 0.0, 
            'healthFactor': 1.0, 
            'damageFactor': 1.0, 
-           'receivedDamageFactor': 1.0, 
            'enginePowerFactor': 1.0, 
            'armorSpallsDamageDevicesFactor': 1.0, 
            'increaseEnemySpottingTime': 0.0, 
@@ -2061,6 +2056,8 @@ class VehicleType(object):
             pricesDest = _g_prices
             if pricesDest is not None:
                 pricesDest['vehicleCamouflagePriceFactors'][self.compactDescr] = _xml.readNonNegativeFloat(xmlCtx, section, 'camouflage/priceFactor')
+            if IS_UE_EDITOR:
+                self.editorData.camouflagePriceFactor = _xml.readNonNegativeFloat(xmlCtx, section, 'camouflage/priceFactor', 0.0)
             unlocksDescrs = []
             self.unlocks = _readUnlocks(xmlCtx, section, 'unlocks', unlocksDescrs)
             defHull = _readHull((xmlCtx, 'hull'), _xml.getSubsection(xmlCtx, section, 'hull'))
@@ -2148,17 +2145,46 @@ class VehicleType(object):
         if mainSection is None:
             _xml.raiseWrongXml(None, mainXmlPath, 'can not open or read')
         _writeCamouflageSettings(mainSection, 'camouflage', self.camouflage)
+        _xml.rewriteFloat(mainSection, 'camouflage/priceFactor', self.editorData.camouflagePriceFactor)
         _xml.rewriteFloat(mainSection, 'speedLimits/forward', self.speedLimits[0] * component_constants.MS_TO_KMH)
         _xml.rewriteFloat(mainSection, 'speedLimits/backward', self.speedLimits[1] * component_constants.MS_TO_KMH)
         _xml.rewriteFloat(mainSection, 'emblems/alpha', self.emblemsAlpha)
         _xml.rewriteString(mainSection, 'effects/damagedStateGroup', self.editorData.damagedStateGroup, 'medium')
-        nationID = self.id[0]
-        materialData = tankArmor.TankArmorHelper().collectData()
-        _writeHulls(self.hulls, mainSection, materialData.get('hull', None))
-        _writeInstallableComponents(self.chassis, mainSection, 'chassis', _writeChassis, g_cache.chassisIDs(nationID), useSharedSections, materialData=materialData)
-        defHull = self.hulls[0]
-        for n in xrange(len(defHull.turretPositions)):
-            _writeInstallableComponents(self.turrets[n], mainSection, 'turrets' + repr(n), _writeTurret, g_cache.turretIDs(nationID), useSharedSections, materialData=materialData)
+        _writeCrew(mainSection, 'crew', self.crewRoles)
+        _xml.rewriteString(mainSection, 'supplySlots', (' ').join(map(str, self.supplySlots.slotIDs)))
+        _xml.rewriteFloat(mainSection, 'invisibility/moving', self.invisibility[0])
+        _xml.rewriteFloat(mainSection, 'invisibility/still', self.invisibility[1])
+        _xml.rewriteFloat(mainSection, 'invisibility/camouflageBonus', self.invisibilityDeltas['camouflageBonus'])
+        _xml.rewriteFloat(mainSection, 'invisibility/firePenalty', self.invisibilityDeltas['firePenalty'])
+        if self.postProgressionTree:
+            _xml.rewriteString(mainSection, 'postProgressionTree', getPostProgressionTreeName(self.postProgressionTree))
+        else:
+            if mainSection.has_key('postProgressionTree'):
+                mainSection.deleteSection('postProgressionTree')
+            if self.customRoleSlotOptions:
+                _xml.rewriteTupleOfInts(mainSection, 'customRoleSlotOptions', self.customRoleSlotOptions)
+            _writeOptDevsOverrides(mainSection, 'optDevsOverrides', self.optDevsOverrides)
+            _xml.rewriteFloat(mainSection, 'repairCost', self.repairCost)
+            if self.premiumVehicleXPFactor:
+                _xml.rewriteFloat(mainSection, 'premiumVehicleXPFactor', self.premiumVehicleXPFactor)
+            _xml.rewriteFloat(mainSection, 'xpFactor', self.xpFactor)
+            _xml.rewriteFloat(mainSection, 'freeXpFactor', self.freeXpFactor)
+            _xml.rewriteFloat(mainSection, 'crewXpFactor', self.crewXpFactor)
+            _xml.rewriteFloat(mainSection, 'creditsFactor', self.creditsFactor)
+            _xml.rewriteFloat(mainSection, 'healthBurnPerSec', self.healthBurnPerSec)
+            if mainSection.has_key('fuelTanks'):
+                mainSection.deleteSection('fuelTanks')
+            fuelTanksSection = mainSection.createSection('fuelTanks')
+            _xml.rewriteString(fuelTanksSection, self.fuelTanks[0].name, 'shared')
+            nationID = self.id[0]
+            materialData = tankArmor.TankArmorHelper().collectData()
+            _writeHulls(self.hulls, mainSection, materialData.get('hull', None))
+            _writeInstallableComponents(self.chassis, mainSection, 'chassis', _writeChassis, g_cache.chassisIDs(nationID), useSharedSections, materialData=materialData)
+            _writeInstallableComponents(self.engines, mainSection, 'engines', _writeEngine, g_cache.engineIDs(nationID), useSharedSections, materialData=materialData)
+            _writeInstallableComponents(self.radios, mainSection, 'radios', _writeRadio, g_cache.radioIDs(nationID), useSharedSections, materialData=materialData)
+            defHull = self.hulls[0]
+            for n in xrange(len(defHull.turretPositions)):
+                _writeInstallableComponents(self.turrets[n], mainSection, 'turrets' + repr(n), _writeTurret, g_cache.turretIDs(nationID), useSharedSections, materialData=materialData)
 
         return mainSection
 
@@ -3565,7 +3591,10 @@ def _writeHulls(hulls, section, materialData):
     _writeArmor(item.materials, section, materialData.get('hull', None) if materialData is not None else None, item.editorData.primaryArmors)
     _xml.rewriteFloat(section, 'weight', item.weight)
     _xml.rewriteInt(section, 'maxHealth', item.maxHealth)
+    _writeDeviceHealthParams(section, 'ammoBayHealth', item.ammoBayHealth)
+    _xml.rewriteFloat(section, 'armorHomogenization', item.armorHomogenization)
     __writeTurretPitches(section, item.turretPitches)
+    _writeFakeTurrets(section, item.fakeTurrets)
     _writeCamouflageSettings(section, 'camouflage', item.camouflage)
     shared_writers.writeModelsSets(item.modelsSets, section['models'])
     shared_writers.writeSwingingSettings(item.swinging, section['swinging'])
@@ -3577,6 +3606,14 @@ def _writeHulls(hulls, section, materialData):
     _writeDrivenJoints(item.drivenJoints, section, 'drivenJoints')
     _writeHullVariants(hulls, section, materialData)
     return
+
+
+def _writeDeviceHealthParams(section, subsectionName, params):
+    _xml.rewriteInt(section, subsectionName + '/maxHealth', params.maxHealth)
+    _xml.rewriteInt(section, subsectionName + '/maxRegenHealth', params.maxRegenHealth)
+    _xml.rewriteFloat(section, subsectionName + '/repairCost', params.repairCost)
+    _xml.rewriteFloat(section, subsectionName + '/healthRegenPerSec', params.healthRegenPerSec)
+    _xml.rewriteFloat(section, subsectionName + '/healthBurnPerSec', params.healthBurnPerSec)
 
 
 def __readExhaustEffect(xmlCtx, section):
@@ -3640,6 +3677,35 @@ def __writeTurretPitches(section, pitches):
     with _xml.ListRewriter(section, 'turretPitches/turret') as (listRewriter):
         for pitch, child in zip(pitches, listRewriter):
             child.writeFloat('', degrees(pitch))
+
+
+def _writeFakeTurrets(section, fakeTurrets):
+    if fakeTurrets == component_constants.DEFAULT_FAKE_TURRETS:
+        section.deleteSection('fakeTurrets')
+        return
+    for mode in ('lobby', 'battle'):
+        turretIDs = (' ').join(str(v) for v in fakeTurrets.get(mode, ()))
+        _xml.rewriteString(section, 'fakeTurrets/' + mode, turretIDs, '')
+
+
+def _writeCrew(section, subsectionName, crewRoles):
+    if not crewRoles:
+        return
+    else:
+        crewSection = section[subsectionName]
+        if crewSection is None:
+            crewSection = section.createSection(subsectionName)
+        for child in list(crewSection.values()):
+            crewSection.deleteSection(child)
+
+        for roles in crewRoles:
+            primary = roles[0]
+            secondaries = roles[1:]
+            roleSection = crewSection.createSection(primary)
+            if secondaries:
+                roleSection.asString = (' ').join(secondaries)
+
+        return
 
 
 def __readTurretHardPoints(section, numTurrets):
@@ -3831,6 +3897,7 @@ def _readChassis(xmlCtx, section, item, unlocksDescrs=None, _=None, isWheeledVeh
     item.navmeshGirth = _xml.readPositiveFloat(xmlCtx, section, 'navmeshGirth')
     item.minPlaneNormalY = cos(radians(_xml.readPositiveFloat(xmlCtx, section, 'maxClimbAngle')))
     item.weight = _xml.readPositiveFloat(xmlCtx, section, 'weight')
+    item.brakeForce = _xml.readPositiveFloat(xmlCtx, section, 'brakeForce')
     item.specificFriction = component_constants.DEFAULT_SPECIFIC_FRICTION
     item.rotationSpeed = radians(_xml.readPositiveFloat(xmlCtx, section, 'rotationSpeed'))
     item.rotationIsAroundCenter = _xml.readBool(xmlCtx, section, 'rotationIsAroundCenter')
@@ -3917,6 +3984,8 @@ def _readChassis(xmlCtx, section, item, unlocksDescrs=None, _=None, isWheeledVeh
         item.drivingWheelsSizes = (
          frontWheelSize, rearWheelSize)
     _readPriceForItem(xmlCtx, section, item.compactDescr)
+    if IS_UE_EDITOR and section.has_key('price'):
+        item.editorData.price = section.readInt('price')
     if IS_CLIENT or IS_WEB:
         item.i18n = shared_readers.readUserText(section)
     if IS_CLIENT or IS_UE_EDITOR:
@@ -3963,9 +4032,16 @@ def _readChassis(xmlCtx, section, item, unlocksDescrs=None, _=None, isWheeledVeh
 
 
 def _writeChassis(item, section, useSharedSections, materialData, *args, **kwargs):
+    _xml.rewriteInt(section, 'id', item.id[1])
     _writeHitTester(item.hitTesterManager, None, section, 'hitTester')
+    _xml.rewriteInt(section, 'level', item.level)
+    _xml.rewriteInt(section, 'price', item.editorData.price)
     _xml.rewriteFloat(section, 'weight', item.weight)
+    _xml.rewriteFloat(section, 'brakeForce', item.brakeForce)
+    _xml.rewriteVector3(section, 'terrainResistance', item.terrainResistance)
     _xml.rewriteFloat(section, 'rotationSpeed', degrees(item.rotationSpeed))
+    _xml.rewriteBool(section, 'rotationIsAroundCenter', item.rotationIsAroundCenter)
+    _xml.rewriteFloat(section, 'bulkHealthFactor', item.bulkHealthFactor)
     _writeCamouflageSettings(section, 'camouflage', item.camouflage)
     chassisMatData = materialData.get('chassis', None) if materialData is not None else None
     if len(item.trackPairs) == 1:
@@ -4120,6 +4196,8 @@ def _readEngine(xmlCtx, section, item, unlocksDescrs=None, _=None):
     item.fireStartingChance = _xml.readFraction(xmlCtx, section, 'fireStartingChance')
     item.minFireStartingDamage = g_cache.commonConfig['miscParams']['minFireStartingDamage']
     _readPriceForItem(xmlCtx, section, item.compactDescr)
+    if IS_UE_EDITOR and hasattr(item, 'editorData'):
+        item.editorData.notInShop = section.readBool('notInShop', False)
     if IS_CLIENT or IS_WEB:
         item.i18n = shared_readers.readUserText(section)
     if IS_CLIENT or IS_UE_EDITOR:
@@ -4459,6 +4537,10 @@ def _readTurret(xmlCtx, section, item, unlocksDescrs=None, _=None):
     else:
         item.invisibilityFactor = component_constants.DEFAULT_INVISIBILITY_FACTOR
     _readPriceForItem(xmlCtx, section, item.compactDescr)
+    if IS_UE_EDITOR:
+        item.editorData.notInShop = section.readBool('notInShop', False)
+        if section.has_key('price'):
+            item.editorData.price = section.readInt('price')
     item.showEmblemsOnGun = section.readBool('showEmblemsOnGun', False)
     if IS_CLIENT or IS_WEB:
         item.i18n = shared_readers.readUserText(section)
@@ -4497,8 +4579,47 @@ def _readTurret(xmlCtx, section, item, unlocksDescrs=None, _=None):
     item.unlocks = _readUnlocks(xmlCtx, section, 'unlocks', unlocksDescrs, item.compactDescr)
 
 
-def _writeTurret(item, section, useSharedSections, materialData, *args, **kwargs):
+def _writeEngine(item, section, useSharedSections, materialData, *args, **kwargs):
+    _xml.rewriteString(section, 'tags', (' ').join(item.tags))
+    _xml.rewriteInt(section, 'level', item.level)
+    _xml.rewriteFloat(section, 'power', item.power / component_constants.HP_TO_WATTS)
     _xml.rewriteFloat(section, 'weight', item.weight)
+    _xml.rewriteFloat(section, 'fireStartingChance', item.fireStartingChance)
+    if item.editorData.userString:
+        _xml.rewriteString(section, 'userString', item.editorData.userString)
+    if item.editorData.notInShop is not None:
+        _xml.rewriteBool(section, 'notInShop', item.editorData.notInShop, False)
+    _xml.rewriteInt(section, 'rpm_min', item.rpm_min)
+    _xml.rewriteInt(section, 'rpm_max', item.rpm_max)
+    return
+
+
+def _writeRadio(item, section, useSharedSections, materialData, *args, **kwargs):
+    _xml.rewriteString(section, 'tags', (' ').join(item.tags))
+    _xml.rewriteInt(section, 'level', item.level)
+    _xml.rewriteFloat(section, 'weight', item.weight)
+    _xml.rewriteFloat(section, 'distance', item.distance)
+    if item.editorData.userString:
+        _xml.rewriteString(section, 'userString', item.editorData.userString)
+
+
+def _writeTurret(item, section, useSharedSections, materialData, *args, **kwargs):
+    _xml.rewriteInt(section, 'id', item.id[1])
+    _xml.rewriteString(section, 'tags', (' ').join(item.tags))
+    _xml.rewriteInt(section, 'level', item.level)
+    _xml.rewriteFloat(section, 'armorHomogenization', item.armorHomogenization)
+    _xml.rewriteFloat(section, 'weight', item.weight)
+    _xml.rewriteInt(section, 'maxHealth', item.maxHealth)
+    _xml.rewriteFloat(section, 'rotationSpeed', degrees(item.rotationSpeed))
+    _xml.rewriteFloat(section, 'circularVisionRadius', item.circularVisionRadius)
+    if IS_UE_EDITOR:
+        if item.editorData.price:
+            _xml.rewriteInt(section, 'price', item.editorData.price)
+        if item.editorData.notInShop is not None:
+            _xml.rewriteBool(section, 'notInShop', item.editorData.notInShop, False)
+    _writeDeviceHealthParams(section, 'turretRotatorHealth', item.turretRotatorHealth)
+    _writeDeviceHealthParams(section, 'surveyingDeviceHealth', item.surveyingDeviceHealth)
+    _xml.rewriteFloat(section, 'invisibilityFactor', item.invisibilityFactor, 0.0)
     _xml.rewriteFloat(section, 'gunJointPitch', degrees(item.gunJointPitch), 0.0)
     _xml.rewriteBool(section, 'showEmblemsOnGun', item.showEmblemsOnGun, defaultValue=False)
     _writeHitTester(item.hitTesterManager, None, section, 'hitTester')
@@ -4656,6 +4777,9 @@ def _readGun(xmlCtx, section, item, unlocksDescrs=None, _=None):
     item.invisibilityFactorAtShot = _xml.readFraction(xmlCtx, section, 'invisibilityFactorAtShot')
     item.shotOffset = _xml.readVector3(xmlCtx, section, 'shotOffset', defaultValue=Vector3(0.0, 0.0, 0.0))
     _readPriceForItem(xmlCtx, section, item.compactDescr)
+    if IS_UE_EDITOR:
+        item.editorData.notInShop = section.readBool('notInShop', False)
+        item.editorData.price = section.readInt('price')
     if IS_CLIENT or IS_WEB:
         item.i18n = shared_readers.readUserText(section)
     if IS_CLIENT or IS_UE_EDITOR:
@@ -5076,6 +5200,9 @@ def _readGunLocals(xmlCtx, section, sharedItem, unlocksDescrs, turretCompactDesc
         return sharedItem
     else:
         item = sharedItem.copy()
+        if IS_UE_EDITOR:
+            item.editorData.price = sharedItem.editorData.price
+            item.editorData.notInShop = sharedItem.editorData.notInShop
         item.turretYawLimits = turretYawLimits
         item.rotationSpeed = rotationSpeed
         item.reloadTime = reloadTime
@@ -5176,6 +5303,7 @@ def _readGunLocals(xmlCtx, section, sharedItem, unlocksDescrs, turretCompactDesc
 
 
 def _writeGun(item, section, useSharedSections, materialData, *args, **kwargs):
+    _xml.rewriteString(section, 'tags', (' ').join(item.tags))
     _xml.rewriteFloat(section, 'rotationSpeed', degrees(item.rotationSpeed))
     _xml.rewriteFloat(section, 'weight', item.weight)
     _xml.rewriteFloat(section, 'reloadTime', item.reloadTime)
@@ -5187,8 +5315,18 @@ def _writeGun(item, section, useSharedSections, materialData, *args, **kwargs):
     _xml.rewriteBool(section, 'animateEmblemSlots', item.animateEmblemSlots, True)
     _xml.rewriteBool(section, 'edgeByVisualModel', item.edgeByVisualModel, True)
     _xml.rewriteVector3(section, 'shotOffset', item.shotOffset, (0, 0, 0))
+    _xml.rewriteInt(section, 'level', item.level)
+    _xml.rewriteInt(section, 'price', item.editorData.price)
+    _xml.rewriteBool(section, 'notInShop', item.editorData.notInShop, False)
     _xml.rewriteVector2(section, 'turretYawLimits', item.editorTurretYawLimits)
     _writeGunEffectName(item, section)
+    healthParams = item.healthParams
+    _xml.rewriteInt(section, 'maxHealth', healthParams.maxHealth)
+    _xml.rewriteInt(section, 'maxRegenHealth', healthParams.maxRegenHealth)
+    _xml.rewriteInt(section, 'hysteresisHealth', healthParams.hysteresisHealth or 0)
+    _xml.rewriteInt(section, 'repairCost', int(healthParams.repairCost))
+    _xml.rewriteInt(section, 'healthRegenPerSec', int(healthParams.healthRegenPerSec))
+    _xml.rewriteInt(section, 'healthBurnPerSec', int(healthParams.healthBurnPerSec))
     for shootItem in item.editorData.shootEffects:
         shootItem.saveChangedEffects()
 
@@ -5221,10 +5359,16 @@ def _writeGunEffectName(item, section):
         effectName = getEffectNameByEffect(effects)
     if item.dualGun and item.dualGun is not component_constants.DEFAULT_GUN_DUALGUN:
         _xml.rewriteString(section.getPrioritySection(), 'multiGunEffects', effectName)
-    elif len(effectName.split(' ')) > 1:
-        _xml.rewriteString(section.getPrioritySection(), 'multiGunEffects', effectName)
     else:
-        _xml.rewriteString(section.getPrioritySection(), 'effects', effectName)
+        if len(effectName.split(' ')) > 1:
+            _xml.rewriteString(section.getPrioritySection(), 'multiGunEffects', effectName)
+        else:
+            _xml.rewriteString(section.getPrioritySection(), 'effects', effectName)
+        for name, effect in g_cache._gunReloadEffects.iteritems():
+            if effect is item.reloadEffect:
+                _xml.rewriteString(section, 'reloadEffect', name)
+                break
+
     return
 
 
@@ -5727,6 +5871,9 @@ def _writeArmor(armor, section, materialData, primaryArmor=None):
         _xml.rewriteFloat(armorSection, matKindName + '/chanceToHitByProjectile', matInfo.chanceToHitByProjectile, defMatInfo['chanceToHitByProjectile'])
         _xml.rewriteFloat(armorSection, matKindName + '/chanceToHitByExplosion', matInfo.chanceToHitByExplosion, defMatInfo['chanceToHitByExplosion'])
 
+    if primaryArmor:
+        primaryArmorNames = (' ').join(material_kinds.NAMES_BY_IDS[m] for m in primaryArmor)
+        _xml.rewriteString(section, 'primaryArmor', primaryArmorNames)
     return
 
 
@@ -7661,6 +7808,15 @@ def _readOptDevsOverrides(xmlCtx, section):
                 optDevsOverrides.setdefault(optDevName, {})[factorName] = factor
 
         return optDevsOverrides
+
+
+def _writeOptDevsOverrides(section, subsectionName, optDevsOverrides):
+    if not optDevsOverrides:
+        return
+    for optDevName, factors in optDevsOverrides.iteritems():
+        for factorName, factor in factors.iteritems():
+            path = ('/').join((subsectionName, optDevName, factorName))
+            _xml.rewriteString(section, path, (' ').join(map(str, factor.values)))
 
 
 def _readPostProgressionPricesOverrides(xmlCtx, section):

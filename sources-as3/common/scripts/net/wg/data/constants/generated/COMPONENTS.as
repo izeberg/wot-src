@@ -245,6 +245,26 @@ package net.wg.data.constants.generated
       
       public static const SEPARATOR:String = "separator";
       
+      public static const SMALL_AT_SPG:String = "small_AT-SPG";
+      
+      public static const SMALL_AT_SPG_ELITE:String = "small_AT-SPG_elite";
+      
+      public static const SMALL_HEAVY_TANK:String = "small_heavyTank";
+      
+      public static const SMALL_HEAVY_TANK_ELITE:String = "small_heavyTank_elite";
+      
+      public static const SMALL_LIGHT_TANK:String = "small_lightTank";
+      
+      public static const SMALL_LIGHT_TANK_ELITE:String = "small_lightTank_elite";
+      
+      public static const SMALL_MEDIUM_TANK:String = "small_mediumTank";
+      
+      public static const SMALL_MEDIUM_TANK_ELITE:String = "small_mediumTank_elite";
+      
+      public static const SMALL_SPG:String = "small_SPG";
+      
+      public static const SMALL_SPG_ELITE:String = "small_SPG_elite";
+      
       public static const SPG:String = "SPG";
       
       public static const SPG_ELITE:String = "SPG_elite";

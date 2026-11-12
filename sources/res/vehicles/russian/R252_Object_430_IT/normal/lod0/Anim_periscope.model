@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/russian/R252_Object_430_IT/normal/lod0/Anim_periscope</nodelessVisual>
+	<parent>vehicles/russian/R252_Object_430_IT/normal/lod1/Anim_periscope</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.100772 -0.000000 -0.100774</min>
+		<max>0.100772 0.142357 0.100772</max>
+	</visibilityBox>
+</root>

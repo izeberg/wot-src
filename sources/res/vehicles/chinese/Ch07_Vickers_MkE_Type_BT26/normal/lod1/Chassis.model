@@ -2,17 +2,11 @@
 <root>
 	<tank>true</tank>
 	<parent>vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/normal/lod2/Chassis</parent>
-	<extent>64</extent>
+	<extent>64.000000</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.22728 -0.000062 -2.2528
-			<!--BW_String-->
-		</min>
-		<max>
-			1.22728 1.16403 2.22743
-			<!--BW_String-->
-		</max>
+		<min>-1.227280 -0.000062 -2.252800</min>
+		<max>1.227280 1.164030 2.227430</max>
 	</visibilityBox>
 	<nodefullVisual>vehicles/chinese/Ch07_Vickers_MkE_Type_BT26/normal/lod1/Chassis</nodefullVisual>
 </root>

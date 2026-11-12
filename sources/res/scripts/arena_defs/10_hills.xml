@@ -147,31 +147,37 @@
 			<minimap>spaces/10_hills/mmap_comp7.dds</minimap>
 			<pointsOfInterestUDO>
 				<point>
-					<position>-210.890121 -6.761281</position>
-					<type>1</type>
+					<position>-340.015564 -243.283585</position>
+					<type>3</type>
 				</point>
 				<point>
-					<position>184.469055 67.789528</position>
-					<type>1</type>
+					<position>88.750648 15.840657</position>
+					<type>4</type>
 				</point>
 				<point>
-					<position>79.613525 23.822180</position>
-					<type>2</type>
+					<position>148.783279 64.078041</position>
+					<type>3</type>
 				</point>
 				<point>
-					<position>-320.713806 -26.193348</position>
-					<type>1</type>
+					<position>-347.625427 32.566956</position>
+					<type>3</type>
 				</point>
 			</pointsOfInterestUDO>
 			<teamSpawnPoints>
 				<team1>
-					<position>-19.039597 -292.898560</position>
+					<position>80.585587 -325.639984</position>
 				</team1>
 				<team2>
-					<position>-62.687927 258.237152</position>
+					<position>-192.506729 289.712128</position>
 				</team2>
 			</teamSpawnPoints>
-			<controlPoint>-66.412109 12.933237</controlPoint>
+			<teamBasePositions>
+				<team1>
+					<position1>195.064728 -18.873474</position1>
+					<position2>-234.888763 -92.211212</position2>
+				</team1>
+				<team2/>
+			</teamBasePositions>
 		</comp7>
 		<bob>
 			<recon>

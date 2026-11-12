@@ -103,7 +103,7 @@ class BattleMattersMissionComponent(InjectComponentAdaptor, BattleMattersViewMet
             if openVehicleSelection:
                 from tank_academy.gui.impl.lobby.tank_academy.tank_academy_vehicles_selection_view import TankAcademyVehiclesSelectionView
                 return (
-                 TankAcademyVehiclesSelectionView, [kwargs.get('tokenID')])
+                 TankAcademyVehiclesSelectionView, [kwargs.get('tokenID'), kwargs.get('initialTab')])
             from tank_academy.gui.impl.lobby.tank_academy.tank_academy_main_view import TankAcademyMainView
             return (
              TankAcademyMainView, [])

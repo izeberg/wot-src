@@ -52,6 +52,8 @@ package net.wg.infrastructure.base.meta
       
       function as_showLimitedUISetting(param1:Boolean) : void;
       
+      function as_showVehicleDifficultySettings(param1:Boolean) : void;
+      
       function as_ConfirmationOfApplication(param1:Boolean) : void;
       
       function as_openTab(param1:Number) : void;

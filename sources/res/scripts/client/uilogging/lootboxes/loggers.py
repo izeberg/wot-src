@@ -7,7 +7,7 @@ from skeletons.gui.shared import IItemsCache
 from wotdecorators import noexcept
 from skeletons.gui.game_control import IGuiLootBoxesController
 from uilogging.base.logger import FlowLogger, MetricsLogger
-from uilogging.lootboxes.constants import Actions, BUY_BUTTONS_MAP, DEFAULT_TIME_LIMIT, FEATURE, Items, STATISTIC_BUTTONS_MAP, TABS_STATE_MAP, Views
+from uilogging.lootboxes.constants import Actions, BUY_BUTTONS_MAP, DEFAULT_TIME_LIMIT, FEATURE, Items, SKIP_WAY_MAP, STATISTIC_BUTTONS_MAP, TABS_STATE_MAP, Views
 
 class LootboxMetricsLogger(MetricsLogger):
 
@@ -62,6 +62,19 @@ class LootboxStorageLogger(LootboxMetricsLogger):
            'been_opened': lootBox.getHistoryName() in boxesHistory}
         self.log(action=Actions.PROBABILITY_OPEN_CLICK, item=Items.PROBABILITY_BTN, info=json.dumps(logInfo))
 
+    @noexcept
+    def logCardSelect(self, lootBoxID, cardID):
+        lootBox = self.__itemsCache.items.tokens.getLootBoxByID(int(lootBoxID))
+        if lootBox is None:
+            return
+        else:
+            logInfo = {'lootBox': lootBox.getType(), 
+               'lootBoxID': lootBox.getID(), 
+               'selectedCardNumber': cardID + 1, 
+               'lootBoxTotalCollected': self.__guiLootBoxesStatisticCtrl.getLootBoxesVersionInfo(lootBox.getID())}
+            self.log(action=Actions.CLICK, item=Items.SELECTION_CARD, parentScreen=Views.OPEN_BY_SELECTION, info=json.dumps(logInfo))
+            return
+
     def logStorageEscHotkey(self):
         self.log(action=Actions.STORAGE_ESC_HOTKEY, item=Items.CLOSE_ESC_HOTKEY, parentScreen=Views.STORAGE)
 
@@ -92,6 +105,29 @@ class LootboxStorageLogger(LootboxMetricsLogger):
 
     def logStatisticsEscHotkey(self, activeTab):
         self.log(action=Actions.STATISTIC_ESC_HOTKEY, item=Items.CLOSE_ESC_HOTKEY, parentScreen=Views.STATISTICS_SHORT_STATS, info=json.dumps({'activeTab': activeTab.value}))
+
+    @noexcept
+    def logStageRotationHeaderClick(self, lootBox):
+        logInfo = {'lootBox': lootBox.getType(), 
+           'lootBoxID': lootBox.getID(), 
+           'lootBoxCount': lootBox.getInventoryCount(), 
+           'lootBoxTotalCollected': self.__guiLootBoxesStatisticCtrl.getLootBoxesVersionInfo(lootBox.getID())}
+        self.log(action=Actions.PROBABILITY_OPEN_CLICK, item=Items.STAGE_ROTATION_HEADER, parentScreen=Views.STORAGE, info=json.dumps(logInfo))
+
+    @noexcept
+    def logSkipAnimation(self, lootBoxID, skipWayID, stage):
+        lootBox = self.__itemsCache.items.tokens.getLootBoxByID(int(lootBoxID))
+        if None in (skipWayID, lootBox):
+            return
+        else:
+            skipItem = SKIP_WAY_MAP.get(skipWayID, Items.SKIP_BUTTON)
+            logInfo = {'lootBox': lootBox.getType(), 
+               'lootBoxID': lootBox.getID(), 
+               'stage': stage, 
+               'skipMethod': skipItem.value, 
+               'lootBoxTotalCollected': self.__guiLootBoxesStatisticCtrl.getLootBoxesVersionInfo(lootBox.getID())}
+            self.log(action=Actions.CLICK, item=skipItem, parentScreen=Views.OPEN_BY_SELECTION, info=json.dumps(logInfo))
+            return
 
     @staticmethod
     def _getButtonByID(btnID):

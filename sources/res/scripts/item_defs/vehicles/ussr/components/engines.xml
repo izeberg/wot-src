@@ -1169,27 +1169,6 @@
 			<rpm_min>290</rpm_min>
 			<rpm_max>2868</rpm_max>
 		</M-17T>
-		<M-40-2V_H>
-			<id>20003</id>
-			<userString>#ussr_vehicles:M-40-2V_H</userString>
-			<tags>diesel</tags>
-			<level>2</level>
-			<price>0</price>
-			<notInShop>true</notInShop>
-			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
-			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
-			<power>1206</power>
-			<weight>1000</weight>
-			<maxHealth>103</maxHealth>
-			<maxRegenHealth>65</maxRegenHealth>
-			<repairCost>0</repairCost>
-			<fireStartingChance>
-				0.0
-				<!--BW_String-->
-			</fireStartingChance>
-			<rpm_min>300</rpm_min>
-			<rpm_max>2300</rpm_max>
-		</M-40-2V_H>
 		<M-40-2V_SH>
 			<id>326</id>
 			<userString>#ussr_vehicles:M-40-2V_SH</userString>
@@ -3275,27 +3254,6 @@
 			<rpm_min>299</rpm_min>
 			<rpm_max>2301</rpm_max>
 		</V-2-54IS_zv>
-		<V-2-54M_H>
-			<id>20002</id>
-			<userString>#ussr_vehicles:V-2-54M_H</userString>
-			<tags>diesel</tags>
-			<level>2</level>
-			<price>0</price>
-			<notInShop>true</notInShop>
-			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
-			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
-			<power>1500</power>
-			<weight>1000</weight>
-			<maxHealth>103</maxHealth>
-			<maxRegenHealth>65</maxRegenHealth>
-			<repairCost>0</repairCost>
-			<fireStartingChance>
-				0.0
-				<!--BW_String-->
-			</fireStartingChance>
-			<rpm_min>300</rpm_min>
-			<rpm_max>2300</rpm_max>
-		</V-2-54M_H>
 		<V-2-54M_SH>
 			<id>325</id>
 			<userString>#ussr_vehicles:V-2-54M_SH</userString>
@@ -3585,27 +3543,6 @@
 			<rpm_min>400</rpm_min>
 			<rpm_max>2000</rpm_max>
 		</V-2K_D15>
-		<V-2K_H>
-			<id>20001</id>
-			<userString>#ussr_vehicles:V-2K_H</userString>
-			<tags>diesel</tags>
-			<level>1</level>
-			<price>0</price>
-			<notInShop>true</notInShop>
-			<wwsoundPC>eng_v55_pc</wwsoundPC>
-			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
-			<power>760</power>
-			<weight>1000</weight>
-			<maxHealth>103</maxHealth>
-			<maxRegenHealth>65</maxRegenHealth>
-			<repairCost>0</repairCost>
-			<fireStartingChance>
-				0.0
-				<!--BW_String-->
-			</fireStartingChance>
-			<rpm_min>239</rpm_min>
-			<rpm_max>2482</rpm_max>
-		</V-2K_H>
 		<V-2K_IS2>
 			<id>31031</id>
 			<userString>#ussr_vehicles:V-2K</userString>
@@ -5144,6 +5081,27 @@
 			<rpm_min>500</rpm_min>
 			<rpm_max>1900</rpm_max>
 		</V_54_105_DR>
+		<V_54_R259>
+			<id>31092</id>
+			<userString>#ussr_vehicles:V_54_R259</userString>
+			<tags>diesel</tags>
+			<level>8</level>
+			<price>55000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
+			<power>520</power>
+			<weight>895</weight>
+			<maxHealth>260</maxHealth>
+			<maxRegenHealth>130</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<fireStartingChance>
+				0.15
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>379</rpm_min>
+			<rpm_max>2141</rpm_max>
+		</V_54_R259>
 		<V_55>
 			<id>31054</id>
 			<userString>#ussr_vehicles:V_55</userString>
@@ -5684,6 +5642,27 @@
 			<rpm_min>400</rpm_min>
 			<rpm_max>2000</rpm_max>
 		</_5TDF_O>
+		<_5TDF_R252>
+			<id>31087</id>
+			<userString>#ussr_vehicles:_5TDF_R252</userString>
+			<tags>diesel</tags>
+			<level>11</level>
+			<price>230000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_v55_pc</wwsoundPC>
+			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<power>700</power>
+			<weight>1050</weight>
+			<maxHealth>360</maxHealth>
+			<maxRegenHealth>180</maxRegenHealth>
+			<repairCost>10</repairCost>
+			<fireStartingChance>
+				0.15
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>299</rpm_min>
+			<rpm_max>2301</rpm_max>
+		</_5TDF_R252>
 		<_5TDF_S>
 			<id>155</id>
 			<userString>#ussr_vehicles:_5TDF_S</userString>
@@ -5747,6 +5726,27 @@
 			<rpm_min>419</rpm_min>
 			<rpm_max>2060</rpm_max>
 		</_5TD_02>
+		<_6TD>
+			<id>228</id>
+			<userString>#ussr_vehicles:_6TD</userString>
+			<tags>diesel</tags>
+			<level>8</level>
+			<price>54000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_v55_pc</wwsoundPC>
+			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<power>740</power>
+			<weight>1180</weight>
+			<maxHealth>370</maxHealth>
+			<maxRegenHealth>185</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<fireStartingChance>
+				0.12
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>259</rpm_min>
+			<rpm_max>2422</rpm_max>
+		</_6TD>
 		<_8TDF_R250>
 			<id>31081</id>
 			<userString>#ussr_vehicles:_8TDF_R250</userString>

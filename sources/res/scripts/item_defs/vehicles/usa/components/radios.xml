@@ -596,6 +596,38 @@
 				<!--BW_String-->
 			</repairCost>
 		</AN_VRC_3>
+		<AN_VRC_3_A185>
+			<id>31029</id>
+			<userString>#usa_vehicles:AN_VRC_3_A185</userString>
+			<tags/>
+			<level>11</level>
+			<notInShop>true</notInShop>
+			<price>71600</price>
+			<weight>30</weight>
+			<distance>745</distance>
+			<maxHealth>250</maxHealth>
+			<maxRegenHealth>75</maxRegenHealth>
+			<repairCost>
+				3.5
+				<!--BW_String-->
+			</repairCost>
+		</AN_VRC_3_A185>
+		<AN_VRC_3_A186>
+			<id>31030</id>
+			<userString>#usa_vehicles:AN_VRC_3_A186</userString>
+			<tags/>
+			<level>10</level>
+			<notInShop>true</notInShop>
+			<price>51600</price>
+			<weight>64</weight>
+			<distance>745</distance>
+			<maxHealth>250</maxHealth>
+			<maxRegenHealth>75</maxRegenHealth>
+			<repairCost>
+				3.5
+				<!--BW_String-->
+			</repairCost>
+		</AN_VRC_3_A186>
 		<British_Wireless_set_N19>
 			<id>10</id>
 			<userString>#usa_vehicles:British_Wireless_set_N19</userString>

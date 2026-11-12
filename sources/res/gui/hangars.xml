@@ -32,10 +32,5 @@
 			<space>h16_mt_museum</space>
 			<customEventMode>True</customEventMode>
 		</MUSEUM_OF_GLORY>
-		<PORTAL>
-			<space>h13_mt_portal_2025</space>
-			<waitingMessage>portal/hangarLoading</waitingMessage>
-			<waitingBackground>gui/maps/icons/lobby/portalBgHangarScene.jpg</waitingBackground>
-		</PORTAL>
 	</hangar_scene_spaces>
 </root>

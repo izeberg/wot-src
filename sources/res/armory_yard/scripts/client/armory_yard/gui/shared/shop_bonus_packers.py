@@ -105,9 +105,11 @@ class CurrencyPacker(ShopBaseUIPacker):
     _CURRENCY = None
     __FORMATTER = '%(C9C9B6_Open)s{}%(C9C9B6_Close)s'
 
-    def __init__(self, count=0):
+    def __init__(self, params):
+        count = params[0] or 0
         super(CurrencyPacker, self).__init__(count)
         self._strSection = R.strings.armory_shop.dyn(self._CURRENCY)
+        self.__category = params[1]
 
     @property
     def isSupported(self):
@@ -142,6 +144,12 @@ class CurrencyPacker(ShopBaseUIPacker):
         else:
             return
 
+    @property
+    def template(self):
+        if self.__category:
+            return TemplateType(self.__category)
+        return TemplateType.OTHER
+
 
 class CreditsPacker(CurrencyPacker):
     _CURRENCY = Currency.CREDITS
@@ -169,9 +177,10 @@ class PremiumPlusPacker(ShopBaseUIPacker):
     __SIZE_SMALL = 's232x174'
     __SIZE_LARGE = 's400x300'
 
-    def __init__(self, day):
-        super(PremiumPlusPacker, self).__init__(day)
-        self.__day = day
+    def __init__(self, params):
+        self.__day = params[0]
+        super(PremiumPlusPacker, self).__init__(self.__day)
+        self.__category = params[1]
 
     def __getIcon(self, size):
         resource = R.images.gui.maps.icons.quests.bonuses.dyn(size).dyn(self.__IMG_NAME.format(self.__day))
@@ -203,6 +212,12 @@ class PremiumPlusPacker(ShopBaseUIPacker):
     def longDescription(self):
         return backport.text(R.strings.armory_shop.premiumPlus.longDescription(), dayStr=backport.text(self.__getDescription()(), value=self.__day))
 
+    @property
+    def template(self):
+        if self.__category:
+            return TemplateType(self.__category)
+        return TemplateType.OTHER
+
     def __getDescription(self):
         if self.__day == 1:
             descr = R.strings.armory_shop.premiumPlus.description_1
@@ -219,7 +234,8 @@ class CustomizationPacker(ShopBaseUIPacker):
     __customizationImgPath = R.images.armory_yard.gui.maps.icons.shop.customizations.styles
 
     def __init__(self, params):
-        styleParams = params[1][0]
+        styleParams = params[1][0][0]
+        self.__category = params[1][1]
         styleCount = styleParams['value']
         styleType = styleParams['custType']
         super(CustomizationPacker, self).__init__(styleCount)
@@ -265,6 +281,8 @@ class CustomizationPacker(ShopBaseUIPacker):
 
     @property
     def template(self):
+        if self.__category:
+            return TemplateType(self.__category)
         return TemplateType.CUSTOMIZATION
 
     @property
@@ -291,7 +309,8 @@ class GoodiesPacker(ShopBaseUIPacker):
        GOODIE_RESOURCE_TYPE.FREE_XP_MAIN_XP: R.strings.personal_reserves.activation.comboXPTitle()}
 
     def __init__(self, params):
-        goodiesId, goodieParams = params.items()[0]
+        goodiesId, goodieParams = params[0].items()[0]
+        self.__category = params[1]
         self.__item = self.__cache.getBooster(goodiesId)
         super(GoodiesPacker, self).__init__(goodieParams.get('count', 1))
         if not self.__item:
@@ -327,6 +346,8 @@ class GoodiesPacker(ShopBaseUIPacker):
 
     @property
     def template(self):
+        if self.__category:
+            return TemplateType(self.__category)
         return TemplateType.MAINTAIN
 
     def __format(self, value):
@@ -344,7 +365,8 @@ class ItemPacker(ShopBaseUIPacker):
        'colourTagClose': '%(80D43A_Close)s'}
 
     def __init__(self, params):
-        itemId, count = params.items()[0]
+        itemId, count = params[0].items()[0]
+        self.__category = params[1]
         super(ItemPacker, self).__init__(count)
         self.__item = self.__cache.items.getItemByCD(itemId)
         self.__builder = None
@@ -411,8 +433,10 @@ class ItemPacker(ShopBaseUIPacker):
 
     @property
     def template(self):
+        if self.__category:
+            return TemplateType(self.__category)
         if self.__item.itemTypeID == GUI_ITEM_TYPE.BATTLE_BOOSTER and self.__item.isEconomicBooster():
-            return TemplateType.ECONOMICBOOSTER
+            return TemplateType.ECONOMIC_BOOSTER
         return TemplateType.MAINTAIN
 
     @property
@@ -460,7 +484,7 @@ class VehiclePacker(ShopBaseUIPacker):
     __COLOR_CLOSE_TAG = '%(E9E2BF_close)s'
 
     def __init__(self, params):
-        self.__vehicleId, self.__isOtherBonus, self.__isCrew, self.__isSlot, self.__armoryEpisode = params
+        self.__vehicleId, self.__isOtherBonus, self.__isCrew, self.__isSlot, self.__armoryEpisode, self.__category = params
         self.__item = self.__cache.items.getItemByCD(self.__vehicleId)
         super(VehiclePacker, self).__init__(1)
         if not self.__item:
@@ -492,6 +516,8 @@ class VehiclePacker(ShopBaseUIPacker):
     def template(self):
         if self.__isOtherBonus:
             return TemplateType.BUNDLE
+        if self.__category:
+            return TemplateType(self.__category)
         return TemplateType.VEHICLE
 
     @property
@@ -539,7 +565,8 @@ class BundlePacker(ShopBaseUIPacker):
        'other': TemplateType.OTHER, 
        'maintain': TemplateType.MAINTAIN, 
        'customization': TemplateType.CUSTOMIZATION, 
-       'economicBooster': TemplateType.ECONOMICBOOSTER}
+       'economicBooster': TemplateType.ECONOMIC_BOOSTER, 
+       'specialOffers': TemplateType.SPECIAL_OFFERS}
 
     def __init__(self, params):
         self.__keyName, self.__category, self.count = params
@@ -614,6 +641,7 @@ def getBonusPacker(productId, bonus, **kwargs):
     exclusiveVehicleID = kwargs.get('exclusiveVehicle', None)
     uiSection = kwargs.get('UI', {})
     packAsBundle = kwargs.get('packAsBundle', uiSection.get('packAsBundle', {}))
+    category = kwargs.get('category', uiSection.get('category', None))
     vehicleID = None
     for bonusType, bonusValue in bonus.iteritems():
         if bonusType == 'vehicles':
@@ -629,16 +657,19 @@ def getBonusPacker(productId, bonus, **kwargs):
         if bonusType == 'slots':
             isSlot = True
             continue
+        if bonusType == 'tokens':
+            continue
         bonusItems[bonusType] = bonusValue
 
     if packAsBundle:
         bonusType = 'bundle'
-        bonusValue = [packAsBundle.get('useKeyName'), packAsBundle.get('category'), kwargs.get('count', 0)]
+        bonusValue = [packAsBundle.get('useKeyName'), category, kwargs.get('count', 0)]
     elif vehicleID is not None:
         bonusType = 'vehicles'
-        bonusValue = [vehicleID, bool(bonusItems), isCrew, isSlot, uiSection.get('armoryEpisode', 0)]
+        bonusValue = [vehicleID, bool(bonusItems), isCrew, isSlot, uiSection.get('armoryEpisode', 0), category]
     else:
         bonusType, bonusValue = bonusItems.items()[0]
+        bonusValue = [bonusValue, category]
     if bonusType == 'customizations':
         bonusValue = (
          productId, bonusValue)

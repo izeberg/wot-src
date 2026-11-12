@@ -14,15 +14,9 @@
 				particles/content_forward/pfx_textures/eff_tex_split_smoke_8.dds
 				<type>primary</type>
 			</path>
-			<path>
-				particles/content_forward/pfx_textures/eff_tex_smoke.dds
-				<type>primary</type>
-			</path>
 		</preloadTextures>
-		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h00_ay_cup_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_touchdown_big.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/environment/hangar/h00_ay_cup_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_fall_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_touchdown_big.eff</fn_effect_bin>
 	</forward>
@@ -42,18 +36,12 @@
 				<type>primary</type>
 			</path>
 			<path>
-				particles/content_deferred/pfx_textures/eff_tex_smoke.dds
-				<type>primary</type>
-			</path>
-			<path>
 				particles/content_deferred/pfx_textures/area_indiansummer_u.dds
 				<type>primary</type>
 			</path>
 		</preloadTextures>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h00_ay_cup_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_touchdown_big.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/environment/hangar/h00_ay_cup_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_fall_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/inf_tree_bush_dry_touchdown_big.eff</fn_effect_bin>
 	</deferred>

@@ -19,6 +19,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public var onClickOpenEventBtn:Function;
       
+      public var onNyQuestsClick:Function;
+      
       public function MissionsGroupedViewMeta()
       {
          super();
@@ -58,6 +60,12 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.onClickOpenEventBtn,"onClickOpenEventBtn" + Errors.CANT_NULL);
          this.onClickOpenEventBtn(param1);
+      }
+      
+      public function onNyQuestsClickS() : void
+      {
+         App.utils.asserter.assertNotNull(this.onNyQuestsClick,"onNyQuestsClick" + Errors.CANT_NULL);
+         this.onNyQuestsClick();
       }
    }
 }

@@ -250,9 +250,21 @@
 		<name>500_stalingrad</name>
 	</map>
 	<map>
+		<id>2009</id>
+		<name>01_karelia_ny</name>
+	</map>
+	<map>
+		<id>2010</id>
+		<name>02_malinovka_ny</name>
+	</map>
+	<map>
 		<id>2011</id>
 		<name>778_greenland</name>
 		<isDevelopment>true</isDevelopment>
+	</map>
+	<map>
+		<id>2012</id>
+		<name>05_prohorovka_ny</name>
 	</map>
 	<map>
 		<id>5004</id>
@@ -316,6 +328,10 @@
 	</map>
 	<map>
 		<id>5033</id>
-		<name>252_br_battle_city4_portal</name>
+		<name>23_westfeld_ny</name>
+	</map>
+	<map>
+		<id>5034</id>
+		<name>34_redshire_ny</name>
 	</map>
 </root>

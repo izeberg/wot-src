@@ -4,4 +4,8 @@
 	<parent>vehicles/japan/J20_Type_2605/_skins/J20_Type_2605_BXI_3DSt/crash/lod4/Gun_01</parent>
 	<extent>192.000000</extent>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.415004 -0.364355 -1.224332</min>
+		<max>0.415004 0.546926 4.601346</max>
+	</visibilityBox>
 </root>

@@ -48,14 +48,18 @@ class HangarCarouselDataProvider(CarouselDataProvider):
 
     def _populate(self):
         self._wotPlusCtrl.onDataChanged += self._onWotPlusDataChanged
-        self._telecomRentals = BigWorld.player().telecomRentals
-        self._telecomRentals.onPendingRentChanged += self._onTelecomPendingRentChanged
+        player = BigWorld.player()
+        if player is not None:
+            self._telecomRentals = BigWorld.player().telecomRentals
+            self._telecomRentals.onPendingRentChanged += self._onTelecomPendingRentChanged
         g_clientUpdateManager.addCallback('tokens', self._onTelecomRentalsChanged)
         super(HangarCarouselDataProvider, self)._populate()
+        return
 
     def _dispose(self):
         self._wotPlusCtrl.onDataChanged -= self._onWotPlusDataChanged
-        self._telecomRentals.onPendingRentChanged -= self._onTelecomPendingRentChanged
+        if self._telecomRentals:
+            self._telecomRentals.onPendingRentChanged -= self._onTelecomPendingRentChanged
         g_clientUpdateManager.removeObjectCallbacks(self, True)
         super(HangarCarouselDataProvider, self)._dispose()
 
@@ -92,10 +96,11 @@ class HangarCarouselDataProvider(CarouselDataProvider):
         isVehicleRemoved = not set(vehiclesCDs or ()).issubset(newRentalsVehicles)
         isVehicleAdded = not set(vehiclesCDs or ()).issubset(rentalVehicles)
         if changeInRentals or isVehicleRemoved or isVehicleAdded:
-            telecomPendingVehCD = self._telecomRentals.getRentsPending()
-            telecomPendingVehCD = telecomPendingVehCD.intersection(newRentalsVehicles)
-            if isVehicleAdded and telecomPendingVehCD:
-                self._telecomRentals.resetRentsPending(telecomPendingVehCD)
+            if self._telecomRentals:
+                telecomPendingVehCD = self._telecomRentals.getRentsPending()
+                telecomPendingVehCD = telecomPendingVehCD.intersection(newRentalsVehicles)
+                if isVehicleAdded and telecomPendingVehCD:
+                    self._telecomRentals.resetRentsPending(telecomPendingVehCD)
             self.buildList()
             return
         super(HangarCarouselDataProvider, self).updateVehicles(vehiclesCDs, filterCriteria, forceUpdate)
@@ -140,7 +145,7 @@ class HangarCarouselDataProvider(CarouselDataProvider):
     def _getFrontAdditionalItemsIndexes(self):
         frontIndices = self._getFrontIndices()
         pruneIndices = set()
-        if not self._isTelecomRentalsEnabled() or self._telecomRentals.getAvailableRentCount() == 0:
+        if not self._isTelecomRentalsEnabled() or self._telecomRentals and self._telecomRentals.getAvailableRentCount() == 0:
             pruneIndices.add(_FRONT_SUPPLY_ITEMS.RENT_TANK)
         return [ suppIdx for suppIdx in frontIndices if frontIndices.index(suppIdx) not in pruneIndices ]
 
@@ -224,9 +229,11 @@ class HangarCarouselDataProvider(CarouselDataProvider):
         return [ len(self._vehicles) + idx for idx in _SUPPLY_ITEMS.ALL ]
 
     def _isTelecomRentalsEnabled(self):
-        hasTelecomRentalsActive = self._telecomRentals.isActive()
-        isRentalEnabled = self._serverSettings.isTelecomRentalsEnabled()
-        return hasTelecomRentalsActive and isRentalEnabled
+        if self._telecomRentals:
+            hasTelecomRentalsActive = self._telecomRentals.isActive()
+            isRentalEnabled = self._serverSettings.isTelecomRentalsEnabled()
+            return hasTelecomRentalsActive and isRentalEnabled
+        return False
 
 
 class BCCarouselDataProvider(CarouselDataProvider):

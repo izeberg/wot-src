@@ -67,10 +67,10 @@ def showArmoryYardBundlesWindow(armoryYard=None, parent=None, isBlurEnabled=Fals
 
 
 @dependency.replace_none_kwargs(armoryYardShopController=IArmoryYardShopController)
-def showArmoryYardShopWindow(parent=None, onLoadedCallback=None, armoryYardShopController=None):
+def showArmoryYardShopWindow(parent=None, onLoadedCallback=None, onCloseCallback=None, armoryYardShopController=None):
     if armoryYardShopController.isEnabled:
         from armory_yard.gui.impl.lobby.feature.armory_yard_shop_view import ArmoryYardShopWindow
-        ArmoryYardShopWindow(parent=parent, onLoadedCallback=onLoadedCallback).load()
+        ArmoryYardShopWindow(parent=parent, onLoadedCallback=onLoadedCallback, onCloseCallback=onCloseCallback).load()
 
 
 def showArmoryYardShopBuyWindow(productId, parent=None, onClosedCallback=None, onLoadedCallback=None):
@@ -227,7 +227,7 @@ def showArmoryYardInfoPage(parent=None, closeCallback=None, armoryYard=None):
 
     g_eventBus.handleEvent(events.ArmoryYardEvent(events.ArmoryYardEvent.STAGE_MUTE_SOUND))
     WWISE.WW_setState(StatesGroup.VIDEO_OVERLAY, States.VIDEO_OVERLAY_ON)
-    window = LobbyWindow(content=_createArmoryYardBrowserView(url=armoryYard.serverSettings.getModeSettings().infoPageLink, viewFlags=ViewFlags.LOBBY_TOP_SUB_VIEW, returnClb=closeCallbackWrapper), wndFlags=WindowFlags.WINDOW, parent=parent, layer=WindowLayer.TOP_SUB_VIEW)
+    window = LobbyWindow(content=_createArmoryYardBrowserView(url=armoryYard.serverSettings.getModeSettings().infoPageLink, viewFlags=ViewFlags.LOBBY_SUB_VIEW, returnClb=closeCallbackWrapper), wndFlags=WindowFlags.WINDOW, parent=parent, layer=WindowLayer.TOP_SUB_VIEW)
     window.load()
 
 

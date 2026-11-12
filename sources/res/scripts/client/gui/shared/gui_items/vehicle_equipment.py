@@ -88,7 +88,7 @@ class _Equipment(object):
         return not self.__eq__(equipment)
 
     def __repr__(self):
-        return ('{}, guiItemType: {}, capacity: {}').format(self.__class__.__name__, GUI_ITEM_TYPE_NAMES[self.__guiItemType], self.__capacity)
+        return ('{}, guiItemType: {}, capacity: {}, storage: {}').format(self.__class__.__name__, GUI_ITEM_TYPE_NAMES[self.__guiItemType], self.__capacity, self.getIntCDs())
 
     def clear(self):
         self._storage = [

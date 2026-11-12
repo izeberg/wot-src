@@ -94,7 +94,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.004180 0.597112 0.704425</row3>
+					<row3>-0.004920 0.572297 0.703463</row3>
 				</transform>
 			</node>
 		</node>
@@ -103,8 +103,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>lod3_hull_01_hull_hull_Shape.vertices</vertices>
+			<primitive>lod3_hull_01_hull_hull_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>

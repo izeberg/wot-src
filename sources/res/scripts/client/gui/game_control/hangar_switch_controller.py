@@ -170,7 +170,10 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
             self.processPossibleSceneChange()
 
     def onPrbEntitySwitched(self):
-        self.processPossibleSceneChange()
+        if not self.hangarSpace.inited or self.hangarSpace.spaceLoading():
+            self.hangarSpace.onSpaceCreate += self._delayedProcessChange
+        else:
+            self.processPossibleSceneChange()
         g_eventBus.handleEvent(events.HangarSpacesSwitcherEvent(events.HangarSpacesSwitcherEvent.SWITCH_TO_HANGAR_SPACE), scope=EVENT_BUS_SCOPE.LOBBY)
 
     def hangarSpaceUpdate(self, sceneName):
@@ -223,6 +226,8 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
         success, err = self.hangarSpaceReloader.changeHangarSpace(spaceId, visibilityMask, environment, waitingMessage, backgroundImage)
         if success:
             self.hangarSpace.onSpaceCreate += self._onSpaceCreatedCallback
+        elif err == ErrorFlags.DUPLICATE_REQUEST:
+            self.onSpaceUpdated()
         else:
             raise SoftException(('Could not perform space reload, see hangar_space_reloader.py error flag {}.').format(err))
 

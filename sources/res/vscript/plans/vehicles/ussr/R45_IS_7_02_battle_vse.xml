@@ -486,6 +486,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_4</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_8</id>
 				<buddy>Variable_8</buddy>
@@ -761,6 +767,12 @@
 						<type>IntT</type>
 					</param>
 				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_4</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -1468,8 +1480,20 @@
 			<connection>
 				<from>Sequence_1</from>
 				<input>input</input>
-				<to>SetVariable_8</to>
+				<to>If_4</to>
 				<output>o1</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_4</from>
+				<input>value</input>
+				<to>If_4</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_4</from>
+				<input>input</input>
+				<to>SetVariable_8</to>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>GameObjectToVehicle_1</from>
@@ -1644,6 +1668,12 @@
 				<input>input</input>
 				<to>Sequence_1</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_1</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_4</to>
+				<output>vehicle</output>
 			</connection>
 			<connection>
 				<from>GetVehicleGameObject_1</from>

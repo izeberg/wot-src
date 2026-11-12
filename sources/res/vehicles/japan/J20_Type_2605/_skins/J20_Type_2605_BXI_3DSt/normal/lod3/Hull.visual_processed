@@ -134,10 +134,6 @@
 						<Vector4>7.013700 7.013700 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
-					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
@@ -170,10 +166,6 @@
 					<property>
 						g_detailUVTiling
 						<Vector4>7.013700 7.013700 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicDetailMap
@@ -210,10 +202,6 @@
 						<Vector4>7.013700 7.013700 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
-					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
@@ -246,10 +234,6 @@
 					<property>
 						g_detailUVTiling
 						<Vector4>7.013700 7.013700 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicDetailMap
@@ -292,10 +276,6 @@
 					<property>
 						g_detailUVTiling
 						<Vector4>7.013700 7.013700 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicDetailMap

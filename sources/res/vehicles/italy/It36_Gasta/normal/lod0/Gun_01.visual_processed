@@ -131,10 +131,6 @@
 						<Texture>vehicles/italy/It36_Gasta/Gasta_guns_AO.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
 						colorIdMap
 						<Texture>vehicles/italy/It36_Gasta/Gasta_guns_ID.dds</Texture>
 					</property>

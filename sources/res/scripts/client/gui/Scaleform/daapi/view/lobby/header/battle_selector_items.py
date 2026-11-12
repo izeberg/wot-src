@@ -622,6 +622,7 @@ class _Comp7SquadItem(SpecialSquadItem):
         primeTimeStatus, _, _ = self.__controller.getPrimeTimeStatus()
         self._isVisible = self.__controller.isEnabled() and self.__controller.isInPrimeTime() and state.isInPreQueue(queueType=QUEUE_TYPE.COMP7)
         self._isDisabled = self._isDisabled or primeTimeStatus != PrimeTimeStatus.AVAILABLE
+        self._isNew = self._isNew and self.__controller.isLocked()
 
     @property
     def squadIcon(self):
@@ -644,6 +645,7 @@ class _RankedSquadItem(SpecialSquadItem):
         primeTimeStatus, _, _ = self.__controller.getPrimeTimeStatus()
         self._isVisible = self.__controller.isEnabled() and self.__controller.isInPrimeTime() and state.isInPreQueue(queueType=QUEUE_TYPE.RANKED)
         self._isDisabled = self._isDisabled or primeTimeStatus != PrimeTimeStatus.AVAILABLE
+        self._isNew = self._isNew and not self.__controller.isLocked()
 
     @property
     def squadIcon(self):
@@ -683,6 +685,7 @@ class _RankedItem(_SelectorItem):
         isDisabled = self.rankedController.isFrozen() and self.rankedController.getCurrentSeason() is not None
         self._isDisabled = state.hasLockedState or isDisabled
         self._isVisible = self.rankedController.isEnabled()
+        self._isNew = self._isNew and not self.rankedController.isLocked()
         return
 
     def __getAvailabilityStr(self):
@@ -968,6 +971,7 @@ class _Comp7Item(_SelectorItem):
         self._isSelected = state.isQueueSelected(QUEUE_TYPE.COMP7)
         self._isVisible = self.__comp7Controller.isEnabled() and not self.__bootcampController.isInBootcamp()
         self._isDisabled = state.hasLockedState or self.__comp7Controller.isFrozen()
+        self._isNew = self._isNew and not self.__comp7Controller.isLocked()
 
     @classmethod
     def __getScheduleStr(cls):

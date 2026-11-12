@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<parent>vehicles/british/GB147_Avalon_Mk_II_76/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.507559 -0.866241 -3.024860</min>
+		<max>1.486294 0.815172 3.061421</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB147_Avalon_Mk_II_76/crash/lod0/Hull</nodefullVisual>
+</root>

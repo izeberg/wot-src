@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>content/Hangars/h03_mt_ny_2026/customization/Tablefull/Tent/normal/lod0/h03_NY27_Tent_Bloger_02</nodelessVisual>
+	<visibilityBox>
+		<min>-3.204828 -0.076530 -6.188037</min>
+		<max>3.204828 7.224988 6.188040</max>
+	</visibilityBox>
+	<parent>content/Hangars/h03_mt_ny_2026/customization/Tablefull/Tent/normal/lod1/h03_NY27_Tent_Bloger_02</parent>
+	<extent>1000.000000</extent>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+</root>

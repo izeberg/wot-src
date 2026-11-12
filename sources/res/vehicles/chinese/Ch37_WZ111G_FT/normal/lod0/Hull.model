@@ -3,17 +3,11 @@
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.84703 -0.627717 -3.73612
-			<!--BW_String-->
-		</min>
-		<max>
-			1.71904 3.22488 3.73966
-			<!--BW_String-->
-		</max>
+		<min>-1.847030 -0.627717 -3.736120</min>
+		<max>1.719040 3.224879 3.739660</max>
 	</visibilityBox>
 	<projAreaCoeff>1</projAreaCoeff>
 	<parent>vehicles/chinese/Ch37_WZ111G_FT/normal/lod1/Hull</parent>
-	<extent>32</extent>
+	<extent>32.000000</extent>
 	<nodefullVisual>vehicles/chinese/Ch37_WZ111G_FT/normal/lod0/Hull</nodefullVisual>
 </root>

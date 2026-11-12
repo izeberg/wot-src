@@ -1,5 +1,4 @@
 import typing
-from adisp import adisp_process
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.comp7.division_info_model import Division
 from gui.impl.gen.view_models.views.lobby.comp7.meta_view.pages.progression_item_model import ProgressionItemModel
@@ -82,6 +81,8 @@ class ProgressionPage(PageSubModelPresenter):
          (
           self.__comp7Controller.onQualificationStateUpdated, self.__updateQualificationData),
          (
+          self.__comp7Controller.onLeaderboardDataProvided, self.__setLeaderBoardData),
+         (
           self.viewModel.onLeaderboardLinkClick, self.__onLeaderboardLinkClick))
 
     def __updateQualificationData(self):
@@ -94,7 +95,8 @@ class ProgressionPage(PageSubModelPresenter):
             vm.setRankInactivityCount(self.__comp7Controller.activityPoints)
             self.__setCurrentScore(vm)
             self.__setItems(vm)
-            self.__setLeaderBoardAsyncData()
+            if comp7_shared.playerInLeaderboard():
+                self.__comp7Controller.onLeaderboardDataRequested()
 
     def __setCurrentScore(self, viewModel):
         currentScore = self.__comp7Controller.rating
@@ -111,24 +113,13 @@ class ProgressionPage(PageSubModelPresenter):
 
         itemsArray.invalidate()
 
-    @adisp_process
-    def __setLeaderBoardAsyncData(self):
-        self.viewModel.setIsLastBestUserPointsValueLoading(True)
-        lbUpdateTime, isSuccess = yield self.__comp7Controller.leaderboard.getLastUpdateTime()
-        if not self.isLoaded:
-            return
-        if isSuccess:
-            self.__lastUpdateTime = lbUpdateTime
-            self.viewModel.setLeaderboardUpdateTimestamp(lbUpdateTime or 0)
-        lastRatingValue, isSuccess = yield self.__comp7Controller.leaderboard.getLastEliteRating()
-        if not self.isLoaded:
-            return
-        if isSuccess:
-            self.viewModel.setLastBestUserPointsValue(lastRatingValue or 0)
-        self.viewModel.setIsLastBestUserPointsValueLoading(not isSuccess)
-        isSuccess, myPosition, _, _ = yield self.__comp7Controller.leaderboard.getOwnData()
-        if isSuccess:
-            self.viewModel.setMyPosition(myPosition or 0)
+    def __setLeaderBoardData(self, data):
+        position = data.get('position')
+        if position is not None:
+            with self.viewModel.transaction() as (vm):
+                vm.setMyPosition(position)
+                vm.setLeaderboardUpdateTimestamp(data.get('updatedAt') or 0)
+        return
 
     def __onRankRewardsPageOpen(self):
         self.parentView.switchPage(MetaRootViews.RANKREWARDS)
