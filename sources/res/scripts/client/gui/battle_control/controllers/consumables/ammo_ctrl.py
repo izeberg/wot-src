@@ -173,7 +173,7 @@ class _GunSettings(object):
             if vehicle is None:
                 return 0.0
             builder = VehicleBuilder()
-            builder.setStrCD(vehicle.typeDescriptor.makeCompactDescr())
+            builder.setStrCD(vehicle.publicInfo.compDescr)
             builder.setCrew(vehicle.crewCompactDescrs)
             kpiFactors = aggregateKpi(kpiFromCrewSkills(builder.getResult()))
             lowerBoundFactor = kpiFactors.getFactor(KPI.Name.DAMAGE_AND_PIERCING_DISTRIBUTION_LOWER_BOUND)

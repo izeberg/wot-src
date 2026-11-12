@@ -22,7 +22,7 @@ from items import ITEM_TYPE_NAMES, vehicles, EQUIPMENT_TYPES, ITEM_TYPES
 from items.vehicles import VehicleDescr
 from nation_change_helpers.client_nation_change_helper import getValidVehicleCDForNationChange
 from post_progression_common import VehicleState
-from skeletons.gui.game_control import IVehicleComparisonBasket
+from skeletons.gui.game_control import IVehicleComparisonBasket, IEpicBattleMetaGameController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
 from soft_exception import SoftException
@@ -36,7 +36,7 @@ _ChangedData = namedtuple('_ChangedData', (
  'removedIDXs',
  'removedCDs',
  'isFullChanged'))
-_COMPARE_INVALID_CRITERIA = ~REQ_CRITERIA.VEHICLE.EVENT_BATTLE | ~REQ_CRITERIA.SECRET
+_COMPARE_INVALID_CRITERIA = ~REQ_CRITERIA.VEHICLE.EVENT_BATTLE | ~REQ_CRITERIA.VEHICLE.SECRET | ~(REQ_CRITERIA.VEHICLE.EPIC_BATTLE | ~REQ_CRITERIA.CUSTOM(lambda item: _isCmpEpicVehicle(item.name)))
 
 def getVehicleCriteriaForComparing():
     return _COMPARE_INVALID_CRITERIA
@@ -74,6 +74,12 @@ def getCrewSkills(vehicle):
              vehicle.descriptor.type.crewRoles[idx][0], [])
 
     return currentSkills
+
+
+@dependency.replace_none_kwargs(epicController=IEpicBattleMetaGameController)
+def _isCmpEpicVehicle(vehicleName, epicController=None):
+    visibleVehiclesList = epicController.getCompareVisibleVehiclesList()
+    return vehicleName in visibleVehiclesList
 
 
 def _removeVehicleCamouflages(vehicle):

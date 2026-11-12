@@ -6392,6 +6392,9 @@
 			<exclude>
 				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<decal>
 			<id>1231</id>

@@ -1,6 +1,7 @@
 from __future__ import absolute_import, division
 import imghdr, logging, weakref, typing, math
 from collections import namedtuple
+from itertools import chain
 from future.utils import viewvalues
 import BigWorld, CGF, GenericComponents, cgf_network, GpuDecals, math_utils, items
 from debug_utils import LOG_ERROR, LOG_WARNING
@@ -870,22 +871,29 @@ class VehicleStickers(object):
     @classmethod
     def _createComponentSlots(cls, vehicleDesc, showEmblemsOnGun, modelsSet):
         showEmblemsOnGun = vehicleDesc.turret.showEmblemsOnGun
+        skipDefault = cls._hasModelsSetClanSlots(vehicleDesc, modelsSet)
         componentSlots = (
          (
-          TankPartNames.HULL, cls._filterClanEmblems(vehicleDesc.hull.emblemSlots, modelsSet)),
+          TankPartNames.HULL, cls._filterClanEmblems(vehicleDesc.hull.emblemSlots, modelsSet, skipDefault)),
          (
           TankPartNames.GUN if showEmblemsOnGun else TankPartNames.TURRET,
-          cls._filterClanEmblems(vehicleDesc.turret.emblemSlots, modelsSet)),
+          cls._filterClanEmblems(vehicleDesc.turret.emblemSlots, modelsSet, skipDefault)),
          (
           TankPartNames.TURRET if showEmblemsOnGun else TankPartNames.GUN,
-          cls._filterClanEmblems([ slot for slot in vehicleDesc.gun.emblemSlots if slot.type != 'insigniaOnGun' ], modelsSet)))
+          cls._filterClanEmblems([ slot for slot in vehicleDesc.gun.emblemSlots if slot.type != 'insigniaOnGun' ], modelsSet, skipDefault)))
         gunSlots = cls._createGunSlots(vehicleDesc, modelsSet)
         if gunSlots:
             componentSlots += gunSlots
         return componentSlots
 
     @classmethod
-    def _filterClanEmblems(cls, emblemSlots, modelsSet):
+    def _hasModelsSetClanSlots(cls, vehicleDesc, modelsSet):
+        if modelsSet == '':
+            modelsSet = SLOT_DEFAULT_ALLOWED_MODEL
+        return any(slot.type == 'clan' and modelsSet in slot.compatibleModels for slot in chain(vehicleDesc.hull.emblemSlots, vehicleDesc.turret.emblemSlots, vehicleDesc.gun.emblemSlots))
+
+    @classmethod
+    def _filterClanEmblems(cls, emblemSlots, modelsSet, skipDefault=False):
         clanSlots = []
         nonClanSlots = []
         for slot in emblemSlots:
@@ -902,7 +910,7 @@ class VehicleStickers(object):
                 if modelsSet in slot.compatibleModels:
                     filteredSlots.append(slot)
 
-        if not filteredSlots:
+        if not filteredSlots and not skipDefault:
             for slot in clanSlots:
                 if not slot.compatibleModels:
                     filteredSlots.append(slot)

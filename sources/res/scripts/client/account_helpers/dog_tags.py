@@ -96,6 +96,9 @@ class DogTags(object):
         seenComps = userSettings.getDogTagsSettings().seenComps
         return unlockedCoupledComps - seenComps
 
+    def getUnseenCustomizableComps(self):
+        return self.getUnseenComps() - self.getUnseenCoupledComps()
+
     def updatePlayerDT(self, backgroundId, engravingId):
         self.__account._doCmdIntArr(AccountCommands.CMD_UPDATE_PLAYER_DOG_TAG, [backgroundId, engravingId], self.__onUpdatePlayerDTCmdResponseReceived)
 

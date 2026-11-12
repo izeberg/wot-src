@@ -4611,9 +4611,9 @@
 	<mechanics>
 		<specBoostMode>
 			<mechanicVariant>combatThrottle</mechanicVariant>
-			<deployTime>80</deployTime>
-			<duration>20</duration>
-			<cooldown>80</cooldown>
+			<deployTime>5</deployTime>
+			<duration>25</duration>
+			<cooldown>60</cooldown>
 			<modifiers>
 				<mul>
 					<name>dynAttrs/chassis/shotDispersionFactors/rotation</name>
@@ -4632,14 +4632,14 @@
 				<mul>
 					<name>dynAttrs/vehicle/rotationSpeed</name>
 					<value>
-						1.5
+						1.1
 						<!--BW_String-->
 					</value>
 				</mul>
 				<mul>
 					<name>dynAttrs/engine/power</name>
 					<value>
-						1.66
+						1.6
 						<!--BW_String-->
 					</value>
 				</mul>

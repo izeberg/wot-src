@@ -184,75 +184,15 @@
 	<accessMonitor>false</accessMonitor>
 	<hasDevelopmentAssertions>true</hasDevelopmentAssertions>
 	<memoryCriticalThresholds>
-		<x86os86>
-			<virtualMemoryLoadThreshold>
-				85.0
-				<!--BW_String-->
-			</virtualMemoryLoadThreshold>
-			<virtualMemoryLoadLeftoverMb>
-				150.0
-				<!--BW_String-->
-			</virtualMemoryLoadLeftoverMb>
-			<pageFileMemoryLoadThreshold>
-				99.0
-				<!--BW_String-->
-			</pageFileMemoryLoadThreshold>
-			<pageFileMemoryLoadLeftoverMb>
-				200.0
-				<!--BW_String-->
-			</pageFileMemoryLoadLeftoverMb>
-			<physicalMemoryLoadThreshold>
-				99.0
-				<!--BW_String-->
-			</physicalMemoryLoadThreshold>
-			<physicalMemoryLoadLeftoverMb>
-				200.0
-				<!--BW_String-->
-			</physicalMemoryLoadLeftoverMb>
-		</x86os86>
-		<x86os64>
-			<virtualMemoryLoadThreshold>
-				87.0
-				<!--BW_String-->
-			</virtualMemoryLoadThreshold>
-			<virtualMemoryLoadLeftoverMb>
-				250.0
-				<!--BW_String-->
-			</virtualMemoryLoadLeftoverMb>
-			<pageFileMemoryLoadThreshold>
-				87.0
-				<!--BW_String-->
-			</pageFileMemoryLoadThreshold>
-			<pageFileMemoryLoadLeftoverMb>
-				250.0
-				<!--BW_String-->
-			</pageFileMemoryLoadLeftoverMb>
-			<physicalMemoryLoadThreshold>
-				87.0
-				<!--BW_String-->
-			</physicalMemoryLoadThreshold>
-			<physicalMemoryLoadLeftoverMb>
-				250.0
-				<!--BW_String-->
-			</physicalMemoryLoadLeftoverMb>
-		</x86os64>
 		<x64os64>
-			<virtualMemoryLoadThreshold>
-				94.0
-				<!--BW_String-->
-			</virtualMemoryLoadThreshold>
-			<virtualMemoryLoadLeftoverMb>
-				250.0
-				<!--BW_String-->
-			</virtualMemoryLoadLeftoverMb>
-			<pageFileMemoryLoadThreshold>
+			<commitMemoryLoadThreshold>
 				99.0
 				<!--BW_String-->
-			</pageFileMemoryLoadThreshold>
-			<pageFileMemoryLoadLeftoverMb>
+			</commitMemoryLoadThreshold>
+			<commitMemoryLoadLeftoverMb>
 				250.0
 				<!--BW_String-->
-			</pageFileMemoryLoadLeftoverMb>
+			</commitMemoryLoadLeftoverMb>
 			<physicalMemoryLoadThreshold>
 				99.0
 				<!--BW_String-->
@@ -261,6 +201,18 @@
 				250.0
 				<!--BW_String-->
 			</physicalMemoryLoadLeftoverMb>
+			<pagedOutMemoryLoadThreshold>
+				20.0
+				<!--BW_String-->
+			</pagedOutMemoryLoadThreshold>
+			<pagedOutMemoryMinMb>
+				256.0
+				<!--BW_String-->
+			</pagedOutMemoryMinMb>
+			<pagingPressureSustainSec>
+				10.0
+				<!--BW_String-->
+			</pagingPressureSustainSec>
 		</x64os64>
 	</memoryCriticalThresholds>
 	<scaleformGC>

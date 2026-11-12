@@ -32,7 +32,7 @@ def getGroupIcon(parameter, comparator):
 
 
 def getMaxValue(value, delta):
-    return max(MAX_RELATIVE_VALUE, value + delta)
+    return max(MAX_RELATIVE_VALUE, value, value - delta)
 
 
 def _applyFormat(value, state, settings, doSmartRound, isColorize, nDigits=_NUMBER_DIGITS):

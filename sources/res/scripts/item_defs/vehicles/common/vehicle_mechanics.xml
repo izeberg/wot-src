@@ -927,28 +927,28 @@
 						<name>combatThrottleCooldown</name>
 					</param>
 					<param>
-						20
+						25
 						<name>combatThrottleDuration</name>
 					</param>
 					<param>
-						+10%
+						+60%
 						<name>enginePower</name>
 					</param>
 					<param>
-						+10%
+						+75%
 						<name>chassisRotationSpeed</name>
 					</param>
 					<param>
-						+50%
+						+30%/+50%
 						<name>speedLimits</name>
 					</param>
 					<param>
-						-30%
+						-60%
 						<name>vehicleGunShotDispersionChassisMovement</name>
 						<kpiSign>negative</kpiSign>
 					</param>
 					<param>
-						-30%
+						-60%
 						<name>vehicleGunShotDispersionChassisRotation</name>
 						<kpiSign>negative</kpiSign>
 					</param>

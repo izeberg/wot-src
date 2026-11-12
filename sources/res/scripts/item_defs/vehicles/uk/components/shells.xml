@@ -8668,7 +8668,7 @@
 		<id>350</id>
 		<userString>#gb_vehicles:_140mm_AP_Mk_1</userString>
 		<icon>ap</icon>
-		<price>1285</price>
+		<price>1612</price>
 		<kind>ARMOR_PIERCING</kind>
 		<caliber>140</caliber>
 		<isTracer>true</isTracer>
@@ -8684,7 +8684,7 @@
 		<id>351</id>
 		<userString>#gb_vehicles:_140mm_APDS_Mk_2</userString>
 		<icon>ap_cr_premium</icon>
-		<price>5600</price>
+		<price>6000</price>
 		<improved>true</improved>
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>140</caliber>
@@ -8701,7 +8701,7 @@
 		<id>352</id>
 		<userString>#gb_vehicles:_140mm_HESH_Mk_1</userString>
 		<icon>he_modern</icon>
-		<price>950</price>
+		<price>1064</price>
 		<kind>HIGH_EXPLOSIVE</kind>
 		<mechanics>MODERN</mechanics>
 		<caliber>140</caliber>

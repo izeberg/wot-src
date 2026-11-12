@@ -113,6 +113,13 @@
 			<undamaged>vehicles/german/G165_Erich_Konzept_I/normal/lod0/Hull.model</undamaged>
 			<destroyed>vehicles/german/G165_Erich_Konzept_I/crash/lod0/Hull.model</destroyed>
 			<exploded>vehicles/german/G165_Erich_Konzept_I/crash/lod0/Hull.model</exploded>
+			<sets>
+				<G165_Erich_Konzept_I_NC_3Dst>
+					<undamaged>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/crash/lod0/Hull.model</exploded>
+				</G165_Erich_Konzept_I_NC_3Dst>
+			</sets>
 		</models>
 		<swinging>
 			<lodDist>FAR</lodDist>
@@ -852,6 +859,13 @@
 				<applyType>universal</applyType>
 				<size>medium</size>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18003</slotId>
+				<position>0 0 0</position>
+				<rotation>0 0 0</rotation>
+				<hiddenForUser>true</hiddenForUser>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -908,6 +922,13 @@
 				<undamaged>vehicles/german/G165_Erich_Konzept_I/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/german/G165_Erich_Konzept_I/crash/lod0/Chassis.model</destroyed>
 				<exploded>vehicles/german/G165_Erich_Konzept_I/crash/lod0/Chassis.model</exploded>
+				<sets>
+					<G165_Erich_Konzept_I_NC_3Dst>
+						<undamaged>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/crash/lod0/Chassis.model</exploded>
+					</G165_Erich_Konzept_I_NC_3Dst>
+				</sets>
 			</models>
 			<traces>
 				<lodDist>MEDIUM</lodDist>
@@ -1025,6 +1046,27 @@
 									<row3>0.000000 1.310771 0.004524</row3>
 								</boxCollider>
 							</hullCollider>
+							<hullCollider>
+								<modelsSet>G165_Erich_Konzept_I_NC_3Dst</modelsSet>
+								<boxCollider>
+									<row0>2.303305 0.000000 0.000000</row0>
+									<row1>0.000000 1.223000 0.000000</row1>
+									<row2>0.000000 0.000000 6.737000</row2>
+									<row3>0.000000 1.045763 -0.005000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.719000 0.000000 -0.000000</row0>
+									<row1>0.000000 0.316000 0.000000</row1>
+									<row2>0.000000 0.000000 6.788000</row2>
+									<row3>0.000000 1.310771 -0.013000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>2.452000 -0.000000 0.000001</row0>
+									<row1>-0.000000 0.090211 0.286115</row1>
+									<row2>-0.000000 -0.286115 0.090211</row2>
+									<row3>0.000000 1.139561 -3.235446</row3>
+								</boxCollider>
+							</hullCollider>
 						</physicalParams>
 					</trackDebris>
 					<trackDebris>
@@ -1108,6 +1150,27 @@
 									<row1>0.000000 0.300000 0.000000</row1>
 									<row2>0.000000 0.000000 6.283213</row2>
 									<row3>0.000000 1.310771 0.004524</row3>
+								</boxCollider>
+							</hullCollider>
+							<hullCollider>
+								<modelsSet>G165_Erich_Konzept_I_NC_3Dst</modelsSet>
+								<boxCollider>
+									<row0>2.303300 0.000000 0.000000</row0>
+									<row1>0.000000 1.223000 0.000000</row1>
+									<row2>0.000000 0.000000 6.737000</row2>
+									<row3>0.000000 1.045760 -0.005000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.719000 0.000000 -0.000000</row0>
+									<row1>0.000000 0.316000 0.000000</row1>
+									<row2>0.000000 0.000000 6.788000</row2>
+									<row3>0.000000 1.310770 -0.013000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>2.452000 -0.000000 0.000001</row0>
+									<row1>-0.000000 0.090211 0.286115</row1>
+									<row2>-0.000000 -0.286115 0.090211</row2>
+									<row3>0.000000 1.139560 -3.235450</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -1585,6 +1648,14 @@
 						<UTiles>1</UTiles>
 						<VTiles>1</VTiles>
 					</atlas>
+					<modelSets>
+						<G165_Erich_Konzept_I_NC_3Dst>
+							<segmentModelLeft>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/track/segment1.model</segmentModelLeft>
+							<segmentModelRight>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/track/segment1.model</segmentModelRight>
+							<segment2ModelLeft>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/track/segment2_L.model</segment2ModelLeft>
+							<segment2ModelRight>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/track/segment2_R.model</segment2ModelRight>
+						</G165_Erich_Konzept_I_NC_3Dst>
+					</modelSets>
 				</trackPair>
 				<lodDist>SPLINE_TRACK</lodDist>
 			</splineDesc>
@@ -1609,6 +1680,12 @@
 						<model>vehicles/german/G165_Erich_Konzept_I/track/segment2.model</model>
 						<length>0.100265</length>
 					</secSegment>
+					<modelSets>
+						<G165_Erich_Konzept_I_NC_3Dst>
+							<mainSegmentModel>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/track/segment1.model</mainSegmentModel>
+							<secSegmentModel>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/track/segment2_L.model</secSegmentModel>
+						</G165_Erich_Konzept_I_NC_3Dst>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>0.097727</back>
@@ -1940,6 +2017,12 @@
 						<model>vehicles/german/G165_Erich_Konzept_I/track/segment2.model</model>
 						<length>0.100264</length>
 					</secSegment>
+					<modelSets>
+						<G165_Erich_Konzept_I_NC_3Dst>
+							<mainSegmentModel>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/track/segment1.model</mainSegmentModel>
+							<secSegmentModel>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/track/segment2_R.model</secSegmentModel>
+						</G165_Erich_Konzept_I_NC_3Dst>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>0.097727</back>
@@ -3349,6 +3432,27 @@
 								<!--BW_String-->
 							</size>
 						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49001</slotId>
+							<rayStart>
+								-0.000001 0.05 5.42
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								-0.000001 0.05 5.78
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.13 0 0
+								<!--BW_String-->
+							</rayUp>
+							<compatibleModels>G165_Erich_Konzept_I_NC_3Dst</compatibleModels>
+							<size>
+								0.36
+								<!--BW_String-->
+							</size>
+						</slot>
 					</customizationSlots>
 					<customization>
 						<customizableVehicleAreas>
@@ -3360,6 +3464,13 @@
 						<undamaged>vehicles/german/G165_Erich_Konzept_I/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/german/G165_Erich_Konzept_I/crash/lod0/Gun_01.model</destroyed>
 						<exploded>vehicles/german/G165_Erich_Konzept_I/crash/lod0/Gun_01.model</exploded>
+						<sets>
+							<G165_Erich_Konzept_I_NC_3Dst>
+								<undamaged>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/crash/lod0/Gun_01.model</exploded>
+							</G165_Erich_Konzept_I_NC_3Dst>
+						</sets>
 					</models>
 					<hitTester>
 						<collisionModelServer>vehicles/german/G165_Erich_Konzept_I/collision/Gun_01.model</collisionModelServer>
@@ -3380,6 +3491,13 @@
 				<undamaged>vehicles/german/G165_Erich_Konzept_I/normal/lod0/Turret_01.model</undamaged>
 				<destroyed>vehicles/german/G165_Erich_Konzept_I/crash/lod0/Turret_01.model</destroyed>
 				<exploded>vehicles/german/G165_Erich_Konzept_I/crash/lod0/Turret_01.model</exploded>
+				<sets>
+					<G165_Erich_Konzept_I_NC_3Dst>
+						<undamaged>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/german/G165_Erich_Konzept_I/_skins/G165_Erich_Konzept_I_NC_3Dst/crash/lod0/Turret_01.model</exploded>
+					</G165_Erich_Konzept_I_NC_3Dst>
+				</sets>
 			</models>
 			<hitTester>
 				<collisionModelServer>vehicles/german/G165_Erich_Konzept_I/collision/Turret_01.model</collisionModelServer>
@@ -3387,6 +3505,21 @@
 			</hitTester>
 			<gunPosition>0 0 0</gunPosition>
 			<customizationSlots>
+				<slot>
+					<slotType>clan</slotType>
+					<slotId>30000</slotId>
+					<rayStart>-0.637906 0.255573 1.029725</rayStart>
+					<rayEnd>-0.637906 0.084032 0.926897</rayEnd>
+					<rayUp>
+						0 0.51414 -0.857706
+						<!--BW_String-->
+					</rayUp>
+					<size>
+						0.24
+						<!--BW_String-->
+					</size>
+					<compatibleModels>G165_Erich_Konzept_I_NC_3Dst</compatibleModels>
+				</slot>
 				<slot>
 					<slotType>player</slotType>
 					<slotId>33000</slotId>

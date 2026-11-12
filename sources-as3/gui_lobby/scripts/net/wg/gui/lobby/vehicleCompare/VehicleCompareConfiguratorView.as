@@ -45,6 +45,12 @@ package net.wg.gui.lobby.vehicleCompare
       
       private static const EQUIPMENT_WIDGET_X_OFFSET:int = 2;
       
+      private static const EQUIPMENT_WIDGET_PADDING_TOP:int = 65;
+      
+      private static const EQUIPMENT_WIDGET_PADDING_SIDE:int = 120;
+      
+      private static const EQUIPMENT_WIDGET_PADDING_BOTTOM:int = 45;
+      
       private static const MODIFICATIONS_WIDGET_WIDTH:int = 630;
       
       private static const MODIFICATIONS_WIDGET_HEIGHT_SMALL:int = 116;
@@ -79,13 +85,13 @@ package net.wg.gui.lobby.vehicleCompare
          _offsets[this.skillsWidget] = new Offsets(-1,55);
          _offsets[this.modules] = new Offsets(-2,14);
          _offsets[this.modificationsWidget] = new Offsets(12,22);
-         _offsets[this.equipmentWidget] = new Offsets(-32,-22);
-         _offsets[bottomPanel] = new Offsets(-40,-20);
+         _offsets[this.equipmentWidget] = new Offsets(-32 - EQUIPMENT_WIDGET_PADDING_TOP,-22 - EQUIPMENT_WIDGET_PADDING_TOP);
+         _offsets[bottomPanel] = new Offsets(-40 - EQUIPMENT_WIDGET_PADDING_BOTTOM,-20 - EQUIPMENT_WIDGET_PADDING_BOTTOM);
          this._offsetsNoModifications[titleTf] = new Offsets(41,115);
          this._offsetsNoModifications[this.skillsWidget] = new Offsets(15,55);
          this._offsetsNoModifications[this.modules] = new Offsets(12,42);
-         this._offsetsNoModifications[this.equipmentWidget] = new Offsets(-17,8);
-         this._offsetsNoModifications[bottomPanel] = new Offsets(3,60);
+         this._offsetsNoModifications[this.equipmentWidget] = new Offsets(-17 - EQUIPMENT_WIDGET_PADDING_TOP,8 - EQUIPMENT_WIDGET_PADDING_TOP);
+         this._offsetsNoModifications[bottomPanel] = new Offsets(3 - EQUIPMENT_WIDGET_PADDING_BOTTOM,60 - EQUIPMENT_WIDGET_PADDING_BOTTOM);
       }
       
       override protected function configUI() : void
@@ -124,7 +130,6 @@ package net.wg.gui.lobby.vehicleCompare
       
       override protected function updateLayout() : void
       {
-         var _loc2_:int = 0;
          var _loc1_:Boolean = App.appHeight < StageSizeBoundaries.HEIGHT_900 && this._isPostProgressionEnabled;
          this.modules.setIsSmall(_loc1_);
          this.modificationsWidget.visible = this._isPostProgressionEnabled;
@@ -134,9 +139,10 @@ package net.wg.gui.lobby.vehicleCompare
             this.modificationsWidget.validateNow();
          }
          super.updateLayout();
-         _loc2_ = (width - MIN_SCREEN_WIDTH >> 1) + BORDER_OFFSET;
+         var _loc2_:int = (width - MIN_SCREEN_WIDTH >> 1) + BORDER_OFFSET;
          this.modules.x = _loc2_;
-         this.skillsWidget.x = this.modificationsWidget.x = this.equipmentWidget.x = _loc2_ + EQUIPMENT_WIDGET_X_OFFSET;
+         this.skillsWidget.x = this.modificationsWidget.x = _loc2_ + EQUIPMENT_WIDGET_X_OFFSET;
+         this.equipmentWidget.x = _loc2_ + EQUIPMENT_WIDGET_X_OFFSET - EQUIPMENT_WIDGET_PADDING_SIDE;
          bottomPanel.x = _loc2_;
          var _loc3_:Number = (App.appWidth - MIN_SCREEN_WIDTH) / (MAX_SCREEN_WIDTH - MIN_SCREEN_WIDTH);
          this.vehParams.x = this.modules.x + this.modules.width + VEH_PARAMS_MIN_X_OFFSET + (VEH_PARAMS_MAX_X_OFFSET - VEH_PARAMS_MIN_X_OFFSET) * _loc3_ >> 0;
@@ -166,7 +172,7 @@ package net.wg.gui.lobby.vehicleCompare
          registerFlashComponentS(this.vehParams,VEHICLE_COMPARE_CONSTANTS.VEHICLE_COMPARE_PARAMS);
          registerFlashComponentS(IDAAPIModule(this.skillsWidget),VEHICLE_COMPARE_CONSTANTS.VEHICLE_CONFIGURATOR_SKILLS_WIDGET);
          registerFlashComponentS(IDAAPIModule(this.equipmentWidget),VEHICLE_COMPARE_CONSTANTS.VEHICLE_CONFIGURATOR_EQUIPMENT_WIDGET);
-         this.equipmentWidget.setSize(EQUIPMENT_WIDGET_WIDTH,EQUIPMENT_WIDGET_HEIGHT);
+         this.equipmentWidget.setSize(EQUIPMENT_WIDGET_WIDTH + (EQUIPMENT_WIDGET_PADDING_SIDE << 1),EQUIPMENT_WIDGET_HEIGHT + EQUIPMENT_WIDGET_PADDING_TOP + EQUIPMENT_WIDGET_PADDING_BOTTOM);
          registerFlashComponentS(IDAAPIModule(this.modificationsWidget),VEHICLE_COMPARE_CONSTANTS.VEHICLE_CONFIGURATOR_MODIFICATIONS_WIDGET);
          this.modificationsWidget.setSize(MODIFICATIONS_WIDGET_WIDTH,MODIFICATIONS_WIDGET_HEIGHT_SMALL);
       }

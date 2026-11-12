@@ -5,6 +5,7 @@ package net.wg.gui.lobby.vehiclePreview
    import flash.display.MovieClip;
    import flash.display.Sprite;
    import flash.display.Stage;
+   import flash.events.Event;
    import flash.events.KeyboardEvent;
    import flash.geom.Rectangle;
    import flash.ui.Keyboard;
@@ -59,6 +60,8 @@ package net.wg.gui.lobby.vehiclePreview
       private static const HIDE_SLOTS_ALPHA:Number = 0;
       
       private static const TOP_OFFSET_TOP_PANEL:int = 20;
+      
+      private static const BOTTOM_PANEL_NAME:String = "bottomPanel";
        
       
       public var leftBackground:MovieClip = null;
@@ -192,7 +195,11 @@ package net.wg.gui.lobby.vehiclePreview
          this.background = null;
          this.fadingPanels = null;
          this.topPanel = null;
-         this.bottomPanel = null;
+         if(this.bottomPanel)
+         {
+            this.bottomPanel.removeEventListener(Event.RESIZE,this.onBottomPanelResize);
+            this.bottomPanel = null;
+         }
          super.onDispose();
       }
       
@@ -242,8 +249,15 @@ package net.wg.gui.lobby.vehiclePreview
          if(this.bottomPanel == null && param1 != "")
          {
             this.bottomPanel = this._classFactory.getComponent(param1,MovieClip);
+            this.bottomPanel.name = BOTTOM_PANEL_NAME;
+            this.bottomPanel.addEventListener(Event.RESIZE,this.onBottomPanelResize);
             addChild(DisplayObject(this.bottomPanel));
          }
+      }
+      
+      private function onBottomPanelResize(param1:Event) : void
+      {
+         invalidateSize();
       }
       
       public function as_setTopPanel(param1:String) : void
@@ -367,9 +381,14 @@ package net.wg.gui.lobby.vehiclePreview
       
       public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
       {
+         var _loc4_:Boolean = this._paddingTop != param3.y || this._paddingBottom != param3.height;
          this._paddingTop = param3.y;
          this._paddingBottom = param3.height;
          setSize(param1,param2);
+         if(!isInvalid(InvalidationType.SIZE) && _loc4_)
+         {
+            invalidateSize();
+         }
       }
       
       public function isFullScreenModeSupported() : Boolean

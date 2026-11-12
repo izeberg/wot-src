@@ -7341,5 +7341,105 @@
 				<_3387>ny24_girl_2_26.png</_3387>
 			</icons>
 		</ny24_girl_2_26>
+		<tankmen_bp21_10>
+			<groupID>403</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3388>#china_crew:names/tankmen_bp21_10_n</_3388>
+			</firstNames>
+			<lastNames>
+				<_3388>#china_crew:names/tankmen_bp21_10</_3388>
+			</lastNames>
+			<icons>
+				<_3388>tankmen_bp21_10.png</_3388>
+			</icons>
+		</tankmen_bp21_10>
+		<tankmen_bp21_11>
+			<groupID>404</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3389>#china_crew:names/tankmen_bp21_11_n</_3389>
+			</firstNames>
+			<lastNames>
+				<_3389>#china_crew:names/tankmen_bp21_11</_3389>
+			</lastNames>
+			<icons>
+				<_3389>tankmen_bp21_11.png</_3389>
+			</icons>
+		</tankmen_bp21_11>
+		<tankmen_bp21_12>
+			<groupID>405</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3390>#china_crew:names/tankmen_bp21_12_n</_3390>
+			</firstNames>
+			<lastNames>
+				<_3390>#china_crew:names/tankmen_bp21_12</_3390>
+			</lastNames>
+			<icons>
+				<_3390>tankmen_bp21_12.png</_3390>
+			</icons>
+		</tankmen_bp21_12>
+		<tankmen_bp21_13>
+			<groupID>406</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman passportReplacementForbidden tankmen_bp21_13</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3391>#china_crew:names/tankmen_bp21_13_n</_3391>
+			</firstNames>
+			<lastNames>
+				<_3391>#china_crew:names/tankmen_bp21_13</_3391>
+			</lastNames>
+			<icons>
+				<_3391>tankmen_bp21_13.png</_3391>
+			</icons>
+		</tankmen_bp21_13>
+		<tankmen_bp21_14>
+			<groupID>407</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander driver gunner loader radioman passportReplacementForbidden tankmen_bp21_14</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3392>#china_crew:names/tankmen_bp21_14_n</_3392>
+			</firstNames>
+			<lastNames>
+				<_3392>#china_crew:names/tankmen_bp21_14</_3392>
+			</lastNames>
+			<icons>
+				<_3392>tankmen_bp21_14.png</_3392>
+			</icons>
+		</tankmen_bp21_14>
 	</premiumGroups>
 </root>

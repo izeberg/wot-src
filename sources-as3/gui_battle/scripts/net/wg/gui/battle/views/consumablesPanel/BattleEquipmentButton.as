@@ -318,7 +318,6 @@ package net.wg.gui.battle.views.consumablesPanel
             {
                this.bigCooldownTimerTf.visible = true;
                this._currentIntervalTime *= INTERVALS_RATIO;
-               param2 *= INTERVALS_RATIO;
             }
             this._currentIntervalTime += 1;
             if((param4 & ANIMATION_TYPES.SHOW_COUNTER_GREEN) > 0)
@@ -359,7 +358,10 @@ package net.wg.gui.battle.views.consumablesPanel
                _loc6_ = !!this._useBigTimer ? int(SMALL_INTERVAL_SIZE) : int(INTERVAL_SIZE);
                this.startCooldownTimer(param1,this._currReloadingInPercent,this._curAnimReversed,this._isFillPartially);
                this.disableMouse();
-               this._scheduler.scheduleRepeatableTask(this.intervalRun,_loc6_,param2,this._useBigTimer);
+               if(this._currentIntervalTime > 0)
+               {
+                  this._scheduler.scheduleRepeatableTask(this.intervalRun,_loc6_,this._currentIntervalTime,this._useBigTimer);
+               }
             }
          }
          else

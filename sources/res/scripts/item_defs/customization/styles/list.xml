@@ -33029,6 +33029,9 @@
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
 			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>1243</id>
@@ -36426,6 +36429,155 @@
 					</include>
 				</projection_decal>
 			</itemFilters>
+		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>styles 1500g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<style>
+			<id>1414</id>
+			<texture>gui/maps/vehicles/styles/bp2026_november_1.png</texture>
+			<description>#vehicle_customization:special_style/bp2026_november_1_desc</description>
+			<longDescriptionSpecial>#vehicle_customization:special_style/bp2026_november_1_desc/long</longDescriptionSpecial>
+			<userString>#vehicle_customization:special_style/bp2026_november_1</userString>
+			<tags>c11n2D</tags>
+			<outfits>
+				<outfit>
+					<season>ALL</season>
+					<camouflages>
+						<item>
+							<id>1182</id>
+							<appliedTo>16</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+						<item>
+							<id>1183</id>
+							<appliedTo>4352</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<modifications>
+						<item>7</item>
+					</modifications>
+					<paints>
+						<item>
+							<id>704</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
+					<projection_decals>
+						<item>
+							<id>1424</id>
+							<tags>formfactor_rect1x2 cover</tags>
+						</item>
+					</projection_decals>
+					<insignias>
+						<item>
+							<id>139</id>
+							<appliedTo>4096</appliedTo>
+						</item>
+					</insignias>
+				</outfit>
+			</outfits>
+		</style>
+		<style>
+			<id>1415</id>
+			<texture>gui/maps/vehicles/styles/bp2026_november_2.png</texture>
+			<description>#vehicle_customization:special_style/bp2026_november_2_desc</description>
+			<longDescriptionSpecial>#vehicle_customization:special_style/bp2026_november_2_desc/long</longDescriptionSpecial>
+			<userString>#vehicle_customization:special_style/bp2026_november_2</userString>
+			<tags>c11n2D</tags>
+			<outfits>
+				<outfit>
+					<season>ALL</season>
+					<camouflages>
+						<item>
+							<id>1184</id>
+							<appliedTo>272</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+						<item>
+							<id>1185</id>
+							<appliedTo>4096</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<modifications>
+						<item>7</item>
+					</modifications>
+					<paints>
+						<item>
+							<id>705</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
+					<projection_decals>
+						<item>
+							<id>1425</id>
+							<tags>formfactor_rect1x2 cover</tags>
+						</item>
+					</projection_decals>
+					<insignias>
+						<item>
+							<id>141</id>
+							<appliedTo>4096</appliedTo>
+						</item>
+					</insignias>
+				</outfit>
+			</outfits>
+		</style>
+		<style>
+			<id>1416</id>
+			<texture>gui/maps/vehicles/styles/bp2026_november_3.png</texture>
+			<description>#vehicle_customization:special_style/bp2026_november_3_desc</description>
+			<longDescriptionSpecial>#vehicle_customization:special_style/bp2026_november_3_desc/long</longDescriptionSpecial>
+			<userString>#vehicle_customization:special_style/bp2026_november_3</userString>
+			<tags>c11n2D</tags>
+			<outfits>
+				<outfit>
+					<season>ALL</season>
+					<camouflages>
+						<item>
+							<id>1186</id>
+							<appliedTo>4368</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<paints>
+						<item>
+							<id>706</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
+					<projection_decals>
+						<item>
+							<id>1426</id>
+							<tags>formfactor_rect1x2 cover</tags>
+						</item>
+					</projection_decals>
+					<insignias>
+						<item>
+							<id>141</id>
+							<appliedTo>4096</appliedTo>
+						</item>
+					</insignias>
+				</outfit>
+			</outfits>
 		</style>
 	</itemGroup>
 	<itemGroup>
@@ -50875,6 +51027,53 @@
 	<itemGroup>
 		<userString>#vehicle_customization:styles/special_styles</userString>
 		<season>ALL</season>
+		<historical>2</historical>
+		<priceGroup>styles 5000g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>germany:G165_Erich_Konzept_I</vehicles>
+			</include>
+		</vehicleFilter>
+		<style>
+			<id>1404</id>
+			<maxNumber>1</maxNumber>
+			<texture>gui/maps/vehicles/styles/G165_Erich_Konzept_I_NC_3Dst.png</texture>
+			<modelsSet>G165_Erich_Konzept_I_NC_3Dst</modelsSet>
+			<userString>#vehicle_customization:special_style/G165_Erich_Konzept_I_NC_3Dst</userString>
+			<longDescriptionSpecial>#vehicle_customization:special_style/G165_Erich_Konzept_I_NC_3Dst_desc/long</longDescriptionSpecial>
+			<tags>c11n3D</tags>
+			<outfits>
+				<outfit>
+					<season>all</season>
+					<camouflages>
+						<item>
+							<id>1</id>
+							<patternSize>1</patternSize>
+							<appliedTo>4368</appliedTo>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<insignias>
+						<item>
+							<id>143</id>
+							<appliedTo>4096</appliedTo>
+						</item>
+					</insignias>
+					<attachments>
+						<item>
+							<slotId>18003</slotId>
+							<id>205</id>
+							<scaleFactorId>0</scaleFactorId>
+							<rotated>0</rotated>
+						</item>
+					</attachments>
+				</outfit>
+			</outfits>
+		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
 		<historical>1</historical>
 		<priceGroup>styles 3000g notInShop</priceGroup>
 		<vehicleFilter>
@@ -60617,6 +60816,53 @@
 						<item>
 							<id>190</id>
 							<slotId>48000</slotId>
+							<scaleFactorId>0</scaleFactorId>
+							<rotated>0</rotated>
+						</item>
+					</attachments>
+				</outfit>
+			</outfits>
+		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>2</historical>
+		<priceGroup>styles 5000g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>usa:A197_Jezevec</vehicles>
+			</include>
+		</vehicleFilter>
+		<style>
+			<id>1370</id>
+			<texture>gui/maps/vehicles/styles/A197_Jezevec_NC_3Dst.png</texture>
+			<modelsSet>A197_Jezevec_NC_3Dst</modelsSet>
+			<userString>#vehicle_customization:special_style/A197_Jezevec_NC_3Dst</userString>
+			<longDescriptionSpecial>#vehicle_customization:special_style/A197_Jezevec_NC_3Dst_desc/long</longDescriptionSpecial>
+			<maxNumber>1</maxNumber>
+			<tags>c11n3D</tags>
+			<outfits>
+				<outfit>
+					<season>all</season>
+					<camouflages>
+						<item>
+							<id>1</id>
+							<patternSize>1</patternSize>
+							<appliedTo>4368</appliedTo>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<insignias>
+						<item>
+							<id>133</id>
+							<appliedTo>4096</appliedTo>
+						</item>
+					</insignias>
+					<attachments>
+						<item>
+							<slotId>18003</slotId>
+							<id>198</id>
 							<scaleFactorId>0</scaleFactorId>
 							<rotated>0</rotated>
 						</item>

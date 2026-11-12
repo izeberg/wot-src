@@ -9331,6 +9331,9 @@
 			<exclude>
 				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<decal>
 			<id>1231</id>
@@ -18186,6 +18189,9 @@
 			<exclude>
 				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<decal>
 			<id>1246</id>
@@ -18314,6 +18320,24 @@
 			<id>1318</id>
 			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_877.dds</texture>
 			<userString>#vehicle_customization:inscription/special/special_877</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1372</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_888.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_888</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1373</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_889.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_889</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1374</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_890.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_890</userString>
 			<mirror>false</mirror>
 		</decal>
 		<name>BattlePass 2026</name>
