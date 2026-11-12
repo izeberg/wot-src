@@ -2269,7 +2269,7 @@
 					10
 					<vehicleDamageFactor>0</vehicleDamageFactor>
 				</armor_12>
-				<armor_13>300</armor_13>
+				<armor_13>340</armor_13>
 				<armor_14>250</armor_14>
 				<armor_15>51</armor_15>
 				<armor_16>75</armor_16>
@@ -3169,7 +3169,10 @@
 		</detailed>
 	</physics>
 	<siege_mode>
-		<switchOnTime>2</switchOnTime>
+		<switchOnTime>
+			2.5
+			<!--BW_String-->
+		</switchOnTime>
 		<switchOffTime>2</switchOffTime>
 		<engineDamageCoeff>2</engineDamageCoeff>
 		<soundStateChange>

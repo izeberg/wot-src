@@ -2013,7 +2013,7 @@
 			<guns>
 				<_105mm_T254_ACIT>
 					shared
-					<maxAmmo>45</maxAmmo>
+					<maxAmmo>48</maxAmmo>
 					<unlocks/>
 					<armor>
 						<gun>40</gun>
@@ -2026,14 +2026,14 @@
 						</maxPitch>
 					</pitchLimits>
 					<clip>
-						<count>3</count>
-						<rate>24</rate>
+						<count>4</count>
+						<rate>15</rate>
 					</clip>
 					<shotDispersionRadius>
 						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>30</reloadTime>
+					<reloadTime>34</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12

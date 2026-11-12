@@ -85,13 +85,16 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>127</armor_1>
+			<armor_1>
+				152.4
+				<!--BW_String-->
+			</armor_1>
 			<armor_2>
-				114.3
+				152.4
 				<!--BW_String-->
 			</armor_2>
 			<armor_3>
-				76.2
+				88.9
 				<!--BW_String-->
 			</armor_3>
 			<armor_4>
@@ -99,36 +102,36 @@
 				<!--BW_String-->
 			</armor_4>
 			<armor_5>
-				101.6
+				152.4
 				<!--BW_String-->
 			</armor_5>
 			<armor_6>
-				88.9
+				152.4
 				<!--BW_String-->
 			</armor_6>
 			<armor_7>
-				76.2
+				114.3
 				<!--BW_String-->
 			</armor_7>
-			<armor_8>110</armor_8>
+			<armor_8>
+				177.8
+				<!--BW_String-->
+			</armor_8>
 			<armor_9>
-				25.4
+				38.1
 				<!--BW_String-->
 			</armor_9>
-			<armor_10>
-				60.9
-				<!--BW_String-->
-			</armor_10>
+			<armor_10>127</armor_10>
 			<armor_11>
 				57.2
 				<!--BW_String-->
 			</armor_11>
 			<armor_12>
-				177.8
+				203.2
 				<!--BW_String-->
 			</armor_12>
 			<armor_13>
-				50.8
+				88.9
 				<!--BW_String-->
 			</armor_13>
 			<armor_14>
@@ -3258,19 +3261,19 @@
 					<!--BW_String-->
 				</armor_2>
 				<armor_4>
-					50.8
+					88.9
 					<!--BW_String-->
 				</armor_4>
 				<armor_5>
-					114.3
+					152.4
 					<!--BW_String-->
 				</armor_5>
 				<armor_6>
-					101.6
+					152.4
 					<!--BW_String-->
 				</armor_6>
 				<armor_7>
-					88.9
+					152.4
 					<!--BW_String-->
 				</armor_7>
 				<armor_8>0</armor_8>
@@ -3278,12 +3281,9 @@
 					69.9
 					<!--BW_String-->
 				</armor_9>
-				<armor_10>
-					76.2
-					<!--BW_String-->
-				</armor_10>
+				<armor_10>127</armor_10>
 				<armor_11>
-					25.4
+					50.8
 					<!--BW_String-->
 				</armor_11>
 				<armor_12>
@@ -3292,11 +3292,11 @@
 					<vehicleDamageFactor>0</vehicleDamageFactor>
 				</armor_12>
 				<armor_13>
-					38.1
+					50.8
 					<!--BW_String-->
 				</armor_13>
 				<armor_14>
-					139.7
+					152.4
 					<!--BW_String-->
 				</armor_14>
 				<armor_15>
@@ -3304,7 +3304,7 @@
 					<!--BW_String-->
 				</armor_15>
 				<armor_16>
-					63.5
+					88.9
 					<!--BW_String-->
 				</armor_16>
 			</armor>
@@ -3340,12 +3340,12 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							50.8
+							152.4
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							76.2
+							152.4
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
@@ -3354,21 +3354,22 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
 						<armor_5>
-							177.8
+							203.2
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_5>
 						<armor_6>
-							127
+							152.4
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_6>
 						<armor_7>
-							101.6
+							152.4
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_7>
 						<armor_8>
-							76.2
+							152.4
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_8>

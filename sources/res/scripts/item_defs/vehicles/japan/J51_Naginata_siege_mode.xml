@@ -1427,7 +1427,7 @@
 			</terrainResistance>
 			<brakeForce>56000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>20</rotationSpeed>
+			<rotationSpeed>26</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.16
@@ -2776,7 +2776,7 @@
 			<price>32500</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>250</armor_1>
+				<armor_1>255</armor_1>
 				<armor_2>100</armor_2>
 				<armor_3>60</armor_3>
 				<armor_4>50</armor_4>
@@ -2795,7 +2795,7 @@
 				<armor_17>70</armor_17>
 				<armor_18>55</armor_18>
 				<armor_19>50</armor_19>
-				<armor_20>250</armor_20>
+				<armor_20>255</armor_20>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>15000</weight>
@@ -2823,11 +2823,11 @@
 					<maxAmmo>120</maxAmmo>
 					<armor>
 						<armor_1>
-							250
+							255
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							135
+							140
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
@@ -2843,7 +2843,7 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_5>
 						<armor_6>
-							90
+							95
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_6>
 						<gun>30</gun>
