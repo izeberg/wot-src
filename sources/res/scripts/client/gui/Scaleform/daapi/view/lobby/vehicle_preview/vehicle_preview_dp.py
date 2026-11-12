@@ -26,6 +26,15 @@ if typing.TYPE_CHECKING:
 _logger = logging.getLogger(__name__)
 _CUSTOM_OFFER_ACTION_PERCENT = 100
 
+def _getUniqueVehicleTitle(vehicleCD):
+    from new_year.skeletons.new_year import ITamagotchiDataProvider
+    dataProvider = dependency.instance(ITamagotchiDataProvider)
+    if dataProvider is not None and dataProvider.getCumulativeReward() == vehicleCD:
+        return backport.text(R.strings.ny.leaderboard.vehiclePreview.description())
+    else:
+        return backport.text(R.strings.vehicle_preview.buyingPanel.uniqueVehicleLabel())
+
+
 def _createVehicleVO(rawItem, itemsCache):
     intCD = int(rawItem.id)
     vehicle = itemsCache.items.getItemByCD(intCD)
@@ -112,7 +121,7 @@ class DefaultVehPreviewDataProvider(IVehPreviewDataProvider):
             elif item.isTelecom:
                 uniqueVehicleTitle = text_styles.tutorial(backport.text(R.strings.vehicle_preview.buyingPanel.availableForTelecom()))
             elif not (isBuyingAvailable or isHeroTank):
-                uniqueVehicleTitle = text_styles.tutorial(backport.text(R.strings.vehicle_preview.buyingPanel.uniqueVehicleLabel()))
+                uniqueVehicleTitle = text_styles.tutorial(_getUniqueVehicleTitle(item.intCD))
         compensationData = self.__getCompensationData(itemsPack)
         resultVO = {'setTitle': data.title, 
            'uniqueVehicleTitle': uniqueVehicleTitle, 
