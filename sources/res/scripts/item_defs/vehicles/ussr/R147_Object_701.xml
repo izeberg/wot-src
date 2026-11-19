@@ -930,8 +930,11 @@
 				3.9759 3.9759 0.000000 0.000000
 				<!--BW_String-->
 			</tiling>
-			<density>121.874535 121.452461</density>
-			<aoTextureSize>1024 1024</aoTextureSize>
+			<density>
+				121.7864 121.565628
+				<!--BW_String-->
+			</density>
+			<aoTextureSize>2048 1024</aoTextureSize>
 		</camouflage>
 	</hull>
 	<chassis>
@@ -2442,8 +2445,8 @@
 					</drivenJoints>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
-						<density>112.154968 113.296883</density>
-						<aoTextureSize>512 512</aoTextureSize>
+						<density>111.704979 111.926804</density>
+						<aoTextureSize>2048 1024</aoTextureSize>
 					</camouflage>
 				</_100mm_S34_701>
 			</guns>
@@ -3051,8 +3054,8 @@
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>
-				<density>108.781387 109.219803</density>
-				<aoTextureSize>512 512</aoTextureSize>
+				<density>106.796814 106.569542</density>
+				<aoTextureSize>2048 1024</aoTextureSize>
 			</camouflage>
 		</Turret_1_R147_Object_701>
 	</turrets0>

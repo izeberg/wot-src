@@ -49,19 +49,15 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>hullShape.vertices</vertices>
-			<primitive>hullShape.indices</primitive>
+			<vertices>hull_Shape.vertices</vertices>
+			<primitive>hull_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank</identifier>
+					<identifier>tank_mat</identifier>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
@@ -80,7 +76,7 @@
 					</property>
 					<property>
 						g_crashUVTiling
-						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
+						<Vector4>4.000000 2.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						metallicGlossMap
@@ -133,6 +129,6 @@
 		<min>-1.666678 -0.830838 -3.563424</min>
 		<max>1.806023 0.871237 3.255538</max>
 	</boundingBox>
-	<geometrySize>1571322</geometrySize>
+	<geometrySize>1568920</geometrySize>
 	<minUVDensity>0.002223</minUVDensity>
 </root>

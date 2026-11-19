@@ -2,7 +2,7 @@ from collections import namedtuple
 from th_async import th_async, th_await
 from new_year.gui.shared.events import NewYearEvent
 from new_year.ny_constants import NewYearLootBoxes
-from new_year.skeletons.new_year import INewYearController
+from new_year.skeletons.new_year import INewYearController, INyWindowHelper
 from new_year.gui.constants import VIEW_ALIAS as NY_VIEW_ALIAS
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from frameworks.wulf import WindowLayer, ViewStatus
@@ -97,9 +97,12 @@ def showLootBoxEntry(lootBoxType=NewYearLootBoxes.NY_24_STANDARD, category='', l
     showSpecificBoxInStorageView(category=category, lootBoxType=lootBoxType, returnPlace=returnPlace)
 
 
-def showVehicleDiscountOverlay(discountID=None):
+@dependency.replace_none_kwargs(nyWindowHelper=INyWindowHelper)
+def showVehicleDiscountOverlay(discountID=None, nyWindowHelper=None):
     from gui.impl.pub.lobby_window import LobbyOverlay
     from new_year.gui.impl.lobby.new_year.vehicle_selection_view import VehicleSelectionView
+    if nyWindowHelper.isLocked(VehicleSelectionView.WND_LOCK_TAG):
+        return
     window = LobbyOverlay(content=VehicleSelectionView(R.views.new_year.lobby.new_year.VehicleSelectionView(), discountID=discountID))
     window.load()
 
@@ -142,9 +145,9 @@ def openTamagotchiRaidView(parentWindow, isBoostMode=False, closeCallback=None):
     window.load()
 
 
-def showNYWeeklyRewardsViewWindow(parent=None, stageId=None, isFromMainView=True):
+def showNYWeeklyRewardsViewWindow(parent=None, stageId=None):
     from new_year.gui.impl.lobby.new_year.leaderboard.ny_weekly_rewards_view import NewYearWeeklyRewardsViewWindow
-    window = NewYearWeeklyRewardsViewWindow(parent=parent, stageId=stageId, isFromMainView=isFromMainView)
+    window = NewYearWeeklyRewardsViewWindow(parent=parent, stageId=stageId)
     window.load()
 
 

@@ -22,8 +22,35 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 1.075936 0.000000</row3>
+					<row3>0.000000 1.076000 0.000000</row3>
 				</transform>
+			</node>
+			<node>
+				<identifier>lod3</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>d0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
 			</node>
 		</node>
 	</node>
@@ -31,8 +58,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>dShape0.vertices</vertices>
+			<primitive>dShape0.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -108,15 +135,15 @@
 					<collisionFlags>131</collisionFlags>
 					<materialKind>112</materialKind>
 				</material>
-				<groupOrigin>0.000000 1.727894 0.304735</groupOrigin>
+				<groupOrigin>0.000000 2.000646 0.126031</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.513587 0.000000 -4.948601</min>
+		<min>-1.513587 0.046206 -4.948601</min>
 		<max>1.473945 4.425153 5.502065</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>99548</geometrySize>
+	<geometrySize>96352</geometrySize>
 	<minUVDensity>0.000030</minUVDensity>
 </root>

@@ -7,7 +7,7 @@ from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.leaderboard.ny
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.new_year_info_view_model import Tabs
 from new_year.gui.impl.lobby.new_year.tooltips.ny_common_tooltip import NyCommonTooltip, getCommonTooltipArgsFromEvent
 from new_year.gui.impl.new_year.navigation import NewYearNavigation
-from new_year.gui.impl.new_year.new_year_model_helper import packNyLeaderboardRewards
+from new_year.gui.impl.new_year.new_year_model_helper import packNyLeaderboardRewards, filterCompletedStyleRewards
 from new_year.gui.impl.new_year.sounds import OVERLAY_HANGAR_SOUND_SPACE
 from new_year.gui.shared.event_dispatcher import showNYWeeklyRewardsViewWindow, showNyVehiclePreview
 from new_year.helpers.ny_weekly_rewards_stage import getActiveSeasonId, getWeeklyStageTabIndex
@@ -15,26 +15,24 @@ from new_year.ny_constants import ViewAliases, NY_CUMULATIVE_LEADERBOARD_SEASON_
 from new_year.skeletons.new_year import ITamagotchiDataProvider, ITamagotchiWebRequester, INewYearController, INewYearMetricsLogger
 from new_year.tamagotchi.dto.config import Config
 from new_year_common.items.components.ny_constants import CurrentNYConstants, NewYearObjects
-from constants import CUSTOMIZATION_PROGRESS_PREFIX
 from frameworks.wulf import ViewSettings, WindowFlags, WindowLayer
 from gui.impl.gen import R
 from gui.impl.gui_decorators import args2params
 from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.impl.pub import ViewImpl
 from gui.impl.pub.lobby_window import LobbyNotificationWindow
-from gui.shared.event_dispatcher import showHangar
+from gui.shared.event_dispatcher import showHangar, selectVehicleInHangar
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from helpers import dependency
 from helpers.time_utils import getServerUTCTime
 from items.vehicles import getVehicleClassFromVehicleType
 from shared_utils import findFirst
-from skeletons.gui.customization import ICustomizationService
 from skeletons.gui.shared import IItemsCache
 if typing.TYPE_CHECKING:
     from frameworks.wulf import Array
 
 class NewYearWeeklyRewardsView(ViewImpl):
-    __slots__ = ('__tooltips', '__stageId', '__isFromMainView')
+    __slots__ = ('__tooltips', '__stageId')
     _COMMON_SOUND_SPACE = OVERLAY_HANGAR_SOUND_SPACE
     _DEFAULT_POSITION = 0
     _NOT_HAVE_TOP_PLACE = -1
@@ -42,16 +40,14 @@ class NewYearWeeklyRewardsView(ViewImpl):
     _webRequester = dependency.descriptor(ITamagotchiWebRequester)
     _itemsCache = dependency.descriptor(IItemsCache)
     _nyController = dependency.descriptor(INewYearController)
-    _c11nService = dependency.descriptor(ICustomizationService)
     __uiLogger = dependency.descriptor(INewYearMetricsLogger)
 
-    def __init__(self, stageId=None, isFromMainView=True):
+    def __init__(self, stageId=None):
         settings = ViewSettings(R.views.new_year.lobby.new_year.WeeklyRewardsView())
         settings.model = NyWeeklyRewardsViewModel()
         super(NewYearWeeklyRewardsView, self).__init__(settings)
         self.__tooltips = {}
         self.__stageId = stageId
-        self.__isFromMainView = isFromMainView
 
     @property
     def viewModel(self):
@@ -110,7 +106,6 @@ class NewYearWeeklyRewardsView(ViewImpl):
 
     def _onLoading(self, *args, **kwargs):
         super(NewYearWeeklyRewardsView, self)._onLoading(*args, **kwargs)
-        self.viewModel.setIsFromMainView(self.__isFromMainView)
         self.__uiLogger.logWeeklyRewardsScreenOpened()
         self.__updateModel()
         self.__makeRequestPlayerStats()
@@ -126,7 +121,7 @@ class NewYearWeeklyRewardsView(ViewImpl):
     def __onSeasonStarted(self, _):
         self.__updateModel()
 
-    def __onLeaderboardUpdated(self, isSuccess):
+    def __onLeaderboardUpdated(self, isSuccess, _):
         if not isSuccess:
             return
         self.__updateModel()
@@ -281,9 +276,9 @@ class NewYearWeeklyRewardsView(ViewImpl):
         topsModel.invalidate()
 
     def __fillDrawRewards(self, season, topsModel):
-        drawReward = season.drawReward.rewards
+        drawReward = deepcopy(season.drawReward.rewards)
         topRewardModel = NyTopRewardModel()
-        self.__removeReceivedProgressionStyleReward(drawReward, season)
+        filterCompletedStyleRewards(drawReward, season)
         packNyLeaderboardRewards(drawReward, topRewardModel.rewards, self.__tooltips)
         topsModel.addViewModel(topRewardModel)
 
@@ -298,7 +293,7 @@ class NewYearWeeklyRewardsView(ViewImpl):
             if top.startPos <= position <= top.endPos:
                 nextUserTopIdx = i + 1
             rewardsInTop = deepcopy(top.rewards.copy()) or {}
-            self.__removeReceivedProgressionStyleReward(rewardsInTop, season)
+            filterCompletedStyleRewards(rewardsInTop, season)
             packNyLeaderboardRewards(rewardsInTop, topRewardModel.rewards, self.__tooltips, (
              CurrentNYConstants.NY_STATIC_DOGTAG, partial(self.__ctxUpdater, top)))
             topsModel.addViewModel(topRewardModel)
@@ -306,29 +301,6 @@ class NewYearWeeklyRewardsView(ViewImpl):
         if nextUserTopIdx < len(topsModel):
             nextTopRewardModel = topsModel[nextUserTopIdx]
             nextTopRewardModel.setPointsToTop(user.pointsByNextTop)
-
-    def __removeReceivedProgressionStyleReward(self, rewards, season):
-        tokens = rewards.get('tokens', {})
-        if isinstance(season, Config.Cumulative.Dto):
-            return
-        if season.cumulative:
-            return
-        if not tokens:
-            return
-        tokensToRemove = []
-        for tokenID in tokens:
-            if tokenID.startswith(CUSTOMIZATION_PROGRESS_PREFIX):
-                styleID = int(tokenID.split('_')[2])
-                style = self._c11nService.getItemByID(GUI_ITEM_TYPE.STYLE, styleID)
-                if style and style.isQuestsProgression and style.descriptor.questsProgression:
-                    totalItems = style.descriptor.questsProgression.getTotalCount()
-                    itemsOpened = sum([ style.descriptor.questsProgression.getUnlockedCount(token, self._itemsCache.items.tokens.getTokenCount(token)) for token in style.descriptor.questsProgression.getGroupTokens()
-                                      ])
-                    if itemsOpened >= totalItems:
-                        tokensToRemove.append(tokenID)
-
-        for tokenToRemove in tokensToRemove:
-            tokens.pop(tokenToRemove)
 
     def __updateRecalcState(self, seasonId):
         with self.getViewModel().transaction() as (tx):
@@ -392,6 +364,11 @@ class NewYearWeeklyRewardsView(ViewImpl):
 
     @args2params(int)
     def __onPreviewVehicle(self, vehicleCD):
+        vehicle = self._itemsCache.items.getItemByCD(vehicleCD)
+        if vehicle.isInInventory:
+            self.destroyWindow()
+            selectVehicleInHangar(vehicle.intCD)
+            return
         callback = partial(self.__vehiclePreviewCallback, stageId=self.__stageId)
         showNyVehiclePreview(vehicleCD, previewBackCb=callback)
 
@@ -402,7 +379,7 @@ class NewYearWeeklyRewardsView(ViewImpl):
     @classmethod
     def __vehiclePreviewCallback(cls, stageId):
         if cls._dataProvider.raccoonState and cls._nyController.isInProgress():
-            NewYearNavigation.switchTo(NewYearObjects.CITY_VIEW, True, ViewAliases.LEADERS_VIEW, switchCallback=partial(showNYWeeklyRewardsViewWindow, stageId=stageId, isFromMainView=False))
+            NewYearNavigation.switchTo(NewYearObjects.CITY_VIEW, True, ViewAliases.LEADERS_VIEW, switchCallback=partial(showNYWeeklyRewardsViewWindow, stageId=stageId))
             return
         showHangar()
 
@@ -416,6 +393,6 @@ class NewYearWeeklyRewardsView(ViewImpl):
 
 class NewYearWeeklyRewardsViewWindow(LobbyNotificationWindow):
 
-    def __init__(self, parent=None, stageId=None, isFromMainView=True):
-        super(NewYearWeeklyRewardsViewWindow, self).__init__(content=NewYearWeeklyRewardsView(stageId=stageId, isFromMainView=isFromMainView), wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, parent=parent, layer=WindowLayer.TOP_SUB_VIEW, decorator=None)
+    def __init__(self, parent=None, stageId=None):
+        super(NewYearWeeklyRewardsViewWindow, self).__init__(content=NewYearWeeklyRewardsView(stageId), wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, parent=parent, layer=WindowLayer.TOP_SUB_VIEW, decorator=None)
         return

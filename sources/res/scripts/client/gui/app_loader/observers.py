@@ -115,8 +115,11 @@ class LoginObserver(AppLoaderObserver):
             if disconnectReason in (
              DisconnectReason.EVENT,
              DisconnectReason.KICK,
-             DisconnectReason.ERROR):
-                action = spaces.DisconnectDialogAction(event.getArgument('kickReason', ''), event.getArgument('kickReasonType', ACCOUNT_KICK_REASONS.UNKNOWN), event.getArgument('expiryTime'))
+             DisconnectReason.ERROR,
+             DisconnectReason.NO_NETWORK):
+                hasNetwork = DisconnectReason.NO_NETWORK != disconnectReason
+                kickReasonType = ACCOUNT_KICK_REASONS.UNKNOWN if hasNetwork else ACCOUNT_KICK_REASONS.NO_CONNECTION
+                action = spaces.DisconnectDialogAction(event.getArgument('kickReason', ''), event.getArgument('kickReasonType', kickReasonType), event.getArgument('expiryTime'))
         if self._proxy.getSpaceID() == GuiGlobalSpaceID.LOGIN:
             self._proxy.setupSpace(action=action)
         self._proxy.changeSpace(spaces.LoginSpace(action=action))

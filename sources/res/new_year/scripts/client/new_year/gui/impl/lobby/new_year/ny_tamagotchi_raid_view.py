@@ -10,6 +10,7 @@ from new_year.gui.impl.new_year.new_year_bonus_packer import packBonusModelAndTo
 from new_year.gui.impl.lobby.new_year.tooltips.ny_pet_raid_boost_tooltip import NyPetRaidBoostTooltip
 from new_year.gui.impl.new_year.sounds import NY_RAID_SOUND_SPACE
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.receipt_model import ReceiptModel
+from new_year.gui.impl.gen.view_models.views.lobby.new_year.raid_item_model import RaidItemModel
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.ny_tamagotchi_raid_view_model import NyTamagotchiRaidViewModel
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.receipts_panel import TabId
 from new_year.gui.impl.lobby.new_year.ny_tamagotchi_raid_bonus_packer import packRaidBonusModelAndTooltipData
@@ -186,17 +187,27 @@ class NyTamagotchiRaidView(ViewImpl):
         model.clear()
         components = self.__getRaidComponentsConfig()
         if selectedIDs is not None:
-            components = [ (componentId, components[componentId]) for componentId in selectedIDs if componentId in components ]
+            for componentId in selectedIDs:
+                if componentId in components:
+                    self.__addComponentToModel(model, components[componentId], componentId, reservedResources, isEnabled)
+                else:
+                    emptyItem = RaidItemModel()
+                    model.addViewModel(emptyItem)
+
         else:
-            components = components.iteritems()
+            componentIterator = components.iteritems()
             if sortByWeight:
-                components = sorted(components, key=self.__getComponentWeightSortKey, reverse=True)
-            for componentId, componentData in components:
-                bonus = componentData.get('bonus', {})
-                bonuses = self.__getComponentBonuses(bonus)
-                packRaidBonusModelAndTooltipData(bonuses, model, componentId=componentId, isEnabled=isRaidComponentEnabled(bonus, reservedResources=reservedResources) if isEnabled is None else isEnabled, tooltipsData=self.__tooltipData)
+                componentIterator = sorted(componentIterator, key=self.__getComponentWeightSortKey, reverse=True)
+            for componentId, componentData in componentIterator:
+                self.__addComponentToModel(model, componentData, componentId, reservedResources, isEnabled)
 
         model.invalidate()
+        return
+
+    def __addComponentToModel(self, model, componentData, componentId, reservedResources, isEnabled):
+        bonus = componentData.get('bonus', {})
+        bonuses = self.__getComponentBonuses(bonus)
+        packRaidBonusModelAndTooltipData(bonuses, model, componentId=componentId, isEnabled=isRaidComponentEnabled(bonus, reservedResources=reservedResources) if isEnabled is None else isEnabled, tooltipsData=self.__tooltipData)
         return
 
     @staticmethod
@@ -251,15 +262,17 @@ class NyTamagotchiRaidView(ViewImpl):
         result = yield StartTamagotchiRaidProcessor(raidInput).request()
         if result.success:
             TamagotchiSysMsgHandler.sendRaidStarted()
-            self.__onClose()
+            if self.isBound():
+                self.__onClose()
         else:
             self.__raidStartError(result.auxData == _FAILURE_NOT_ENOUGH_RESOURCES_CODE)
 
     def __raidStartError(self, isNotEnoughResources=True):
-        self.__selectedBonuses = []
-        self.__fillSelectedItems({'componentIDs': []})
-        self.__fillRegularInventoryItems()
-        self.viewModel.setIsTamagotchiForRaidReady(self.__dataProvider.isReadyForRaid())
+        if self.isBound():
+            self.__selectedBonuses = []
+            self.__fillSelectedItems({'componentIDs': []})
+            self.__fillRegularInventoryItems()
+            self.viewModel.setIsTamagotchiForRaidReady(self.__dataProvider.isReadyForRaid())
         TamagotchiSysMsgHandler.sendRaidStartError(isNotEnoughResources)
 
     @args2params(int)
@@ -321,7 +334,8 @@ class NyTamagotchiRaidView(ViewImpl):
     def __onReceiveReward(self):
         result = yield ReceiveTamagotchiRaidRewardProcessor().request()
         if result is not None and result.success:
-            self.__onClose()
+            if self.isBound():
+                self.__onClose()
             prepareRaidRewardResult(result)
             showNYPetRaidRewardWindow(next(iter(result.auxData['bonus'])) or {})
         else:
@@ -350,7 +364,7 @@ class NyTamagotchiRaidView(ViewImpl):
         result = yield UseTamagotchiRaidSpeedupProcessor().request()
         if result is not None and result.userMsg:
             TamagotchiSysMsgHandler.sendRaidAccelerationError()
-        if self.__isBoostMode:
+        if self.isBound() and self.__isBoostMode:
             self.__onClose()
         return
 

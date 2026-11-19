@@ -52,7 +52,12 @@ class CustomizationResourceRewardView(ViewImpl):
 
     def _onLoading(self, *args, **kwargs):
         super(CustomizationResourceRewardView, self)._onLoading(*args, **kwargs)
+        BigWorld.worldDrawEnabled(False)
         self.__fillRewardsModel()
+
+    def _finalize(self):
+        BigWorld.worldDrawEnabled(True)
+        super(CustomizationResourceRewardView, self)._finalize()
 
     def _onReady(self):
         BigWorld.callback(_DELAY_TO_SHOW_REWARD, self.gui.windowsManager.getViewByLayoutID(R.views.lobby.customization_resource.CustomizationResourceVideoRewardView()).destroyWindow)

@@ -307,6 +307,9 @@ class NyCityView(HistorySubModelPresenter):
         if self.__currentObject == newObject:
             return
         self.__levelUpAllSelectedCustomizationZones()
+        if self.__selectedSlotId != _DEFAULT_SELECTED_TOY_SLOT_ID:
+            self.__selectedSlotId = _DEFAULT_SELECTED_TOY_SLOT_ID
+            self.__decorationPopover.setSelectedSlotID(_DEFAULT_SELECTED_TOY_SLOT_ID)
         self.__currentObject = newObject
         self.__updateTab()
         self.__slotGroup = TOY_TYPES_BY_OBJECT.get(self.__currentObject, {})

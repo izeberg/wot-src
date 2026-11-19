@@ -474,7 +474,7 @@ class CurrenciesBonus(IntegralBonus):
         else:
             return iconName
 
-    def getWrappedEpicBonusList(self):
+    def _getWrappedBonusList(self):
         awardItem = R.strings.tooltips.awardItem.dyn(self._code)
         return [
          {'id': 0, 

@@ -81,8 +81,6 @@ class NyDecorationsPopover(HistorySubModelPresenter):
     def __onApplyDecorationSelection(self, args):
         toyId = int(args['index'])
         self.__applyDecorationSelection(toyID=toyId)
-        with self.viewModel.transaction() as (model):
-            self.__updateDecorationSlots(model=model, selectedToyID=toyId)
 
     def __onIsNewStateChanged(self, args):
         toyID = int(args.get('index'))
@@ -145,6 +143,8 @@ class NyDecorationsPopover(HistorySubModelPresenter):
         newToyAtmosphere = toy.getAtmosphere() if toy is not None else 0
         result = yield self._nyController.hangToy(toyID, slotID)
         if result.success:
+            with self.viewModel.transaction() as (model):
+                self.__updateDecorationSlots(model=model, selectedToyID=toyID)
             g_eventBus.handleEvent(NewYearEvent(NewYearEvent.ON_TOY_INSTALLED, ctx={'toyID': toyID, 'slotID': slotID, 'atmosphereBonus': newToyAtmosphere - oldToyAtmosphere}), scope=EVENT_BUS_SCOPE.LOBBY)
             decorationType = self._nyController.getSlotDescrs()[slotID].type
             if toy is not None and decorationType in _HANG_SOUNDS_MAP:

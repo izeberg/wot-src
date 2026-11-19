@@ -14,7 +14,7 @@ SoundSpacePrerequisites = namedtuple('SoundSpaceSettingsPrerequisites', ('entran
 VideoPrerequisites = namedtuple('VideoPrerequisites', ('videoPath', 'subtitlesPath',
                                                        'isControlsVisible', 'isSubtitlesVisible',
                                                        'soundSpace', 'canEscape',
-                                                       'handleWorldDraw'))
+                                                       'handleWorldDraw', 'isNewYear'))
 _DEFAULT_VIEW_SOUND_SPACE = CommonSoundSpaceSettings(name='GF_VIDEO_VIEW', entranceStates={'STATE_video_overlay': 'STATE_video_overlay_on'}, exitStates={'STATE_video_overlay': 'STATE_video_overlay_off'}, persistentSounds=(), stoppableSounds=(), priorities=(), autoStart=True, enterEvent='', exitEvent='')
 _RTPC_VOLUME_MULTIPLIER_FOR_SOUND_CONTROL = 0.5
 
@@ -62,6 +62,7 @@ class VideoView(ViewImpl):
                 volume *= _RTPC_VOLUME_MULTIPLIER_FOR_SOUND_CONTROL
             model.setCanEscape(self.__prerequisites.canEscape)
             model.setInitialAudioVolume(volume)
+            model.setIsNewYear(self.__prerequisites.isNewYear)
 
     def _getEvents(self):
         return (

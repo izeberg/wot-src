@@ -2,9 +2,15 @@ import typing
 from new_year_common.items.components.ny_constants import CurrentNYConstants, TOKEN_LOOTBOX_FRAGMENT
 from new_year.gui.impl.new_year.new_year_bonus_packer import packBonusModelAndTooltipData, getNewYearBonusPacker
 from new_year.gui.impl.new_year.new_year_helper import nyWeeklyLeaderboardGFSortOrder
-from constants import DOSSIER_TYPE
+from constants import DOSSIER_TYPE, CUSTOMIZATION_PROGRESS_PREFIX
+from gui.shared.gui_items import GUI_ITEM_TYPE
+from new_year.tamagotchi.dto.config import Config
 from gui.server_events.bonuses import getNonQuestBonuses
+from helpers import dependency
+from skeletons.gui.customization import ICustomizationService
+from skeletons.gui.shared import IItemsCache
 if typing.TYPE_CHECKING:
+    SeasonConfig = typing.Union[(Config.Season.Dto, Config.Cumulative.Dto)]
     from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.leaderboard.ny_leaderboard_reward_model import NyLeaderboardRewardModel
 _BONUS_SWAP = {'dogTagComponents': 'nyStaticDogTag'}
 
@@ -32,6 +38,28 @@ def packNyLeaderboardRewards(rewards, model, tooltips, ctx=None, preserveBadgeDu
         bonuses.sort(key=nyWeeklyLeaderboardGFSortOrder)
         packBonusModelAndTooltipData(bonuses, model, getNewYearBonusPacker(), tooltips)
         return
+
+
+@dependency.replace_none_kwargs(itemsCache=IItemsCache, c11nService=ICustomizationService)
+def filterCompletedStyleRewards(rewards, season, itemsCache=None, c11nService=None):
+    if season is None or isinstance(season, Config.Cumulative.Dto) or season.cumulative:
+        return
+    tokens = rewards.get('tokens', {})
+    tokensToRemove = []
+    for tokenID in tokens:
+        if tokenID.startswith(CUSTOMIZATION_PROGRESS_PREFIX):
+            styleID = int(tokenID.split('_')[2])
+            style = c11nService.getItemByID(GUI_ITEM_TYPE.STYLE, styleID)
+            if style and style.isQuestsProgression and style.descriptor.questsProgression:
+                progression = style.descriptor.questsProgression
+                itemsOpened = sum(progression.getUnlockedCount(token, itemsCache.items.tokens.getTokenCount(token)) for token in progression.getGroupTokens())
+                if itemsOpened >= progression.getTotalCount():
+                    tokensToRemove.append(tokenID)
+
+    for tokenID in tokensToRemove:
+        tokens.pop(tokenID)
+
+    return
 
 
 def _preprocessRewards(rewards):

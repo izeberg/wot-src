@@ -570,6 +570,8 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
         return
 
     def _onInventoryChanged(self, *_):
+        if self._backAlias == VIEW_ALIAS.LOBBY_STORE:
+            return
         if not BuyVehicleWindow.getInstances():
             g_currentPreviewVehicle.selectNoVehicle()
             event_dispatcher.showHangar()

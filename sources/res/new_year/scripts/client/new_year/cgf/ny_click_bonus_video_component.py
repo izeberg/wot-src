@@ -71,7 +71,7 @@ class NyClickBonusVideoComponent(object):
             return
         else:
             self.__uiLogger.logEasterEggVideoOpened(self.videoId)
-            self.__video = showEmbeddedAudioVideoView(videoSource=videoSourceAccessor(), onVideoClosed=self.__onVideoClosed, isControlsVisible=False)
+            self.__video = showEmbeddedAudioVideoView(videoSource=videoSourceAccessor(), onVideoClosed=self.__onVideoClosed, isControlsVisible=False, isNewYear=True)
             return
 
     def __onVideoClosed(self):

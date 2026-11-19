@@ -27,6 +27,7 @@ from gui.prb_control.entities.base.unit.ctx import AutoSearchUnitCtx
 from gui.prb_control.entities.listener import IGlobalListener
 from gui.prb_control.formatters import messages
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE, events
+from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.items_cache import CACHE_SYNC_REASON
 from gui.shared.utils import functions
 from helpers import dependency
@@ -1107,7 +1108,9 @@ class PlatoonController(IPlatoonController, IGlobalListener, CallbackDelayer):
 
         return
 
-    def __onVehicleStateChanged(self, updateReason, _):
+    def __onVehicleStateChanged(self, updateReason, diff):
+        if updateReason == CACHE_SYNC_REASON.CLIENT_UPDATE and (not diff or GUI_ITEM_TYPE.VEHICLE not in diff):
+            return
         if updateReason in (CACHE_SYNC_REASON.CLIENT_UPDATE,
          CACHE_SYNC_REASON.SHOP_RESYNC,
          CACHE_SYNC_REASON.INVENTORY_RESYNC):
@@ -1138,12 +1141,15 @@ class PlatoonController(IPlatoonController, IGlobalListener, CallbackDelayer):
         vehicles = self.__itemsCache.items.getVehicles(criteria)
         availableTiers = 0
         for v in vehicles.itervalues():
+            lvlFlag = 1 << v.level
+            if availableTiers & lvlFlag:
+                continue
             state, vStateLvl = v.getState()
             if state in (Vehicle.VEHICLE_STATE.LOCKED, Vehicle.VEHICLE_STATE.IN_PREBATTLE) and v.checkUndamagedState(Vehicle.VEHICLE_STATE.UNDAMAGED) == Vehicle.VEHICLE_STATE.UNDAMAGED or vStateLvl not in (Vehicle.VEHICLE_STATE_LEVEL.CRITICAL,
              Vehicle.VEHICLE_STATE_LEVEL.WARNING,
              Vehicle.VEHICLE_STATE_LEVEL.RENTABLE,
              Vehicle.VEHICLE_STATE_LEVEL.ATTENTION):
-                availableTiers |= 1 << v.level
+                availableTiers |= lvlFlag
 
         availableTiers &= allowedLevels
         if availableTiers != self.__availableTiersForSearch:

@@ -47,8 +47,8 @@ class GameplayLogic(IGameplayLogic):
         self.loginMgr.tryPrepareLGCLogin()
         self.goToLoginByRQ()
 
-    def goToLoginByEvent(self):
-        self.postStateEvent(PlayerEventID.NON_PLAYER_BECOME_PLAYER, disconnectReason=DisconnectReason.EVENT)
+    def goToLoginByEvent(self, hasNetworkConnection):
+        self.postStateEvent(PlayerEventID.NON_PLAYER_BECOME_PLAYER, disconnectReason=DisconnectReason.EVENT if hasNetworkConnection else DisconnectReason.NO_NETWORK)
 
     def goToLoginByKick(self, reason, kickReasonType, expiryTime):
         self.postStateEvent(PlayerEventID.NON_PLAYER_BECOME_PLAYER, disconnectReason=DisconnectReason.KICK, kickReason=reason, kickReasonType=kickReasonType, expiryTime=expiryTime)

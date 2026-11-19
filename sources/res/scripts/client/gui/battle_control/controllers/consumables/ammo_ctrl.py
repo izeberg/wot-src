@@ -620,8 +620,9 @@ class AmmoController(MethodsRules, ViewComponentsController):
         result = False
         if intCD in self.__ammo:
             if self.__currShellCD != intCD:
+                if self.__currShellCD is not None:
+                    self._reloadingState.startPredictedReloading(self.__gunSettings)
                 self.__currShellCD = intCD
-                self._reloadingState.startPredictedReloading(self.__gunSettings)
                 self.__onCurrentShellChanged(intCD)
                 result = True
         else:

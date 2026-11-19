@@ -328,6 +328,38 @@
 				<slots/>
 			</block>
 			<block>
+				<class>Variable</class>
+				<id>Variable_11</id>
+				<params>
+					<param>
+						vehicle
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>SendLocalEvent</class>
 				<id>SendLocalEvent_1</id>
 				<buddy>ListenLocalEvent_1</buddy>
@@ -341,14 +373,20 @@
 				<slots/>
 			</block>
 			<block>
-				<class>OnAnyVehicleShoot</class>
-				<id>OnAnyVehicleShoot_2</id>
+				<class>If</class>
+				<id>If_1</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_3</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>OnAnyVehicleShoot</class>
+				<id>OnAnyVehicleShoot_2</id>
 				<params/>
 				<slots/>
 			</block>
@@ -365,6 +403,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>SendLocalEvent</class>
 				<id>SendLocalEvent_2</id>
 				<buddy>ListenLocalEvent_2</buddy>
@@ -378,21 +422,53 @@
 				<slots/>
 			</block>
 			<block>
+				<class>And</class>
+				<id>And_1</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_12</id>
+				<buddy>Variable_11</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>CompareVehicles</class>
 				<id>CompareVehicles_1</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_5</id>
-				<params/>
+				<class>GetVariable</class>
+				<id>GetVariable_11</id>
+				<buddy>Variable_11</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
 				<slots/>
 			</block>
 			<block>
@@ -408,34 +484,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>CompareIntegers</class>
-				<id>CompareIntegers_2</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>b</name>
-						<const>\1\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetGameSetting</class>
-				<id>GetGameSetting_2</id>
-				<params>
-					<param>
-						int
-						<name>Game Setting Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>settingName</name>
-						<const>\HAVOK_ENABLED\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>Macro</class>
 				<id>Macro_1</id>
 				<params>
@@ -443,6 +491,19 @@
 						setVariables
 						<name>Macro Name</name>
 						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_5</id>
+				<buddy>Variable_11</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
 					</param>
 				</params>
 				<slots/>
@@ -461,12 +522,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>StopPlan</class>
-				<id>StopPlan_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_9</id>
 				<buddy>Variable_4</buddy>
@@ -478,6 +533,17 @@
 					</param>
 				</params>
 				<slots/>
+			</block>
+			<block>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_2</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>b</name>
+						<const>\1\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>SpawnComponent</class>
@@ -547,10 +613,21 @@
 				<slots/>
 			</block>
 			<block>
-				<class>IsPlayerVehicle</class>
-				<id>IsPlayerVehicle_1</id>
-				<params/>
-				<slots/>
+				<class>GetGameSetting</class>
+				<id>GetGameSetting_2</id>
+				<params>
+					<param>
+						int
+						<name>Game Setting Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>settingName</name>
+						<const>\HAVOK_ENABLED\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>Select</class>
@@ -577,6 +654,31 @@
 						<const>\_PC\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>StopPlan</class>
+				<id>StopPlan_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_10</id>
+				<buddy>Variable_11</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>IsPlayerVehicle</class>
+				<id>IsPlayerVehicle_1</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>ListenLocalEvent</class>
@@ -950,8 +1052,20 @@
 			<connection>
 				<from>OnAnyVehicleShoot_2</from>
 				<input>input</input>
-				<to>If_3</to>
+				<to>If_1</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>And_1</from>
+				<input>value</input>
+				<to>If_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_1</from>
+				<input>input</input>
+				<to>If_3</to>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>CompareVehicles_1</from>
@@ -966,10 +1080,34 @@
 				<output>true</output>
 			</connection>
 			<connection>
+				<from>OnAnyVehicleShoot_2</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_1</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
 				<from>Sequence_1</from>
 				<input>input</input>
 				<to>SendLocalEvent_2</to>
 				<output>o1</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_1</from>
+				<input>i1</input>
+				<to>And_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_2</from>
+				<input>i2</input>
+				<to>And_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetVariable_12</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_2</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>OnAnyVehicleShoot_2</from>
@@ -978,21 +1116,9 @@
 				<output>vehicle</output>
 			</connection>
 			<connection>
-				<from>GameObjectToVehicle_1</from>
+				<from>GetVariable_11</from>
 				<input>b</input>
 				<to>CompareVehicles_1</to>
-				<output>vehicle</output>
-			</connection>
-			<connection>
-				<from>GetVehicleGameObject_5</from>
-				<input>gameObject</input>
-				<to>GameObjectToVehicle_1</to>
-				<output>vehicleObject</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleGameObject_5</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -1008,12 +1134,6 @@
 				<output>equal</output>
 			</connection>
 			<connection>
-				<from>GetGameSetting_2</from>
-				<input>a</input>
-				<to>CompareIntegers_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>If_2</from>
 				<input>in</input>
 				<to>Macro_1</to>
@@ -1024,6 +1144,18 @@
 				<input>gameObject</input>
 				<to>Macro_1</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>input</input>
+				<to>SetVariable_5</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_3</from>
+				<input>value</input>
+				<to>SetVariable_5</to>
+				<output>vehicle</output>
 			</connection>
 			<connection>
 				<from>SpawnComponent_1</from>
@@ -1038,13 +1170,13 @@
 				<output>object</output>
 			</connection>
 			<connection>
-				<from>If_2</from>
-				<input>input</input>
-				<to>StopPlan_1</to>
-				<output>false</output>
+				<from>GetGameSetting_2</from>
+				<input>a</input>
+				<to>CompareIntegers_2</to>
+				<output>value</output>
 			</connection>
 			<connection>
-				<from>Macro_1</from>
+				<from>SetVariable_5</from>
 				<input>in</input>
 				<to>SpawnComponent_1</to>
 				<output>out</output>
@@ -1092,16 +1224,22 @@
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>GameObjectToVehicle_3</from>
-				<input>vehicle</input>
-				<to>IsPlayerVehicle_1</to>
-				<output>vehicle</output>
-			</connection>
-			<connection>
 				<from>IsPlayerVehicle_1</from>
 				<input>index</input>
 				<to>Select_1</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_2</from>
+				<input>input</input>
+				<to>StopPlan_1</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>GetVariable_10</from>
+				<input>vehicle</input>
+				<to>IsPlayerVehicle_1</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>Delay_4</from>

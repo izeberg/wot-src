@@ -11,8 +11,11 @@ def registerSkeletons(manager):
     from new_year.interactive_state_machine.sm_queue import StateMachineQueue
     from new_year.skeletons.i_sm_queue import IStateMachineQueue
     from new_year.skeletons.i_sm_queue_context import IQueueContext
+    from new_year.gui.game_control.ny_window_helper import NyWindowHelper
+    from new_year.skeletons.new_year import INyWindowHelper
     manager.addInstance(ITamagotchiWebRequester, TamagotchiWebRequester())
     manager.addInstance(ITamagotchiDataProvider, TamagotchiDataProvider())
     manager.addInstance(INewYearMetricsLogger, NewYearMetricsLogger())
+    manager.addInstance(INyWindowHelper, NyWindowHelper())
     manager.addInstance(IQueueContext, QueueContext())
     manager.addInstance(IStateMachineQueue, StateMachineQueue())

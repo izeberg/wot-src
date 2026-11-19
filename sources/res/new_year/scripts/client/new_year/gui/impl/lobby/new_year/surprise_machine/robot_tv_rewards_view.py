@@ -15,11 +15,12 @@ from helpers import dependency
 from gui.impl.gen import R
 
 class RobotTvRewardsView(ViewImpl):
-    __slots__ = ('__tooltips', )
+    __slots__ = ('__tooltips', '__closeCallback')
     __itemsCache = dependency.descriptor(IItemsCache)
     __hangarSpace = dependency.descriptor(IHangarSpace)
 
-    def __init__(self):
+    def __init__(self, closeCallback=None):
+        self.__closeCallback = closeCallback
         settings = ViewSettings(layoutID=R.views.new_year.lobby.new_year.RobotTvRewardsView(), flags=ViewFlags.VIEW, model=RobotTvRewardsViewModel())
         self.__tooltips = {}
         super(RobotTvRewardsView, self).__init__(settings)
@@ -68,16 +69,28 @@ class RobotTvRewardsView(ViewImpl):
         super(RobotTvRewardsView, self)._onLoading(*args, **kwargs)
         self.viewModel.setHasBlur(isRendererPipelineDeferred())
 
+    def _getEvents(self):
+        return (
+         (
+          self.viewModel.onClose, self.__onClose),)
+
     def _finalize(self):
+        self.__closeCallback = None
         self.viewModel.getRewards().clear()
         super(RobotTvRewardsView, self)._finalize()
+        return
+
+    def __onClose(self):
+        if self.__closeCallback is not None:
+            self.__closeCallback()
+        return
 
 
 class RobotTvRewardsViewWindow(WindowImpl):
     __slots__ = ('__blur', )
 
-    def __init__(self, parent=None):
-        super(RobotTvRewardsViewWindow, self).__init__(WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, content=RobotTvRewardsView(), parent=parent, layer=WindowLayer.OVERLAY)
+    def __init__(self, parent=None, closeCallback=None):
+        super(RobotTvRewardsViewWindow, self).__init__(WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, content=RobotTvRewardsView(closeCallback), parent=parent, layer=WindowLayer.OVERLAY)
         self.__blur = None
         self.onStatusChanged += self.__onStatusChanged
         return

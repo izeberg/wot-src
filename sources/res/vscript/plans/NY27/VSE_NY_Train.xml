@@ -514,6 +514,19 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
+				<id>GetVariable_19</id>
+				<buddy>Variable_6</buddy>
+				<params>
+					<param>
+						FloatT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
 				<id>GetVariable_20</id>
 				<buddy>Variable_6</buddy>
 				<params>
@@ -529,19 +542,6 @@
 				<class>SubtractFloat</class>
 				<id>SubtractFloat_4</id>
 				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_8</id>
-				<buddy>Variable_5</buddy>
-				<params>
-					<param>
-						FloatT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
 				<slots/>
 			</block>
 			<block>
@@ -597,8 +597,8 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_19</id>
-				<buddy>Variable_6</buddy>
+				<id>GetVariable_8</id>
+				<buddy>Variable_5</buddy>
 				<params>
 					<param>
 						FloatT
@@ -606,25 +606,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_14</id>
-				<buddy>VariableReadOnly_1</buddy>
-				<params>
-					<param>
-						FloatT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>SubtractFloat</class>
-				<id>SubtractFloat_5</id>
-				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -678,19 +659,6 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_7</id>
-				<buddy>Variable_4</buddy>
-				<params>
-					<param>
-						FloatT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
 				<id>GetVariable_9</id>
 				<buddy>Variable_5</buddy>
 				<params>
@@ -710,8 +678,8 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_15</id>
-				<buddy>Variable_2</buddy>
+				<id>GetVariable_7</id>
+				<buddy>Variable_4</buddy>
 				<params>
 					<param>
 						FloatT
@@ -725,6 +693,19 @@
 				<class>GetVariable</class>
 				<id>GetVariable_21</id>
 				<buddy>Variable_6</buddy>
+				<params>
+					<param>
+						FloatT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_15</id>
+				<buddy>Variable_2</buddy>
 				<params>
 					<param>
 						FloatT
@@ -1074,10 +1055,10 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>SubtractFloat_5</from>
+				<from>GetVariable_13</from>
 				<input>b</input>
 				<to>SubtractFloat_4</to>
-				<output>res</output>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
@@ -1086,27 +1067,15 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>GetVariable_8</from>
-				<input>a</input>
-				<to>CompareFloats_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>GetVariable_19</from>
-				<input>b</input>
+				<input>a</input>
 				<to>CompareFloats_2</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>GetVariable_14</from>
-				<input>a</input>
-				<to>SubtractFloat_5</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_13</from>
+				<from>GetVariable_8</from>
 				<input>b</input>
-				<to>SubtractFloat_5</to>
+				<to>CompareFloats_2</to>
 				<output>value</output>
 			</connection>
 			<connection>

@@ -77,22 +77,24 @@ class NyLeaderboardRewardView(ViewImpl):
         self.__makeRequestPlayerStats()
         with self.getViewModel().transaction() as (tx):
             self.__filterDogtags()
-            if not self.__isRequestInProgress:
-                self.__fillModel(tx)
+            self.__fillModel(tx)
 
     def __fillModel(self, model):
         if self.__isPreorder:
             model.setIsPreorder(True)
             packNyLeaderboardRewards(self.__rewards, model.rewards, self.__tooltips)
             return
+        self.__fillPlayerPlace(model)
+        packNyLeaderboardRewards(self.__rewards, model.rewards, self.__tooltips, (
+         CurrentNYConstants.NY_STATIC_DOGTAG, self.__ctxUpdater))
+
+    def __fillPlayerPlace(self, model):
         playerPos, playerTop = self.__getPlayerPositionAndTop()
         isFinal = self.__dataProvider.isCumulativeFinished if self.__seasonID == NY_CUMULATIVE_LEADERBOARD_SEASON_ID else self.__dataProvider.isLeaderboardFinished
         model.setStage(self.__seasonID)
         model.setPosition(playerPos)
         model.setTop(playerTop)
         model.setIsFinal(isFinal)
-        packNyLeaderboardRewards(self.__rewards, model.rewards, self.__tooltips, (
-         CurrentNYConstants.NY_STATIC_DOGTAG, self.__ctxUpdater))
 
     def __makeRequestPlayerStats(self):
         dogTagRewards = self.__rewards.get('dogTagComponents', [])
@@ -107,7 +109,7 @@ class NyLeaderboardRewardView(ViewImpl):
     def __onPlayerStatsUpdated(self, isSuccess):
         self.__isRequestInProgress = False
         with self.getViewModel().transaction() as (tx):
-            self.__fillModel(tx)
+            self.__fillPlayerPlace(tx)
 
     def __getPlayerPositionAndTop(self):
         dogTagRewards = self.__rewards.get('dogTagComponents', [])

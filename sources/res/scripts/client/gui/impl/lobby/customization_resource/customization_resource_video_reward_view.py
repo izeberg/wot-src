@@ -24,11 +24,6 @@ class CustomizationResourceVideoRewardView(ViewImpl):
         self.__closeCallback = closeCallback
         super(CustomizationResourceVideoRewardView, self).__init__(settings)
 
-    def _onLoaded(self, *args, **kwargs):
-        super(CustomizationResourceVideoRewardView, self)._onLoaded(*args, **kwargs)
-        if Waiting.isOpened('loading'):
-            Waiting.hide('loading')
-
     @property
     def viewModel(self):
         return super(CustomizationResourceVideoRewardView, self).getViewModel()
@@ -36,10 +31,16 @@ class CustomizationResourceVideoRewardView(ViewImpl):
     def _getEvents(self):
         return (
          (
-          self.viewModel.onClose, self.__onClose),)
+          self.viewModel.onClose, self.__onClose),
+         (
+          self.viewModel.onStarted, self.__onStarted))
 
     def __onClose(self):
         self.__closeCallback()
+
+    def __onStarted(self):
+        if Waiting.isOpened('loading'):
+            Waiting.hide('loading')
 
 
 class CustomizationResourceVideoRewardViewWindow(WindowImpl):

@@ -208,10 +208,10 @@ class NySurpriseMachineView(HistorySubModelPresenter):
         self.__closeRewardsWindow()
 
     def __closeRewardsWindow(self):
-        if self.__rewardsWindow is not None:
-            self.__rewardsWindow.content.viewModel.onClose -= self.__onRewardsClose
-            self.__rewardsWindow.destroy()
-            self.__rewardsWindow = None
+        window = self.__rewardsWindow
+        self.__rewardsWindow = None
+        if window is not None:
+            window.destroy()
         return
 
     def __stopRewardsCallback(self):
@@ -336,11 +336,10 @@ class NySurpriseMachineView(HistorySubModelPresenter):
     def __handleMultipleRewards(self, rewardsList, usedCount):
         self.__nyMachineController.setState(RobotTvScreenState.ACTIVE)
         self.__nyMachineController.updateSurpriseMachineBusyStatus(True)
-        self.__rewardsWindow = RobotTvRewardsViewWindow(self.getParentWindow())
+        self.__rewardsWindow = RobotTvRewardsViewWindow(self.getParentWindow(), closeCallback=self.__onRewardsClose)
         content = self.__rewardsWindow.content
         content.setTokensUsed(usedCount)
         content.fillRewards(rewardsList)
-        content.viewModel.onClose += self.__onRewardsClose
 
         def _openRewards():
             self.__cbOpenRewardsId = None
@@ -422,19 +421,18 @@ class NySurpriseMachineView(HistorySubModelPresenter):
     def __buyMachineCoin(self, count):
         self.viewModel.setIsBuyBtnLoading(True)
         result = yield BuyMachineCoinsProcessor(count).request()
-        viewModel = self.getViewModel()
-        if viewModel is None:
-            return
-        else:
+        viewModel = self.getViewModel() if self.isLoaded else None
+        if viewModel is not None:
             viewModel.setIsBuyBtnLoading(False)
-            if result and result.success:
-                SoundGroups.g_instance.playSound2D(NewYearSoundEvents.MACHINE_COINS)
-                self.__uiLogger.logMachineCoinExchange(count)
+        if result and result.success:
+            SoundGroups.g_instance.playSound2D(NewYearSoundEvents.MACHINE_COINS)
+            self.__uiLogger.logMachineCoinExchange(count)
+            if viewModel is not None:
                 viewModel.setPurchaseFormState(PurchaseFormState.AVAILABLE)
-                SystemMessages.pushMessage(priority=result.msgPriority, text=result.userMsg, type=result.sysMsgType, messageData=result.msgData)
-            else:
-                viewModel.setPurchaseFormState(PurchaseFormState.ERROR)
-            return
+            SystemMessages.pushMessage(priority=result.msgPriority, text=result.userMsg, type=result.sysMsgType, messageData=result.msgData)
+        elif viewModel is not None:
+            viewModel.setPurchaseFormState(PurchaseFormState.ERROR)
+        return
 
     def __onGoToMachineMain(self):
         if not self.__nyMachineController.isMachineBusy:

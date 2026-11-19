@@ -315,7 +315,8 @@ def onGeometryMapped(spaceID, path):
 
 def onDisconnected():
     BigWorld.loginEntered()
-    gui_personality.onDisconnected()
+    hasNetworkConnection = ServiceLocator.connectionMgr.hasNetworkConnection()
+    gui_personality.onDisconnected(hasNetworkConnection)
     VOIP.getVOIPManager().logout()
     gameLoading.getLoader().onDisconnected()
 

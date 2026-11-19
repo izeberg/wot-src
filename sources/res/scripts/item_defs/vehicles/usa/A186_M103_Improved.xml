@@ -125,6 +125,10 @@
 			<armor_37>127</armor_37>
 			<armor_38>100</armor_38>
 			<armor_39>116</armor_39>
+			<armor_40>
+				5
+				<vehicleDamageFactor>0</vehicleDamageFactor>
+			</armor_40>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>38405</weight>
@@ -1732,6 +1736,10 @@
 							20
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_12>
+						<armor_13>
+							10
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_13>
 						<gun>45</gun>
 					</armor>
 					<shotDispersionRadius>

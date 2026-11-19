@@ -358,6 +358,8 @@ class DisconnectMeta(I18nInfoDialogMeta):
             expiryTime = time_utils.makeLocalServerTime(int(self.expiryTime))
             formatArgs['expiryTime'] = '%s %s' % (backport.getLongDateFormat(expiryTime),
              backport.getLongTimeFormat(expiryTime))
+        if ACCOUNT_KICK_REASONS.NO_CONNECTION == self.kickReasonType:
+            return i18n.makeString(DIALOGS.DISCONNECTED_MESSAGENONETWORK, **formatArgs)
         key = DIALOGS.DISCONNECTED_MESSAGEKICK
         if self.kickReasonType in ACCOUNT_KICK_REASONS.BAN_RANGE:
             if IS_CHINA and self.kickReasonType == ACCOUNT_KICK_REASONS.CURFEW_BAN:

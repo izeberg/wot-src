@@ -4,7 +4,7 @@ from frameworks.wulf import ViewModel
 class VideoViewModel(ViewModel):
     __slots__ = ('onClose', )
 
-    def __init__(self, properties=5, commands=1):
+    def __init__(self, properties=6, commands=1):
         super(VideoViewModel, self).__init__(properties=properties, commands=commands)
 
     def getIsControlsVisible(self):
@@ -37,6 +37,12 @@ class VideoViewModel(ViewModel):
     def setCanEscape(self, value):
         self._setBool(4, value)
 
+    def getIsNewYear(self):
+        return self._getBool(5)
+
+    def setIsNewYear(self, value):
+        self._setBool(5, value)
+
     def _initialize(self):
         super(VideoViewModel, self)._initialize()
         self._addBoolProperty('isControlsVisible', True)
@@ -44,4 +50,5 @@ class VideoViewModel(ViewModel):
         self._addResourceProperty('videoPath', R.invalid())
         self._addRealProperty('initialAudioVolume', 0.5)
         self._addBoolProperty('canEscape', True)
+        self._addBoolProperty('isNewYear', False)
         self.onClose = self._addCommand('onClose')

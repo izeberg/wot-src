@@ -1481,6 +1481,11 @@ msgstr "Ваш акаўнт заблакіраваны да %(expiryTime)s з п
 msgid "disconnected/messageKick"
 msgstr "Злучэнне з серверам абарвалася.%(reason)s"
 
+msgid "disconnected/messageNoNetwork"
+msgstr ""
+"Нет доступа к интернету.\n"
+"Вероятная проблема: соединение или на стороне провайдера. Проверьте подключение к сети и попробуйте снова."
+
 msgid "disconnected/reason"
 msgstr ""
 " \n"

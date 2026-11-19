@@ -60,10 +60,6 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R147_Object_701/Object_701_proxy_AO.dds</Texture>
 					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
 				</material>
 				<groupOrigin>0.091688 0.767153 -0.258244</groupOrigin>
 			</primitiveGroup>

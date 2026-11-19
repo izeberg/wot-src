@@ -36,6 +36,7 @@ if typing.TYPE_CHECKING:
     from gui.server_events.bonuses import WoTPlusBonus
     from items.vehicles import VehicleType
 _logger = logging.getLogger(__name__)
+_SUBSCRIPTION_TRIAL_TOKEN = 'premium_subs_trial_day'
 
 class _INotificationStrategy(object):
     _systemMessages = dependency.descriptor(ISystemMessages)
@@ -83,7 +84,6 @@ class WotPlusController(IWotPlusController):
         self._cache = {}
         self._account = None
         self.__callbackHandler = None
-        self._isStateUpdate = True
         self._state = WotPlusState.INACTIVE
         self.onDataChanged = Event()
         self.onAttendanceUpdated = Event()
@@ -138,6 +138,9 @@ class WotPlusController(IWotPlusController):
 
     def isEnabled(self):
         return self._cache.get('isEnabled', False)
+
+    def __isTrialSubscription(self):
+        return self._itemsCache.items.tokens.getToken(_SUBSCRIPTION_TRIAL_TOKEN) is not None
 
     def isFreeToDemount(self, device):
         gs = self._lobbyContext.getServerSettings()
@@ -305,15 +308,13 @@ class WotPlusController(IWotPlusController):
             self.__callbackHandler = []
         self.__callbackHandler.append(callback)
         self.onStateUpdate += self.__onStateUpdate
-        if self._isStateUpdate:
-            self.resolveState()
+        self.resolveState()
 
     @th_async
     def resolveState(self):
         if not self.isEnabled():
             self._state = WotPlusState.INACTIVE
             return
-        self._isStateUpdate = False
         self._userSubscriptionFetchCtrl.resetFetch()
         subscriptions = yield th_await(self._userSubscriptionFetchCtrl.getProducts(False))
         serverUTCTime = getServerUTCTime()
@@ -323,14 +324,14 @@ class WotPlusController(IWotPlusController):
             product = first(sortedSubscriptions)
             if product:
                 self._state = WotPlusState(SUBSCRIPTION_STATE.get(product.status, WotPlusState.ERROR))
-            else:
+            elif self.__isTrialSubscription():
                 self._state = WotPlusState.TRIAL
         else:
             self._state = WotPlusState.ERROR
-        self.onStateUpdate()
+        if self._state != WotPlusState.INACTIVE:
+            self.onStateUpdate()
 
     def __onStateUpdate(self, *_):
-        self._isStateUpdate = True
         while self.__callbackHandler:
             try:
                 self.__callbackHandler.pop()(True)

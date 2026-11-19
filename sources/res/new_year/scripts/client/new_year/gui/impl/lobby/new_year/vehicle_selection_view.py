@@ -25,7 +25,7 @@ from gui.shared.utils.decorators import adisp_process
 from gui.shared.notifications import NotificationPriorityLevel
 from helpers import dependency
 from skeletons.gui.shared import IItemsCache
-from new_year.skeletons.new_year import INewYearController
+from new_year.skeletons.new_year import INewYearController, INyWindowHelper
 if typing.TYPE_CHECKING:
     from frameworks.wulf import Array
     from typing import Tuple, Sequence, Callable, Optional
@@ -48,6 +48,8 @@ class VehicleSelectionView(ViewImpl):
                  '__filters', '__tooltipData', '__totalRewardsCount', '__initialDiscountID')
     __itemsCache = dependency.descriptor(IItemsCache)
     __nyController = dependency.descriptor(INewYearController)
+    __nyWindowHelper = dependency.descriptor(INyWindowHelper)
+    WND_LOCK_TAG = 'VehicleSelectionView'
 
     def __init__(self, layoutID, discountID=None):
         settings = ViewSettings(layoutID)
@@ -62,6 +64,7 @@ class VehicleSelectionView(ViewImpl):
         self.__resetFilters(True)
         self.__receivedDiscount = sorted([ token for token in self.__itemsCache.items.tokens.getTokens().keys() if token.startswith(TOKEN_VARIADIC_DISCOUNT_PREFIX)
                                          ], key=lambda s: int(s.split(':')[(-1)]))
+        self.__nyWindowHelper.lock(self.WND_LOCK_TAG)
         super(VehicleSelectionView, self).__init__(settings)
         return
 
@@ -81,6 +84,10 @@ class VehicleSelectionView(ViewImpl):
           self.viewModel.onSelectReward, self.__onSelectReward),
          (
           self.viewModel.onFilterReset, self.__resetFilters))
+
+    def _finalize(self):
+        self.__nyWindowHelper.unlock(self.WND_LOCK_TAG)
+        super(VehicleSelectionView, self)._finalize()
 
     def _onLoading(self, *args, **kwargs):
         super(VehicleSelectionView, self)._onLoading(*args, **kwargs)

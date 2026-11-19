@@ -54,7 +54,10 @@
 					</property>
 					<property>
 						g_crashUVTiling
-						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
+						<Vector4>
+							0.5 0.5 0.0 0.0
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						crashTileMap
@@ -68,6 +71,10 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/american/A184_HTPC/_skins/A184_HTPC_3Dst_01/HTPC_3Dst_01_proxy_AO.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
 				</material>
 				<groupOrigin>0.002002 0.882621 -0.816618</groupOrigin>
 			</primitiveGroup>
@@ -77,6 +84,6 @@
 		<min>-1.370314 -0.011932 -2.719502</min>
 		<max>1.374318 1.777174 1.086267</max>
 	</boundingBox>
-	<geometrySize>12522</geometrySize>
+	<geometrySize>9286</geometrySize>
 	<minUVDensity>0.002298</minUVDensity>
 </root>

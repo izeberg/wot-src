@@ -151,6 +151,7 @@ class DIALOGS(object):
     DISCONNECTED_TITLE = '#dialogs:disconnected/title'
     DISCONNECTED_MESSAGE = '#dialogs:disconnected/message'
     DISCONNECTED_MESSAGEKICK = '#dialogs:disconnected/messageKick'
+    DISCONNECTED_MESSAGENONETWORK = '#dialogs:disconnected/messageNoNetwork'
     DISCONNECTED_MESSAGEBAN = '#dialogs:disconnected/messageBan'
     DISCONNECTED_MESSAGEBANPERIOD = '#dialogs:disconnected/messageBanPeriod'
     DISCONNECTED_REASON = '#dialogs:disconnected/reason'
@@ -1311,6 +1312,7 @@ class DIALOGS(object):
      DISCONNECTED_TITLE,
      DISCONNECTED_MESSAGE,
      DISCONNECTED_MESSAGEKICK,
+     DISCONNECTED_MESSAGENONETWORK,
      DISCONNECTED_MESSAGEBAN,
      DISCONNECTED_MESSAGEBANPERIOD,
      DISCONNECTED_REASON,

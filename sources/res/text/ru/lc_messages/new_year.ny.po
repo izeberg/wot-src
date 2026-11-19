@@ -2369,13 +2369,13 @@ msgid "newYearInfoView/raid/point/1"
 msgstr "Фрагмент легендарного контейнера"
 
 msgid "newYearInfoView/raid/point/2"
-msgstr "Премиум техника VIII уровня"
+msgstr "Премиум машины VIII уровня"
 
 msgid "newYearInfoView/raid/point/3"
 msgstr "Уникальные члены экипажа и т.д."
 
 msgid "newYearInfoView/raid/pointsTitle"
-msgstr "Награды с похода:"
+msgstr "Награды из похода:"
 
 msgid "newYearInfoView/raid/title"
 msgstr "Поход и награды"
@@ -3768,9 +3768,6 @@ msgstr "Отправить в поход"
 msgid "raidView/button/recipies"
 msgstr "Рецепты"
 
-msgid "raidView/emptyTime"
-msgstr "-- ч. -- мин."
-
 msgid "raidView/finalTimerText"
 msgstr "ВРЕМЯ ПОХОДА"
 
@@ -3841,6 +3838,9 @@ msgstr ""
 
 msgid "raidView/recipeBlock/limit"
 msgstr "%(from)s/%(to)s"
+
+msgid "raidView/recipeBlock/limitText"
+msgstr "Доступно наград: %(limit)s"
 
 msgid "raidView/recipeBlock/recipeItem/available"
 msgstr "%(tab)s (ДОСТУПНО)"
@@ -3955,6 +3955,10 @@ msgstr ""
 
 msgid "raidView/tooltips/timerInfo"
 msgstr "Время, за которое будет завершён поход."
+
+msgid "raidView/unknownTime"
+msgstr ""
+"ДЛИТЕЛЬНОСТЬ ПОХОДА БУДЕТ РАССЧИТАНА ПОСЛЕ ТОГО, КАК ЕНОТ ОТПРАВИТСЯ В ПУТЬ"
 
 msgid "raidView/warningText"
 msgstr ""

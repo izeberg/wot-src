@@ -33,19 +33,23 @@ class TamagotchiWebRequester(ITamagotchiWebRequester):
 
     @adisp_process
     def requestLeaderboardPage(self, page=0, isUserPage=False, cumulative=False):
+        requestSeq = self._dataProvider.allocateLeaderboardPageRequestSeq(cumulative)
         result = yield self._webController.sendRequest(ctx=NyTamagotchiGetLeaderboardPageCtx(page=page, isUserPage=isUserPage, cumulative=cumulative))
-        if result.isSuccess():
-            if cumulative:
-                self._dataProvider.cumulativeLeaderboard = result.data
-            else:
-                self._dataProvider.leaderboard = result.data
+        if not self._dataProvider.isLeaderboardPageRequestSeqActual(cumulative, requestSeq):
             return
-        LOG_WARNING('[Tamagotchi] Failed to retrieve leaderboard info', result.getExtraCode())
-        if cumulative:
-            self._dataProvider.cumulativeLeaderboard = None
         else:
-            self._dataProvider.leaderboard = None
-        return
+            if result.isSuccess():
+                if cumulative:
+                    self._dataProvider.cumulativeLeaderboard = result.data
+                else:
+                    self._dataProvider.leaderboard = result.data
+                return
+            LOG_WARNING('[Tamagotchi] Failed to retrieve leaderboard info', result.getExtraCode())
+            if cumulative:
+                self._dataProvider.cumulativeLeaderboard = None
+            else:
+                self._dataProvider.leaderboard = None
+            return
 
     @adisp_process
     def requestPlayerStats(self, forFinalCache=False):
@@ -75,8 +79,11 @@ class TamagotchiWebRequester(ITamagotchiWebRequester):
 
     @adisp_process
     def activateItem(self, itemId, count):
+        requestGeneration = self._dataProvider.playerStatsGeneration
         self._dataProvider.onItemsActivateRequested(itemId, count)
         result = yield self._webController.sendRequest(ctx=NyTamagotchiActivateItemCtx(itemId=itemId, count=count))
+        if requestGeneration != self._dataProvider.playerStatsGeneration:
+            return
         isRecalculation = result.getExtraCode() == self._RECALCULATION_CODE
         if result.isSuccess():
             self._dataProvider.playerInfo = result.data

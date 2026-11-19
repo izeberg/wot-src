@@ -121,10 +121,10 @@ def collectRaidReservedResources(components, selectedIDs):
     return reserved
 
 
-def showEmbeddedAudioVideoView(videoSource, parent=None, onVideoStarted=None, onVideoClosed=None, isControlsVisible=False, isSubtitlesVisible=False, subtitlesPath=None, soundSpace=None, releaseNotificationsLockOnClose=True, canEscape=True, handleWorldDraw=True):
+def showEmbeddedAudioVideoView(videoSource, parent=None, onVideoStarted=None, onVideoClosed=None, isControlsVisible=False, isSubtitlesVisible=False, subtitlesPath=None, soundSpace=None, releaseNotificationsLockOnClose=True, canEscape=True, handleWorldDraw=True, isNewYear=False):
     from events_core_client.gui.impl.video_with_controls.video_view import VideoPrerequisites
     from gui.impl.gen_utils import INVALID_RES_ID
-    prerequisites = VideoPrerequisites(videoPath=videoSource, subtitlesPath=subtitlesPath if subtitlesPath is not None else INVALID_RES_ID, isControlsVisible=isControlsVisible, isSubtitlesVisible=isSubtitlesVisible, soundSpace=soundSpace, canEscape=canEscape, handleWorldDraw=handleWorldDraw)
+    prerequisites = VideoPrerequisites(videoPath=videoSource, subtitlesPath=subtitlesPath if subtitlesPath is not None else INVALID_RES_ID, isControlsVisible=isControlsVisible, isSubtitlesVisible=isSubtitlesVisible, soundSpace=soundSpace, canEscape=canEscape, handleWorldDraw=handleWorldDraw, isNewYear=isNewYear)
     window = _EmbeddedAudioVideoWindow(prerequisites, parent=parent, onClosed=onVideoClosed, onStarted=onVideoStarted, releaseNotificationsLockOnClose=releaseNotificationsLockOnClose)
     window.load()
     return window

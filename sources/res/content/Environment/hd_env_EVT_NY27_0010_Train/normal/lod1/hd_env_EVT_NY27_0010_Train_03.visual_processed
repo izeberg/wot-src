@@ -160,12 +160,16 @@
 				4
 				<material>
 					<identifier>s_nd4</identifier>
-					<fx>shaders/std_effects/glow.fx</fx>
 					<materialKind>112</materialKind>
 					<collisionFlags>255</collisionFlags>
+					<fx>shaders/std_effects/glow.fx</fx>
 					<property>
 						diffuseMap
 						<Texture>content/Environment/hd_env_EVT_NY27_0010_Train/hd_env_EVT_NY27_0010_Train_Lights_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.290196 0.290196 0.290196 1.000000</Vector4>
 					</property>
 					<property>
 						selfIllumination
@@ -176,12 +180,12 @@
 						<Float>15.000000</Float>
 					</property>
 					<property>
-						g_tintColor
-						<Vector4>0.290196 0.290196 0.290196 1.000000</Vector4>
+						srcBlend
+						<Int>2</Int>
 					</property>
 					<property>
-						srcBlend
-						<Int>6</Int>
+						destBlend
+						<Int>1</Int>
 					</property>
 				</material>
 				<groupOrigin>0.000580 2.432683 -0.018956</groupOrigin>

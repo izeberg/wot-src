@@ -17,7 +17,7 @@ from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.leaderboard.ny
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.leaderboard.ny_tabs_model import NyTabsModel
 from new_year.gui.impl.lobby.new_year.sub_model_presenter import HistorySubModelPresenter
 from new_year.gui.impl.new_year.navigation import NewYearNavigation
-from new_year.gui.impl.new_year.new_year_model_helper import packNyLeaderboardRewards
+from new_year.gui.impl.new_year.new_year_model_helper import packNyLeaderboardRewards, filterCompletedStyleRewards
 from new_year.ny_constants import InternalViewState, NY_LEADERBOARD_INFO_SEEN, NY_IS_LEADERBOARD_REWARDS_CHECKED, NY_IS_SECRET_REWARDS_CHECKED
 from new_year_common.items.components.ny_constants import TOKEN_LOOTBOX_FRAGMENT
 from new_year.skeletons.new_year import ITamagotchiWebRequester, ITamagotchiDataProvider, INewYearMetricsLogger
@@ -27,6 +27,7 @@ from new_year.ny_constants import NY_CUMULATIVE_LEADERBOARD_SEASON_ID
 if typing.TYPE_CHECKING:
     from new_year.tamagotchi.dto.leaderboard import Leaderboard
     from new_year.tamagotchi.dto.config import Config
+    SeasonConfig = typing.Union[(Config.Season.Dto, Config.Cumulative.Dto)]
 _PAGE_SIZE = 50
 _MIN_REQ_DELAY = 10
 _HIDE_WAITING_DELAY = 30
@@ -34,7 +35,7 @@ _TAB_WEEKLY = 0
 _TAB_CUMULATIVE = 1
 
 class NewYearLeaderboardView(HistorySubModelPresenter):
-    __slots__ = ('__timer', '__subviewTabIdx', '__isPrefetch', '__tooltips')
+    __slots__ = ('__timer', '__subviewTabIdx', '__prefetchTab', '__tooltips')
     _WAITING_NAME = 'leaderboardRewards'
     _SECRET_REWARD_NAME = 'vehicles'
     _STOP_DELAY = -1.0
@@ -47,8 +48,9 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
         super(NewYearLeaderboardView, self).__init__(viewModel, parentView, soundConfig)
         self.__subviewTabIdx = _TAB_WEEKLY
         self.__timer = CallbackDelayer()
-        self.__isPrefetch = False
+        self.__prefetchTab = None
         self.__tooltips = {}
+        return
 
     @property
     def isLeaderboardReady(self):
@@ -69,11 +71,12 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
 
     def finalize(self):
         self.__subviewTabIdx = _TAB_WEEKLY
-        self.__isPrefetch = False
+        self.__prefetchTab = None
         self.__tooltips = {}
         self.__timer.clearCallbacks()
         Waiting.hide(self._WAITING_NAME)
         super(NewYearLeaderboardView, self).finalize()
+        return
 
     def _getEvents(self):
         return (
@@ -137,7 +140,7 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
         self._requestUpdate(isUserPage=True, actionType=LastAction.PLAYER)
 
     def _onPageClick(self, args):
-        self._requestUpdate(args['page'], actionType=LastAction.PAGE)
+        self._requestUpdate(int(args['page']), actionType=LastAction.PAGE)
 
     def _onInfoClick(self):
         NewYearNavigation.showInfoView(startTab=Tabs.LEADERBOARD)
@@ -179,16 +182,18 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
         self._requestUpdate(lastRequestedPage, actionType=self.getViewModel().getLastAction())
 
     def _requestUpdate(self, page=0, isUserPage=False, actionType=LastAction.PLAYER):
-        self.__isPrefetch = False
+        if self.__prefetchTab == self.__isCumulativeTab():
+            self.__prefetchTab = None
         self._webRequester.requestLeaderboardPage(page, isUserPage, cumulative=self.__isCumulativeTab())
         with self.getViewModel().transaction() as (tx):
             tx.setCurrentPage(page)
             tx.setLastAction(actionType)
             tx.setIsLoading(True)
+        return
 
-    def _onLeaderBoardUpdated(self, result):
-        if self.__isPrefetch:
-            self.__isPrefetch = False
+    def _onLeaderBoardUpdated(self, result, cumulative):
+        if self.__prefetchTab == cumulative:
+            self.__prefetchTab = None
             if result:
                 with self.getViewModel().transaction() as (tx):
                     self.__fillPersonalInfos(tx)
@@ -205,6 +210,7 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
             self.__checkRunningWaiting()
             self.__prefetchInactiveLeaderboard()
             self.__ensureFinishedPlayerStats()
+        return
 
     def __onPlayerStatsUpdated(self, isSuccess):
         if isSuccess:
@@ -284,22 +290,24 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
         cumulativeTopConfig = cumulative.topConfig if cumulative is not None else []
         cumulativeDrawReward = cumulative.drawReward if cumulative is not None else None
         self.__tooltips = {}
-        self.__fillPersonalInfo(model.personalInfoWeekly, self._dataProvider.leaderboard, weeklyTopConfig, weeklyDrawReward)
-        self.__fillPersonalInfo(model.personalInfoAll, self._dataProvider.cumulativeLeaderboard, cumulativeTopConfig, cumulativeDrawReward)
+        self.__fillPersonalInfo(model.personalInfoWeekly, self._dataProvider.leaderboard, weeklyTopConfig, weeklyDrawReward, self._dataProvider.currentSeason)
+        self.__fillPersonalInfo(model.personalInfoAll, self._dataProvider.cumulativeLeaderboard, cumulativeTopConfig, cumulativeDrawReward, cumulative)
         return
 
-    def __fillPersonalInfo(self, infoModel, leaderboard, topConfig, drawReward):
+    def __fillPersonalInfo(self, infoModel, leaderboard, topConfig, drawReward, season):
         user = leaderboard.user
         if not (leaderboard.updateTime or user.position or user.points):
             return
         position, points = self.__getPlayerPosition(leaderboard, user)
         top, rewards = self.__resolveTopRewards(position, topConfig, drawReward)
+        rewards = deepcopy(rewards)
+        filterCompletedStyleRewards(rewards, season)
         infoModel.setNextTopPoints(user.pointsByNextTop)
         infoModel.setOpponentPoints(user.pointsByNextPlayer)
         infoModel.setPosition(position)
         infoModel.setScore(points)
         infoModel.setTop(top)
-        packNyLeaderboardRewards(deepcopy(rewards), infoModel.rewards, self.__tooltips, (
+        packNyLeaderboardRewards(rewards, infoModel.rewards, self.__tooltips, (
          (
           TOKEN_LOOTBOX_FRAGMENT,), infoModel.getTop))
 
@@ -429,7 +437,7 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
         with self.getViewModel().transaction() as (tx):
             tx.setCurrentTabIdx(self.__subviewTabIdx)
         cached = self.__getActiveLeaderboard()
-        if cached.updateTime and cached.page.totalPage and not self.__isPrefetch:
+        if cached.updateTime and cached.page.totalPage and self.__prefetchTab != self.__isCumulativeTab():
             with self.getViewModel().transaction() as (tx):
                 self._updateModel(tx)
                 self._updateTopTabs(tx)
@@ -463,8 +471,8 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
     def __prefetchInactiveLeaderboard(self):
         if not self._dataProvider.hasCumulativeLeaderboard:
             return
-        self.__isPrefetch = True
-        self._webRequester.requestLeaderboardPage(isUserPage=True, cumulative=not self.__isCumulativeTab())
+        self.__prefetchTab = not self.__isCumulativeTab()
+        self._webRequester.requestLeaderboardPage(isUserPage=True, cumulative=self.__prefetchTab)
 
     def __isCumulativeTab(self):
         return self.__subviewTabIdx == _TAB_CUMULATIVE

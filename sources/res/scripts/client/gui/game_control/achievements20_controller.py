@@ -10,12 +10,15 @@ from gui.achievements.achievements_constants import Achievements20SystemMessages
 from gui.impl.lobby.achievements.notifications_utils import NotificationsRuleProcessor, FLAG_STATUS
 from gui.impl.lobby.achievements.profile_utils import isWTREnabled, getStagesOfWTR, getNormalizedValue
 from helpers import dependency, server_settings
+from helpers.CallbackDelayer import CallbackDelayer
 from messenger.m_constants import SCH_CLIENT_MSG_TYPE
 from skeletons.gui.game_control import IAchievements20Controller, IBootcampController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.system_messages import ISystemMessages
+from constants import AchievementsLayoutStates
 _logger = logging.getLogger(__name__)
+_CHECK_NOTIFICATION_NEW_MEDAL_THRESHOLD = 2.5
 
 class Achievements20Controller(IAchievements20Controller):
     __itemsCache = dependency.descriptor(IItemsCache)
@@ -31,6 +34,7 @@ class Achievements20Controller(IAchievements20Controller):
         self.__accSettings = Achievements20SettingsManager()
         self.__notificationsProcessor = NotificationsRuleProcessor(self)
         self.__newSessionStarted = False
+        self.__newMedalNotificationCallback = CallbackDelayer()
 
     def fini(self):
         self.__eventManager.clear()
@@ -41,6 +45,7 @@ class Achievements20Controller(IAchievements20Controller):
         if self.__notificationsProcessor is not None:
             self.__notificationsProcessor.fini()
             self.__notificationsProcessor = None
+        self.__newMedalNotificationCallback = None
         return
 
     def onLobbyStarted(self, ctx):
@@ -202,6 +207,8 @@ class Achievements20Controller(IAchievements20Controller):
             self.__accSettings.stop()
         if self.__notificationsProcessor is not None:
             self.__notificationsProcessor.stop()
+        if self.__newMedalNotificationCallback is not None:
+            self.__newMedalNotificationCallback.clearCallbacks()
         return
 
     def __removeListeners(self):
@@ -220,6 +227,21 @@ class Achievements20Controller(IAchievements20Controller):
 
     def __update(self):
         self.__notificationsProcessor.process()
+        self.__newMedalNotificationCallback.delayCallback(_CHECK_NOTIFICATION_NEW_MEDAL_THRESHOLD, self.__checkReqNewMedal)
+
+    def __checkReqNewMedal(self):
+        items = self.__itemsCache.items
+        if items.getLayoutState() == AchievementsLayoutStates.MANUAL:
+            return False
+        prevLayoutList = self.getPrevAchievementsList()
+        achievements20GeneralConfig = self.__lobbyContext.getServerSettings().getAchievements20GeneralConfig()
+        layoutLength = achievements20GeneralConfig.getLayoutLength()
+        mainRules = achievements20GeneralConfig.getAutoGeneratingMainRules()
+        extraRules = achievements20GeneralConfig.getAutoGeneratingExtraRules()
+        newLayoutList = items.getAccountDossier().getTotalStats().getSignificantAchievements(mainRules, extraRules, layoutLength)
+        for achievement in newLayoutList:
+            if achievement.getName() not in prevLayoutList:
+                self.setMedalAddedStatus(FLAG_STATUS.SET)
 
     def __pushAchievements20SystemMessage(self, data):
         self.__systemMessages.proto.serviceChannel.pushClientMessage(data, SCH_CLIENT_MSG_TYPE.ACHIEVEMENTS20_SM_TYPE)

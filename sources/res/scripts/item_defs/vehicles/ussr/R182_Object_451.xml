@@ -4811,7 +4811,7 @@
 						<collisionModelServer>vehicles/russian/R182_Object_451/collision/Gun_01.model</collisionModelServer>
 						<collisionModelClient>vehicles/russian/R182_Object_451/collision_client/Gun_01.model</collisionModelClient>
 					</hitTester>
-					<effects>shot_mainext</effects>
+					<effects>shot_mainext_mb</effects>
 					<reloadEffect>reload85_107</reloadEffect>
 					<customizationSlots>
 						<slot>

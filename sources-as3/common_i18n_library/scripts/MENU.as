@@ -147,6 +147,8 @@ package
       
       public static const LOGIN_STATUS_LOGIN_REJECTED_NO_LOGINAPP_RESPONSE:String = "#menu:login/status/LOGIN_REJECTED_NO_LOGINAPP_RESPONSE";
       
+      public static const LOGIN_STATUS_NO_NETWORK_CONNECTION:String = "#menu:login/status/NO_NETWORK_CONNECTION";
+      
       public static const LOGIN_STATUS_LOGIN_REJECTED_NO_LOGINAPP:String = "#menu:login/status/LOGIN_REJECTED_NO_LOGINAPP";
       
       public static const LOGIN_STATUS_LOGIN_REJECTED_BASEAPP_TIMEOUT:String = "#menu:login/status/LOGIN_REJECTED_BASEAPP_TIMEOUT";

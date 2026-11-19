@@ -87,14 +87,14 @@
 						<Texture>vehicles/american/A184_HTPC/_skins/A184_HTPC_3Dst_01/HTPC_3Dst_01_proxy_AO.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 -0.002392 -0.037148</groupOrigin>
+				<groupOrigin>0.000000 -0.002392 -0.483421</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-1.620000 -0.479182 -3.965055</min>
-		<max>1.620000 0.474398 3.890759</max>
+		<max>1.620000 0.474398 2.998213</max>
 	</boundingBox>
-	<geometrySize>11020</geometrySize>
+	<geometrySize>7156</geometrySize>
 	<minUVDensity>0.002313</minUVDensity>
 </root>

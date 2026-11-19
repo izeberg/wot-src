@@ -26,7 +26,7 @@ class TamagotchiDataProvider(ITamagotchiDataProvider):
                  '__playerStatsGeneration', '__finalPlayerStatsRequestInFlight',
                  '__playerStatsRequestSeq', '__lastAppliedPlayerStatsSeq', '__simulationInfo',
                  '__indicatorStates', '__raccoonState', '__isRaidReady', '__eventManager',
-                 '__debValue', '__currentRaidTab')
+                 '__debValue', '__currentRaidTab', '__leaderboardPageRequestSeq')
     _itemsCache = dependency.descriptor(IItemsCache)
     _settingsCore = dependency.descriptor(ISettingsCore)
     __tamagotchiController = dependency.descriptor(INewYearTamagotchiController)
@@ -36,6 +36,7 @@ class TamagotchiDataProvider(ITamagotchiDataProvider):
         self.__config = Config.Dto()
         self.__leaderboard = Leaderboard.Dto()
         self.__cumulativeLeaderboard = Leaderboard.Dto()
+        self.__leaderboardPageRequestSeq = {False: 0, True: 0}
         self.__playerInfo = PlayerInfo.Dto()
         self.__simulationInfo = PlayerInfo.Dto()
         self.__playerStats = PlayerStats.Dto()
@@ -78,6 +79,7 @@ class TamagotchiDataProvider(ITamagotchiDataProvider):
         self.__config = Config.Dto()
         self.__leaderboard = Leaderboard.Dto()
         self.__cumulativeLeaderboard = Leaderboard.Dto()
+        self.__leaderboardPageRequestSeq = {False: 0, True: 0}
         self.__playerInfo = PlayerInfo.Dto()
         self.__simulationInfo = PlayerInfo.Dto()
         self.__playerStats = PlayerStats.Dto()
@@ -223,8 +225,15 @@ class TamagotchiDataProvider(ITamagotchiDataProvider):
                 other.user = user
                 if not other.updateTime:
                     other.updateTime = primary.updateTime
-        self.onLeaderBoardUpdated(isSuccess)
+        self.onLeaderBoardUpdated(isSuccess, cumulative)
         return
+
+    def allocateLeaderboardPageRequestSeq(self, cumulative):
+        self.__leaderboardPageRequestSeq[cumulative] += 1
+        return self.__leaderboardPageRequestSeq[cumulative]
+
+    def isLeaderboardPageRequestSeqActual(self, cumulative, requestSeq):
+        return self.__leaderboardPageRequestSeq[cumulative] == requestSeq
 
     @property
     def playerInfo(self):

@@ -107,7 +107,7 @@ class NewYearAtmosphereHandler(ServiceChannelHandler):
         return bool(awardTokens.difference(self.__alreadyGotForBootcamp))
 
     def __showMaxLevelGreetingsVideo(self):
-        showEmbeddedAudioVideoView(videoSource=R.videos.new_year.greetings.lvl_greetings(), parent=getParentWindow(), onVideoClosed=self.__onMaxLevelGreetingsClosed, isControlsVisible=False, releaseNotificationsLockOnClose=False)
+        showEmbeddedAudioVideoView(videoSource=R.videos.new_year.greetings.lvl_greetings(), parent=getParentWindow(), onVideoClosed=self.__onMaxLevelGreetingsClosed, isControlsVisible=False, releaseNotificationsLockOnClose=False, isNewYear=True)
 
     def __onMaxLevelGreetingsClosed(self):
         pending = self.__pendingMaxLevelSequence
@@ -287,7 +287,7 @@ class NewYearWeeklyRewardHandler(ServiceChannelHandler):
 
     def __getProductInvoiceData(self, ctx):
         invoiceData = ctx[1].data
-        if invoiceData and isinstance(invoiceData, dict) and invoiceData.get('assetType') == INVOICE_ASSET.PURCHASE:
+        if invoiceData and isinstance(invoiceData, dict) and invoiceData.get('assetType') == INVOICE_ASSET.PURCHASE and invoiceData.get('meta', {}).get('type') == 'normal':
             return invoiceData
         else:
             return

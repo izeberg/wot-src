@@ -1,5 +1,6 @@
 from adisp import adisp_process
 from base_crew_dialog_template_view import BaseCrewDialogTemplateView
+from gui.customization.shared import getPurchaseGoldForCredits, getPurchaseMoneyState, MoneyForPurchase
 from gui.impl.backport.backport_tooltip import createBackportTooltipContent
 from gui.impl.dialogs.dialog_template_button import CancelButton, ConfirmButton
 from gui.impl.dialogs.sub_views.icon.icon_set import IconSet
@@ -12,6 +13,7 @@ from gui.impl.gen.view_models.views.lobby.crew.dialogs.enlarge_barracks_dialog_m
 from gui.impl.gui_decorators import args2params
 from gui.impl.lobby.crew.tooltips.bunks_confirm_discount_tooltip import BunksConfirmDiscountTooltip
 from gui.impl.pub.dialog_window import DialogButtons
+from gui.shared import event_dispatcher
 from gui.impl.gen.view_models.views.dialogs.sub_views.currency_view_model import CurrencyType
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.shared.gui_items.items_actions import factory
@@ -46,6 +48,10 @@ class EnlargeBarracksDialog(BaseCrewDialogTemplateView):
     def viewModel(self):
         return super(EnlargeBarracksDialog, self).getViewModel()
 
+    @property
+    def __purchaseMoneyState(self):
+        return getPurchaseMoneyState(self.__pricePacksBerths)
+
     @adisp_process
     def _doAction(self):
         action = factory.getAction(factory.BUY_BERTHS, self.__pricePacksBerths, self.__countPacksBerths, self.__berthsInPack, self.getParentWindow())
@@ -67,7 +73,7 @@ class EnlargeBarracksDialog(BaseCrewDialogTemplateView):
         self.setDisplayFlags(DisplayFlags.RESPONSIVEHEADER.value)
         self.setSubView(Placeholder.TOP_RIGHT, MoneyBalance())
         self.setSubView(Placeholder.ICON, IconSet(R.images.gui.maps.icons.crew.place_in_barracks()))
-        self.addButton(ConfirmButton(label=R.strings.crew.barracks.action.enlarge(), buttonType=ButtonType.MAIN))
+        self.addButton(ConfirmButton(label=R.strings.crew.barracks.action.enlarge(), buttonType=ButtonType.MAIN, isDisabled=self.__isButtonDisabled()))
         self.addButton(CancelButton())
         self._updateViewModel(freeBerthsCount, slotsCount)
         super(EnlargeBarracksDialog, self)._onLoading(*args, **kwargs)
@@ -78,11 +84,22 @@ class EnlargeBarracksDialog(BaseCrewDialogTemplateView):
           'stats.' + str(self.__berthCurrency), self._onCurrencyUpdate),)
 
     def _onCurrencyUpdate(self, *_):
+        self._setButtonState()
         with self.viewModel.transaction() as (vm):
             vm.currency.setIsEnough(self.__isEnoughMoney())
 
+    def _setButtonState(self):
+        submitBtn = self.getButton(DialogButtons.SUBMIT)
+        if submitBtn is not None:
+            submitBtn.isDisabled = self.__isButtonDisabled()
+        return
+
     def _setResult(self, result):
         if result == DialogButtons.SUBMIT and not self.__isConfirmButtonClicked:
+            if self.__purchaseMoneyState is MoneyForPurchase.ENOUGH_WITH_EXCHANGE:
+                purchaseGold = getPurchaseGoldForCredits(self.__pricePacksBerths)
+                event_dispatcher.showExchangeCurrencyWindowModal(currencyValue=purchaseGold)
+                return
             self._enlargeBarracks()
             self.__isConfirmButtonClicked = True
         else:
@@ -103,6 +120,9 @@ class EnlargeBarracksDialog(BaseCrewDialogTemplateView):
             vm.setFreeBunksCount(freeBunksCount)
             vm.setAllBunksCount(allBunksCount)
 
+    def __isButtonDisabled(self):
+        return not self.__isEnoughMoney() and not self.__purchaseMoneyState == MoneyForPurchase.ENOUGH_WITH_EXCHANGE
+
     def __prepareBerthInfo(self):
         berths = self.itemsCache.items.stats.tankmenBerthsCount
         self.__berthPrice, self.__berthsInPack = self.itemsCache.items.shop.getTankmanBerthPrice(berths)
@@ -121,6 +141,7 @@ class EnlargeBarracksDialog(BaseCrewDialogTemplateView):
         berths = self.itemsCache.items.stats.tankmenBerthsCount
         self.__countPacksBerths = getBerthPackCount(self.__berthsInPack, selectedCount)
         self.__pricePacksBerths = self.itemsCache.items.shop.getTankmanBerthPrice(berths, selectedCount)[0]
+        self._setButtonState()
         with self.viewModel.transaction() as (vm):
             vm.currency.setValue(self.__pricePacksBerths.get(self.__berthCurrency))
             vm.currency.setIsEnough(self.__isEnoughMoney())

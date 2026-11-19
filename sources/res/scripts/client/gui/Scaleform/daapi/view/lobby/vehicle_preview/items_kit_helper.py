@@ -330,6 +330,14 @@ def getItemTitle(rawItem, item, forBox=False, additionalInfo=False):
         title = _ms(TOOLTIPS.AWARDITEM_HONEY_COIN_HEADER)
     elif rawItem.type == ItemPackType.CUSTOM_NY_MANDARINS:
         title = backport.text(R.strings.ny.nyMandarins.tooltip.header())
+    elif rawItem.type == ItemPackType.CUSTOM_NY_TOYS:
+        title = backport.text(R.strings.ny.boxWithToys.tooltip.title(), rank='')
+    elif rawItem.type == ItemPackType.CUSTOM_NY_RFOOD:
+        title = backport.text(R.strings.tooltips.awardItem.nyrfood.header())
+    elif rawItem.type == ItemPackType.CUSTOM_NY_RFUN:
+        title = backport.text(R.strings.tooltips.awardItem.nyrfun.header())
+    elif rawItem.type == ItemPackType.CUSTOM_NY_RACTIV:
+        title = backport.text(R.strings.tooltips.awardItem.nyractiv.header())
     elif rawItem.type == ItemPackType.CUSTOM_GOLDENTICKET:
         title = backport.text(R.strings.tooltips.awardItem.goldenticket.header())
     else:
@@ -390,6 +398,14 @@ def getItemDescription(rawItem, item):
         description = _ms(TOOLTIPS.AWARDITEM_HONEY_COIN_BODY)
     elif rawItem.type == ItemPackType.CUSTOM_NY_MANDARINS:
         description = backport.text(R.strings.ny.nyMandarins.tooltip.body())
+    elif rawItem.type == ItemPackType.CUSTOM_NY_TOYS:
+        description = backport.text(R.strings.ny.boxWithToys.tooltip.description())
+    elif rawItem.type == ItemPackType.CUSTOM_NY_RFOOD:
+        description = backport.text(R.strings.tooltips.awardItem.nyrfood.body())
+    elif rawItem.type == ItemPackType.CUSTOM_NY_RFUN:
+        description = backport.text(R.strings.tooltips.awardItem.nyrfun.body())
+    elif rawItem.type == ItemPackType.CUSTOM_NY_RACTIV:
+        description = backport.text(R.strings.tooltips.awardItem.nyractiv.body())
     elif rawItem.type == ItemPackType.CUSTOM_GOLDENTICKET:
         description = backport.text(R.strings.tooltips.awardItem.goldenticket.body())
     else:

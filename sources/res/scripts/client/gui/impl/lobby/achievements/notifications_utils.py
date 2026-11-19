@@ -1,6 +1,5 @@
 import logging, weakref
 from abc import ABCMeta, abstractmethod
-from constants import AchievementsLayoutStates
 from achievements20.WTRStageChecker import WTRStageChecker
 from gui.impl.lobby.achievements.profile_utils import isSummaryEnabled, isWTREnabled, getStagesOfWTR, getNormalizedValue, isEditingEnabled, isLayoutEnabled
 from helpers import dependency
@@ -19,7 +18,6 @@ def buildRules(ctrl):
     initialRules = [
      _NotificationNewSummaryPage(ctrl),
      _NotificationAchievementEditingEnabled(ctrl),
-     _NotificationNewMedal(ctrl),
      _NotificationChangeRank(ctrl),
      _NotificationRatingEnabled(ctrl)]
     return [ rule for rule in initialRules if rule.prereq() ]
@@ -123,31 +121,6 @@ class _NotificationAchievementEditingEnabled(_NotificationRule):
     def do(self):
         self._achievementsCtrl.showEditAvailable()
         self._achievementsCtrl.setAchievementEditingEnabledStatus(FLAG_STATUS.SET)
-
-
-class _NotificationNewMedal(_NotificationRule):
-
-    def prereq(self):
-        return True
-
-    def req(self):
-        items = self._itemsCache.items
-        if items.getLayoutState() == AchievementsLayoutStates.MANUAL:
-            return False
-        prevLayoutList = self._achievementsCtrl.getPrevAchievementsList()
-        achievements20GeneralConfig = self._lobbyContext.getServerSettings().getAchievements20GeneralConfig()
-        layoutLength = achievements20GeneralConfig.getLayoutLength()
-        mainRules = achievements20GeneralConfig.getAutoGeneratingMainRules()
-        extraRules = achievements20GeneralConfig.getAutoGeneratingExtraRules()
-        newLayoutList = items.getAccountDossier().getTotalStats().getSignificantAchievements(mainRules, extraRules, layoutLength)
-        for achievement in newLayoutList:
-            if achievement.getName() not in prevLayoutList:
-                return True
-
-        return False
-
-    def do(self):
-        self._achievementsCtrl.setMedalAddedStatus(FLAG_STATUS.SET)
 
 
 class _NotificationChangeRank(_NotificationRule):
