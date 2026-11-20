@@ -44,7 +44,7 @@ class TamagotchiSimulator(EventsHandler):
         return self.getDelayTime()
 
     def update(self):
-        timestamp = getServerUTCTime()
+        timestamp = self._dataProvider.playerInfo.lastUpdateTime = getServerUTCTime()
         self.__updateDebHistory(timestamp)
         oldIndicators = dict(self._dataProvider.playerInfo.indicators)
         self._dataProvider.getIndicatorStates().clear()
