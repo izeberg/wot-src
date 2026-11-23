@@ -57,9 +57,12 @@ class PreBattleTimerBase(PrebattleTimerBaseMeta, IAbstractPeriodView, IArenaVehi
             self.__setTimeShiftCallback()
 
     def hideCountdown(self, state, speed):
+        self._state = state
+        self.__timeLeft = None
         self.as_setMessageS(backport.text(_STATE_TO_MESSAGE[state]))
         self._clearTimeShiftCallback()
         self._onHideAll(speed)
+        return
 
     def _onHideAll(self, speed):
         self.as_hideAllS(speed != 0)
@@ -94,6 +97,7 @@ class PreBattleTimerBase(PrebattleTimerBaseMeta, IAbstractPeriodView, IArenaVehi
         self.as_togglePreBattleHighlightsVisibilityS(False)
 
     def __setTimeShiftCallback(self):
+        self._clearTimeShiftCallback()
         self.__callbackID = BigWorld.callback(_TIMER_ANIMATION_SHIFT, self.__updateTimer)
 
     def __updateTimer(self):

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G202_PzKpfw_T_34_747_r/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.510682 -0.605173 -2.978157</min>
+		<max>1.507987 0.786185 2.954324</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G202_PzKpfw_T_34_747_r/normal/lod3/Hull</nodefullVisual>
+</root>

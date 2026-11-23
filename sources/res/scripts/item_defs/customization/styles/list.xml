@@ -33029,6 +33029,9 @@
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
 			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>1243</id>
@@ -35159,6 +35162,104 @@
 				</outfit>
 			</outfits>
 		</style>
+		<style>
+			<id>1461</id>
+			<texture>gui/maps/vehicles/styles/ols_2027_1.png</texture>
+			<userString>#vehicle_customization:special_style/ols_2027_1</userString>
+			<description>#vehicle_customization:special_style/ols_2027_1_desc</description>
+			<tags>questsProgression c11n2D</tags>
+			<alternateItems>
+				<camouflage>
+					<id>1229 1230</id>
+				</camouflage>
+				<decal>
+					<id>1394</id>
+				</decal>
+			</alternateItems>
+			<outfits>
+				<outfit>
+					<season>ALL</season>
+					<camouflages>
+						<item>
+							<id>1229</id>
+							<appliedTo>4368</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<paints>
+						<item>
+							<id>743</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
+				</outfit>
+			</outfits>
+		</style>
+		<style>
+			<id>1462</id>
+			<texture>gui/maps/vehicles/styles/ols_2027_1.png</texture>
+			<userString>#vehicle_customization:special_style/ols_2027_1</userString>
+			<description>#vehicle_customization:special_style/ols_2027_1_desc</description>
+			<tags>progression_required hiddenInUI c11n2D</tags>
+			<outfits>
+				<outfit>
+					<season>ALL</season>
+					<camouflages>
+						<item>
+							<id>1229</id>
+							<appliedTo>4368</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<paints>
+						<item>
+							<id>743</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
+					<projection_decals>
+						<item>
+							<id>1512</id>
+							<tags>safe front formfactor_square</tags>
+						</item>
+					</projection_decals>
+				</outfit>
+			</outfits>
+		</style>
+		<style>
+			<id>1463</id>
+			<texture>gui/maps/vehicles/styles/ols_2027_1.png</texture>
+			<userString>#vehicle_customization:special_style/ols_2027_1</userString>
+			<description>#vehicle_customization:special_style/ols_2027_1_desc</description>
+			<tags>progression_required hiddenInUI c11n2D</tags>
+			<outfits>
+				<outfit>
+					<season>ALL</season>
+					<camouflages>
+						<item>
+							<id>1230</id>
+							<appliedTo>4368</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<paints>
+						<item>
+							<id>743</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
+					<projection_decals>
+						<item>
+							<id>1513</id>
+							<tags>safe front formfactor_square</tags>
+						</item>
+					</projection_decals>
+				</outfit>
+			</outfits>
+		</style>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:styles/special_styles</userString>
@@ -35441,6 +35542,20 @@
 				</outfit>
 			</outfits>
 		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>2</historical>
+		<priceGroup>styles 1500g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
 		<style>
 			<id>1333</id>
 			<texture>gui/maps/vehicles/styles/onslaught_2026_phoenix.png</texture>
@@ -35832,6 +35947,91 @@
 					</paints>
 				</outfit>
 			</outfits>
+		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>styles 1500g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<style>
+			<id>1391</id>
+			<texture>gui/maps/vehicles/styles/advent_calendar_2026_1.png</texture>
+			<userString>#vehicle_customization:special_style/advent_calendar_2026_1</userString>
+			<description>#vehicle_customization:special_style/advent_calendar_2026_1_desc</description>
+			<longDescriptionSpecial>#vehicle_customization:special_style/advent_calendar_2026_1_desc/long</longDescriptionSpecial>
+			<tags>progression_required c11n2D</tags>
+			<outfits>
+				<outfit>
+					<season>all</season>
+					<camouflages>
+						<item>
+							<id>1171</id>
+							<patternSize>1</patternSize>
+							<appliedTo>4368</appliedTo>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<paints>
+						<item>
+							<id>691</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
+				</outfit>
+			</outfits>
+			<itemFilters>
+				<projection_decal>
+					<include>
+						<itemGroupName>Progression Decals</itemGroupName>
+					</include>
+				</projection_decal>
+			</itemFilters>
+		</style>
+		<style>
+			<id>1392</id>
+			<texture>gui/maps/vehicles/styles/advent_calendar_2026_2.png</texture>
+			<userString>#vehicle_customization:special_style/advent_calendar_2026_2</userString>
+			<description>#vehicle_customization:special_style/advent_calendar_2026_2_desc</description>
+			<longDescriptionSpecial>#vehicle_customization:special_style/advent_calendar_2026_2_desc/long</longDescriptionSpecial>
+			<tags>progression_required c11n2D</tags>
+			<outfits>
+				<outfit>
+					<season>all</season>
+					<camouflages>
+						<item>
+							<id>1172</id>
+							<patternSize>1</patternSize>
+							<appliedTo>4368</appliedTo>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<modifications>
+						<item>8</item>
+					</modifications>
+					<paints>
+						<item>
+							<id>692</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
+				</outfit>
+			</outfits>
+			<itemFilters>
+				<projection_decal>
+					<include>
+						<itemGroupName>Progression Decals</itemGroupName>
+					</include>
+				</projection_decal>
+			</itemFilters>
 		</style>
 	</itemGroup>
 	<itemGroup>
@@ -36461,6 +36661,140 @@
 							<appliedTo>4096</appliedTo>
 						</item>
 					</insignias>
+				</outfit>
+			</outfits>
+		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>styles 1500g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<style>
+			<id>1419</id>
+			<texture>gui/maps/vehicles/styles/tankmas_2026.png</texture>
+			<userString>#vehicle_customization:special_style/tankmas_2026</userString>
+			<description>#vehicle_customization:special_style/tankmas_2026_desc</description>
+			<longDescriptionSpecial>#vehicle_customization:special_style/tankmas_2026_desc/long</longDescriptionSpecial>
+			<tags>progression_required c11n2D</tags>
+			<outfits>
+				<outfit>
+					<season>all</season>
+					<camouflages>
+						<item>
+							<id>1188</id>
+							<patternSize>1</patternSize>
+							<appliedTo>4368</appliedTo>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<modifications>
+						<item>8</item>
+					</modifications>
+					<paints>
+						<item>
+							<id>708</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
+				</outfit>
+			</outfits>
+			<itemFilters>
+				<projection_decal>
+					<include>
+						<itemGroupName>Progression Decals</itemGroupName>
+					</include>
+				</projection_decal>
+			</itemFilters>
+		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>styles 1500g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<style>
+			<id>1452</id>
+			<texture>gui/maps/vehicles/styles/elite_amethyst.png</texture>
+			<description>#vehicle_customization:special_style/elite_amethyst_desc</description>
+			<userString>#vehicle_customization:special_style/elite_amethyst</userString>
+			<tags>c11n2D</tags>
+			<outfits>
+				<outfit>
+					<season>ALL</season>
+					<camouflages>
+						<item>
+							<id>1220</id>
+							<appliedTo>4368</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<decals>
+						<item>
+							<id>1392</id>
+							<appliedTo>13104</appliedTo>
+						</item>
+					</decals>
+				</outfit>
+			</outfits>
+		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>styles 750g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<style>
+			<id>1453</id>
+			<texture>gui/maps/vehicles/styles/streamline.png</texture>
+			<userString>#vehicle_customization:special_style/streamline</userString>
+			<description>#vehicle_customization:special_style/streamline_desc</description>
+			<tags>c11n2D</tags>
+			<outfits>
+				<outfit>
+					<season>ALL</season>
+					<camouflages>
+						<item>
+							<id>1221</id>
+							<appliedTo>4368</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<modifications>
+						<item>5</item>
+					</modifications>
+					<paints>
+						<item>
+							<id>736</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
 				</outfit>
 			</outfits>
 		</style>
@@ -41017,6 +41351,102 @@
 			<description>#vehicle_customization:special_style/bump_in_the_night_desc</description>
 			<longDescriptionSpecial>#vehicle_customization:special_style/bump_in_the_night_desc/long</longDescriptionSpecial>
 			<tags>c11n2D progression_required</tags>
+		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>styles 1750g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<style>
+			<userString>#vehicle_customization:special_style/jingle_shells</userString>
+			<description>#vehicle_customization:special_style/jingle_shells_desc</description>
+			<longDescriptionSpecial>#vehicle_customization:special_style/jingle_shells_desc/long</longDescriptionSpecial>
+			<id>1438</id>
+			<texture>gui/maps/vehicles/styles/jingle_shells.png</texture>
+			<tags>c11n2D progression_required</tags>
+			<outfits>
+				<outfit>
+					<season>all</season>
+					<paints>
+						<item>
+							<id>723</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
+					<camouflages>
+						<item>
+							<id>1275</id>
+							<patternSize>1</patternSize>
+							<appliedTo>4368</appliedTo>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+				</outfit>
+			</outfits>
+			<itemFilters>
+				<projection_decal>
+					<include>
+						<itemGroupName>Progression Decals</itemGroupName>
+					</include>
+				</projection_decal>
+			</itemFilters>
+		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>styles 1750g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<style>
+			<userString>#vehicle_customization:special_style/disco_camo</userString>
+			<description>#vehicle_customization:special_style/disco_camo_desc</description>
+			<longDescriptionSpecial>#vehicle_customization:special_style/disco_camo_desc/long</longDescriptionSpecial>
+			<id>1459</id>
+			<texture>gui/maps/vehicles/styles/disco_camo.png</texture>
+			<tags>c11n2D progression_required</tags>
+			<outfits>
+				<outfit>
+					<season>all</season>
+					<paints>
+						<item>
+							<id>742</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
+					<camouflages>
+						<item>
+							<id>1228</id>
+							<patternSize>1</patternSize>
+							<appliedTo>4368</appliedTo>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+				</outfit>
+			</outfits>
+			<itemFilters>
+				<projection_decal>
+					<include>
+						<itemGroupName>Progression Decals</itemGroupName>
+					</include>
+				</projection_decal>
+			</itemFilters>
 		</style>
 	</itemGroup>
 	<itemGroup>

@@ -847,6 +847,56 @@
 				<position>0 0 0</position>
 				<rotation>0 0 0</rotation>
 				<hiddenForUser>true</hiddenForUser>
+				<scale>1 1 1</scale>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>
+					-1.652539 0.271284 -1.2454
+					<!--BW_String-->
+				</position>
+				<rotation>
+					0 0 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>1 1 1</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>
+					1.653 0.271284 -1.2454
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 3.141593 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999999 0.999999 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18003</slotId>
+				<position>0.000007 0.512019 -3.757123</position>
+				<rotation>
+					-0 -1.570797 1.570797
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					1 0.999999 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+				<hangerId>12</hangerId>
 			</slot>
 		</customizationSlots>
 		<customization>
@@ -2652,6 +2702,20 @@
 							</anchorShift>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<size>medium</size>
+							<position>
+								0 0.3654 0.4885
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<enableVisTunnel>true</enableVisTunnel>
+							<applyType>gunMantlet</applyType>
+							<hangerId>2</hangerId>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -2671,6 +2735,7 @@
 						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49001</slotId>
+							<size>0.479465</size>
 							<rayStart>
 								0 0 3.9
 								<!--BW_String-->
@@ -2684,7 +2749,6 @@
 								<!--BW_String-->
 							</rayUp>
 							<compatibleModels>G164_Kpz_Pr_68_P_N23_3Dst</compatibleModels>
-							<size>0.479465</size>
 						</slot>
 					</customizationSlots>
 					<customization>
@@ -3412,6 +3476,17 @@
 						1.02349
 						<!--BW_String-->
 					</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>-0.533853 0.961355 -0.046394</position>
+					<rotation>0 0 -0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+					<enableVisTunnel>true</enableVisTunnel>
+					<hangerId>2</hangerId>
 				</slot>
 			</customizationSlots>
 			<customization>

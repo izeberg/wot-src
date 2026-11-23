@@ -102,7 +102,7 @@ class ChapterChoicePresenter(ViewComponent[ChapterChoiceViewModel]):
 
     def __chooseMainChapter(self, chapters):
         chaptersByPoints = sorted(chapters, key=self.__battlePass.getPointsInChapter, reverse=True)
-        return findFirst(lambda ch: self.__battlePass.getChapterState(ch) != ChapterState.COMPLETED, chaptersByPoints)
+        return findFirst(lambda ch: self.__battlePass.getChapterState(ch) != ChapterState.COMPLETED, chaptersByPoints, NON_CHAPTER_ID)
 
     @args2params(int)
     def __updateSelectedChapter(self, chapterID):

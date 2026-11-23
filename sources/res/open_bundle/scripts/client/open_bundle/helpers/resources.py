@@ -17,6 +17,10 @@ def getTextResource(bundleID, path, openBundle=None):
     customResource = _getResourceFromPath(R.strings.dyn(_TEXT_PATH_PREFIX.format(bundle.type)), path)
     if customResource.isValid():
         return customResource
+    return getDefaultTextResource(path)
+
+
+def getDefaultTextResource(path):
     return _getResourceFromPath(R.strings.open_bundle_lobby_default, path)
 
 

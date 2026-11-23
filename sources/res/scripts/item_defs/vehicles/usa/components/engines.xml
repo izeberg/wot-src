@@ -65,7 +65,6 @@
 		<Continental_W-670-12>78</Continental_W-670-12>
 		<Ford_GAC_R>79</Ford_GAC_R>
 		<Continental_AOI-402-5>81</Continental_AOI-402-5>
-		<AOI-1490_FR>83</AOI-1490_FR>
 		<Continental_AVI_1790_8_1>84</Continental_AVI_1790_8_1>
 		<LaSalle_V8_75>88</LaSalle_V8_75>
 		<LaSalle_V8_89>89</LaSalle_V8_89>
@@ -169,6 +168,7 @@
 		<Continental_AOSI_1195_5F>190</Continental_AOSI_1195_5F>
 		<Continental_AV_1790_3_XM94_Shadow>191</Continental_AV_1790_3_XM94_Shadow>
 		<B_58A>192</B_58A>
+		<Christie_6_cylinder>194</Christie_6_cylinder>
 		<Continental_W_670_M41>2000</Continental_W_670_M41>
 		<Twin_Cadillac_Series_44T4_M41>2001</Twin_Cadillac_Series_44T4_M41>
 		<Continental_AOS_895_3_M44>2002</Continental_AOS_895_3_M44>
@@ -503,6 +503,26 @@
 			<rpm_min>405</rpm_min>
 			<rpm_max>2301</rpm_max>
 		</LaSalle_V8_75>
+		<Christie_6_cylinder>
+			<userString>#usa_vehicles:Christie_6_cylinder</userString>
+			<tags>gasoline</tags>
+			<level>2</level>
+			<price>1000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_gaz_aa_pc</wwsoundPC>
+			<wwsoundNPC>eng_gaz_aa_npc</wwsoundNPC>
+			<power>120</power>
+			<weight>500</weight>
+			<maxHealth>65</maxHealth>
+			<maxRegenHealth>33</maxRegenHealth>
+			<repairCost>2</repairCost>
+			<fireStartingChance>
+				0.2
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>349</rpm_min>
+			<rpm_max>2482</rpm_max>
+		</Christie_6_cylinder>
 		<LaSalle_V8_89>
 			<userString>#usa_vehicles:LaSalle_V8_89</userString>
 			<tags>gasoline</tags>
@@ -2035,27 +2055,6 @@
 			<rpm_min>495</rpm_min>
 			<rpm_max>2013</rpm_max>
 		</AOI-1490_7x7>
-		<AOI-1490_FR>
-			<userString>#usa_vehicles:AOI-1490_FR</userString>
-			<shortUserString>#usa_vehicles:AOI-1490_short</shortUserString>
-			<tags>gasoline</tags>
-			<level>10</level>
-			<price>100000</price>
-			<notInShop>true</notInShop>
-			<wwsoundPC>eng_ContinentalR_pc</wwsoundPC>
-			<wwsoundNPC>eng_ContinentalR_npc</wwsoundNPC>
-			<power>875</power>
-			<weight>1200</weight>
-			<maxHealth>260</maxHealth>
-			<maxRegenHealth>130</maxRegenHealth>
-			<repairCost>6</repairCost>
-			<fireStartingChance>
-				0.2
-				<!--BW_String-->
-			</fireStartingChance>
-			<rpm_min>495</rpm_min>
-			<rpm_max>2013</rpm_max>
-		</AOI-1490_FR>
 		<AOI_1490E4_7x7>
 			<userString>#usa_vehicles:AOI_1490E4</userString>
 			<shortUserString>#usa_vehicles:AOI_1490E4_short</shortUserString>
@@ -2300,8 +2299,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>253</rpm_min>
-			<rpm_max>2440</rpm_max>
+			<rpm_min>240</rpm_min>
+			<rpm_max>2480</rpm_max>
 		</Continental_AV_1790_5G_7x7>
 		<Continental_AV_1790_5C_Rush_Ep1>
 			<userString>#usa_vehicles:Continental_AV_1790_5C_Rush_Ep1</userString>
@@ -4231,8 +4230,8 @@
 				0.1
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>240</rpm_min>
-			<rpm_max>2480</rpm_max>
+			<rpm_min>226</rpm_min>
+			<rpm_max>2520</rpm_max>
 		</Continental_AVDS_1790_2_7x7>
 		<Continental_AVCR_1100_2>
 			<userString>#usa_vehicles:Continental_AVCR_1100_2</userString>

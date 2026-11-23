@@ -14,13 +14,11 @@ from account_helpers.AccountSettings import AccountSettings, FRONTLINE_BANNER_IN
 
 class BannerTooltipView(ViewImpl):
     __epicController = dependency.descriptor(IEpicBattleMetaGameController)
-    __slots__ = ('_isForFrontlineWidget', )
 
-    def __init__(self, layoutID=R.views.frontline.mono.lobby.tooltips.banner_tooltip(), isForFrontlineWidget=False):
+    def __init__(self, layoutID=R.views.frontline.mono.lobby.tooltips.banner_tooltip()):
         settings = ViewSettings(layoutID)
         settings.model = BannerTooltipModel()
         super(BannerTooltipView, self).__init__(settings)
-        self._isForFrontlineWidget = isForFrontlineWidget
 
     @property
     def viewModel(self):
@@ -45,7 +43,6 @@ class BannerTooltipView(ViewImpl):
             model.setRewardsCount(self.__epicController.getNotChosenRewardCount())
             model.setCurLevel(currentLevel)
             model.setMaxLevel(self.__epicController.getMaxPlayerLevel())
-            if not self._isForFrontlineWidget:
-                model.setCurPoints(self.__epicController.getCurrentProgress())
-                model.setMaxPoints(self.__epicController.getPointsProgressForLevel(currentLevel))
+            model.setCurPoints(self.__epicController.getCurrentProgress())
+            model.setMaxPoints(self.__epicController.getPointsProgressForLevel(currentLevel))
             model.setVehiclesLevel(toRangeString(vehicleLevels) if isRomanNumberForbidden() else toRomanRangeString(vehicleLevels))

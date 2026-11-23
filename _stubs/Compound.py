@@ -115,6 +115,7 @@ class CompoundBasedComposerComponent(IComponent):
 	def __sizeof__(*args, **kwargs): pass
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass
+	slots = property(lambda self: None)
 
 
 class CompoundModel(pybind11_object):

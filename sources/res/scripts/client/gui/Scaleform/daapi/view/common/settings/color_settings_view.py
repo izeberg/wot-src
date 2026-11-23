@@ -235,7 +235,7 @@ class ColorSettingsView(LayerVisibilityMixin, ColorSettingsViewMeta):
 
     def __previewSettings(self, settings):
         for settingName, value in viewitems(settings):
-            self.settingsCore.applySetting(settingName, value)
+            self.settingsCore.previewSetting(settingName, value)
 
     def __onExternalBackgroundAlphaChange(self, event):
         self._savedBackgroundAlpha = event.ctx['alpha']

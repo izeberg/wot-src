@@ -146,7 +146,7 @@ class SquadActionsHandler(AbstractActionsHandler):
         getUser = self.usersStorage.getUser
         for dbID in accountsToInvite:
             user = getUser(dbID)
-            if user is not None:
+            if user is not None and user.hasValidName():
                 SystemMessages.pushI18nMessage('#system_messages:prebattle/invites/sendInvite/name', type=SystemMessages.SM_TYPE.Information, name=user.getFullName())
             else:
                 SystemMessages.pushI18nMessage('#system_messages:prebattle/invites/sendInvite', type=SystemMessages.SM_TYPE.Information)

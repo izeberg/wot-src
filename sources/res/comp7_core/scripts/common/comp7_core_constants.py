@@ -24,5 +24,5 @@ class SubMode(enum.Enum):
 
 
 def injectCommonConstants(personality):
-    if not any(reason in FINISH_REASON.getExtraAttrs().values() for reason in FINISH_REASON.DRAW_RESOLVED_REASONS):
+    if not any(hasattr(constants.FINISH_REASON, attr) for attr in FINISH_REASON.getExtraAttrs()):
         FINISH_REASON.inject(personality)

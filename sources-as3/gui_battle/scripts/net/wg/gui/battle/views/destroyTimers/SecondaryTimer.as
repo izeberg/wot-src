@@ -133,11 +133,22 @@ package net.wg.gui.battle.views.destroyTimers
       override public function showTimer(param1:Boolean) : void
       {
          super.showTimer(param1);
+         this.playShowAnimation(param1,true);
+      }
+      
+      override public function restoreTimer() : void
+      {
+         this.resetAnimState();
+         this.playShowAnimation(false,false);
+      }
+      
+      private function playShowAnimation(param1:Boolean, param2:Boolean) : void
+      {
          if(this._isShowing)
          {
             return;
          }
-         if(this._timerFX)
+         if(param2 && this._timerFX)
          {
             this._timerFX.show(param1);
          }

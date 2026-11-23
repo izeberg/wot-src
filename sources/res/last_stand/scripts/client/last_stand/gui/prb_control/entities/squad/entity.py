@@ -1,6 +1,7 @@
 from __future__ import absolute_import
 import typing, json
 from frameworks.wulf import WindowLayer
+from last_stand.gui.impl.lobby.base_view import EventDialogWindow
 from wg_async import wg_await, wg_async
 import account_helpers
 from debug_utils import LOG_ERROR
@@ -159,13 +160,13 @@ class LastStandSquadEntity(SquadEntity):
     def getConfirmDialogMeta(self, ctx):
         if not self.lsCtrl.isAvailable():
             builder = self.__getLeaveSquadBuilder(R.strings.last_stand_lobby.squad.leave.disabledEvent)
-            self.__showBuilderDialog(builder, None)
-            return
+            self.__showEventDisabledDialog(builder)
+            return None
         else:
             if self.hasLockedState():
                 return self.__getLeaveSquadBuilder(R.strings.last_stand_lobby.squad.leaveDisabled)
             if self.isCommander() and len(self.getPlayers()) == 1:
-                return
+                return None
             return self.__createUnitLeaveMeta(ctx, self.canSwitch(ctx))
 
     def showDialog(self, meta, callback, parent=None):
@@ -283,3 +284,9 @@ class LastStandSquadEntity(SquadEntity):
             else:
                 self.__difficultyLevelCtrl.onLevelsInfoReady += self._onLevelsInfoReady
         self.storage.queueType = self.currentQueueType
+
+    @wg_async
+    def __showEventDisabledDialog(self, builder):
+        from gui.impl.dialogs import dialogs
+        window = EventDialogWindow(builder.buildView(), layer=WindowLayer.OVERLAY)
+        yield wg_await(dialogs.show(window))

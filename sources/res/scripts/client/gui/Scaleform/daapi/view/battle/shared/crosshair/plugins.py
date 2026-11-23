@@ -786,8 +786,12 @@ class AmmoPlugin(CrosshairPlugin):
         ctrl = self.sessionProvider.shared.ammo
         if ctrl is not None:
             quantity, quantityInClip = ctrl.getCurrentShells()
+            self.__shellsInClip = quantityInClip
             state = self.__guiSettings.getState(quantity, quantityInClip)
             self._parentObj.as_setAmmoStockS(quantity, quantityInClip, state, False)
+            shellChangeTime = ctrl.getShellChangeTime()
+            if self.__guiSettings.hasAutoReload and quantityInClip == 0 and shellChangeTime > 0:
+                self.__reloadAnimator.setClipAutoLoading(shellChangeTime, shellChangeTime, isCritical=self.__isGunAutoReloadTimerCritical(), isTimerOn=True, isRedText=True)
         return
 
     def __onCurrentShellReset(self):

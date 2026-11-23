@@ -113,6 +113,7 @@ def registerModule(cls):
     modulePath = sys.modules[cls.__module__].__file__ if cls.__module__ != '__builtin__' else '__builtin__'
     CGF.registerModulePath(cls, modulePath)
     CGF.registerModule(cls)
+    return cls
 
 
 def bonusCapsPredicate(caps, spaceID):

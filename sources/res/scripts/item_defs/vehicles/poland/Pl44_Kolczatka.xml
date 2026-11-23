@@ -16,11 +16,11 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.191
+			0.199
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.319
+			0.332
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
@@ -28,7 +28,7 @@
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.479
+			0.497
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -1154,7 +1154,7 @@
 			</terrainResistance>
 			<brakeForce>27000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>30</rotationSpeed>
+			<rotationSpeed>35</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.24
@@ -2678,7 +2678,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.36
+						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -2686,7 +2686,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>

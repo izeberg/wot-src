@@ -184,8 +184,6 @@ class ARENAS(object):
     C_128_LAST_FRONTIER_V_COMP7_NB_DESCRIPTION = '#arenas:128_last_frontier_v_comp7_nb/description'
     C_212_EPIC_RANDOM_VALLEY_NAME = '#arenas:212_epic_random_valley/name'
     C_212_EPIC_RANDOM_VALLEY_DESCRIPTION = '#arenas:212_epic_random_valley/description'
-    HANGAR_V4_FORTRUSH_NAME = '#arenas:hangar_v4_fortrush/name'
-    HANGAR_V4_FORTRUSH_DESCRIPTION = '#arenas:hangar_v4_fortrush/description'
     ALL_ENUM = (
      TYPE_CTF_NAME,
      TYPE_CTF_DESCRIPTION,
@@ -369,9 +367,7 @@ class ARENAS(object):
      C_128_LAST_FRONTIER_V_COMP7_NB_NAME,
      C_128_LAST_FRONTIER_V_COMP7_NB_DESCRIPTION,
      C_212_EPIC_RANDOM_VALLEY_NAME,
-     C_212_EPIC_RANDOM_VALLEY_DESCRIPTION,
-     HANGAR_V4_FORTRUSH_NAME,
-     HANGAR_V4_FORTRUSH_DESCRIPTION)
+     C_212_EPIC_RANDOM_VALLEY_DESCRIPTION)
 
     @classmethod
     def all(cls, key0):

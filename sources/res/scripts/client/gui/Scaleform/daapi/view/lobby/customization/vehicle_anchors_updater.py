@@ -218,7 +218,7 @@ class VehicleAnchorsUpdater(object):
                 if root is not None:
                     visibleAnchors[root].add(slotId)
                 continue
-            if formfactor is not None:
+            if formfactor is not None and slotId.slotType == GUI_ITEM_TYPE.PROJECTION_DECAL:
                 anchor = g_currentVehicle.item.getAnchorBySlotId(slotId.slotType, slotId.areaId, slotId.regionIdx)
                 if anchor.isFitForFormfactor(formfactor):
                     self.changeAnchorParams(slotId, isDisplayed=True, isAutoScalable=True, isCollidable=True)

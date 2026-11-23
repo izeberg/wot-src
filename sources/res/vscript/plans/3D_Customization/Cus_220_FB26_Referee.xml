@@ -46,6 +46,10 @@
 				</slots>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_33</id>
+			</block>
+			<block>
 				<class>ComponentMethod</class>
 				<id>ComponentMethod_12</id>
 				<params>
@@ -126,6 +130,10 @@
 			<block>
 				<class>If</class>
 				<id>If_32</id>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_1</id>
 			</block>
 			<block>
 				<class>If</class>
@@ -362,6 +370,18 @@
 		</blocks>
 		<connections>
 			<connection>
+				<from>OnAnyVehicleDamaged_2</from>
+				<input>input</input>
+				<to>If_33</to>
+				<output>onDamaged</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_1</from>
+				<input>value</input>
+				<to>If_33</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>If_27</from>
 				<input>in</input>
 				<to>ComponentMethod_12</to>
@@ -416,16 +436,22 @@
 				<output>event0</output>
 			</connection>
 			<connection>
-				<from>OnAnyVehicleDamaged_2</from>
+				<from>If_33</from>
 				<input>input</input>
 				<to>If_32</to>
-				<output>onDamaged</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>CompareVehicles_9</from>
 				<input>value</input>
 				<to>If_32</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDamaged_2</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_1</to>
+				<output>attacker</output>
 			</connection>
 			<connection>
 				<from>If_32</from>

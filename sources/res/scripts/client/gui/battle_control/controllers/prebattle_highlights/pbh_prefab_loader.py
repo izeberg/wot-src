@@ -82,7 +82,7 @@ class PBHPrefabLoader(object):
         go = queue.gameObject(objects[0])
         if self.__prefabStatus != PrefabLoaderStatus.LOADING:
             _logger.debug('PBH prefab loaded after loader reset/clear, discard')
-            if go is not None:
+            if go is not None and go.valid:
                 go.destroy()
             return
 

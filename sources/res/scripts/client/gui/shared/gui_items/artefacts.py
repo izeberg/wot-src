@@ -15,7 +15,7 @@ from gui.shared.gui_items.fitting_item import FittingItem
 from gui.shared.gui_items.gui_item_economics import ItemPrice, ITEM_PRICE_EMPTY
 from gui.shared.money import Money, Currency, MONEY_UNDEFINED
 from gui.shared.utils.functions import stripColorTagDescrTags, replaceHyphenToUnderscore
-from gui.shared.utils.role_presenter_helper import getRoleUserName
+from gui.shared.utils.skill_presenter_helper import getSkillUserName
 from helpers import i18n, dependency
 from items import artefacts, tankmen, ITEM_OPERATION
 from skeletons.gui.game_control import IEpicBattleMetaGameController
@@ -341,7 +341,7 @@ class BattleBooster(Equipment):
 
     def getAffectedSkillUserName(self):
         if self.isCrewBooster():
-            return str(getRoleUserName(self.getAffectedSkillName()))
+            return getSkillUserName(self.getAffectedSkillName())
         return ''
 
     def isAffectedSkillLearnt(self, vehicle=None):
