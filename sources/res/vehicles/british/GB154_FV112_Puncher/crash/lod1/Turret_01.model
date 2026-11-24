@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB154_FV112_Puncher/crash/lod1/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/british/GB154_FV112_Puncher/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.154351 -0.000461 -1.455330</min>
+		<max>1.408154 1.306134 1.672021</max>
+	</visibilityBox>
+</root>

@@ -185,12 +185,12 @@ class DetachedTurret(BigWorld.Entity):
                 else:
                     _logger.error('Unable to find _HitEffects component')
                 nodeName = TankPartNames.getActualNodeNameByPartName(shotPoint.componentName, False)
-                hitGo = GenericComponents.findSlot(self.entityGameObject, nodeName)
-                if hitGo.valid:
+                hitGoUuid = vehicle_composition.getCompositionSlotUuid(self.entityGameObject, nodeName)
+                if hitGoUuid.valid:
                     location = shotPoint.matrix.translation
                     effGroup = VEHICLE_HIT_EFFECT.getEffectGroup(prefabHitEffectCode)
                     armorHitPlaceMent = ArmorHitPlacement.REGULAR
-                    CGF.postEvent(self.spaceID, game_events.VehicleHitEvent(self.entityGameObject, hitGo, location, shotPoint.normal, game_events.GunShellInfo(shotPoint.caliber, shotPoint.shellType), shellVelocity, 0, shotPoint.matrix.applyToAxis(2), prefabEffectsIndex, effGroup, prefabHitEffectCode, armorHitPlaceMent))
+                    CGF.postEvent(self.spaceID, game_events.VehicleHitEvent(self.entityGameObject.uuid, hitGoUuid, location, shotPoint.normal, game_events.GunShellInfo(shotPoint.caliber, shotPoint.shellType), shellVelocity, 0, shotPoint.matrix.applyToAxis(2), prefabEffectsIndex, effGroup, prefabHitEffectCode, armorHitPlaceMent))
             else:
                 _logger.error("Detached turret got hit into %s component, but it's impossible", shotPoint.componentName)
 

@@ -4256,7 +4256,7 @@ msgid "moduleInfo/closeBtn"
 msgstr "关闭"
 
 msgid "moduleInfo/combatThrottle"
-msgstr "战斗档位"
+msgstr "战斗挡位"
 
 msgid "moduleInfo/compatible/clipVehicles"
 msgstr "坦克装备弹夹装填系统:"
@@ -4599,6 +4599,15 @@ msgstr "发动机功率(涡轮)"
 
 msgid "moduleInfo/params/weight"
 msgstr "重量"
+
+msgid "moduleInfo/paramsSeparator/colon"
+msgstr ":"
+
+msgid "moduleInfo/paramsSeparator/dash"
+msgstr "–"
+
+msgid "moduleInfo/paramsSeparator/slash"
+msgstr "/"
 
 msgid "moduleInfo/propellantAfterburnerGun"
 msgstr "感应式加力装置可提高平均损伤"

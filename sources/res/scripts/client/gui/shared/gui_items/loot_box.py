@@ -1,4 +1,5 @@
 from __future__ import absolute_import
+import logging
 from enum import Enum
 from future.utils import iteritems
 from past.builtins import cmp
@@ -12,6 +13,7 @@ from shared_utils import CONST_CONTAINER
 from skeletons.gui.game_control import ILootBoxSystemController
 if TYPE_CHECKING:
     from typing import Dict, Optional, Tuple
+_logger = logging.getLogger(__name__)
 
 class NewYearLootBoxes(CONST_CONTAINER):
     PREMIUM = 'newYear_premium'
@@ -69,7 +71,11 @@ class LootBox(GUIItem):
         if self.__type in self.__lootBoxSystem.eventNames:
             name = getTextResource(['common', 'boxCategory', 'lowerCase'] + [self.__category], self.__type)
             return backport.text(name() if name.exists() else R.strings.lootbox_system.common.boxCategory.lowerCase.default())
-        return backport.text(R.strings.lootboxes.type.dyn(self.__type)())
+        rType = R.strings.lootboxes.type.dyn(self.__type)
+        if not rType.exists():
+            _logger.warning('Can not find localized type of lootbox. Type=%s, resource=%r', self.__type, rType)
+            return ''
+        return backport.text(rType())
 
     def getType(self):
         return self.__type

@@ -275,4 +275,355 @@
 			<tags>formfactor_square disableVerticalMirror</tags>
 		</projection_decal>
 	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:projection_decals/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>projection_decals 150g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<projection_decal>
+			<id>1451</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1163.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1163</userString>
+			<tags>styleOnly hiddenInUI formfactor_square disableVerticalMirror</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>1463</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1165.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1165</userString>
+			<tags>direction_left_to_right formfactor_square</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1464</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1166.dds</texture>
+			<description>#vehicle_customization:projection_decals/special/projection_decal_1166/description</description>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1166</userString>
+			<tags>formfactor_square direction_left_to_right</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1465</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1167.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1167</userString>
+			<tags>formfactor_square direction_right_to_left</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1466</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1168.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1168</userString>
+			<tags>formfactor_square direction_left_to_right</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1467</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1169.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1169</userString>
+			<tags>formfactor_square direction_left_to_right</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1469</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1170.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1170</userString>
+			<tags>formfactor_square</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1470</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1171.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1171</userString>
+			<tags>formfactor_square</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1471</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1172.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1172</userString>
+			<tags>formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1472</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1173.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1173</userString>
+			<tags>formfactor_square direction_right_to_left disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1473</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1174.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1174</userString>
+			<tags>formfactor_square disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1474</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1175.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1175</userString>
+			<tags>formfactor_square disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1475</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1176.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1176</userString>
+			<tags>formfactor_square disableVerticalMirror direction_right_to_left</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1476</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1177.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1177</userString>
+			<tags>formfactor_square disableVerticalMirror direction_right_to_left</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1477</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1178.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1178</userString>
+			<tags>formfactor_square disableVerticalMirror direction_left_to_right</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1478</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1179.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1179</userString>
+			<tags>formfactor_square disableVerticalMirror direction_right_to_left</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1479</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1180.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1180</userString>
+			<tags>formfactor_square disableVerticalMirror direction_left_to_right</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1480</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1181.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1181</userString>
+			<tags>formfactor_square disableVerticalMirror direction_left_to_right</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1481</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1182.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1182</userString>
+			<tags>formfactor_square disableVerticalMirror direction_left_to_right</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1482</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1183.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1183</userString>
+			<tags>formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1483</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1184.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1184</userString>
+			<tags>formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1484</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1185.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1185</userString>
+			<tags>formfactor_square direction_right_to_left disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1485</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1186.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1186</userString>
+			<tags>formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1486</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1187.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1187</userString>
+			<tags>formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1487</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1188.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1188</userString>
+			<tags>formfactor_square direction_right_to_left disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1488</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1189.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1189</userString>
+			<tags>formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1489</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1190.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1190</userString>
+			<tags>formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1490</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1191.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1191</userString>
+			<tags>formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1491</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1192.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1192</userString>
+			<tags>formfactor_square direction_right_to_left disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1492</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1193.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1193</userString>
+			<tags>formfactor_square direction_right_to_left disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1493</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1194.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1194</userString>
+			<tags>formfactor_rect1x4 direction_right_to_left disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1494</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1195.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1195</userString>
+			<tags>formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1495</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1196.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1196</userString>
+			<tags>formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1496</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1197.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1197</userString>
+			<tags>formfactor_square direction_right_to_left disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1497</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1198.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1198</userString>
+			<tags>formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>true</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1498</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1199.dds</texture>
+			<mirror>true</mirror>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1199</userString>
+			<tags>formfactor_square disableVerticalMirror direction_right_to_left</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>1499</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1200.dds</texture>
+			<mirror>true</mirror>
+			<tags>disableVerticalMirror formfactor_square direction_right_to_left</tags>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1200</userString>
+		</projection_decal>
+		<projection_decal>
+			<id>1500</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1201.dds</texture>
+			<mirror>true</mirror>
+			<tags>disableVerticalMirror formfactor_square direction_right_to_left</tags>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1201</userString>
+		</projection_decal>
+		<projection_decal>
+			<id>1501</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1202.dds</texture>
+			<mirror>true</mirror>
+			<tags>disableVerticalMirror formfactor_square direction_right_to_left</tags>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1202</userString>
+		</projection_decal>
+		<projection_decal>
+			<id>1502</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1203.dds</texture>
+			<mirror>true</mirror>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1203</userString>
+			<tags>formfactor_square direction_right_to_left disableVerticalMirror</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>1503</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1204.dds</texture>
+			<mirror>true</mirror>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1204</userString>
+			<tags>direction_right_to_left disableVerticalMirror formfactor_square</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>1504</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1205.dds</texture>
+			<mirror>true</mirror>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1205</userString>
+			<tags>direction_right_to_left disableVerticalMirror formfactor_square</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>1505</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1206.dds</texture>
+			<mirror>true</mirror>
+			<tags>disableVerticalMirror formfactor_square direction_right_to_left</tags>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1206</userString>
+		</projection_decal>
+		<projection_decal>
+			<id>1506</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1207.dds</texture>
+			<mirror>true</mirror>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1207</userString>
+			<tags>disableVerticalMirror formfactor_square direction_right_to_left</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>1507</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1208.dds</texture>
+			<mirror>true</mirror>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1208</userString>
+			<tags>formfactor_square disableVerticalMirror direction_right_to_left</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>1508</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1209.dds</texture>
+			<mirror>true</mirror>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1209</userString>
+			<tags>formfactor_square disableVerticalMirror direction_right_to_left</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>1509</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1210.dds</texture>
+			<mirror>true</mirror>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1210</userString>
+			<tags>disableVerticalMirror formfactor_square direction_right_to_left</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>1510</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1211.dds</texture>
+			<mirror>true</mirror>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1211</userString>
+			<tags>disableVerticalMirror formfactor_square direction_right_to_left</tags>
+		</projection_decal>
+		<name>CN</name>
+	</itemGroup>
 </root>

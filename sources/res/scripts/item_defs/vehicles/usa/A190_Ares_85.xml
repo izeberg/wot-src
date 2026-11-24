@@ -10504,7 +10504,7 @@
 					</value>
 				</mul>
 			</ammoBay>
-			<loader1>
+			<gunner1>
 				<mul>
 					<name>autoShootAttrs/shotIntervalMultFactor</name>
 					<value>
@@ -10512,7 +10512,7 @@
 						<!--BW_String-->
 					</value>
 				</mul>
-			</loader1>
+			</gunner1>
 		</reactiveDebuffs>
 	</mechanics>
 	<clientAdjustmentFactors/>

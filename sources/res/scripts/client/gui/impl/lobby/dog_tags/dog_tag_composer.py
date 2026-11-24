@@ -110,7 +110,7 @@ class DogTagComposerLobby(DogTagComposerClient):
         isEmptyCounter = False
         if self._limitedUIController.isRuleCompleted(LUI_RULES.DogTagHangarHint):
             customizableDogTagsVisited = userSettings.getDogTagsSettings().customizableDogTagsVisited
-            count = len(self._dtHelper.getUnseenComps())
+            count = len(self._dtHelper.getUnseenCustomizableComps())
             isEmptyCounter = count == 0 and not customizableDogTagsVisited
             if isEmptyCounter:
                 count = 1

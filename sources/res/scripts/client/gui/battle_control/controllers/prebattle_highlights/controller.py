@@ -279,6 +279,7 @@ class PrebattleHighlightsController(IArenaPeriodController, ViewComponentsContro
         else:
             self.__finished = True
             self.windowHandler.stopFlow()
+            self.sequenceHandler.stopFlow()
             if self.__displayingHighlights:
                 self.__pbhWasShown = True
             self.__displayingHighlights = False

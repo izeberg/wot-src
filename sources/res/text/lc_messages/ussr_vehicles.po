@@ -295,9 +295,6 @@ msgstr "LTG 改进型"
 msgid "Chassis_R132_VNII_100LT"
 msgstr "T-100 LT(产品64992)"
 
-msgid "Chassis_R132_VNII_100LT_FR"
-msgstr "T-100 LT BS"
-
 msgid "Chassis_R133_KV_122"
 msgstr "KV-122"
 
@@ -559,6 +556,9 @@ msgstr "T-115"
 msgid "Chassis_R219_Object_265T"
 msgstr "265工程T"
 
+msgid "Chassis_R222_KV_90"
+msgstr "KV-90"
+
 msgid "Chassis_R225_SU_100i"
 msgstr "SU-100I"
 
@@ -597,6 +597,9 @@ msgstr "T-43"
 
 msgid "Chassis_R23_T-43_2"
 msgstr "T-43(43型)"
+
+msgid "Chassis_R241_T_26_76"
+msgstr "T-26A"
 
 msgid "Chassis_R24_SU-76"
 msgstr "SU-76"
@@ -864,6 +867,9 @@ msgstr "D-744"
 
 msgid "D37812_LL"
 msgstr "D37812"
+
+msgid "DD_1"
+msgstr "DD-1"
 
 msgid "DG"
 msgstr "DG"
@@ -1748,9 +1754,6 @@ msgstr "R-123M"
 msgid "R123U"
 msgstr "R-123U"
 
-msgid "R123_FR"
-msgstr "R-123"
-
 msgid "R123_K"
 msgstr "R-123K"
 
@@ -1909,16 +1912,6 @@ msgstr "LTG"
 
 msgid "R132_VNII_100LT"
 msgstr "T-100 LT"
-
-msgid "R132_VNII_100LT_FR"
-msgstr "T-100 LT BS"
-
-msgid "R132_VNII_100LT_FR_descr"
-msgstr ""
-"一个配备T-100武器系统的轻型坦克项目。于20世纪60年代中期由第100研究所和专业设计局GSKB-47联合研发。该坦克具备较好的装甲防护，其正面装甲足以在任何距离抵御90毫米炮弹的命中。"
-
-msgid "R132_VNII_100LT_FR_short"
-msgstr "T-100 LT BS"
 
 msgid "R132_VNII_100LT_descr"
 msgstr "?empty?"
@@ -3006,6 +2999,23 @@ msgstr "265工程T"
 msgid "R219_Object_265T_short_special"
 msgstr "逆向自动装填炮，良好的操控性"
 
+msgid "R222_KV_90"
+msgstr "KV-90"
+
+msgid "R222_KV_90_descr"
+msgstr ""
+"1942年初，S系多个设计机构提出研发超重型坦克的设想，并为此推出了一系列相关方案，其中之一便是KV-90。设计人员采用了量产型KV坦克，以及其他S系坦克的零部件和组件。按照设想，这些坦克将用于在S系军队预定的主攻方向上突破敌方防线。最终，该计划在蓝图阶段便被终止。"
+
+msgid "R222_KV_90_long_special"
+msgstr ""
+"KV-90是一辆S系IX级突击型重型坦克。这辆庞然大物拥有极其厚实的装甲，并配备一门强劲的130毫米舰炮。虽然机动性略有不足，但它可以扼守整条侧翼，或有条不紊地突破最坚固的防线。"
+
+msgid "R222_KV_90_short"
+msgstr "KV-90"
+
+msgid "R222_KV_90_short_special"
+msgstr "全方位装甲，高额的平均单发损伤"
+
 msgid "R225_SU_100i"
 msgstr "SU-100I"
 
@@ -3211,6 +3221,23 @@ msgstr "T-43"
 
 msgid "R23_T-43_descr"
 msgstr "?empty?"
+
+msgid "R241_T_26_76"
+msgstr "T-26A"
+
+msgid "R241_T_26_76_descr"
+msgstr ""
+"1933年，基洛夫试验机械制造厂设计局基于量产型T-26研发了T-26A炮兵支援坦克(T-26-4)。同年9月进行了原型车测试。1933至1935年间，一共生产了5辆试验型坦克。之后，T-26-4的改进型炮塔被用于量产型BT-7A坦克。"
+
+msgid "R241_T_26_76_long_special"
+msgstr ""
+"T-26A是一辆S系III级轻型坦克。该坦克是T-26的改装版，配备一门76毫米火炮，能够发射弹速较慢但平均单发损伤较高的HE和AP炮弹。然而，受T-26底盘限制，该坦克最大速度较低，无法迅速抵达前线，因此它更适合在二线提供火力支援，而非在前线冲锋陷阵。"
+
+msgid "R241_T_26_76_short"
+msgstr "T-26A"
+
+msgid "R241_T_26_76_short_special"
+msgstr "高额的平均单发损伤和平均每分钟损伤"
 
 msgid "R24_SU-76"
 msgstr "SU-76M"
@@ -3851,6 +3878,9 @@ msgstr "TD-30"
 msgid "TD_30_A"
 msgstr "M-50D"
 
+msgid "T_26A"
+msgstr "T-26A"
+
 msgid "T_50_2"
 msgstr "T-50-2"
 
@@ -4038,9 +4068,6 @@ msgstr "LTG"
 
 msgid "Turret_1_R132_VNII_100LT"
 msgstr "T-100 LT(产品64992)"
-
-msgid "Turret_1_R132_VNII_100LT_FR"
-msgstr "T-100 LT BS"
 
 msgid "Turret_1_R133_KV_122"
 msgstr "KV-122"
@@ -4306,6 +4333,9 @@ msgstr "维莱斯"
 msgid "Turret_1_R23_T-43"
 msgstr "T-43(42型)"
 
+msgid "Turret_1_R241_T_26_76"
+msgstr "T-26A"
+
 msgid "Turret_1_R24_SU-76"
 msgstr "SU-76M"
 
@@ -4537,6 +4567,9 @@ msgstr "IS-3"
 msgid "Turret_2_R20_T-44"
 msgstr "T-44-100"
 
+msgid "Turret_2_R222_KV_90"
+msgstr "KV-90"
+
 msgid "Turret_2_R23_T-43"
 msgstr "T-43(43型)"
 
@@ -4601,9 +4634,6 @@ msgid "Turret_IS-7_fallout"
 msgstr "IS-7"
 
 msgid "UTD_20"
-msgstr "UTD-20"
-
-msgid "UTD_20_FR"
 msgstr "UTD-20"
 
 msgid "UTD_45A"
@@ -5110,22 +5140,13 @@ msgstr "3UOF(LM)"
 msgid "_100mm_3VBB"
 msgstr "3VBB"
 
-msgid "_100mm_3VBB_FR"
-msgstr "3VBB"
-
 msgid "_100mm_3VBM"
 msgstr "3VBM"
 
 msgid "_100mm_3VBM2_SH"
 msgstr "3VBM-2"
 
-msgid "_100mm_3VBM_FR"
-msgstr "3VBM"
-
 msgid "_100mm_3VOF"
-msgstr "3VOF"
-
-msgid "_100mm_3VOF_FR"
 msgstr "3VOF"
 
 msgid "_100mm_BR-412A"
@@ -5240,9 +5261,6 @@ msgid "_100mm_S_34D_IS_2_II"
 msgstr "100mm S-34D炮 (IS-2-II)"
 
 msgid "_100mm_T_100"
-msgstr "100mm T-100炮"
-
-msgid "_100mm_T_100_FR"
 msgstr "100mm T-100炮"
 
 msgid "_100mm_T_12A"
@@ -5682,6 +5700,9 @@ msgstr "10RT-26E"
 
 msgid "_10RT_26E1"
 msgstr "10RT-26"
+
+msgid "_10RT_KV"
+msgstr "10-RT"
 
 msgid "_12.7mm_AP_B32"
 msgstr "B-32"
@@ -6478,6 +6499,9 @@ msgstr "53-VOF-482VS"
 msgid "_130mm_B-13-S2"
 msgstr "130mm B-13-S2炮"
 
+msgid "_130mm_B7_IIT"
+msgstr "130mm B7-IIT炮"
+
 msgid "_130mm_B_13"
 msgstr "130mm B-13炮"
 
@@ -6505,6 +6529,9 @@ msgstr "130mm M-65炮"
 msgid "_130mm_OF-46"
 msgstr "OF-46"
 
+msgid "_130mm_OF_46_KV"
+msgstr "OF 46K"
+
 msgid "_130mm_PB-46"
 msgstr "PB-46"
 
@@ -6516,6 +6543,9 @@ msgstr "PB-46T"
 
 msgid "_130mm_PB-46TA"
 msgstr "PB-46TA"
+
+msgid "_130mm_PB_46_KV"
+msgstr "PB 46K"
 
 msgid "_130mm_S-26A"
 msgstr "130mm S-26炮"
@@ -6597,6 +6627,9 @@ msgstr "UOF-482"
 
 msgid "_130mm_ZBK60M"
 msgstr "ZBK60M"
+
+msgid "_130mm_ZBK_46A_KV"
+msgstr "ZBK46A"
 
 msgid "_136mm_BK_79"
 msgstr "BK-79"
@@ -7471,6 +7504,9 @@ msgstr "71-TK-3U"
 msgid "_71-TK-IT"
 msgstr "71-TK-IT"
 
+msgid "_71_TK_1A"
+msgstr "71-TK-1A"
+
 msgid "_71_TK_1SH"
 msgstr "71-TK-1SH"
 
@@ -7545,6 +7581,9 @@ msgstr "76mm KT-28炮"
 
 msgid "_76mm_KT-IT"
 msgstr "76mm KT-IT炮"
+
+msgid "_76mm_KT_28B"
+msgstr "76mm KT-28B炮"
 
 msgid "_76mm_L-10"
 msgstr "76mm L-10炮"
@@ -7633,6 +7672,9 @@ msgstr "UBR-354A (T-34/F)"
 msgid "_76mm_UBR_354KA_T_28"
 msgstr "UBR-354KA (T-28)"
 
+msgid "_76mm_UBR_354KC"
+msgstr "UBR-354KC"
+
 msgid "_76mm_UBR_354MA_MT_25"
 msgstr "UBR-354MA (MT-25)"
 
@@ -7677,6 +7719,9 @@ msgstr "UOF-354KA"
 
 msgid "_76mm_UOF-354M"
 msgstr "UOF-354M"
+
+msgid "_76mm_UOF_354KC"
+msgstr "UOF-354KC"
 
 msgid "_76mm_UOF_354K_T_28"
 msgstr "UOF-354K (T-28)"

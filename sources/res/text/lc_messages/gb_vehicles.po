@@ -127,9 +127,6 @@ msgstr "SR C45"
 msgid "C45_CFE_A"
 msgstr "SR C45"
 
-msgid "C45_FR"
-msgstr "SR C45"
-
 msgid "C45_c_7x7"
 msgstr "SR C45"
 
@@ -420,6 +417,9 @@ msgstr "撼首者"
 msgid "Chassis_GB152_AT_FV230_Breaker"
 msgstr "AT-FV230 \"破碎者\""
 
+msgid "Chassis_GB154_FV112_Puncher"
+msgstr "FV112 \"打孔器\""
+
 msgid "Chassis_GB155_Pike"
 msgstr "长矛"
 
@@ -440,6 +440,9 @@ msgstr "\"斯图亚特\"I型"
 
 msgid "Chassis_GB15_Stuart_I_2"
 msgstr "\"斯图亚特\"IV型"
+
+msgid "Chassis_GB160_A20"
+msgstr "A20"
 
 msgid "Chassis_GB17_Grant_I"
 msgstr "\"格兰特\" I型"
@@ -702,9 +705,6 @@ msgstr "百夫长 AX"
 msgid "Chassis_GB86_Centurion_Action_X_CFE_A"
 msgstr "常胜将军"
 
-msgid "Chassis_GB86_Centurion_Action_X_FR"
-msgstr "百夫长 AX BS"
-
 msgid "Chassis_GB87_Chieftain_T95_turret"
 msgstr "酋长/T95"
 
@@ -777,6 +777,9 @@ msgstr "克莱斯勒 A57"
 
 msgid "Cummins_BTA_5_9"
 msgstr "康明斯 BTA 5.9"
+
+msgid "DDS_6V_53NF"
+msgstr "DDS 6V 53NF"
 
 msgid "Daimler_D2458_V_8"
 msgstr "戴姆勒 D2458 V-8"
@@ -1692,6 +1695,24 @@ msgstr ""
 msgid "GB152_AT_FV230_Breaker_short"
 msgstr "AT-FV230 \"破碎者\""
 
+msgid "GB154_FV112_Puncher"
+msgstr "FV112 \"打孔器\""
+
+msgid "GB154_FV112_Puncher_descr"
+msgstr ""
+"一项Y系轻型自行反坦克炮计划，其研发充分考虑了紧凑尺寸、低重量和高机动性的要求。该设计可在小型底盘上搭载强力武器，同时确保其具备与坦克师协同行动所需的速度和机动性。"
+
+msgid "GB154_FV112_Puncher_long_special"
+msgstr ""
+"FV112 "
+"\"打孔器\"是一辆Y系IX级自行反坦克炮。其标配弹药为高穿透力的HE炮弹，可造成高额的平均单发损伤，并带来同等级中出色的平均每分钟损伤，而APCR炮弹则可用于对付重装甲目标。凭借优秀的机动性和精度，它能采用激进的狙击玩法，不断转场，寻找有利的射击角度。"
+
+msgid "GB154_FV112_Puncher_short"
+msgstr "FV112 \"打孔器\""
+
+msgid "GB154_FV112_Puncher_short_special"
+msgstr "出色的平均每分钟损伤，全向旋转炮塔"
+
 msgid "GB155_Pike"
 msgstr "长矛"
 
@@ -1779,6 +1800,23 @@ msgstr "\"斯图亚特\" I-IV"
 
 msgid "GB15_Stuart_I_descr"
 msgstr "?empty?"
+
+msgid "GB160_A20"
+msgstr "A20"
+
+msgid "GB160_A20_descr"
+msgstr ""
+"战事开始时，Y系总参谋部便开始研发用于西线战场的A20重型步兵坦克。预计战事将呈现如同上一次大战那样的阵地战形态，因此，这辆厚甲坦克采用了加长车体，尾部带有“尾巴”以帮助它跨越壕沟和弹坑。炮塔和车体均配备了武器。原计划最早于1940年将该坦克投入量产；然而，F系的迅速溃败表明，未来战斗的机动化程度将远超预期。因此，A20的量产计划被取消，已制造的原型车也未安装可运作的炮塔，而该计划本身则成为了研发A22\"丘吉尔\"的基础。"
+
+msgid "GB160_A20_long_special"
+msgstr ""
+"A20是一辆Y系IV级重型坦克。作为A22\"丘吉尔\"的前置型号，它同样配备了高射速火炮、相对坚固的正面装甲，以及适合运用\"卖侧面\"玩法的长条形侧面装甲。然而，较低的平均单发损伤和较差的机动性，使其更适合在吸收损伤的同时稳定输出，并稳步向敌方推进。"
+
+msgid "GB160_A20_short"
+msgstr "A20"
+
+msgid "GB160_A20_short_special"
+msgstr "坚固的正面装甲，高射速火炮"
 
 msgid "GB17_Grant_I"
 msgstr "\"格兰特\""
@@ -2349,16 +2387,6 @@ msgstr ""
 "\n"
 "云台列将耀汗青。"
 
-msgid "GB86_Centurion_Action_X_FR"
-msgstr "百夫长 AX BS"
-
-msgid "GB86_Centurion_Action_X_FR_descr"
-msgstr ""
-"AX炮塔原计划用于百夫长坦克的后续改型。一座炮塔原型被安装在百夫长 Mk.VII的底盘上，另一座则用于弹道测试。装备AX炮塔的坦克从未投入量产或服役。"
-
-msgid "GB86_Centurion_Action_X_FR_short"
-msgstr "百夫长 AX BS"
-
 msgid "GB86_Centurion_Action_X_descr"
 msgstr ""
 "AX炮塔原计划用于百夫长坦克的后续改型。一座炮塔原型被安装在百夫长 Mk.VII的底盘上，另一座则用于弹道测试。装备AX炮塔的坦克从未投入量产或服役。"
@@ -2678,6 +2706,9 @@ msgstr "米朵斯 D.A.V.O.C."
 
 msgid "Meadows_D_A_V_A13_III"
 msgstr "米朵斯 D.A.V. (A13 III)"
+
+msgid "Meadows_D_A_V_A20"
+msgstr "米朵斯 D.A.V. (A20)"
 
 msgid "Meadows_D_A_V_A22"
 msgstr "米朵斯 D.A.V. (A22)"
@@ -3224,9 +3255,6 @@ msgstr "罗·罗 流星 TTSC"
 msgid "Rolls_Royce_Meteor_with_twin_turbo_supercharges_CFE_A"
 msgstr "罗·罗 流星 TTSC"
 
-msgid "Rolls_Royce_Meteor_with_twin_turbo_supercharges_FR"
-msgstr "罗·罗 流星 TTSC"
-
 msgid "Rolls_Royce_Meteorite_202"
 msgstr "罗·罗 流星 Mk.202"
 
@@ -3274,6 +3302,9 @@ msgstr "流浪者陨石"
 
 msgid "SR_40_E"
 msgstr "SR 40 E"
+
+msgid "SR_C42"
+msgstr "SR C42"
 
 msgid "SR_C42F"
 msgstr "SR C42F"
@@ -3497,6 +3528,9 @@ msgstr "撼首者"
 msgid "Turret_1_GB152_AT_FV230_Breaker"
 msgstr "\"海狸\""
 
+msgid "Turret_1_GB154_FV112_Puncher"
+msgstr "FV112 \"打孔器\""
+
 msgid "Turret_1_GB155_Pike"
 msgstr "长矛"
 
@@ -3514,6 +3548,9 @@ msgstr "FV4602 凯旋"
 
 msgid "Turret_1_GB15_Stuart_I"
 msgstr "\"斯图亚特\" I"
+
+msgid "Turret_1_GB160_A20"
+msgstr "A20"
 
 msgid "Turret_1_GB19_Sherman_Firefly"
 msgstr "\"谢尔曼\" I"
@@ -3664,9 +3701,6 @@ msgstr "百夫长 AX"
 
 msgid "Turret_1_GB86_Centurion_Action_X_CFE_A"
 msgstr "常胜将军"
-
-msgid "Turret_1_GB86_Centurion_Action_X_FR"
-msgstr "百夫长 AX BS"
 
 msgid "Turret_1_GB87_Chieftain_T95_turret"
 msgstr "酋长/T95"
@@ -3909,6 +3943,9 @@ msgstr "WS No.19 Mk.IIB"
 msgid "WS_No_19_Mk_III"
 msgstr "WS No.19 Mk.III"
 
+msgid "WS_No_19_Mk_II_A20"
+msgstr "WS No.19 Mk.II (A20)"
+
 msgid "WS_No_22_Mk_3"
 msgstr "WS No.22 Mk.3"
 
@@ -3973,6 +4010,9 @@ msgstr "APDS Kl/14"
 msgid "_105mm_APDS_Kl14_CFE_J"
 msgstr "APDS Kl/14"
 
+msgid "_105mm_APDS_Kl14_L"
+msgstr "LAPDS Kl/14"
+
 msgid "_105mm_APDS_L_28P"
 msgstr "APDS L-28P"
 
@@ -3987,9 +4027,6 @@ msgstr "APDS L-28 (5321)"
 
 msgid "_105mm_APDS_L_28_5321_CFE_A"
 msgstr "APDS L-28"
-
-msgid "_105mm_APDS_L_28_5321_FR"
-msgstr "APDS L-28 (5321)"
 
 msgid "_105mm_AP_EX20"
 msgstr "105mm AP EX20"
@@ -4018,6 +4055,9 @@ msgstr "105mm L7A1 AT炮"
 msgid "_105mm_AT_Gun_L7A1_GSOR"
 msgstr "105mm L7A1 AT炮 GSOR"
 
+msgid "_105mm_AT_Gun_L7A1_L"
+msgstr "105mm L7A1 L AT炮"
+
 msgid "_105mm_AT_Gun_L7_N"
 msgstr "105mm L7 AT炮"
 
@@ -4030,9 +4070,6 @@ msgstr "105mm L7A2炮"
 msgid "_105mm_Gun_L7_HEAT_CFE_A"
 msgstr "105mm L7A2炮"
 
-msgid "_105mm_Gun_L7_HEAT_FR"
-msgstr "105mm L7A2炮"
-
 msgid "_105mm_Gun_L7_HEAT_SH"
 msgstr "105mm L7A2炮"
 
@@ -4043,9 +4080,6 @@ msgid "_105mm_HEAT_L7"
 msgstr "US HEAT M456"
 
 msgid "_105mm_HEAT_L7_CFE_A"
-msgstr "US HEAT M456"
-
-msgid "_105mm_HEAT_L7_FR"
 msgstr "US HEAT M456"
 
 msgid "_105mm_HEAT_L7_SH"
@@ -4066,6 +4100,9 @@ msgstr "HESH-T L-37"
 msgid "_105mm_HESH_L7_GSOR"
 msgstr "HESH L7 GSOR"
 
+msgid "_105mm_HESH_L7_Mk13_L"
+msgstr "LHESH L7Mk.13"
+
 msgid "_105mm_HESH_L7_N"
 msgstr "HESH-T L-37 N"
 
@@ -4080,9 +4117,6 @@ msgstr "HESH L-35 (5321)"
 
 msgid "_105mm_HESH_L_35_5321_CFE_A"
 msgstr "HESH-T L-35"
-
-msgid "_105mm_HESH_L_35_5321_FR"
-msgstr "HESH L-35 (5321)"
 
 msgid "_105mm_HESH_L_37_4015"
 msgstr "HESH L-37 (4015)"
@@ -4110,6 +4144,9 @@ msgstr "HE L7 Mk. 13"
 
 msgid "_105mm_HE_L7_Mk13_CFE_J"
 msgstr "HE L7 Mk. 13"
+
+msgid "_105mm_HE_L7_Mk13_L"
+msgstr "LHE L7Mk.13"
 
 msgid "_105mm_HE_L7_N"
 msgstr "HESH-T L-35 N"
@@ -5029,6 +5066,15 @@ msgstr "HE Mk.2B"
 msgid "_3pdr_gun_Hotchkiss"
 msgstr "OQF 3磅炮 Mk.I"
 
+msgid "_40mm_2_pdr_APCBC_Mk_IX_A20"
+msgstr "APCBC Mk.IX (A20)"
+
+msgid "_40mm_2_pdr_APCNR_Mk_II_A20"
+msgstr "APCNR Mk.II (A20)"
+
+msgid "_40mm_2_pdr_HE_Mk_II_A20"
+msgstr "HE Mk.II (A20)"
+
 msgid "_40mm_AP"
 msgstr "AP Mk.I"
 
@@ -5079,6 +5125,9 @@ msgstr "40mm 呯呯炮 (II)"
 
 msgid "_40mm_Pom_Pom_prot"
 msgstr "40mm 呯呯炮(原型)"
+
+msgid "_40mm_QF_2_pdr_Mk_X_A20"
+msgstr "QF 2磅炮 Mk.X (A20)"
 
 msgid "_40mm_SAP"
 msgstr "SAP Mk.1T"

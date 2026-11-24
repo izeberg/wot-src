@@ -32,6 +32,7 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
          super();
          this.counterTF.mouseWheelEnabled = this.counterTF.mouseEnabled = this.image.mouseEnabled = false;
          mouseChildren = false;
+         hitArea = this.image;
          if(App.soundMgr != null)
          {
             App.soundMgr.addSoundsHdlrs(this);
@@ -50,6 +51,7 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
          {
             App.soundMgr.removeSoundHdlrs(this);
          }
+         hitArea = null;
          this.image.dispose();
          this.image = null;
          this.counterTF = null;

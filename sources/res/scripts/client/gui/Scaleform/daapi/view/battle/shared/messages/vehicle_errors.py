@@ -15,14 +15,30 @@ class VehicleErrorMessages(fading_messages.FadingMessages):
         ctrl = self.sessionProvider.shared.messages
         if ctrl is not None:
             ctrl.onShowVehicleErrorByKey += self.__onShowVehicleErrorByKey
+        crosshairCtrl = self.sessionProvider.shared.crosshair
+        if crosshairCtrl is not None:
+            crosshairCtrl.onCrosshairViewChanged += self.__onCrosshairLayoutChanged
+            crosshairCtrl.onCrosshairPositionChanged += self.__onCrosshairLayoutChanged
+            crosshairCtrl.onCrosshairScaleChanged += self.__onCrosshairLayoutChanged
+            self.__onCrosshairLayoutChanged()
         return
 
     def _removeGameListeners(self):
         ctrl = self.sessionProvider.shared.messages
         if ctrl is not None:
             ctrl.onShowVehicleErrorByKey -= self.__onShowVehicleErrorByKey
+        crosshairCtrl = self.sessionProvider.shared.crosshair
+        if crosshairCtrl is not None:
+            crosshairCtrl.onCrosshairViewChanged -= self.__onCrosshairLayoutChanged
+            crosshairCtrl.onCrosshairPositionChanged -= self.__onCrosshairLayoutChanged
+            crosshairCtrl.onCrosshairScaleChanged -= self.__onCrosshairLayoutChanged
         super(VehicleErrorMessages, self)._removeGameListeners()
         return
 
     def __onShowVehicleErrorByKey(self, key, args=None, extra=None):
         self.showMessage(key, args, extra)
+
+    def __onCrosshairLayoutChanged(self, *_):
+        crosshairCtrl = self.sessionProvider.shared.crosshair
+        _, posY = crosshairCtrl.getScaledPosition()
+        self.as_setCrosshairLayoutS(posY, crosshairCtrl.getViewID())

@@ -4236,6 +4236,72 @@
 			</damage>
 		</armorSpalls>
 	</_90mm_OE_90>
+	<_90mm_OFL_90_F1>
+		<id>182</id>
+		<userString>#france_vehicles:_90mm_OFL_90_F1</userString>
+		<icon>ap</icon>
+		<price>402</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>90</caliber>
+		<isTracer>true</isTracer>
+		<effects>mainArmorPiercing</effects>
+		<damage>
+			<armor>200</armor>
+			<devices>122</devices>
+		</damage>
+		<normalizationAngle>5</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_90mm_OFL_90_F1>
+	<_90mm_OCC_90_F1>
+		<id>183</id>
+		<userString>#france_vehicles:_90mm_OCC_90_F1</userString>
+		<icon>hc_premium</icon>
+		<price>4000</price>
+		<improved>true</improved>
+		<kind>HOLLOW_CHARGE</kind>
+		<caliber>90</caliber>
+		<isTracer>true</isTracer>
+		<effects>mainHollowCharge</effects>
+		<damage>
+			<armor>200</armor>
+			<devices>122</devices>
+		</damage>
+		<ricochetAngle>85</ricochetAngle>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
+	</_90mm_OCC_90_F1>
+	<_90mm_OE_90_F1>
+		<id>184</id>
+		<userString>#france_vehicles:_90mm_OE_90_F1</userString>
+		<icon>he_modern</icon>
+		<price>415</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>90</caliber>
+		<explosionRadius>
+			1.46
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>mainHighExplosive</effects>
+		<damage>
+			<armor>300</armor>
+			<devices>122</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				1.46
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>150</armor>
+				<devices>60</devices>
+			</damage>
+		</armorSpalls>
+	</_90mm_OE_90_F1>
 	<_90mm_OFL_90_D_914>
 		<id>188</id>
 		<userString>#france_vehicles:_90mm_OFL_90_D_914</userString>

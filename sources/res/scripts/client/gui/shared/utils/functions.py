@@ -264,7 +264,7 @@ def parsePostBattleUniqueSubUrl(uniqueSubUrl):
 
 def showSentInviteMessage(user=None):
     if user is not None:
-        if user is not None:
+        if user.hasValidName():
             SystemMessages.pushI18nMessage(SYSTEM_MESSAGES.PREBATTLE_INVITES_SENDINVITE_NAME, type=SystemMessages.SM_TYPE.Information, name=user.getFullName())
         else:
             SystemMessages.pushI18nMessage(SYSTEM_MESSAGES.PREBATTLE_INVITES_SENDINVITE, type=SystemMessages.SM_TYPE.Information)

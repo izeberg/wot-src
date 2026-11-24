@@ -86,6 +86,9 @@ msgstr "AMX 105 AM 47"
 msgid "AM_VRC_7_141"
 msgstr "AM/VRC 7 141"
 
+msgid "ANVRC_18A"
+msgstr "ANVRC 18"
+
 msgid "AN_GRC_6_Terrifiant"
 msgstr "AN/GRC-6(可怖)"
 
@@ -246,6 +249,9 @@ msgstr "920米/秒初速75mm DP炮"
 
 msgid "Canon_de_90mm_Vo_930_m_s"
 msgstr "930米/秒初速90mm炮"
+
+msgid "Caterpillar"
+msgstr "卡特彼勒"
 
 msgid "Chassis_105_leFH18B2"
 msgstr "leFH18B2"
@@ -417,6 +423,9 @@ msgstr "ERAC 105原型车"
 
 msgid "Chassis_F124_AMX_13FL11"
 msgstr "AMX 13 2A型"
+
+msgid "Chassis_F125_Panhard_M6_Proto"
+msgstr "潘哈德 M6原型车"
 
 msgid "Chassis_F127_AMX_ELC_901"
 msgstr "AMX ELC 901"
@@ -1232,6 +1241,25 @@ msgstr "AMX 13 FL11"
 
 msgid "F124_AMX_13FL11_short_special"
 msgstr "良好的隐蔽性和出色的机动性"
+
+msgid "F125_Panhard_M6_Proto"
+msgstr "潘哈德 M6原型车"
+
+msgid "F125_Panhard_M6_Proto_descr"
+msgstr ""
+"20世纪70年代初，F系军队需要新型装甲车辆，包括装甲运兵车、步兵战车和侦察车。为响应这一需求，潘哈德公司研发了一系列通用平台装甲车辆，包括双轴M4装甲车、三轴M6和四轴M8。随后制造了一辆搭载H-90炮塔和90mm"
+" DEFA F1反坦克炮的M6原型车，但该坦克未投入量产。"
+
+msgid "F125_Panhard_M6_Proto_long_special"
+msgstr ""
+"潘哈德 "
+"M6原型车是一辆F系IX级轻型坦克，也是第一辆支援型轮式轻型坦克。与其他轮式坦克一样，它拥有非常出色的机动性，即使底盘受损也能继续移动。其较大的尺寸限制了隐蔽能力，但装填迅速的90毫米火炮拥有优异的平均每分钟损伤，可在短时间内造成大量损伤。"
+
+msgid "F125_Panhard_M6_Proto_short"
+msgstr "潘哈德 M6原型车"
+
+msgid "F125_Panhard_M6_Proto_short_special"
+msgstr "出色的机动性，较高的射速"
 
 msgid "F127_AMX_ELC_901"
 msgstr "AMX ELC 901"
@@ -2953,6 +2981,9 @@ msgstr "ERAC 105原型车"
 msgid "Turret_1_F124_AMX_13FL11"
 msgstr "FL-11"
 
+msgid "Turret_1_F125_Panhard_M6_Proto"
+msgstr "H-90"
+
 msgid "Turret_1_F127_AMX_ELC_901"
 msgstr "AMX ELC 901"
 
@@ -4659,6 +4690,9 @@ msgstr "90mm DCA 45炮 (50 100)"
 msgid "_90mm_DCA_45_ARL"
 msgstr "90mm DCA 45炮 (ARL)"
 
+msgid "_90mm_DEFA_F1"
+msgstr "90mm DEFA F1炮"
+
 msgid "_90mm_D_914"
 msgstr "90mm D.914炮"
 
@@ -4740,6 +4774,9 @@ msgstr "OCC"
 msgid "_90mm_OCC_90_D_914"
 msgstr "OCC-90 D.914"
 
+msgid "_90mm_OCC_90_F1"
+msgstr "OCC-90-F1"
+
 msgid "_90mm_OCC_90_SH"
 msgstr "Prf. 90"
 
@@ -4754,6 +4791,9 @@ msgstr "OE-90 D.914"
 
 msgid "_90mm_OE_90_D_919"
 msgstr "OE-90 D.919"
+
+msgid "_90mm_OE_90_F1"
+msgstr "OE-90-F1"
 
 msgid "_90mm_OE_F2_VCS"
 msgstr "OE F2 (VCS)"
@@ -4820,6 +4860,9 @@ msgstr "OFL-90 D.914"
 
 msgid "_90mm_OFL_90_D_919"
 msgstr "OFL-90 D.919"
+
+msgid "_90mm_OFL_90_F1"
+msgstr "OFL-90-F1"
 
 msgid "_90mm_OFL_F1_VCS"
 msgstr "OFL F1 (VCS)"

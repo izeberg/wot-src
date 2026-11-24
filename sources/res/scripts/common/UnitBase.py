@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-import copy, struct, weakref
+import copy, struct, weakref, typing
 from collections import namedtuple
 from future.moves import pickle
 from future.utils import listvalues, viewitems, viewvalues
@@ -436,7 +436,9 @@ class BitfieldHelper:
         return self.value & value
 
 
-VEHICLE_TAGS_GROUP_BY_UNIT_MGR_FLAGS = {UNIT_MGR_FLAGS.EVENT: (
+VEHICLE_TAGS_GROUP_BY_UNIT_MGR_FLAGS = {UNIT_MGR_FLAGS.SQUAD: (
+                        tuple(), BATTLE_MODE_VEHICLE_TAGS - {'regular_battles'}), 
+   UNIT_MGR_FLAGS.EVENT: (
                         ('event_battles', ), tuple()), 
    UNIT_MGR_FLAGS.EPIC: (
                        tuple(), BATTLE_MODE_VEHICLE_TAGS - {'epic_battles'}), 
@@ -444,6 +446,17 @@ VEHICLE_TAGS_GROUP_BY_UNIT_MGR_FLAGS = {UNIT_MGR_FLAGS.EVENT: (
                                 ('battle_royale', ), tuple()), 
    UNIT_MGR_FLAGS.STRONGHOLD: (
                              tuple(), BATTLE_MODE_VEHICLE_TAGS - {'clanWarsBattles'})}
+
+def _tagsFromFlags(flags):
+    flag = flags ^ UNIT_MGR_FLAGS.SQUAD if flags != UNIT_MGR_FLAGS.SQUAD and flags & UNIT_MGR_FLAGS.SQUAD else flags
+    for unitMgrFlags, tagsGroup in viewitems(VEHICLE_TAGS_GROUP_BY_UNIT_MGR_FLAGS):
+        if flag & unitMgrFlags:
+            return tagsGroup
+
+    return (
+     tuple(), BATTLE_MODE_VEHICLE_TAGS)
+
+
 UNIT_MGR_FLAGS_TO_PREBATTLE_TYPE = {UNIT_MGR_FLAGS.EVENT: PREBATTLE_TYPE.EVENT, 
    UNIT_MGR_FLAGS.EPIC: PREBATTLE_TYPE.EPIC, 
    UNIT_MGR_FLAGS.BATTLE_ROYALE: PREBATTLE_TYPE.BATTLE_ROYALE, 

@@ -25,5 +25,7 @@ package net.wg.infrastructure.base.meta
       function as_showGoldMessage(param1:String, param2:String) : void;
       
       function as_showSelfMessage(param1:String, param2:String) : void;
+      
+      function as_setCrosshairLayout(param1:Number, param2:int) : void;
    }
 }

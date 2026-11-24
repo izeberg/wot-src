@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F125_Panhard_M6_Proto/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F125_Panhard_M6_Proto/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.864365 -0.023391 -1.291100</min>
+		<max>0.861877 0.736130 0.858429</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

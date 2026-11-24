@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/british/GB154_FV112_Puncher/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.339849 -0.677249 -2.884923</min>
+		<max>1.339766 0.674603 2.995287</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB154_FV112_Puncher/normal/lod3/Hull</nodefullVisual>
+</root>

@@ -1810,10 +1810,7 @@
 			</customizableVehicleAreas>
 		</customization>
 		<camouflage>
-			<density>
-				118.608 118.366
-				<!--BW_String-->
-			</density>
+			<density>119.502075 119.252663</density>
 			<aoTextureSize>1024 1024</aoTextureSize>
 			<tiling>
 				2.5 2.5 -0.01 0.000000
@@ -3836,10 +3833,7 @@
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<muzzleBrake>HORIZONTAL</muzzleBrake>
 					<camouflage>
-						<density>
-							98.0549 99.389
-							<!--BW_String-->
-						</density>
+						<density>97.913391 99.362045</density>
 						<aoTextureSize>512 512</aoTextureSize>
 						<tiling>
 							1.5 1.5 0.000000 0.000000
@@ -5047,10 +5041,10 @@
 			</customization>
 			<camouflage>
 				<density>
-					98.8768 99.0293
+					98.56707 98.687233
 					<!--BW_String-->
 				</density>
-				<aoTextureSize>1024 1024</aoTextureSize>
+				<aoTextureSize>1024 512</aoTextureSize>
 				<tiling>
 					3 1.5 0.000000 0.000000
 					<!--BW_String-->

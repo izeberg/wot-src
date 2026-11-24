@@ -1491,6 +1491,23 @@ msgstr "\"獾\""
 msgid "A197_Jezevec_short_special"
 msgstr "出色的机动性，短装填时间较短的自动装填炮"
 
+msgid "A198_Christie_M1921"
+msgstr "克里斯蒂M1921"
+
+msgid "A198_Christie_M1921_descr"
+msgstr ""
+"战事结束后，基于当时关于坦克运用的主流理念，M系陆军军械部指示著名工程师约翰·沃尔特·克里斯蒂研发一款新型装甲车辆。随着对坦克的要求不断变化，该计划经历了数个阶段的调整，并于1922年末以无炮塔的1921型克里斯蒂坦克的最终形态亮相。然而，当时相关法案已经生效，根据该法案，坦克部队隶属于步兵，而克里斯蒂设计的坦克不再符合既定概念。尽管曾尝试对该坦克进行改进和升级，但该计划最终于1924年被终止。"
+
+msgid "A198_Christie_M1921_long_special"
+msgstr ""
+"克里斯蒂M1921是一辆M系II级自行反坦克炮。其火炮射速快、穿透力良好、瞄准迅速，并拥有出色的俯角，使其能够高效击退来犯之敌并坚守阵地。其机动性非常差，但只要能在正确的时间出现在正确的点位，这一缺点的影响就会大幅减弱。"
+
+msgid "A198_Christie_M1921_short"
+msgstr "克里斯蒂M1921"
+
+msgid "A198_Christie_M1921_short_special"
+msgstr "高射速，出色的火炮俯角"
+
 msgid "A21_T14_long_special"
 msgstr ""
 "一辆M系V级重型坦克，拥有倾斜的正面装甲，优秀的每分钟损伤以及对重型坦克而言良好的机动性。虽然坦克车体侧面装甲较为薄弱，但额外的裙板能够部分补齐防护的短板。"
@@ -1712,16 +1729,6 @@ msgstr "T110E5 7x7"
 
 msgid "A69_T110E5_7x7_short"
 msgstr "T110E5 7x7"
-
-msgid "A69_T110E5_FR"
-msgstr "T110E5 BS"
-
-msgid "A69_T110E5_FR_descr"
-msgstr ""
-"1952年开始研发的重型坦克，与T-43(M103)相比，配备了火力更强的武器。由于坦克需通过高山的狭窄隧道，因此尺寸受到了严格限制。曾考虑多个设计方案，但最终计划被取消。该坦克从未投入生产。"
-
-msgid "A69_T110E5_FR_short"
-msgstr "T110E5 BS"
 
 msgid "A69_T110E5_descr"
 msgstr "?empty?"
@@ -1959,9 +1966,6 @@ msgstr "AN/VRC-3"
 msgid "AN_VRC-3_7x7_0"
 msgstr "AN/VRC-3"
 
-msgid "AN_VRC-3_FR"
-msgstr "AN/VRC-3"
-
 msgid "AN_VRC-3_Rush_Ep1"
 msgstr "AN/VRC-3S"
 
@@ -2023,9 +2027,6 @@ msgid "AN_VRC_47_7x7"
 msgstr "AN/VRC-47"
 
 msgid "AOI-1490"
-msgstr "大陆 AOI-1490"
-
-msgid "AOI-1490_FR"
 msgstr "大陆 AOI-1490"
 
 msgid "AOI-1490_short"
@@ -2449,6 +2450,9 @@ msgstr "\"巨猿\""
 msgid "Chassis_A197_Jezevec"
 msgstr "\"獾\""
 
+msgid "Chassis_A198_Christie_M1921"
+msgstr "克里斯蒂M1921"
+
 msgid "Chassis_A22_M5_Stuart"
 msgstr "M5 \"斯图亚特\""
 
@@ -2647,9 +2651,6 @@ msgstr "VVSST48E2"
 msgid "Chassis_Sherman_Jumbo_2"
 msgstr "VVSST51E2"
 
-msgid "Chassis_T110_FR"
-msgstr "T110E5 BS"
-
 msgid "Chassis_T18"
 msgstr "T18E1"
 
@@ -2703,6 +2704,9 @@ msgstr "T95E2"
 
 msgid "Chassis_T95_E6"
 msgstr "T95E6"
+
+msgid "Christie_6_cylinder"
+msgstr "克里斯蒂6缸"
 
 msgid "Chrysler_1200_HP"
 msgstr "克莱斯勒 1200马力"
@@ -3467,6 +3471,9 @@ msgstr "柯蒂斯-莱特 RC2-350 T-C"
 msgid "D51080_BPXIV"
 msgstr "D51080"
 
+msgid "ESCR_1921"
+msgstr "ESCR 1921"
+
 msgid "Ford_GAA"
 msgstr "福特 GAA"
 
@@ -3821,6 +3828,9 @@ msgstr "QF 2磅AT炮 Mk.X"
 
 msgid "PLT_27"
 msgstr "PLT-27"
+
+msgid "QF_6_pounder_Mk_I"
+msgstr "QF 6磅炮 Mk.I"
 
 msgid "QF_6_pounder_Mk_III"
 msgstr "QF 6磅炮Mk.III"
@@ -4496,6 +4506,9 @@ msgstr "\"巨猿\""
 msgid "Turret_1_A197_Jezevec"
 msgstr "\"獾\""
 
+msgid "Turret_1_A198_Christie_M1921"
+msgstr "克里斯蒂M1921"
+
 msgid "Turret_1_A22_M5_Stuart"
 msgstr "M5 \"斯图亚特\""
 
@@ -4747,9 +4760,6 @@ msgstr "M46T119"
 
 msgid "Turret_2_Sherman_Jumbo"
 msgstr "M4A2E2D51080"
-
-msgid "Turret_2_T110_FR"
-msgstr "T110E5 BS"
 
 msgid "Turret_2_T21"
 msgstr "T21"
@@ -5489,9 +5499,6 @@ msgstr "AP M358"
 msgid "_120mm_AP_M358E5"
 msgstr "AP M358E5"
 
-msgid "_120mm_AP_M358E5_FR"
-msgstr "AP M358E5"
-
 msgid "_120mm_AP_M358_M103"
 msgstr "AP M358 (M103)"
 
@@ -5579,9 +5586,6 @@ msgstr "120mm M58炮"
 msgid "_120mm_Gun_M58A"
 msgstr "120mm M58A炮"
 
-msgid "_120mm_Gun_M58_FR"
-msgstr "120mm M58炮"
-
 msgid "_120mm_Gun_M58_M103"
 msgstr "120mm M58炮 (M103)"
 
@@ -5639,9 +5643,6 @@ msgstr "M469 SPHT"
 msgid "_120mm_HEAT_M469E5"
 msgstr "HEAT M469E5"
 
-msgid "_120mm_HEAT_M469E5_FR"
-msgstr "HEAT M469E5"
-
 msgid "_120mm_HEAT_M469R"
 msgstr "HEAT M469R"
 
@@ -5694,9 +5695,6 @@ msgid "_120mm_HE_M356E1_M_V_Y"
 msgstr "HE M356E1 (M-V-Y)"
 
 msgid "_120mm_HE_M356E5"
-msgstr "HE M356E5"
-
-msgid "_120mm_HE_M356E5_FR"
 msgstr "HE M356E5"
 
 msgid "_120mm_HE_M356_M103"
@@ -6371,6 +6369,15 @@ msgstr "HE T18"
 
 msgid "_57mm_HE_T18_M8A1"
 msgstr "HE T18 (M8A1)"
+
+msgid "_6pdr_57mm_APC_M1"
+msgstr "APC M1"
+
+msgid "_6pdr_57mm_AP_M1"
+msgstr "AP M1"
+
+msgid "_6pdr_57mm_HE_M1"
+msgstr "HE M1"
 
 msgid "_6pdr_APCR_MK_1T"
 msgstr "APCR Mk.1T"

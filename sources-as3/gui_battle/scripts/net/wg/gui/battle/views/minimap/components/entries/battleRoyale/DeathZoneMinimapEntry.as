@@ -131,12 +131,17 @@ package net.wg.gui.battle.views.minimap.components.entries.battleRoyale
                   if(!_loc6_)
                   {
                      _loc6_ = new Sprite();
-                     _loc6_.blendMode = BlendMode.ADD;
                   }
+                  _loc6_.blendMode = BlendMode.ADD;
                   this._atlasMgr.drawGraphics(ATLAS_CONSTANTS.BATTLE_ATLAS,BATTLEATLAS.DEATHZONE_WARNING,_loc6_.graphics);
                   break;
                case BATTLE_ROYAL_CONSTS.DEATH_ZONE_STATE_CLOSED:
-                  _loc6_ = new Sprite();
+                  _loc6_ = this._deathZonePool.shift();
+                  if(!_loc6_)
+                  {
+                     _loc6_ = new Sprite();
+                  }
+                  _loc6_.blendMode = BlendMode.NORMAL;
                   this._atlasMgr.drawGraphics(ATLAS_CONSTANTS.BATTLE_ATLAS,BATTLEATLAS.DEATHZONE_CLOSED,_loc6_.graphics);
                   break;
                default:

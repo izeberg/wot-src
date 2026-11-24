@@ -1201,7 +1201,6 @@
 						<length>0.151451</length>
 					</mainSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -1598,7 +1597,6 @@
 						<length>0.151087</length>
 					</mainSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -2177,6 +2175,10 @@
 						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
+							<size>
+								0.55
+								<!--BW_String-->
+							</size>
 							<rayStart>
 								-0.001292 -0.005957 1.24197
 								<!--BW_String-->
@@ -2189,10 +2191,6 @@
 								0.109 0.106 5
 								<!--BW_String-->
 							</rayUp>
-							<size>
-								0.55
-								<!--BW_String-->
-							</size>
 						</slot>
 					</customizationSlots>
 					<customization>

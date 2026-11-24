@@ -2757,6 +2757,12 @@ package
       
       public static const MODULEINFO_PARAMS_CRITICALHITCHANCE:String = "#menu:moduleInfo/params/criticalHitChance";
       
+      public static const MODULEINFO_PARAMSSEPARATOR_DASH:String = "#menu:moduleInfo/paramsSeparator/dash";
+      
+      public static const MODULEINFO_PARAMSSEPARATOR_SLASH:String = "#menu:moduleInfo/paramsSeparator/slash";
+      
+      public static const MODULEINFO_PARAMSSEPARATOR_COLON:String = "#menu:moduleInfo/paramsSeparator/colon";
+      
       public static const MODULEINFO_COMPATIBLE_TURRETS:String = "#menu:moduleInfo/compatible/turrets";
       
       public static const MODULEINFO_COMPATIBLE_SHELLS:String = "#menu:moduleInfo/compatible/shells";

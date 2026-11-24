@@ -303,9 +303,6 @@ msgstr "M4190 GF"
 msgid "Chassis_G121_Grille_15_L63"
 msgstr "“蟋蟀”15"
 
-msgid "Chassis_G121_Grille_15_L63_FR"
-msgstr "\"蟋蟀\"15 BS"
-
 msgid "Chassis_G122_VK6501H"
 msgstr "VK6501(H)"
 
@@ -511,8 +508,14 @@ msgstr "“猎豹”"
 msgid "Chassis_G18_JagdPanther_2"
 msgstr "“猎豹”加强型"
 
+msgid "Chassis_G190_TH_72"
+msgstr "TH-72"
+
 msgid "Chassis_G191_StuG_IIIF_CFE_A"
 msgstr "III号突击炮F型\"河马\""
+
+msgid "Chassis_G192_E_10"
+msgstr "E-10"
 
 msgid "Chassis_G193_Pz_Kpfw_55"
 msgstr "Pz.54"
@@ -538,8 +541,17 @@ msgstr "67主战方案"
 msgid "Chassis_G200_Chi_Go"
 msgstr "\"黑豹\"奇戈"
 
+msgid "Chassis_G201_Panzerjager_I_mit_7_5_cm"
+msgstr "短75 I号坦歼"
+
+msgid "Chassis_G202_PzKpfw_T_34_747_r"
+msgstr "T 34 747 (r)"
+
 msgid "Chassis_G204_PzVI_Tiger_P_CFE_A"
 msgstr "\"虎\"(P)\"豹狮\""
+
+msgid "Chassis_G205_Jagdpanzer_7_Pfanne"
+msgstr "7号坦歼\"平底锅\""
 
 msgid "Chassis_G23_Grille"
 msgstr "“蟋蟀”"
@@ -985,6 +997,9 @@ msgstr "戴姆勒-奔驰 V12 56"
 msgid "Daimler_Benz_V12_57"
 msgstr "戴姆勒-奔驰 V12 57"
 
+msgid "Deutz_BF6M1015CF"
+msgstr "道依茨 BF6M1015CF"
+
 msgid "DickerMax"
 msgstr "大麦克斯"
 
@@ -1051,6 +1066,9 @@ msgstr "FuG 12"
 msgid "FuG12_SH"
 msgstr "FuG 12 L2"
 
+msgid "FuG15"
+msgstr "FuG 15"
+
 msgid "FuG16"
 msgstr "Fu 16"
 
@@ -1077,6 +1095,9 @@ msgstr "FuG 5m"
 
 msgid "FuG5_SH"
 msgstr "FuG 5A"
+
+msgid "FuG5_T_34"
+msgstr "FuG 5 (T 34)"
 
 msgid "FuG6"
 msgstr "FuG 6"
@@ -1110,6 +1131,9 @@ msgstr "FuG 8 (f)"
 
 msgid "FuG_7_45_01"
 msgstr "FuG 7 (4501)"
+
+msgid "FuG_7_E"
+msgstr "FuG 7 (E)"
 
 msgid "FuG_7_F"
 msgstr "FuG 7 (F)"
@@ -1625,18 +1649,6 @@ msgstr "优秀的火炮和良好的机动性"
 
 msgid "G121_Grille_15_L63"
 msgstr "“蟋蟀”15"
-
-msgid "G121_Grille_15_L63_FR"
-msgstr "\"蟋蟀\"15 BS"
-
-msgid "G121_Grille_15_L63_FR_descr"
-msgstr ""
-"1942年夏，D系陆军武器局与克虏伯公司及莱茵金属公司达成协议，计划以\"黑豹\"坦克的底盘为基础来设计一辆自行反坦克炮。原计划为其配备一门128mm "
-"K 43炮或150mm sFH "
-"43榴弹炮。该项目被命名为\"蟋蟀\"12和\"蟋蟀\"15，采用了战斗室后置的布局，它们唯一的区别就是火炮系统。后来，\"蟋蟀\"15计划装备63倍径150毫米火炮，使其可在4000米距离上击穿200毫米厚的装甲。然而，由于研发速度缓慢，\"蟋蟀\"15仅停留在蓝图阶段。"
-
-msgid "G121_Grille_15_L63_FR_short"
-msgstr "\"蟋蟀\"15 BS"
 
 msgid "G121_Grille_15_L63_descr"
 msgstr "?empty?"
@@ -2534,6 +2546,24 @@ msgstr "?empty?"
 msgid "G18_JagdPanther_short"
 msgstr "“猎豹”"
 
+msgid "G190_TH_72"
+msgstr "TH-72"
+
+msgid "G190_TH_72_descr"
+msgstr ""
+"20世纪70年代末，57型护卫坦克计划重新进行工程学设计。该坦克的主武器安装在载人炮塔外部。发动机和传动装置位于坦克前部，冷却散热器和排气系统则位于后部。炮塔安装在车体中部，弹药架布置在其后方。由于设计复杂，该坦克造价非常高昂；因此，蒂森-"
+"亨舍尔公司在甚至没有建造原型车的情况下就终止了该计划。"
+
+msgid "G190_TH_72_long_special"
+msgstr ""
+"TH-72是一辆D系IX级轻型坦克。该坦克装备一门自动炮，近距离对抗轻装甲目标和行动迟缓的重型坦克时极具威胁性。其装填时间较短，因此不会长时间脱离战斗；即使在首轮弹匣攻击中幸存下来，敌人也绝不应掉以轻心。"
+
+msgid "G190_TH_72_short"
+msgstr "TH-72"
+
+msgid "G190_TH_72_short_special"
+msgstr "自动炮，出色的机动性"
+
 msgid "G191_StuG_IIIF_CFE_A"
 msgstr "III号突击炮F型\"河马\""
 
@@ -2553,6 +2583,23 @@ msgstr "III号突击炮F型\"河马\""
 
 msgid "G191_StuG_IIIF_CFE_A_short_special"
 msgstr "良好的机动性，较高的射速"
+
+msgid "G192_E_10"
+msgstr "E-10"
+
+msgid "G192_E_10_descr"
+msgstr ""
+"轻型自行反坦克炮E-10的研发工作始于1944年，属于E系列计划的一部分，旨在最大程度实现设计统一并简化生产流程。在布局方面，该坦克与\"追猎者\"颇为相似，外形低矮，无炮塔，并采用倾斜装甲板。底盘采用交错式负重轮结构，每侧四个负重轮，悬挂装置则由固定在车体外部的扭杆构成。发动机和液力传动装置位于后部的同一个舱室中，不仅简化了维护工作，也为战斗室腾出了更多空间，同时，可拆卸的后部装甲板和发动机传动舱盖则使动力总成能够快速拆装。由于战事结束，该计划最终停留在草案阶段，未能投入实施。"
+
+msgid "G192_E_10_long_special"
+msgstr ""
+"E-10是一辆D系V级自行反坦克炮。该坦克隶属于E系列计划，旨在取代\"追猎者\"。凭借低矮的外形和轻量化设计，它拥有优秀的机动性、出色的隐蔽性，以及小口径火炮带来的高射速。不过，其观察范围和精度略有不足，因此需要采取积极主动的打法，利用隐蔽快速地对敌人造成损伤。"
+
+msgid "G192_E_10_short"
+msgstr "E-10"
+
+msgid "G192_E_10_short_special"
+msgstr "出色的隐蔽性，较高的射速"
 
 msgid "G193_Pz_Kpfw_55"
 msgstr "Pz.55"
@@ -2639,6 +2686,44 @@ msgstr "\"黑豹\"奇戈"
 msgid "G200_Chi_Go_short_special"
 msgstr "装甲防护不俗的炮塔，高额的平均单发损伤"
 
+msgid "G201_Panzerjager_I_mit_7_5_cm"
+msgstr "短75 I号坦歼"
+
+msgid "G201_Panzerjager_I_mit_7_5_cm_descr"
+msgstr ""
+"战事末期，D系军队严重缺乏装甲车辆。工业体系几近瘫痪，新坦克的补给数量有限，因此军方不得不利用一切可用的底盘和火炮来制造坦克。其中一种方案便是基于I号坦克"
+" B型而建造。该坦克在对车体进行少量改进后，安装了自行反坦克炮所使用的7.5cm StuK "
+"40炮。据报道，其中一辆曾于1945年春季参与最终战略进攻战役。"
+
+msgid "G201_Panzerjager_I_mit_7_5_cm_long_special"
+msgstr ""
+"短75 "
+"I号坦歼是一辆D系III级自行反坦克炮。它拥有同等级中良好的机动性，能够频繁转移阵地并掩护盟友。其出色的火炮拥有极佳的俯角、较高的平均单发损伤、不俗的穿透力和良好的精度，能够连续击败多个敌人。"
+
+msgid "G201_Panzerjager_I_mit_7_5_cm_short"
+msgstr "短75 I号坦歼"
+
+msgid "G201_Panzerjager_I_mit_7_5_cm_short_special"
+msgstr "较高的平均单发损伤，出色的火炮俯角"
+
+msgid "G202_PzKpfw_T_34_747_r"
+msgstr "T 34 747 (r)"
+
+msgid "G202_PzKpfw_T_34_747_r_descr"
+msgstr ""
+"1941至1943年间，D系军队在东线缴获了大量T-34坦克。1943年6月30日，陆军总司令部启动了一项计划，旨在对东线缴获的坦克进行标准化和重新分配。具体而言，军方计划集中实施改装工作，使这些坦克符合D系标准。T-34坦克安装了来自III号或IV号坦克的车长塔，以及D系设备、无线电台和其他装置。然而，尽管军方试图统一配置，许多坦克的零部件配置仍不尽相同。"
+
+msgid "G202_PzKpfw_T_34_747_r_long_special"
+msgstr ""
+"T 34 747 "
+"(r)是一辆D系V级中型坦克，由战事期间缴获的S系T-34坦克按照D系标准改装而成。它保留了T-34的优势，如倾斜装甲和76毫米火炮，同时精度和火炮手感也得到了加强。这辆全能型坦克适合多种玩法，无论是在前线还是后方均能高效作战。"
+
+msgid "G202_PzKpfw_T_34_747_r_short"
+msgstr "T 34 747 (r)"
+
+msgid "G202_PzKpfw_T_34_747_r_short_special"
+msgstr "良好的精度，兼具不俗的装甲和良好的机动性"
+
 msgid "G204_PzVI_Tiger_P_CFE_A"
 msgstr "\"虎\"(P)\"豹狮\""
 
@@ -2655,6 +2740,23 @@ msgstr "\"虎\"(P)\"豹狮\""
 
 msgid "G204_PzVI_Tiger_P_CFE_A_short_special"
 msgstr "坚固的正面装甲、机动增强系统"
+
+msgid "G205_Jagdpanzer_7_Pfanne"
+msgstr "7号坦歼\"平底锅\""
+
+msgid "G205_Jagdpanzer_7_Pfanne_descr"
+msgstr ""
+"7号坦歼\"平底锅\"计划由D系研发，旨在打造一辆火力强劲、结构紧凑且首发命中率高的自行反坦克炮。该坦克采用了在当时颇为少见的流线型车体设计，理论上能够提高对HEAT和APCR炮弹的防护能力。坦克依靠液气悬挂装置实现垂直瞄准，通过车体旋转完成水平瞄准。尽管这一概念很有前景，但该计划对复杂液压系统的依赖程度过高。随着用途更为全面的主战坦克的发展，该计划最终被终止。"
+
+msgid "G205_Jagdpanzer_7_Pfanne_long_special"
+msgstr ""
+"7号坦歼\"平底锅\"是一辆D系VII级狙击型自行反坦克炮。作为同等级中首辆拥有V系风格攻城模式和液气悬挂装置的坦克，它非常擅长远距离精准打击。它拥有良好的隐蔽性和机动性，配备一门威力强大的105毫米火炮，平均穿透力出色，但较长的装填时间在一定程度上限制了其火力优势。"
+
+msgid "G205_Jagdpanzer_7_Pfanne_short"
+msgstr "7号坦歼\"平底锅\""
+
+msgid "G205_Jagdpanzer_7_Pfanne_short_special"
+msgstr "液气悬挂装置，出色的精度"
 
 msgid "G20_Marder_II"
 msgstr "“黄鼠狼”II"
@@ -3364,6 +3466,9 @@ msgstr "拥有完美穿透力的优秀火炮，可靠的装甲。"
 msgid "MAN_D2840_LXE"
 msgstr "曼恩 D2840 LXE"
 
+msgid "MAN_D2840_LXE_TH_72"
+msgstr "曼恩 D2840 LXE (TH)"
+
 msgid "MAN_H_40"
 msgstr "曼恩 H 40"
 
@@ -3555,6 +3660,9 @@ msgstr "迈巴赫 HL90"
 
 msgid "Maybach_HL_100TR_BW"
 msgstr "迈巴赫 HL 100 TR BW"
+
+msgid "Maybach_HL_100_E"
+msgstr "迈巴赫 HL 100 E"
 
 msgid "Maybach_HL_100_WT_IV"
 msgstr "迈巴赫 HL 100 (IV WT)"
@@ -3996,9 +4104,6 @@ msgstr "迈巴赫新型发动机 A"
 msgid "Maybach_HL_234P60_short"
 msgstr "迈巴赫新型发动机"
 
-msgid "Maybach_HL_234_FR"
-msgstr "迈巴赫 HL 234"
-
 msgid "Maybach_HL_234_TRM_P30"
 msgstr "迈巴赫 HL 234 TRM P30"
 
@@ -4081,6 +4186,9 @@ msgstr "迈巴赫 HL 98"
 
 msgid "Maybach_NL38TR"
 msgstr "迈巴赫 HL 38 TR"
+
+msgid "Maybach_NL_38TR_P"
+msgstr "迈巴赫 NL 38TR P"
 
 msgid "Maybach_Neues_Projekt_90"
 msgstr "迈巴赫新型发动机 90"
@@ -4626,6 +4734,9 @@ msgstr "SEM 25A"
 msgid "SEM_25A"
 msgstr "SEM 25A"
 
+msgid "SEM_25A_TH_72"
+msgstr "SEM 25A (TH)"
+
 msgid "SEM_25B"
 msgstr "SEM 25B"
 
@@ -4634,6 +4745,9 @@ msgstr "SEM 25BK"
 
 msgid "SEM_25C"
 msgstr "SEM 25C无线电台"
+
+msgid "SEM_25D"
+msgstr "SEM 25D"
 
 msgid "SEM_25E"
 msgstr "SEM 25E"
@@ -4895,9 +5009,6 @@ msgstr "M4190 GF"
 msgid "Turret_1_G121_Grille_15_L63"
 msgstr "“蟋蟀”15"
 
-msgid "Turret_1_G121_Grille_15_L63_FR"
-msgstr "\"蟋蟀\"15 BS"
-
 msgid "Turret_1_G122_VK6501H"
 msgstr "VK6501(H) SW"
 
@@ -5077,8 +5188,14 @@ msgstr "\"鹿角虫\""
 msgid "Turret_1_G18_JagdPanther"
 msgstr "“猎豹”"
 
+msgid "Turret_1_G190_TH_72"
+msgstr "TH-72"
+
 msgid "Turret_1_G191_StuG_IIIF_CFE_A"
 msgstr "III号突击炮F型\"河马\""
+
+msgid "Turret_1_G192_E_10"
+msgstr "E-10"
 
 msgid "Turret_1_G193_Pz_Kpfw_55"
 msgstr "Pz.54"
@@ -5098,8 +5215,17 @@ msgstr "67主战方案"
 msgid "Turret_1_G200_Chi_Go"
 msgstr "\"黑豹\"奇戈"
 
+msgid "Turret_1_G201_Panzerjager_I_mit_7_5_cm"
+msgstr "短75 I号坦歼"
+
+msgid "Turret_1_G202_PzKpfw_T_34_747_r"
+msgstr "T 34 747 (r)"
+
 msgid "Turret_1_G204_PzVI_Tiger_P_CFE_A"
 msgstr "\"虎\"(P)\"豹狮\""
+
+msgid "Turret_1_G205_Jagdpanzer_7_Pfanne"
+msgstr "7号坦歼\"平底锅\""
 
 msgid "Turret_1_G23_Grille"
 msgstr "“蟋蟀”"
@@ -5515,6 +5641,9 @@ msgstr "一辆采用后置式炮塔的超重型坦克。由克虏伯公司研发
 msgid "VK7201_short"
 msgstr "VK7201"
 
+msgid "V_2"
+msgstr "V-2"
+
 msgid "V_2K_T"
 msgstr "V-2K"
 
@@ -5570,6 +5699,9 @@ msgstr ""
 
 msgid "_100mm_UOF-412"
 msgstr "高爆-412"
+
+msgid "_105_mm_Rh_105_20_A"
+msgstr "105mm Rh 105 20 A炮"
 
 msgid "_105mmGr39H1A"
 msgstr "Gr 39 H1A"
@@ -5849,6 +5981,9 @@ msgstr "Pzgr 39 K (B)"
 msgid "_105mm_Pzgr_39_L_100"
 msgstr "Pzgr 39 L (100)"
 
+msgid "_105mm_Pzgr_39_L_100_A"
+msgstr "Pzgr 39 L (100) A"
+
 msgid "_105mm_Pzgr_39_L_180A"
 msgstr "Pzgr 39 L (180A)"
 
@@ -5863,6 +5998,9 @@ msgstr "Pzgr 40W"
 
 msgid "_105mm_Pzgr_40_100"
 msgstr "Pzgr 40 (100)"
+
+msgid "_105mm_Pzgr_40_100_A"
+msgstr "Pzgr 40 (100) A"
 
 msgid "_105mm_Pzgr_40_180A"
 msgstr "Pzgr 40 (180A)"
@@ -5948,6 +6086,9 @@ msgstr "Sprgr K (B)"
 msgid "_105mm_Sprgr_L_100"
 msgstr "Sprgr L (100)"
 
+msgid "_105mm_Sprgr_L_100_A"
+msgstr "Sprgr L (100) A"
+
 msgid "_105mm_Sprgr_L_180A"
 msgstr "Sprgr L (180A)"
 
@@ -5991,9 +6132,6 @@ msgstr "10WSc"
 
 msgid "_10WSc_CFE_T"
 msgstr "10WSc T"
-
-msgid "_10WSc_FR"
-msgstr "10WSc"
 
 msgid "_10WSc_P"
 msgstr "10WSc P"
@@ -6608,9 +6746,6 @@ msgstr "Gr 44 Hl/A"
 msgid "_150mm_Gr_HL"
 msgstr "Gr HL"
 
-msgid "_150mm_Gr_HL_FR"
-msgstr "Gr HL"
-
 msgid "_150mm_Gr_Hl_A"
 msgstr "Gr Hl/A"
 
@@ -6633,9 +6768,6 @@ msgid "_150mm_Pak_L_44"
 msgstr "15cm Pak L/44炮"
 
 msgid "_150mm_Pak_L_63"
-msgstr "15cm Pak L/63炮"
-
-msgid "_150mm_Pak_L_63_FR"
 msgstr "15cm Pak L/63炮"
 
 msgid "_150mm_PzGr39H2_SH"
@@ -6662,9 +6794,6 @@ msgstr "Pzgr 42 (IV WT) T"
 msgid "_150mm_Pzgr_44"
 msgstr "Pzgr 44"
 
-msgid "_150mm_Pzgr_FR"
-msgstr "Pzgr"
-
 msgid "_150mm_Pzgr_m_Hb"
 msgstr "Pzgr (m.Hb)"
 
@@ -6688,9 +6817,6 @@ msgstr "Sprgr 18 (\"蟋蟀\")"
 
 msgid "_150mm_Sprgr_36"
 msgstr "Sprgr 36"
-
-msgid "_150mm_Sprgr_FR"
-msgstr "Sprgr"
 
 msgid "_150mm_Sprgr_G"
 msgstr "Sprgr G"
@@ -7233,6 +7359,18 @@ msgstr "Sprgr 18 (2801)"
 msgid "_50mm_Sprgr_18_II_L"
 msgstr "Sprgr 18 (II L)"
 
+msgid "_57mm_57_438R_m_70_AP_T_TH_72"
+msgstr "57x438R m/70 AP-T (TH)"
+
+msgid "_57mm_57_438R_m_71_HE_T_TH_72"
+msgstr "57x438R m/71 HE-T (TH)"
+
+msgid "_57mm_57_438R_m_78_APCR_T_TH_72"
+msgstr "57x438R m/78 APCR-T (TH)"
+
+msgid "_57mm_Bofors_L_70_Mk_1_TH_72"
+msgstr "博福斯 L/70 Mk.1 (TH)"
+
 msgid "_7.92mm_AP"
 msgstr "7.92×94mm弹"
 
@@ -7289,6 +7427,9 @@ msgstr "7.5cm Flak L/60炮"
 
 msgid "_75mm_Gr_38_HL_C"
 msgstr "Gr 38 HL C"
+
+msgid "_75mm_Gr_Patr_39_HL"
+msgstr "Gr Patr 39 HL"
 
 msgid "_75mm_K_Gr_rot_Pz_C"
 msgstr "K.Gr.rot.Pz.C"
@@ -7389,6 +7530,9 @@ msgstr ""
 "7.5cm PaK 39\n"
 "L/48炮"
 
+msgid "_75mm_PaK_39_L48_C"
+msgstr "7.5cm PaK 39 L/48 C炮"
+
 msgid "_75mm_PaK_40_2"
 msgstr ""
 "7.5cm Pak 40/2\n"
@@ -7447,6 +7591,9 @@ msgstr "Pzgr 39 H型"
 msgid "_75mm_Pzgr_39_B"
 msgstr "Pzgr 39 (B)"
 
+msgid "_75mm_Pzgr_39_BL"
+msgstr "Pzgr 39 BL"
+
 msgid "_75mm_Pzgr_39_E"
 msgstr "Pzgr 39 (E)"
 
@@ -7495,6 +7642,9 @@ msgstr "Pzgr 40 H型"
 msgid "_75mm_Pzgr_40_B"
 msgstr "Pzgr 40 (B)"
 
+msgid "_75mm_Pzgr_40_BL"
+msgstr "Pzgr 40 BL"
+
 msgid "_75mm_Pzgr_40_E"
 msgstr "Pzgr 40 (E)"
 
@@ -7525,6 +7675,9 @@ msgstr "Pzgr 40 T 3001"
 msgid "_75mm_Pzgr_40_Typ_100"
 msgstr "Pzgr 40 100型"
 
+msgid "_75mm_Pzgr_Patr_39"
+msgstr "Pzgr Patr 39"
+
 msgid "_75mm_Sprg.18"
 msgstr "Sprgr 18"
 
@@ -7542,6 +7695,9 @@ msgstr "Sprgr Patr 18"
 
 msgid "_75mm_Sprg_18_B"
 msgstr "Sprgr 18 (B)"
+
+msgid "_75mm_Sprg_18_BL"
+msgstr "Sprg 18 BL"
 
 msgid "_75mm_Sprg_34_C"
 msgstr "Sprgr 34 C"
@@ -7591,6 +7747,9 @@ msgstr "Sprgr 18 T 3001"
 msgid "_75mm_Sprgr_18_Typ_100"
 msgstr "Sprgr 18 100型"
 
+msgid "_75mm_Sprgr_Patr_37"
+msgstr "Sprgr Patr 37"
+
 msgid "_75mm_StuK42_L70"
 msgstr ""
 "7.5cm StuK42\n"
@@ -7623,6 +7782,18 @@ msgid "_75mm_Waffe0725_1944"
 msgstr ""
 "7.5/5.5cm KwK 44\n"
 "L/53炮"
+
+msgid "_76_2mm_BR_350P"
+msgstr "BR-350P"
+
+msgid "_76_2mm_KwK_L41_5"
+msgstr "7.62cm KwK 41 L/41.5炮"
+
+msgid "_76_2mm_UBR_350A"
+msgstr "UBR-350A"
+
+msgid "_76_2mm_UOF_350"
+msgstr "UOF-350"
 
 msgid "_76mm_PaK_36r"
 msgstr "7.62cm PaK 36(r)炮"
@@ -7670,6 +7841,9 @@ msgid "_7_5_cm_Stu_K_40_L_43_B_short"
 msgstr ""
 "7.5cm StuK 40\n"
 "L/43炮 (B)"
+
+msgid "_7_5_cm_Stu_K_40_L_48_B"
+msgstr "7.5cm StuK 40 L/48 B炮"
 
 msgid "_88mm_Flak_37_L56"
 msgstr ""

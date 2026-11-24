@@ -50,7 +50,7 @@ class IBattleResultsService(object):
     def getAdditionalXPValue(self, arenaUniqueID):
         raise NotImplementedError
 
-    def submitPlayerSatisfactionRating(self, areneUniqueID, rating):
+    def submitPlayerSatisfactionRating(self, arenaUniqueID, rating):
         raise NotImplementedError
 
     def getPlayerSatisfactionRating(self, arenaUniqueID):

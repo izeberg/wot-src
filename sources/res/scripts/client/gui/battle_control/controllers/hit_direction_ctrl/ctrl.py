@@ -20,7 +20,7 @@ _logger = logging.getLogger(__name__)
 class HitDirectionController(IViewComponentsController):
     __slots__ = ('__uiHitComponents', '__isVisible', '__callbackIDs', '__damageIndicatorCrits',
                  '__damageIndicatorAllies', '__damageIndicatorExtType', '__arenaDP',
-                 '__weakref__')
+                 '__controllingVehicleID', '__weakref__')
     settingsCore = dependency.descriptor(ISettingsCore)
     sessionProvider = dependency.descriptor(IBattleSessionProvider)
     lobbyContext = dependency.descriptor(ILobbyContext)
@@ -31,6 +31,8 @@ class HitDirectionController(IViewComponentsController):
            HitType.ARTY_HIT_PREDICTION: BaseHitComponent(ArtyHitPredictionPull())}
         self.__isVisible = False
         self.__arenaDP = weakref.proxy(setup.arenaDP)
+        self.__controllingVehicleID = None
+        return
 
     def getControllerID(self):
         return BATTLE_CTRL_ID.HIT_DIRECTION
@@ -144,7 +146,9 @@ class HitDirectionController(IViewComponentsController):
             self._hideAllHits()
 
     def __onVehicleControlling(self, vehicle):
-        if self.__arenaDP.getPlayerVehicleID() != self.sessionProvider.shared.vehicleState.getControllingVehicleID():
+        vehicleID = self.sessionProvider.shared.vehicleState.getControllingVehicleID()
+        if vehicleID != self.__controllingVehicleID:
+            self.__controllingVehicleID = vehicleID
             self._hideAllHits()
 
 

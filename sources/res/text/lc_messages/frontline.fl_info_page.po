@@ -416,21 +416,6 @@ msgstr "弱点部位: {{@ colorLegacy 'FFE4C0'}}舱门(70毫米)和通风口(25�
 msgid "rules/weapons/text"
 msgstr "防守方领地的大后方有5个炮台，它们是战斗的主要目标。进攻方团队需要摧毁3个炮台防御工事，而防守方团队则需要尽力保护它们。"
 
-msgid "subTitle/differentMonth"
-msgstr ""
-"{{@ colorLegacy 'FFE4C0'}}{{startMonth}}{{from}}日{{/}}至{{@ colorLegacy "
-"'FFE4C0'}}{{endMonth}}{{to}}日{{/}}"
-
-msgid "subTitle/differentYears"
-msgstr ""
-"{{@ colorLegacy 'FFE4C0'}}{{startYear}}年{{startMonth}}{{from}}日{{/}}至{{@ "
-"colorLegacy 'FFE4C0'}}{{endYear}}年{{endMonth}}{{to}}日{{/}}"
-
-msgid "subTitle/sameMonth"
-msgstr ""
-"{{@ colorLegacy 'FFE4C0'}}{{endMonth}}{{from}}日{{/}}至{{@ colorLegacy "
-"'FFE4C0'}}{{to}}日{{/}}"
-
 msgid "winStrategy/firstLine"
 msgstr "{{@ colorLegacy 'FFE4C0'}}第一战线的{{/}}A、B、C区域是双方团队的起始点。"
 

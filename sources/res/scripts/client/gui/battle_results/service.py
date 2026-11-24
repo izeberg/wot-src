@@ -9,7 +9,6 @@ from gui.Scaleform.lobby_entry import getLobbyStateMachine
 from gui.battle_results import context, emblems, reusable, stored_sorting
 from gui.battle_results.pbs_helpers.common import pushNoBattleResultsDataMessage
 from gui.battle_results.composer import RegularStatsComposer
-from gui.battle_results.random_stats_ctrl import RandomBattleResultStatsCtrl
 from gui.battle_results.settings import PREMIUM_STATE
 from gui.shared import event_dispatcher, events, g_eventBus, EVENT_BUS_SCOPE
 from gui.shared.gui_items.processors.common import BattleResultsGetter, PremiumBonusApplier
@@ -35,7 +34,6 @@ class _PostBattleFakeData(object):
     __itemsCache = dependency.descriptor(IItemsCache)
 
     def __init__(self):
-        self.defaultPBS = True
         self.vehicleAndOffsets = False
         self.vehCameraSmallOffset = 2
         self.vehCameraMediumOffset = 4
@@ -51,14 +49,6 @@ class _PostBattleFakeData(object):
             if vehicleType:
                 result = self.__itemsCache.items.getVehicleCopyByCD(vehicleType.compactDescr)
             return result
-
-    def getStatsCtrl(self, battleResults):
-        statsCtrl = RegularStatsComposer(battleResults.reusable)
-        statsCtrl.setResults(battleResults.results, battleResults.reusable)
-        return statsCtrl
-
-    def switchPBS(self):
-        self.defaultPBS ^= True
 
 
 g_pbsFakeData = _PostBattleFakeData()
@@ -178,8 +168,6 @@ class BattleResultsService(IBattleResultsService):
     def getResultsVO(self, arenaUniqueID):
         if arenaUniqueID in self.__statsCtrls:
             statsCtrl = self.__statsCtrls[arenaUniqueID]
-            if self.__isSwitchEnabled(statsCtrl):
-                statsCtrl = g_pbsFakeData.getStatsCtrl(statsCtrl.getResults())
             vo = statsCtrl.getVO()
         else:
             vo = None
@@ -290,13 +278,8 @@ class BattleResultsService(IBattleResultsService):
     def __showResults(self, ctx):
         yield self.requestResults(ctx)
 
-    def __isSwitchEnabled(self, statsCtrl):
-        return not g_pbsFakeData.defaultPBS and isinstance(statsCtrl, RandomBattleResultStatsCtrl)
-
     def __notifyBattleResultsPosted(self, arenaUniqueID, needToShowUI=False):
         statsCtrl = self.__statsCtrls[arenaUniqueID]
-        if self.__isSwitchEnabled(statsCtrl):
-            statsCtrl = g_pbsFakeData.getStatsCtrl(statsCtrl.getResults())
         window = None
         if needToShowUI:
             window = statsCtrl.onShowResults(arenaUniqueID)

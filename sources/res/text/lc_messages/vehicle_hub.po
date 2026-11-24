@@ -74,7 +74,7 @@ msgid "abilities/common/name/autoShootGun"
 msgstr "自动炮"
 
 msgid "abilities/common/name/combatThrottle"
-msgstr "战斗档位"
+msgstr "战斗挡位"
 
 msgid "abilities/common/name/damageMutable"
 msgstr "深膛线火炮"
@@ -410,6 +410,10 @@ msgstr "该坦克的火炮配备特殊装置，可在开火前调整射击诸元
 msgid "characteristics/abilities/special/description/accuracyStacks"
 msgstr ""
 "当坦克静止不动或以低于特定速度移动时，模拟弹道计算装置将启动，并累积精度等级，从而提高下一次射击的命中率。若超过速度限制，精度累积进度将暂停，直至降低速度。当达到最大精度等级时，坦克将获得相当不俗的火炮稳定性，移动时及炮塔/车体旋转时的炮弹散布范围有所降低。该效果会在开火后被移除。"
+
+msgid "characteristics/abilities/special/description/autoreloaderSurge"
+msgstr ""
+"该机构可立刻将炮弹装填时间缩短至一个较短的固定值。每次使用会为每发炮弹消耗1次储能次数，并且储能次数会随时间补充——弹鼓装满时补充速度更快。战斗开始时提供固定数量的储能次数。"
 
 msgid "characteristics/abilities/special/description/auxiliaryRocketLauncher"
 msgstr "该坦克在炮盾上安装了火箭发射器。激活该能力即可切换至副武器瞄准镜，然后使用开火键发射一枚无控火箭。"

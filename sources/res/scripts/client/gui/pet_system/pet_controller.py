@@ -32,9 +32,10 @@ class PetSystemController(IGlobalListener, IPetSystemController):
     itemsCache = dependency.descriptor(IItemsCache)
     lobbyContext = dependency.descriptor(ILobbyContext)
     hangarSpace = dependency.descriptor(IHangarSpace)
+    fadeManager = dependency.descriptor(IFadingController)
+    _OPEN_EVENT_COOLDOWN = 2.0
     __hangarLoadingController = dependency.descriptor(IHangarLoadingController)
     __hangarGuiCtrl = dependency.descriptor(IHangarGuiController)
-    fadeManager = dependency.descriptor(IFadingController)
 
     def __init__(self):
         super(PetSystemController, self).__init__()
@@ -52,6 +53,8 @@ class PetSystemController(IGlobalListener, IPetSystemController):
         self._petInHangar = None
         self.__medalReceived = False
         self.__isPetObjectPresenterOpen = 0
+        self.__isActiveEventUpdated = True
+        self.__lastEventRequestTime = 0.0
         return
 
     def init(self):
@@ -245,22 +248,24 @@ class PetSystemController(IGlobalListener, IPetSystemController):
         return petIDs + self.getPetsPromoConfig().getAvailablePets(petIDs)
 
     def showEventView(self, isFullScreen=False):
-        if not self.isEnabled:
-            return
-        eventID = self.getActiveEvent()
-        if eventID:
+        isNotInCooldown = BigWorld.time() - self.__lastEventRequestTime >= self._OPEN_EVENT_COOLDOWN
+        if self.isEnabled and self.getActiveEvent() and (self.__isActiveEventUpdated or isNotInCooldown):
             self.__openEvent(isFullScreen)
 
     @adisp_process
     def __openEvent(self, isFullScreen):
+        self.__isActiveEventUpdated = False
+        self.__lastEventRequestTime = BigWorld.time()
         result = yield PetEventOpenProcessor().request()
-        if result:
-            if result.success:
-                ctx = {'eventID': result.auxData.get('eventID'), 'rewards': result.auxData.get('bonus')}
-                if isFullScreen:
-                    openPetEventFullscreenWindow(ctx)
-                else:
-                    showPetEventView(ctx)
+        if result and result.success:
+            ctx = {'eventID': result.auxData.get('eventID'), 'rewards': result.auxData.get('bonus')}
+            if isFullScreen:
+                openPetEventFullscreenWindow(ctx)
+            else:
+                showPetEventView(ctx)
+        else:
+            self.__isActiveEventUpdated = True
+            self.__lastEventRequestTime = 0.0
 
     @adisp_process
     def sendFirstClick(self):
@@ -300,6 +305,7 @@ class PetSystemController(IGlobalListener, IPetSystemController):
 
     def onDisconnected(self):
         self.__medalReceived = False
+        self.__isActiveEventUpdated = True
         self._petInHangar = None
         self._removeListeners()
         return
@@ -395,6 +401,8 @@ class PetSystemController(IGlobalListener, IPetSystemController):
             if PS_PDATA_KEYS.EVENTS_DATA in petSystemDiff or PS_PDATA_KEYS.ACTIVE_STATE_BEHAVIOR in petSystemDiff:
                 self.storageProxy.updateClientDiff()
             if PS_PDATA_KEYS.EVENTS_DATA in petSystemDiff:
+                if PS_PDATA_KEYS.ACTIVE_EVENT in petSystemDiff[PS_PDATA_KEYS.EVENTS_DATA]:
+                    self.__isActiveEventUpdated = True
                 self.onUpdateEventData()
             if PS_PDATA_KEYS.BONUS in petSystemDiff and PS_PDATA_KEYS.APPLIED_BONUSES in petSystemDiff[PS_PDATA_KEYS.BONUS]:
                 self.onUpdateAppliedBonus()

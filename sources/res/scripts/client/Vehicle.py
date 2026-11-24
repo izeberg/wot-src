@@ -2,7 +2,7 @@ from __future__ import absolute_import, division
 import functools, logging, math, random, typing, weakref
 from collections import namedtuple
 from typing import List
-import BigWorld, CGF, GenericComponents, InstantStatuses, Math, Statuses, WoT, AreaDestructibles, BattleReplay, DestructiblesCache, TriggersManager, constants, physics_shared
+import BigWorld, CGF, InstantStatuses, Math, Statuses, WoT, AreaDestructibles, BattleReplay, DestructiblesCache, TriggersManager, constants, physics_shared
 from CGF import TransformComponent
 from account_helpers.settings_core.settings_constants import GAME
 from aih_constants import ShakeReason
@@ -12,6 +12,7 @@ from cgf_modules.game_events import ArmorHitPlacement
 from cgf_script.entity_dyn_components import BWEntitiyComponentTracker
 from constants import VEHICLE_HIT_EFFECT, VEHICLE_SIEGE_STATE, ATTACK_REASON_INDICES, ATTACK_REASON, SPT_MATKIND
 from helpers.collisions import SegmentCollisionResultExt
+from vehicle_systems import vehicle_composition
 from vehicle_systems.components.vehicle_assembly_manager import GunInfoAssembler
 from common_tank_structure import VehicleAppearanceCacheInfo
 from DamageComponents import DamageZoneType
@@ -262,6 +263,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         self.__prevHealth = None
         self.__quickShellChangerIsActive = False
         self.__isInDebuff = False
+        self.__dynCgfAccess = None
         self.__cameraTargetMatrix = Math.WGAdaptiveMatrixProvider()
         self.set_postmortemViewPointName()
         g_playerEvents.onVehicleEntityCreated(self)
@@ -294,6 +296,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         oldTypeDescriptor = self.typeDescriptor
         self.typeDescriptor = self.getDescr(None if isDelayedRespawn else self.respawnCompactDescr)
         forceReloading = self.respawnCompactDescr is not None
+        self.__dynCgfAccess = CGF.DynamicComponentAccess(self.spaceID)
         queue = CGF.CommandQueue(self.spaceID)
         queue.setGameObjectName(self.entityGameObject, ('Vehicle: {}, id: {}').format(self.typeDescriptor.name, self.id))
         var_storage.createForRoot(self, queue)
@@ -511,20 +514,20 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
                     partGO = self.appearance.partsGameObjects.getPartGameObject(prefabHit, self.spaceID, self.appearance.gameObject)
                     CGF.loadAndCreatePrefabWithParent(prefabHit, partGO, firstHitPoint.matrix, hitLoadCallback)
                 nodeName = TankPartNames.getActualNodeNameByPartName(firstHitPoint.componentName, self.isAlive())
-                hitGo = GenericComponents.findSlot(self.entityGameObject, nodeName)
-                if hitGo.valid:
+                hitGoUuid = vehicle_composition.getCompositionSlotUuid(self.appearance.gameObject, nodeName)
+                if hitGoUuid.valid:
                     isWheel = firstHitPoint.componentName in self.typeDescriptor.chassis.wheelsArmor
                     location = firstHitPoint.matrix.translation
                     effGroup = VEHICLE_HIT_EFFECT.getEffectGroup(prefabHitEffectCode)
                     armorHitPlacement = ArmorHitPlacement.WHEEL if isWheel else ArmorHitPlacement.REGULAR
                     if isWheel:
-                        transformComponent = hitGo.findRead(TransformComponent)
+                        transformComponent = self.__dynCgfAccess.findRead(hitGoUuid, TransformComponent)
                         if transformComponent:
                             transform = transformComponent.transform
                             transform.translation = Math.Vector3(0, 0, 0)
                             transform.invert()
                             location = transform.applyVector(location)
-                    CGF.postEvent(self.spaceID, game_events.VehicleHitEvent(self.entityGameObject, hitGo, location, firstHitPoint.normal, game_events.GunShellInfo(firstHitPoint.caliber, firstHitPoint.shellType), shellVelocity, damage, firstHitDirLocal, prefabEffIndex, effGroup, prefabHitEffectCode, armorHitPlacement))
+                    CGF.postEvent(self.spaceID, game_events.VehicleHitEvent(self.entityGameObject.uuid, hitGoUuid, location, firstHitPoint.normal, game_events.GunShellInfo(firstHitPoint.caliber, firstHitPoint.shellType), shellVelocity, damage, firstHitDirLocal, prefabEffIndex, effGroup, prefabHitEffectCode, armorHitPlacement))
                 else:
                     self.__logVehicle(_logger.error, 'Unable to post VehicleHitEvent: hitGo was not found by name: %s', firstHitPoint.componentName)
             if not self.isAlive():
