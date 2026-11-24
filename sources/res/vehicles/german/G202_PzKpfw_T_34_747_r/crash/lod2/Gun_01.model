@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G202_PzKpfw_T_34_747_r/crash/lod2/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G202_PzKpfw_T_34_747_r/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.425777 -0.304523 -0.909742</min>
+		<max>0.287578 0.335227 2.336407</max>
+	</visibilityBox>
+</root>

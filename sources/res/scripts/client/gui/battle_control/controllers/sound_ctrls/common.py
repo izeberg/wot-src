@@ -239,39 +239,39 @@ class ShotsResultSoundController(IShotsResultSoundController):
 
     def getVehicleHitResultSound(self, enemyVehID, hitFlags, enemiesHitCount):
         sound = None
-        if hitFlags & VHF.ATTACK_IS_EXTERNAL_EXPLOSION:
-            if hitFlags & VHF.MATERIAL_WITH_POSITIVE_DF_PIERCED_BY_EXPLOSION:
-                sound = self.ENEMY_DAMAGED_BY_NEAR_EXPLOSION
-            elif hitFlags & VHF.IS_ANY_PIERCING_MASK:
-                sound = self.ENEMY_NOT_DAMAGED_BY_NEAR_EXPLOSION
-        elif hitFlags & VHF.MATERIAL_WITH_POSITIVE_DF_PIERCED_BY_PROJECTILE:
-            if hitFlags & (VHF.GUN_DAMAGED_BY_PROJECTILE | VHF.GUN_DAMAGED_BY_EXPLOSION):
-                sound = self.ENEMY_AND_GUN_DAMAGED_BY_PROJECTILE
+        if hitFlags & VHF.ATTACK_IS_DIRECT_PROJECTILE:
+            if hitFlags & VHF.MATERIAL_WITH_POSITIVE_DF_PIERCED_BY_PROJECTILE:
+                if hitFlags & (VHF.GUN_DAMAGED_BY_PROJECTILE | VHF.GUN_DAMAGED_BY_EXPLOSION):
+                    sound = self.ENEMY_AND_GUN_DAMAGED_BY_PROJECTILE
+                elif hitFlags & (VHF.CHASSIS_DAMAGED_BY_PROJECTILE | VHF.CHASSIS_DAMAGED_BY_EXPLOSION):
+                    sound = self.ENEMY_AND_CHASSIS_DAMAGED_BY_PROJECTILE
+                else:
+                    sound = self.ENEMY_DAMAGED_BY_PROJECTILE
+            elif hitFlags & VHF.MATERIAL_WITH_POSITIVE_DF_NOT_PIERCED_WITH_DAMAGE_BY_PROJECTILE:
+                sound = self.ENEMY_DAMAGED_BY_NOT_PIERCING
+            elif hitFlags & VHF.MATERIAL_WITH_POSITIVE_DF_PIERCED_BY_EXPLOSION:
+                sound = self.ENEMY_DAMAGED_BY_DIRECT_EXPLOSION
+            elif hitFlags & VHF.RICOCHET and not hitFlags & VHF.DEVICE_PIERCED_BY_PROJECTILE:
+                sound = self.ENEMY_RICOCHET
+            elif hitFlags & VHF.MATERIAL_WITH_POSITIVE_DF_NOT_PIERCED_BY_PROJECTILE:
+                if hitFlags & (VHF.GUN_DAMAGED_BY_PROJECTILE | VHF.GUN_DAMAGED_BY_EXPLOSION):
+                    sound = self.ENEMY_NOT_DAMAGED_ATTEMPT_AND_GUN_DAMAGED
+                elif hitFlags & (VHF.CHASSIS_DAMAGED_BY_PROJECTILE | VHF.CHASSIS_DAMAGED_BY_EXPLOSION):
+                    sound = self.ENEMY_NOT_DAMAGED_ATTEMPT_AND_CHASSIS_DAMAGED
+                else:
+                    sound = self.ENEMY_NOT_DAMAGED_ATTEMPT
+            elif hitFlags & (VHF.GUN_DAMAGED_BY_PROJECTILE | VHF.GUN_DAMAGED_BY_EXPLOSION):
+                sound = self.ENEMY_NOT_DAMAGED_NO_ATTEMPT_AND_GUN_DAMAGED
             elif hitFlags & (VHF.CHASSIS_DAMAGED_BY_PROJECTILE | VHF.CHASSIS_DAMAGED_BY_EXPLOSION):
-                sound = self.ENEMY_AND_CHASSIS_DAMAGED_BY_PROJECTILE
+                sound = self.ENEMY_NOT_DAMAGED_NO_ATTEMPT_AND_CHASSIS_DAMAGED
+            elif hitFlags & VHF.IS_ANY_PIERCING_MASK and not hitFlags & self._ARMOR_SCREEN_FLAGS:
+                sound = self.ENEMY_NOT_DAMAGED_NO_ATTEMPT
             else:
-                sound = self.ENEMY_DAMAGED_BY_PROJECTILE
-        elif hitFlags & VHF.MATERIAL_WITH_POSITIVE_DF_NOT_PIERCED_WITH_DAMAGE_BY_PROJECTILE:
-            sound = self.ENEMY_DAMAGED_BY_NOT_PIERCING
+                sound = self.ENEMY_NOT_DAMAGED_AND_NOT_PIERCED
         elif hitFlags & VHF.MATERIAL_WITH_POSITIVE_DF_PIERCED_BY_EXPLOSION:
-            sound = self.ENEMY_DAMAGED_BY_DIRECT_EXPLOSION
-        elif hitFlags & VHF.RICOCHET and not hitFlags & VHF.DEVICE_PIERCED_BY_PROJECTILE:
-            sound = self.ENEMY_RICOCHET
-        elif hitFlags & VHF.MATERIAL_WITH_POSITIVE_DF_NOT_PIERCED_BY_PROJECTILE:
-            if hitFlags & (VHF.GUN_DAMAGED_BY_PROJECTILE | VHF.GUN_DAMAGED_BY_EXPLOSION):
-                sound = self.ENEMY_NOT_DAMAGED_ATTEMPT_AND_GUN_DAMAGED
-            elif hitFlags & (VHF.CHASSIS_DAMAGED_BY_PROJECTILE | VHF.CHASSIS_DAMAGED_BY_EXPLOSION):
-                sound = self.ENEMY_NOT_DAMAGED_ATTEMPT_AND_CHASSIS_DAMAGED
-            else:
-                sound = self.ENEMY_NOT_DAMAGED_ATTEMPT
-        elif hitFlags & (VHF.GUN_DAMAGED_BY_PROJECTILE | VHF.GUN_DAMAGED_BY_EXPLOSION):
-            sound = self.ENEMY_NOT_DAMAGED_NO_ATTEMPT_AND_GUN_DAMAGED
-        elif hitFlags & (VHF.CHASSIS_DAMAGED_BY_PROJECTILE | VHF.CHASSIS_DAMAGED_BY_EXPLOSION):
-            sound = self.ENEMY_NOT_DAMAGED_NO_ATTEMPT_AND_CHASSIS_DAMAGED
-        elif hitFlags & VHF.IS_ANY_PIERCING_MASK and not hitFlags & self._ARMOR_SCREEN_FLAGS:
-            sound = self.ENEMY_NOT_DAMAGED_NO_ATTEMPT
-        else:
-            sound = self.ENEMY_NOT_DAMAGED_AND_NOT_PIERCED
+            sound = self.ENEMY_DAMAGED_BY_NEAR_EXPLOSION
+        elif hitFlags & VHF.IS_ANY_PIERCING_MASK:
+            sound = self.ENEMY_NOT_DAMAGED_BY_NEAR_EXPLOSION
         return sound
 
     def __invalidateCurrentVehicle(self, vehicle):

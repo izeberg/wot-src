@@ -24,7 +24,7 @@ package net.wg.infrastructure.base.meta
       
       function as_setTimerText(param1:String, param2:String, param3:String) : void;
       
-      function as_showSecondaryTimer(param1:String, param2:int, param3:Number, param4:Boolean) : void;
+      function as_showSecondaryTimer(param1:String, param2:int, param3:Number, param4:Boolean, param5:Boolean) : void;
       
       function as_hideSecondaryTimer(param1:String) : void;
       

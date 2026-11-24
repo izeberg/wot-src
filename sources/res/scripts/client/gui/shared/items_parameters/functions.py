@@ -43,9 +43,10 @@ class _KpiDict(object):
 
         return _KpiDict(resultFactors, resultTypes)
 
-    def addKPI(self, name, value, kpiType):
+    def addKPI(self, name, value, kpiType, aggregated=False):
         if kpiType == KPI.Type.MUL:
-            self.__dict[name] = value * self.__dict.get(name, 1.0)
+            currentValue = self.__dict.get(name, 1.0)
+            self.__dict[name] = currentValue + (value - 1) if aggregated else value * currentValue
         else:
             self.__dict[name] += value
         self.__typeDict[name] = kpiType
@@ -77,10 +78,10 @@ class _KpiDict(object):
         return self.__dict.get(kpiName, 1.0)
 
 
-def aggregateKpi(kpiList):
+def aggregateKpi(kpiList, aggregated=False):
     result = _KpiDict()
     for kpi in kpiList:
-        result.addKPI(kpi.name, kpi.value, kpi.type)
+        result.addKPI(kpi.name, kpi.value, kpi.type, aggregated=aggregated)
 
     return result
 
@@ -92,7 +93,7 @@ def getKpiFactors(vehicle):
         if not (stepItem.isReceived() and stepItem.action.getActiveID() in activeModifications):
             continue
         for kpi in stepItem.action.getKpi(vehicle):
-            baseKPI.addKPI(kpi.name, kpi.value, kpi.type)
+            baseKPI.addKPI(kpi.name, kpi.value, kpi.type, aggregated=True)
 
     otherKPI = _KpiDict()
     for idx, optDevice in enumerate(vehicle.optDevices.installed):

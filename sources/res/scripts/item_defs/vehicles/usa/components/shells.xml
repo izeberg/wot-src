@@ -123,6 +123,69 @@
 		<normalizationAngle>5</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
 	</_37mm_AP_M74>
+	<_6pdr_57mm_AP_M1>
+		<id>368</id>
+		<userString>#usa_vehicles:_6pdr_57mm_AP_M1</userString>
+		<icon>ap</icon>
+		<price>20</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>57</caliber>
+		<isTracer>true</isTracer>
+		<effects>mediumArmorPiercing</effects>
+		<damage>
+			<armor>70</armor>
+			<devices>76</devices>
+		</damage>
+		<normalizationAngle>5</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_6pdr_57mm_AP_M1>
+	<_6pdr_57mm_APC_M1>
+		<id>369</id>
+		<userString>#usa_vehicles:_6pdr_57mm_APC_M1</userString>
+		<icon>ap_cr_premium</icon>
+		<price>1600</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>57</caliber>
+		<isTracer>true</isTracer>
+		<effects>mediumAPCR</effects>
+		<damage>
+			<armor>70</armor>
+			<devices>76</devices>
+		</damage>
+		<normalizationAngle>2</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_6pdr_57mm_APC_M1>
+	<_6pdr_57mm_HE_M1>
+		<id>370</id>
+		<userString>#usa_vehicles:_6pdr_57mm_HE_M1</userString>
+		<icon>he_modern</icon>
+		<price>27</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>57</caliber>
+		<explosionRadius>
+			0.66
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>mediumHighExplosive</effects>
+		<damage>
+			<armor>95</armor>
+			<devices>76</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				0.66
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>47</armor>
+				<devices>38</devices>
+			</damage>
+		</armorSpalls>
+	</_6pdr_57mm_HE_M1>
 	<_37mm_AP_M74_M5_T16>
 		<id>2142</id>
 		<userString>#usa_vehicles:_37mm_AP_M74_M5_T16</userString>
@@ -8495,36 +8558,6 @@
 			</damage>
 		</armorSpalls>
 	</_120mm_HE_M356E5>
-	<_120mm_HE_M356E5_FR>
-		<id>138</id>
-		<userString>#usa_vehicles:_120mm_HE_M356E5_FR</userString>
-		<icon>he_modern</icon>
-		<price>900</price>
-		<kind>HIGH_EXPLOSIVE</kind>
-		<mechanics>MODERN</mechanics>
-		<caliber>120</caliber>
-		<explosionRadius>
-			2.42
-			<!--BW_String-->
-		</explosionRadius>
-		<isTracer>true</isTracer>
-		<effects>largeHighExplosive</effects>
-		<damage>
-			<armor>515</armor>
-			<devices>165</devices>
-		</damage>
-		<armorSpalls>
-			<impactRadius>
-				2.42
-				<!--BW_String-->
-			</impactRadius>
-			<coneAngle>90</coneAngle>
-			<damage>
-				<armor>260</armor>
-				<devices>85</devices>
-			</damage>
-		</armorSpalls>
-	</_120mm_HE_M356E5_FR>
 	<_120mm_HE_M356_M103>
 		<id>2078</id>
 		<userString>#usa_vehicles:_120mm_HE_M356_M103</userString>
@@ -9083,22 +9116,6 @@
 		<normalizationAngle>5</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
 	</_120mm_AP_M358E5>
-	<_120mm_AP_M358E5_FR>
-		<id>128</id>
-		<userString>#usa_vehicles:_120mm_AP_M358E5_FR</userString>
-		<icon>ap</icon>
-		<price>1060</price>
-		<kind>ARMOR_PIERCING</kind>
-		<caliber>120</caliber>
-		<isTracer>true</isTracer>
-		<effects>largeArmorPiercing</effects>
-		<damage>
-			<armor>400</armor>
-			<devices>165</devices>
-		</damage>
-		<normalizationAngle>5</normalizationAngle>
-		<ricochetAngle>70</ricochetAngle>
-	</_120mm_AP_M358E5_FR>
 	<_120mm_AP_M358_M103>
 		<id>2076</id>
 		<userString>#usa_vehicles:_120mm_AP_M358_M103</userString>
@@ -9251,26 +9268,6 @@
 			<!--BW_String-->
 		</piercingPowerLossFactorByDistance>
 	</_120mm_HEAT_M469E5>
-	<_120mm_HEAT_M469E5_FR>
-		<id>137</id>
-		<userString>#usa_vehicles:_120mm_HEAT_M469E5_FR</userString>
-		<icon>hc_premium</icon>
-		<price>4400</price>
-		<improved>true</improved>
-		<kind>HOLLOW_CHARGE</kind>
-		<caliber>120</caliber>
-		<isTracer>true</isTracer>
-		<effects>largeHollowCharge</effects>
-		<damage>
-			<armor>400</armor>
-			<devices>165</devices>
-		</damage>
-		<ricochetAngle>85</ricochetAngle>
-		<piercingPowerLossFactorByDistance>
-			0.05
-			<!--BW_String-->
-		</piercingPowerLossFactorByDistance>
-	</_120mm_HEAT_M469E5_FR>
 	<_120mm_HEAT_M469_M103>
 		<id>2077</id>
 		<userString>#usa_vehicles:_120mm_HEAT_M469_M103</userString>

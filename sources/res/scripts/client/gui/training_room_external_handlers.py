@@ -1,5 +1,6 @@
 from __future__ import absolute_import
 from gui.prb_control.events_dispatcher import g_eventDispatcher
+from gui.prb_control.entities.random.pre_queue.vehicles_watcher import RegularVehiclesWatcher
 from gui.shared.system_factory import collectTrainingRoomExternalHandlers
 
 class TrainingRoomBaseHandler(object):
@@ -35,7 +36,7 @@ class TrainingRoomBaseHandler(object):
         return
 
     def getVehicleWatcherType(self):
-        return
+        return RegularVehiclesWatcher
 
     def getClientMessageData(self, errorType=None):
         return

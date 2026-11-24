@@ -29,7 +29,7 @@ from gui.impl.lobby.battle_pass.states import BattlePassState
 from gui.impl.pub.view_component import ViewComponent
 from gui.impl.wrappers.function_helpers import replaceNoneKwargsModel
 from gui.lootbox_system.base.common import ViewID, Views
-from gui.shared import events
+from gui.shared import events, g_eventBus
 from gui.shared.event_bus import EVENT_BUS_SCOPE
 from gui.shared.event_dispatcher import showBattlePass, showBattlePassHowToEarnPointsView, showBattlePassTankmenVoiceover, showBrowserOverlayView, showShop
 from gui.shared.utils.scheduled_notifications import Notifiable, PeriodicNotifier, SimpleNotifier
@@ -182,8 +182,6 @@ class ProgressionPresenter(ViewComponent[BattlePassProgressionsViewModel]):
          (
           events.BattlePassEvent.AWARD_VIEW_CLOSE, self.__onAwardViewClose, EVENT_BUS_SCOPE.LOBBY),
          (
-          events.BattlePassEvent.ON_PURCHASE_LEVELS, self.__onPurchaseLevels, EVENT_BUS_SCOPE.LOBBY),
-         (
           events.BattlePassEvent.BUYING_THINGS, self.__updateActionType, EVENT_BUS_SCOPE.LOBBY),
          (
           events.CollectionsEvent.NEW_ITEM_SHOWN, self.__onCollectionsUpdated, EVENT_BUS_SCOPE.LOBBY))
@@ -195,6 +193,7 @@ class ProgressionPresenter(ViewComponent[BattlePassProgressionsViewModel]):
 
     def _onLoading(self, *args, **kwargs):
         super(ProgressionPresenter, self)._onLoading(*args, **kwargs)
+        g_eventBus.addListener(events.BattlePassEvent.ON_PURCHASE_LEVELS, self.__onPurchaseLevels, EVENT_BUS_SCOPE.LOBBY)
         self.__notifier = Notifiable()
         self.__notifier.addNotificator(PeriodicNotifier(self.__battlePass.getSeasonTimeLeft, self.__setExpirations))
         self.__notifier.addNotificator(SimpleNotifier(self.__battlePass.getFinalOfferTimeLeft, self.__updateActionType))
@@ -207,6 +206,7 @@ class ProgressionPresenter(ViewComponent[BattlePassProgressionsViewModel]):
         self.__setShowBuyAnimations()
 
     def _finalize(self):
+        g_eventBus.removeListener(events.BattlePassEvent.ON_PURCHASE_LEVELS, self.__onPurchaseLevels, EVENT_BUS_SCOPE.LOBBY)
         self.__tooltipItems = None
         self.__specialTooltipItems = None
         if self.__notifier is not None:

@@ -129,11 +129,8 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
       
       private function update(param1:Boolean = false) : void
       {
-         var _loc2_:Boolean = false;
+         var _loc2_:int = 0;
          var _loc3_:int = 0;
-         var _loc4_:int = 0;
-         var _loc5_:Number = NaN;
-         var _loc6_:Number = NaN;
          if(!this._entryRef.isVehicleLabelVisible)
          {
             return;
@@ -142,30 +139,27 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
          {
             this.__prevEntityX = this._entryRef.x;
             this.__prevEntityY = this._entryRef.y;
-            _loc2_ = this._entryRef.isHpCircleVisible;
-            if(_loc2_)
+            if(this._entryRef.isHpCircleVisible)
             {
-               _loc3_ = this._hpOffsetX;
-               _loc4_ = this._hpOffsetY;
+               _loc2_ = this._hpOffsetX;
+               _loc3_ = this._hpOffsetY;
             }
             else
             {
-               _loc3_ = this._initialOffsetX;
-               _loc4_ = this._initialOffsetY;
+               _loc2_ = this._initialOffsetX;
+               _loc3_ = this._initialOffsetY;
             }
-            _loc5_ = this._currentTF.width;
-            if(!this._isSuspended && this._entryRef.x + this._tfWidthOnScreen + _loc3_ > this._bounds.x)
+            if(!this._isSuspended && this._entryRef.x + this._tfWidthOnScreen + _loc2_ > this._bounds.x)
             {
-               this._currentTF.x = -(_loc5_ + _loc3_);
+               this._currentTF.x = -(this._currentTF.width + _loc2_);
             }
             else
             {
-               this._currentTF.x = _loc3_;
+               this._currentTF.x = _loc2_;
             }
-            _loc6_ = this._currentTF.height;
-            if(!this._isSuspended && this._entryRef.y + this._tfHeightOnScreen + _loc4_ > this._bounds.y)
+            if(!this._isSuspended && this._entryRef.y + this._tfHeightOnScreen + _loc3_ > this._bounds.y)
             {
-               this._currentTF.y = -_loc6_ + OFFSET_Y_BETWEEN_TEXT_AND_BORDER;
+               this._currentTF.y = -this._currentTF.height + OFFSET_Y_BETWEEN_TEXT_AND_BORDER;
             }
             else if(!this._isSuspended && this._entryRef.y < -this._bounds.y - HP_OFFSET_Y)
             {
@@ -173,23 +167,21 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
             }
             else
             {
-               this._currentTF.y = _loc4_;
+               this._currentTF.y = _loc3_;
             }
          }
       }
       
       private function recalcTFScreenParameters() : void
       {
-         var _loc1_:Number = this._currentTF.width;
-         var _loc2_:Number = this._currentTF.height;
-         var _loc3_:Number = MinimapSizeConst.ENTRY_SCALES[this._sizeIndex];
-         var _loc4_:Number = MinimapSizeConst.ENTRY_CONTR_SCALES[this._sizeIndex];
-         this._tfWidthOnScreen = _loc1_;
-         this._tfWidthOnScreen *= _loc4_;
-         this._tfWidthOnScreen /= _loc3_;
-         this._tfHeightOnScreen = _loc2_;
-         this._tfHeightOnScreen *= _loc4_;
-         this._tfHeightOnScreen /= _loc3_;
+         var _loc1_:Number = MinimapSizeConst.ENTRY_SCALES[this._sizeIndex];
+         var _loc2_:Number = MinimapSizeConst.ENTRY_CONTR_SCALES[this._sizeIndex];
+         this._tfWidthOnScreen = this._currentTF.width;
+         this._tfWidthOnScreen *= _loc2_;
+         this._tfWidthOnScreen /= _loc1_;
+         this._tfHeightOnScreen = this._currentTF.height;
+         this._tfHeightOnScreen *= _loc2_;
+         this._tfHeightOnScreen /= _loc1_;
       }
    }
 }

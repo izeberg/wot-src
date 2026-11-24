@@ -10,10 +10,6 @@
 			<type>include</type>
 		</rule>
 		<rule>
-			<pattern>.*/item_defs/score_reasons/score_reasons\.xml$</pattern>
-			<type>include</type>
-		</rule>
-		<rule>
 			<pattern>.*/item_defs/customization/.*/list(\.[A-Z]{2})?\.xml$</pattern>
 			<type>include</type>
 		</rule>
@@ -214,10 +210,6 @@
 		<rule>
 			<pattern>scripts/command_mapping\.xml$</pattern>
 			<type>include</type>
-		</rule>
-		<rule>
-			<pattern>.*/cgf_names\.xml$</pattern>
-			<type>merge</type>
 		</rule>
 	</xml_whitelist>
 </root>

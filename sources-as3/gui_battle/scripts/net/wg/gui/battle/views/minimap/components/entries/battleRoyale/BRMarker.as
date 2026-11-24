@@ -162,7 +162,7 @@ package net.wg.gui.battle.views.minimap.components.entries.battleRoyale
          this._iconContainer.y = -(this._iconContainer.height >> 1);
          if(this.tf.visible)
          {
-            this.tf.x = this._iconContainer.x + this._iconContainer.width + TEXTFIELD_OFFSET;
+            this.tf.x = (this._iconContainer.width >> 1) + TEXTFIELD_OFFSET;
          }
       }
       

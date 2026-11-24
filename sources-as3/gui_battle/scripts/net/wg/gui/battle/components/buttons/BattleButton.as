@@ -329,7 +329,10 @@ package net.wg.gui.battle.components.buttons
             {
                this._pressButtonHandler.onButtonPress(this);
             }
-            this.state = InteractiveStates.DOWN;
+            if(this._isEnabled)
+            {
+               this.state = InteractiveStates.DOWN;
+            }
          }
          this.invokePressActions();
       }

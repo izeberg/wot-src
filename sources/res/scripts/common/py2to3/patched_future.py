@@ -7,4 +7,19 @@ if TYPE_CHECKING:
 
 
 else:
-    from future.utils import with_metaclass
+
+    def with_metaclass(meta, *bases):
+
+        class metaclass(meta):
+            __call__ = type.__call__
+            __init__ = type.__init__
+
+            def __new__(cls, name, this_bases, d):
+                if this_bases is None:
+                    return type.__new__(cls, name, (), d)
+                else:
+                    result = meta(name, bases, d)
+                    result.__temporaryBase__ = this_bases[0]
+                    return result
+
+        return metaclass('temporary_class', None, {})

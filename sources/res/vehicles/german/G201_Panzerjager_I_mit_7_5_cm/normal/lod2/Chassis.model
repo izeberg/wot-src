@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G201_Panzerjager_I_mit_7_5_cm/normal/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G201_Panzerjager_I_mit_7_5_cm/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.025216 -0.000113 -2.163827</min>
+		<max>1.025216 0.842470 2.107169</max>
+	</visibilityBox>
+</root>

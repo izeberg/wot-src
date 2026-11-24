@@ -69,12 +69,15 @@ class Highlighter(object):
             BigWorld.wgAddIgnoredCollisionEntity(vehicle, collisions)
 
     def deactivate(self):
-        self.removeHighlight()
-        self.__highlightStatus |= self.HIGHLIGHT_DISABLED
-        vehicle = self.__getVehicle()
-        if self.__isPlayersVehicle and vehicle is not None:
-            BigWorld.wgDelIgnoredCollisionEntity(vehicle)
-        return
+        if self.isDisabled:
+            return
+        else:
+            self.removeHighlight()
+            self.__highlightStatus |= self.HIGHLIGHT_DISABLED
+            vehicle = self.__getVehicle()
+            if self.__isPlayersVehicle and vehicle is not None:
+                BigWorld.wgDelIgnoredCollisionEntity(vehicle)
+            return
 
     def suspendHighlight(self):
         self.__highlightStatus |= self.HIGHLIGHT_SUSPENDED

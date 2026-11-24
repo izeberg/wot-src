@@ -81,6 +81,7 @@ class LSPostmortemPanel(PostmortemPanelMeta):
     def _makeKillerVO(self, vInfoVO):
         vo = super(LSPostmortemPanel, self)._makeKillerVO(vInfoVO)
         del vo['userName']
+        del vo['fakeName']
         return vo
 
     def _setDeadReasonInfo(self, vInfoVO, reason, showVehicle, vehLvl, vehImg, vehClass, vehName, killerUserVO):

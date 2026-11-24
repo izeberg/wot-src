@@ -898,6 +898,7 @@ class BattleResultsFormatter(WaitItemsSyncFormatter):
 
     def __makeAchievementsAndBadgesStrings(self, battleResults):
         popUpRecords = []
+        popUpRecordNames = set()
         badges = []
         for vehBattleResults in itervalues(battleResults.get(b'playerVehicles', {})):
             for recordIdx, value in vehBattleResults.get(b'popUpRecords', []):
@@ -909,7 +910,8 @@ class BattleResultsFormatter(WaitItemsSyncFormatter):
                     badges.append(name)
                 else:
                     achieve = getAchievementFactory(recordName).create(value=value)
-                    if achieve is not None and achieve not in popUpRecords:
+                    if achieve is not None and recordName not in popUpRecordNames:
+                        popUpRecordNames.add(recordName)
                         popUpRecords.append(achieve)
 
             if b'markOfMastery' in vehBattleResults and vehBattleResults[b'markOfMastery'] > 0:
@@ -1227,7 +1229,8 @@ class AchievementFormatter(ServiceChannelFormatter):
 
 
 class CurrencyUpdateFormatter(ServiceChannelFormatter):
-    _EMITTER_ID_TO_TITLE = {2525: R.strings.messenger.serviceChannelMessages.currencyUpdate.integratedAuction(), 
+    _AUCTION_EMITTER_ID = 3382 if constants.IS_CHINA else 3761
+    _EMITTER_ID_TO_TITLE = {_AUCTION_EMITTER_ID: R.strings.messenger.serviceChannelMessages.currencyUpdate.integratedAuction(), 
        2524: R.strings.messenger.serviceChannelMessages.currencyUpdate.battlepass()}
     _DEFAULT_TITLE = R.strings.messenger.serviceChannelMessages.currencyUpdate.financial_transaction()
     __FREE_XP_ICON = b'freeXPSmallIcon'
@@ -5188,6 +5191,7 @@ class CustomizationProgressFormatter(WaitItemsSyncFormatter):
 class CustomizationProgressionChangedFormatter(WaitItemsSyncFormatter):
     REQUIRED_KEYS = {
      b'custType', b'id', b'prevLevel', b'actualLevel'}
+    IGNORE = {GUI_ITEM_TYPE.PROJECTION_DECAL}
 
     @adisp_async
     @adisp_process
@@ -5196,10 +5200,10 @@ class CustomizationProgressionChangedFormatter(WaitItemsSyncFormatter):
         isSynced = yield self._waitForSyncItems()
         if isSynced and message.data and set(message.data.keys()) == self.REQUIRED_KEYS:
             data = message.data
-            guiItemType, itemUserName = getCustomizationItemData(data[b'id'], data[b'custType'])
             prevLevel = data[b'prevLevel']
             actualLevel = data[b'actualLevel']
-            if actualLevel == 0:
+            item = getCustomizationItem(data[b'id'], data[b'custType'])
+            if item is None or item.itemTypeID in self.IGNORE or actualLevel == 0:
                 callback(result)
                 return
             if actualLevel > prevLevel:
@@ -5209,11 +5213,11 @@ class CustomizationProgressionChangedFormatter(WaitItemsSyncFormatter):
             else:
                 callback(result)
                 return
-            messageR = R.strings.system_messages.customization.progression.dyn(operation).dyn(guiItemType)
+            messageR = R.strings.system_messages.customization.progression.dyn(operation).dyn(item.itemFullTypeName)
             if messageR.exists():
-                messageString = backport.text(messageR(), itemUserName, int2roman(actualLevel))
+                messageString = backport.text(messageR(), item.userName, int2roman(actualLevel))
             else:
-                _logger.warning(b"CustomizationProgressionChangedFormatter doesn't have message for custType: %s", guiItemType)
+                _logger.warning(b"%s doesn't have message for custType: %s", self.__class__.__name__, item.itemFullTypeName)
                 callback(result)
                 return
             formatted = g_settings.msgTemplates.format(b'CustomizationProgressionMessage', ctx={b'message': messageString})

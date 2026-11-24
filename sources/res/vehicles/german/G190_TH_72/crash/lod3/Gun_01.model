@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G190_TH_72/crash/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/german/G190_TH_72/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.196638 -1.173362 -1.294566</min>
+		<max>0.226815 0.275727 4.401404</max>
+	</visibilityBox>
+</root>

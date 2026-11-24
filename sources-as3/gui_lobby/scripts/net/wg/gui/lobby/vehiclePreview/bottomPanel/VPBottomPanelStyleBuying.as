@@ -9,8 +9,6 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
       
       private static const OFFSET:int = 1;
       
-      private static const OFFSET_Y:int = 60;
-      
       private static const WIDTH:uint = 750 + 2 * OFFSET;
       
       private static const HEIGHT:uint = 210 + 2 * OFFSET;
@@ -30,7 +28,7 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
       
       public function getOffsetY() : int
       {
-         return OFFSET_Y;
+         return 0;
       }
       
       public function getSmallScreenOffsetY() : int

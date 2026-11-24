@@ -175,9 +175,10 @@ class QuestInfoModel(EventInfoModel):
 
     def _getWeeklyResetStatus(self, resetLabelKey, labeFormatter):
         if self.event.bonusCond.isWeekly():
-            day, resetSeconds = self._getWeeklyProgressResetTimeUTC()
+            offset, resetSeconds = self._getWeeklyProgressResetTimeUTC()
             resetHourUTC = resetSeconds / time_utils.ONE_HOUR
-            dayStr = i18n.makeString('#menu:dateTime/weekDays/full/' + str(day + 1)) + ', '
+            day = offset % time_utils.WEEK_END
+            dayStr = i18n.makeString('#menu:dateTime/weekDays/full/' + str(day + time_utils.WEEK_START)) + ', '
             if resetHourUTC >= 0:
                 resetTime = time_utils.getTimeStructInLocal(time_utils.getTimeTodayForUTC(hour=resetHourUTC))
                 resetTime = time.struct_time(resetTime[:6] + (day,) + resetTime[7:])
@@ -190,9 +191,9 @@ class QuestInfoModel(EventInfoModel):
     def _getCompleteWeeklyStatus(self, completeKey):
         curTime = time_utils.getTimeStructInUTC(time_utils.getCurrentTimestamp())
         resetDay, resetSeconds = self._getWeeklyProgressResetTimeUTC()
-        dayDelta = (resetDay - curTime.tm_wday) % 7
+        dayDelta = (resetDay - curTime.tm_wday) % time_utils.WEEK_END
         if dayDelta == 0:
-            dayDelta = 7
+            dayDelta = time_utils.WEEK_END
         timeDelta = dayDelta * time_utils.ONE_DAY + resetSeconds - (curTime.tm_hour * time_utils.ONE_HOUR + curTime.tm_min * time_utils.ONE_MINUTE + curTime.tm_sec)
         if timeDelta > time_utils.ONE_WEEK:
             timeDelta -= time_utils.ONE_WEEK

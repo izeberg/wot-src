@@ -115,6 +115,27 @@ class StateMachineComponent(IComponent):
 	replicatedActiveStateIndex = property(lambda self: None)
 
 
+class StateMachineEvent(pybind11_object):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(*args, **kwargs): pass
+	__module__ = 'CgfStateMachine'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'StateMachineEvent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	gameObjectUUID = property(lambda self: None)
+	tag = property(lambda self: None)
+
+
 class ISingleton(pybind11_object):
 	def __delattr__(*args, **kwargs): pass
 	__doc__ = None

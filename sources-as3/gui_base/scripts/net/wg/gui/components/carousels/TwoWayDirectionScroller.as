@@ -105,16 +105,21 @@ package net.wg.gui.components.carousels
          this.configureViewPort();
       }
       
+      override protected function onBeforeDispose() : void
+      {
+         if(this.cursorManager != null)
+         {
+            this.cursorManager.dispose();
+         }
+         super.onBeforeDispose();
+      }
+      
       override protected function onDispose() : void
       {
          this.unsubscribeFromScrollbar();
          this.scrollbarRef = null;
          this._itemRendererFactory = null;
-         if(this.cursorManager != null)
-         {
-            this.cursorManager.dispose();
-            this.cursorManager = null;
-         }
+         this.cursorManager = null;
          if(this._dataProvider != null)
          {
             this._dataProvider.removeEventListener(Event.CHANGE,this.onDataProviderChangeHandler);
@@ -289,6 +294,10 @@ package net.wg.gui.components.carousels
          if(this._hitArea)
          {
             _loc1_ = this._hitArea.getBounds(DisplayObject(this));
+            if(_loc1_.top < 0)
+            {
+               _loc1_.top = 0;
+            }
          }
          else
          {

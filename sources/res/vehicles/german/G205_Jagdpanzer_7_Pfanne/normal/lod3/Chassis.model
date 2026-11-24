@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G205_Jagdpanzer_7_Pfanne/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.800546 0.029702 -2.492322</min>
+		<max>1.800550 1.362106 2.933965</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G205_Jagdpanzer_7_Pfanne/normal/lod3/Chassis</nodefullVisual>
+</root>

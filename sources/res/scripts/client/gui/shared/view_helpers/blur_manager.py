@@ -98,7 +98,7 @@ class BlurManager(object):
 
             for config in blur.config:
                 if isActiveBlur or config.persistent:
-                    config.BLUR_CLS.unregister(blur=blur, restoredBlur=prevBlur if isActiveBlur else None)
+                    config.BLUR_CLS.unregister(blur=blur, restoredBlur=self._findBlurToRestore(config.BLUR_CLS))
 
         return
 
@@ -114,6 +114,20 @@ class BlurManager(object):
         else:
             self._validateCache()
             return
+
+    def _findBlurToRestore(self, blurCls):
+        activeBlur = self._activeBlur()
+        for blurRef in reversed(self._cache):
+            blur = blurRef()
+            if blur is None:
+                continue
+            config = blurCls.getSpecificConfig(blur.config)
+            if config is not None:
+                if blur is activeBlur or config.persistent:
+                    return blur
+                return
+
+        return
 
     def _validateCache(self):
         toDelete = []

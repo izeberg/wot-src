@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.843648 -1.102539 -2.647653</min>
+		<max>1.848889 2.747517 2.921195</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G205_Jagdpanzer_7_Pfanne/crash/lod0/Hull</nodefullVisual>
+	<parent>vehicles/german/G205_Jagdpanzer_7_Pfanne/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

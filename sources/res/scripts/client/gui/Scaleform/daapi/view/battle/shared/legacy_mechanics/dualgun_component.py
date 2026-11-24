@@ -150,6 +150,9 @@ class DualGunComponent(DualGunPanelMeta, IPrebattleSetupsListener):
         ctrl = self.__sessionProvider.shared.crosshair
         if ctrl is not None:
             ctrl.onCrosshairViewChanged += self.__onCrosshairViewChanged
+            ctrl.onCrosshairPositionChanged += self.__onCrosshairPositionChanged
+            ctrl.onCrosshairScaleChanged += self.__onCrosshairPositionChanged
+            self.__onCrosshairPositionChanged()
         if BattleReplay.g_replayCtrl.isPlaying:
             g_replayEvents.onTimeWarpStart += self.__onReplayTimeWarpStart
             g_replayEvents.onPause += self.__onReplayPause
@@ -200,6 +203,8 @@ class DualGunComponent(DualGunPanelMeta, IPrebattleSetupsListener):
         crosshairCtrl = self.__sessionProvider.shared.crosshair
         if crosshairCtrl is not None:
             crosshairCtrl.onCrosshairViewChanged -= self.__onCrosshairViewChanged
+            crosshairCtrl.onCrosshairPositionChanged -= self.__onCrosshairPositionChanged
+            crosshairCtrl.onCrosshairScaleChanged -= self.__onCrosshairPositionChanged
         vStateCtrl = self.__sessionProvider.shared.vehicleState
         if vStateCtrl is not None:
             vStateCtrl.onVehicleStateUpdated -= self.__onVehicleStateUpdated
@@ -257,6 +262,9 @@ class DualGunComponent(DualGunPanelMeta, IPrebattleSetupsListener):
 
     def __onCrosshairViewChanged(self, viewID):
         self.as_setViewS(viewID)
+
+    def __onCrosshairPositionChanged(self, *_):
+        self.as_updateLayoutS(*self.__sessionProvider.shared.crosshair.getScaledPosition())
 
     def __onArenaPeriodChange(self, arenaPeriod, endTime, *_):
         self.__inBattle = arenaPeriod == ARENA_PERIOD.BATTLE
