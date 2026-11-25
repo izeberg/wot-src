@@ -252,12 +252,6 @@ package
       public static const ABOUT_SCORESTABLE_LOSEHEADER:String = "#frontline.fl_info_page:about/scoresTable/loseHeader";
       
       public static const ABOUT_SCORESTABLE_TOPCELL:String = "#frontline.fl_info_page:about/scoresTable/topCell";
-      
-      public static const SUBTITLE_SAMEMONTH:String = "#frontline.fl_info_page:subTitle/sameMonth";
-      
-      public static const SUBTITLE_DIFFERENTMONTH:String = "#frontline.fl_info_page:subTitle/differentMonth";
-      
-      public static const SUBTITLE_DIFFERENTYEARS:String = "#frontline.fl_info_page:subTitle/differentYears";
        
       
       public function FL_INFO_PAGE()

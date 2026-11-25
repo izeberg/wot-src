@@ -135,6 +135,7 @@ package net.wg.gui.lobby.vehiclePreview.additionalInfo
             {
                this.vehicleInfoDesc.y = this.objectTitle.y + this.objectTitle.height;
                this._container.y = this.vehicleInfoDesc.y + VEH_INFO_DESC_OFFSET;
+               this.updateContainerPosByScroll();
             }
          }
       }

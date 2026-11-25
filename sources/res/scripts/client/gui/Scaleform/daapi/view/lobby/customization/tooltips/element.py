@@ -534,7 +534,8 @@ class ElementTooltip(BlocksTooltipData):
             if mustNotHave and (isItemHidden or isItemInStyle) or mayHave and isItemHidden and isItemInStyle and not self._item.isQuestsProgression:
                 return
             defaultTitleText = backport.text(R.strings.vehicle_customization.customization.tooltip.suitable.title())
-            if self._item.isProgressive and self._item.isProgressionAutoBound or ItemTags.NATIONAL_EMBLEM in self._item.tags:
+            isVehicleStatTracker = self._item.itemTypeID == GUI_ITEM_TYPE.STAT_TRACKER and self._item.isVehicleBound and self.__vehicle is not None
+            if self._item.isProgressive and self._item.isProgressionAutoBound or ItemTags.NATIONAL_EMBLEM in self._item.tags or isVehicleStatTracker:
                 return formatters.packTitleDescBlock(title=text_styles.middleTitle(defaultTitleText), desc=text_styles.main(self.__vehicle.shortUserName), padding=formatters.packPadding(top=-2))
             boundAndInstalledVehs = self.boundVehs | self.installedVehs
             if self._item.isVehicleBound and not self._item.mayApply and boundAndInstalledVehs:

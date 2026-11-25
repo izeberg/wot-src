@@ -44,6 +44,7 @@ if typing.TYPE_CHECKING:
 _logger = logging.getLogger(LOGGER_NAME)
 PATH_TO_CONFIGS = 'story_mode/gui/parallax/configs.json'
 PARALLAX_DEFAULT_SCALE = 1
+NOT_UI_CONDITIONS = ('difficulty_override', 'lives_override')
 
 class MissionSelectionView(BasePrbView):
     LAYOUT_ID = R.views.story_mode.mono.lobby.mission_selection_view()
@@ -297,7 +298,8 @@ class MissionSelectionView(BasePrbView):
             conditionLocals = {}
             localPath = R.strings.sm_lobby.missionSelection.taskDescription
             for condition in task.conditions:
-                conditionLocals[condition.name] = backport.ntext(localPath.dyn(condition.name)(), int(condition.value), value=condition.value)
+                if condition.name not in NOT_UI_CONDITIONS:
+                    conditionLocals[condition.name] = backport.ntext(localPath.dyn(condition.name)(), int(condition.value), value=condition.value)
 
             description = backport.text(localPath.num(missionConfig.missionId).num(task.id)(), **conditionLocals)
             taskModel.setDescription(description)

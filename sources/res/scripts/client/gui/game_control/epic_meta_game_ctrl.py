@@ -396,6 +396,9 @@ class EpicBattleMetaGameController(Notifiable, SeasonProvider, IEpicBattleMetaGa
         notRentedVehicles = self.__itemsCache.items.getVehicles(REQ_CRITERIA.VEHICLE.SPECIFIC_BY_NAME(self.getModeSettings().rentVehicles) | ~REQ_CRITERIA.INVENTORY)
         return len(notRentedVehicles) > 0
 
+    def getCompareVisibleVehiclesList(self):
+        return self.getModeSettings().compareVisibleVehicles
+
     def increaseSkillLevel(self, skillID, callback=skipResponse):
         BigWorld.player().FLAccountComponent.increaseAbility(skillID, callback)
 

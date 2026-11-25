@@ -319,10 +319,12 @@ if IS_CLIENT:
 
         def deserialize(self, serializedData):
             deserialized = super(_CacheSerializer, self).deserialize(serializedData)
-            cache, effectList, auxiliaryData, prohibitedNumbers = deserialized
+            cache, effectList, auxiliaryData, personalNumbers, statTrackerNumbers, nationalEmblems = deserialized
             CustomEffect.setEffectList(effectList)
-            from items.components.c11n_components import PersonalNumberItem
-            PersonalNumberItem.setProhibitedNumbers(prohibitedNumbers)
+            from items.components.c11n_components import PersonalNumberItem, StatTrackerItem
+            PersonalNumberItem.setProhibitedNumbers(personalNumbers)
+            StatTrackerItem.setProhibitedNumbers(statTrackerNumbers)
+            NATIONAL_EMBLEMS.update(nationalEmblems)
             for stickerParams, res in auxiliaryData[DAMAGE_STICKERS_DATA]:
                 self._validate(BigWorld.wg_registerDamageSticker(*stickerParams), res)
 
@@ -337,17 +339,20 @@ if IS_CLIENT:
         def serialize(self, rawData):
             global _auxSerializingData
             auxiliaryData, _auxSerializingData = _auxSerializingData, None
-            from items.components.c11n_components import PersonalNumberItem
+            from items.components.c11n_components import PersonalNumberItem, StatTrackerItem
             return super(_CacheSerializer, self).serialize((
-             rawData, CustomEffect.gEffectLists, auxiliaryData, PersonalNumberItem.getProhibitedNumbers()))
+             rawData, CustomEffect.gEffectLists, auxiliaryData, PersonalNumberItem.getProhibitedNumbers(),
+             StatTrackerItem.getProhibitedNumbers(), NATIONAL_EMBLEMS))
 
         def rollbackSideEffects(self):
             global _auxSerializingData
             BigWorld.PyGroundEffectManager().clear()
             BigWorld.wg_clearDamageStickers()
             CustomEffect.setEffectList({})
-            from items.components.c11n_components import PersonalNumberItem
+            from items.components.c11n_components import PersonalNumberItem, StatTrackerItem
             PersonalNumberItem.setProhibitedNumbers(())
+            StatTrackerItem.setProhibitedNumbers(())
+            NATIONAL_EMBLEMS.clear()
             _auxSerializingData = None
             return
 
@@ -3318,7 +3323,7 @@ def _getAmmoForGun(gunDescr, defaultPortion=None):
     ammo = []
     maxCount = gunDescr.maxAmmo
     clipSize = gunDescr.clip[0]
-    if clipSize == maxCount:
+    if clipSize == maxCount or 'autoreload' in gunDescr.tags:
         clipSize = 1
     currCount = 0
     for shot in gunDescr.shots:

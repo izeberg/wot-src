@@ -1,12 +1,16 @@
 package net.wg.gui.lobby.vehiclePreview.bottomPanel
 {
+   import flash.display.DisplayObject;
    import flash.display.MovieClip;
+   import flash.display.Shape;
    import flash.display.Sprite;
+   import flash.events.Event;
    import flash.events.MouseEvent;
    import flash.text.TextField;
    import flash.text.TextFieldAutoSize;
    import net.wg.data.constants.IconsTypes;
    import net.wg.data.constants.UniversalBtnStylesConst;
+   import net.wg.data.constants.Values;
    import net.wg.gui.components.controls.ActionPrice;
    import net.wg.gui.components.controls.InfoIcon;
    import net.wg.gui.components.controls.SoundButtonEx;
@@ -25,11 +29,7 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
       
       private static const INVALIDATE_BUYING_TIME_ELAPSED:String = "invalidateBuyingTimeElapsed";
       
-      private static const MAX_WIDTH:uint = 700;
-      
       private static const MAX_HEIGHT:uint = 120;
-      
-      private static const OFFSET_Y:int = 25;
       
       private static const STRIKELINE_OFFSET_X:int = 1;
       
@@ -49,7 +49,7 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
       
       private static const TIME_REMAINING_PADDING_LEFT:int = -7;
       
-      private static const SMALL_SCREEN_OFFSET_Y:int = 13;
+      private static const SMALL_SCREEN_OFFSET_Y:int = 33;
        
       
       public var infoIcon:InfoIcon = null;
@@ -89,6 +89,10 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
       private var _isBuyingTimeElapsed:Boolean = false;
       
       private var _isBuyingTimeStateChangedFlag:Boolean = false;
+      
+      private var _cmpWidth:int = 0;
+      
+      private var _cmpLeftShift:int = 0;
       
       public function VPBottomPanelShowcaseStyleBuying()
       {
@@ -275,6 +279,8 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
                   this.timeRemainingTf.x = this.timeIcon.x + this.timeIcon.width + TIME_REMAINING_PADDING_LEFT;
                   this.strikeline.width = this.oldPriceTf.textWidth + STRIKELINE_OFFSET_X | 0;
                }
+               this.calculateWidth();
+               dispatchEvent(new Event(Event.RESIZE));
             }
          }
       }
@@ -333,7 +339,7 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
       
       public function getOffsetY() : int
       {
-         return OFFSET_Y;
+         return 0;
       }
       
       public function getSmallScreenOffsetY() : int
@@ -348,7 +354,11 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
       
       override public function get width() : Number
       {
-         return MAX_WIDTH;
+         if(this._cmpWidth == Values.ZERO)
+         {
+            this.calculateWidth();
+         }
+         return this._cmpWidth + (this._cmpLeftShift << 1);
       }
       
       override public function get height() : Number
@@ -372,6 +382,33 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
       private function onActionButtonRollOutHandler(param1:MouseEvent) : void
       {
          this._tooltipMgr.hide();
+      }
+      
+      private function calculateWidth() : void
+      {
+         var _loc1_:int = this.numChildren;
+         var _loc2_:DisplayObject = null;
+         var _loc3_:int = Values.ZERO;
+         var _loc4_:int = Values.ZERO;
+         var _loc5_:int = 0;
+         while(_loc5_ < _loc1_)
+         {
+            _loc2_ = this.getChildAt(_loc5_) as DisplayObject;
+            if(_loc2_ && !(_loc2_ is Shape) && _loc2_.visible && _loc2_ != this.bg)
+            {
+               if(_loc3_ == Values.ZERO || _loc3_ > _loc2_.x)
+               {
+                  _loc3_ = _loc2_.x;
+               }
+               if(_loc4_ < _loc2_.x + _loc2_.width)
+               {
+                  _loc4_ = _loc2_.x + _loc2_.width;
+               }
+            }
+            _loc5_++;
+         }
+         this._cmpWidth = _loc4_ - _loc3_;
+         this._cmpLeftShift = _loc3_;
       }
    }
 }

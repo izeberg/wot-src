@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.324465 -0.297096 0.177290</min>
+		<max>0.320748 0.362318 2.468117</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G192_E_10/crash/lod4/Gun_01</nodefullVisual>
+</root>

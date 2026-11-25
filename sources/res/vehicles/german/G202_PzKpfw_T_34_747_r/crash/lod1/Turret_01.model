@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G202_PzKpfw_T_34_747_r/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/german/G202_PzKpfw_T_34_747_r/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.883614 -0.116754 -1.218354</min>
+		<max>0.881860 1.047310 0.980435</max>
+	</visibilityBox>
+</root>

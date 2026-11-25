@@ -1,9 +1,0 @@
-from __future__ import absolute_import
-from gui.hangar_presets.obsolete.hangar_presets_reader import DefaultPresetReader
-
-class HalloweenPresetsReader(DefaultPresetReader):
-    _CONFIG_PATH = 'halloween/gui/configs/hw_hangar_gui_presets.xml'
-
-    @staticmethod
-    def isDefault():
-        return False

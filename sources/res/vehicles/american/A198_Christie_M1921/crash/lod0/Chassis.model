@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A198_Christie_M1921/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.274645 -0.000005 -2.939088</min>
+		<max>1.274645 0.960084 2.806813</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A198_Christie_M1921/crash/lod0/Chassis</nodefullVisual>
+</root>

@@ -63,6 +63,7 @@ class ChallengesChallengeCompletedNotification(NotificationBase):
         else:
             challengeID = (self.__challenges.isChallengeCompleted(self.__challenge) or self.__challenge).challengeID if 1 else None
             showChallenges(challengeID=challengeID)
+            self._closeNotificationCenter()
             return
 
     def __setRewards(self, rewardsData, model):

@@ -74,4 +74,24 @@
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
+	<itemGroup>
+		<name>CN</name>
+		<userString>#vehicle_customization:emblem/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 150g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<type>EMBLEM</type>
+		<decal>
+			<id>1393</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_895.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_895</userString>
+			<mirror>true</mirror>
+			<tags>hiddenInUI</tags>
+		</decal>
+	</itemGroup>
 </root>

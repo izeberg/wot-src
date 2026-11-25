@@ -44,6 +44,7 @@ class ChallengesMissionCompletedNotification(NotificationBase):
 
     def __onClick(self):
         showChallenges()
+        self._closeNotificationCenter()
 
     def __setRewards(self, rewardsData, model):
         rewards = AwardsManager.composeVisibleBonuses(rewardsData, reverse=True)

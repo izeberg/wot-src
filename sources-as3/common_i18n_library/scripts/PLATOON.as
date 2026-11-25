@@ -215,6 +215,8 @@ package
       
       public static const MEMBERS_FOOTER_VEHICLESGROUPISFULL_SPG:String = "#platoon:members/footer/vehiclesGroupIsFull/SPG";
       
+      public static const MEMBERS_FOOTER_VEHICLESGROUPISFULL_AUTOCANNON:String = "#platoon:members/footer/vehiclesGroupIsFull/autocannon";
+      
       public static const MEMBERS_FOOTER_COMP7TOPPLAYER:String = "#platoon:members/footer/comp7TopPlayer";
       
       public static const MEMBERS_FOOTER_COMP7LIMITATIONS:String = "#platoon:members/footer/comp7Limitations";

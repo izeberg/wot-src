@@ -34,7 +34,7 @@ class Comp7QueueProvider(RandomQueueProvider):
     def getLayoutStr(self):
         return 'comp7'
 
-    def getIconPath(self, iconLabel):
+    def getIconPath(self, iconlabel):
         return backport.image(R.images.comp7.gui.maps.icons.battleTypes.c_136x136.comp7())
 
     def getTankInfoLabel(self):

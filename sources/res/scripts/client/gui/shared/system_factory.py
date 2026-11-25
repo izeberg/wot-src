@@ -103,6 +103,16 @@ REPLAY_RECORD_MAP = 99
 USER_MISSION_PLUGIN = 100
 PREBATTLE_HIGHLIGHTS_WINDOW = 101
 
+class ProxyInjection(object):
+
+    def __init__(self, collectMethod, defaultFactory):
+        self.__collectMethod = collectMethod
+        self.__defaultFactory = defaultFactory
+
+    def __call__(self):
+        return (self.__collectMethod() or self.__defaultFactory)()
+
+
 class CollectEventsManager(object):
 
     def __init__(self):

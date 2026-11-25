@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F125_Panhard_M6_Proto/normal/lod2/Gun_01</nodefullVisual>
+	<parent>vehicles/french/F125_Panhard_M6_Proto/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.304199 -0.117186 -0.027350</min>
+		<max>0.408203 0.175783 2.448236</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

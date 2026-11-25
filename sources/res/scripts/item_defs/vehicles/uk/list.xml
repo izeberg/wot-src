@@ -1375,7 +1375,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>AT-SPG role_ATSPG_support HD siegeMode hydraulicChassis mediumAT-SPG AT-SPG1 improvedVentilation_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals secret testTank</tags>
+		<tags>AT-SPG role_ATSPG_support HD siegeMode hydraulicChassis mediumAT-SPG AT-SPG1 improvedVentilation_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals secret testTank regular_battles</tags>
 		<level>9</level>
 	</GB132_Taurus_CAT>
 	<GB139_FV226_Contradictious>
@@ -1584,6 +1584,21 @@
 		<tags>AT-SPG HD mediumAT-SPG role_ATSPG_universal improvedVentilation_class1_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals</tags>
 		<level>9</level>
 	</GB151_Headshaker>
+	<GB154_FV112_Puncher>
+		<id>261</id>
+		<userString>#gb_vehicles:GB154_FV112_Puncher</userString>
+		<description>#gb_vehicles:GB154_FV112_Puncher_descr</description>
+		<shortUserString>#gb_vehicles:GB154_FV112_Puncher_short</shortUserString>
+		<shortDescriptionSpecial>#gb_vehicles:GB154_FV112_Puncher_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#gb_vehicles:GB154_FV112_Puncher_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>AT-SPG role_ATSPG_sniper HD mediumAT-SPG AT-SPG1 tankRammer_class2_user improvedVentilation_class1_user extraHealthReserve_class1_user antifragmentationLining_light_user earn_crystals secret testTank regular_battles</tags>
+		<level>9</level>
+	</GB154_FV112_Puncher>
 	<GB157_FV214t>
 		<id>97</id>
 		<userString>#gb_vehicles:GB157_FV214t</userString>
@@ -1596,7 +1611,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals secret testTank</tags>
+		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals secret testTank regular_battles</tags>
 		<level>9</level>
 	</GB157_FV214t>
 	<GB156_Black_Prince_II>
@@ -1705,9 +1720,24 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals special secret testTank</tags>
+		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals special secret testTank regular_battles</tags>
 		<level>10</level>
 	</GB159_FV4602_Victorious>
+	<GB160_A20>
+		<id>258</id>
+		<userString>#gb_vehicles:GB160_A20</userString>
+		<description>#gb_vehicles:GB160_A20_descr</description>
+		<shortUserString>#gb_vehicles:GB160_A20_short</shortUserString>
+		<shortDescriptionSpecial>#gb_vehicles:GB160_A20_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#gb_vehicles:GB160_A20_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>heavyTank HD improvedVentilation_class3_user extraHealthReserve_class3_user secret testTank regular_battles</tags>
+		<level>4</level>
+	</GB160_A20>
 	<GB147_FV4025_Contriver_7x7>
 		<id>264</id>
 		<userString>#gb_vehicles:GB147_FV4025_Contriver_7x7</userString>
@@ -1723,18 +1753,4 @@
 		<tags>heavyTank role_HT_universal HD siegeMode twinGun improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user earn_crystals private secret cannot_be_sold clanWarsBattles special lockCrew lockCrewSkills lockOptionalDevices</tags>
 		<level>11</level>
 	</GB147_FV4025_Contriver_7x7>
-	<GB86_Centurion_Action_X_FR>
-		<id>263</id>
-		<userString>#gb_vehicles:GB86_Centurion_Action_X_FR</userString>
-		<description>#gb_vehicles:GB86_Centurion_Action_X_FR_descr</description>
-		<shortUserString>#gb_vehicles:GB86_Centurion_Action_X_FR_short</shortUserString>
-		<price>
-			100
-			<gold/>
-		</price>
-		<notInShop>true</notInShop>
-		<cannotBeBought>true</cannotBeBought>
-		<tags>mediumTank role_MT_universal HD improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals private secret cannot_be_sold special lockOptionalDevices lockCrewSkills lockCrew event_battles fort_rush</tags>
-		<level>10</level>
-	</GB86_Centurion_Action_X_FR>
 </root>

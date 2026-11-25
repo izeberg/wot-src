@@ -1,6 +1,7 @@
+from constants import BATTLE_MODE_VEH_TAGS_EXCEPT_REGULAR
 from CurrentVehicle import g_currentVehicle
 from gui.prb_control.entities.base.actions_validator import BaseActionsValidator, ActionsValidatorComposite
-from gui.prb_control.entities.base.squad.actions_validator import SquadActionsValidator
+from gui.prb_control.entities.base.squad.actions_validator import SquadActionsValidator, SquadVehiclesValidator
 from gui.prb_control.entities.base.unit.actions_validator import CommanderValidator
 from gui.prb_control.items import ValidationResult
 from gui.prb_control.settings import UNIT_RESTRICTION
@@ -39,8 +40,14 @@ class SquadRestrictionsVehiclesValidator(BaseActionsValidator):
         return result
 
 
+class RandomSquadVehiclesValidator(SquadVehiclesValidator):
+    _BATTLE_MODE_VEHICLE_TAGS = BATTLE_MODE_VEH_TAGS_EXCEPT_REGULAR
+
+
 class RandomSquadActionsValidator(SquadActionsValidator):
-    pass
+
+    def _createVehiclesValidator(self, entity):
+        return RandomSquadVehiclesValidator(entity)
 
 
 class BalancedSquadActionsValidator(RandomSquadActionsValidator):

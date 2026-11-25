@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G190_TH_72/normal/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/german/G190_TH_72/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.284876 -0.000162 -2.921705</min>
+		<max>1.284876 1.072451 2.888913</max>
+	</visibilityBox>
+</root>

@@ -20,9 +20,9 @@
 		<Nuffield_liberty_MKV>24</Nuffield_liberty_MKV>
 		<Armstrong-Siddeley>25</Armstrong-Siddeley>
 		<Rolls_Royse_Phantom_II>26</Rolls_Royse_Phantom_II>
+		<DDS_6V_53NF>27</DDS_6V_53NF>
 		<Meadows_DAV>28</Meadows_DAV>
 		<Vauxhall_Bedford_Twin_Six>29</Vauxhall_Bedford_Twin_Six>
-		<Rolls_Royce_Meteor_with_twin_turbo_supercharges_FR>30</Rolls_Royce_Meteor_with_twin_turbo_supercharges_FR>
 		<Wright_Continental_R-975C4>32</Wright_Continental_R-975C4>
 		<Chrysler_A57_multibank>34</Chrysler_A57_multibank>
 		<Rolls_Royce_Meteor_M120>35</Rolls_Royce_Meteor_M120>
@@ -130,6 +130,7 @@
 		<Leyland_L60_HPT_Dark_Morn>154</Leyland_L60_HPT_Dark_Morn>
 		<Rolls_Royce_Griffon_180_CFE_G>155</Rolls_Royce_Griffon_180_CFE_G>
 		<Parson_s_Turbine_No_2985>156</Parson_s_Turbine_No_2985>
+		<Meadows_D_A_V_A20>157</Meadows_D_A_V_A20>
 		<AEC_A190_Bishop>2000</AEC_A190_Bishop>
 		<GMC_6004_6_71A_Bishop>2001</GMC_6004_6_71A_Bishop>
 		<Nuffield_Liberty_Mk_III_CSP>2002</Nuffield_Liberty_Mk_III_CSP>
@@ -2569,8 +2570,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>348</rpm_min>
-			<rpm_max>2485</rpm_max>
+			<rpm_min>320</rpm_min>
+			<rpm_max>2575</rpm_max>
 		</Parson_s_Turbine_No_2983_7x7>
 		<Rolls_Royce_Griffon_180_B>
 			<userString>#gb_vehicles:Rolls_Royce_Griffon_180_B</userString>
@@ -3183,26 +3184,6 @@
 			<rpm_min>449</rpm_min>
 			<rpm_max>2161</rpm_max>
 		</Rolls_Royce_Meteor_with_twin_turbo_supercharges_7x7>
-		<Rolls_Royce_Meteor_with_twin_turbo_supercharges_FR>
-			<userString>#gb_vehicles:Rolls_Royce_Meteor_with_twin_turbo_supercharges_FR</userString>
-			<tags>gasoline</tags>
-			<level>10</level>
-			<price>65000</price>
-			<notInShop>true</notInShop>
-			<wwsoundPC>eng_ContinentalR_pc</wwsoundPC>
-			<wwsoundNPC>eng_ContinentalR_npc</wwsoundNPC>
-			<power>1040</power>
-			<weight>1000</weight>
-			<maxHealth>320</maxHealth>
-			<maxRegenHealth>160</maxRegenHealth>
-			<repairCost>9</repairCost>
-			<fireStartingChance>
-				0.2
-				<!--BW_String-->
-			</fireStartingChance>
-			<rpm_min>449</rpm_min>
-			<rpm_max>2161</rpm_max>
-		</Rolls_Royce_Meteor_with_twin_turbo_supercharges_FR>
 		<Ford_V8-220>
 			<userString>#gb_vehicles:Ford_V8-220</userString>
 			<tags>gasoline</tags>
@@ -3758,6 +3739,26 @@
 			<rpm_min>360</rpm_min>
 			<rpm_max>3329</rpm_max>
 		</GMC_6V53T>
+		<DDS_6V_53NF>
+			<userString>#gb_vehicles:DDS_6V_53NF</userString>
+			<tags>diesel</tags>
+			<level>9</level>
+			<price>90000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_v2k_pc</wwsoundPC>
+			<wwsoundNPC>eng_v2k_npc</wwsoundNPC>
+			<power>480</power>
+			<weight>500</weight>
+			<maxHealth>310</maxHealth>
+			<maxRegenHealth>155</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<fireStartingChance>
+				0.15
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>392</rpm_min>
+			<rpm_max>2024</rpm_max>
+		</DDS_6V_53NF>
 		<Rolls_Royce_CV_12TCA>
 			<userString>#gb_vehicles:Rolls_Royce_CV_12TCA</userString>
 			<tags>diesel</tags>
@@ -3778,6 +3779,26 @@
 			<rpm_min>320</rpm_min>
 			<rpm_max>2240</rpm_max>
 		</Rolls_Royce_CV_12TCA>
+		<Meadows_D_A_V_A20>
+			<userString>#gb_vehicles:Meadows_D_A_V_A20</userString>
+			<tags>gasoline</tags>
+			<level>4</level>
+			<price>10000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
+			<power>300</power>
+			<weight>725</weight>
+			<maxHealth>135</maxHealth>
+			<maxRegenHealth>68</maxRegenHealth>
+			<repairCost>4</repairCost>
+			<fireStartingChance>
+				0.2
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>437</rpm_min>
+			<rpm_max>2400</rpm_max>
+		</Meadows_D_A_V_A20>
 		<Rolls_Royse_Meteor_MkIVC_IGR>
 			<userString>#igr_vehicles:Rolls_Royse_Meteor_MkIVC_IGR</userString>
 			<tags>gasoline</tags>

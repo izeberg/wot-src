@@ -62,6 +62,8 @@ package net.wg.gui.battle.views.damagePanel.components.modules
       
       private var _moduleState:ModuleStateAdapter;
       
+      private var _appliedState:int = 0;
+      
       private var _disposed:Boolean = false;
       
       public function ModuleAssets(param1:String, param2:Boolean, param3:int)
@@ -193,6 +195,11 @@ package net.wg.gui.battle.views.damagePanel.components.modules
       
       private function applyState(param1:int) : void
       {
+         if(param1 == this._appliedState && ModuleStateAdapter.isTransition(param1))
+         {
+            return;
+         }
+         this._appliedState = param1;
          this._isFullRepairAnimInProgress = false;
          this._warningAnim.visible = false;
          this._critical.visible = false;
@@ -284,7 +291,7 @@ package net.wg.gui.battle.views.damagePanel.components.modules
          {
             this._repairAnim.state = BATTLE_ITEM_STATES.NORMAL;
          }
-         this._moduleState.changeStateAfterAnimationComplete();
+         this._appliedState = this._moduleState.changeStateAfterAnimationComplete();
       }
       
       private function onRepairAnimHideHandler(param1:RepairAnimEvent) : void
@@ -336,6 +343,11 @@ class ModuleStateAdapter
    function ModuleStateAdapter()
    {
       super();
+   }
+   
+   public static function isTransition(param1:int) : Boolean
+   {
+      return param1 != STATE_NORMAL && param1 != STATE_CRITICAL && param1 != STATE_DESTROYED;
    }
    
    public function changeStateAfterAnimationComplete() : int
