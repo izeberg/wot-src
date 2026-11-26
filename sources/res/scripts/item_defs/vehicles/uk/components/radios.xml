@@ -247,6 +247,22 @@
 				<!--BW_String-->
 			</repairCost>
 		</C42_VHF>
+		<C42_VHF_02>
+			<id>31020</id>
+			<userString>#gb_vehicles:C42_VHF_02</userString>
+			<tags/>
+			<level>10</level>
+			<price>54000</price>
+			<notInShop>true</notInShop>
+			<weight>40</weight>
+			<distance>750</distance>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>108</maxRegenHealth>
+			<repairCost>
+				3.5
+				<!--BW_String-->
+			</repairCost>
+		</C42_VHF_02>
 		<C45>
 			<id>20</id>
 			<userString>#gb_vehicles:C45</userString>

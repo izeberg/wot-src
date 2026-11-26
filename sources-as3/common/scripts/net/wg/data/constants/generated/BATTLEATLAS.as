@@ -3709,6 +3709,8 @@ package net.wg.data.constants.generated
       
       public static const UK_GB123_GSOR_1006_V7:String = "uk-GB123_GSOR_1006_v7";
       
+      public static const UK_GB123_GSOR_1006_V7_02:String = "uk-GB123_GSOR_1006_v7_02";
+      
       public static const UK_GB124_AEC_ARMOURED_CAR:String = "uk-GB124_AEC_Armoured_Car";
       
       public static const UK_GB125_SALADIN:String = "uk-GB125_Saladin";
@@ -4684,6 +4686,8 @@ package net.wg.data.constants.generated
       public static const USSR_R25_GAZ_74B:String = "ussr-R25_GAZ-74b";
       
       public static const USSR_R250_NST_130:String = "ussr-R250_NST_130";
+      
+      public static const USSR_R250_NST_130_03:String = "ussr-R250_NST_130_03";
       
       public static const USSR_R251_T_55_SP_01:String = "ussr-R251_T_55_SP_01";
       

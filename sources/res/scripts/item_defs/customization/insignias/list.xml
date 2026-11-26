@@ -981,6 +981,18 @@
 		</insignia>
 	</itemGroup>
 	<itemGroup>
+		<name>A100_T49_02_3Dst_01</name>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<tags>hiddenInUI</tags>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+		<insignia>
+			<id>31071</id>
+			<texture>gui/maps/vehicles/decals/insignia/custom/A100_T49_02_3Dst_01_Insignia_3.dds</texture>
+		</insignia>
+	</itemGroup>
+	<itemGroup>
 		<name>NY23</name>
 		<userString>#vehicle_customization:insignias/special</userString>
 		<season>ALL</season>

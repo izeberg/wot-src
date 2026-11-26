@@ -15,10 +15,7 @@ from shared_utils import findFirst
 from new_year.helpers.server_settings import getNewYearGeneralConfig
 from new_year.ny_constants import NY_CUMULATIVE_LEADERBOARD_SEASON_ID
 from new_year.helpers.ny_leaderboard_tank_reward import extractVehicleCD
-from new_year_common.items.components.ny_constants import ENT_TAMAGOCHI, RaidState
-_INDICATOR_ENT_REQUIREMENTS = {'food': 1, 
-   'fun': 2, 
-   'activity': 3}
+from new_year_common.items.components.ny_constants import RaidState
 
 class TamagotchiDataProvider(ITamagotchiDataProvider):
     __slots__ = ('__config', '__leaderboard', '__cumulativeLeaderboard', '__playerInfo',
@@ -245,7 +242,6 @@ class TamagotchiDataProvider(ITamagotchiDataProvider):
         if isSuccess:
             self.__playerInfo = readTamagotchiPlayerInfo(value, self.playerInfo)
             self.__simulationInfo = copy.deepcopy(self.__playerInfo)
-            self.__normalizeOpenedIndicators()
         self.onPlayerInfoUpdated(isSuccess)
         if isSuccess:
             self.setRaidReady()
@@ -385,14 +381,11 @@ class TamagotchiDataProvider(ITamagotchiDataProvider):
         return result
 
     def isIndicatorLocked(self, name):
-        entCount = self._itemsCache.items.stats.entitlements.get(ENT_TAMAGOCHI, 0)
-        requiredEntCount = _INDICATOR_ENT_REQUIREMENTS.get((name or '').lower())
-        return requiredEntCount is None or entCount < requiredEntCount
-
-    def syncOpenedIndicators(self):
-        changed = self.__normalizeOpenedIndicators()
-        self.setRaidReady()
-        return changed
+        points = self.__simulationInfo.indicators.get(name, -1)
+        config = getNewYearGeneralConfig()
+        requiredLevel = config.getRaccoonIndicatorLevelOpen(name)
+        atmosphereLevel = config.calculateLevelByPoints(self._itemsCache.items.festivity.getAtmPoints())
+        return points == -1 and atmosphereLevel < requiredLevel
 
     def setRaidReady(self, isReady=None):
         isReady = self.__evaluateRaidReady() if isReady is None else bool(isReady)
@@ -405,33 +398,21 @@ class TamagotchiDataProvider(ITamagotchiDataProvider):
             self.onRaidReadyUpdated(self.isReadyForRaid())
             return
 
-    def __normalizeOpenedIndicators(self):
-        if not self.config or not self.__simulationInfo.indicators:
-            return False
-        changed = False
-        for name in self.config.indicators.iterkeys():
-            if self.isIndicatorLocked(name):
-                continue
-            for info in (self.__simulationInfo, self.__playerInfo):
-                if info.indicators.get(name, -1) < 0:
-                    info.indicators[name] = 0
-                    changed = True
-
-        return changed
-
     def __evaluateRaidReady(self):
         if not self.config or not self.config.indicators:
             return False
+        canRaid = False
         indicators = self.__simulationInfo.indicators
         threshold = self.__config.raidScalePoint
         for name in self.config.indicators.iterkeys():
             if self.isIndicatorLocked(name):
                 continue
             value = max(0, indicators.get(name, -1))
+            canRaid = True
             if value < threshold:
                 return False
 
-        return True
+        return canRaid
 
     @property
     def isRaidReady(self):

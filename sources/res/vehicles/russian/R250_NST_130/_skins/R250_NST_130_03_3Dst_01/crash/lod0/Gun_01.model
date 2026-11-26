@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/crash/lod1/Gun_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/crash/lod0/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.467500 -0.278910 -1.379999</min>
+		<max>0.331254 0.298408 5.524634</max>
+	</visibilityBox>
+</root>

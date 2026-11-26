@@ -178,6 +178,7 @@ class SOUND(CONST_CONTAINER):
     ARTY_SHOT_ALERT_SOUND = 'artyBulbVoices'
     CAPTURE_DEVICES = 'captureDevice'
     VOIP_ENABLE = 'enableVoIP'
+    VOIP_ECHO_SUPPRESSION = 'voipEchoSuppression'
     VOIP_ENABLE_CHANNEL = 'enableVoIPChannel'
     VOIP_MASTER = 'masterVivoxVolume'
     VOIP_MIC = 'micVivoxVolume'

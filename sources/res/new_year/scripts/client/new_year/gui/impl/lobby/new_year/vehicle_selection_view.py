@@ -1,5 +1,5 @@
-from collections import OrderedDict
 import typing
+from collections import OrderedDict
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.vehicle_selection_models.selectable_reward_category_model import SelectableRewardCategoryModel
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.vehicle_selection_models.selectable_reward_view_model import SelectableRewardViewModel
 from new_year.gui.impl.lobby.new_year.popovers.vehicle_filter_popover import VehicleFilterPopover
@@ -11,6 +11,8 @@ from new_year.helpers.ny_helpers import _getVariadicID
 from new_year_common.items.components.ny_constants import TOKEN_VARIADIC_DISCOUNT_PREFIX
 from frameworks.wulf import ViewSettings
 from frameworks.wulf import ViewStatus
+from frameworks.wulf import WindowFlags
+from frameworks.wulf import WindowLayer
 from gui import SystemMessages
 from gui.SystemMessages import SM_TYPE
 from gui import GUI_NATIONS
@@ -19,6 +21,7 @@ from gui.impl import backport
 from gui.impl.gen import R
 from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.impl.pub import ViewImpl
+from gui.impl.pub.lobby_window import LobbyWindow
 from gui.shared.gui_items.Vehicle import VEHICLE_TYPES_ORDER
 from gui.shared.gui_items.Vehicle import getNationLessName
 from gui.shared.utils.decorators import adisp_process
@@ -32,7 +35,8 @@ if typing.TYPE_CHECKING:
     from Event import Event
 _NATIONS_KEY_NAME = 'Nations'
 _TYPES_KEY_NAME = 'Types'
-_TYPES_ORDER = ('heavyTank', 'mediumTank', 'lightTank', 'AT-SPG', 'SPG')
+_TYPES_ORDER = (
+ 'heavyTank', 'mediumTank', 'lightTank', 'AT-SPG', 'SPG')
 
 def _packVehicleModel(vehicle, model):
     model.setVehicleName(getNationLessName(vehicle.name))
@@ -280,3 +284,10 @@ class VehicleSelectionView(ViewImpl):
             self.__tooltipData[str(tooltipIndex)] = backport.createTooltipData(isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.AWARD_VEHICLE, specialArgs=[
              veh.getIntCD()])
             tooltipIndex += 1
+
+
+class VehicleSelectionWindow(LobbyWindow):
+    __slots__ = ()
+
+    def __init__(self, discountID=None, parent=None):
+        super(VehicleSelectionWindow, self).__init__(wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, content=VehicleSelectionView(R.views.new_year.lobby.new_year.VehicleSelectionView(), discountID=discountID), parent=parent, layer=WindowLayer.OVERLAY)

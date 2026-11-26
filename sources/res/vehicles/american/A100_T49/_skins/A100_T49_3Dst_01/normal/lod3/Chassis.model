@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A100_T49/_skins/A100_T49_3Dst_01/normal/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.530417 -0.005737 -2.675379</min>
+		<max>1.530417 1.162870 2.553185</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A100_T49/_skins/A100_T49_3Dst_01/normal/lod3/Chassis</nodefullVisual>
+</root>

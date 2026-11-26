@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/normal/lod0/Pistons_anim_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.329202 0.634160 -1.621390</min>
+		<max>0.329202 1.024576 -0.857784</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/normal/lod1/Pistons_anim_01</parent>
+	<extent>32.000000</extent>
+</root>

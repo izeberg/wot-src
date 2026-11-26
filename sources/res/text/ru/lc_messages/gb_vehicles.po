@@ -65,6 +65,9 @@ msgstr "SR C42"
 msgid "C42_VHF"
 msgstr "C42 VHF"
 
+msgid "C42_VHF_02"
+msgstr "C42 VHF"
+
 msgid "C45"
 msgstr "SR C45"
 
@@ -241,6 +244,9 @@ msgid "Chassis_GB123_GSOR_1006_v7"
 msgstr "GSOR 1006/7 Mk. 1"
 
 msgid "Chassis_GB123_GSOR_1006_v7_2"
+msgstr "GSOR 1006/7 Mk. 2"
+
+msgid "Chassis_GB123_GSOR_1006_v7_2_02"
 msgstr "GSOR 1006/7 Mk. 2"
 
 msgid "Chassis_GB124_AEC_Armoured_Car"
@@ -1351,6 +1357,24 @@ msgstr "Staghound"
 
 msgid "GB123_GSOR_1006_v7"
 msgstr "GSOR 1006 Scheme 7"
+
+msgid "GB123_GSOR_1006_v7_02"
+msgstr "GSOR Experimental"
+
+msgid "GB123_GSOR_1006_v7_02_descr"
+msgstr ""
+"Проект разработан Британской школой танковых технологий (STT) в 1961 году. Машина с небольшой массой и максимально возможным уровнем огневой мощи предназначалась для разведки и поддержки. В рамках проекта GSOR 1006 было разработано больше десяти компоновочных схем как с гусеничным, так и с колёсным движителем. Одной из них была GSOR 1006 Scheme 7. Проект остался на бумаге, но впоследствии был объединён с GSOR 1010 и стал фундаментом для дальнейших разработок, завершившихся созданием семейства гусеничных боевых машин Combat Vehicle Reconnaissance (Tracked).\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "GB123_GSOR_1006_v7_02_long_special"
+msgstr "?empty?"
+
+msgid "GB123_GSOR_1006_v7_02_short"
+msgstr "GSOR Exp"
+
+msgid "GB123_GSOR_1006_v7_02_short_special"
+msgstr "?empty?"
 
 msgid "GB123_GSOR_1006_v7_descr"
 msgstr ""
@@ -3305,6 +3329,9 @@ msgstr "Rolls Royce K60"
 msgid "Rolls_Royce_K60_Mk2"
 msgstr "Rolls Royce K60 Mk. 2"
 
+msgid "Rolls_Royce_K60_Mk2_02"
+msgstr "Rolls Royce K60 Mk. 2"
+
 msgid "Rolls_Royce_Meteor_C"
 msgstr "Rolls-Royce Meteor C"
 
@@ -3522,6 +3549,9 @@ msgid "Turret_1_GB122_Staghound_Mk_III"
 msgstr "Staghound Mk. II"
 
 msgid "Turret_1_GB123_GSOR_1006_v7"
+msgstr "GSOR 1006/7 Mk. 1"
+
+msgid "Turret_1_GB123_GSOR_1006_v7_02"
 msgstr "GSOR 1006/7 Mk. 1"
 
 msgid "Turret_1_GB124_AEC_Armoured_Car"
@@ -4116,11 +4146,23 @@ msgstr "105 mm MV AP"
 msgid "_105mm_MV_APDS"
 msgstr "105 mm MV APCR"
 
+msgid "_105mm_MV_APDS_02"
+msgstr "105 mm MV HEAT"
+
+msgid "_105mm_MV_AP_02"
+msgstr "105 mm MV APCR"
+
 msgid "_105mm_MV_Gun"
+msgstr "105 mm MV Gun"
+
+msgid "_105mm_MV_Gun_02"
 msgstr "105 mm MV Gun"
 
 msgid "_105mm_MV_HE"
 msgstr "105 mm MV HE"
+
+msgid "_105mm_MV_HE_02"
+msgstr "105 mm MV HESH"
 
 msgid "_105mm_SPH_M4_L23"
 msgstr "105 mm M4"

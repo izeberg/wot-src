@@ -4,6 +4,7 @@ import copy, typing, BigWorld, Event
 from constants import RentType, SEASON_NAME_BY_TYPE, IS_RENTALS_ENABLED
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.money import Money
+from gui.shared.utils.requesters import REQ_CRITERIA
 from helpers import dependency
 from helpers import time_utils
 from skeletons.gui.game_control import IRentalsController, ISeasonsController, IEpicBattleMetaGameController
@@ -152,14 +153,11 @@ class RentalsController(IRentalsController):
         if not self.itemsCache.isSynced():
             return
         self.__vehiclesForUpdate = []
-        rentedVehicles = []
-        for itemCD in set(self.itemsCache.items.inventory.getIventoryVehiclesCDs()).union(self.itemsCache.items.shop.getVehicleRentPrices().keys()):
-            item = self.itemsCache.items.getItemByCD(itemCD)
-            if item.isRented or item.isRentPromotion:
-                rentedVehicles.append(item)
-
+        vehicleRentPrices = self.itemsCache.items.shop.getVehicleRentPrices()
+        vehiclesCriteria = REQ_CRITERIA.CUSTOM(lambda vehicle: (vehicle.isRented or vehicle.isRentPromotion) and (vehicle.inventoryCount > 0 or vehicle.intCD in vehicleRentPrices))
+        rentedVehicles = self.itemsCache.items.getVehicles(vehiclesCriteria)
         notificationList = []
-        for vehicle in rentedVehicles:
+        for vehicle in rentedVehicles.values():
             delta = vehicle.rentLeftTime
             if delta > 0:
                 notificationList.append((vehicle.intCD, self.getDeltaPeriod(delta), vehicle.isRentPromotion))

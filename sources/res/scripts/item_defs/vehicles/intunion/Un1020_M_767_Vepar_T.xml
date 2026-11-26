@@ -1378,11 +1378,11 @@
 			<rotationSpeed>30</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.2
+					0.16
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.2
+					0.18
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -2865,7 +2865,7 @@
 				<armor_11>100</armor_11>
 				<armor_12>150</armor_12>
 				<armor_13>100</armor_13>
-				<armor_14>120</armor_14>
+				<armor_14>200</armor_14>
 				<armor_15>50</armor_15>
 				<armor_16>210</armor_16>
 				<armor_17>295</armor_17>
@@ -2946,13 +2946,13 @@
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
-					<reloadTime>15</reloadTime>
+					<reloadTime>14</reloadTime>
 					<aimingTime>
-						2.7
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
-						0.4
+						0.44
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<invisibilityFactorAtShot>
@@ -2982,7 +2982,7 @@
 					</clip>
 					<autoreload>
 						<reloadTime>
-							15.6 15.2 15
+							13.6 13.2 13
 							<!--BW_String-->
 						</reloadTime>
 					</autoreload>

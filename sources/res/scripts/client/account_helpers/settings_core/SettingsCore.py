@@ -439,6 +439,8 @@ class SettingsCore(ISettingsCore):
          (
           SOUND.VOIP_ENABLE, options.VOIPSetting(True)),
          (
+          SOUND.VOIP_ECHO_SUPPRESSION, options.VOIPEchoSuppressionSetting()),
+         (
           SOUND.VOIP_ENABLE_CHANNEL, options.VOIPChannelSetting()),
          (
           SOUND.VOIP_MASTER, options.VOIPMasterSoundSetting()),

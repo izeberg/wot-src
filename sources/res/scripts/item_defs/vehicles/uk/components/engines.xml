@@ -1745,6 +1745,27 @@
 			<rpm_min>400</rpm_min>
 			<rpm_max>3200</rpm_max>
 		</Rolls_Royce_K60_Mk2>
+		<Rolls_Royce_K60_Mk2_02>
+			<id>31027</id>
+			<userString>#gb_vehicles:Rolls_Royce_K60_Mk2_02</userString>
+			<tags>diesel</tags>
+			<level>9</level>
+			<price>83000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_Skoda_Prague_pc</wwsoundPC>
+			<wwsoundNPC>eng_Skoda_Prague_npc</wwsoundNPC>
+			<power>535</power>
+			<weight>660</weight>
+			<maxHealth>320</maxHealth>
+			<maxRegenHealth>160</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<fireStartingChance>
+				0.15
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>400</rpm_min>
+			<rpm_max>3200</rpm_max>
+		</Rolls_Royce_K60_Mk2_02>
 		<Rolls_Royce_Meteor_C>
 			<id>31019</id>
 			<userString>#gb_vehicles:Rolls_Royce_Meteor_C</userString>
@@ -2638,7 +2659,7 @@
 			<notInShop>true</notInShop>
 			<wwsoundPC>eng_ContinentalR_pc</wwsoundPC>
 			<wwsoundNPC>eng_ContinentalR_npc</wwsoundNPC>
-			<power>1100</power>
+			<power>920</power>
 			<weight>750</weight>
 			<maxHealth>320</maxHealth>
 			<maxRegenHealth>160</maxRegenHealth>
@@ -2647,8 +2668,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>441</rpm_min>
-			<rpm_max>2188</rpm_max>
+			<rpm_min>302</rpm_min>
+			<rpm_max>2630</rpm_max>
 		</Unit_2983F_GB146>
 		<Vauxhall_Bedford_Twin_Six>
 			<id>29</id>

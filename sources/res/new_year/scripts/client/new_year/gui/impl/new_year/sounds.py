@@ -355,6 +355,6 @@ class VideoRewardsSoundControl(BaseVideoRewardsSoundControl):
             return self._REWARDS[bonusName]
         if self.__rewardType == self._CUSTOMIZATION_REWARD:
             return self._CUSTOMIZATION_DEFAULT
-        if self.__lootboxType == NewYearLootBoxes.NY_CUR_YEAR_TANKS:
+        if self.__lootboxType in (NewYearLootBoxes.NY_CUR_YEAR_TANKS, NewYearLootBoxes.NY_CUR_YEAR_TANKS_TEST):
             return self._LEGENDARY_TANK_DEFAULT
         return self._DEFAULT

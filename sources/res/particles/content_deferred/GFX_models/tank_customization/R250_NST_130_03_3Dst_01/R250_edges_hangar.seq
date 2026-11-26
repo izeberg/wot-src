@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>12.000001</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Edges</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/R250_NST_130_03_3Dst_01/R250_edges.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.000000</startTime>
+				<value>1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.013651</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.013651</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>9.000000</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.333333</inTangent>
+				<outTangent>0.000545 0.000545 0.000545 -0.333845</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>12.000001</startTime>
+				<value>1.001634 1.001634 1.001634 -0.001536</value>
+				<inTangent>0.000545 0.000545 0.000545 0.011972</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>65795</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

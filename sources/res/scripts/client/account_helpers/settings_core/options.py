@@ -720,6 +720,34 @@ class VOIPSetting(AccountSetting):
             return
 
 
+class VOIPEchoSuppressionSetting(UserPrefsBoolSetting):
+
+    def __init__(self):
+        super(VOIPEchoSuppressionSetting, self).__init__(SOUND.VOIP_ECHO_SUPPRESSION, isPreview=True)
+
+    @proto_getter(PROTO_TYPE.BW_CHAT2)
+    def bwProto(self):
+        return
+
+    def getDefaultValue(self):
+        return True
+
+    def pack(self):
+        serverSettings = getattr(BigWorld.player(), 'serverSettings', {})
+        profile = serverSettings.get('voipSettings', {}).get('profile', VOIP.getVOIPManager().profile)
+        if profile == VOIP_SUPPORTED_API.WebRTC:
+            return super(VOIPEchoSuppressionSetting, self).pack()
+        else:
+            return
+
+    def isEqual(self, value):
+        return self.valueReal is None and super(VOIPEchoSuppressionSetting, self).isEqual(value)
+
+    def _set(self, value):
+        self.bwProto.voipController.startNoiseCancelTimer()
+        VOIP.getVOIPManager().setEchoSuppression(value)
+
+
 class VOIPChannelSetting(UserPrefsInt64Setting):
 
     def __init__(self, isPreview=False):

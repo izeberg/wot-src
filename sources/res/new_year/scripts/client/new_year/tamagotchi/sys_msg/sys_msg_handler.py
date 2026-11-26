@@ -12,6 +12,7 @@ from new_year.gui.impl.new_year.new_year_bonus_packer import getNewYearBonusPack
 from new_year.skeletons.new_year import ITamagotchiDataProvider
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.components.new_year_main_widget_model import State
 from new_year_common.items.components.ny_constants import YEARS_INFO
+from new_year_common.settings import RaidResponseText
 from shared_utils import findFirst
 from gui.SystemMessages import SM_TYPE
 from gui import SystemMessages
@@ -147,9 +148,16 @@ class TamagotchiSysMsgHandler(EventsHandler):
         SystemMessages.pushMessage(text=backport.text(R.strings.ny.notification.leaderboard.unavailable()), type=SM_TYPE.ErrorHeader, priority=NotificationPriorityLevel.HIGH, messageData={'header': backport.text(R.strings.ny.notification.leaderboard.header())})
 
     @classmethod
-    def sendRaidStartError(cls, isNotEnoughResources):
-        text = R.strings.ny.notification.racoon.raid.start.errorResources() if isNotEnoughResources else R.strings.ny.notification.racoon.raid.start.error()
-        SystemMessages.pushMessage(backport.text(text), type=SM_TYPE.ErrorSimple, priority=NotificationPriorityLevel.MEDIUM)
+    def sendRaidStartError(cls, error):
+        error = error or ''
+        strings = R.strings.ny.notification.racoon.raid.start
+        if error.endswith(RaidResponseText.FAILURE_NOT_ENOUGH_RESOURCES):
+            text = backport.text(strings.errorResources())
+        elif error.endswith(RaidResponseText.FAILURE_SERVICE_VALIDATION):
+            text = backport.text(strings.errorIndicators())
+        else:
+            text = backport.text(strings.error())
+        SystemMessages.pushMessage(text, type=SM_TYPE.ErrorSimple, priority=NotificationPriorityLevel.MEDIUM)
 
     @classmethod
     def sendRaidStarted(cls):

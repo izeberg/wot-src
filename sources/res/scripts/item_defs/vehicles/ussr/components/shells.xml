@@ -4793,47 +4793,16 @@
 	<_125mm_3BM26_R252>
 		<id>31213</id>
 		<userString>#ussr_vehicles:_125mm_3BM26_R252</userString>
-		<icon>ap_fsds</icon>
+		<icon>ap_cr</icon>
 		<price>1250</price>
-		<kind>ARMOR_PIERCING_FSDS</kind>
+		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>125</caliber>
 		<isTracer>true</isTracer>
-		<effects>largeAPFSDS</effects>
+		<effects>largeAPCR</effects>
 		<damage>
 			<armor>460</armor>
 			<devices>165</devices>
 		</damage>
-		<maxDistanceInsideVehicle>40</maxDistanceInsideVehicle>
-		<damageRandomization>
-			0.0
-			<!--BW_String-->
-		</damageRandomization>
-		<distanceDamage>
-			<isEnabled>true</isEnabled>
-			<damage>
-				<min>320</min>
-				<max>600</max>
-			</damage>
-			<distance>
-				<min>
-					0.5
-					<!--BW_String-->
-				</min>
-				<max>
-					5.0
-					<!--BW_String-->
-				</max>
-			</distance>
-			<ignoreModules>true</ignoreModules>
-		</distanceDamage>
-		<hitDeviceChanceMultiplier>
-			0.3
-			<!--BW_String-->
-		</hitDeviceChanceMultiplier>
-		<hitCrewChanceMultiplier>
-			0.3
-			<!--BW_String-->
-		</hitCrewChanceMultiplier>
 	</_125mm_3BM26_R252>
 	<_125mm_3OF26_R252>
 		<id>31215</id>

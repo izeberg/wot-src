@@ -44,7 +44,7 @@ class TankAcademyController(ITankAcademyController):
     __slots__ = ('_em', 'onStateChanged', 'onFinish', '_isEnabled', '_isAvailable',
                  '__isWaitingToken', '__savedRewards', '__hasDelayedRewards', '__isFinished',
                  '__abTestGroup', '__hangarWidgetAlias', '__suppressedPostBattleArenaUniqueIDs',
-                 '__hintsHelper', '__currentQuestOrder')
+                 '__hintsHelper', '__currentQuest', '__currentQuestOrder', '__tankAcademyQuests')
 
     def __init__(self):
         super(TankAcademyController, self).__init__()
@@ -61,6 +61,8 @@ class TankAcademyController(ITankAcademyController):
         self.__hangarWidgetAlias = None
         self.__suppressedPostBattleArenaUniqueIDs = set()
         self.__hintsHelper = None
+        self.__currentQuest = None
+        self.__tankAcademyQuests = None
         self.__currentQuestOrder = None
         self.__migrationInfo = None
         return
@@ -184,8 +186,12 @@ class TankAcademyController(ITankAcademyController):
         return self.getTankAcademyQuests(groupFilterFunc)
 
     def getTankAcademyQuests(self, filterFunc=None):
-        quests = self.__eventsCache.getHiddenQuests(self.__isTankAcademyQuestForThisPlayer).values()
-        quests = sorted(quests, key=lambda q: q.getOrder())
+        if self.__tankAcademyQuests:
+            quests = self.__tankAcademyQuests
+        else:
+            quests = self.__eventsCache.getHiddenQuests(self.__isTankAcademyQuestForThisPlayer).values()
+            quests = sorted(quests, key=lambda q: q.getOrder())
+            self.__tankAcademyQuests = quests
         if filterFunc:
             return [ quest for quest in quests if filterFunc(quest) ]
         return quests
@@ -252,10 +258,13 @@ class TankAcademyController(ITankAcademyController):
             self.__savedRewards.pop(idx)
 
     def getCurrentQuest(self):
-        quests = self.getNotCompletedTankAcademyQuests()
-        if quests:
-            return quests[0]
+        if self.__currentQuest:
+            return self.__currentQuest
         else:
+            quests = self.getNotCompletedTankAcademyQuests()
+            if quests:
+                self.__currentQuest = quests[0]
+                return self.__currentQuest
             return
 
     def getCurrentQuestOrder(self):
@@ -339,7 +348,10 @@ class TankAcademyController(ITankAcademyController):
         return isEnabled and (self._isAvailable or self.__eventsCache.waitForSync or not self.__itemsCache.isSynced())
 
     def _onSyncCompleted(self):
+        self.__tankAcademyQuests = None
+        self.__currentQuest = None
         self.__update()
+        return
 
     def _onItemsCacheSync(self, *_, **__):
         self.__migrationInfo = self.__getMigrationInfo()
@@ -348,10 +360,13 @@ class TankAcademyController(ITankAcademyController):
         if previousIsAvailable != self._isAvailable or self.__hasDelayedRewards or self.hasUnobtainedDelayedRewards():
             if self._isAvailable and self.__isWaitingToken:
                 self.__isWaitingToken = False
+                self.__tankAcademyQuests = None
+                self.__currentQuest = None
                 self.__eventsCache.onSyncCompleted += self._onSyncCompleted
                 self.__lobbyContext.onServerSettingsChanged += self._onLobbyServerSettingChanged
                 self.__lobbyContext.getServerSettings().onServerSettingsChange += self._onServerSettingsChange
         self.__update()
+        return
 
     def _onLobbyServerSettingChanged(self, newServerSettings):
         newServerSettings.onServerSettingsChange += self._onServerSettingsChange
@@ -368,6 +383,8 @@ class TankAcademyController(ITankAcademyController):
         if isChanged:
             self._isEnabled = isEnabled
             self.__abTestGroup = abTestGroup
+            self.__tankAcademyQuests = None
+            self.__currentQuest = None
             self.onStateChanged()
         return isChanged
 

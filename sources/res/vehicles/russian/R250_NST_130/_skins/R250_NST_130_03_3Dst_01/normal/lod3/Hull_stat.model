@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/normal/lod3/Hull_stat</nodelessVisual>
+	<tank>true</tank>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+	<visibilityBox>
+		<min>0.209571 -0.025635 2.872993</min>
+		<max>0.544987 0.072941 3.176380</max>
+	</visibilityBox>
+</root>

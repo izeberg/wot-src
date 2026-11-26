@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/crash/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.988747 -1.158448 -4.451955</min>
+		<max>1.988747 0.430807 4.504365</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/crash/lod0/Hull</nodefullVisual>
+</root>

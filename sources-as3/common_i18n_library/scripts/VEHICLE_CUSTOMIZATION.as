@@ -28796,6 +28796,12 @@ package
       public static const NY27_05_STYLE_147_DESCRIPTION:String = "#vehicle_customization:NY27_05_Style_147/description";
       
       public static const NY27_05_STYLE_147_LONGDESCRIPTION:String = "#vehicle_customization:NY27_05_Style_147/longDescription";
+      
+      public static const SPECIAL_STYLE_A100_T49_02_3DST_01:String = "#vehicle_customization:special_style/A100_T49_02_3Dst_01";
+      
+      public static const SPECIAL_STYLE_A100_T49_02_3DST_01_LONG:String = "#vehicle_customization:special_style/A100_T49_02_3Dst_01/long";
+      
+      public static const SPECIAL_STYLE_R250_NST_130_03_3DST_01_NAME:String = "#vehicle_customization:special_style/R250_NST_130_03_3Dst_01/name";
        
       
       public function VEHICLE_CUSTOMIZATION()

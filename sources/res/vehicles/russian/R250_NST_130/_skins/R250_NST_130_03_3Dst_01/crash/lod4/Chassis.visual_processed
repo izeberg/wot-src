@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_gui</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.000000 -1.000000</row1>
+					<row2>0.000000 1.000000 0.000000</row2>
+					<row3>0.000000 4.573220 -0.160293</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>Tank</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.500000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>V</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.727488 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>V_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 -1.227488 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Tank_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 -0.500000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>V_BlendBone</node>
+		<geometry>
+			<vertices>track_LShape.vertices</vertices>
+			<stream>track_LShape.uv2</stream>
+			<primitive>track_LShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/NST_130_03_3Dst_01_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/NST_130_03_3Dst_01_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/NST_130_03_3Dst_01_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/NST_130_03_3Dst_01_proxy_AO.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.352103 0.721778 -0.045777</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>V_BlendBone</node>
+		<geometry>
+			<vertices>track_RShape.vertices</vertices>
+			<stream>track_RShape.uv2</stream>
+			<primitive>track_RShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/NST_130_03_3Dst_01_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/NST_130_03_3Dst_01_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/NST_130_03_3Dst_01_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/NST_130_03_3Dst_01_proxy_AO.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.352103 0.721778 -0.045777</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.652102 0.000002 -3.847708</min>
+		<max>1.652102 1.443554 3.939263</max>
+	</boundingBox>
+	<geometrySize>5520</geometrySize>
+	<minUVDensity>0.000595</minUVDensity>
+</root>

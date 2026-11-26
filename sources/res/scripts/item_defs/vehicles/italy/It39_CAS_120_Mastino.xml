@@ -11,8 +11,8 @@
 	<postProgressionTree>role_ATSPG_sniper</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>40</forward>
-		<backward>15</backward>
+		<forward>43</forward>
+		<backward>14</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -2623,10 +2623,10 @@
 			<guns>
 				<_120mm_Cannone_Da_120_50_It39>
 					shared
-					<maxAmmo>30</maxAmmo>
+					<maxAmmo>46</maxAmmo>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.14
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>
@@ -2640,12 +2640,15 @@
 						<maxPitch>0 8 1 8</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.37
+						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>9</reloadTime>
+					<reloadTime>
+						7.4
+						<!--BW_String-->
+					</reloadTime>
 					<aimingTime>
-						1.8
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -3231,8 +3234,8 @@
 		<detailed>
 			<engines>
 				<SPA_228_It39>
-					<smplEnginePower>300</smplEnginePower>
-					<smplFwMaxSpeed>40</smplFwMaxSpeed>
+					<smplEnginePower>360</smplEnginePower>
+					<smplFwMaxSpeed>43</smplFwMaxSpeed>
 				</SPA_228_It39>
 			</engines>
 			<chassis>

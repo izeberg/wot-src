@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>6.700000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>plane</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/R250_NST_130_03_3Dst_01/R250_plane.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.800000 1.000000 1.200000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.800000 1.000000 1.200000</value>
+				<inTangent>0.037500 0.000000 -0.037500</inTangent>
+				<outTangent>0.037500 0.000000 -0.037500</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.666667</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.075000 -0.000000 -0.075000</inTangent>
+				<outTangent>0.075000 -0.000000 -0.075000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000 0.552941 0.105882 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 6.398521</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 6.398521</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.500000</startTime>
+				<value>1.000000 0.552941 0.105882 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.032157</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.032157</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>diffuseUVSpeedAlphaOffset</property>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.062883 0.050000 1.000000 0.000000</value>
+				<inTangent>0.512944 -0.143173 0.000000 0.000000</inTangent>
+				<outTangent>0.512944 -0.143173 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>0.499452 -0.212484 1.000000 0.000000</value>
+				<inTangent>0.238129 -0.143173 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>shield_1</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/R250_NST_130_03_3Dst_01/R250_shield.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.482353 0.121569 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 1.789238</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000 0.482353 0.121569 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 1.789238</inTangent>
+				<outTangent>0.000000 -0.065255 -0.012047 1.789238</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.666667</startTime>
+				<value>1.000000 0.427974 0.111530 3.306608</value>
+				<inTangent>0.000000 -0.101961 -0.018824 0.085643</inTangent>
+				<outTangent>0.000000 -0.063803 -0.011779 0.085643</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.033334</startTime>
+				<value>1.000000 0.404580 0.107211 1.317941</value>
+				<inTangent>-0.000000 -0.017118 -0.003160 -1.670219</inTangent>
+				<outTangent>0.000000 -0.156465 -0.065639 -1.670219</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.666667</startTime>
+				<value>1.000000 0.149020 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.044395 -0.042175 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000 0.286275 0.070588 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 7.659658</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 7.659658</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>1.000000 0.286275 0.070588 2.286197</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.317513</inTangent>
+				<outTangent>0.000000 -0.063348 -0.032579 -1.518354</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.700000</startTime>
+				<value>1.000000 0.149020 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.039216 -0.020168 -0.014663</inTangent>
+				<outTangent>-0.000000 -0.039216 -0.020168 -0.014663</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>opacity_UV_Speed_Scale</property>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000 -0.330458 1.000000 0.981242</value>
+				<inTangent>0.000000 0.000000 0.000000 1.095786</inTangent>
+				<outTangent>0.000000 0.454349 0.000000 0.004689</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.000000</startTime>
+				<value>1.000000 1.486939 1.000000 1.000000</value>
+				<inTangent>-0.000000 0.454349 -0.000000 0.004689</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.933814</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>opacity_UV_Speed_Scale</property>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000 0.505100 0.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.252088</inTangent>
+				<outTangent>0.333333 0.320401 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>1.000000 1.466302 0.000000 1.000000</value>
+				<inTangent>0.333333 0.320401 -0.000000 -0.000000</inTangent>
+				<outTangent>0.333333 0.320401 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>diffuseUVSpeedAlphaOffset</property>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000 0.100000 1.000000 0.000000</value>
+				<inTangent>-0.250000 -0.075000 0.000000 0.000000</inTangent>
+				<outTangent>-0.250000 -0.075000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.000000</startTime>
+				<value>-1.000000 -0.200000 1.000000 0.000000</value>
+				<inTangent>-0.250000 -0.075000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.250000 -0.075000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>diffuseUVSpeedAlphaOffset</property>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000 0.100000 1.000000 0.000000</value>
+				<inTangent>-0.050000 -0.075000 0.000000 0.000000</inTangent>
+				<outTangent>-0.050000 -0.075000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.000000</startTime>
+				<value>-0.200000 -0.200000 1.000000 0.000000</value>
+				<inTangent>-0.050000 -0.075000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.050000 -0.075000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>R250_NST_130_03_3Dst_01_spawn_sound_fwd</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>2.000000</startTime>
+				<duration>4.333333</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>2.000000</startTime>
+				<duration>4.300000</duration>
+				<sequenceSound>R250_NST_130_03_3Dst_01_spawn</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

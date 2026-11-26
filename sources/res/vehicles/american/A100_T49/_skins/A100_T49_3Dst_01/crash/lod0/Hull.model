@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A100_T49/_skins/A100_T49_3Dst_01/crash/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.692251 -0.920087 -3.017478</min>
+		<max>1.709355 0.652808 2.718318</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A100_T49/_skins/A100_T49_3Dst_01/crash/lod0/Hull</nodefullVisual>
+</root>

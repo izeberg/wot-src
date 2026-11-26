@@ -41,6 +41,7 @@ class VOIPChatController(IVOIPChatController):
         self.__initialize()
 
     def stop(self):
+        self.__cancelMediaEngineTimer()
         self.__stopMicrophoneCheck()
         self.__unsubscribeFromVoipCallbacks()
         self.__callbacks = []
@@ -193,23 +194,35 @@ class VOIPChatController(IVOIPChatController):
         if self.isVOIPEnabled():
             g_messengerEvents.voip.onPlayerSpeaking(accountDBID, bool(isSpeak))
 
+    def __cancelMediaEngineTimer(self):
+        if self.__mediaEngineWarningTimer:
+            BigWorld.cancelCallback(self.__mediaEngineWarningTimer)
+            self.__mediaEngineWarningTimer = None
+        return
+
+    def startNoiseCancelTimer(self):
+        if not self.isVOIPEnabled() or not self.isCurrentChannelEnabled():
+            return
+        self.__cancelMediaEngineTimer()
+        self.__isMediaEngineReady = False
+        self.__warningShown = False
+
+        def setMediaEngineReady():
+            if self.__mediaEngineWarningTimer is None:
+                return
+            else:
+                self.__mediaEngineWarningTimer = None
+                self.__isMediaEngineReady = True
+                if self.__warningShown:
+                    self.__showVoipReadyMessage()
+                return
+
+        self.__mediaEngineWarningTimer = BigWorld.callback(MEDIA_ENGINE_DELAY, setMediaEngineReady)
+
     def __onJoinedChannel(self, channel, isTestChannel, isRejoin):
         self.__stopMicrophoneCheck()
         if self.isVOIPEnabled():
-            self.__isMediaEngineReady = False
-            self.__warningShown = False
-
-            def setMediaEngineReady():
-                if self.__mediaEngineWarningTimer is None:
-                    return
-                else:
-                    self.__mediaEngineWarningTimer = None
-                    self.__isMediaEngineReady = True
-                    if self.__warningShown:
-                        self.__showVoipReadyMessage()
-                    return
-
-            self.__mediaEngineWarningTimer = BigWorld.callback(MEDIA_ENGINE_DELAY, setMediaEngineReady)
+            self.startNoiseCancelTimer()
             keyCode = CommandMapping.g_instance.get('CMD_VOICECHAT_MUTE')
             if BigWorld.isKeyDown(keyCode):
                 VOIP.getVOIPManager().setMicMute(False)
@@ -220,9 +233,8 @@ class VOIPChatController(IVOIPChatController):
     def __onLeftChannel(self, channel, wasTestChannel):
         self.__stopMicrophoneCheck()
         if self.isVOIPEnabled():
-            self.__mediaEngineWarningTimer = None
+            self.__cancelMediaEngineTimer()
             g_messengerEvents.voip.onChannelLeft(channel, wasTestChannel)
-        return
 
     def __onToggleChannelEnabled(self, event):
         voipMgr = VOIP.getVOIPManager()

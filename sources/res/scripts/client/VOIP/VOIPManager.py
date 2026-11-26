@@ -640,3 +640,9 @@ class VOIPManager(VOIPHandler):
     def userActionReceived(self, actionID, user, shadowMode):
         if actionID in (USER_ACTION_ID.MUTE_SET, USER_ACTION_ID.MUTE_UNSET):
             self.__onChatActionMute(user.getID(), user.isMuted())
+
+    def setEchoSuppression(self, _):
+        pass
+
+    def isEchoSuppressionEnabled(self):
+        return False

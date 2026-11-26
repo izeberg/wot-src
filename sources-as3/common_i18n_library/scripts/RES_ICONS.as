@@ -25409,6 +25409,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CH57_BZT_70:String = "../maps/icons/quests/bonuses/big/Ch57_BZT_70.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CHINA_CH41_WZ_111_QL:String = "../maps/icons/quests/bonuses/big/china-Ch41_WZ_111_QL.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CHINA_CH75_ZTQ_56:String = "../maps/icons/quests/bonuses/big/china-Ch75_ZTQ_56.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CHOCOLATE:String = "../maps/icons/quests/bonuses/big/chocolate.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_COATEDOPTICS:String = "../maps/icons/quests/bonuses/big/coatedOptics.png";
@@ -25665,6 +25669,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_GERMANY_G105_T_55_NVA_DDR:String = "../maps/icons/quests/bonuses/big/germany-G105_T-55_NVA_DDR.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_GERMANY_G180_HAUPTPANZER_GRUPPE_A:String = "../maps/icons/quests/bonuses/big/germany-G180_Hauptpanzer_Gruppe_A.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_GERMANY_G181_STUG_MAUS_17CM:String = "../maps/icons/quests/bonuses/big/germany-G181_StuG_Maus_17cm.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_GERMANY_G182_MAUSEKONIG:String = "../maps/icons/quests/bonuses/big/germany-G182_Mausekonig.png";
@@ -25729,7 +25735,11 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_ITALY_IT33_ORSO:String = "../maps/icons/quests/bonuses/big/italy-It33_Orso.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_ITALY_IT37_CAS_149:String = "../maps/icons/quests/bonuses/big/italy-It37_CAS_149.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_J49_TYPE_60_PROTO_4:String = "../maps/icons/quests/bonuses/big/J49_Type_60_Proto_4.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_JAPAN_J51_NAGINATA:String = "../maps/icons/quests/bonuses/big/japan-J51_Naginata.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_LARGEMEDKIT:String = "../maps/icons/quests/bonuses/big/largeMedkit.png";
       
@@ -25995,6 +26005,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_STYLE_PROGRESS_31387_4:String = "../maps/icons/quests/bonuses/big/style_progress_31387_4.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_SWEDEN_S43_ARMBORST:String = "../maps/icons/quests/bonuses/big/sweden-S43_Armborst.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_TACTICALTRAINING:String = "../maps/icons/quests/bonuses/big/tacticalTraining.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_TANKMAN:String = "../maps/icons/quests/bonuses/big/tankman.png";
@@ -26047,7 +26059,11 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_USA_A102_T28_CONCEPT:String = "../maps/icons/quests/bonuses/big/usa-A102_T28_concept.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_USA_A151_TS_60:String = "../maps/icons/quests/bonuses/big/usa-A151_TS_60.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_USA_A161_ARMT:String = "../maps/icons/quests/bonuses/big/usa-A161_ARMT.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_USA_A162_ATAC_II:String = "../maps/icons/quests/bonuses/big/usa-A162_ATAC_II.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_USA_A165_XM57:String = "../maps/icons/quests/bonuses/big/usa-A165_XM57.png";
       
@@ -26057,7 +26073,11 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_USA_A175_OTAC_MT_58_02:String = "../maps/icons/quests/bonuses/big/usa-A175_OTAC_MT_58_02.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_USA_A180_ACIT_40T_CONCEPT:String = "../maps/icons/quests/bonuses/big/usa-A180_ACIT_40t_Concept.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_USSR_R110_OBJECT_260:String = "../maps/icons/quests/bonuses/big/ussr-R110_Object_260.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_USSR_R147_OBJECT_701:String = "../maps/icons/quests/bonuses/big/ussr-R147_Object_701.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_USSR_R157_OBJECT_279R:String = "../maps/icons/quests/bonuses/big/ussr-R157_Object_279R.png";
       
@@ -26068,6 +26088,12 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_USSR_R223_T_54B_1958:String = "../maps/icons/quests/bonuses/big/ussr-R223_T_54B_1958.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_USSR_R228_DUPLET:String = "../maps/icons/quests/bonuses/big/ussr-R228_Duplet.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_USSR_R247_OBJECT_440:String = "../maps/icons/quests/bonuses/big/ussr-R247_Object_440.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_USSR_R250_NST_130:String = "../maps/icons/quests/bonuses/big/ussr-R250_NST_130.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_USSR_R250_NST_130_03:String = "../maps/icons/quests/bonuses/big/ussr-R250_NST_130_03.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_VARIADICDISCOUNT:String = "../maps/icons/quests/bonuses/big/variadicDiscount.png";
       

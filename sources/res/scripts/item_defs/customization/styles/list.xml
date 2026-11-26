@@ -9154,7 +9154,7 @@
 					<decals>
 						<item>
 							<id>31083</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -9207,7 +9207,7 @@
 					<decals>
 						<item>
 							<id>31084</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -9261,7 +9261,7 @@
 					<decals>
 						<item>
 							<id>31085</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -9315,7 +9315,7 @@
 					<decals>
 						<item>
 							<id>31086</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -9369,7 +9369,7 @@
 					<decals>
 						<item>
 							<id>31087</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -9423,7 +9423,7 @@
 					<decals>
 						<item>
 							<id>31075</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -9477,7 +9477,7 @@
 					<decals>
 						<item>
 							<id>31076</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -9531,7 +9531,7 @@
 					<decals>
 						<item>
 							<id>31077</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -9585,7 +9585,7 @@
 					<decals>
 						<item>
 							<id>31078</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -9639,7 +9639,7 @@
 					<decals>
 						<item>
 							<id>31079</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -9701,7 +9701,7 @@
 					<decals>
 						<item>
 							<id>31483</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 				</outfit>
@@ -9747,7 +9747,7 @@
 					<decals>
 						<item>
 							<id>31080</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -9801,7 +9801,7 @@
 					<decals>
 						<item>
 							<id>31081</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -9863,7 +9863,7 @@
 					<decals>
 						<item>
 							<id>31393</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 				</outfit>
@@ -9909,7 +9909,7 @@
 					<decals>
 						<item>
 							<id>31082</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -9963,7 +9963,7 @@
 					<decals>
 						<item>
 							<id>31236</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -10017,7 +10017,7 @@
 					<decals>
 						<item>
 							<id>31073</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -10071,7 +10071,7 @@
 					<decals>
 						<item>
 							<id>31074</id>
-							<appliedTo>3072</appliedTo>
+							<appliedTo>3264</appliedTo>
 						</item>
 					</decals>
 					<modifications>
@@ -64297,6 +64297,51 @@
 	<itemGroup>
 		<userString>#vehicle_customization:styles/special_styles</userString>
 		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT 3D styles 9-10 levels 8000g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>usa:A100_T49_02</vehicles>
+			</include>
+		</vehicleFilter>
+		<style>
+			<id>31647</id>
+			<userString>#vehicle_customization:special_style/A100_T49_02_3Dst_01</userString>
+			<longDescriptionSpecial>#vehicle_customization:special_style/A100_T49_02_3Dst_01/long</longDescriptionSpecial>
+			<texture>gui/maps/vehicles/styles/A100_T49_02_3Dst_01.png</texture>
+			<modelsSet>A100_02_T49_3Dst_01</modelsSet>
+			<tags>lockedOnVehicle</tags>
+			<maxNumber>1</maxNumber>
+			<outfits>
+				<outfit>
+					<season>ALL</season>
+					<camouflages>
+						<item>
+							<id>1</id>
+							<appliedTo>4368</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<attachments>
+						<item>
+							<id>31186</id>
+							<slotId>18000</slotId>
+						</item>
+					</attachments>
+					<insignias>
+						<item>
+							<id>31071</id>
+							<appliedTo>4096</appliedTo>
+						</item>
+					</insignias>
+				</outfit>
+			</outfits>
+		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
 		<historical>2</historical>
 		<priceGroup>MT 3D styles 9-10 levels 8000g notInShop</priceGroup>
 		<vehicleFilter>
@@ -68859,6 +68904,55 @@
 							<slotId>18000</slotId>
 						</item>
 					</attachments>
+				</outfit>
+			</outfits>
+		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT 3D styles 9-10 levels 8000g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>ussr:R250_NST_130_03</vehicles>
+			</include>
+		</vehicleFilter>
+		<style>
+			<id>31648</id>
+			<isRent>false</isRent>
+			<texture>gui/maps/vehicles/styles/DEV.png</texture>
+			<maxNumber>1</maxNumber>
+			<userString>#vehicle_customization:special_style/R250_NST_130_03_3Dst_01/name</userString>
+			<modelsSet>R250_NST_130_03_3Dst_01</modelsSet>
+			<tags>lockedOnVehicle styleStatTrackFrags</tags>
+			<outfits>
+				<outfit>
+					<season>ALL</season>
+					<camouflages>
+						<item>
+							<id>1</id>
+							<appliedTo>4368</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<attachments>
+						<item>
+							<id>31169</id>
+							<slotId>18000</slotId>
+						</item>
+					</attachments>
+					<projection_decals>
+						<item>
+							<id>31383</id>
+							<slotId>35042</slotId>
+						</item>
+						<item>
+							<id>31383</id>
+							<slotId>15045</slotId>
+						</item>
+					</projection_decals>
 				</outfit>
 			</outfits>
 		</style>

@@ -594,9 +594,6 @@ class ITamagotchiDataProvider(object):
     def isIndicatorLocked(self, name):
         raise NotImplementedError
 
-    def syncOpenedIndicators(self):
-        raise NotImplementedError
-
     def setRaidReady(self, isReady=None):
         raise NotImplementedError
 

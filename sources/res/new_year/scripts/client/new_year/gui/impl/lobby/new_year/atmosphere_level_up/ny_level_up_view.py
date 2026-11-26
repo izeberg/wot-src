@@ -250,7 +250,7 @@ class NyAtmosphereLevelUpView(ViewImpl):
             self.destroyWindow()
 
     def __onSelectVehicleDiscount(self, event):
-        showVehicleDiscountOverlay(event.get('discountID'))
+        showVehicleDiscountOverlay(event.get('discountID'), parent=self.getParentWindow())
 
     def __setRewards(self):
         bonuses = self.__rewards[self.__currentRewardId]

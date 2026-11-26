@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>2.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Light</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/A100_T49_02_3Dst_01/A100_light.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.290196 0.105882 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.563145</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.499183</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000 0.290196 0.105882 0.998366</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.499183</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.273677</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

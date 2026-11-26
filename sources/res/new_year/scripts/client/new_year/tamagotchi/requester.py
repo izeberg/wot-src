@@ -26,7 +26,6 @@ class TamagotchiWebRequester(ITamagotchiWebRequester):
         else:
             self._dataProvider.config = result.data.get('config')
             self._dataProvider.playerInfo = result.data
-            self._dataProvider.syncOpenedIndicators()
             if callback is not None:
                 callback()
             return

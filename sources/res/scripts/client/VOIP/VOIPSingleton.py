@@ -189,6 +189,12 @@ class VOIPSingleton(VOIPHandler):
     def setMicrophoneVolume(self, attenuation):
         self.__impl.setMicrophoneVolume(attenuation)
 
+    def setEchoSuppression(self, enabled):
+        self.__impl.setEchoSuppression(enabled)
+
+    def isEchoSuppressionEnabled(self):
+        return self.__impl.isEchoSuppressionEnabled()
+
     def setVoiceActivation(self, enabled):
         self.__impl.setVoiceActivation(enabled)
 

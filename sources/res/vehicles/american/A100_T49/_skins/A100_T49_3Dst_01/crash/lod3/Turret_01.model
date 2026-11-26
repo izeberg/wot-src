@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A100_T49/_skins/A100_T49_3Dst_01/crash/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.289858 -0.141151 -1.569053</min>
+		<max>1.312985 1.002403 1.255815</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A100_T49/_skins/A100_T49_3Dst_01/crash/lod3/Turret_01</nodefullVisual>
+</root>

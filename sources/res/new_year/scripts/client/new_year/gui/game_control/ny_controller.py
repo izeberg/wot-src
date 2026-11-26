@@ -472,7 +472,7 @@ class NewYearController(INewYearController, IGlobalListener):
         return lbType == NewYearLootBoxes.NY_CUR_YEAR_BIG
 
     def isLootboxTankType(self, lbType):
-        return lbType == NewYearLootBoxes.NY_CUR_YEAR_TANKS
+        return lbType in (NewYearLootBoxes.NY_CUR_YEAR_TANKS, NewYearLootBoxes.NY_CUR_YEAR_TANKS_TEST)
 
     @staticmethod
     def __isCorrectPrb(state):

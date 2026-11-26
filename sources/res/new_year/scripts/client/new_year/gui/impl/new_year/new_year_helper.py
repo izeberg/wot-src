@@ -45,6 +45,7 @@ _BONUSES_ORDER_GF = (
  'BlueprintUniversalFragmentCongrats')
 _WEEKLY_LEADERBOARD_ORDER_GF = (
  NewYearLootBoxes.NY_CUR_YEAR_TANKS,
+ NewYearLootBoxes.NY_CUR_YEAR_TANKS_TEST,
  TOKEN_LOOTBOX_FRAGMENT,
  NewYearLootBoxes.NY_CUR_YEAR_BIG,
  'customizations_style',

@@ -162,7 +162,7 @@
 			<notInShop>true</notInShop>
 			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
 			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
-			<power>850</power>
+			<power>1000</power>
 			<weight>998</weight>
 			<maxHealth>285</maxHealth>
 			<maxRegenHealth>142</maxRegenHealth>
@@ -171,7 +171,7 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>475</rpm_min>
+			<rpm_min>425</rpm_min>
 			<rpm_max>1950</rpm_max>
 		</AVDS_1100_VCR2_A185>
 		<AVI_1790_8>

@@ -1,16 +1,16 @@
 <version.xml>
 	<appname>	#menu:login/version	</appname>
-	<version> v.1.47.0.0 #2327 </version>
+	<version> v.1.47.0.0 #2330 </version>
 	<showLicense> 42 </showLicense>
 	<ingameHelpVersion>	1	</ingameHelpVersion>
 	<meta>
-		<client> 2386459 </client>
-		<overrides> 8722 RPT </overrides>
-		<localization> 27367 </localization>
+		<client> 2390271 </client>
+		<overrides> 8723 RPT </overrides>
+		<localization> 27372 </localization>
 		<target_region> RU </target_region>
 		<realm> RPT </realm>
 		<build_profile> RU </build_profile>
-		<branch> 1.47 </branch>
+		<branch> misc/git/MTDEV-55841-v147-no-celebs </branch>
 		<buildScriptsRevision> 2381923 </buildScriptsRevision>
 	</meta>
 </version.xml>

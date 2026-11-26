@@ -98,12 +98,11 @@ def showLootBoxEntry(lootBoxType=NewYearLootBoxes.NY_24_STANDARD, category='', l
 
 
 @dependency.replace_none_kwargs(nyWindowHelper=INyWindowHelper)
-def showVehicleDiscountOverlay(discountID=None, nyWindowHelper=None):
-    from gui.impl.pub.lobby_window import LobbyOverlay
-    from new_year.gui.impl.lobby.new_year.vehicle_selection_view import VehicleSelectionView
+def showVehicleDiscountOverlay(discountID=None, parent=None, nyWindowHelper=None):
+    from new_year.gui.impl.lobby.new_year.vehicle_selection_view import VehicleSelectionView, VehicleSelectionWindow
     if nyWindowHelper.isLocked(VehicleSelectionView.WND_LOCK_TAG):
         return
-    window = LobbyOverlay(content=VehicleSelectionView(R.views.new_year.lobby.new_year.VehicleSelectionView(), discountID=discountID))
+    window = VehicleSelectionWindow(discountID=discountID, parent=parent)
     window.load()
 
 
@@ -127,9 +126,8 @@ def showNYBuyToyDialog(toyID, callback):
 
 
 def showNYProgressView(parent=None):
-    from gui.impl.pub.lobby_window import LobbyOverlay
-    from new_year.gui.impl.lobby.new_year.ny_progress_view import NyProgressView
-    window = LobbyOverlay(content=NyProgressView(R.views.new_year.lobby.new_year.NyProgressView()), parent=parent)
+    from new_year.gui.impl.lobby.new_year.ny_progress_view import NyProgressViewWindow
+    window = NyProgressViewWindow(parent=parent)
     window.load()
 
 

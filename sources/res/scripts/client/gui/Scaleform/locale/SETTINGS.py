@@ -280,6 +280,7 @@ class SETTINGS(object):
     SOUNDS_AMBIENT = '#settings:sounds/ambient'
     SOUND_PLAYERS_NOTIFICATIONS = '#settings:sound/players_notifications'
     SOUND_VIVOX_MIC_SENSITIVITY = '#settings:sound/vivox/mic_sensitivity'
+    SOUND_VOIP_ECHO_SUPPRESSION = '#settings:sound/voip/echo_suppression'
     SOUND_VIVOX_MASTER_VOLUME = '#settings:sound/vivox/master_volume'
     SOUND_VIVOX_FADE_VOLUME = '#settings:sound/vivox/fade_volume'
     SOUND_VIVOX_VIVOX_TEST = '#settings:sound/vivox/vivox_test'

@@ -469,6 +469,21 @@
 		<price>3400000</price>
 		<tags>mediumTank role_MT_sniper HD wheeledVehicle wheeledVehicleWithoutFeatures improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
 	</GB123_GSOR_1006_v7>
+	<GB123_GSOR_1006_v7_02>
+		<id>31021</id>
+		<userString>#gb_vehicles:GB123_GSOR_1006_v7_02</userString>
+		<shortUserString>#gb_vehicles:GB123_GSOR_1006_v7_02_short</shortUserString>
+		<description>#gb_vehicles:GB123_GSOR_1006_v7_02_descr</description>
+		<shortDescriptionSpecial>#gb_vehicles:GB123_GSOR_1006_v7_02_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#gb_vehicles:GB123_GSOR_1006_v7_02_long_special</longDescriptionSpecial>
+		<price>
+			17500
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>mediumTank role_MT_sniper HD wheeledVehicle speedometer wheeledVehicleWithoutFeatures improvedVentilation_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user secret testTank lockOutfit earn_crystals</tags>
+		<level>9</level>
+	</GB123_GSOR_1006_v7_02>
 	<GB124_AEC_Armoured_Car>
 		<id>78</id>
 		<userString>#gb_vehicles:GB124_AEC_Armoured_Car</userString>
@@ -784,7 +799,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>AT-SPG role_ATSPG_support HD heavyAT-SPG special improvedVentilation_class1_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals secret testTank lockOutfit private secretExtended</tags>
+		<tags>AT-SPG role_ATSPG_assault HD heavyAT-SPG special improvedVentilation_class1_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals secret testTank lockOutfit private secretExtended</tags>
 		<level>11</level>
 	</GB146_Albion>
 	<GB147_Avalon_Mk_II_76>

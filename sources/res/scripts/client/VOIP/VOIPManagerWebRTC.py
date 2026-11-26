@@ -232,6 +232,14 @@ class VOIPManagerWebRTC(VOIPHandler):
     def setMicrophoneVolume(self, attenuation):
         BigWorld.VOIP.setMicrophoneVolume(attenuation)
 
+    def setEchoSuppression(self, enabled):
+        if self.__initialized:
+            BigWorld.VOIP.echoSuppression(enabled)
+
+    def isEchoSuppressionEnabled(self):
+        if self.__initialized:
+            return BigWorld.VOIP.isEchoSuppressionEnabled()
+
     def __setVolume(self):
         self.setMasterVolume(int(round(SoundGroups.g_instance.getVolume(VOIPCommon.KEY_VOIP_MASTER_WEBRTC) * 100)))
         self.setMicrophoneVolume(int(round(SoundGroups.g_instance.getVolume(VOIPCommon.KEY_VOIP_MIC_WEBRTC) * 100)))
@@ -317,6 +325,8 @@ class VOIPManagerWebRTC(VOIPHandler):
         if returnCode == VOIPCommon.CODE_SUCCESS:
             self.__initialized = True
             self.state = STATE.INITIALIZED
+            echoSuppress = self.settingsCore.getSetting(SOUND.VOIP_ECHO_SUPPRESSION)
+            self.setEchoSuppression(echoSuppress)
             self.onInitialized(data)
         else:
             self.__initialized = False

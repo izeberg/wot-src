@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>Trail_Ribbon_B_MeshShape.vertices</vertices>
+			<stream>Trail_Ribbon_B_MeshShape.colour</stream>
+			<primitive>Trail_Ribbon_B_MeshShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/custom/vector_animation_2.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaFadeAmountSoft
+						<Vector4>0.000000 2.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						compensationValue
+						<Vector4>1.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Smoke_cigarette.dds</Texture>
+					</property>
+					<property>
+						diffuseUVScale
+						<Vector4>1.000000 5.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>0.000000 2.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						distortion_UV_Speed_Amount
+						<Vector4>0.000000 0.000000 0.100000 0.100000</Vector4>
+					</property>
+					<property>
+						distortionFrequency
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						distortionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Distortion05.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						fogAdjustBlend
+						<Float>1.000000</Float>
+					</property>
+					<property>
+						g_useTime
+						<Bool>false</Bool>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>10.000000 1.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						opacityMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Masks/Gradient.dds</Texture>
+					</property>
+					<property>
+						opacityMapEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						phase_UV_Speed_Scale
+						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						selfIllumLight
+						<Vector3>1.000000 1.000000 1.000000</Vector3>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>1.000000 0.458824 0.109804 1.000000</Vector4>
+					</property>
+					<property>
+						distortionFrames
+						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-1.516372 -0.085506 4.883349</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-3.343514 -0.694799 -0.444581</min>
+		<max>0.310770 0.523787 10.211280</max>
+	</boundingBox>
+	<geometrySize>16540</geometrySize>
+	<minUVDensity>0.051156</minUVDensity>
+</root>

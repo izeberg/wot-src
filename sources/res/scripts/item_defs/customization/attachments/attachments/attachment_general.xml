@@ -1466,5 +1466,21 @@
 			<attachmentLogic>prefab</attachmentLogic>
 			<initialVisibility>true</initialVisibility>
 		</attachment>
+		<attachment>
+			<id>31186</id>
+			<name>A100_T49_3Dst_01</name>
+			<modelName>vehicles/american/A100_T49/_skins/A100_T49_3Dst_01/A100_T49_02_3Dst_01_prebattle.prefab</modelName>
+			<hangarModelName>vehicles/american/A100_T49/_skins/A100_T49_3Dst_01/A100_T49_02_3Dst_01_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<initialVisibility>true</initialVisibility>
+		</attachment>
+		<attachment>
+			<id>31169</id>
+			<name>R250_NST_130_03_3Dst_01</name>
+			<modelName>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/R250_NST_130_03_3Dst_01.prefab</modelName>
+			<hangarModelName>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/R250_NST_130_03_3Dst_01_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<initialVisibility>true</initialVisibility>
+		</attachment>
 	</itemGroup>
 </root>

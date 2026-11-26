@@ -3116,7 +3116,10 @@
 						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>38</reloadTime>
+					<reloadTime>
+						22.6
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.18
@@ -3136,11 +3139,11 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<clip>
-						<count>8</count>
-						<rate>22</rate>
+						<count>4</count>
+						<rate>40</rate>
 					</clip>
 					<aimingTime>
-						2.1
+						2.2
 						<!--BW_String-->
 					</aimingTime>
 					<models>

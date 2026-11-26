@@ -16,6 +16,7 @@ class NewYearLootBoxes(CONST_CONTAINER):
     NY_24_MAGIC = 'ny_2024_magic'
     NY_CUR_YEAR_SMALL = ('ny_{}_small').format(YEARS_INFO.CURRENT_YEAR_FULL)
     NY_CUR_YEAR_TANKS = ('ny_{}_tanks').format(YEARS_INFO.CURRENT_YEAR_FULL)
+    NY_CUR_YEAR_TANKS_TEST = ('ny_{}_tanks_test').format(YEARS_INFO.CURRENT_YEAR_FULL)
     NY_CUR_YEAR_BIG = ('ny_{}_big').format(YEARS_INFO.CURRENT_YEAR_FULL)
     PREMIUM = (
      PREMIUM_OLD, NY_24_NEW_YEAR, NY_24_XMAS, NY_24_EASTERN, NY_24_MAGIC)
@@ -34,10 +35,10 @@ class NewYearLootBoxes(CONST_CONTAINER):
 class NewYearLootBoxRewards(object):
     NY_CUR_YEAR_TANKS = ('ny_{}_tanks').format(YEARS_INFO.CURRENT_YEAR_FULL)
     VEHICLES = {NY_CUR_YEAR_TANKS: 'legendary', 
-       'A175_OTAC_MT_58_02': 'tank_main', 
+       'R250_NST_130_03': 'tank_main', 
        'tank_leaderboard': 'tank_leaderboard'}
-    CUSTOMIZATIONS = {'customizations_7990860': '3dstyle_02', 
-       'customizations_8001356': '3dstyle_03'}
+    CUSTOMIZATIONS = {'customizations_8095308': '3dstyle_02', 
+       'customizations_8098892': '3dstyle_03'}
     ALL = {}
     for rewards in (VEHICLES, CUSTOMIZATIONS):
         ALL.update(rewards)

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>1.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Light</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/R250_NST_130_03_3Dst_01/R250_side.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>false</value>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

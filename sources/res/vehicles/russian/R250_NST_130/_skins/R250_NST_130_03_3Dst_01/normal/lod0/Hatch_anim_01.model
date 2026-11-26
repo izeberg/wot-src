@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/normal/lod0/Hatch_anim_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.140888 0.480351 -2.497623</min>
+		<max>0.138220 0.758927 -2.218627</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/russian/R250_NST_130/_skins/R250_NST_130_03_3Dst_01/normal/lod1/Hatch_anim_01</parent>
+	<extent>32.000000</extent>
+</root>
