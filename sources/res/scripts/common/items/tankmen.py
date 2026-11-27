@@ -1271,7 +1271,13 @@ def getCommanderGroup(crewDescrs):
 
 def getCrewGroups(crewDescrs):
     crewDescrs = sorted([ TankmanDescr(descr, battleOnly=True) for descr, _ in zip(crewDescrs, [None] * len(crewDescrs)) ], key=lambda descr: skills_constants.ORDERED_ROLES.index(descr.role))
-    return [ getTankmanGroup(crewDescr) for crewDescr in crewDescrs ]
+    crewGroups = [ getTankmanGroup(crewDescr) for crewDescr in crewDescrs ]
+    for idx, group in enumerate(crewGroups):
+        if group < 0:
+            LOG_ERROR('getCrewGroups: tankman group is not found', crewDescrs[idx].getPassport())
+            crewGroups[idx] = 0
+
+    return crewGroups
 
 
 def getTankmanGroup(tankmanDescr):
@@ -1328,7 +1334,7 @@ def findGroupsByIDs(groups, isFemale, firstNameID, secondNameID, iconID):
     found = [
      (-1, 0)]
     for groupID, group in viewitems(groups):
-        if isFemale != group.isFemales:
+        if isFemale is not None and isFemale != group.isFemales:
             continue
         overlap = 0
         if firstNameID in group.firstNames:
@@ -1340,8 +1346,11 @@ def findGroupsByIDs(groups, isFemale, firstNameID, secondNameID, iconID):
         if overlap:
             found.append((groupID, overlap))
 
-    found.sort(key=lambda item: item[1], reverse=True)
-    return found
+    if len(found) == 1 and isFemale is not None:
+        return findGroupsByIDs(groups, None, firstNameID, secondNameID, iconID)
+    else:
+        found.sort(key=lambda item: item[1], reverse=True)
+        return found
 
 
 def findBestGroupByGroupIDs(firstNameGroupID, lastNameGroupID, iconGroupID):
